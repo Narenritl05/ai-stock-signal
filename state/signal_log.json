@@ -1903,6 +1903,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "TGT",
+      "name": "TGT",
+      "signal": "BUY",
+      "score": 70,
+      "entry_date": "2026-06-21",
+      "entry": 130.74,
+      "stop": 122.57,
+      "target": 143.81,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-21",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "LOW",
+      "name": "LOW",
+      "signal": "BUY",
+      "score": 69,
+      "entry_date": "2026-06-21",
+      "entry": 222.2,
+      "stop": 206.65,
+      "target": 244.42,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-21",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
