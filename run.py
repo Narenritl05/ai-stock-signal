@@ -41,7 +41,7 @@ def _attach_position_sizing(signals: list[dict]) -> None:
             s["pos_value"] = ps["value"]
 
 
-def run_pipeline() -> None:
+def run_pipeline(notify_no_changes: bool = True) -> None:
     now = datetime.now(ICT)
     generated_at = now.strftime("%Y-%m-%d %H:%M") + " (เวลาไทย)"
     date_str = now.strftime("%Y-%m-%d")
@@ -101,10 +101,16 @@ def run_pipeline() -> None:
         print(f"ภาวะตลาด: {regime['label']} (breadth {regime['breadth']}%)")
     print(f"การเปลี่ยนแปลงที่จะแจ้ง: {len(changes)} รายการ")
 
-    # แจ้งเตือน
+    # แจ้งเตือน — ส่งเฉพาะเมื่อมีการเปลี่ยนแปลงจริง (กันสแปมตอนรันถี่ๆ ทุก 1 นาที)
     min_score = market.notify_min_score(regime)
     message = notifier.build_change_message(changes, regime, generated_at, min_score, fail_ratio, perf)
-    notifier.send_telegram(message)
+    notifiable = [c for c in changes
+                  if (c.get("change") in ("NEW", "UPGRADE") and c.get("score", 0) >= min_score)
+                  or c.get("change") == "EXIT"]
+    if notifiable or notify_no_changes:
+        notifier.send_telegram(message)
+    else:
+        print("  ไม่มีสัญญาณใหม่ — ข้ามการแจ้งเตือน Telegram (กันสแปม)")
 
     # บันทึก state ไว้เทียบรอบหน้า (ทำหลังคำนวณ diff แล้ว)
     state.save_state(signals, generated_at)

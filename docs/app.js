@@ -11,20 +11,37 @@ let activeFilter = "ALL";
 let searchTerm = "";
 let sortBy = "score";
 let gid = 0; // unique gradient ids
+let lastGenerated = null;       // เช็คว่าข้อมูลเปลี่ยนไหมตอน auto-refresh
+const REFRESH_MS = 60000;       // รีเฟรชหน้าเว็บอัตโนมัติทุก 1 นาที
 
 // ── data loading ──
-async function load() {
+async function load(isRefresh = false) {
   try {
     const res = await fetch("data/signals.json?_=" + Date.now());
     if (!res.ok) throw new Error("HTTP " + res.status);
-    renderSignals(await res.json());
+    const data = await res.json();
+    // ตอน auto-refresh: ถ้าข้อมูลยังไม่เปลี่ยน ไม่ต้อง re-render (กันกระพริบ)
+    if (!isRefresh || data.generated_at !== lastGenerated) {
+      lastGenerated = data.generated_at;
+      renderSignals(data);
+      if (isRefresh) flashLive();
+    }
   } catch (e) {
-    document.getElementById("updated").textContent = "โหลดข้อมูลไม่สำเร็จ";
-    document.getElementById("cards").innerHTML =
-      `<div class="empty">ยังไม่มีข้อมูล — รัน <code>python run.py</code> หรือรอ GitHub Actions ทำงานครั้งแรก<br><small>(${e.message})</small></div>`;
+    if (!isRefresh) {
+      document.getElementById("updated").textContent = "โหลดข้อมูลไม่สำเร็จ";
+      document.getElementById("cards").innerHTML =
+        `<div class="empty">ยังไม่มีข้อมูล — รัน <code>python run.py</code> หรือรอ GitHub Actions ทำงานครั้งแรก<br><small>(${e.message})</small></div>`;
+    }
   }
   loadBacktest();
   loadPerformance();
+}
+
+function flashLive() {
+  const b = document.getElementById("live-badge");
+  if (!b) return;
+  b.classList.add("flash");
+  setTimeout(() => b.classList.remove("flash"), 1200);
 }
 
 async function loadPerformance() {
@@ -344,4 +361,5 @@ window.addEventListener("resize", () => moveGlider(document.querySelector(".tab.
 
 // init
 moveGlider(document.querySelector(".tab.active"));
-load();
+load(false);
+setInterval(() => load(true), REFRESH_MS);   // รีเฟรชข้อมูลอัตโนมัติทุก 1 นาที
