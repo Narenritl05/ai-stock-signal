@@ -5,61 +5,141 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI Stock Signal — SET</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg-grid"></div>
+  <div class="aurora"></div>
+  <div class="noise"></div>
 
-  <header class="topbar">
-    <div class="brand">
-      <span class="logo">▲</span>
-      <div>
-        <h1>AI Stock Signal</h1>
-        <p class="sub">ระบบคัดกรองหุ้น SET ด้วย Technical Analysis</p>
+  <div class="shell">
+    <!-- ── App bar ── -->
+    <header class="appbar">
+      <div class="brand">
+        <div class="logo">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 17l5-6 4 4 8-9" /><path d="M16 6h5v5" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>AI Stock Signal</h1>
+          <p>ระบบคัดกรองหุ้น SET · Technical Analysis</p>
+        </div>
       </div>
-    </div>
-    <div class="meta">
-      <span class="dot live"></span>
-      <span id="updated">กำลังโหลด…</span>
-    </div>
-  </header>
+      <div class="appbar-right">
+        <div class="market-pill" id="market-pill">
+          <span class="dot live"></span><span id="market-status">SET</span>
+        </div>
+        <div class="updated" id="updated">กำลังโหลด…</div>
+      </div>
+    </header>
 
-  <section class="summary" id="summary">
-    <div class="stat strong"><span class="num" id="s-strong">–</span><span class="lbl">STRONG BUY</span></div>
-    <div class="stat buy"><span class="num" id="s-buy">–</span><span class="lbl">BUY</span></div>
-    <div class="stat watch"><span class="num" id="s-watch">–</span><span class="lbl">WATCH</span></div>
-    <div class="stat avoid"><span class="num" id="s-avoid">–</span><span class="lbl">AVOID</span></div>
-  </section>
+    <!-- ── Tabs ── -->
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-view="signals"><span class="tab-ic">📡</span> สัญญาณวันนี้</button>
+      <button class="tab" data-view="backtest"><span class="tab-ic">🧪</span> ทดสอบย้อนหลัง</button>
+      <button class="tab" data-view="about"><span class="tab-ic">ℹ️</span> เกี่ยวกับ</button>
+      <span class="tab-glider" id="glider"></span>
+    </nav>
 
-  <div id="bt-summary" class="bt-summary hidden"></div>
+    <!-- ── VIEW: Signals ── -->
+    <section id="view-signals" class="view">
+      <div class="hero-stats">
+        <div class="tile strong" data-filter="STRONG BUY">
+          <div class="tile-ic">🟢</div>
+          <div class="tile-num" data-count="0" id="s-strong">0</div>
+          <div class="tile-lbl">STRONG BUY</div>
+        </div>
+        <div class="tile buy" data-filter="BUY">
+          <div class="tile-ic">📈</div>
+          <div class="tile-num" data-count="0" id="s-buy">0</div>
+          <div class="tile-lbl">BUY</div>
+        </div>
+        <div class="tile watch" data-filter="WATCH">
+          <div class="tile-ic">👀</div>
+          <div class="tile-num" data-count="0" id="s-watch">0</div>
+          <div class="tile-lbl">WATCH</div>
+        </div>
+        <div class="tile avoid" data-filter="AVOID">
+          <div class="tile-ic">⛔</div>
+          <div class="tile-num" data-count="0" id="s-avoid">0</div>
+          <div class="tile-lbl">AVOID</div>
+        </div>
+      </div>
 
-  <section class="controls">
-    <div class="filters" id="filters">
-      <button class="chip active" data-filter="ALL">ทั้งหมด</button>
-      <button class="chip" data-filter="STRONG BUY">🟢🟢 Strong Buy</button>
-      <button class="chip" data-filter="BUY">🟢 Buy</button>
-      <button class="chip" data-filter="WATCH">🟡 Watch</button>
-      <button class="chip" data-filter="AVOID">🔴 Avoid</button>
-    </div>
-    <input id="search" class="search" type="text" placeholder="ค้นหาชื่อหุ้น…" />
-  </section>
+      <div class="toolbar">
+        <div class="filters" id="filters">
+          <button class="chip active" data-filter="ALL">ทั้งหมด</button>
+          <button class="chip" data-filter="STRONG BUY">Strong Buy</button>
+          <button class="chip" data-filter="BUY">Buy</button>
+          <button class="chip" data-filter="WATCH">Watch</button>
+          <button class="chip" data-filter="AVOID">Avoid</button>
+        </div>
+        <div class="toolbar-right">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+            <input id="search" type="text" placeholder="ค้นหาหุ้น…" />
+          </div>
+          <select id="sort" class="sort">
+            <option value="score">เรียง: คะแนนสูงสุด</option>
+            <option value="change">เรียง: % เปลี่ยนแปลง</option>
+            <option value="name">เรียง: ชื่อ A–Z</option>
+          </select>
+        </div>
+      </div>
 
-  <main id="cards" class="cards"></main>
+      <div id="cards" class="cards"></div>
+      <div id="empty" class="empty hidden">ไม่พบหุ้นที่ตรงเงื่อนไข</div>
+    </section>
 
-  <div id="empty" class="empty hidden">ไม่พบหุ้นที่ตรงเงื่อนไข</div>
+    <!-- ── VIEW: Backtest ── -->
+    <section id="view-backtest" class="view hidden">
+      <div id="bt-overview" class="bt-overview"></div>
+      <div class="bt-head-row">
+        <h2 class="section-title">ผลทดสอบย้อนหลังรายตัว</h2>
+        <span class="section-note" id="bt-config"></span>
+      </div>
+      <div id="bt-list" class="bt-list"></div>
+      <p class="bt-foot">⚠️ ผลในอดีตไม่การันตีอนาคต · ยังไม่หักค่าคอมมิชชั่น ภาษี และ slippage · เพื่อการศึกษาเท่านั้น</p>
+    </section>
 
-  <footer class="disclaimer">
-    <strong>⚠️ คำเตือน:</strong> ข้อมูลนี้เป็นการวิเคราะห์เชิงเทคนิคเพื่อการศึกษาเท่านั้น
-    <u>ไม่ใช่คำแนะนำการลงทุน และไม่มีการการันตีผลกำไร</u>
-    การลงทุนมีความเสี่ยง ผู้ลงทุนควรศึกษาข้อมูลและตัดสินใจด้วยตนเอง
-    · ข้อมูลราคาจาก Yahoo Finance (อาจล่าช้า)
-  </footer>
+    <!-- ── VIEW: About ── -->
+    <section id="view-about" class="view hidden">
+      <div class="about-card">
+        <h2>ระบบนี้ทำงานยังไง</h2>
+        <div class="flow">
+          <div class="flow-step"><span class="flow-ic">📥</span><b>ดึงข้อมูล</b><small>ราคาหุ้น SET50 จาก Yahoo Finance</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><span class="flow-ic">🧠</span><b>วิเคราะห์</b><small>EMA · RSI · MACD · วอลุ่ม · โมเมนตัม → คะแนน 0–100</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><span class="flow-ic">📲</span><b>แจ้งเตือน</b><small>ส่ง Telegram ว่าควรซื้ออะไร ตอนไหน</small></div>
+        </div>
+      </div>
+      <div class="about-card warn">
+        <h2>⚠️ ข้อควรรู้ก่อนใช้</h2>
+        <ul>
+          <li><b>ไม่มีระบบใดการันตีกำไร 100%</b> — เครื่องมือนี้เป็น "ตัวช่วยคัดกรอง" เพื่อประหยัดเวลา ไม่ใช่เครื่องพิมพ์เงิน</li>
+          <li>ไม่ใช่คำแนะนำการลงทุน และ <b>ไม่สั่งซื้อ-ขายแทนคุณ</b> — การตัดสินใจสุดท้ายเป็นของคุณ</li>
+          <li>ควรตั้งจุดตัดขาดทุน (stop loss) เสมอ และลงทุนเท่าที่รับความเสี่ยงได้</li>
+          <li>ข้อมูลจาก Yahoo Finance เป็น end-of-day/ดีเลย์ เหมาะกับการวางแผนรอบถัดไป</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <h2>🆓 ฟรี 100% ไม่มีค่า server</h2>
+        <p>GitHub Actions (รันอัตโนมัติ) + GitHub Pages (โฮสต์เว็บ) + Yahoo Finance (ข้อมูล) + Telegram (แจ้งเตือน) — ฟรีทั้งหมด</p>
+      </div>
+    </section>
 
-  <!-- รายละเอียดหุ้น (modal) -->
+    <footer class="footer">
+      ลงทุนมีความเสี่ยง ผู้ลงทุนควรศึกษาข้อมูลก่อนตัดสินใจ — เครื่องมือนี้เพื่อการศึกษาเท่านั้น
+    </footer>
+  </div>
+
+  <!-- ── Modal ── -->
   <div id="modal" class="modal hidden">
     <div class="modal-box">
-      <button class="modal-close" id="modal-close">✕</button>
+      <button class="modal-close" id="modal-close" aria-label="ปิด">✕</button>
       <div id="modal-content"></div>
     </div>
   </div>

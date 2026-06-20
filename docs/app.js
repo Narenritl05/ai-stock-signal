@@ -1,200 +1,276 @@
-// app.js — โหลดข้อมูล signals.json แล้วแสดงผลบน dashboard
-
-const SIG_CLASS = {
-  "STRONG BUY": "strong",
-  "BUY": "buy",
-  "WATCH": "watch",
-  "AVOID": "avoid",
-};
-const SCORE_COLOR = (score) =>
-  score >= 75 ? "var(--green)" : score >= 60 ? "var(--green-dim)"
-  : score >= 45 ? "var(--amber)" : "var(--red)";
+// ═══════════════════════════════════════════════════════════════
+// AI Stock Signal — dashboard logic
+// ═══════════════════════════════════════════════════════════════
+const SIG_CLASS = { "STRONG BUY": "s-strong", "BUY": "s-buy", "WATCH": "s-watch", "AVOID": "s-avoid" };
+const scoreColor = (s) => (s >= 75 ? "#00e676" : s >= 60 ? "#00c853" : s >= 45 ? "#ffc24b" : "#ff5a5a");
 
 let ALL = [];
-let BT = {};            // map: ticker -> ผล backtest
+let BT = {};
 let activeFilter = "ALL";
 let searchTerm = "";
+let sortBy = "score";
+let gid = 0; // unique gradient ids
 
+// ── data loading ──
 async function load() {
   try {
     const res = await fetch("data/signals.json?_=" + Date.now());
     if (!res.ok) throw new Error("HTTP " + res.status);
-    const data = await res.json();
-    render(data);
+    renderSignals(await res.json());
   } catch (e) {
     document.getElementById("updated").textContent = "โหลดข้อมูลไม่สำเร็จ";
     document.getElementById("cards").innerHTML =
       `<div class="empty">ยังไม่มีข้อมูล — รัน <code>python run.py</code> หรือรอ GitHub Actions ทำงานครั้งแรก<br><small>(${e.message})</small></div>`;
   }
-  loadBacktest();   // โหลดผล backtest (ถ้ามี) — ไม่บังคับ
+  loadBacktest();
 }
 
 async function loadBacktest() {
   try {
     const res = await fetch("data/backtest.json?_=" + Date.now());
     if (!res.ok) return;
-    const data = await res.json();
-    (data.results || []).forEach((r) => (BT[r.ticker] = r));
-    const o = data.overall || {};
-    const el = document.getElementById("bt-summary");
-    if (el && o.total_trades) {
-      el.classList.remove("hidden");
-      el.innerHTML =
-        `🧪 <b>Backtest ${data.period || ""}</b> · ทดสอบ ${o.stocks_tested} หุ้น · ` +
-        `${o.total_trades} เทรด · อัตราชนะ <b>${o.overall_win_rate}%</b> · ` +
-        `กำไรเฉลี่ย/เทรด <b>${o.avg_return_per_trade}%</b>` +
-        `<span class="bt-note"> (อดีตไม่การันตีอนาคต · ยังไม่รวมค่าธรรมเนียม)</span>`;
-    }
+    renderBacktest(await res.json());
   } catch (e) { /* ไม่มี backtest ก็ข้ามไป */ }
 }
 
-function render(data) {
+// ── render: signals ──
+function renderSignals(data) {
   ALL = data.signals || [];
-  document.getElementById("updated").textContent =
-    "อัปเดตล่าสุด: " + (data.generated_at || "-");
-
+  document.getElementById("updated").textContent = "อัปเดต: " + (data.generated_at || "-");
   const s = data.summary || {};
-  document.getElementById("s-strong").textContent = s.strong_buy ?? 0;
-  document.getElementById("s-buy").textContent = s.buy ?? 0;
-  document.getElementById("s-watch").textContent = s.watch ?? 0;
-  document.getElementById("s-avoid").textContent = s.avoid ?? 0;
-
-  draw();
+  countUp("s-strong", s.strong_buy ?? 0);
+  countUp("s-buy", s.buy ?? 0);
+  countUp("s-watch", s.watch ?? 0);
+  countUp("s-avoid", s.avoid ?? 0);
+  drawCards();
 }
 
-function draw() {
-  const wrap = document.getElementById("cards");
+function drawCards() {
   let list = ALL.filter((x) =>
     (activeFilter === "ALL" || x.signal === activeFilter) &&
-    (x.name.toLowerCase().includes(searchTerm) ||
-     x.ticker.toLowerCase().includes(searchTerm))
-  );
+    (x.name.toLowerCase().includes(searchTerm) || x.ticker.toLowerCase().includes(searchTerm)));
+
+  list.sort((a, b) => {
+    if (sortBy === "change") return b.change_pct - a.change_pct;
+    if (sortBy === "name") return a.name.localeCompare(b.name, "th");
+    return b.score - a.score;
+  });
 
   document.getElementById("empty").classList.toggle("hidden", list.length > 0);
-  wrap.innerHTML = list.map(cardHTML).join("");
-
-  document.querySelectorAll(".card").forEach((el) => {
-    el.addEventListener("click", () => openModal(el.dataset.ticker));
-  });
+  const wrap = document.getElementById("cards");
+  wrap.innerHTML = list.map((x, i) => cardHTML(x, i)).join("");
+  wrap.querySelectorAll(".card").forEach((el) =>
+    el.addEventListener("click", () => openModal(el.dataset.ticker)));
 }
 
-function cardHTML(x) {
-  const cls = SIG_CLASS[x.signal] || "watch";
+function cardHTML(x, i) {
+  const cls = SIG_CLASS[x.signal] || "s-watch";
   const up = x.change_pct >= 0;
   return `
-  <div class="card" data-ticker="${x.ticker}">
+  <div class="card ${cls}" data-ticker="${x.ticker}" style="animation-delay:${Math.min(i * 35, 400)}ms">
     <div class="card-top">
-      <div>
-        <div class="name">${x.name}</div>
-        <div class="ticker">${x.ticker}</div>
-      </div>
+      <div><div class="name">${x.name}</div><div class="ticker">${x.ticker}</div></div>
       <span class="badge ${cls}">${x.signal}</span>
     </div>
-    <div class="price-row">
-      <span class="price">${fmt(x.price)}</span>
-      <span class="change ${up ? "up" : "down"}">${up ? "▲" : "▼"} ${Math.abs(x.change_pct).toFixed(2)}%</span>
+    <div class="card-mid">
+      <div class="price-block">
+        <span class="price">${fmt(x.price)}</span>
+        <span class="change ${up ? "up" : "down"}">${up ? "▲" : "▼"} ${Math.abs(x.change_pct).toFixed(2)}%</span>
+      </div>
+      <div class="spark">${sparkline(x.history, 124, 42)}</div>
     </div>
-    <div class="score-wrap">
-      <div class="score-head"><span>คะแนนสัญญาณ</span><b>${x.score}/100</b></div>
-      <div class="score-bar"><div class="score-fill" style="width:${x.score}%;background:${SCORE_COLOR(x.score)}"></div></div>
-    </div>
-    <div class="metrics">
-      <div class="metric"><div class="m-lbl">RSI</div><div class="m-val">${x.rsi}</div></div>
-      <div class="metric"><div class="m-lbl">เทรนด์</div><div class="m-val">${trendIcon(x.trend)}</div></div>
-      <div class="metric"><div class="m-lbl">วอลุ่ม</div><div class="m-val">${x.volume_ratio}x</div></div>
+    <div class="gauge-row">
+      ${gauge(x.score, 58)}
+      <div class="mini-metrics">
+        <div class="mm"><div class="mm-l">RSI</div><div class="mm-v">${x.rsi}</div></div>
+        <div class="mm"><div class="mm-l">เทรนด์</div><div class="mm-v">${trendIcon(x.trend)}</div></div>
+        <div class="mm"><div class="mm-l">วอลุ่ม</div><div class="mm-v">${x.volume_ratio}x</div></div>
+      </div>
     </div>
   </div>`;
 }
 
-function trendIcon(t) {
-  if (t === "UP") return "📈";
-  if (t === "UP-WEAK") return "↗";
-  if (t === "DOWN") return "📉";
-  return "→";
+// ── SVG: sparkline area chart ──
+function sparkline(values, w = 120, h = 36, forceColor) {
+  if (!values || values.length < 2) return `<svg width="${w}" height="${h}"></svg>`;
+  const min = Math.min(...values), max = Math.max(...values), range = (max - min) || 1;
+  const pts = values.map((v, i) => [
+    (i / (values.length - 1)) * w,
+    h - 4 - ((v - min) / range) * (h - 8),
+  ]);
+  const line = pts.map((p, i) => (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" ");
+  const area = `${line} L ${w} ${h} L 0 ${h} Z`;
+  const up = values[values.length - 1] >= values[0];
+  const color = forceColor || (up ? "#00e676" : "#ff5a5a");
+  const id = "sg" + (gid++);
+  return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+    <defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="${color}" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="${color}" stop-opacity="0"/>
+    </linearGradient></defs>
+    <path d="${area}" fill="url(#${id})"/>
+    <path d="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="${pts[pts.length - 1][0].toFixed(1)}" cy="${pts[pts.length - 1][1].toFixed(1)}" r="2.6" fill="${color}"/>
+  </svg>`;
 }
 
+// ── SVG: circular score gauge ──
+function gauge(score, size = 56) {
+  const sw = 5, r = size / 2 - sw, c = 2 * Math.PI * r, off = c * (1 - score / 100);
+  const col = scoreColor(score);
+  return `<svg class="gauge" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+    <circle cx="${size / 2}" cy="${size / 2}" r="${r}" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="${sw}"/>
+    <circle cx="${size / 2}" cy="${size / 2}" r="${r}" fill="none" stroke="${col}" stroke-width="${sw}"
+      stroke-linecap="round" stroke-dasharray="${c.toFixed(1)}" stroke-dashoffset="${off.toFixed(1)}"
+      transform="rotate(-90 ${size / 2} ${size / 2})" style="transition:stroke-dashoffset .9s cubic-bezier(.2,.8,.2,1)"/>
+    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central"
+      font-family="Inter, sans-serif" font-weight="800" font-size="${size * 0.3}" fill="${col}">${score}</text>
+  </svg>`;
+}
+
+function trendIcon(t) {
+  return { "UP": "📈", "UP-WEAK": "↗", "DOWN": "📉", "SIDEWAYS": "→" }[t] || "→";
+}
 function fmt(n) {
   return Number(n).toLocaleString("th-TH", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
-function backtestSection(ticker) {
-  const b = BT[ticker];
-  if (!b || !b.trades) return "";
-  const wr = b.win_rate;
-  const wrColor = wr >= 55 ? "var(--green)" : wr >= 45 ? "var(--amber)" : "var(--red)";
-  const totColor = b.total_return >= 0 ? "var(--green)" : "var(--red)";
-  return `
-    <div class="md-section">
-      <h3>ผลทดสอบย้อนหลัง (Backtest)</h3>
-      <div class="md-row"><span>จำนวนเทรด</span><span>${b.trades} ครั้ง</span></div>
-      <div class="md-row"><span>อัตราชนะ</span><span style="color:${wrColor}">${wr}%</span></div>
-      <div class="md-row"><span>กำไรเฉลี่ย/เทรด</span><span>${b.avg_return}%</span></div>
-      <div class="md-row"><span>ผลตอบแทนสะสม</span><span style="color:${totColor}">${b.total_return}%</span></div>
-      <div class="md-row"><span>ดี/แย่สุด</span><span>${b.best}% / ${b.worst}%</span></div>
-      <div class="md-row"><span>ถือเฉลี่ย</span><span>${b.avg_hold} วัน</span></div>
-      <p class="bt-disclaimer">อิงข้อมูลในอดีต ไม่การันตีผลในอนาคต และยังไม่หักค่าคอมมิชชั่น/ภาษี</p>
-    </div>`;
+// ── count-up animation ──
+function countUp(id, target) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const start = performance.now(), dur = 700, from = 0;
+  const step = (now) => {
+    const p = Math.min((now - start) / dur, 1);
+    el.textContent = Math.round(from + (target - from) * (1 - Math.pow(1 - p, 3)));
+    if (p < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
 }
 
+// ── render: backtest ──
+function renderBacktest(data) {
+  (data.results || []).forEach((r) => (BT[r.ticker] = r));
+  const o = data.overall || {};
+  document.getElementById("bt-overview").innerHTML = `
+    <div class="bt-stat"><div class="v">${o.stocks_tested ?? 0}</div><div class="l">หุ้นที่ทดสอบ</div></div>
+    <div class="bt-stat"><div class="v">${o.total_trades ?? 0}</div><div class="l">เทรดทั้งหมด</div></div>
+    <div class="bt-stat"><div class="v ${(o.overall_win_rate ?? 0) >= 50 ? "good" : "bad"}">${o.overall_win_rate ?? 0}%</div><div class="l">อัตราชนะรวม</div></div>
+    <div class="bt-stat"><div class="v ${(o.avg_return_per_trade ?? 0) >= 0 ? "good" : "bad"}">${o.avg_return_per_trade ?? 0}%</div><div class="l">กำไรเฉลี่ย/เทรด</div></div>`;
+  document.getElementById("bt-config").textContent =
+    `ช่วง ${data.period} · เข้าที่คะแนน ≥ ${data.entry_score} · เป้า +${data.target_pct}% · ตัดขาดทุน -${data.stop_loss_pct}%`;
+
+  const rows = (data.results || []).map((r) => {
+    const tot = r.total_return >= 0 ? "good" : "bad";
+    return `<div class="bt-row">
+      <div class="bt-name"><b>${r.name}</b><small>${r.ticker}</small></div>
+      <div class="bt-bar-wrap"><div class="bt-bar"><i style="width:${Math.min(r.win_rate, 100)}%"></i></div><span>${r.win_rate}%</span></div>
+      <div class="bt-total ${tot}">${r.total_return >= 0 ? "+" : ""}${r.total_return}%</div>
+      <div class="bt-trades">${r.trades} เทรด</div>
+    </div>`;
+  }).join("");
+  document.getElementById("bt-list").innerHTML = rows;
+}
+
+// ── modal ──
 function openModal(ticker) {
   const x = ALL.find((s) => s.ticker === ticker);
   if (!x) return;
-  const cls = SIG_CLASS[x.signal] || "watch";
+  const cls = SIG_CLASS[x.signal] || "s-watch";
   const reasons = (x.reasons || []).map((r) => `<li>${r}</li>`).join("");
   const warns = (x.warnings || []).map((w) => `<li>${w}</li>`).join("");
 
   document.getElementById("modal-content").innerHTML = `
-    <div class="md-head">
-      <h2>${x.name}</h2>
-      <span class="badge ${cls}">${x.signal}</span>
-    </div>
-    <div class="price-row">
-      <span class="price">${fmt(x.price)}</span>
-      <span class="change ${x.change_pct >= 0 ? "up" : "down"}">${x.change_pct >= 0 ? "▲" : "▼"} ${Math.abs(x.change_pct).toFixed(2)}%</span>
-    </div>
+    <div class="md-head"><h2>${x.name}</h2><span class="badge ${cls}">${x.signal}</span></div>
+    <div class="md-sub">${x.ticker} · ${fmt(x.price)} บาท
+      <span class="change ${x.change_pct >= 0 ? "up" : "down"}">${x.change_pct >= 0 ? "▲" : "▼"} ${Math.abs(x.change_pct).toFixed(2)}%</span></div>
 
-    <div class="md-section">
-      <h3>จุดเข้า / จุดออก (ประเมินคร่าวๆ)</h3>
+    <div class="md-chart">${sparkline(x.history, 510, 110)}</div>
+
+    <div class="md-section"><h3>จุดเข้า / จุดออก (ประเมินคร่าวๆ)</h3>
       <div class="levels">
-        <div class="level"><div class="lv-lbl">จุดเข้า ~</div><div class="lv-val">${fmt(x.entry)}</div></div>
-        <div class="level sl"><div class="lv-lbl">ตัดขาดทุน</div><div class="lv-val">${fmt(x.stop_loss)}</div></div>
-        <div class="level tp"><div class="lv-lbl">เป้า 1 / 2</div><div class="lv-val">${fmt(x.target1)}<br><small>${fmt(x.target2)}</small></div></div>
-      </div>
-    </div>
+        <div class="level"><div class="lv-l">จุดเข้า ~</div><div class="lv-v">${fmt(x.entry)}</div></div>
+        <div class="level sl"><div class="lv-l">ตัดขาดทุน</div><div class="lv-v">${fmt(x.stop_loss)}</div></div>
+        <div class="level tp"><div class="lv-l">เป้า 1 / 2</div><div class="lv-v">${fmt(x.target1)}<br><small style="font-size:12px">${fmt(x.target2)}</small></div></div>
+      </div></div>
 
-    <div class="md-section">
-      <h3>ตัวชี้วัด</h3>
-      <div class="md-row"><span>คะแนนรวม</span><span>${x.score}/100</span></div>
+    <div class="md-section"><h3>ตัวชี้วัด</h3>
+      <div class="md-row"><span>คะแนนสัญญาณ</span><span style="color:${scoreColor(x.score)}">${x.score}/100</span></div>
       <div class="md-row"><span>RSI (14)</span><span>${x.rsi}</span></div>
       <div class="md-row"><span>MACD Histogram</span><span>${x.macd_hist}</span></div>
-      <div class="md-row"><span>เทรนด์ (EMA20/50)</span><span>${x.trend}</span></div>
+      <div class="md-row"><span>เทรนด์ (EMA20/50)</span><span>${trendIcon(x.trend)} ${x.trend}</span></div>
       <div class="md-row"><span>วอลุ่ม vs เฉลี่ย</span><span>${x.volume_ratio}x</span></div>
       <div class="md-row"><span>โมเมนตัม 5 วัน</span><span>${x.momentum_5d}%</span></div>
     </div>
 
     ${reasons ? `<div class="md-section"><h3>เหตุผลเชิงบวก</h3><ul class="reason-list">${reasons}</ul></div>` : ""}
     ${warns ? `<div class="md-section"><h3>ข้อควรระวัง</h3><ul class="reason-list warn-list">${warns}</ul></div>` : ""}
-    ${backtestSection(x.ticker)}
-  `;
+    ${backtestSection(x.ticker)}`;
   document.getElementById("modal").classList.remove("hidden");
 }
 
-// ── event listeners ──
+function backtestSection(ticker) {
+  const b = BT[ticker];
+  if (!b || !b.trades) return "";
+  const wrC = b.win_rate >= 55 ? "#00e676" : b.win_rate >= 45 ? "#ffc24b" : "#ff5a5a";
+  const totC = b.total_return >= 0 ? "#00e676" : "#ff5a5a";
+  return `<div class="md-section"><h3>ผลทดสอบย้อนหลัง (Backtest)</h3>
+    <div class="md-row"><span>จำนวนเทรด</span><span>${b.trades} ครั้ง</span></div>
+    <div class="md-row"><span>อัตราชนะ</span><span style="color:${wrC}">${b.win_rate}%</span></div>
+    <div class="md-row"><span>กำไรเฉลี่ย/เทรด</span><span>${b.avg_return}%</span></div>
+    <div class="md-row"><span>ผลตอบแทนสะสม</span><span style="color:${totC}">${b.total_return}%</span></div>
+    <div class="md-row"><span>ดี/แย่สุด</span><span>${b.best}% / ${b.worst}%</span></div>
+    <p class="bt-disclaimer">อิงข้อมูลในอดีต ไม่การันตีอนาคต และยังไม่หักค่าคอมมิชชั่น/ภาษี</p></div>`;
+}
+
+// ── tabs ──
+function switchView(view) {
+  document.querySelectorAll(".view").forEach((v) => v.classList.add("hidden"));
+  document.getElementById("view-" + view).classList.remove("hidden");
+  const tabs = [...document.querySelectorAll(".tab")];
+  tabs.forEach((t) => t.classList.toggle("active", t.dataset.view === view));
+  moveGlider(tabs.find((t) => t.dataset.view === view));
+}
+function moveGlider(tab) {
+  const g = document.getElementById("glider");
+  if (!tab || !g) return;
+  g.style.width = tab.offsetWidth + "px";
+  g.style.transform = `translateX(${tab.offsetLeft - 5}px)`;
+}
+
+// ── events ──
+document.getElementById("tabs").addEventListener("click", (e) => {
+  const tab = e.target.closest(".tab");
+  if (tab) switchView(tab.dataset.view);
+});
 document.getElementById("filters").addEventListener("click", (e) => {
   if (!e.target.classList.contains("chip")) return;
   document.querySelectorAll(".chip").forEach((c) => c.classList.remove("active"));
   e.target.classList.add("active");
   activeFilter = e.target.dataset.filter;
-  draw();
+  drawCards();
 });
+document.querySelectorAll(".tile").forEach((t) => t.addEventListener("click", () => {
+  const f = t.dataset.filter;
+  document.querySelectorAll(".chip").forEach((c) => c.classList.toggle("active", c.dataset.filter === f));
+  activeFilter = f;
+  drawCards();
+}));
 document.getElementById("search").addEventListener("input", (e) => {
   searchTerm = e.target.value.toLowerCase().trim();
-  draw();
+  drawCards();
 });
+document.getElementById("sort").addEventListener("change", (e) => { sortBy = e.target.value; drawCards(); });
 document.getElementById("modal-close").addEventListener("click", () =>
   document.getElementById("modal").classList.add("hidden"));
 document.getElementById("modal").addEventListener("click", (e) => {
   if (e.target.id === "modal") document.getElementById("modal").classList.add("hidden");
 });
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") document.getElementById("modal").classList.add("hidden");
+});
+window.addEventListener("resize", () => moveGlider(document.querySelector(".tab.active")));
 
+// init
+moveGlider(document.querySelector(".tab.active"));
 load();

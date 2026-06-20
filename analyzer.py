@@ -234,6 +234,9 @@ def analyze_one(ticker: str, name: str) -> dict | None:
     if stop_loss >= price:
         stop_loss = pct_stop
 
+    # ราคาย้อนหลังสำหรับวาดกราฟ sparkline บนหน้าเว็บ (40 วันล่าสุด)
+    history = [round(float(c), 2) for c in df["Close"].tail(40).tolist()]
+
     return {
         "ticker": ticker,
         "name": name,
@@ -250,6 +253,7 @@ def analyze_one(ticker: str, name: str) -> dict | None:
         "stop_loss": round(stop_loss, 2),
         "target1": round(price * (1 + config.TARGET1_PCT), 2),
         "target2": round(price * (1 + config.TARGET2_PCT), 2),
+        "history": history,
         "reasons": reasons,
         "warnings": warnings,
     }
