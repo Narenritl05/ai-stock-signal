@@ -45,6 +45,7 @@
 
     <!-- ── VIEW: Signals ── -->
     <section id="view-signals" class="view">
+      <div id="regime-banner" class="regime-banner hidden"></div>
       <div class="hero-stats">
         <div class="tile strong" data-filter="STRONG BUY">
           <div class="tile-ic">🟢</div>
@@ -95,6 +96,15 @@
 
     <!-- ── VIEW: Backtest ── -->
     <section id="view-backtest" class="view hidden">
+      <div class="bt-head-row">
+        <h2 class="section-title">📈 ผลเทรดจริง (Paper Trading)</h2>
+        <span class="section-note">สัญญาณจริงที่ระบบเคยส่ง วัด hit-rate จริง · หักต้นทุนแล้ว</span>
+      </div>
+      <div id="live-perf" class="live-perf"></div>
+
+      <div class="bt-head-row" style="margin-top:30px">
+        <h2 class="section-title">🧪 ผลทดสอบย้อนหลังรวม (Backtest)</h2>
+      </div>
       <div id="bt-overview" class="bt-overview"></div>
       <div class="bt-head-row">
         <h2 class="section-title">ผลทดสอบย้อนหลังรายตัว</h2>

@@ -38,6 +38,21 @@ GitHub Actions (ตั้งเวลา)  ──►  run.py
 
 ---
 
+## 🛡️ ฟีเจอร์ "เกราะป้องกัน" (Risk Management & Reliability)
+
+ระบบนี้เน้น **ลดโอกาสขาดทุนและรู้ตัวเร็ว** ไม่ใช่แค่หาหุ้นเก่ง:
+
+- 🔕 **กันสแปม** — แจ้งเฉพาะสัญญาณ *ใหม่ / ยกระดับ / หลุด (ควรขาย)* ไม่แจ้งซ้ำตัวเดิมทุกวัน ([`state.py`](state.py))
+- 💓 **Heartbeat & แจ้งเตือนเมื่อระบบล่ม** — ถ้า yfinance/workflow มีปัญหา จะส่ง Telegram เตือนทันที
+- 🧭 **ตัวกรองภาวะตลาด (Market Regime)** — วัด breadth ของตลาด ถ้าเป็นขาลงจะแจ้งเฉพาะสัญญาณแข็งแรงมาก ไม่สวนกระแส ([`market.py`](market.py))
+- 💼 **คำนวณขนาดไม้ (Position Sizing)** — บอกจำนวนหุ้นที่ควรซื้อ โดยเสี่ยงไม่เกิน 2% ของพอร์ตต่อไม้
+- 📈 **วัดผลจริง (Paper Trading)** — บันทึกทุกสัญญาณแล้วติดตามจริง คำนวณ hit-rate จริง (ต่างจาก backtest ที่เป็นอดีต) ([`tracker.py`](tracker.py))
+- 🧪 **Backtest สมจริง** — หักค่าคอม+VAT+slippage แล้ว พร้อมเตือนเรื่อง survivorship bias
+
+> ปรับค่าความเสี่ยง/ต้นทุน/ขนาดพอร์ตได้ใน [`config.py`](config.py) (`RISK_PER_TRADE_PCT`, `COST_ROUNDTRIP_PCT`, `ACCOUNT_SIZE`)
+
+---
+
 ## 🚀 วิธีติดตั้ง (ทำครั้งเดียว ~15 นาที)
 
 ### ขั้นที่ 1 — สร้าง Telegram Bot (รับการแจ้งเตือน)
@@ -141,19 +156,26 @@ Yahoo Finance ดึงข้อมูลฟรี, Telegram bot ฟรี
 
 ```
 ai-stock-signal/
-├── config.py              # รายการหุ้น SET50 + เกณฑ์ (แก้ตรงนี้)
+├── config.py              # รายการหุ้น SET50 + เกณฑ์ + ความเสี่ยง (แก้ตรงนี้)
 ├── analyzer.py            # เครื่องวิเคราะห์ technical
+├── market.py              # ตัวกรองภาวะตลาด + คำนวณขนาดไม้
+├── state.py               # จำสถานะรอบก่อน (กันสแปม)
+├── tracker.py             # วัดผลจริง (paper trading)
 ├── backtest.py            # ทดสอบย้อนหลัง
 ├── notifier.py            # ส่ง Telegram
 ├── run.py                 # เริ่มทำงาน (วิเคราะห์รายวัน)
 ├── requirements.txt
+├── state/                 # state ภายใน (อัปเดตอัตโนมัติ)
+│   ├── alert_state.json   # สัญญาณรอบก่อน (กันแจ้งซ้ำ)
+│   └── signal_log.json    # บันทึก paper trade
 ├── docs/                  # เว็บ dashboard (GitHub Pages)
 │   ├── index.html
 │   ├── style.css
 │   ├── app.js
 │   └── data/
-│       ├── signals.json   # ผลวิเคราะห์ (อัปเดตอัตโนมัติทุกวัน)
-│       └── backtest.json  # ผลทดสอบย้อนหลัง (อัปเดตทุกสัปดาห์)
+│       ├── signals.json      # ผลวิเคราะห์ (อัปเดตทุกวัน)
+│       ├── backtest.json     # ผลทดสอบย้อนหลัง (อัปเดตทุกสัปดาห์)
+│       └── performance.json  # ผลเทรดจริง (อัปเดตทุกวัน)
 └── .github/workflows/
     ├── analyze.yml        # ตั้งเวลาวิเคราะห์รายวัน
     └── backtest.yml       # ตั้งเวลา backtest รายสัปดาห์

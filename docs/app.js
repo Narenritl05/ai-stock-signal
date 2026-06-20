@@ -6,6 +6,7 @@ const scoreColor = (s) => (s >= 75 ? "#00e676" : s >= 60 ? "#00c853" : s >= 45 ?
 
 let ALL = [];
 let BT = {};
+let META = {}; // account size, risk %
 let activeFilter = "ALL";
 let searchTerm = "";
 let sortBy = "score";
@@ -23,6 +24,15 @@ async function load() {
       `<div class="empty">ยังไม่มีข้อมูล — รัน <code>python run.py</code> หรือรอ GitHub Actions ทำงานครั้งแรก<br><small>(${e.message})</small></div>`;
   }
   loadBacktest();
+  loadPerformance();
+}
+
+async function loadPerformance() {
+  try {
+    const res = await fetch("data/performance.json?_=" + Date.now());
+    if (!res.ok) return;
+    renderPerformance(await res.json());
+  } catch (e) { /* ยังไม่มีผลจริง ก็ข้ามไป */ }
 }
 
 async function loadBacktest() {
@@ -36,7 +46,9 @@ async function loadBacktest() {
 // ── render: signals ──
 function renderSignals(data) {
   ALL = data.signals || [];
+  META = { account: data.account_size, risk: data.risk_per_trade_pct };
   document.getElementById("updated").textContent = "อัปเดต: " + (data.generated_at || "-");
+  renderRegime(data.regime);
   const s = data.summary || {};
   countUp("s-strong", s.strong_buy ?? 0);
   countUp("s-buy", s.buy ?? 0);
@@ -172,6 +184,60 @@ function renderBacktest(data) {
   document.getElementById("bt-list").innerHTML = rows;
 }
 
+// ── render: market regime banner ──
+function renderRegime(r) {
+  const el = document.getElementById("regime-banner");
+  if (!el) return;
+  if (!r) { el.classList.add("hidden"); return; }
+  const map = { BULL: ["bull", "🟢"], NEUTRAL: ["neutral", "🟡"], BEAR: ["bear", "🔴"], UNKNOWN: ["neutral", "⚪"] };
+  const [cls, emo] = map[r.regime] || map.UNKNOWN;
+  el.className = "regime-banner " + cls;
+  el.innerHTML = `<span class="rg-emo">${emo}</span>
+    <div><b>ภาวะตลาด: ${r.label}</b>
+    <small>breadth ${r.breadth}% ของหุ้นยืนเหนือ EMA20 (${r.uptrend}/${r.stocks} ตัว)${r.regime === "BEAR" ? " · ระบบจะแจ้งเฉพาะสัญญาณแข็งแรงมาก" : ""}</small></div>`;
+  const pill = document.getElementById("market-status");
+  if (pill) pill.textContent = "SET · " + r.regime;
+}
+
+// ── render: live paper-trading performance ──
+function renderPerformance(p) {
+  const el = document.getElementById("live-perf");
+  if (!el) return;
+  const s = p.summary || {};
+  if (!s.closed && !s.open) {
+    el.innerHTML = `<div class="lp-empty">ยังไม่มีสัญญาณที่บันทึก — ระบบจะเริ่มเก็บสถิติจริงหลังรันครั้งแรก<br><small>ยิ่งใช้นานยิ่งรู้ว่าระบบแม่นจริงแค่ไหน</small></div>`;
+    return;
+  }
+  const wrCls = s.win_rate >= 50 ? "good" : "bad";
+  el.innerHTML = `
+    <div class="bt-overview">
+      <div class="bt-stat"><div class="v">${s.closed}</div><div class="l">ปิดแล้ว (ไม้)</div></div>
+      <div class="bt-stat"><div class="v ${wrCls}">${s.win_rate}%</div><div class="l">อัตราชนะจริง</div></div>
+      <div class="bt-stat"><div class="v ${s.avg_return >= 0 ? "good" : "bad"}">${s.avg_return}%</div><div class="l">กำไรเฉลี่ย/ไม้</div></div>
+      <div class="bt-stat"><div class="v">${s.open}</div><div class="l">กำลังถือ</div></div>
+    </div>
+    <div class="lp-breakdown">ปิดด้วย: 🎯 ชนเป้า <b>${s.by_target}</b> · 🛑 ตัดขาดทุน <b>${s.by_stop}</b> · ⏱ ครบเวลา <b>${s.by_time}</b></div>
+    ${posList("กำลังถือ", p.open_positions, false)}
+    ${posList("ปิดล่าสุด", p.closed_positions, true)}`;
+}
+
+function reasonIcon(r) { return { target: "🎯", stop: "🛑", time: "⏱" }[r] || "•"; }
+
+function posList(title, list, closed) {
+  if (!list || !list.length) return "";
+  const rows = list.slice(0, 10).map((p) => {
+    if (closed) {
+      const c = p.return_pct >= 0 ? "up" : "down";
+      return `<div class="lp-row"><span class="lp-n">${reasonIcon(p.reason)} ${p.name}<small>${p.ticker}</small></span>
+        <span class="lp-muted">${fmt(p.entry)} → ${fmt(p.exit)}</span>
+        <span class="change ${c}">${p.return_pct >= 0 ? "+" : ""}${p.return_pct}%</span></div>`;
+    }
+    return `<div class="lp-row"><span class="lp-n">${p.name}<small>${p.ticker}</small></span>
+      <span class="lp-muted">เข้า ${fmt(p.entry)}</span><span class="lp-muted">ถือ ${p.days} วัน</span></div>`;
+  }).join("");
+  return `<h3 class="lp-h">${title} (${list.length})</h3><div class="lp-rows">${rows}</div>`;
+}
+
 // ── modal ──
 function openModal(ticker) {
   const x = ALL.find((s) => s.ticker === ticker);
@@ -193,6 +259,11 @@ function openModal(ticker) {
         <div class="level sl"><div class="lv-l">ตัดขาดทุน</div><div class="lv-v">${fmt(x.stop_loss)}</div></div>
         <div class="level tp"><div class="lv-l">เป้า 1 / 2</div><div class="lv-v">${fmt(x.target1)}<br><small style="font-size:12px">${fmt(x.target2)}</small></div></div>
       </div></div>
+
+    ${x.pos_shares ? `<div class="md-section"><h3>ขนาดไม้แนะนำ (เสี่ยง ${META.risk ?? 2}% ของพอร์ต ${(META.account ?? 100000).toLocaleString("th-TH")}฿)</h3>
+      <div class="md-row"><span>จำนวนหุ้น</span><span>${x.pos_shares.toLocaleString("th-TH")} หุ้น</span></div>
+      <div class="md-row"><span>มูลค่าโดยประมาณ</span><span>${fmt(x.pos_value)} บาท</span></div>
+      <div class="md-row"><span>ขาดทุนสูงสุดถ้าโดน stop</span><span style="color:var(--red)">~${fmt((META.account ?? 100000) * (META.risk ?? 2) / 100)} บาท</span></div></div>` : ""}
 
     <div class="md-section"><h3>ตัวชี้วัด</h3>
       <div class="md-row"><span>คะแนนสัญญาณ</span><span style="color:${scoreColor(x.score)}">${x.score}/100</span></div>

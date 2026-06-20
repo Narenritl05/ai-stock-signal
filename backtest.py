@@ -92,7 +92,8 @@ def backtest_one(ticker: str, name: str) -> dict | None:
             if exit_price is None:            # ถือครบเวลา
                 exit_idx = min(i + max_hold, n - 1)
                 exit_price, reason = close[exit_idx], "time"
-            ret = (exit_price - entry) / entry * 100
+            # หักต้นทุนไป-กลับ (ค่าคอม+VAT+slippage) ให้สมจริง
+            ret = (exit_price - entry) / entry * 100 - config.COST_ROUNDTRIP_PCT * 100
             trades.append({"ret": ret, "reason": reason, "hold": exit_idx - i})
             i = exit_idx + 1                  # เข้าใหม่หลังปิดโพซิชั่นเดิม
         else:
@@ -160,6 +161,8 @@ def run_backtest(watchlist: dict | None = None) -> dict:
         "max_hold_days": config.BACKTEST_MAX_HOLD,
         "stop_loss_pct": config.STOP_LOSS_PCT * 100,
         "target_pct": config.TARGET1_PCT * 100,
+        "cost_roundtrip_pct": config.COST_ROUNDTRIP_PCT * 100,
+        "caveat": "หักต้นทุนไป-กลับแล้ว · ทดสอบบนหุ้นในลิสต์ปัจจุบัน (มี survivorship bias) · อดีตไม่การันตีอนาคต",
         "overall": overall,
         "results": results,
     }

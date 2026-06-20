@@ -37,11 +37,11 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python run.py
 
-      - name: Commit updated signals
+      - name: Commit updated signals + state
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/signals.json
+          git add docs/data/signals.json docs/data/performance.json state/
           if git diff --staged --quiet; then
             echo "ไม่มีการเปลี่ยนแปลง — ข้ามการ commit"
           else
