@@ -1,0 +1,10 @@
+# ── ตั้งค่า Telegram ──
+# 1) คัดลอกไฟล์นี้เป็นชื่อ  telegram.txt  (ตัดคำว่า .example ออก)
+# 2) ใส่ค่าของคุณแทนตัวอย่างด้านล่าง (ห้ามมีเครื่องหมายคำพูด)
+# หรือใช้ตัวช่วย: ดับเบิลคลิก  ตั้งค่าTelegram.bat  แล้วทำตามขั้นตอน
+#
+# BOT_TOKEN ได้จาก @BotFather (พิมพ์ /newbot)
+# CHAT_ID   ได้จาก @userinfobot (กด Start)
+
+BOT_TOKEN=123456789:AAHxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+CHAT_ID=987654321

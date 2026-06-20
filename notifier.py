@@ -131,11 +131,34 @@ def send_failure(error_text: str) -> bool:
     return send_telegram(msg)
 
 
-def send_telegram(message: str) -> bool:
+def _load_credentials() -> tuple[str, str]:
+    """อ่าน token/chat id จาก (1) environment variables ก่อน แล้วค่อย (2) ไฟล์ telegram.txt"""
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
     chat_id = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
+    if token and chat_id:
+        return token, chat_id
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "telegram.txt")
+    try:
+        with open(path, encoding="utf-8-sig") as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                k, v = line.split("=", 1)
+                k, v = k.strip().upper(), v.strip().strip('"').strip("'")
+                if k in ("BOT_TOKEN", "TELEGRAM_BOT_TOKEN") and not token:
+                    token = v
+                elif k in ("CHAT_ID", "TELEGRAM_CHAT_ID") and not chat_id:
+                    chat_id = v
+    except FileNotFoundError:
+        pass
+    return token, chat_id
+
+
+def send_telegram(message: str) -> bool:
+    token, chat_id = _load_credentials()
     if not token or not chat_id:
-        print("  [info] ไม่พบ TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID — ข้ามการส่ง Telegram")
+        print("  [info] ยังไม่ได้ตั้งค่า Telegram (env หรือ telegram.txt) — ข้ามการส่ง")
         return False
 
     try:

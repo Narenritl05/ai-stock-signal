@@ -13,6 +13,9 @@ Thumbs.db
 # runtime news cache (transient, refetched)
 state/news_cache.json
 
+# ความลับ Telegram (ห้ามขึ้น GitHub) — ใช้ telegram.txt.example เป็นต้นแบบ
+telegram.txt
+
 # IDE / editor
 .vscode/
 .idea/
