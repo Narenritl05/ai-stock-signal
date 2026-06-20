@@ -97,6 +97,18 @@ python run.py
 แล้วเปิด `docs/index.html` ด้วยเบราว์เซอร์เพื่อดู dashboard
 (แนะนำเสิร์ฟผ่าน `python -m http.server` ในโฟลเดอร์ `docs/` เพื่อให้ `fetch` ทำงาน)
 
+### ทดสอบย้อนหลัง (Backtest)
+
+```bash
+python backtest.py
+```
+
+จะจำลองว่า "ถ้าเดินตามสัญญาณนี้ในอดีต (2 ปี) ผลจะเป็นยังไง" — รายงานจำนวนเทรด
+อัตราชนะ และกำไรเฉลี่ย/เทรด แล้วบันทึกลง `docs/data/backtest.json` (เว็บจะแสดงให้อัตโนมัติ)
+
+> ⚠️ **ผลในอดีตไม่การันตีอนาคต** และยังไม่หักค่าคอมมิชชั่น/ภาษี/slippage —
+> ใช้ดู "นิสัย" ของกลยุทธ์ ไม่ใช่ผลตอบแทนรับประกัน
+
 ---
 
 ## ⚙️ ปรับแต่ง
@@ -129,17 +141,22 @@ Yahoo Finance ดึงข้อมูลฟรี, Telegram bot ฟรี
 
 ```
 ai-stock-signal/
-├── config.py              # รายการหุ้น + เกณฑ์ (แก้ตรงนี้)
+├── config.py              # รายการหุ้น SET50 + เกณฑ์ (แก้ตรงนี้)
 ├── analyzer.py            # เครื่องวิเคราะห์ technical
+├── backtest.py            # ทดสอบย้อนหลัง
 ├── notifier.py            # ส่ง Telegram
-├── run.py                 # เริ่มทำงาน
+├── run.py                 # เริ่มทำงาน (วิเคราะห์รายวัน)
 ├── requirements.txt
 ├── docs/                  # เว็บ dashboard (GitHub Pages)
 │   ├── index.html
 │   ├── style.css
 │   ├── app.js
-│   └── data/signals.json  # ผลวิเคราะห์ (อัปเดตอัตโนมัติ)
-└── .github/workflows/analyze.yml   # ตั้งเวลารันอัตโนมัติ
+│   └── data/
+│       ├── signals.json   # ผลวิเคราะห์ (อัปเดตอัตโนมัติทุกวัน)
+│       └── backtest.json  # ผลทดสอบย้อนหลัง (อัปเดตทุกสัปดาห์)
+└── .github/workflows/
+    ├── analyze.yml        # ตั้งเวลาวิเคราะห์รายวัน
+    └── backtest.yml       # ตั้งเวลา backtest รายสัปดาห์
 ```
 
 ---
