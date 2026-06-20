@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-06-21 03:28 (เวลาไทย)",
+  "generated_at_iso": "2026-06-21T03:28:28.458532+07:00",
+  "status": "ok",
+  "telegram": "sent",
+  "overall": {
+    "attempted": 269,
+    "received": 266,
+    "failed": 3,
+    "fetch_fail_ratio": 0.011
+  },
+  "markets": [
+    {
+      "key": "th",
+      "name": "หุ้นไทย (SET)",
+      "short": "ไทย",
+      "tag": "TH",
+      "file": "signals.json",
+      "attempted": 134,
+      "received": 132,
+      "failed": 2,
+      "fetch_fail_ratio": 0.015,
+      "summary": {
+        "strong_buy": 17,
+        "buy": 41,
+        "watch": 32,
+        "avoid": 42
+      },
+      "regime": {
+        "regime": "BULL",
+        "breadth": 68.2,
+        "label": "ตลาดขาขึ้น (Risk-on)",
+        "stocks": 132,
+        "uptrend": 90
+      }
+    },
+    {
+      "key": "us",
+      "name": "หุ้นต่างประเทศ (US)",
+      "short": "ต่างประเทศ",
+      "tag": "US",
+      "file": "signals_foreign.json",
+      "attempted": 135,
+      "received": 134,
+      "failed": 1,
+      "fetch_fail_ratio": 0.007,
+      "summary": {
+        "strong_buy": 27,
+        "buy": 27,
+        "watch": 13,
+        "avoid": 67
+      },
+      "regime": {
+        "regime": "NEUTRAL",
+        "breadth": 48.5,
+        "label": "ตลาดไซด์เวย์ — เลือกเฉพาะตัวแข็งแรง",
+        "stocks": 134,
+        "uptrend": 65
+      }
+    }
+  ],
+  "warnings": []
+}
