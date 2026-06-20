@@ -345,6 +345,19 @@ body {
 .warn-list li::before { content: "!"; color: var(--amber); }
 .bt-disclaimer { color: var(--muted); font-size: 11.5px; margin-top: 8px; font-style: italic; }
 
+/* ── News items in modal ── */
+.news-list { display: flex; flex-direction: column; gap: 8px; }
+.news-item {
+  display: block; text-decoration: none; color: var(--text);
+  background: var(--bg-2); border: 1px solid var(--line); border-left: 3px solid var(--green-2);
+  border-radius: 11px; padding: 11px 14px; transition: .15s;
+}
+.news-item:hover { border-color: var(--line-strong); border-left-color: var(--green); background: var(--elevated); transform: translateX(2px); }
+.news-title { font-size: 13.5px; font-weight: 600; line-height: 1.45; }
+.news-meta { font-size: 11.5px; color: var(--muted); margin-top: 4px; }
+.news-empty { color: var(--muted); font-size: 13px; padding: 4px 0; }
+.news-disc { color: var(--muted); font-size: 11.5px; margin-top: 10px; font-style: italic; }
+
 /* ── responsive ── */
 @media (max-width: 720px) {
   .hero-stats, .bt-overview { grid-template-columns: repeat(2, 1fr); }

@@ -10,6 +10,9 @@ env/
 .DS_Store
 Thumbs.db
 
+# runtime news cache (transient, refetched)
+state/news_cache.json
+
 # IDE / editor
 .vscode/
 .idea/

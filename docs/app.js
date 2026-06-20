@@ -270,6 +270,8 @@ function openModal(ticker) {
 
     <div class="md-chart">${sparkline(x.history, 510, 110)}</div>
 
+    ${newsSection(x)}
+
     <div class="md-section"><h3>จุดเข้า / จุดออก (ประเมินคร่าวๆ)</h3>
       <div class="levels">
         <div class="level"><div class="lv-l">จุดเข้า ~</div><div class="lv-v">${fmt(x.entry)}</div></div>
@@ -295,6 +297,27 @@ function openModal(ticker) {
     ${warns ? `<div class="md-section"><h3>ข้อควรระวัง</h3><ul class="reason-list warn-list">${warns}</ul></div>` : ""}
     ${backtestSection(x.ticker)}`;
   document.getElementById("modal").classList.remove("hidden");
+}
+
+function escapeHtml(s) {
+  return (s || "").replace(/[&<>"']/g, (c) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+function newsSection(x) {
+  const items = x.news || [];
+  if (!items.length) {
+    return `<div class="md-section"><h3>📰 ข่าวที่เกี่ยวข้อง</h3>
+      <p class="news-empty">ยังไม่พบข่าวล่าสุดสำหรับหุ้นนี้ (ลองดูอีกครั้งภายหลัง)</p></div>`;
+  }
+  const rows = items.map((n) => `
+    <a class="news-item" href="${escapeHtml(n.link)}" target="_blank" rel="noopener noreferrer">
+      <div class="news-title">${escapeHtml(n.title)}</div>
+      <div class="news-meta">${n.source ? escapeHtml(n.source) + " · " : ""}${escapeHtml(n.published)}</div>
+    </a>`).join("");
+  return `<div class="md-section"><h3>📰 ข่าวที่เกี่ยวข้อง (ทำไมราคาขยับ?)</h3>
+    <div class="news-list">${rows}</div>
+    <p class="news-disc">ข่าวเป็นบริบทประกอบให้คุณวิเคราะห์เอง · ไม่ใช่สาเหตุที่พิสูจน์แล้ว · ที่มา: Google News</p></div>`;
 }
 
 function backtestSection(ticker) {

@@ -21,6 +21,7 @@ from datetime import datetime, timezone, timedelta
 
 import config
 import market
+import news
 import notifier
 import state
 import tracker
@@ -58,6 +59,10 @@ def run_pipeline(notify_no_changes: bool = True) -> None:
     # ภาวะตลาด + ขนาดไม้
     regime = market.assess_regime(signals) if config.REGIME_ENABLED else None
     _attach_position_sizing(signals)
+
+    # ข่าวประกอบ (ทำไมขึ้น/ลง) — มี cache จึงไม่หนักตอนรันลูปทุก 1 นาที
+    if config.NEWS_ENABLED:
+        news.attach_news(signals)
 
     # หาสิ่งที่เปลี่ยนเทียบรอบก่อน (กันสแปม)
     prev = state.load_state()
