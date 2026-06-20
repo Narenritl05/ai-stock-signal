@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-20 17:01 (เวลาไทย)",
-  "generated_at_iso": "2026-06-20T17:01:32.062215+07:00",
+  "generated_at": "2026-06-20 22:27 (เวลาไทย)",
+  "generated_at_iso": "2026-06-20T22:27:17.159966+07:00",
   "market": "SET (ตลาดหลักทรัพย์แห่งประเทศไทย)",
   "count": 49,
   "summary": {
@@ -28,6 +28,9 @@
       "change_pct": -0.53,
       "score": 90,
       "signal": "STRONG BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณแข็งแรงมาก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 55.5,
       "macd_hist": 0.015,
@@ -123,6 +126,9 @@
       "change_pct": -2.04,
       "score": 82,
       "signal": "STRONG BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณแข็งแรงมาก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 62.1,
       "macd_hist": 0.5081,
@@ -218,6 +224,9 @@
       "change_pct": -1.6,
       "score": 82,
       "signal": "STRONG BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณแข็งแรงมาก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 56.7,
       "macd_hist": 0.0668,
@@ -313,6 +322,9 @@
       "change_pct": 0.0,
       "score": 82,
       "signal": "STRONG BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณแข็งแรงมาก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 64.5,
       "macd_hist": 0.1264,
@@ -375,22 +387,22 @@
       "pos_value": 28200.0,
       "news": [
         {
-          "title": "TIDLOR ทยอยซื้อหุ้นคืนสะสม 1.88 ล้านหุ้น มูลค่ารวม 35 ล้านบาท",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9XU3d0SnlyLW8wVExGWXJQOWEyRTZNVFBwRm1adzNWb3lFbmZIdmxUMVp6YTVtai0wXzM0Wlphc01fQ3g2MGM2R2ZRMA?oc=5",
-          "source": "ข่าวหุ้นธุรกิจออนไลน์",
-          "published": "20 ชม.ที่แล้ว"
-        },
-        {
           "title": "TIDLOR รายงานผลการซื้อหุ้นคืนกรณีเพื่อการบริหารทางการเงิน (18 มิ.ย. 2569)",
           "link": "https://news.google.com/rss/articles/CBMi4gVBVV95cUxQN2dSSy0wY1NlazFDQUplcnR4R3lYWEwwMGI2TWZCWkJjcllad2w1UVRsNjFJNTNEZWZlY0U0Y1pvOWhKUXFuRkltdUtjcjB2cWVFZm5sU2FrLXlBSEpRakpyeS1yNTE5NFRWNzROY0o2M2NsRWRNWE1rRkY2VWFVcVZXX25NQ0N1VW80dnluRHZTaTlZSjEzTlZtblF2VlJsZEF4NG11enQzU2Zxdnh5Q1lnTE4zZ0FzeWY0RzdLMUpELWEzcFpnUlcyMDFfUmhzeWtwWGJTYzJYZElGNW9faHRNRlk2VjJwSUU4RldlcHUwcDhiQnBJOTh4Vmd1N3JSQWpjVDFQMmRPenR4ZHNXc1lSb0dvTjlSQ19hdHI4WE1BSFNRTWdIUnUtNzZFeUZlQUoyTm5yU0NNRXhEcXVGZS1La2tJZGhGOV9GSUUtYmlrd1NXWm5HZm5iLTFMejNIUkJOdkFNai1xYlNZeUc2SGdkLTNzWFpDWVNDRllUdUFoR2NlZ2xGeE1GYlJaV1pld2s4N3BrMXVaT3c2VjhlaXgza3UtYXJTZ2h6b1NYdmVKTDZpbnNfb2NCaU9ueWdFcm9RTDlGdUJYaVFFVTl3VVc1dndjSWpUX0xLUDRUajNLTkJMd2hsX0NzcFJJOG4wSVk4Qk5kNGxfWU9LVkRlSmlpUFZIZTM5WVRiU3ZDejdPQWZHLUMyWUJKcGE3R29uQW1ZR2hSM1lsY0l2TjIxYW1ZYVZaQk5HWnpjWFk0NHVOMWh4R1RuZy1fWHJlemV4ajAtNU5rVDJQWGk4eWR6ZVV4QjBNLXJUV3RYbHlKaGJVdHIyNXhONVY5eFNlUndGd3IxTmRLeXNkTmxBQWppdWdFcC1WSF9iTTVlTWg2ME55VlExM2tYRElSS0FENFhtZ0JkVDdiS0VJTE1pRkNObXlZejVLdWlHMGNwZExkejh3clhxNkRTUTNJWGpTbDJoZFE?oc=5",
           "source": "Share2Trade",
+          "published": "2 วันที่แล้ว"
+        },
+        {
+          "title": "TIDLOR ทยอยซื้อหุ้นคืนสะสม 1.88 ล้านหุ้น มูลค่ารวม 35 ล้านบาท",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9XU3d0SnlyLW8wVExGWXJQOWEyRTZNVFBwRm1adzNWb3lFbmZIdmxUMVp6YTVtai0wXzM0Wlphc01fQ3g2MGM2R2ZRMA?oc=5",
+          "source": "ข่าวหุ้นธุรกิจออนไลน์",
           "published": "1 วันที่แล้ว"
         },
         {
           "title": "TIDLOR ทยอยซื้อหุ้นคืนสะสม 1.88 ล้านหุ้น มูลค่ารวม 35 ล้านบาท | ข่าวหุ้นธุรกิจ",
           "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOdVlxX1RlWWNQZVhlUUFhdm05OTZOWnNEYlBzczhOTE1lUlNsdXhFN3pCeF9Oa19oOG5rU01ydVg3YVJHNDU3Vk00VHNFRy1PU3FtbFRCX2JzZE50bzJYbHExdnB3c01HSlMzRFlxaU1tUnUxS3ZjcUZyNkduMU5COA?oc=5",
           "source": "LINE TODAY",
-          "published": "19 ชม.ที่แล้ว"
+          "published": "1 วันที่แล้ว"
         },
         {
           "title": "หุ้น TIDLOR พุ่ง โบรกมองคุณภาพสินทรัพย์ดีขึ้น-ROE ขาขึ้น",
@@ -407,6 +419,9 @@
       "change_pct": 0.27,
       "score": 77,
       "signal": "STRONG BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณแข็งแรงมาก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 64.5,
       "macd_hist": 0.7618,
@@ -487,10 +502,10 @@
           "published": "5 วันที่แล้ว"
         },
         {
-          "title": "BH ผู้ป่วยต่างชาติฟื้น รับสงครามสงบ",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBhUm9iY3dDNTctYWZpb0VONVNuSFJEdDRKRmVkM2pPV2hhQ083X2VDMG00dHM1ZTY0eUM4MkEwaEJmVGM4Q1VZTWhyTmFBc2lENVVCczd3?oc=5",
-          "source": "มิติหุ้น",
-          "published": "5 วันที่แล้ว"
+          "title": "\"คิงส์ฟอร์ด\" คาดหุ้นขึ้นตามตลาดเอเชียเหนือเช้านี้บวก ชู BAFS-BH",
+          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE16Ykhzb2FsUTgtb3NXNG9makVCc1l6bEN1MURvdG44WDZEUExtaHJVRGVQaFJhWmtSdEN0cl9xazl2dFVQcDhrMGR0X2NUUQ?oc=5",
+          "source": "Hoonsmart",
+          "published": "2 วันที่แล้ว"
         }
       ]
     },
@@ -501,6 +516,9 @@
       "change_pct": 3.67,
       "score": 77,
       "signal": "STRONG BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณแข็งแรงมาก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 72.9,
       "macd_hist": 0.0438,
@@ -597,6 +615,9 @@
       "change_pct": -1.37,
       "score": 77,
       "signal": "STRONG BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณแข็งแรงมาก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 63.2,
       "macd_hist": 0.04,
@@ -663,7 +684,7 @@
           "title": "หุ้นไทยวันนี้(18 มิ.ย.) ลบ 2.01 จุด ขาย GULF-DELTA ซื้อ KTB",
           "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1OV0dhbXNYMHk5WmVVZmNKbUl3N2thNWJJelZ6dXFNcUFXUlczbXFiVFBMa05XaVBaMnBlZ0NhaDVaai1Qak5adWM5V1pwWUlyUXY3ZFU0cGlaaW00M0E?oc=5",
           "source": "Thunhoon",
-          "published": "1 วันที่แล้ว"
+          "published": "2 วันที่แล้ว"
         },
         {
           "title": "“กัณฑรา” มอง SET ยังขาขึ้น แนะสะสมหุ้นพื้นฐานดี GULF-KTB-BDMS",
@@ -692,6 +713,9 @@
       "change_pct": 2.51,
       "score": 77,
       "signal": "STRONG BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณแข็งแรงมาก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 70.8,
       "macd_hist": 0.2057,
@@ -788,6 +812,9 @@
       "change_pct": 3.92,
       "score": 77,
       "signal": "STRONG BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณแข็งแรงมาก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 67.3,
       "macd_hist": 0.0416,
@@ -859,7 +886,7 @@
           "title": "SCGP เสริมความพร้อมสู่อนาคต ด้วยนวัตกรรมและความร่วมมือเพื่อบรรจุภัณฑ์ยั่งยืนภายใต้กติกาใหม่ของโลกธุรกิจ",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5mOFlTUlZLbkl0WmI5MUV3T2pMdHJFcnhGanNPVDk4cWV2bzI3bHlKbktkRTEtV19MZ1c0LS1Ibl93TG5ldndyS2w4eXVJa3ZvZDVnWFZB?oc=5",
           "source": "TrueID",
-          "published": "23 ชม.ที่แล้ว"
+          "published": "1 วันที่แล้ว"
         },
         {
           "title": "SCGP กำไร Q1 โตแรง จากธุรกิจในอินโดฯ ฟื้นตัวแกร่ง - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
@@ -871,7 +898,7 @@
           "title": "สรุป SET100 วันนี้ STECON บวกสูงสุด 6.29% | ข่าวหุ้นธุรกิจ",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1QZHFyXzdtdUk2Q0xaZUlnZXVWaWRxSmdTRFdUSUZMSFpCUVhNRmFUdGp4NXJpOFNtRTJkd1hoc2t4ZzBjX3hCcko3UldNQVNwdXZVVjNR?oc=5",
           "source": "LINE TODAY",
-          "published": "23 ชม.ที่แล้ว"
+          "published": "1 วันที่แล้ว"
         }
       ]
     },
@@ -882,6 +909,9 @@
       "change_pct": 0.0,
       "score": 76,
       "signal": "STRONG BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณแข็งแรงมาก",
+      "rec_tone": "buy",
       "trend": "UP-WEAK",
       "rsi": 60.7,
       "macd_hist": 0.0108,
@@ -948,7 +978,7 @@
           "title": "AWC จ่อรับทรัพย์ Q4 BTS - Tomorrowland – IMF หนุน - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
           "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE92cUd5SDBWZkxCalB1ZGlVSlRuNWYxWVMybDF3UHRaMWxfdWxQS0htdjQ2dDNlWTBWdlBwTkQtejBfRDY0RVYxRURxV1JaNVM0WHdZ?oc=5",
           "source": "HoonVision",
-          "published": "3 ชม.ที่แล้ว"
+          "published": "8 ชม.ที่แล้ว"
         },
         {
           "title": "โบรกฯ เตือนระวังหุ้นหลุด SET50 BTS-CBG-CENTEL-SAWAD คาดกรอบ SET วันนี้แตะ 1,600 จุด",
@@ -959,7 +989,7 @@
         {
           "title": "จับตา 4 หุ้นใหญ่หลุด SET50 โบรกฯ เตือนระวังแรงขาย แต่บางตัวพื้นฐานยังแกร่ง อาจเป็นจังหวะสะสม",
           "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjd3NIRjE2LTdTbWVIbWpZUzFGRVhmclRKUXpKZzZ2X2c3NjNmWS1RcmtpRGZVV3FSTUIyRVRQa2FpWEl4M2VSUTU2TlVWMWFKVERhcWZJRURCRnVDaEVjVExWVmdlSm9MWmc?oc=5",
-          "source": "Thairath.co.th",
+          "source": "Thairath",
           "published": "2 วันที่แล้ว"
         },
         {
@@ -977,6 +1007,9 @@
       "change_pct": 3.57,
       "score": 72,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 65.7,
       "macd_hist": 0.1808,
@@ -1045,15 +1078,15 @@
           "published": "2 วันที่แล้ว"
         },
         {
+          "title": "จับตา 4 หุ้นใหญ่หลุด SET50 โบรกฯ เตือนระวังแรงขาย แต่บางตัวพื้นฐานยังแกร่ง อาจเป็นจังหวะสะสม",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjd3NIRjE2LTdTbWVIbWpZUzFGRVhmclRKUXpKZzZ2X2c3NjNmWS1RcmtpRGZVV3FSTUIyRVRQa2FpWEl4M2VSUTU2TlVWMWFKVERhcWZJRURCRnVDaEVjVExWVmdlSm9MWmc?oc=5",
+          "source": "Thairath",
+          "published": "2 วันที่แล้ว"
+        },
+        {
           "title": "9 หุ้นท่องเที่ยวกอดคอร่วง CENTEL รูดนำกลุ่ม 4.17% กังวลยกเลิกฟรีวีซ่าอินเดีย-บิ๊กล็อต THAI กดดัน",
           "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9Rck5fdXBWcTZTTlN0UlVLeWhlUkQxV2F6bFhCSHhmVGpJTEVJQXpBVUVBcERMMGdFQ3FCNjlwV3pubTNZekhqS1ZvZlZJRl9JWUx3Y3NCZjBIU0g3M1h0VndR?oc=5",
           "source": "bangkokbiznews",
-          "published": "18 ชม.ที่แล้ว"
-        },
-        {
-          "title": "จับตา 4 หุ้นใหญ่หลุด SET50 โบรกฯ เตือนระวังแรงขาย แต่บางตัวพื้นฐานยังแกร่ง อาจเป็นจังหวะสะสม",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjd3NIRjE2LTdTbWVIbWpZUzFGRVhmclRKUXpKZzZ2X2c3NjNmWS1RcmtpRGZVV3FSTUIyRVRQa2FpWEl4M2VSUTU2TlVWMWFKVERhcWZJRURCRnVDaEVjVExWVmdlSm9MWmc?oc=5",
-          "source": "Thairath.co.th",
           "published": "2 วันที่แล้ว"
         },
         {
@@ -1071,6 +1104,9 @@
       "change_pct": 0.58,
       "score": 72,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 68.9,
       "macd_hist": 0.1583,
@@ -1136,7 +1172,7 @@
           "title": "KSS เปิดหุ้นได้-เสีย “เอลนีโญ” ชู GULF-GPSC นำทัพ | ข่าวหุ้นธุรกิจ",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1Eb1BUeW5DR25MdndUZmE4cDYyMV96bTVvQlVIbDRoaFQxZ1FVTnMtNWhXVlBlY21kTkdGZ0RWaXhoTUtPTmE4dURZLUQ3N0s1aS1Makdn?oc=5",
           "source": "LINE TODAY",
-          "published": "9 ชม.ที่แล้ว"
+          "published": "15 ชม.ที่แล้ว"
         },
         {
           "title": "รัฐเดินหน้ารื้อค่าไฟ GPSC-BGRIM ยังเด่น - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
@@ -1145,10 +1181,10 @@
           "published": "2 วันที่แล้ว"
         },
         {
-          "title": "GPSC ร่วมขับเคลื่อนนวัตกรรมพลังงานอัจฉริยะ บนเวทีระดับโลก Microsoft AI Tour Bangkok",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9fS2ZLQXFsSnBlOTFkR3YtU1VTc2dUN1U2eFZDeEpuTGJiOEg5OC1QNlJFTGoxQUxwMWVMY2VlVDNuMFN5dmpmeWVUUFM1TzZ5Z1hyQV93?oc=5",
-          "source": "มิติหุ้น",
-          "published": "1 วันที่แล้ว"
+          "title": "เปิดชื่อ 10 หุ้น SET50 ราคาพุ่งแรงประจำเดือน พ.ค. GPSC แชมป์ ทะยานมากสุด 15%",
+          "link": "https://news.google.com/rss/articles/CBMi0gVBVV95cUxOSTNCUDNmUEVZUzdkenpXeGltT3NaZE1rOU44NkJNeDRNMENSekFSWU42S3VEZ1NnT0NwTmQwNElSVDZpc2dRcV9ZSXEyWWNNVnhTUGpwS0V3X1pUbFowNmg2Tk0xNllORTZORjg0VGtfTVlxd3lrSktjZTJ0d0RVcVFEWm9Nb0dfYVhFM0s1TVE0d29RbUJSM3ptZ0tRZWdtYTNCQk5teDVwdHF1TGpZcmRhdEtoWHk1ZGJ3WnNVdjg0Z091VFNvX3l0M1VoR1NNbWVTSEFQbEFYLUxfUGFUVHhGSmFCU3pqUW5mRkVpMVREc1hxaENDTzFZVU4xRl9lMXhiZEZOZGw2U25udnlMUzVtRndyZ2VaeGlUU0tFTS1UNUQtd2tHSUM5OENQdUNOTzkycG1nMjNIWXhpZEU4LTlvLWpyRV9OeE90U1RYcTFMMHBlUktZd0RNbkEwZ3Zvbjk5SUZRQW1iY1MwbkZvRnZ5ZWRvdEZKVUstMFlBZmxTWUhsUWpIQ2FIdksxVEJrRGV1LThMNTU5RHRLQUpNQWN2NDN4cHR1MTZTcFlWUHBhQWhjYTItQ1c4d2xSTGZwSXFMSVZTWW9PaFVmNXJjZXZ2YmdwenlBY2p5RW1ITFlMNnlTTE9rV19vNjRvWWM5bTZtMVdPSTBFQk1DdU1KS1JaWXJtNmIxOWFGT0V5ODl0a3lDVzdnaVpDZk40TkxHYmVkY1FkckJxeF9YM1hzOEhlSVFoc3FHRExKVEZjQzBzZERFYmFhZllLSzR4UGtXZE1hX0MzUEZsMzQwcVBULU1EWmYza2hTSDM3MjlWVHUtbENGUmFEa21sTWFrWmZzXzZ5MEdZSHltcnBWbVJhbWEtQ29JSGNPOGNLb2N0Q2ttaTN0Wk1MMzZ1aldYSDRFOUV1YUhpblFIWVRPbFZZaWxkNVI1U0tYUVVta2ExQjR2dw?oc=5",
+          "source": "Share2Trade",
+          "published": "22/05/2026"
         },
         {
           "title": "2 หุ้นแนะนำ บล.แลนด์ แอนด์ เฮ้าส์",
@@ -1165,6 +1201,9 @@
       "change_pct": 1.27,
       "score": 72,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 67.5,
       "macd_hist": 0.0495,
@@ -1259,6 +1298,9 @@
       "change_pct": -1.27,
       "score": 69,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 62.5,
       "macd_hist": 0.2265,
@@ -1333,16 +1375,16 @@
           "published": "1 วันที่แล้ว"
         },
         {
-          "title": "โลกช็อก เราต้องไม่ช็อก! “ทิสโก้” เตือนศก.โลกเสี่ยงโตช้า แต่ตลาดหุ้นไทยมีอัปไซด์พุ่งต่อได้อีก 10% ชูธีม AI - หุ้นปันผลเด่นนำพอร์ตสู้ศึกใหญ่",
-          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5oSmg3TXhiYTRzOXMyb25raTEzWHNLOHE5dUpnbmdPVVJnS3A3c2g1UGpnRTM5M1NEMF9fUjRtS2stRWVXaUwwenFGUXBhMXk3cHlGUnZKUmYzbGRUQ3FuTzMwTUstbk9fSXgxOEJB?oc=5",
-          "source": "wealthythai.com",
-          "published": "4 วันที่แล้ว"
-        },
-        {
           "title": "“ดาโอ” แนะถือ TISCO ชี้กำไร Q2 โต พ่วงยีลด์เด่น 7% | ข่าวหุ้นธุรกิจ",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBfeUZrajdiR29WSTd0eHB2cV9SZXM1NE13c0tjcDd0SS1OMVBvSWdSbGF1dFJvT1l2N1gwNWotX1BuWXlJSlNGZzhQbDhGa1hVZ0ZmNzlR?oc=5",
           "source": "LINE TODAY",
           "published": "1 วันที่แล้ว"
+        },
+        {
+          "title": "โลกช็อก เราต้องไม่ช็อก! “ทิสโก้” เตือนศก.โลกเสี่ยงโตช้า แต่ตลาดหุ้นไทยมีอัปไซด์พุ่งต่อได้อีก 10% ชูธีม AI - หุ้นปันผลเด่นนำพอร์ตสู้ศึกใหญ่",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBCTmt0T1NxQVZFUVM3NEhiMU9DZ3JrMXFPaTNJZUFqbXllZlZveG9oSUs3ZUFVZTYtNl9LY0pfTzZqR3JnM3lqNFZDUVEzblZ5WTRvRTVqUGgzczlDakZFbS1xSHN6QmFZ?oc=5",
+          "source": "wealthythai.com",
+          "published": "5 วันที่แล้ว"
         }
       ]
     },
@@ -1353,6 +1395,9 @@
       "change_pct": 0.0,
       "score": 68,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP-WEAK",
       "rsi": 51.2,
       "macd_hist": 0.039,
@@ -1448,6 +1493,9 @@
       "change_pct": 1.97,
       "score": 68,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 62.8,
       "macd_hist": -0.1665,
@@ -1542,6 +1590,9 @@
       "change_pct": -1.6,
       "score": 68,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP-WEAK",
       "rsi": 54.2,
       "macd_hist": 0.0103,
@@ -1608,7 +1659,7 @@
           "title": "เงินปันผลและการแบ่งหุ้นของ Labcorp Holdings Inc (LH): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0zdEdxeW5teUxHTUc1Mm1VR3RwaEVQdlF5QmsxdGlQcHhuckQ3bFYwZkF3MFM5Z0kwbmQ2N25ibWtJa3pzV3VfMjB1YTI4Q3hxTlk1ckRqZV9ELVozVVBpLWVOY250anVWQnYyWkZhMUctZHJCVWR1VDh3?oc=5",
           "source": "TradingKey",
-          "published": "2 วันที่แล้ว"
+          "published": "3 วันที่แล้ว"
         },
         {
           "title": "LH กำไรปีนี้จ่อโต 44% โบรกเคาะเป้า 4.10 บ. - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
@@ -1637,6 +1688,9 @@
       "change_pct": 0.0,
       "score": 68,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP-WEAK",
       "rsi": 52.1,
       "macd_hist": 0.1689,
@@ -1701,28 +1755,28 @@
       "pos_value": 28470.0,
       "news": [
         {
-          "title": "ทรีนีตี้เจาะ TIDLOR-SAWAD หุ้นไฟแนนซ์ ลงทุนตัวไหนดี?",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9wZ2M4enBSZ0Q2VlZkY3hRTE9yS2EyN2tRUkM4dTJ0WllBaU8zUjVEVnItOFNqb2NyenR1aGpsS3FQT2NUbWNENUFzcC1PU185Rmc?oc=5",
+          "title": "หุ้น MTC-SAWAD ราคาดีดขึ้น โบรกคาดสินเชื่อโตตามการฟื้นตัวของศก.ฐานราก",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE15M0JPVlNHMnBlaXRhRmxLU2lPLWRKcC1UQUwtbjFKWkZMRjFNVzJCaXdUTmI0TjVuaVFTS1ZGbUZfS0h6aDl1ZkUwMGw1RXQyYXdLYWdBTzctUmpS?oc=5",
           "source": "Thunhoon",
-          "published": "10/05/2026"
+          "published": "4 วันที่แล้ว"
+        },
+        {
+          "title": "โบรกฯ เตือนระวังหุ้นหลุด SET50 BTS-CBG-CENTEL-SAWAD คาดกรอบ SET วันนี้แตะ 1,600 จุด",
+          "link": "https://news.google.com/rss/articles/CBMi_gRBVV95cUxPbjlNTWpTTDc5OXFCTzhNWGJUdVMtZ0xtRGdFdEt1OXdWa29KdG1IZmZIQkl6cHpoTlJacGNvZVRpUmRXU3R4S2VjLW9OT3o4aFRRUTNDY0ZQMEwtQW5wUVFRSWlQNl9iOWlGRVNzNDgxdVlwakhvNzJDdzVObmZUZm1JYV9vX1VGc2lxN3I0OHBzVHItaUd2MFdsanIwX01jYmhMV29CdkJzVVhHeE56TUdsQ1lYNGNpeVZ4VF9IRU9CWlowbkZiaGNzT05BUkdVZS1FQWsyd090bXk5dVFxbF9pbzh6MHFxNUFDWS1Qc1ZSR1J0ZTg0WU9TQXVLUFBycC1sMHhoMUFsU1NsQW1sYlRlc1BBNGhLWjMwZ1loQ0tqQXhWS1JxZjNDR05FT3NSdjZ4VzlUYlE4WlJwVDVQeFhHN2lvNjg4NkROTWtzVlYzXzJoV0JNNnNVVHV0TkkxZW5pWnJjeGtWbllRVzdXRGxPRGdLSmxjOWxWWEVqa24xWUtGaHJHTjVZdzBMZU9NREFwdkRUZ21zeGRXSVYxei1UMzhzRHdEOEJldTl0cTNRd0Q3WjFYQjBHX1h6Q3JTMlNVanczYWR0Y0xJcGs3QkVqbE0xSjFrR0taeHhuN09OVVdMSjBJN0pRNXltUzR0X0ZVaHpHbXhJRTA5WHo2cWIxY3FlVURFdS1wX1dRMFd3dmZTYkMxYkE4M2tOanFvUkxRb3ZkdjBMbElZbDBpWEJWUXdiYmp3Qzl6Q21HSUdwV0IzckpiaFd6TS1QU0U3cXI4dzQ1WjRpMkJtd1BRV2NKTFhJOUxWUXBQX0FFaUNGM1dzbDl4cm9mMmRDdw?oc=5",
+          "source": "Share2Trade",
+          "published": "2 วันที่แล้ว"
         },
         {
           "title": "จับตา 4 หุ้นใหญ่หลุด SET50 โบรกฯ เตือนระวังแรงขาย แต่บางตัวพื้นฐานยังแกร่ง อาจเป็นจังหวะสะสม",
           "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjd3NIRjE2LTdTbWVIbWpZUzFGRVhmclRKUXpKZzZ2X2c3NjNmWS1RcmtpRGZVV3FSTUIyRVRQa2FpWEl4M2VSUTU2TlVWMWFKVERhcWZJRURCRnVDaEVjVExWVmdlSm9MWmc?oc=5",
-          "source": "Thairath.co.th",
+          "source": "Thairath",
           "published": "2 วันที่แล้ว"
         },
         {
-          "title": "TIDLOR ยังเป็นตัวท็อป MTC-SAWAD กำไรแกร่ง - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
-          "link": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxPWmJJZERBQU9VM1huZ0hoa2lYcVBWUjFBSnY5d2Etd2F3LVNZMDRZbnNRRUl4d3ZfbnRjUFVaOXQ4WG9ab2UzZE1veElYTXIzWFNQOVBkVlh0TVVlYWdKTXZLcFRiMzBuN24teTlIRENIYTJhNXdiLXJ2WHp4X09sMG1UR1A3R1NvckI0RVBCR1dMUEt0SDZWa3NwVEZwQVJPLTM1cnN3Qi1WMjhZT0J4dDkxZ3dRYlpCWjF0ZmpxSFFFREkxY0V5Mm81TlkteE9aWERlWHVReFgwUEhmRzJVc2JpcEE3WGxfeFdiUV9zcjAxUmozTzUzUno5TjN2WS01NnlmMURpa3czN2FhOXRtMkFXdFBYYWt6U0VzbWxVdDMzWUJKNlNRM25sczNyM3loaFVkcURXUWlYWFpEUHAwSURwcUFqYXViVU9leE45aFhPT0RR?oc=5",
-          "source": "HoonVision",
-          "published": "27/05/2026"
-        },
-        {
-          "title": "SAWAD เด้งแรง 6% ลุ้น Q4/68 กำไรโตเด่น โบรกฯ ชี้ธุรกิจมีพัฒนาการเชิงบวก ประเมินปี 2569 ผลงานไปต่อ",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAyczg3UlBfUkRUMTR0amt4TFRSSmtMc0RVejFUX2tDSmNyQjlBTWxqRmJtTjBoWUFOT1RGRmdZbC0ta1hLZkVvRHNLb0tsUDU5RXoyMUhxeFB1Xy1wOVFWdmlzX2huZ2p5YlE?oc=5",
-          "source": "wealthythai.com",
-          "published": "16/05/2026"
+          "title": "SAWAD วิ่ง 4% โบรกแนะ “เก็งกำไร” ลุ้นรับ “เฟด” ผ่อนนโยบายการเงิน | ข่าวหุ้นธุรกิจ",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBVczNTMFpZVG9Ic1RhNFBDemgxek5qVXFnY3J4V3JwX3pBamxFbjhJeDg2VFVsODQ0Y2l1TEdFeTN1WkcxM3hucXE1dXRxSHRRT0E2ekFB?oc=5",
+          "source": "LINE TODAY",
+          "published": "3 วันที่แล้ว"
         }
       ]
     },
@@ -1733,6 +1787,9 @@
       "change_pct": 0.0,
       "score": 64,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP-WEAK",
       "rsi": 53.4,
       "macd_hist": 0.0496,
@@ -1816,7 +1873,7 @@
           "title": "เอเซียพลัส ชี้หุ้นโลกฟื้นรับสหรัฐ-อิหร่านปิดดีล แนะดักเก็บหุ้น Laggard ชู PTTEP-ITC-CPF โดดเด่น",
           "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1BY1VIb2FKT3cyenZ3MlBIWE84RUVsYUt2c2loVklPSmc2ZUpQTkFyUGJ2TkltYTJYWUtkeE41Y1ZjQV9wZnZESlZUTmItNHVfMEtwYkRkTnpVSW84OXhPeFdILXY?oc=5",
           "source": "ผู้จัดการออนไลน์",
-          "published": "23 ชม.ที่แล้ว"
+          "published": "1 วันที่แล้ว"
         }
       ]
     },
@@ -1827,6 +1884,9 @@
       "change_pct": -0.78,
       "score": 64,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 69.4,
       "macd_hist": 0.1985,
@@ -1888,6 +1948,12 @@
       "pos_value": 25600.0,
       "news": [
         {
+          "title": "บัวหลวงถอดรหัส 5 หุ้น KTC-CPALL-STGT เด่น IRPC-HANA ยังเสี่ยง",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1yVHVoZnFtNlRqYWpyRzV5U0tHQ2dPNFpFczMwNlhUVWZXbjZGMmlEYUZKX0VXczFfT1lnUzg2Y1lWaXlMTUVGSm9iNmVldEYwZVBfd3lMV0FSa0lRWG5ETmd0UjhJYnNXNUFBbi1sdWZ4YWpFMTZaX0dVMA?oc=5",
+          "source": "Thunhoon",
+          "published": "24/05/2026"
+        },
+        {
           "title": "“กรุงศรี” ชู KTC ท็อปพิก! เคาะเป้า 39 บาท ลุ้นกำไรไตรมาส 2 โตแกร่ง ดันทั้งปีนิวไฮ",
           "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9wY3ZGLVphRUZKYlh6d0l4LW0zZWVZSlFpS3R5WnlpSWRuMzVzX1RBR0RWY0Q3dHlJVHZ6OWdpWWstUklpQzViQUZqQQ?oc=5",
           "source": "ข่าวหุ้นธุรกิจออนไลน์",
@@ -1900,16 +1966,10 @@
           "published": "2 วันที่แล้ว"
         },
         {
-          "title": "บัวหลวงถอดรหัส 5 หุ้น KTC-CPALL-STGT เด่น IRPC-HANA ยังเสี่ยง",
-          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1yVHVoZnFtNlRqYWpyRzV5U0tHQ2dPNFpFczMwNlhUVWZXbjZGMmlEYUZKX0VXczFfT1lnUzg2Y1lWaXlMTUVGSm9iNmVldEYwZVBfd3lMV0FSa0lRWG5ETmd0UjhJYnNXNUFBbi1sdWZ4YWpFMTZaX0dVMA?oc=5",
-          "source": "Thunhoon",
-          "published": "24/05/2026"
-        },
-        {
           "title": "Ktc ชีวิตที่ใช่ ไลฟ์สไตล์ที่ชอบ … ราคาขึ้นได้สักที! สัปดาห์ละตัว/Aekinvestment by เอกพิทยา",
           "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9VcFd2dkxBUXN4X3VSNHluMDJmR3dON3RpR1VNWDJqN1NPTmZtS2NldGpDZ0lwSTItRDg3QnNtdFJtaVh2MzA5N1pmbnFtT3UwTXpBQzc2QzRWZ0JyVWl6eklvSnY?oc=5",
           "source": "ผู้จัดการออนไลน์",
-          "published": "23 ชม.ที่แล้ว"
+          "published": "1 วันที่แล้ว"
         }
       ]
     },
@@ -1920,6 +1980,9 @@
       "change_pct": -0.57,
       "score": 63,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 60.7,
       "macd_hist": -0.024,
@@ -2000,10 +2063,10 @@
           "published": "3 วันที่แล้ว"
         },
         {
-          "title": "หุ้นปันผลกลับมาฮิต BBL-BLA-GULF น่าจับตา - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5XMmNvcEVfR1g4M2I5Z1ZiQTlvclhicGlVYURSNE1RbVI1RHBLc2t2NHZ0c29IU3pTaEZGREJ1cEZpSzJnYzB5SlFWZ0JuaWthdnBjeA?oc=5",
-          "source": "HoonVision",
-          "published": "04/06/2026"
+          "title": "หุ้นไทยพักเที่ยงวันนี้(18 มิ.ย.) ลบ 1.44 จุด ขาย THAI ซื้อ KTB-BBL",
+          "link": "https://news.google.com/rss/articles/CBMizgRBVV95cUxQWURkYXNKeHFCU3kwYnBpZmlwQWZhNWwtbHQxLVg4Ymp1SU9HTUI2cXZhZGxiaU93dE1qbk5ZQ1daYUFoc2pDUlJ1UEF1bDZFRTZpWVV3ZTlHc2RidGVWaE5VaVEyVXgxX0N3TVZXbjF3cTU5X0ZGcDlRLUNURE0zdGxKLVYxTlNGMk5Db0tuMV9HS3E4dUZIR2hYQ1BHWnppa1N6c2FwSmdETkRyd0tUQU8tbFBxZm1iRFRKZS0wSzJOaEhUbFNOSHFVNzJNRG9mT29xa20yVWNwc3ZXU2xncW9vZWhfdDlMb1NLVUZfU3hqLVdyQVhjVXduRHY1OVg1dnJMUG1OOUg1eFRfLVROWnlTOVh2QnZtRDRzMU1nZkxVeEo3dEJwdDl4a1FwcWsxVmUzajBKRXJyVjN4d28zcVhzMGw0aVVfYWdvR05ScUpxRDJpUGRPc2ExOGpFd2xGQ3RFVmlKQjAtcUwtZkdtLW1aeWV2YWNhNXJib0tCWFFwbjlTQVFpOWdJWmVkVU5lQkYwYl9tbWpiQUF2RjJpZzRJVUdmUDcyWGJtSFhSZnlkRHRIa1IwRUFSVENIRHZHaXQ0OHZKdWhVdTFxamJIWmF0VHh0RFhQbWFUWlpGSW9ucjJKOUw2a3RoNGhQejJiR0dhX1l2NTF6Z01KUDlzN0dUZU1ZN2hGR0pkU0Zkc0dULThSeWJmSlA0ellUbnd3UmtsUDNyMkFoX3o0dmtjNVF0OS1EUE5UU3JhMlFIUWxtT1czUUNWMVZjbmZTdw?oc=5",
+          "source": "facebook.com",
+          "published": "2 วันที่แล้ว"
         }
       ]
     },
@@ -2014,6 +2077,9 @@
       "change_pct": 0.0,
       "score": 63,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 53.5,
       "macd_hist": -0.0657,
@@ -2084,7 +2150,7 @@
         {
           "title": "จับตา 4 หุ้นใหญ่หลุด SET50 โบรกฯ เตือนระวังแรงขาย แต่บางตัวพื้นฐานยังแกร่ง อาจเป็นจังหวะสะสม",
           "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjd3NIRjE2LTdTbWVIbWpZUzFGRVhmclRKUXpKZzZ2X2c3NjNmWS1RcmtpRGZVV3FSTUIyRVRQa2FpWEl4M2VSUTU2TlVWMWFKVERhcWZJRURCRnVDaEVjVExWVmdlSm9MWmc?oc=5",
-          "source": "Thairath.co.th",
+          "source": "Thairath",
           "published": "2 วันที่แล้ว"
         },
         {
@@ -2108,6 +2174,9 @@
       "change_pct": 0.81,
       "score": 63,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP-WEAK",
       "rsi": 51.9,
       "macd_hist": 0.0014,
@@ -2173,7 +2242,7 @@
           "title": "OR-BCP ลดราคา “เบนซิน-แก๊สโซฮอล์” ลิตรละ 1.50 บ. “ดีเซล” ลง 1.30 บ. มีผลพรุ่งนี้ | ข่าวหุ้นธุรกิจ",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkdEtLZkpqVmc3NGZIWW1xZmVlUkNRc2U0YmtoRVBfdXQzMXYtVmcwNXZocWR3cW5MTjBmc2ltbk5mWFFNVHpJS2oxeUV0dDlRc2JsQlln?oc=5",
           "source": "LINE TODAY",
-          "published": "1 วันที่แล้ว"
+          "published": "2 วันที่แล้ว"
         },
         {
           "title": "OR คาดโตต่อเนื่อง ธุรกิจ Lifestyle แกร่ง ชูเป้า 15 บาท - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
@@ -2185,7 +2254,7 @@
           "title": "OR-BCP ลดราคา “เบนซิน-แก๊สโซฮอล์” 1.20 บาท พ่วงดีเซล-พรีเมียม 1 บ. มีผลพรุ่งนี้",
           "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9TOEJoV1diTWJYNkJ3Y2piVlNKdVZubURlWXBJRmJiLXFZQ0JJMXJiamdsNFI2YTdsUnIyUEswWkRPM1dIN3htTmNhaw?oc=5",
           "source": "ข่าวหุ้นธุรกิจออนไลน์",
-          "published": "4 วันที่แล้ว"
+          "published": "5 วันที่แล้ว"
         },
         {
           "title": "OR โบรกฯ คาดกำไร Q4/68 ประเมินราคาเป้าหมาย-คำแนะนำ",
@@ -2202,6 +2271,9 @@
       "change_pct": -0.7,
       "score": 62,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 62.5,
       "macd_hist": 0.2877,
@@ -2268,7 +2340,7 @@
           "title": "SCB หุ้นเด่นกลุ่มแบงก์ รับอานิสงส์ Bond Yield พุ่ง ฐานทุนแกร่ง-NPL ต่ำ-ยัง Laggard โบรกฯ ชู Dividend Yield สูงเกือบ 8%",
           "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9RR3NxcDZBMDNOVzBURGZrR2hOUjVBVi12cGdBQnV2Tmh3RFNsS3JhT2luT0JkWDJzOU1IazNtREFmM21hZ0xKNWYtSVdPRTdLLTBOUDNYYk5jbVplLXJF?oc=5",
           "source": "wealthythai.com",
-          "published": "1 วันที่แล้ว"
+          "published": "2 วันที่แล้ว"
         },
         {
           "title": "เงิน 1 แสนบาท ซื้อหุ้น SCB หรือ TISCO ปีนี้ใครจะให้ปันผลมากกว่ากัน?",
@@ -2283,10 +2355,10 @@
           "published": "1 วันที่แล้ว"
         },
         {
-          "title": "เปิด 5 อันดับหุ้นต่างชาติซื้อสุทธิผ่าน NVDR จัดหนัก SCB สูงสุด 933 ล้านบาท",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE50STBXTl9BQXNDaGV4VDIyQnh3ZmRxTGhwMlRIaEdMRjVyMjkxNDVwaUMtdGUyZHZSTTlxLXNGc0Fienhqam02QUMtbw?oc=5",
-          "source": "ข่าวหุ้นธุรกิจออนไลน์",
-          "published": "1 วันที่แล้ว"
+          "title": "โบรกแนะ 4 หุ้นพื้นฐานเด่น BH-CPALL-KBANK-SCB",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9fWWhRVVNhdlZ5azJFRGJhRG5abTVUUWZLR2Q5WU1nUi1SaUJJUE5lN3Brc3BYd0w4Y0VEd2kzSTFiOURka3laUFBHRXJsaTQyR2pDelZkWWxMbnRtNDdCR3Ewaw?oc=5",
+          "source": "Thunhoon",
+          "published": "5 วันที่แล้ว"
         }
       ]
     },
@@ -2297,6 +2369,9 @@
       "change_pct": -1.65,
       "score": 62,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 58.9,
       "macd_hist": 0.0076,
@@ -2390,6 +2465,9 @@
       "change_pct": 0.0,
       "score": 61,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP",
       "rsi": 52.6,
       "macd_hist": -0.0118,
@@ -2456,7 +2534,7 @@
           "title": "CPN เขย่าบางนาสะเทือน ผุดโรงแรม-ฮอลล์ใหญ่",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBxWm5pVmVOX3VndWdjTDVvUFFkaGIwSEJkVks5bm83dDBOcVhSUDJqUnBpTnFaSVo2ZktvNkM2RTFZdTNnSm5mb0pZanZEVzN6TVl5M0dn?oc=5",
           "source": "มิติหุ้น",
-          "published": "1 วันที่แล้ว"
+          "published": "2 วันที่แล้ว"
         },
         {
           "title": "เอเซียพลัสเตือนเงินหุ้นโยกเข้าบอนด์ เชียร์ BDMS-CPN-GULF",
@@ -2485,6 +2563,9 @@
       "change_pct": 0.0,
       "score": 60,
       "signal": "BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
+      "rec_tone": "buy",
       "trend": "UP-WEAK",
       "rsi": 55.0,
       "macd_hist": 0.2267,
@@ -2547,16 +2628,16 @@
       "pos_value": 26550.0,
       "news": [
         {
-          "title": "“เอเอสแอล” ยก MTC ขึ้นท็อปพิก เคาะเป้า 38.50 บาท คาดกำไรปี 69 นิวไฮ | ข่าวหุ้นธุรกิจ",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBxd20zR2EyU294MDczc2NVYlVsUUI5ZE03X280a2ZQZEhSNXRyMDE3ZUdSNkhBYmYwaGpzVUdVMU9yRU4yOFJhM3gxNTByV0tDcjhfdGpn?oc=5",
-          "source": "LINE TODAY",
-          "published": "11 ชม.ที่แล้ว"
-        },
-        {
           "title": "หุ้น MTC-SAWAD ราคาดีดขึ้น โบรกคาดสินเชื่อโตตามการฟื้นตัวของศก.ฐานราก",
           "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE15M0JPVlNHMnBlaXRhRmxLU2lPLWRKcC1UQUwtbjFKWkZMRjFNVzJCaXdUTmI0TjVuaVFTS1ZGbUZfS0h6aDl1ZkUwMGw1RXQyYXdLYWdBTzctUmpS?oc=5",
           "source": "Thunhoon",
           "published": "4 วันที่แล้ว"
+        },
+        {
+          "title": "“เอเอสแอล” ยก MTC ขึ้นท็อปพิก เคาะเป้า 38.50 บาท คาดกำไรปี 69 นิวไฮ | ข่าวหุ้นธุรกิจ",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBxd20zR2EyU294MDczc2NVYlVsUUI5ZE03X280a2ZQZEhSNXRyMDE3ZUdSNkhBYmYwaGpzVUdVMU9yRU4yOFJhM3gxNTByV0tDcjhfdGpn?oc=5",
+          "source": "LINE TODAY",
+          "published": "16 ชม.ที่แล้ว"
         },
         {
           "title": "MTC โตแกร่ง NPL ต่ำ เป้า 38.50 บาท - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
@@ -2579,6 +2660,9 @@
       "change_pct": 0.49,
       "score": 59,
       "signal": "WATCH",
+      "rec_action": "ถือ/รอ",
+      "rec_text": "🟡 ถือ/รอจังหวะ — สัญญาณยังไม่ชัด",
+      "rec_tone": "hold",
       "trend": "UP",
       "rsi": 66.7,
       "macd_hist": 0.2876,
@@ -2641,19 +2725,19 @@
           "title": "KBANK มองกรอบเงินบาทสัปดาห์หน้า 32.50-33.10 บ. จับตาตัวเลขส่งออก-กนง. | ข่าวหุ้นธุรกิจ",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE44ZVFnN0tGQVFvVVN4SW5CY2tKZC1RaDRIN2hybDhpZGdiM1R4NjBtdkp0SnpqVmFYMGZXOWRnbG0yNjV2bXUteGUwbUNsWG1rMHRXSGdR?oc=5",
           "source": "LINE TODAY",
-          "published": "4 ชม.ที่แล้ว"
+          "published": "10 ชม.ที่แล้ว"
+        },
+        {
+          "title": "อัปเดตการลงทุนหุ้นจีน มิ.ย. 69 - K WEALTH",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOMGxKZ0lNM1JPMDJzMlFSeWZYdkVpLVBJcktLaUR5VXF6dlUxN3p4TllqUXJtcEJxZHRlMWNwNzlFRmYxZ3p4bXduVTNpNmE5c29pc2o1WVlHV2lsM2ktZUpJNkotb1FNRGNvem5fNG9HUWVST29qeHE0T0JYcVVzWm9NbVpKMGI3blZKejd6Y0ZRQQ?oc=5",
+          "source": "kasikornbank.com",
+          "published": "08/06/2026"
         },
         {
           "title": "KBANK คาดกรอบบาทสัปดาห์หน้า 32.50-33.10 จับตาตัวเลขส่งออก-ประชุมกนง.-สถานการณ์ตอ.กลาง : อินโฟเควสท์",
           "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9yWUFQejlTZ0ZxZ2QyX0c0WUhzMGt2TUFJcTRSaGRZdUVUbERuQWxDYVRla25LNHpXYXZ0SjNnOUItLXA2cHVtYXVhWHpfSE1E?oc=5",
           "source": "สำนักข่าวอินโฟเควสท์",
-          "published": "6 ชม.ที่แล้ว"
-        },
-        {
-          "title": "เปิด 5 อันดับหุ้นต่างชาติซื้อสุทธิผ่าน NVDR จัดหนัก KBANK สูงสุด 1.33 พันล้านบาท",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9MQnlBUEpBSU9PbmVfQVEzanNGdEVmc3ZnYkdYR2JCTzU0RE9lalNmRDBnRTVmSkV1d3NrRVM4WmdWM2l0OERDYllrNA?oc=5",
-          "source": "ข่าวหุ้นธุรกิจออนไลน์",
-          "published": "3 วันที่แล้ว"
+          "published": "11 ชม.ที่แล้ว"
         },
         {
           "title": "โบรกแนะ 4 หุ้นพื้นฐานเด่น BH-CPALL-KBANK-SCB",
@@ -2670,6 +2754,9 @@
       "change_pct": 0.0,
       "score": 59,
       "signal": "WATCH",
+      "rec_action": "ถือ/รอ",
+      "rec_text": "🟡 ถือ/รอจังหวะ — สัญญาณยังไม่ชัด",
+      "rec_tone": "hold",
       "trend": "UP",
       "rsi": 73.9,
       "macd_hist": 1.5162,
@@ -2750,10 +2837,10 @@
           "published": "5 วันที่แล้ว"
         },
         {
-          "title": "“กรภัทร” มอง SET ฟื้นตัว รับน้ำมันลง-เงินไหลเข้า SET50 ชู MTC-SCC-KBANK เด่น | ข่าวหุ้นธุรกิจ",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE93Si1FUDY5ZFJ4eFg3QkdHZC1ROFJfTDZzbEdEczJTZk54aTRsOUtnRC1oa1NLWDRSSXRwcVJBangyeFN1ZUJXZEwyRTl2dFpJdDR3YjVn?oc=5",
-          "source": "LINE TODAY",
-          "published": "2 วันที่แล้ว"
+          "title": "SCC ขายหุ้น CAP อินโดฯ โบรกฯ ชี้เสริมสภาพคล่อง ดอกเบี้ยลด หนุนอัพไซด์กำไรปี 69-71 เดินหน้ากลยุทธ์ Deleverage ต่อเนื่อง",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5RTmdrTXZzX253QV9Ea082ZnNUV1J4WGYtRHNaejlQSG90Rmd3YTJDdFVUTE14WlFfVUQtMl9jaDF1ZXJOQ3BmODlteXpaRXlPM0NaNUU1V0NsNnc1YklKY3hobFY3SFgxanI4UlF3?oc=5",
+          "source": "wealthythai.com",
+          "published": "08/06/2026"
         }
       ]
     },
@@ -2764,6 +2851,9 @@
       "change_pct": 0.77,
       "score": 56,
       "signal": "WATCH",
+      "rec_action": "ถือ/รอ",
+      "rec_text": "🟡 ถือ/รอจังหวะ — สัญญาณยังไม่ชัด",
+      "rec_tone": "hold",
       "trend": "UP",
       "rsi": 72.4,
       "macd_hist": 0.0194,
@@ -2828,7 +2918,7 @@
           "title": "AWC จ่อรับทรัพย์ Q4 BTS - Tomorrowland – IMF หนุน - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
           "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE92cUd5SDBWZkxCalB1ZGlVSlRuNWYxWVMybDF3UHRaMWxfdWxQS0htdjQ2dDNlWTBWdlBwTkQtejBfRDY0RVYxRURxV1JaNVM0WHdZ?oc=5",
           "source": "HoonVision",
-          "published": "3 ชม.ที่แล้ว"
+          "published": "8 ชม.ที่แล้ว"
         },
         {
           "title": "KS ชู AWC-BH หุ้นเด่นสัปดาห์นี้",
@@ -2857,6 +2947,9 @@
       "change_pct": -1.71,
       "score": 56,
       "signal": "WATCH",
+      "rec_action": "ถือ/รอ",
+      "rec_text": "🟡 ถือ/รอจังหวะ — สัญญาณยังไม่ชัด",
+      "rec_tone": "hold",
       "trend": "UP",
       "rsi": 67.8,
       "macd_hist": 0.0723,
@@ -2916,16 +3009,16 @@
       "warnings": [],
       "news": [
         {
+          "title": "“ปลิว” เห็นอะไร? ควักเงินซื้อ BEM ไม่หยุด - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFByMGtWakJENjRNRDVUQlRKTGZZV3plZE1rUE9iZmswM1l3Z3V2MjdPekEtM19YS1Z3QzBzU1ZMS0p3ME1tX0M1Nm9nNjRCMWhQZTBn?oc=5",
+          "source": "HoonVision",
+          "published": "3 วันที่แล้ว"
+        },
+        {
           "title": "“ปลิว ตรีวิศวเวทย์” เข้าเก็บ BEM เข้าพอร์ตเพิ่ม 8.6 ล้านหุ้น ดันถือ 0.40%",
           "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5nUGcwNUlGemJaaWF1TDMyXzlRRGlPeGhTbU9jRUo4VkdFdXB5eG5Bc044WW1Qc05sbVpqRFVDZXFkeklUQmVxMHFuaw?oc=5",
           "source": "ข่าวหุ้นธุรกิจออนไลน์",
           "published": "3 วันที่แล้ว"
-        },
-        {
-          "title": "“ปลิว” เห็นอะไร? ควักเงินซื้อ BEM ไม่หยุด - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFByMGtWakJENjRNRDVUQlRKTGZZV3plZE1rUE9iZmswM1l3Z3V2MjdPekEtM19YS1Z3QzBzU1ZMS0p3ME1tX0M1Nm9nNjRCMWhQZTBn?oc=5",
-          "source": "HoonVision",
-          "published": "2 วันที่แล้ว"
         },
         {
           "title": "BEM ฝึกซ้อมการจัดการเหตุการณ์",
@@ -2948,6 +3041,9 @@
       "change_pct": -0.81,
       "score": 55,
       "signal": "WATCH",
+      "rec_action": "ถือ/รอ",
+      "rec_text": "🟡 ถือ/รอจังหวะ — สัญญาณยังไม่ชัด",
+      "rec_tone": "hold",
       "trend": "UP-WEAK",
       "rsi": 56.4,
       "macd_hist": 0.0236,
@@ -3008,22 +3104,22 @@
       "warnings": [],
       "news": [
         {
-          "title": "HMPRO หวังฟื้นตัวQ2 ยอดขายเครื่องใช้ไฟฟ้าหนุน - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
-          "link": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxQNkUyR3BLeUh4UkNuU1g5MExkR1VxcE5ZQkd0eUxab3BOYXZtSmxnX1lGcnNtRWR3YU45Z0t1YUxXZ2ljaElEZlYxOFFpSDBZbzlMVDJEdVNrb0dzcDkyYjBaVnBqeTY5ZjJWbUFUQjIzTEkxYWROUU1FM3NhbUZkQXd1UUtDX1hKZURIZm1mN2J6NjFKcFI5OEdhc2NFOF9IR0Fld21sZGlxdkhGTllUaWE3bEd2b1hQcldEV201VmxjeUhscnhfVmxSbEZsS3lnSXRLOUNzY2k2ekhfMzlPTkNVRTlCUmZUTnBNb09OQzhwcG1vWE5HRG55MTh4ckljalVLYnl3RDNZek5SLVo4Tmh4U3hvMUsybF9feUZFQ3RNdVhKTUctN0NWNlh3bTM1X1FnOHpOa3dfQWxnU25IdVpaSHRwRDF6VVloX1BoQzcza0ZI?oc=5",
-          "source": "HoonVision",
-          "published": "28/04/2026"
-        },
-        {
           "title": "HMPRO บวก 3% โบรกคาดกำไรครึ่งหลังปี 69 โตแกร่ง อัพเป้าใหม่ 7.10 บาท",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5PUjNkU1V1bGFjY3NfUjVaNFp4WlgydlhLcE45SVh3Y1M3VkFsUC1ab1hZVE1kT1g0OTl1a3p0QmJlRkdXQzBnSUNOQ0Jhak9Ma3JZbXJR?oc=5",
           "source": "ข่าวหุ้นธุรกิจออนไลน์",
           "published": "3 วันที่แล้ว"
         },
         {
+          "title": "HMPRO หวังฟื้นตัวQ2 ยอดขายเครื่องใช้ไฟฟ้าหนุน - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
+          "link": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxQNkUyR3BLeUh4UkNuU1g5MExkR1VxcE5ZQkd0eUxab3BOYXZtSmxnX1lGcnNtRWR3YU45Z0t1YUxXZ2ljaElEZlYxOFFpSDBZbzlMVDJEdVNrb0dzcDkyYjBaVnBqeTY5ZjJWbUFUQjIzTEkxYWROUU1FM3NhbUZkQXd1UUtDX1hKZURIZm1mN2J6NjFKcFI5OEdhc2NFOF9IR0Fld21sZGlxdkhGTllUaWE3bEd2b1hQcldEV201VmxjeUhscnhfVmxSbEZsS3lnSXRLOUNzY2k2ekhfMzlPTkNVRTlCUmZUTnBNb09OQzhwcG1vWE5HRG55MTh4ckljalVLYnl3RDNZek5SLVo4Tmh4U3hvMUsybF9feUZFQ3RNdVhKTUctN0NWNlh3bTM1X1FnOHpOa3dfQWxnU25IdVpaSHRwRDF6VVloX1BoQzcza0ZI?oc=5",
+          "source": "HoonVision",
+          "published": "28/04/2026"
+        },
+        {
           "title": "HMPRO ทยอยซื้อหุ้นคืนสะสม 1.96 ล้านหุ้น มูลค่ารวม 12 ลบ. | ข่าวหุ้นธุรกิจ",
           "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPajdZeVBIa0dJRVRJNTNSeV9PZ2VKQ1J0NWtiSm5Tc0E4bHJLRE1KbHJLNmltSkEyOXJpZEV4d1NPeDdqRkFsdDRpalpiOGZIX21hREFTUFM1RVlhelhPM0pYaU5yUzJUU1QydUdNa2RiczhnZmpHNE9OSEZURks5dw?oc=5",
           "source": "LINE TODAY",
-          "published": "4 วันที่แล้ว"
+          "published": "5 วันที่แล้ว"
         },
         {
           "title": "ทิสโก้ ส่อง 4 หุ้น DOHOME-MRDIYT-HMPRO-GLOBAL แนะกลยุทธ์ลงทุน",
@@ -3040,6 +3136,9 @@
       "change_pct": 0.87,
       "score": 52,
       "signal": "WATCH",
+      "rec_action": "ถือ/รอ",
+      "rec_text": "🟡 ถือ/รอจังหวะ — สัญญาณยังไม่ชัด",
+      "rec_tone": "hold",
       "trend": "UP",
       "rsi": 75.7,
       "macd_hist": 0.1588,
@@ -3133,6 +3232,9 @@
       "change_pct": 0.42,
       "score": 51,
       "signal": "WATCH",
+      "rec_action": "ถือ/รอ",
+      "rec_text": "🟡 ถือ/รอจังหวะ — สัญญาณยังไม่ชัด",
+      "rec_tone": "hold",
       "trend": "UP",
       "rsi": 68.7,
       "macd_hist": 0.2431,
@@ -3224,6 +3326,9 @@
       "change_pct": 0.79,
       "score": 48,
       "signal": "WATCH",
+      "rec_action": "ถือ/รอ",
+      "rec_text": "🟡 ถือ/รอจังหวะ — สัญญาณยังไม่ชัด",
+      "rec_tone": "hold",
       "trend": "UP",
       "rsi": 55.7,
       "macd_hist": -0.2187,
@@ -3287,25 +3392,25 @@
           "title": "KSS เปิดหุ้นได้-เสีย “เอลนีโญ” ชู GULF-GPSC นำทัพ | ข่าวหุ้นธุรกิจ",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1Eb1BUeW5DR25MdndUZmE4cDYyMV96bTVvQlVIbDRoaFQxZ1FVTnMtNWhXVlBlY21kTkdGZ0RWaXhoTUtPTmE4dURZLUQ3N0s1aS1Makdn?oc=5",
           "source": "LINE TODAY",
-          "published": "9 ชม.ที่แล้ว"
+          "published": "15 ชม.ที่แล้ว"
         },
         {
           "title": "หุ้นไทยวันนี้(18 มิ.ย.) ลบ 2.01 จุด ขาย GULF-DELTA ซื้อ KTB",
           "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1OV0dhbXNYMHk5WmVVZmNKbUl3N2thNWJJelZ6dXFNcUFXUlczbXFiVFBMa05XaVBaMnBlZ0NhaDVaai1Qak5adWM5V1pwWUlyUXY3ZFU0cGlaaW00M0E?oc=5",
           "source": "Thunhoon",
-          "published": "1 วันที่แล้ว"
-        },
-        {
-          "title": "ผู้ถือหุ้น Gulf Keystone อนุมัติมติทั้งหมดในที่ประชุม AGM",
-          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5FZHRFV29Wb3VXMXA3NWdOVDYxSmdGb3Q2M0tHbzVvaWMtY0xKT3BkeEFJODJUSE9xcDQweGwxcXlIYWVuNzBWdHlDUjVUMnNsY1k0VUxFczBLUHlMVGtNS1pMVXV3R3B4X0tSaWZ2RQ?oc=5",
-          "source": "Investing.com",
-          "published": "20 ชม.ที่แล้ว"
+          "published": "2 วันที่แล้ว"
         },
         {
           "title": "งัดกลยุทธ์หุ้นบ่าย คัด GULF-BH-MINT ฉายแววเด่น - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
           "link": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxQLW5oWkp6Y2NjUElUZkVWQ2RRdHBjLTN1NUdXMzN4YkR5TGVYYWtWdDhmWnVzMDNZTXpqN3hfcGVvTnhFNHVpamxBMXRpUUNvVFdYUno1RUU0cFRacEtUS1ZLcjd4YmJvNkN3YklGZDBpWEltaUJwSkhfd3hfYlR3OFhRNE1NVng2cjFSNElKN2pMbnFSel9uSFhqMlJjV0FaQzk1VFdXOThuS2ZWREZ4ZTQ1QlN3MlhRcGNvaE0zdUx4TzJyenhIcDg3UEhKQTA1Vl9xMkgxbHFmWElDNm9Ick03d3NKcklwcFRGTTUtMlVQOUVOLVhzeUxGWDlqU1prWFhGbE5LMVB5THBPLUoxdHF1Sjc2X3lkUmxaZldlV1hjenk3SmlYVU9SZTNXaEwxRGFMWXV3SWdHRmJjQkpBbEdWWl9pTGtZZHdPQXNqd3Z6ckZtQ1V5Q3pYUQ?oc=5",
           "source": "HoonVision",
           "published": "5 วันที่แล้ว"
+        },
+        {
+          "title": "ผู้ถือหุ้น Gulf Keystone อนุมัติมติทั้งหมดในที่ประชุม AGM",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5FZHRFV29Wb3VXMXA3NWdOVDYxSmdGb3Q2M0tHbzVvaWMtY0xKT3BkeEFJODJUSE9xcDQweGwxcXlIYWVuNzBWdHlDUjVUMnNsY1k0VUxFczBLUHlMVGtNS1pMVXV3R3B4X0tSaWZ2RQ?oc=5",
+          "source": "Investing.com",
+          "published": "1 วันที่แล้ว"
         }
       ]
     },
@@ -3316,6 +3421,9 @@
       "change_pct": -0.99,
       "score": 48,
       "signal": "WATCH",
+      "rec_action": "ถือ/รอ",
+      "rec_text": "🟡 ถือ/รอจังหวะ — สัญญาณยังไม่ชัด",
+      "rec_tone": "hold",
       "trend": "UP",
       "rsi": 57.2,
       "macd_hist": -0.0198,
@@ -3408,6 +3516,9 @@
       "change_pct": 0.0,
       "score": 44,
       "signal": "AVOID",
+      "rec_action": "เลี่ยง",
+      "rec_text": "🔴 ยังไม่น่าสนใจ — เลี่ยงไปก่อน",
+      "rec_tone": "avoid",
       "trend": "UP",
       "rsi": 76.4,
       "macd_hist": 0.307,
@@ -3478,7 +3589,7 @@
           "title": "BGRIM จุดพลุรอบใหม่ Data Center ล้นเป้า",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1aVnNiT3M0VVUyNlRUNWVyR0szMS1YVEd5NmVVbDAtbVNjWjVMeThxRGw5M1p6aFFMRTg3RG1SOVhtMXRsLWRHMUFtSnRQeXpqeE5ZVi13?oc=5",
           "source": "มิติหุ้น",
-          "published": "1 วันที่แล้ว"
+          "published": "2 วันที่แล้ว"
         },
         {
           "title": "หุ้นโรงไฟฟ้าคึก! BGRIM นำทีมพุ่ง 7% รับฮอร์มุซคลี่คลาย-บอนด์ยีลด์ลง",
@@ -3501,6 +3612,9 @@
       "change_pct": 1.12,
       "score": 41,
       "signal": "AVOID",
+      "rec_action": "ควรขาย/เลี่ยง",
+      "rec_text": "🔴 ควรเลี่ยง — แนวโน้มขาลง (ถ้าถืออยู่ ควรพิจารณาขาย)",
+      "rec_tone": "sell",
       "trend": "DOWN",
       "rsi": 45.8,
       "macd_hist": -0.0797,
@@ -3566,7 +3680,7 @@
           "title": "เจาะปรากฏการณ์หุ้น SpaceX พุ่งแซง Amazon สู่ Top 5 โลก ท่ามกลางคำเตือน ‘แชร์ลูกโซ่ในร่างมนุษย์’ ที่รายย่อยถูกบังคับให้เล่น",
           "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9nMXVCbXdONEtpNjFONlBtbUFWckEwUmQzRG9iaW0xZXNNVzdwN1Vfa24tWDJCdFpWMml1WUFiVFBnMEdRRG9QN1Z2ZnV1elBQS3oySmRsOXZzdlBTZDg5ZDNvdw?oc=5",
           "source": "thestandard.co",
-          "published": "2 ชม.ที่แล้ว"
+          "published": "8 ชม.ที่แล้ว"
         },
         {
           "title": "TOP ยังน่าสนใจอยู่ไหม? หลังเหตุการณ์ฟ้าผ่ากดราคาหุ้น นักวิเคราะห์มอง Valuation น่าสนใจ แม้ Q2 ไม่แน่นอน แต่ระยะยาวยังเติบโต",
@@ -3595,6 +3709,9 @@
       "change_pct": -1.74,
       "score": 32,
       "signal": "AVOID",
+      "rec_action": "ควรขาย/เลี่ยง",
+      "rec_text": "🔴 ควรเลี่ยง — แนวโน้มขาลง (ถ้าถืออยู่ ควรพิจารณาขาย)",
+      "rec_tone": "sell",
       "trend": "DOWN",
       "rsi": 49.1,
       "macd_hist": 0.0237,
@@ -3687,6 +3804,9 @@
       "change_pct": -0.28,
       "score": 31,
       "signal": "AVOID",
+      "rec_action": "เลี่ยง",
+      "rec_text": "🔴 ยังไม่น่าสนใจ — เลี่ยงไปก่อน",
+      "rec_tone": "avoid",
       "trend": "SIDEWAYS",
       "rsi": 48.8,
       "macd_hist": -0.2986,
@@ -3750,7 +3870,7 @@
           "title": "เทียบฟอร์ม ADVANC-TRUE หุ้นปลอดภัย-กำไรโตเด่น - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
           "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxOT1NMR01mZlZUS1JnYnB4aUFCVFBpZDhkQ3VHRnVQc2dNZnJQeUxsRWJmSnlZM0dWQ3BpeHh3bjVmd3AtZ0lwR2k2clp5N3UzbnNoZTlhRVdNb1ZEX0lxNGowdzN6eUdfQmpkaXNLZGgxMkZxSTI4aDJPX21ndnA3ZVFfMm5xT3NQUlQxV1o3ZVVGWTZGMHdTR0QyX2ZIaHQ2eUNxWloyeUotWFcxQ0tJd2l1X2lCdHhPcHB3SnNpUm82YnZqUEswa3FHTU1JZ1BnSmFYVlpOQURuNWFhelRQbmw1bjFOSk9IcjJZTWN1OWFjSWczdllrVlh4Y2NIeXNFakRaUldlanJ3aEwxbGMzN2Jwb0pZeC1VczMzSElGRXAzLWUybHdDY0gzeXlZVW1BaVRibGZ1Mm1MY2ZNaEdjcHpWa29VSXBBQVFyeUhkencyNWxRVHc?oc=5",
           "source": "HoonVision",
-          "published": "4 ชม.ที่แล้ว"
+          "published": "10 ชม.ที่แล้ว"
         },
         {
           "title": "ADVANC-TRUE หุ้นปลอดภัย ตัวช่วยสร้างสมดุลให้พอร์ตลงทุน กำไรโตสม่ำเสมอ-ปันผลสูง",
@@ -3779,6 +3899,9 @@
       "change_pct": 0.9,
       "score": 28,
       "signal": "AVOID",
+      "rec_action": "ควรขาย/เลี่ยง",
+      "rec_text": "🔴 ควรเลี่ยง — แนวโน้มขาลง (ถ้าถืออยู่ ควรพิจารณาขาย)",
+      "rec_tone": "sell",
       "trend": "DOWN",
       "rsi": 40.6,
       "macd_hist": -0.0973,
@@ -3872,6 +3995,9 @@
       "change_pct": -3.47,
       "score": 26,
       "signal": "AVOID",
+      "rec_action": "เลี่ยง",
+      "rec_text": "🔴 ยังไม่น่าสนใจ — เลี่ยงไปก่อน",
+      "rec_tone": "avoid",
       "trend": "SIDEWAYS",
       "rsi": 45.9,
       "macd_hist": -3.4608,
@@ -3933,28 +4059,28 @@
       ],
       "news": [
         {
-          "title": "หุ้นไทย ปิดลบ 12.56 จุด รับแรงแรงขาย DELTA ถ่วงเป็นหลัก – FTSE Rebalance ทำ Flow ไหลออก | การเงินธนาคาร",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBpbWFBQl9temdOamtjNkRNMWpSeC1sM3g0ZVVZOGJCQ2k4akhRbFZqaTJtcnpSd0YxLWpYRnJQQUc5SU02dnVxakJ6VFE2MEQtQXUwOXpB?oc=5",
-          "source": "LINE TODAY",
-          "published": "19 ชม.ที่แล้ว"
-        },
-        {
-          "title": "หุ้นปิดร่วงลง 12.56 จุด ต่างชาติทิ้ง 3,779 ล้านบ.ขาย DELTA-FTSE Rebalance",
-          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE56UGJWS0VIa0dMLVg5YjE5RmtPb0Q0UW5GWlFJT2lBZ1dycFNIZ0o4QmZKU2RSY0JPREpVei0wTEFLamVJRFlQUHNLX1lMZw?oc=5",
-          "source": "Hoonsmart",
-          "published": "23 ชม.ที่แล้ว"
-        },
-        {
-          "title": "ภาวะตลาดหุ้นไทย: ปิดร่วง 12.56 จุดรับแรงแรงขาย DELTA ถ่วงเป็นหลัก, FTSE Rebalance ทำ Flow ไหลออก : อินโฟเควสท์",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBSRk5hd3M1b3BxODlfUUE5OC1vNkRaRUh4UG41eDhVSm9lc2pMRU1SLTBhN05BS0ltMUJqNnZxTHNXczhoWmR6Mi1YSk85TlBB?oc=5",
-          "source": "สำนักข่าวอินโฟเควสท์",
-          "published": "23 ชม.ที่แล้ว"
-        },
-        {
           "title": "โบรกฯ หวั่น DELTA โดนหั่นน้ำหนักเหลือ 10% คาดฉุดแรงขายกว่า 1,340 ลบ.",
           "link": "https://news.google.com/rss/articles/CBMinAVBVV95cUxNY20yekZJQ1J3QVRGWGpTS2cxV0RvQjVfMzkyaWtBcEdCb0FEUWJ3S2g3SUotMWp0WDVBQ1NRY1ZYWFpZQjktLTJETWsxTDJSbEFURG9JNHRGSlIwZFo4Wmw2R3lnM3RLUS1XcGhrcEJqYnVwOHdONzFLNEZfbEU0WHJnYldWSFZpcGJEQXJDQXpGay1PaE9OSlRvTG9lZ2xra2lnQjlLbzlLZHhxVXFsWU9SM1FaR3UtTzNCdFBCNkk5bDJSNkZ3QXlMN1c5Rm9FSFhYa3lxSzNHeDE2d0FHSEVubG1HRkwtWFhjeUlweDFnYmxSanpXcTNnNzRSYnotbk1SYWRGQ3pTNGdENlRfeW9QUjZGak0tTW0yN3RuMWFyX09CTFkyVDZYcHVzQ2FsY3ZmQ2Y1OTZ2YloybFk1ZkhDUEg1NWNhdktyb2luTlpfRzlOYWRLY3dRcFBuZTk0UnFJWUpsbnF2b1RPRnByWkI2ZVVObWMxY21VelRqV1JYUnI2cmFUM3lNMnBvMDNxaVJJRWtGWnZtbmNfenNKQ1d4UnFoUXk1WWRYeGo3NEdUam84bUlxN2NZd3VFbmFoWGZibWttWllBcUtkWWRFTkc2RTdKd2F0RmV3b3dMQWtFNXNGX1RyV0d0dnlielYtTkdXeElUZnR4NTM3X2RwX1RxOFB5NkZKc2VzMXRZc1g5RHJwTlloQjl1dkM4T1ZMbTZZd2p1ZU5KdW9NM18zNU9EWnRLTzN1UHkwbjM5b0w5Uzc4Z04tNDhQQUdFcmEzREZLVWgta21JZFpHdmhXemprY3pDZTRsaER1WHN0MnZlTF83WVVXOUNYemIyYmtRR0N2c2w1ZUlkdGpUbjhjY1hmS2RjcVVRTjdpZA?oc=5",
           "source": "Share2Trade",
           "published": "3 วันที่แล้ว"
+        },
+        {
+          "title": "หุ้นไทยวันนี้(18 มิ.ย.) ลบ 2.01 จุด ขาย GULF-DELTA ซื้อ KTB",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1OV0dhbXNYMHk5WmVVZmNKbUl3N2thNWJJelZ6dXFNcUFXUlczbXFiVFBMa05XaVBaMnBlZ0NhaDVaai1Qak5adWM5V1pwWUlyUXY3ZFU0cGlaaW00M0E?oc=5",
+          "source": "Thunhoon",
+          "published": "2 วันที่แล้ว"
+        },
+        {
+          "title": "ดัชนี SET ภาคเช้าร่วง 11 จุด แรงขายหุ้นใหญ่-DELTA ฉุด",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE84cEY1cTBGZmd3X1VIMVRzWUJnWk5nSXJCcGppR1ZVc01nQmNnaUhYZ3lTT0ZsenJmQ201Rk5UWjdSS2RjckI4clhpVUY?oc=5",
+          "source": "RYT9",
+          "published": "1 วันที่แล้ว"
+        },
+        {
+          "title": "หุ้นไทย ปิดลบ 12.56 จุด รับแรงแรงขาย DELTA ถ่วงเป็นหลัก – FTSE Rebalance ทำ Flow ไหลออก",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9FSzJGbVQ4LXlEb3hKS3NzZzMybHZzQ195SEZTZnJYU21fN0lIaHh4ZFJTSWh2NjdONTU5dkdHLWVpbTlTZm9COUpmOEtlem5hZllWLQ?oc=5",
+          "source": "วารสารการเงินธนาคาร",
+          "published": "1 วันที่แล้ว"
         }
       ]
     },
@@ -3965,6 +4091,9 @@
       "change_pct": 1.97,
       "score": 26,
       "signal": "AVOID",
+      "rec_action": "เลี่ยง",
+      "rec_text": "🔴 ยังไม่น่าสนใจ — เลี่ยงไปก่อน",
+      "rec_tone": "avoid",
       "trend": "SIDEWAYS",
       "rsi": 50.3,
       "macd_hist": -0.0499,
@@ -4029,22 +4158,22 @@
           "published": "05/06/2026"
         },
         {
-          "title": "เงินปันผลและการแบ่งหุ้นของ Electronic Arts Inc (EA): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
-          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBqd0FzUjk4SWVnb3cxdmFGRjNJMWJsZFVOQjAzME12NHNDcTR1dmQtTklVb0hzUzFqSjRvVjV6dy1veDJiSl9ValhUaGJycE5OQTROeVA5Uk5yM3Y5dWxPeVJ2Zlc0Qm5DWEdiRFllLXFBRkQ4QTg0VHhn?oc=5",
-          "source": "TradingKey",
-          "published": "2 วันที่แล้ว"
-        },
-        {
           "title": "จับตา EA รอบใหม่! โบรกฯ ชี้การเงินแกร่ง ลุ้นปีนี้ Turnaround ตุนกระแสเงินสดปีละ 8 พันลบ.",
           "link": "https://news.google.com/rss/articles/CBMi7gZBVV95cUxNV2FEQmlXeVgzWVV0MzhZeWtReHoyaExPNnZRaDNhYW1HdXhxSEFWZmhuNGV5X0h2TkVZaWhpMnZJaUNKdVJoOG4xbFBwdWtTSThmdlhQMWNWM3U2SVJBcXVvcE9GSWRJWVh4bUhNWTU3dGh3SVY5d1RRSVU4Wk5OQ1VPdTVGUEV0cVZuS2pWR0RBUXlGRW1aeTBiSU9MaEZ5Qk4tbElWdXpmMXNYQTdvdmJBcEZJQTh0SUJIbG5SYk44a0FUazJpVWdyVkFkNTNpMlJtVXd2akliLTM4cENtOVJ0d1hRdjRWbTVYMnhMTUpoU2ZMSU5lTk1RSGpPTU5kTlhiUTFYbnlJSVNZaURvekV3X2hGdnE2QTJnaTk2bFdqcmE2eVZxSmJTSWd1ZTRQXzc4UjZPMWh0YnBHQndkaVpWVElueVhrX0RVVjFKc204Q2dPeWxncEdQRFBwYUtEaGtnNGtXaDRKVFRfQ2dhZFY5RURERnY4RmViM2dZWEtjcU0wZFB4LUZLWXdqRmhKLXNpVEZud1hmZ1hXYmtTaUhuaEtTekdjbzRMb2pBZzlBWENqMWFKRzB0NmN3RmVvZlAwQ1NpeTV5ZG41UW40VEJTRlFmcUozRi1KUVlhcjBOeFhzM196TXZKRXhFdlhycHBfY3pmbEIwV19KQmo2MXBVbTgtcmxjYm5sVW9rLUxDbHYxeW41d3Q1NnNVTTYwdUVXZ0tnZHZuZ1hYWTZyNXVZQUJhRlNHekJEMUJWbUpuUkNfbHdCQ3JDMXZaMTdoN0dpekdmdVFyUC1yOG9rSHRndDRsOFZQQnVPRXVrUG1ReFIyaXpLOFQ1MVJDU1Z6VlJzYjQtcWJCdlZacVF1eW1RSUotX1YzQ1otbVdLSnVhemFmUnMxUF9fRFQyTW5nUl9hSlZwQTZQbVZhcW15UVpQUVdTenJScWg4QWhWelV0NGJPaWhtenNmV29fTngwdFdQeTFBMzlyZmE2djgxTXFtdEJNa1I2SHZMbG1GbjRIMHpsTkZnRVVpMnNYelVRc2F1ZzQtZmhoT0lPcDUxdmFfWVZWeHVRRmJkTnlKbXduQmMtTzNxUmNwVWd3SUthRzVaVGdNRW9ha25MY0tiZ0hqLU15M1FHTlBGN3lOWTRtYmF3dlBjR3BjTmdaUQ?oc=5",
           "source": "Share2Trade",
           "published": "27/05/2026"
         },
         {
-          "title": "EA โบรกมองสภาพคล่องดีขึ้น จับตา 2 ธุรกิจใหม่",
-          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9sS3ppdF9ITnpCN2RQZ2M4YWNTaTE3WGpEa1l0RjlnYmNYdk02UHpONzJIX1F6QWRqQmxyZ2NHTlktVUIxZDBPczI5NnRXUQ?oc=5",
+          "title": "(หุ้นเจาะ) EA เร่งเครื่องธุรกิจรถEV-SAF กูรูลุ้นกำไรพลิกบวกแรง",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9RUUtyWndpUG1jUGJNWk14QVd2VzcyYUlrb3ltbWNMUzE1MGVEeVdEcGNmVzYtYXI4eWpUZEdFbGdWQWZObE1ONU1Pb1BpUFZDSDRKS2RB?oc=5",
+          "source": "มิติหุ้น",
+          "published": "01/03/2026"
+        },
+        {
+          "title": "EA ฟ้าเปิดทริสมองดี ดีมานด์อีวีสูงเร่งลุย!",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE40OTUzM0pFYkZGc19vT2xxVC1QNnFIWl9TMW1SeGlvUktHcElvazVzYnRUSk01SE9nYnJXalY5TEdZMmU5MHFZQzJyb2NUQUU?oc=5",
           "source": "Thunhoon",
-          "published": "09/06/2026"
+          "published": "27/04/2026"
         }
       ]
     },
@@ -4055,6 +4184,9 @@
       "change_pct": -0.37,
       "score": 24,
       "signal": "AVOID",
+      "rec_action": "ควรขาย/เลี่ยง",
+      "rec_text": "🔴 ควรเลี่ยง — แนวโน้มขาลง (ถ้าถืออยู่ ควรพิจารณาขาย)",
+      "rec_tone": "sell",
       "trend": "DOWN",
       "rsi": 29.8,
       "macd_hist": -0.9714,
@@ -4149,6 +4281,9 @@
       "change_pct": 0.0,
       "score": 20,
       "signal": "AVOID",
+      "rec_action": "ควรขาย/เลี่ยง",
+      "rec_text": "🔴 ควรเลี่ยง — แนวโน้มขาลง (ถ้าถืออยู่ ควรพิจารณาขาย)",
+      "rec_tone": "sell",
       "trend": "DOWN",
       "rsi": 36.3,
       "macd_hist": -0.0212,
@@ -4228,10 +4363,10 @@
           "published": "20/05/2026"
         },
         {
-          "title": "BANPU แชร์มุมมองการเตรียมความพร้อมบุคลากรยุค AI ในงาน Transform Talent 2026 Thailand",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9oMkw4SVVVNUpQNF9TTXZQVUc1R2o0R1BnaVFleHpaNVQ3ZjhGbTZyTDBaTW9SVW1TbU5aY0l5d3htWXNSRDY3NFA3MlJVdXJOYXdQSEZB?oc=5",
-          "source": "มิติหุ้น",
-          "published": "5 วันที่แล้ว"
+          "title": "BANPU เคาะแผนควบ BPP ตั้งบริษัทใหม่ นัดผู้ถือหุ้นโหวต 21 ก.ค.นี้",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1jMktBQjAzckNFUk5kUXROZzFXc1VYY1dzMEJfV1JOZVQ1RjhTTEs3VXdxYTl5SjF3bmFzczE4eEFqOGdiWFFOSnhsaw?oc=5",
+          "source": "ข่าวหุ้นธุรกิจออนไลน์",
+          "published": "22/05/2026"
         }
       ]
     },
@@ -4242,6 +4377,9 @@
       "change_pct": -1.57,
       "score": 20,
       "signal": "AVOID",
+      "rec_action": "ควรขาย/เลี่ยง",
+      "rec_text": "🔴 ควรเลี่ยง — แนวโน้มขาลง (ถ้าถืออยู่ ควรพิจารณาขาย)",
+      "rec_tone": "sell",
       "trend": "DOWN",
       "rsi": 39.4,
       "macd_hist": -0.0652,
@@ -4314,16 +4452,16 @@
           "published": "1 วันที่แล้ว"
         },
         {
-          "title": "GLOBAL โกยทรัพย์ทุกสาขา สัญญาณกำไรพุ่งฉิว",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBmbVA4YVAtY0t5WVZOY053VVAyUEdZTFFRbGJ6VGxXcGxCX0VoZVl3Z3I5T05wMHk5RVZGOVBPY3hReVNaMWZEOXVhdWRCakNHd3JSdzBB?oc=5",
-          "source": "มิติหุ้น",
-          "published": "5 วันที่แล้ว"
-        },
-        {
           "title": "โครงสร้างผู้ถือหุ้น Global Partners LP (GLP): ผู้ถือหุ้นรายใหญ่และการถือครองของนักลงทุนสถาบัน",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9CeFBVNldmYWNPb3N1VE1IakhKRjhFenJRTU9yMjRuQTQ2X3F1NnZVTGJFVmNueFVIdy1McXFITE5xN0pWQWItNXp2UG5JODkwdG9LTEhhVnJEZ3YwZVcxSTcwSWpYOTN4WjNDWkNuRURZTlU?oc=5",
           "source": "TradingKey",
           "published": "2 วันที่แล้ว"
+        },
+        {
+          "title": "GLOBAL โกยทรัพย์ทุกสาขา สัญญาณกำไรพุ่งฉิว",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBmbVA4YVAtY0t5WVZOY053VVAyUEdZTFFRbGJ6VGxXcGxCX0VoZVl3Z3I5T05wMHk5RVZGOVBPY3hReVNaMWZEOXVhdWRCakNHd3JSdzBB?oc=5",
+          "source": "มิติหุ้น",
+          "published": "6 วันที่แล้ว"
         }
       ]
     },
@@ -4334,6 +4472,9 @@
       "change_pct": -0.7,
       "score": 20,
       "signal": "AVOID",
+      "rec_action": "เลี่ยง",
+      "rec_text": "🔴 ยังไม่น่าสนใจ — เลี่ยงไปก่อน",
+      "rec_tone": "avoid",
       "trend": "SIDEWAYS",
       "rsi": 39.7,
       "macd_hist": -0.1734,
@@ -4395,13 +4536,13 @@
           "title": "หุ้นไทยวันนี้(19 มิ.ย.) ร่วง 12.56 จุด ขาย DELTA-KTB-PTT",
           "link": "https://news.google.com/rss/articles/CBMiywNBVV95cUxQTkdRRDNBckh5eWtUVDJBb3dqTHFhdmR3MXRYMVozRHc4Yi15X2xTX1lOMEFGQmFDVF9BSGY5Q1VfaThkQTYxOEljS2lkdWEzNFZSaHJ3ZVl5YVpudmxGYnhGY0ZhZlh3cEoxU1hSZTV6QUJMUVFvTFFVTVExcjV6YklEMko0Rjhyak5LMVNxM0JOSUhUc3RqdWtJdnZoZ1R3ZW5wREJiaWhnSl80Z1lQLXR3VmdYWmtHMThJOFRFZktJeGcxTG84VmlNcWd6RGxWY0RESW1ZSkQ3REpxcmVBdGdvenR0T3F6b1Z0RmJ2X1NCZFUxU2xvSWdVeFNPeGlKVTdaRVdRdUhxRGU0RUpuWFBVemR5bUU3VjZRSDJvdzFGOUVLU21tbWs1Tm5LVUdCTW8wc0FyS3ZxVHJqaEgwa1c4THNpWnZ3dTVyX2lSaWI5aUVJNHBNajVjajFHRzVkcUdhM0szRTRxcU1LVmtIa3FTQWt4clgzZzZ4ekNqOE1lYXY5bmc2Z2kwR1pDcC00NWotNUE0alVGYjVpUDcxbUxpZFgxNHk3VFNhZE51UEVtaTRxWWdtTGtwVVBzaWFiRWRvTFAtZFgyTE0?oc=5",
           "source": "facebook.com",
-          "published": "23 ชม.ที่แล้ว"
+          "published": "1 วันที่แล้ว"
         },
         {
           "title": "หุ้นไทยวันนี้(19 มิ.ย.) ร่วง 12.56 จุด ขาย DELTA-KTB-PTT",
           "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBHN1BnT3J2RWJDamo0MTVRRTY4TDBadmI0ZXhqSm5yZmZoQ3BwUFp1VEdCVmVYaGQ0V1dWN29DMWRwaUZvRkhBN1lCS3pjNDdZaGhaelZXTWx6MVFy?oc=5",
           "source": "Thunhoon",
-          "published": "23 ชม.ที่แล้ว"
+          "published": "1 วันที่แล้ว"
         },
         {
           "title": "PTT จัดพิธีบำเพ็ญกุศล 7 วัน - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
@@ -4424,6 +4565,9 @@
       "change_pct": 3.88,
       "score": 20,
       "signal": "AVOID",
+      "rec_action": "ควรขาย/เลี่ยง",
+      "rec_text": "🔴 ควรเลี่ยง — แนวโน้มขาลง (ถ้าถืออยู่ ควรพิจารณาขาย)",
+      "rec_tone": "sell",
       "trend": "DOWN",
       "rsi": 43.8,
       "macd_hist": -0.1005,
@@ -4496,10 +4640,10 @@
           "published": "1 วันที่แล้ว"
         },
         {
-          "title": "เปิด 5 อันดับหุ้นต่างชาติซื้อสุทธิผ่าน NVDR จัดหนัก PTTGC สูงสุด 870 ล้านบาท",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0zR3BrZDJrb1hQN0twZnhjUnpvRi1xNEpCZDNfUjVsMTlPU01sdUM0Tng1NlNWM2dOUW5oUGcyTE1KUFBDeUtwbHhGNA?oc=5",
+          "title": "PTTGC โผล่บิ๊กล็อต 40 ล้านหุ้น มูลค่า 1.34 พันลบ. ราคาเฉลี่ย 33.71 บ. ต่ำกว่ากระดาน",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1GUTBVbEE5ckdDVEsyNFRVT0VteFVzX2l5Y3JkdWtyZ2JILXlpZTlMdHdjUkZzc29tc2ZBT01Ndm5NYzJCN2pLemRLUQ?oc=5",
           "source": "ข่าวหุ้นธุรกิจออนไลน์",
-          "published": "5 วันที่แล้ว"
+          "published": "12/06/2026"
         },
         {
           "title": "ส่องอนาคต หุ้นโรงกลั่น แนวโน้ม Q2/69 จะเป็นอย่างไร หลังกำไร Q1/69 โต 1,400%",
@@ -4516,6 +4660,9 @@
       "change_pct": -0.72,
       "score": 12,
       "signal": "AVOID",
+      "rec_action": "เลี่ยง",
+      "rec_text": "🔴 ยังไม่น่าสนใจ — เลี่ยงไปก่อน",
+      "rec_tone": "avoid",
       "trend": "SIDEWAYS",
       "rsi": 43.6,
       "macd_hist": -0.0127,
@@ -4578,7 +4725,7 @@
           "title": "เทียบฟอร์ม ADVANC-TRUE หุ้นปลอดภัย-กำไรโตเด่น - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
           "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxOT1NMR01mZlZUS1JnYnB4aUFCVFBpZDhkQ3VHRnVQc2dNZnJQeUxsRWJmSnlZM0dWQ3BpeHh3bjVmd3AtZ0lwR2k2clp5N3UzbnNoZTlhRVdNb1ZEX0lxNGowdzN6eUdfQmpkaXNLZGgxMkZxSTI4aDJPX21ndnA3ZVFfMm5xT3NQUlQxV1o3ZVVGWTZGMHdTR0QyX2ZIaHQ2eUNxWloyeUotWFcxQ0tJd2l1X2lCdHhPcHB3SnNpUm82YnZqUEswa3FHTU1JZ1BnSmFYVlpOQURuNWFhelRQbmw1bjFOSk9IcjJZTWN1OWFjSWczdllrVlh4Y2NIeXNFakRaUldlanJ3aEwxbGMzN2Jwb0pZeC1VczMzSElGRXAzLWUybHdDY0gzeXlZVW1BaVRibGZ1Mm1MY2ZNaEdjcHpWa29VSXBBQVFyeUhkencyNWxRVHc?oc=5",
           "source": "HoonVision",
-          "published": "4 ชม.ที่แล้ว"
+          "published": "10 ชม.ที่แล้ว"
         },
         {
           "title": "ADVANC-TRUE หุ้นปลอดภัย ตัวช่วยสร้างสมดุลให้พอร์ตลงทุน กำไรโตสม่ำเสมอ-ปันผลสูง",
@@ -4590,13 +4737,13 @@
           "title": "TRUE พักแล้ว(ลุ้น)วิ่งต่อ | ข่าวหุ้นธุรกิจ",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4zNUNVaFQzREtGNFpXdDBsSS1HMFc2WC1Pdkc5U2pqU0FXUDctMzFVRmFMX0ZkSm9ZSXUwS0xON1g1cHdEMDN3SjlRb0xzeEFwZWpaOEJn?oc=5",
           "source": "LINE TODAY",
-          "published": "16 ชม.ที่แล้ว"
+          "published": "21 ชม.ที่แล้ว"
         },
         {
-          "title": "TRUE ขึ้นแท่นหุ้นปันผล.!",
-          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE50TlFPVm04aW8zQ1p1bTVVSTdfUVg1TkQ3ZnF1Mm14ZVlHNXFqUENlZUZrc2pkZktSbElVYVU0ZnUyS09lQkVsMHZFVFQ1UQ?oc=5",
-          "source": "ข่าวหุ้นธุรกิจออนไลน์",
-          "published": "11/05/2026"
+          "title": "TRUE เมย์แบงก์ คาดกำไรหลักปี 69 โต -มูลค่าหุ้นถูก แนะ”ซื้อ”",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1FNWJUdERPWXM0RHcxSjR6SE9YT01LYUdkS3c0TjIwNG1HbXBsMzJULXdQTXF0emh0Q0FzVlpVTmdHMWhOMW4zM3FSZlZqMnM?oc=5",
+          "source": "Thunhoon",
+          "published": "27/04/2026"
         }
       ]
     }
