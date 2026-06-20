@@ -559,23 +559,24 @@ function openModal(ticker) {
 }
 
 function openUpdateModal() {
+  const currentStamp = document.getElementById("updated")?.textContent || "-";
   document.getElementById("modal-content").innerHTML = `
-    <div class="md-head"><h2>อัปเดตข้อมูลล่าสุด</h2><span class="badge s-buy">SAFE</span></div>
-    <div class="md-sub">ระบบอัตโนมัติเดิมยังทำงานตามรอบ GitHub Actions เหมือนเดิม</div>
+    <div class="md-head"><h2>รันอัปเดตข้อมูลใหม่</h2><span class="badge s-buy">SAFE</span></div>
+    <div class="md-sub">${escapeHtml(currentStamp)} · ระบบอัตโนมัติเดิมยังทำงานตามรอบ GitHub Actions เหมือนเดิม</div>
 
     <div class="update-help">
-      <div class="update-option">
-        <b>1. รีเฟรชข้อมูลบนหน้าเว็บ</b>
-        <p>ใช้เมื่อ GitHub Actions รันเสร็จแล้ว หรือเปิดเว็บค้างไว้บน iPhone แล้วอยากดึงไฟล์ข้อมูลล่าสุดทันที</p>
-        <button class="update-action" id="force-refresh" type="button">↻ รีเฟรชข้อมูลบนหน้าเว็บ</button>
-      </div>
-      <div class="update-option">
-        <b>2. สั่งให้ GitHub ดึงข้อมูลหุ้นใหม่</b>
-        <p>เปิดหน้า GitHub Actions แล้วกด <b>Run workflow</b> ระบบจะวิเคราะห์หุ้นใหม่ ส่ง Telegram และอัปเดต GitHub Pages โดยไม่ต้องเปิด notebook</p>
+      <div class="update-option primary">
+        <b>1. ดึงข้อมูลหุ้นใหม่จริง</b>
+        <p>กดปุ่มนี้ แล้วในหน้า GitHub ให้กด <b>Run workflow</b> สีเขียวอีกครั้ง ระบบจะวิเคราะห์หุ้นใหม่ ส่ง Telegram และอัปเดต GitHub Pages โดยไม่ต้องเปิด notebook</p>
         <a class="update-action primary" href="${WORKFLOW_URL}" target="_blank" rel="noopener">เปิดหน้า Run workflow</a>
       </div>
+      <div class="update-option">
+        <b>2. รีเฟรชหลังรันเสร็จ</b>
+        <p>ใช้หลังจาก GitHub Actions ขึ้นว่า success แล้ว หรือถ้าเปิดเว็บค้างไว้บน iPhone และอยากดึงไฟล์ข้อมูลที่ deploy ล่าสุด</p>
+        <button class="update-action" id="force-refresh" type="button">↻ ดึงไฟล์ล่าสุดจากเว็บ</button>
+      </div>
     </div>
-    <p class="bt-disclaimer">เหตุผลที่เว็บไม่สั่งรันให้อัตโนมัติทันที: การทำแบบนั้นต้องใช้ GitHub token ถ้าฝังไว้ในเว็บจะไม่ปลอดภัยและอาจทำให้คนอื่นสั่งงาน repo ของคุณได้</p>`;
+    <p class="bt-disclaimer">หมายเหตุ: ปุ่มรีเฟรชไม่ได้วิเคราะห์หุ้นใหม่เอง ถ้าต้องการราคาล่าสุดต้องกด Run workflow ก่อน เพราะเว็บ public ไม่ควรฝัง GitHub token ไว้</p>`;
   document.getElementById("modal").classList.remove("hidden");
 }
 

@@ -421,6 +421,7 @@ body {
 .bt-disclaimer { color: var(--muted); font-size: 11.5px; margin-top: 8px; font-style: italic; }
 .update-help { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 16px 0; }
 .update-option { background: var(--bg-2); border: 1px solid var(--line); border-radius: 13px; padding: 15px; }
+.update-option.primary { border-color: var(--line-strong); background: rgba(0,230,118,.07); }
 .update-option b { color: var(--text); font-size: 14px; }
 .update-option p { color: var(--muted); font-size: 12.5px; line-height: 1.6; margin: 8px 0 12px; }
 .update-action {
