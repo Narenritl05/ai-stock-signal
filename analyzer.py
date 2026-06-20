@@ -65,6 +65,14 @@ def _safe(x, default=0.0):
 def compute_indicators(df: pd.DataFrame) -> pd.DataFrame:
     close = df["Close"]
     volume = df["Volume"]
+    high = df["High"]
+    low = df["Low"]
+    prev_close = close.shift(1)
+    true_range = pd.concat([
+        high - low,
+        (high - prev_close).abs(),
+        (low - prev_close).abs(),
+    ], axis=1).max(axis=1)
     out = pd.DataFrame(index=df.index)
     out["close"] = close
     out["ema_fast"] = ema(close, config.EMA_FAST)
@@ -75,7 +83,15 @@ def compute_indicators(df: pd.DataFrame) -> pd.DataFrame:
     out["vol"] = volume
     out["vol_avg"] = volume.rolling(config.VOLUME_LOOKBACK).mean()
     out["mom5"] = close.pct_change(5) * 100
+    out["ret20"] = close.pct_change(20) * 100
+    out["ret60"] = close.pct_change(60) * 100
+    out["atr14"] = true_range.rolling(14).mean()
+    out["volatility20"] = close.pct_change().rolling(20).std() * (252 ** 0.5) * 100
     return out
+
+
+def _pct_from(price: float, base: float) -> float:
+    return ((price - base) / base * 100) if base else 0.0
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -191,6 +207,50 @@ def recommend(signal: str, trend: str) -> dict:
     return {"action": "เลี่ยง", "text": "🔴 ยังไม่น่าสนใจ — เลี่ยงไปก่อน", "tone": "avoid"}
 
 
+def holding_plan(signal: str, trend: str, rsi_value: float, macd_hist: float,
+                 vol_ratio: float, mom5: float) -> dict:
+    """ประเมินกรอบการถือจากสัญญาณเทคนิค: เก็งกำไรสั้น / ถือยาว / รอดู / เลี่ยง"""
+    if signal in ("STRONG BUY", "BUY"):
+        hot_momentum = mom5 >= 5 or vol_ratio >= 1.8 or rsi_value >= 70
+        stable_uptrend = trend == "UP" and 45 <= rsi_value <= 68 and macd_hist > 0
+        if hot_momentum and not stable_uptrend:
+            return {
+                "style": "SHORT",
+                "label": "ถือสั้น",
+                "period": "3-10 วันทำการ",
+                "text": "เหมาะเก็งกำไรระยะสั้น ใช้เป้า 1 และ stop loss เคร่งครัด",
+                "reason": "โมเมนตัม/วอลุ่มแรง หรือ RSI เริ่มร้อน จึงควรล็อกกำไรไวกว่า",
+                "tone": "short",
+            }
+        return {
+            "style": "LONG",
+            "label": "ถือยาว",
+            "period": "2-8 สัปดาห์",
+            "text": "เหมาะถือยาวกว่าเดิมตามเทรนด์ ใช้ EMA20/50 และ stop loss เป็นเส้นคุมเกม",
+            "reason": "แนวโน้มหลักยังเป็นบวกและโมเมนตัมไม่ร้อนเกินไป",
+            "tone": "long",
+        }
+
+    if signal == "WATCH":
+        return {
+            "style": "WAIT",
+            "label": "รอดู",
+            "period": "รอสัญญาณยืนยัน",
+            "text": "ยังไม่เหมาะเลือกกรอบถือ รอให้คะแนนหรือเทรนด์ชัดขึ้นก่อน",
+            "reason": "สัญญาณยังไม่ผ่านเกณฑ์ซื้อ",
+            "tone": "wait",
+        }
+
+    return {
+        "style": "AVOID",
+        "label": "ไม่ควรถือ",
+        "period": "หลีกเลี่ยง/ลดสถานะ",
+        "text": "ไม่เหมาะถือทั้งสั้นและยาวจนกว่าสัญญาณจะกลับมา",
+        "reason": "คะแนนหรือเทรนด์ยังอ่อน",
+        "tone": "avoid",
+    }
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # ดึงข้อมูลราคา
 # ─────────────────────────────────────────────────────────────────────────────
@@ -238,13 +298,19 @@ def analyze_one(ticker: str, name: str) -> dict | None:
     h = _safe(last["macd_hist"])
     h_prev = _safe(prev["macd_hist"])
     vol_avg = _safe(last["vol_avg"], _safe(last["vol"]))
-    vol_ratio = (_safe(last["vol"]) / vol_avg) if vol_avg else 1.0
+    volume = _safe(last["vol"])
+    vol_ratio = (volume / vol_avg) if vol_avg else 1.0
     mom5 = _safe(last["mom5"])
+    ret20 = _safe(last["ret20"])
+    ret60 = _safe(last["ret60"])
+    atr14 = _safe(last["atr14"])
+    volatility20 = _safe(last["volatility20"])
 
     score, sig, trend, reasons, warnings = score_point(
         price, prev_price, ef, es, r, h, h_prev, vol_ratio, mom5
     )
     rec = recommend(sig, trend)
+    hold = holding_plan(sig, trend, r, h, vol_ratio, mom5)
 
     # จุด stop loss: เลือกจุดที่ใกล้ราคากว่า ระหว่าง swing low 20 วัน กับ -STOP_LOSS_PCT
     swing_low = _safe(df["Close"].tail(20).min(), price * (1 - config.STOP_LOSS_PCT))
@@ -253,6 +319,27 @@ def analyze_one(ticker: str, name: str) -> dict | None:
     if stop_loss >= price:
         stop_loss = pct_stop
 
+    target1 = price * (1 + config.TARGET1_PCT)
+    target2 = price * (1 + config.TARGET2_PCT)
+    downside_pct = max((price - stop_loss) / price * 100, 0.0) if price else 0.0
+    upside1_pct = config.TARGET1_PCT * 100
+    upside2_pct = config.TARGET2_PCT * 100
+    risk_reward1 = ((target1 - price) / (price - stop_loss)) if price > stop_loss else None
+    risk_reward2 = ((target2 - price) / (price - stop_loss)) if price > stop_loss else None
+
+    latest = df.iloc[-1]
+    window20 = df.tail(20)
+    window120 = df.tail(120)
+    day_open = _safe(latest["Open"], price)
+    day_high = _safe(latest["High"], price)
+    day_low = _safe(latest["Low"], price)
+    high_20d = _safe(window20["High"].max(), day_high)
+    low_20d = _safe(window20["Low"].min(), day_low)
+    high_120d = _safe(window120["High"].max(), day_high)
+    low_120d = _safe(window120["Low"].min(), day_low)
+    atr_pct = (atr14 / price * 100) if price else 0.0
+    turnover = price * volume
+
     # ราคาย้อนหลังสำหรับวาดกราฟ sparkline บนหน้าเว็บ (40 วันล่าสุด)
     history = [round(float(c), 2) for c in df["Close"].tail(40).tolist()]
 
@@ -260,21 +347,52 @@ def analyze_one(ticker: str, name: str) -> dict | None:
         "ticker": ticker,
         "name": name,
         "price": round(price, 2),
+        "open": round(day_open, 2),
+        "day_high": round(day_high, 2),
+        "day_low": round(day_low, 2),
+        "prev_close": round(prev_price, 2),
         "change_pct": round(change_pct, 2),
         "score": score,
         "signal": sig,
         "rec_action": rec["action"],
         "rec_text": rec["text"],
         "rec_tone": rec["tone"],
+        "holding_style": hold["style"],
+        "holding_label": hold["label"],
+        "holding_period": hold["period"],
+        "holding_text": hold["text"],
+        "holding_reason": hold["reason"],
+        "holding_tone": hold["tone"],
         "trend": trend,
+        "ema_fast": round(ef, 2),
+        "ema_slow": round(es, 2),
         "rsi": round(r, 1),
         "macd_hist": round(h, 4),
+        "volume": int(volume),
+        "avg_volume": int(vol_avg),
         "volume_ratio": round(vol_ratio, 2),
         "momentum_5d": round(mom5, 2),
+        "return_20d": round(ret20, 2),
+        "return_60d": round(ret60, 2),
+        "atr14": round(atr14, 2),
+        "atr_pct": round(atr_pct, 2),
+        "volatility20": round(volatility20, 2),
+        "turnover": round(turnover, 2),
+        "high_20d": round(high_20d, 2),
+        "low_20d": round(low_20d, 2),
+        "high_120d": round(high_120d, 2),
+        "low_120d": round(low_120d, 2),
+        "from_high_120d_pct": round(_pct_from(price, high_120d), 2),
+        "from_low_120d_pct": round(_pct_from(price, low_120d), 2),
         "entry": round(price, 2),
         "stop_loss": round(stop_loss, 2),
-        "target1": round(price * (1 + config.TARGET1_PCT), 2),
-        "target2": round(price * (1 + config.TARGET2_PCT), 2),
+        "target1": round(target1, 2),
+        "target2": round(target2, 2),
+        "downside_pct": round(downside_pct, 2),
+        "upside1_pct": round(upside1_pct, 2),
+        "upside2_pct": round(upside2_pct, 2),
+        "risk_reward1": round(risk_reward1, 2) if risk_reward1 is not None else None,
+        "risk_reward2": round(risk_reward2, 2) if risk_reward2 is not None else None,
         "history": history,
         "reasons": reasons,
         "warnings": warnings,

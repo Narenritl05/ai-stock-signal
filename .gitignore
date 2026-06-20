@@ -16,7 +16,11 @@ state/news_cache.json
 # ความลับ Telegram (ห้ามขึ้น GitHub) — ใช้ telegram.txt.example เป็นต้นแบบ
 telegram.txt
 
+# ไฟล์ token GitHub ชั่วคราว (ห้ามขึ้น GitHub)
+_ghtoken.txt
+
 # IDE / editor
 .vscode/
 .idea/
+.serena/
 .claude/

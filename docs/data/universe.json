@@ -1,0 +1,2444 @@
+{
+  "generated_at": "2026-06-21 02:17 (เวลาไทย)",
+  "generated_at_iso": "2026-06-21T02:17:07.380515+07:00",
+  "count": 269,
+  "markets": [
+    {
+      "key": "th",
+      "name": "หุ้นไทย (SET)",
+      "short": "ไทย",
+      "tag": "TH",
+      "count": 134
+    },
+    {
+      "key": "us",
+      "name": "หุ้นต่างประเทศ (US)",
+      "short": "ต่างประเทศ",
+      "tag": "US",
+      "count": 135
+    }
+  ],
+  "stocks": [
+    {
+      "ticker": "AAV.BK",
+      "display_ticker": "AAV",
+      "name": "AAV",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "ACE.BK",
+      "display_ticker": "ACE",
+      "name": "ACE",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "ADVANC.BK",
+      "display_ticker": "ADVANC",
+      "name": "ADVANC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "AEONTS.BK",
+      "display_ticker": "AEONTS",
+      "name": "AEONTS",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "AH.BK",
+      "display_ticker": "AH",
+      "name": "AH",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "AMATA.BK",
+      "display_ticker": "AMATA",
+      "name": "AMATA",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "AOT.BK",
+      "display_ticker": "AOT",
+      "name": "AOT",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "AP.BK",
+      "display_ticker": "AP",
+      "name": "AP",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "AU.BK",
+      "display_ticker": "AU",
+      "name": "AU",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "AWC.BK",
+      "display_ticker": "AWC",
+      "name": "AWC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BA.BK",
+      "display_ticker": "BA",
+      "name": "BA",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BAM.BK",
+      "display_ticker": "BAM",
+      "name": "BAM",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BANPU.BK",
+      "display_ticker": "BANPU",
+      "name": "BANPU",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BBL.BK",
+      "display_ticker": "BBL",
+      "name": "BBL",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BCH.BK",
+      "display_ticker": "BCH",
+      "name": "BCH",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BCP.BK",
+      "display_ticker": "BCP",
+      "name": "BCP",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BCPG.BK",
+      "display_ticker": "BCPG",
+      "name": "BCPG",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BDMS.BK",
+      "display_ticker": "BDMS",
+      "name": "BDMS",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BEC.BK",
+      "display_ticker": "BEC",
+      "name": "BEC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BEM.BK",
+      "display_ticker": "BEM",
+      "name": "BEM",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BGRIM.BK",
+      "display_ticker": "BGRIM",
+      "name": "BGRIM",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BH.BK",
+      "display_ticker": "BH",
+      "name": "BH",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BJC.BK",
+      "display_ticker": "BJC",
+      "name": "BJC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BLA.BK",
+      "display_ticker": "BLA",
+      "name": "BLA",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BPP.BK",
+      "display_ticker": "BPP",
+      "name": "BPP",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BRI.BK",
+      "display_ticker": "BRI",
+      "name": "BRI",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BTG.BK",
+      "display_ticker": "BTG",
+      "name": "BTG",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "BTS.BK",
+      "display_ticker": "BTS",
+      "name": "BTS",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "CBG.BK",
+      "display_ticker": "CBG",
+      "name": "CBG",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "CENTEL.BK",
+      "display_ticker": "CENTEL",
+      "name": "CENTEL",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "CHAYO.BK",
+      "display_ticker": "CHAYO",
+      "name": "CHAYO",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "CHG.BK",
+      "display_ticker": "CHG",
+      "name": "CHG",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "CK.BK",
+      "display_ticker": "CK",
+      "name": "CK",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "CKP.BK",
+      "display_ticker": "CKP",
+      "name": "CKP",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "COM7.BK",
+      "display_ticker": "COM7",
+      "name": "COM7",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "CPALL.BK",
+      "display_ticker": "CPALL",
+      "name": "CPALL",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "CPF.BK",
+      "display_ticker": "CPF",
+      "name": "CPF",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "CPN.BK",
+      "display_ticker": "CPN",
+      "name": "CPN",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "CRC.BK",
+      "display_ticker": "CRC",
+      "name": "CRC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "DCC.BK",
+      "display_ticker": "DCC",
+      "name": "DCC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "DELTA.BK",
+      "display_ticker": "DELTA",
+      "name": "DELTA",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "DITTO.BK",
+      "display_ticker": "DITTO",
+      "name": "DITTO",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "DMT.BK",
+      "display_ticker": "DMT",
+      "name": "DMT",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "DOHOME.BK",
+      "display_ticker": "DOHOME",
+      "name": "DOHOME",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "EA.BK",
+      "display_ticker": "EA",
+      "name": "EA",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "EGCO.BK",
+      "display_ticker": "EGCO",
+      "name": "EGCO",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "ERW.BK",
+      "display_ticker": "ERW",
+      "name": "ERW",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "FORTH.BK",
+      "display_ticker": "FORTH",
+      "name": "FORTH",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "GFPT.BK",
+      "display_ticker": "GFPT",
+      "name": "GFPT",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "GGC.BK",
+      "display_ticker": "GGC",
+      "name": "GGC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "GLOBAL.BK",
+      "display_ticker": "GLOBAL",
+      "name": "GLOBAL",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "GPSC.BK",
+      "display_ticker": "GPSC",
+      "name": "GPSC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "GULF.BK",
+      "display_ticker": "GULF",
+      "name": "GULF",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "GUNKUL.BK",
+      "display_ticker": "GUNKUL",
+      "name": "GUNKUL",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "HANA.BK",
+      "display_ticker": "HANA",
+      "name": "HANA",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "HENG.BK",
+      "display_ticker": "HENG",
+      "name": "HENG",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "HMPRO.BK",
+      "display_ticker": "HMPRO",
+      "name": "HMPRO",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "HUMAN.BK",
+      "display_ticker": "HUMAN",
+      "name": "HUMAN",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "ICHI.BK",
+      "display_ticker": "ICHI",
+      "name": "ICHI",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "IIG.BK",
+      "display_ticker": "IIG",
+      "name": "IIG",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "ILM.BK",
+      "display_ticker": "ILM",
+      "name": "ILM",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "INTUCH.BK",
+      "display_ticker": "INTUCH",
+      "name": "INTUCH",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "IRPC.BK",
+      "display_ticker": "IRPC",
+      "name": "IRPC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "ITC.BK",
+      "display_ticker": "ITC",
+      "name": "ITC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "IVL.BK",
+      "display_ticker": "IVL",
+      "name": "IVL",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "JAS.BK",
+      "display_ticker": "JAS",
+      "name": "JAS",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "JMART.BK",
+      "display_ticker": "JMART",
+      "name": "JMART",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "JMT.BK",
+      "display_ticker": "JMT",
+      "name": "JMT",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "KBANK.BK",
+      "display_ticker": "KBANK",
+      "name": "KBANK",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "KCE.BK",
+      "display_ticker": "KCE",
+      "name": "KCE",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "KKP.BK",
+      "display_ticker": "KKP",
+      "name": "KKP",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "KTB.BK",
+      "display_ticker": "KTB",
+      "name": "KTB",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "KTC.BK",
+      "display_ticker": "KTC",
+      "name": "KTC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "LANNA.BK",
+      "display_ticker": "LANNA",
+      "name": "LANNA",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "LH.BK",
+      "display_ticker": "LH",
+      "name": "LH",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "M.BK",
+      "display_ticker": "M",
+      "name": "M",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "MAJOR.BK",
+      "display_ticker": "MAJOR",
+      "name": "MAJOR",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "MC.BK",
+      "display_ticker": "MC",
+      "name": "MC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "MEGA.BK",
+      "display_ticker": "MEGA",
+      "name": "MEGA",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "MINT.BK",
+      "display_ticker": "MINT",
+      "name": "MINT",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "MTC.BK",
+      "display_ticker": "MTC",
+      "name": "MTC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "NER.BK",
+      "display_ticker": "NER",
+      "name": "NER",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "ONEE.BK",
+      "display_ticker": "ONEE",
+      "name": "ONEE",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "OR.BK",
+      "display_ticker": "OR",
+      "name": "OR",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "ORI.BK",
+      "display_ticker": "ORI",
+      "name": "ORI",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "OSP.BK",
+      "display_ticker": "OSP",
+      "name": "OSP",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "PLANB.BK",
+      "display_ticker": "PLANB",
+      "name": "PLANB",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "PRM.BK",
+      "display_ticker": "PRM",
+      "name": "PRM",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "PSL.BK",
+      "display_ticker": "PSL",
+      "name": "PSL",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "PTG.BK",
+      "display_ticker": "PTG",
+      "name": "PTG",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "PTT.BK",
+      "display_ticker": "PTT",
+      "name": "PTT",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "PTTEP.BK",
+      "display_ticker": "PTTEP",
+      "name": "PTTEP",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "PTTGC.BK",
+      "display_ticker": "PTTGC",
+      "name": "PTTGC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "QH.BK",
+      "display_ticker": "QH",
+      "name": "QH",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "RATCH.BK",
+      "display_ticker": "RATCH",
+      "name": "RATCH",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "RBF.BK",
+      "display_ticker": "RBF",
+      "name": "RBF",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "RCL.BK",
+      "display_ticker": "RCL",
+      "name": "RCL",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "RS.BK",
+      "display_ticker": "RS",
+      "name": "RS",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "SAK.BK",
+      "display_ticker": "SAK",
+      "name": "SAK",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "SAPPE.BK",
+      "display_ticker": "SAPPE",
+      "name": "SAPPE",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "SAWAD.BK",
+      "display_ticker": "SAWAD",
+      "name": "SAWAD",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "SCB.BK",
+      "display_ticker": "SCB",
+      "name": "SCB",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "SCC.BK",
+      "display_ticker": "SCC",
+      "name": "SCC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "SCGP.BK",
+      "display_ticker": "SCGP",
+      "name": "SCGP",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "SINGER.BK",
+      "display_ticker": "SINGER",
+      "name": "SINGER",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "SIRI.BK",
+      "display_ticker": "SIRI",
+      "name": "SIRI",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "SISB.BK",
+      "display_ticker": "SISB",
+      "name": "SISB",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "SJWD.BK",
+      "display_ticker": "SJWD",
+      "name": "SJWD",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "SNNP.BK",
+      "display_ticker": "SNNP",
+      "name": "SNNP",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "SPALI.BK",
+      "display_ticker": "SPALI",
+      "name": "SPALI",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "SPRC.BK",
+      "display_ticker": "SPRC",
+      "name": "SPRC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "STA.BK",
+      "display_ticker": "STA",
+      "name": "STA",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "STEC.BK",
+      "display_ticker": "STEC",
+      "name": "STEC",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "STGT.BK",
+      "display_ticker": "STGT",
+      "name": "STGT",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "SYNEX.BK",
+      "display_ticker": "SYNEX",
+      "name": "SYNEX",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "TASCO.BK",
+      "display_ticker": "TASCO",
+      "name": "TASCO",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "THANI.BK",
+      "display_ticker": "THANI",
+      "name": "THANI",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "TIDLOR.BK",
+      "display_ticker": "TIDLOR",
+      "name": "TIDLOR",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "TISCO.BK",
+      "display_ticker": "TISCO",
+      "name": "TISCO",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "TKN.BK",
+      "display_ticker": "TKN",
+      "name": "TKN",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "TLI.BK",
+      "display_ticker": "TLI",
+      "name": "TLI",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "TOA.BK",
+      "display_ticker": "TOA",
+      "name": "TOA",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "TOP.BK",
+      "display_ticker": "TOP",
+      "name": "TOP",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "TPIPL.BK",
+      "display_ticker": "TPIPL",
+      "name": "TPIPL",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "TQM.BK",
+      "display_ticker": "TQM",
+      "name": "TQM",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "TRUE.BK",
+      "display_ticker": "TRUE",
+      "name": "TRUE",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "TTA.BK",
+      "display_ticker": "TTA",
+      "name": "TTA",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "TTB.BK",
+      "display_ticker": "TTB",
+      "name": "TTB",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "TU.BK",
+      "display_ticker": "TU",
+      "name": "TU",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "UV.BK",
+      "display_ticker": "UV",
+      "name": "UV",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "VGI.BK",
+      "display_ticker": "VGI",
+      "name": "VGI",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "WHA.BK",
+      "display_ticker": "WHA",
+      "name": "WHA",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "WHAUP.BK",
+      "display_ticker": "WHAUP",
+      "name": "WHAUP",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "ZEN.BK",
+      "display_ticker": "ZEN",
+      "name": "ZEN",
+      "market_key": "th",
+      "market": "ไทย",
+      "market_tag": "TH",
+      "currency": "฿"
+    },
+    {
+      "ticker": "A",
+      "display_ticker": "A",
+      "name": "A",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "AAPL",
+      "display_ticker": "AAPL",
+      "name": "AAPL",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "ABBV",
+      "display_ticker": "ABBV",
+      "name": "ABBV",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "ADBE",
+      "display_ticker": "ADBE",
+      "name": "ADBE",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "ADI",
+      "display_ticker": "ADI",
+      "name": "ADI",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "AFRM",
+      "display_ticker": "AFRM",
+      "name": "AFRM",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "AI",
+      "display_ticker": "AI",
+      "name": "AI",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "ALAB",
+      "display_ticker": "ALAB",
+      "name": "ALAB",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "AMAT",
+      "display_ticker": "AMAT",
+      "name": "AMAT",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "AMD",
+      "display_ticker": "AMD",
+      "name": "AMD",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "AMZN",
+      "display_ticker": "AMZN",
+      "name": "AMZN",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "ANET",
+      "display_ticker": "ANET",
+      "name": "ANET",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "APP",
+      "display_ticker": "APP",
+      "name": "APP",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "ARM",
+      "display_ticker": "ARM",
+      "name": "ARM",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "ASML",
+      "display_ticker": "ASML",
+      "name": "ASML",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "ASTS",
+      "display_ticker": "ASTS",
+      "name": "ASTS",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "AVGO",
+      "display_ticker": "AVGO",
+      "name": "AVGO",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "AXP",
+      "display_ticker": "AXP",
+      "name": "AXP",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "BA",
+      "display_ticker": "BA",
+      "name": "BA",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "BABA",
+      "display_ticker": "BABA",
+      "name": "BABA",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "BAC",
+      "display_ticker": "BAC",
+      "name": "BAC",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "BIDU",
+      "display_ticker": "BIDU",
+      "name": "BIDU",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "BLK",
+      "display_ticker": "BLK",
+      "name": "BLK",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "CAT",
+      "display_ticker": "CAT",
+      "name": "CAT",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "CELH",
+      "display_ticker": "CELH",
+      "name": "CELH",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "CLS",
+      "display_ticker": "CLS",
+      "name": "CLS",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "CLSK",
+      "display_ticker": "CLSK",
+      "name": "CLSK",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "CMG",
+      "display_ticker": "CMG",
+      "name": "CMG",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "COIN",
+      "display_ticker": "COIN",
+      "name": "COIN",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "COP",
+      "display_ticker": "COP",
+      "name": "COP",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "COST",
+      "display_ticker": "COST",
+      "name": "COST",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "CRDO",
+      "display_ticker": "CRDO",
+      "name": "CRDO",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "CRM",
+      "display_ticker": "CRM",
+      "name": "CRM",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "CRWD",
+      "display_ticker": "CRWD",
+      "name": "CRWD",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "CVNA",
+      "display_ticker": "CVNA",
+      "name": "CVNA",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "CVX",
+      "display_ticker": "CVX",
+      "name": "CVX",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "DDOG",
+      "display_ticker": "DDOG",
+      "name": "DDOG",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "DE",
+      "display_ticker": "DE",
+      "name": "DE",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "DKNG",
+      "display_ticker": "DKNG",
+      "name": "DKNG",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "DUOL",
+      "display_ticker": "DUOL",
+      "name": "DUOL",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "ELF",
+      "display_ticker": "ELF",
+      "name": "ELF",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "ETN",
+      "display_ticker": "ETN",
+      "name": "ETN",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "FTNT",
+      "display_ticker": "FTNT",
+      "name": "FTNT",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "GE",
+      "display_ticker": "GE",
+      "name": "GE",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "GOOG",
+      "display_ticker": "GOOG",
+      "name": "GOOG",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "GOOGL",
+      "display_ticker": "GOOGL",
+      "name": "GOOGL",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "GS",
+      "display_ticker": "GS",
+      "name": "GS",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "HD",
+      "display_ticker": "HD",
+      "name": "HD",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "HON",
+      "display_ticker": "HON",
+      "name": "HON",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "HOOD",
+      "display_ticker": "HOOD",
+      "name": "HOOD",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "HUBS",
+      "display_ticker": "HUBS",
+      "name": "HUBS",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "INTC",
+      "display_ticker": "INTC",
+      "name": "INTC",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "INTU",
+      "display_ticker": "INTU",
+      "name": "INTU",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "IONQ",
+      "display_ticker": "IONQ",
+      "name": "IONQ",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "ISRG",
+      "display_ticker": "ISRG",
+      "name": "ISRG",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "JD",
+      "display_ticker": "JD",
+      "name": "JD",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "JNJ",
+      "display_ticker": "JNJ",
+      "name": "JNJ",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "JPM",
+      "display_ticker": "JPM",
+      "name": "JPM",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "KLAC",
+      "display_ticker": "KLAC",
+      "name": "KLAC",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "KO",
+      "display_ticker": "KO",
+      "name": "KO",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "LI",
+      "display_ticker": "LI",
+      "name": "LI",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "LLY",
+      "display_ticker": "LLY",
+      "name": "LLY",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "LMT",
+      "display_ticker": "LMT",
+      "name": "LMT",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "LNG",
+      "display_ticker": "LNG",
+      "name": "LNG",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "LOW",
+      "display_ticker": "LOW",
+      "name": "LOW",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "LRCX",
+      "display_ticker": "LRCX",
+      "name": "LRCX",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "LULU",
+      "display_ticker": "LULU",
+      "name": "LULU",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "MA",
+      "display_ticker": "MA",
+      "name": "MA",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "MARA",
+      "display_ticker": "MARA",
+      "name": "MARA",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "MCD",
+      "display_ticker": "MCD",
+      "name": "MCD",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "MDB",
+      "display_ticker": "MDB",
+      "name": "MDB",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "MELI",
+      "display_ticker": "MELI",
+      "name": "MELI",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "META",
+      "display_ticker": "META",
+      "name": "META",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "MRK",
+      "display_ticker": "MRK",
+      "name": "MRK",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "MRVL",
+      "display_ticker": "MRVL",
+      "name": "MRVL",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "MS",
+      "display_ticker": "MS",
+      "name": "MS",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "MSFT",
+      "display_ticker": "MSFT",
+      "name": "MSFT",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "MSTR",
+      "display_ticker": "MSTR",
+      "name": "MSTR",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "MU",
+      "display_ticker": "MU",
+      "name": "MU",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "NET",
+      "display_ticker": "NET",
+      "name": "NET",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "NFLX",
+      "display_ticker": "NFLX",
+      "name": "NFLX",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "NIO",
+      "display_ticker": "NIO",
+      "name": "NIO",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "NKE",
+      "display_ticker": "NKE",
+      "name": "NKE",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "NOW",
+      "display_ticker": "NOW",
+      "name": "NOW",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "NVDA",
+      "display_ticker": "NVDA",
+      "name": "NVDA",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "NVO",
+      "display_ticker": "NVO",
+      "name": "NVO",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "OKLO",
+      "display_ticker": "OKLO",
+      "name": "OKLO",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "OKTA",
+      "display_ticker": "OKTA",
+      "name": "OKTA",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "ONON",
+      "display_ticker": "ONON",
+      "name": "ONON",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "ORCL",
+      "display_ticker": "ORCL",
+      "name": "ORCL",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "OXY",
+      "display_ticker": "OXY",
+      "name": "OXY",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "PANW",
+      "display_ticker": "PANW",
+      "name": "PANW",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "PATH",
+      "display_ticker": "PATH",
+      "name": "PATH",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "PDD",
+      "display_ticker": "PDD",
+      "name": "PDD",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "PEP",
+      "display_ticker": "PEP",
+      "name": "PEP",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "PFE",
+      "display_ticker": "PFE",
+      "name": "PFE",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "PG",
+      "display_ticker": "PG",
+      "name": "PG",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "PLTR",
+      "display_ticker": "PLTR",
+      "name": "PLTR",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "PYPL",
+      "display_ticker": "PYPL",
+      "name": "PYPL",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "QBTS",
+      "display_ticker": "QBTS",
+      "name": "QBTS",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "QCOM",
+      "display_ticker": "QCOM",
+      "name": "QCOM",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "RBLX",
+      "display_ticker": "RBLX",
+      "name": "RBLX",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "REGN",
+      "display_ticker": "REGN",
+      "name": "REGN",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "RGTI",
+      "display_ticker": "RGTI",
+      "name": "RGTI",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "RIOT",
+      "display_ticker": "RIOT",
+      "name": "RIOT",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "RKLB",
+      "display_ticker": "RKLB",
+      "name": "RKLB",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "RTX",
+      "display_ticker": "RTX",
+      "name": "RTX",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "SBUX",
+      "display_ticker": "SBUX",
+      "name": "SBUX",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "SHOP",
+      "display_ticker": "SHOP",
+      "name": "SHOP",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "SLB",
+      "display_ticker": "SLB",
+      "name": "SLB",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "SMCI",
+      "display_ticker": "SMCI",
+      "name": "SMCI",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "SNOW",
+      "display_ticker": "SNOW",
+      "name": "SNOW",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "SOFI",
+      "display_ticker": "SOFI",
+      "name": "SOFI",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "SQ",
+      "display_ticker": "SQ",
+      "name": "SQ",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "STX",
+      "display_ticker": "STX",
+      "name": "STX",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "TEAM",
+      "display_ticker": "TEAM",
+      "name": "TEAM",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "TER",
+      "display_ticker": "TER",
+      "name": "TER",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "TGT",
+      "display_ticker": "TGT",
+      "name": "TGT",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "TMO",
+      "display_ticker": "TMO",
+      "name": "TMO",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "TOST",
+      "display_ticker": "TOST",
+      "name": "TOST",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "TSLA",
+      "display_ticker": "TSLA",
+      "name": "TSLA",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "TSM",
+      "display_ticker": "TSM",
+      "name": "TSM",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "TXN",
+      "display_ticker": "TXN",
+      "name": "TXN",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "UNH",
+      "display_ticker": "UNH",
+      "name": "UNH",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "UPST",
+      "display_ticker": "UPST",
+      "name": "UPST",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "URI",
+      "display_ticker": "URI",
+      "name": "URI",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "V",
+      "display_ticker": "V",
+      "name": "V",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "VRT",
+      "display_ticker": "VRT",
+      "name": "VRT",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "VRTX",
+      "display_ticker": "VRTX",
+      "name": "VRTX",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "WDC",
+      "display_ticker": "WDC",
+      "name": "WDC",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "WFC",
+      "display_ticker": "WFC",
+      "name": "WFC",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "WMT",
+      "display_ticker": "WMT",
+      "name": "WMT",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "XOM",
+      "display_ticker": "XOM",
+      "name": "XOM",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "XPEV",
+      "display_ticker": "XPEV",
+      "name": "XPEV",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    },
+    {
+      "ticker": "ZS",
+      "display_ticker": "ZS",
+      "name": "ZS",
+      "market_key": "us",
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$"
+    }
+  ]
+}

@@ -30,12 +30,53 @@ from analyzer import analyze_watchlist
 ICT = timezone(timedelta(hours=7))
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(ROOT, "docs", "data")
+STATUS_PATH = os.path.join(DATA_DIR, "status.json")
 
 BUY_TIER = ("BUY", "STRONG BUY")
 
 
+def _display_ticker(ticker: str) -> str:
+    return ticker[:-3] if ticker.endswith(".BK") else ticker
+
+
+def _write_universe(generated_at: str, now: datetime) -> None:
+    """เขียนรายชื่อหุ้นทั้งหมดใน watchlist ให้หน้าเว็บใช้ค้นหา."""
+    stocks = []
+    markets = []
+    for mkey, m in config.MARKETS.items():
+        markets.append({
+            "key": mkey,
+            "name": m["name"],
+            "short": m["short"],
+            "tag": m["tag"],
+            "count": len(m["watchlist"]),
+        })
+        for ticker, name in m["watchlist"].items():
+            stocks.append({
+                "ticker": ticker,
+                "display_ticker": _display_ticker(ticker),
+                "name": name,
+                "market_key": mkey,
+                "market": m["short"],
+                "market_tag": m["tag"],
+                "currency": m["currency"],
+            })
+    stocks.sort(key=lambda x: (x["market_key"], x["display_ticker"]))
+    payload = {
+        "generated_at": generated_at,
+        "generated_at_iso": now.isoformat(),
+        "count": len(stocks),
+        "markets": markets,
+        "stocks": stocks,
+    }
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(os.path.join(DATA_DIR, "universe.json"), "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    print(f"  บันทึกรายชื่อหุ้นสำหรับค้นหา -> universe.json ({len(stocks)} ตัว)")
+
+
 def _process_market(mkey: str, m: dict, generated_at: str, now) -> tuple:
-    """วิเคราะห์ 1 หมวด → เขียนไฟล์ dashboard → คืน (signals, regime, fail_ratio)"""
+    """วิเคราะห์ 1 หมวด → เขียนไฟล์ dashboard → คืน (signals, regime, fail_ratio, status)"""
     print(f"\n--- หมวด: {m['name']} ({len(m['watchlist'])} ตัว) ---")
     signals = analyze_watchlist(m["watchlist"])
     attempted = len(m["watchlist"])
@@ -84,7 +125,55 @@ def _process_market(mkey: str, m: dict, generated_at: str, now) -> tuple:
           f"WATCH={summary['watch']} AVOID={summary['avoid']})")
     if regime:
         print(f"  ภาวะตลาด: {regime['label']} (breadth {regime['breadth']}%)")
-    return signals, regime, fail_ratio
+    status = {
+        "key": mkey,
+        "name": m["name"],
+        "short": m["short"],
+        "tag": m["tag"],
+        "file": m["file"],
+        "attempted": attempted,
+        "received": len(signals),
+        "failed": max(attempted - len(signals), 0),
+        "fetch_fail_ratio": round(fail_ratio, 3),
+        "summary": summary,
+        "regime": regime,
+    }
+    return signals, regime, fail_ratio, status
+
+
+def _write_status(generated_at: str, now, markets: list[dict],
+                  worst_fail: float, telegram_status: str) -> None:
+    attempted = sum(m["attempted"] for m in markets)
+    received = sum(m["received"] for m in markets)
+    failed = sum(m["failed"] for m in markets)
+    warnings = []
+    if worst_fail >= config.FETCH_FAIL_WARN_RATIO:
+        warnings.append(
+            f"ดึงข้อมูลล้มเหลวสูงสุด {worst_fail * 100:.0f}% "
+            f"(เกณฑ์เตือน {config.FETCH_FAIL_WARN_RATIO * 100:.0f}%)"
+        )
+    for m in markets:
+        if m["received"] == 0 and m["attempted"] > 0:
+            warnings.append(f"{m['short']}: ไม่ได้ข้อมูลหุ้นเลย")
+
+    payload = {
+        "generated_at": generated_at,
+        "generated_at_iso": now.isoformat(),
+        "status": "warning" if warnings else "ok",
+        "telegram": telegram_status,
+        "overall": {
+            "attempted": attempted,
+            "received": received,
+            "failed": failed,
+            "fetch_fail_ratio": round((failed / attempted) if attempted else 0.0, 3),
+        },
+        "markets": markets,
+        "warnings": warnings,
+    }
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(STATUS_PATH, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    print(f"  บันทึกสถานะระบบ -> {STATUS_PATH}")
 
 
 def run_pipeline(notify_no_changes: bool = True) -> None:
@@ -95,14 +184,17 @@ def run_pipeline(notify_no_changes: bool = True) -> None:
     print("=" * 60)
     print(f"AI Stock Signal — เริ่มวิเคราะห์ {generated_at}")
     print("=" * 60)
+    _write_universe(generated_at, now)
 
     all_signals: list[dict] = []
     regimes: list[dict] = []
+    market_statuses: list[dict] = []
     market_min: dict = {}
     worst_fail = 0.0
     for mkey, m in config.MARKETS.items():
-        sigs, regime, fail_ratio = _process_market(mkey, m, generated_at, now)
+        sigs, regime, fail_ratio, status = _process_market(mkey, m, generated_at, now)
         all_signals += sigs
+        market_statuses.append(status)
         worst_fail = max(worst_fail, fail_ratio)
         market_min[m["tag"]] = market.notify_min_score(regime)
         if regime:
@@ -130,12 +222,15 @@ def run_pipeline(notify_no_changes: bool = True) -> None:
                   if (c.get("change") in ("NEW", "UPGRADE")
                       and c.get("score", 0) >= c.get("min_score", config.NOTIFY_MIN_SCORE))
                   or c.get("change") == "EXIT"]
-    if notifiable or notify_no_changes:
-        notifier.send_telegram(message)
+    data_problem = worst_fail >= config.FETCH_FAIL_WARN_RATIO
+    telegram_status = "skipped"
+    if notifiable or notify_no_changes or data_problem:
+        telegram_status = "sent" if notifier.send_telegram(message) else "failed_or_not_configured"
     else:
         print("  ไม่มีสัญญาณใหม่ — ข้ามการแจ้งเตือน Telegram (กันสแปม)")
 
     state.save_state(all_signals, generated_at)
+    _write_status(generated_at, now, market_statuses, worst_fail, telegram_status)
     print("\nเสร็จสิ้น ✅")
 
 

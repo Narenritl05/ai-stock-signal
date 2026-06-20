@@ -15,6 +15,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: signal-output
+  cancel-in-progress: false
+
 jobs:
   analyze:
     runs-on: ubuntu-latest
@@ -41,7 +45,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/signals.json docs/data/performance.json state/
+          git add docs/data/signals.json docs/data/signals_foreign.json docs/data/performance.json docs/data/status.json docs/data/universe.json state/
           if git diff --staged --quiet; then
             echo "ไม่มีการเปลี่ยนแปลง — ข้ามการ commit"
           else

@@ -1,0 +1,60 @@
+name: Telegram Digest
+
+on:
+  schedule:
+    - cron: "15 2 * * 1-5"    # 09:15 ไทย — ก่อน/ช่วงเปิดตลาด
+    - cron: "30 5 * * 1-5"    # 12:30 ไทย — พักเที่ยง
+    - cron: "15 10 * * 1-5"   # 17:15 ไทย — หลังตลาดปิด
+    - cron: "0 2 * * 0"       # 09:00 ไทย วันอาทิตย์ — สรุปสัปดาห์
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Digest mode"
+        required: true
+        default: "all"
+        type: choice
+        options:
+          - morning
+          - midday
+          - evening
+          - weekly
+          - status
+          - all
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Choose digest mode
+        id: mode
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
+          else
+            case "${{ github.event.schedule }}" in
+              "15 2 * * 1-5") echo "mode=morning" >> "$GITHUB_OUTPUT" ;;
+              "30 5 * * 1-5") echo "mode=midday" >> "$GITHUB_OUTPUT" ;;
+              "15 10 * * 1-5") echo "mode=evening" >> "$GITHUB_OUTPUT" ;;
+              "0 2 * * 0") echo "mode=weekly" >> "$GITHUB_OUTPUT" ;;
+              *) echo "mode=all" >> "$GITHUB_OUTPUT" ;;
+            esac
+          fi
+
+      - name: Send Telegram digest
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python telegram_digest.py --mode "${{ steps.mode.outputs.mode }}"

@@ -41,15 +41,18 @@
     <!-- ── Tabs ── -->
     <nav class="tabs" id="tabs">
       <button class="tab active" data-view="signals"><span class="tab-ic">📡</span> สัญญาณวันนี้</button>
+      <button class="tab" data-view="journal"><span class="tab-ic">📓</span> บันทึกเทรด</button>
       <button class="tab" data-view="backtest"><span class="tab-ic">🧪</span> ทดสอบย้อนหลัง</button>
-      <button class="tab" data-view="about"><span class="tab-ic">ℹ️</span> เกี่ยวกับ</button>
+      <button class="tab" data-view="status"><span class="tab-ic">🛎️</span> สถานะระบบ</button>
+      <button class="tab" data-view="about"><span class="tab-ic">📚</span> ความรู้</button>
       <span class="tab-glider" id="glider"></span>
     </nav>
 
     <!-- ── VIEW: Signals ── -->
     <section id="view-signals" class="view">
       <div class="market-switch" id="market-switch">
-        <button class="ms active" data-market="th">🇹🇭 หุ้นไทย (SET)</button>
+        <button class="ms active" data-market="all">🌐 ทุกตลาด</button>
+        <button class="ms" data-market="th">🇹🇭 หุ้นไทย (SET)</button>
         <button class="ms" data-market="us">🌍 หุ้นต่างประเทศ (US)</button>
       </div>
       <div id="regime-banner" class="regime-banner hidden"></div>
@@ -101,6 +104,36 @@
       <div id="empty" class="empty hidden">ไม่พบหุ้นที่ตรงเงื่อนไข</div>
     </section>
 
+    <!-- ── VIEW: Journal + Risk ── -->
+    <section id="view-journal" class="view hidden">
+      <div class="bt-head-row">
+        <h2 class="section-title">🛡️ กฎคุมความเสี่ยง (Risk Rules)</h2>
+        <span class="section-note">ตั้งเงินทุน + กฎของคุณ เก็บในเครื่องนี้เท่านั้น</span>
+      </div>
+      <div class="risk-grid">
+        <label class="rk-field"><span>เงินทุนพอร์ต (฿)</span><input id="rk-account" type="number" min="0" step="1000" /></label>
+        <label class="rk-field"><span>เสี่ยงต่อไม้ (%)</span><input id="rk-risk" type="number" min="0.1" max="100" step="0.5" /></label>
+        <label class="rk-field"><span>ถือพร้อมกันสูงสุด (ไม้)</span><input id="rk-maxpos" type="number" min="1" step="1" /></label>
+        <label class="rk-field"><span>ลิมิตขาดทุนต่อวัน (%)</span><input id="rk-dayloss" type="number" min="0.5" step="0.5" /></label>
+      </div>
+      <div id="rk-status" class="rk-status"></div>
+
+      <div class="bt-head-row" style="margin-top:28px">
+        <h2 class="section-title">📓 บันทึกการเทรด (Trading Journal)</h2>
+        <span class="section-note">จดทุกไม้ที่ซื้อ-ขายจริง แล้วทบทวน</span>
+      </div>
+      <div class="jn-form">
+        <input id="jn-name" type="text" placeholder="ชื่อหุ้น (เช่น PTT)" />
+        <input id="jn-entry" type="number" step="0.01" placeholder="ราคาเข้า" />
+        <input id="jn-exit" type="number" step="0.01" placeholder="ราคาออก (เว้นว่าง=ยังถือ)" />
+        <input id="jn-shares" type="number" step="1" placeholder="จำนวนหุ้น" />
+        <input id="jn-note" type="text" placeholder="เหตุผล / อารมณ์ (เช่น ตามสัญญาณ, กลัวพลาด)" />
+        <button id="jn-add" class="jn-add">➕ บันทึกไม้นี้</button>
+      </div>
+      <div id="jn-summary" class="bt-overview"></div>
+      <div id="jn-list" class="jn-list"></div>
+    </section>
+
     <!-- ── VIEW: Backtest ── -->
     <section id="view-backtest" class="view hidden">
       <div class="bt-head-row">
@@ -121,6 +154,26 @@
       <p class="bt-foot">⚠️ ผลในอดีตไม่การันตีอนาคต · ยังไม่หักค่าคอมมิชชั่น ภาษี และ slippage · เพื่อการศึกษาเท่านั้น</p>
     </section>
 
+    <!-- ── VIEW: System Status ── -->
+    <section id="view-status" class="view hidden">
+      <div class="bt-head-row">
+        <h2 class="section-title">🛎️ สถานะระบบ</h2>
+        <span class="section-note">ตรวจความสดของข้อมูลและคุณภาพการดึงราคาล่าสุด</span>
+      </div>
+      <div id="system-status" class="system-status">
+        <div class="lp-empty">ยังไม่มีข้อมูลสถานะ — รัน <code>python run.py</code> ก่อน</div>
+      </div>
+      <div class="about-card ops-card">
+        <h2>เปิดหรือปิดเครื่องมีผลอย่างไร</h2>
+        <ul>
+          <li><b>ถ้าเปิดคอม/mini PC ทิ้งไว้</b> Telegram bot แบบถามตอบจะทำงานทันที, ระบบรันตามเวลาที่ตั้งไว้ได้, watchdog/self-heal ตรวจทุก 30 นาทีได้ และหน้าเว็บ local จะเปิดดูจากเครื่องหรือในวง LAN ได้</li>
+          <li><b>ถ้าปิดเครื่อง</b> bot ที่รันบนเครื่องจะหยุดตอบ, งาน local ที่ตั้งเวลาไว้จะไม่รัน และเว็บ local เช่น <code>http://localhost:8000/</code> จะเข้าไม่ได้จนกว่าเปิดเครื่องใหม่</li>
+          <li><b>GitHub Actions ยังช่วยได้</b> งานที่ตั้งไว้บน GitHub ยังรันตามรอบฟรีได้ถ้า repo เปิดใช้งานอยู่ และสามารถส่ง Telegram digest/อัปเดต GitHub Pages จากข้อมูลล่าสุดได้โดยไม่ต้องเปิด notebook</li>
+          <li><b>ข้อมูลบนเว็บไม่หาย</b> ไฟล์ใน <code>docs/data</code> จะยังเป็นข้อมูลรอบล่าสุดที่บันทึกไว้ แต่อาจเก่าลงถ้าไม่มีเครื่องหรือ GitHub Actions ช่วยรันอัปเดต</li>
+        </ul>
+      </div>
+    </section>
+
     <!-- ── VIEW: About ── -->
     <section id="view-about" class="view hidden">
       <div class="about-card">
@@ -133,6 +186,16 @@
           <div class="flow-step"><span class="flow-ic">📲</span><b>แจ้งเตือน</b><small>ส่ง Telegram ว่าควรซื้ออะไร ตอนไหน</small></div>
         </div>
       </div>
+      <div class="about-card">
+        <h2>เปิดเว็บเพื่อดูข้อมูลทั้งหมดได้ไหม</h2>
+        <ul>
+          <li><b>ได้</b> หน้าแรกโหมด <code>ทุกตลาด</code> รวมหุ้นไทยและหุ้นต่างประเทศไว้แล้ว ใช้ช่องค้นหาเพื่อดูรายชื่อหุ้นทั้งหมดใน watchlist ได้</li>
+          <li><b>เปิดจากเครื่องนี้</b> รันเว็บ local แล้วเข้า <code>http://localhost:8000/</code> เพื่อดู dashboard, สัญญาณ, backtest, สถานะระบบ และข้อมูลรายตัว</li>
+          <li><b>เปิดจากมือถือในบ้าน</b> ถ้าใช้ mini PC เป็น server ให้เปิดเว็บแบบ LAN ด้วย <code>http://IP-ของ-mini-PC:8000/</code> โดยไม่ต้องเปิด port ออกอินเทอร์เน็ต</li>
+          <li><b>เปิดจากนอกบ้าน</b> ใช้ GitHub Pages จะปลอดภัยกว่าและไม่มีค่า Cloud เพิ่ม แต่จะเห็นข้อมูลรอบล่าสุดที่ GitHub Actions สร้างไว้ ไม่ใช่หน้าเว็บ local สดจากเครื่อง</li>
+          <li><b>ดูข้อมูลรายตัว</b> กดการ์ดหุ้นในหน้าเว็บเพื่อดูราคา, สัญญาณซื้อ/ขาย, จุดเข้า, stop loss, เป้า, risk/reward, volume, ATR, ข่าว และกรอบถือสั้น/ยาว</li>
+        </ul>
+      </div>
       <div class="about-card warn">
         <h2>⚠️ ข้อควรรู้ก่อนใช้</h2>
         <ul>
@@ -140,6 +203,30 @@
           <li>ไม่ใช่คำแนะนำการลงทุน และ <b>ไม่สั่งซื้อ-ขายแทนคุณ</b> — การตัดสินใจสุดท้ายเป็นของคุณ</li>
           <li>ควรตั้งจุดตัดขาดทุน (stop loss) เสมอ และลงทุนเท่าที่รับความเสี่ยงได้</li>
           <li>ข้อมูลจาก Yahoo Finance เป็น end-of-day/ดีเลย์ เหมาะกับการวางแผนรอบถัดไป</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <h2>📚 อธิบายศัพท์ (สำหรับมือใหม่)</h2>
+        <div class="glossary">
+          <div class="gl"><b>คะแนนสัญญาณ (0–100)</b><small>คะแนนรวมจากหลายอินดิเคเตอร์ ยิ่งสูงยิ่งน่าสนใจ — แต่ไม่ใช่การการันตี</small></div>
+          <div class="gl"><b>RSI</b><small>วัดว่าหุ้น "ซื้อมากไป (>70)" หรือ "ขายมากไป (<30)" ช่วยดูจังหวะกลับตัว</small></div>
+          <div class="gl"><b>MACD</b><small>วัดโมเมนตัม/แรงส่ง ถ้าเป็นบวกและเพิ่มขึ้น = แรงซื้อกำลังมา</small></div>
+          <div class="gl"><b>EMA20 / EMA50</b><small>เส้นค่าเฉลี่ยราคา ถ้าราคายืนเหนือเส้น = แนวโน้มขาขึ้น</small></div>
+          <div class="gl"><b>วอลุ่ม (Volume)</b><small>ปริมาณการซื้อขาย ถ้าพุ่งสูงกว่าปกติ = มีแรงเข้าจริง</small></div>
+          <div class="gl"><b>Stop Loss (ตัดขาดทุน)</b><small>ราคาที่ตั้งไว้ว่า "ถ้าหลุดจะขายทันที" เพื่อจำกัดการขาดทุน — ต้องมีทุกไม้!</small></div>
+          <div class="gl"><b>เป้าหมาย (Target)</b><small>ราคาที่วางแผนจะขายทำกำไร</small></div>
+          <div class="gl"><b>ขนาดไม้ (Position Size)</b><small>ซื้อกี่หุ้น คำนวณจากความเสี่ยงที่รับได้ ไม่ใช่ซื้อสุดตัว</small></div>
+          <div class="gl"><b>ภาวะตลาด (Breadth)</b><small>สัดส่วนหุ้นที่ขาขึ้น บอกว่าตลาดรวมดีหรือแย่ — ไม่ควรสวนตลาด</small></div>
+        </div>
+      </div>
+      <div class="about-card warn">
+        <h2>✅ กฎทอง 5 ข้อของมือใหม่</h2>
+        <ul>
+          <li><b>ตั้ง stop loss ทุกไม้</b> — ก่อนซื้อต้องรู้ว่า "ผิดแล้วออกตรงไหน"</li>
+          <li><b>เสี่ยงไม่เกิน 2% ต่อไม้</b> — ไม้เดียวพังต้องไม่ทำพอร์ตเจ๊ง</li>
+          <li><b>อย่าไล่ราคา</b> — พลาดไม้นี้ยังมีไม้หน้า อย่า FOMO</li>
+          <li><b>ฝึกด้วยเงินปลอมก่อน</b> — จนชนะสม่ำเสมอค่อยใช้เงินจริง</li>
+          <li><b>ไม่มีอะไรการันตีกำไร</b> — เป้าหมายคือ "ขาดทุนน้อย อยู่รอดนาน"</li>
         </ul>
       </div>
       <div class="about-card">

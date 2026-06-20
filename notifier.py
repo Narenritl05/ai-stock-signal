@@ -101,6 +101,8 @@ def build_change_message(changes: list[dict], regimes, generated_at: str,
             tag = f" [{c['market']}]" if c.get("market") else ""
             lines.append(f"{emo} <b>{c['name']}</b>{tag} · คะแนน {c['score']}/100")
             lines.append(f"   👉 <b>{c.get('rec_action', 'ควรซื้อ')}</b> ({c['signal']})")
+            if c.get("holding_label"):
+                lines.append(f"   ⏳ {c['holding_label']} · {c.get('holding_period', '-')}")
             lines.append(f"   เข้า ~{cur}{c['price']} | ตัดขาดทุน {cur}{c['stop_loss']} | เป้า {cur}{c['target1']}")
             if c.get("pos_shares"):
                 lines.append(f"   💼 ขนาดไม้แนะนำ ~{c['pos_shares']:,} หุ้น")

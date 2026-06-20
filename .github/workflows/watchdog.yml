@@ -1,0 +1,50 @@
+name: Signal Self-Heal
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"  # ตรวจทุก 30 นาที
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: signal-output
+  cancel-in-progress: false
+
+jobs:
+  self-heal:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check and repair signal output
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python self_heal.py
+
+      - name: Commit repaired output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/signals.json docs/data/signals_foreign.json docs/data/performance.json docs/data/status.json docs/data/universe.json state/
+          if git diff --staged --quiet; then
+            echo "ไม่มีการซ่อมแซมที่ต้อง commit"
+          else
+            git commit -m "chore: self-heal signal output $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi

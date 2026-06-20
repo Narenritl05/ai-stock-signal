@@ -5,6 +5,8 @@ const SIG_CLASS = { "STRONG BUY": "s-strong", "BUY": "s-buy", "WATCH": "s-watch"
 const scoreColor = (s) => (s >= 75 ? "#00e676" : s >= 60 ? "#00c853" : s >= 45 ? "#ffc24b" : "#ff5a5a");
 
 let ALL = [];
+let UNIVERSE = [];
+let universeLoaded = false;
 let BT = {};
 let META = {}; // account size, risk %
 let activeFilter = "ALL";
@@ -13,18 +15,17 @@ let sortBy = "score";
 let gid = 0; // unique gradient ids
 let lastGenerated = null;       // เช็คว่าข้อมูลเปลี่ยนไหมตอน auto-refresh
 const REFRESH_MS = 60000;       // รีเฟรชหน้าเว็บอัตโนมัติทุก 1 นาที
-let currentMarket = "th";       // หมวดที่กำลังดู (th = ไทย, us = ต่างประเทศ)
+let currentMarket = "all";      // หมวดที่กำลังดู (all = ทุกตลาด, th = ไทย, us = ต่างประเทศ)
 const MARKET_FILES = { th: "signals.json", us: "signals_foreign.json" };
 
 // ── data loading ──
 async function load(isRefresh = false) {
   try {
-    const res = await fetch("data/" + MARKET_FILES[currentMarket] + "?_=" + Date.now());
-    if (!res.ok) throw new Error("HTTP " + res.status);
-    const data = await res.json();
+    const data = currentMarket === "all" ? await loadAllMarkets() : await loadMarket(currentMarket);
     // ตอน auto-refresh: ถ้าข้อมูลยังไม่เปลี่ยน ไม่ต้อง re-render (กันกระพริบ)
-    if (!isRefresh || data.generated_at !== lastGenerated) {
-      lastGenerated = data.generated_at;
+    const stamp = data.generated_at + "|" + currentMarket + "|" + data.count;
+    if (!isRefresh || stamp !== lastGenerated) {
+      lastGenerated = stamp;
       renderSignals(data);
       if (isRefresh) flashLive();
     }
@@ -37,6 +38,66 @@ async function load(isRefresh = false) {
   }
   loadBacktest();
   loadPerformance();
+  loadStatus();
+  loadUniverse().then(() => {
+    if (searchTerm) drawCards();
+  });
+}
+
+async function loadMarket(key) {
+  const res = await fetch("data/" + MARKET_FILES[key] + "?_=" + Date.now());
+  if (!res.ok) throw new Error("HTTP " + res.status);
+  return await res.json();
+}
+
+async function loadAllMarkets() {
+  const loaded = await Promise.allSettled(Object.keys(MARKET_FILES).map(loadMarket));
+  const payloads = loaded.filter((r) => r.status === "fulfilled").map((r) => r.value);
+  if (!payloads.length) {
+    throw new Error("No market data available");
+  }
+  const signals = payloads.flatMap((p) => p.signals || []);
+  const summary = {
+    strong_buy: signals.filter((s) => s.signal === "STRONG BUY").length,
+    buy: signals.filter((s) => s.signal === "BUY").length,
+    watch: signals.filter((s) => s.signal === "WATCH").length,
+    avoid: signals.filter((s) => s.signal === "AVOID").length,
+  };
+  signals.sort((a, b) => (b.score || 0) - (a.score || 0));
+  return {
+    generated_at: payloads.map((p) => p.generated_at).filter(Boolean).sort().slice(-1)[0] || "-",
+    generated_at_iso: payloads.map((p) => p.generated_at_iso).filter(Boolean).sort().slice(-1)[0] || "",
+    market_key: "all",
+    market_name: "ทุกตลาด",
+    currency: "",
+    count: signals.length,
+    summary,
+    regimes: payloads.map((p) => ({ market_name: p.market_name, market_key: p.market_key, regime: p.regime })).filter((x) => x.regime),
+    account_size: payloads[0]?.account_size,
+    risk_per_trade_pct: payloads[0]?.risk_per_trade_pct,
+    fetch_fail_ratio: Math.max(0, ...payloads.map((p) => p.fetch_fail_ratio || 0)),
+    signals,
+  };
+}
+
+async function loadUniverse() {
+  if (universeLoaded) return;
+  try {
+    const res = await fetch("data/universe.json?_=" + Date.now());
+    if (!res.ok) return;
+    const data = await res.json();
+    UNIVERSE = data.stocks || [];
+    universeLoaded = true;
+  } catch (e) { /* ค้นหาจากสัญญาณล่าสุดต่อได้ แม้ยังไม่มี universe.json */ }
+}
+
+function matchStock(x, q) {
+  if (!q) return true;
+  return String(x.name || "").toLowerCase().includes(q) ||
+    String(x.ticker || "").toLowerCase().includes(q) ||
+    String(x.display_ticker || "").toLowerCase().includes(q) ||
+    String(x.market || "").toLowerCase().includes(q) ||
+    String(x.market_tag || "").toLowerCase().includes(q);
 }
 
 function flashLive() {
@@ -62,11 +123,19 @@ async function loadBacktest() {
   } catch (e) { /* ไม่มี backtest ก็ข้ามไป */ }
 }
 
+async function loadStatus() {
+  try {
+    const res = await fetch("data/status.json?_=" + Date.now());
+    if (!res.ok) return;
+    renderStatus(await res.json());
+  } catch (e) { /* ไม่มี status ก็ข้ามไป */ }
+}
+
 // ── render: signals ──
 function renderSignals(data) {
   ALL = data.signals || [];
   META = { account: data.account_size, risk: data.risk_per_trade_pct, currency: data.currency || "฿" };
-  document.getElementById("updated").textContent = "อัปเดต: " + (data.generated_at || "-");
+  document.getElementById("updated").textContent = `อัปเดต: ${data.generated_at || "-"} · ${ALL.length} ตัว`;
   renderRegime(data.regime, data);
   const s = data.summary || {};
   countUp("s-strong", s.strong_buy ?? 0);
@@ -77,35 +146,50 @@ function renderSignals(data) {
 }
 
 function drawCards() {
+  const q = searchTerm.toLowerCase();
   let list = ALL.filter((x) =>
     (activeFilter === "ALL" || x.signal === activeFilter) &&
-    (x.name.toLowerCase().includes(searchTerm) || x.ticker.toLowerCase().includes(searchTerm)));
+    matchStock(x, q));
+
+  if (q && activeFilter === "ALL" && UNIVERSE.length) {
+    const seen = new Set(list.map((x) => x.ticker));
+    const extras = UNIVERSE
+      .filter((x) => (currentMarket === "all" || x.market_key === currentMarket) && !seen.has(x.ticker) && matchStock(x, q))
+      .slice(0, 40)
+      .map((x) => ({ ...x, is_universe: true, signal: "WATCHLIST", score: -1, change_pct: 0 }));
+    list = list.concat(extras);
+  }
 
   list.sort((a, b) => {
-    if (sortBy === "change") return b.change_pct - a.change_pct;
-    if (sortBy === "name") return a.name.localeCompare(b.name, "th");
-    return b.score - a.score;
+    if (a.is_universe !== b.is_universe) return a.is_universe ? 1 : -1;
+    if (sortBy === "change") return (b.change_pct || 0) - (a.change_pct || 0);
+    if (sortBy === "name") return String(a.name || "").localeCompare(String(b.name || ""), "th");
+    return (b.score || 0) - (a.score || 0);
   });
 
   document.getElementById("empty").classList.toggle("hidden", list.length > 0);
   const wrap = document.getElementById("cards");
   wrap.innerHTML = list.map((x, i) => cardHTML(x, i)).join("");
   wrap.querySelectorAll(".card").forEach((el) =>
-    el.addEventListener("click", () => openModal(el.dataset.ticker)));
+    el.addEventListener("click", () => {
+      if (!el.dataset.universe) openModal(el.dataset.ticker);
+    }));
 }
 
 function cardHTML(x, i) {
+  if (x.is_universe) return universeCardHTML(x, i);
   const cls = SIG_CLASS[x.signal] || "s-watch";
   const up = x.change_pct >= 0;
+  const cur = x.currency || META.currency || "";
   return `
   <div class="card ${cls}" data-ticker="${x.ticker}" style="animation-delay:${Math.min(i * 35, 400)}ms">
     <div class="card-top">
-      <div><div class="name">${x.name}</div><div class="ticker">${x.ticker}</div></div>
+      <div><div class="name">${x.name}</div><div class="ticker">${x.ticker}${x.market ? " · " + x.market : ""}</div></div>
       <span class="badge ${cls}">${x.signal}</span>
     </div>
     <div class="card-mid">
       <div class="price-block">
-        <span class="price">${fmt(x.price)}</span>
+        <span class="price">${cur}${fmt(x.price)}</span>
         <span class="change ${up ? "up" : "down"}">${up ? "▲" : "▼"} ${Math.abs(x.change_pct).toFixed(2)}%</span>
       </div>
       <div class="spark">${sparkline(x.history, 124, 42)}</div>
@@ -122,6 +206,24 @@ function cardHTML(x, i) {
   </div>`;
 }
 
+function universeCardHTML(x, i) {
+  const ticker = x.display_ticker || x.ticker;
+  return `
+  <div class="card s-watch" data-ticker="${x.ticker}" data-universe="1" style="animation-delay:${Math.min(i * 35, 400)}ms">
+    <div class="card-top">
+      <div><div class="name">${x.name}</div><div class="ticker">${ticker}${x.market ? " · " + x.market : ""}</div></div>
+      <span class="badge s-watch">WATCHLIST</span>
+    </div>
+    <div class="card-mid">
+      <div class="price-block">
+        <span class="price">รอข้อมูลล่าสุด</span>
+        <span class="change up">อยู่ในรายการค้นหา</span>
+      </div>
+    </div>
+    <div class="rec rec-hold"><span class="rec-label">Telegram</span><span class="rec-action">/stock ${ticker}</span></div>
+  </div>`;
+}
+
 // ── คำแนะนำ: ควรซื้อ / ถือ-รอ / ควรขาย / เลี่ยง ──
 function recommend(signal, trend) {
   if (signal === "STRONG BUY") return { action: "ควรซื้อ", text: "🟢 ควรซื้อ — สัญญาณแข็งแรงมาก", tone: "buy" };
@@ -135,7 +237,28 @@ function recOf(x) {
 }
 function recStrip(x) {
   const r = recOf(x);
-  return `<div class="rec rec-${r.tone}"><span class="rec-label">คำแนะนำ</span><span class="rec-action">${r.action}</span></div>`;
+  const h = holdingOf(x);
+  return `<div class="rec rec-${r.tone}"><span class="rec-label">คำแนะนำ</span><span class="rec-action">${r.action}</span></div>
+    <div class="hold-strip hold-${h.tone}"><span>${h.label}</span><b>${h.period}</b></div>`;
+}
+
+function holdingOf(x) {
+  if (x.holding_label) {
+    return {
+      label: x.holding_label,
+      period: x.holding_period || "-",
+      text: x.holding_text || "",
+      reason: x.holding_reason || "",
+      tone: x.holding_tone || "wait",
+    };
+  }
+  if (x.signal === "STRONG BUY" || x.signal === "BUY") {
+    const hot = (x.momentum_5d ?? 0) >= 5 || (x.volume_ratio ?? 0) >= 1.8 || (x.rsi ?? 50) >= 70;
+    if (hot) return { label: "ถือสั้น", period: "3-10 วันทำการ", text: "เหมาะเก็งกำไรระยะสั้น ใช้เป้า 1 และ stop loss เคร่งครัด", reason: "โมเมนตัม/วอลุ่มแรง หรือ RSI เริ่มร้อน", tone: "short" };
+    return { label: "ถือยาว", period: "2-8 สัปดาห์", text: "เหมาะถือยาวกว่าเดิมตามเทรนด์", reason: "แนวโน้มหลักยังเป็นบวกและโมเมนตัมไม่ร้อนเกินไป", tone: "long" };
+  }
+  if (x.signal === "WATCH") return { label: "รอดู", period: "รอสัญญาณยืนยัน", text: "ยังไม่เหมาะเลือกกรอบถือ", reason: "สัญญาณยังไม่ผ่านเกณฑ์ซื้อ", tone: "wait" };
+  return { label: "ไม่ควรถือ", period: "หลีกเลี่ยง/ลดสถานะ", text: "ไม่เหมาะถือทั้งสั้นและยาว", reason: "คะแนนหรือเทรนด์ยังอ่อน", tone: "avoid" };
 }
 
 // ── SVG: sparkline area chart ──
@@ -182,6 +305,13 @@ function trendIcon(t) {
 function fmt(n) {
   return Number(n).toLocaleString("th-TH", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
+function fmt0(n) {
+  return Number(n || 0).toLocaleString("th-TH", { maximumFractionDigits: 0 });
+}
+function fmtPct(n) {
+  const v = Number(n || 0);
+  return `${v >= 0 ? "+" : ""}${v.toFixed(2)}%`;
+}
 
 // ── count-up animation ──
 function countUp(id, target) {
@@ -223,10 +353,18 @@ function renderBacktest(data) {
 // ── render: market regime banner ──
 function renderRegime(r, data) {
   const el = document.getElementById("regime-banner");
-  const mlabel = (data && data.market_key === "us") ? "US" : "SET";
+  const mlabel = data && data.market_key === "all" ? "ALL" : (data && data.market_key === "us") ? "US" : "SET";
   const pill = document.getElementById("market-status");
   if (pill) pill.textContent = mlabel + (r ? " · " + r.regime : "");
   if (!el) return;
+  if (data && data.market_key === "all") {
+    const regs = data.regimes || [];
+    if (!regs.length) { el.classList.add("hidden"); return; }
+    el.className = "regime-banner neutral";
+    el.innerHTML = `<span class="rg-emo">🌐</span><div><b>ภาวะตลาดรวมทุกตลาด</b>
+      ${regs.map((x) => `<small>${escapeHtml(x.market_name || x.market_key)}: ${escapeHtml(x.regime.label)} · breadth ${x.regime.breadth}% (${x.regime.uptrend}/${x.regime.stocks})</small>`).join("")}</div>`;
+    return;
+  }
   if (!r) { el.classList.add("hidden"); return; }
   const map = { BULL: ["bull", "🟢"], NEUTRAL: ["neutral", "🟡"], BEAR: ["bear", "🔴"], UNKNOWN: ["neutral", "⚪"] };
   const [cls, emo] = map[r.regime] || map.UNKNOWN;
@@ -258,6 +396,49 @@ function renderPerformance(p) {
     ${posList("ปิดล่าสุด", p.closed_positions, true)}`;
 }
 
+// ── render: system status ──
+function renderStatus(st) {
+  const el = document.getElementById("system-status");
+  if (!el) return;
+  const iso = st.generated_at_iso ? Date.parse(st.generated_at_iso) : NaN;
+  const ageHours = Number.isFinite(iso) ? Math.max(0, (Date.now() - iso) / 36e5) : null;
+  const stale = ageHours != null && ageHours > 30;
+  const state = stale ? "bad" : st.status === "warning" ? "warn" : "ok";
+  const label = stale ? "ข้อมูลเก่า" : st.status === "warning" ? "มีคำเตือน" : "ปกติ";
+  const overall = st.overall || {};
+  const warnings = (st.warnings || []).map((w) => `<li>${escapeHtml(w)}</li>`).join("");
+  const rows = (st.markets || []).map((m) => {
+    const ratio = Math.round((m.fetch_fail_ratio || 0) * 100);
+    const cls = ratio >= 50 || m.received === 0 ? "bad" : ratio > 0 ? "warn" : "ok";
+    const r = m.regime;
+    return `<div class="status-row">
+      <div><b>${escapeHtml(m.short || m.name)}</b><small>${escapeHtml(m.file)}${r ? " · " + escapeHtml(r.regime) : ""}</small></div>
+      <div>${m.received}/${m.attempted} ตัว</div>
+      <div class="status-pill ${cls}">fail ${ratio}%</div>
+    </div>`;
+  }).join("");
+
+  el.innerHTML = `
+    <div class="status-hero ${state}">
+      <div>
+        <span class="status-kicker">สถานะล่าสุด</span>
+        <h2>${label}</h2>
+        <p>${escapeHtml(st.generated_at || "-")}${ageHours == null ? "" : ` · ${ageHours.toFixed(1)} ชั่วโมงก่อน`}</p>
+      </div>
+      <div class="status-score">
+        <b>${overall.received ?? 0}/${overall.attempted ?? 0}</b>
+        <span>ดึงข้อมูลสำเร็จ</span>
+      </div>
+    </div>
+    <div class="status-grid">
+      <div class="status-stat"><b>${overall.failed ?? 0}</b><span>ตัวที่ดึงไม่สำเร็จ</span></div>
+      <div class="status-stat"><b>${Math.round((overall.fetch_fail_ratio || 0) * 100)}%</b><span>fail ratio รวม</span></div>
+      <div class="status-stat"><b>${escapeHtml(st.telegram || "-")}</b><span>Telegram รอบล่าสุด</span></div>
+    </div>
+    <div class="status-list">${rows}</div>
+    ${warnings ? `<div class="status-warnings"><h3>คำเตือน</h3><ul>${warnings}</ul></div>` : ""}`;
+}
+
 function reasonIcon(r) { return { target: "🎯", stop: "🛑", time: "⏱" }[r] || "•"; }
 
 function posList(title, list, closed) {
@@ -284,13 +465,34 @@ function openModal(ticker) {
   const warns = (x.warnings || []).map((w) => `<li>${w}</li>`).join("");
 
   const r = recOf(x);
+  const h = holdingOf(x);
   const cur = x.currency || META.currency || "฿";
+  // ขนาดไม้ — คำนวณจากพอร์ต/ความเสี่ยงที่ผู้ใช้ตั้งไว้ (แท็บบันทึกเทรด)
+  let posBlock = "";
+  if (x.pos_shares != null) {
+    const rk = getRisk();
+    const lot = (x.market_tag === "US") ? 1 : 100;
+    const riskAmt = rk.account * rk.risk / 100;
+    let shares = x.pos_shares;
+    if (x.entry > x.stop_loss) shares = Math.floor((riskAmt / (x.entry - x.stop_loss)) / lot) * lot;
+    posBlock = `<div class="md-section"><h3>ขนาดไม้แนะนำ (เสี่ยง ${rk.risk}% ของพอร์ต ${cur}${rk.account.toLocaleString("th-TH")})</h3>
+      <div class="md-row"><span>จำนวนหุ้น</span><span>${shares.toLocaleString("th-TH")} หุ้น</span></div>
+      <div class="md-row"><span>มูลค่าโดยประมาณ</span><span>${cur}${fmt(shares * x.entry)}</span></div>
+      <div class="md-row"><span>ขาดทุนสูงสุดถ้าโดน stop</span><span style="color:var(--red)">~${cur}${fmt(riskAmt)}</span></div>
+      <p class="bt-disclaimer">คำนวณจากพอร์ต/ความเสี่ยงที่คุณตั้งในแท็บ "บันทึกเทรด"</p></div>`;
+  }
   document.getElementById("modal-content").innerHTML = `
     <div class="md-head"><h2>${x.name}</h2><span class="badge ${cls}">${x.signal}</span></div>
     <div class="md-sub">${x.ticker} · ${cur}${fmt(x.price)}
       <span class="change ${x.change_pct >= 0 ? "up" : "down"}">${x.change_pct >= 0 ? "▲" : "▼"} ${Math.abs(x.change_pct).toFixed(2)}%</span></div>
 
     <div class="rec-banner rec-${r.tone}">${r.text}</div>
+
+    <div class="hold-banner hold-${h.tone}">
+      <div><span>กรอบการถือ</span><b>${h.label} · ${h.period}</b></div>
+      <p>${h.text}</p>
+      ${h.reason ? `<small>${h.reason}</small>` : ""}
+    </div>
 
     <div class="md-chart">${sparkline(x.history, 510, 110)}</div>
 
@@ -308,8 +510,33 @@ function openModal(ticker) {
       <div class="md-row"><span>มูลค่าโดยประมาณ</span><span>${cur}${fmt(x.pos_value)}</span></div>
       <div class="md-row"><span>ขาดทุนสูงสุดถ้าโดน stop</span><span style="color:var(--red)">~${cur}${fmt((META.account ?? 100000) * (META.risk ?? 2) / 100)}</span></div></div>` : ""}
 
+    <div class="md-section"><h3>ข้อมูลราคา / สภาพคล่อง</h3>
+      <div class="md-row"><span>เปิด / สูงสุด / ต่ำสุด</span><span>${fmt(x.open ?? x.price)} / ${fmt(x.day_high ?? x.price)} / ${fmt(x.day_low ?? x.price)}</span></div>
+      <div class="md-row"><span>ปิดก่อนหน้า</span><span>${fmt(x.prev_close ?? x.price)}</span></div>
+      <div class="md-row"><span>ปริมาณซื้อขาย</span><span>${fmt0(x.volume)} หุ้น</span></div>
+      <div class="md-row"><span>วอลุ่มเฉลี่ย</span><span>${fmt0(x.avg_volume)} หุ้น</span></div>
+      <div class="md-row"><span>มูลค่าซื้อขายโดยประมาณ</span><span>${cur}${fmt0(x.turnover)}</span></div>
+    </div>
+
+    <div class="md-section"><h3>กรอบราคา / ผลตอบแทนย้อนหลัง</h3>
+      <div class="md-row"><span>High/Low 20 วัน</span><span>${fmt(x.high_20d ?? x.price)} / ${fmt(x.low_20d ?? x.price)}</span></div>
+      <div class="md-row"><span>High/Low 120 วัน</span><span>${fmt(x.high_120d ?? x.price)} / ${fmt(x.low_120d ?? x.price)}</span></div>
+      <div class="md-row"><span>ห่างจาก High 120 วัน</span><span>${fmtPct(x.from_high_120d_pct)}</span></div>
+      <div class="md-row"><span>เหนือ Low 120 วัน</span><span>${fmtPct(x.from_low_120d_pct)}</span></div>
+      <div class="md-row"><span>ผลตอบแทน 20 / 60 วัน</span><span>${fmtPct(x.return_20d)} / ${fmtPct(x.return_60d)}</span></div>
+    </div>
+
+    <div class="md-section"><h3>ความเสี่ยง / Reward</h3>
+      <div class="md-row"><span>ขาดทุนถึง stop</span><span style="color:var(--red)">${fmt(x.downside_pct ?? 0)}%</span></div>
+      <div class="md-row"><span>Upside เป้า 1 / 2</span><span style="color:var(--green)">${fmt(x.upside1_pct ?? 0)}% / ${fmt(x.upside2_pct ?? 0)}%</span></div>
+      <div class="md-row"><span>Risk/Reward เป้า 1 / 2</span><span>${x.risk_reward1 ?? "-"} / ${x.risk_reward2 ?? "-"}</span></div>
+      <div class="md-row"><span>ATR14 / ATR%</span><span>${fmt(x.atr14 ?? 0)} / ${fmt(x.atr_pct ?? 0)}%</span></div>
+      <div class="md-row"><span>Volatility 20 วันต่อปี</span><span>${fmt(x.volatility20 ?? 0)}%</span></div>
+    </div>
+
     <div class="md-section"><h3>ตัวชี้วัด</h3>
       <div class="md-row"><span>คะแนนสัญญาณ</span><span style="color:${scoreColor(x.score)}">${x.score}/100</span></div>
+      <div class="md-row"><span>EMA20 / EMA50</span><span>${fmt(x.ema_fast ?? x.price)} / ${fmt(x.ema_slow ?? x.price)}</span></div>
       <div class="md-row"><span>RSI (14)</span><span>${x.rsi}</span></div>
       <div class="md-row"><span>MACD Histogram</span><span>${x.macd_hist}</span></div>
       <div class="md-row"><span>เทรนด์ (EMA20/50)</span><span>${trendIcon(x.trend)} ${x.trend}</span></div>
@@ -375,7 +602,7 @@ function moveGlider(tab) {
 
 // ── market switch (ไทย / ต่างประเทศ) ──
 function switchMarket(key) {
-  if (!MARKET_FILES[key] || key === currentMarket) return;
+  if (!(key === "all" || MARKET_FILES[key]) || key === currentMarket) return;
   currentMarket = key;
   document.querySelectorAll(".ms").forEach((b) => b.classList.toggle("active", b.dataset.market === key));
   lastGenerated = null;          // บังคับให้ render ใหม่
