@@ -1,0 +1,4 @@
+# บังคับ LF เพื่อให้สคริปต์ใน GitHub Actions (รันบน Linux) ทำงานถูกต้อง
+* text=auto eol=lf
+*.png binary
+*.jpg binary

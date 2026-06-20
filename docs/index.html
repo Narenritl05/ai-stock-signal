@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Stock Signal — SET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">▲</span>
+      <div>
+        <h1>AI Stock Signal</h1>
+        <p class="sub">ระบบคัดกรองหุ้น SET ด้วย Technical Analysis</p>
+      </div>
+    </div>
+    <div class="meta">
+      <span class="dot live"></span>
+      <span id="updated">กำลังโหลด…</span>
+    </div>
+  </header>
+
+  <section class="summary" id="summary">
+    <div class="stat strong"><span class="num" id="s-strong">–</span><span class="lbl">STRONG BUY</span></div>
+    <div class="stat buy"><span class="num" id="s-buy">–</span><span class="lbl">BUY</span></div>
+    <div class="stat watch"><span class="num" id="s-watch">–</span><span class="lbl">WATCH</span></div>
+    <div class="stat avoid"><span class="num" id="s-avoid">–</span><span class="lbl">AVOID</span></div>
+  </section>
+
+  <div id="bt-summary" class="bt-summary hidden"></div>
+
+  <section class="controls">
+    <div class="filters" id="filters">
+      <button class="chip active" data-filter="ALL">ทั้งหมด</button>
+      <button class="chip" data-filter="STRONG BUY">🟢🟢 Strong Buy</button>
+      <button class="chip" data-filter="BUY">🟢 Buy</button>
+      <button class="chip" data-filter="WATCH">🟡 Watch</button>
+      <button class="chip" data-filter="AVOID">🔴 Avoid</button>
+    </div>
+    <input id="search" class="search" type="text" placeholder="ค้นหาชื่อหุ้น…" />
+  </section>
+
+  <main id="cards" class="cards"></main>
+
+  <div id="empty" class="empty hidden">ไม่พบหุ้นที่ตรงเงื่อนไข</div>
+
+  <footer class="disclaimer">
+    <strong>⚠️ คำเตือน:</strong> ข้อมูลนี้เป็นการวิเคราะห์เชิงเทคนิคเพื่อการศึกษาเท่านั้น
+    <u>ไม่ใช่คำแนะนำการลงทุน และไม่มีการการันตีผลกำไร</u>
+    การลงทุนมีความเสี่ยง ผู้ลงทุนควรศึกษาข้อมูลและตัดสินใจด้วยตนเอง
+    · ข้อมูลราคาจาก Yahoo Finance (อาจล่าช้า)
+  </footer>
+
+  <!-- รายละเอียดหุ้น (modal) -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

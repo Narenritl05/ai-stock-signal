@@ -1,0 +1,50 @@
+name: AI Stock Signal
+
+# ─────────────────────────────────────────────────────────────
+# รันวิเคราะห์หุ้นอัตโนมัติ + ส่ง Telegram + อัปเดต dashboard
+# ฟรี 100% บน GitHub Actions (ไม่มีค่า server)
+# ─────────────────────────────────────────────────────────────
+on:
+  schedule:
+    # เวลาเป็น UTC — ตลาด SET ปิด 16:30 น. ไทย (= 09:30 UTC)
+    - cron: "45 9 * * 1-5"    # หลังตลาดปิด ~16:45 น. ไทย (จ.-ศ.)
+    - cron: "30 2 * * 1-5"    # ก่อนเปิดตลาด ~09:30 น. ไทย (จ.-ศ.)
+  workflow_dispatch:           # กดรันเองได้จากหน้า Actions
+
+# ต้องมีสิทธิ์เขียน เพื่อ commit signals.json กลับเข้า repo
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run analysis
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python run.py
+
+      - name: Commit updated signals
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/signals.json
+          if git diff --staged --quiet; then
+            echo "ไม่มีการเปลี่ยนแปลง — ข้ามการ commit"
+          else
+            git commit -m "chore: update signals $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi

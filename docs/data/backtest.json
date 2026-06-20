@@ -1,0 +1,19 @@
+{
+  "generated_at": "ตัวอย่าง — ยังไม่ได้รันจริง",
+  "period": "2y",
+  "entry_score": 60,
+  "max_hold_days": 20,
+  "stop_loss_pct": 7.0,
+  "target_pct": 10.0,
+  "overall": {
+    "total_trades": 42,
+    "overall_win_rate": 57.1,
+    "avg_return_per_trade": 1.85,
+    "stocks_tested": 3
+  },
+  "results": [
+    { "ticker": "DEMO1.BK", "name": "ตัวอย่าง A", "trades": 16, "win_rate": 62.5, "avg_return": 2.6, "total_return": 41.3, "best": 10.0, "worst": -7.0, "avg_hold": 8.4 },
+    { "ticker": "DEMO2.BK", "name": "ตัวอย่าง B", "trades": 14, "win_rate": 57.1, "avg_return": 1.7, "total_return": 24.1, "best": 10.0, "worst": -7.0, "avg_hold": 9.1 },
+    { "ticker": "DEMO3.BK", "name": "ตัวอย่าง C", "trades": 12, "win_rate": 50.0, "avg_return": 1.0, "total_return": 11.8, "best": 10.0, "worst": -7.0, "avg_hold": 10.2 }
+  ]
+}

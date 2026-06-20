@@ -1,0 +1,44 @@
+name: Weekly Backtest
+
+# ─────────────────────────────────────────────────────────────
+# รัน backtest ย้อนหลังสัปดาห์ละครั้ง แล้วอัปเดต docs/data/backtest.json
+# (หนักกว่าการวิเคราะห์รายวัน จึงไม่รันทุกวัน)
+# ─────────────────────────────────────────────────────────────
+on:
+  schedule:
+    - cron: "0 1 * * 0"     # ทุกวันอาทิตย์ ~08:00 น. ไทย
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run backtest
+        run: python backtest.py
+
+      - name: Commit backtest results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/backtest.json
+          if git diff --staged --quiet; then
+            echo "ไม่มีการเปลี่ยนแปลง — ข้ามการ commit"
+          else
+            git commit -m "chore: update backtest $(date -u +'%Y-%m-%d UTC')"
+            git push
+          fi
