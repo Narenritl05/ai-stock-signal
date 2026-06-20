@@ -362,6 +362,16 @@ body {
 .flow-step b { display: block; margin: 8px 0 4px; font-size: 14px; }
 .flow-step small { color: var(--muted); font-size: 12px; line-height: 1.5; }
 .flow-arrow { display: grid; place-items: center; color: var(--green); font-size: 20px; }
+.market-hours-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--bg-2); }
+.market-hours { width: 100%; min-width: 760px; border-collapse: collapse; font-size: 13px; }
+.market-hours th, .market-hours td { padding: 13px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+.market-hours th { color: var(--green); font-size: 11.5px; text-transform: uppercase; letter-spacing: .4px; background: rgba(0,230,118,.06); }
+.market-hours tr:last-child td { border-bottom: none; }
+.market-hours td { color: var(--text); line-height: 1.55; }
+.market-hours td small { display: block; color: var(--muted); font-size: 11.5px; margin-top: 3px; }
+.market-hours-note { margin-top: 12px; }
+.market-hours-note a { color: var(--green); text-decoration: none; font-weight: 700; }
+.market-hours-note a:hover { text-decoration: underline; }
 
 .footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--line); }
 
