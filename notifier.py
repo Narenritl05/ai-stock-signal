@@ -89,19 +89,20 @@ def build_change_message(changes: list[dict], regime: dict | None, generated_at:
         lines.append("")
 
     if buys:
-        lines.append(f"🟢 <b>ควรพิจารณาซื้อ ({len(buys)})</b>")
+        lines.append(f"🟢 <b>ควรซื้อ ({len(buys)})</b>")
         for c in buys:
             emo = CHANGE_EMOJI.get(c["change"], "•")
-            lines.append(f"{emo} <b>{c['name']}</b> · {c['signal']} · คะแนน {c['score']}/100")
+            lines.append(f"{emo} <b>{c['name']}</b> · คะแนน {c['score']}/100")
+            lines.append(f"   👉 <b>{c.get('rec_action', 'ควรซื้อ')}</b> ({c['signal']})")
             lines.append(f"   เข้า ~{c['price']} | ตัดขาดทุน {c['stop_loss']} | เป้า {c['target1']}")
             if c.get("pos_shares"):
                 lines.append(f"   💼 ขนาดไม้แนะนำ ~{c['pos_shares']:,} หุ้น (~{c['pos_value']:,.0f}฿)")
         lines.append("")
 
     if exits:
-        lines.append(f"🚪 <b>หลุดสัญญาณ — พิจารณาขาย/ออก ({len(exits)})</b>")
+        lines.append(f"🔴 <b>ควรขาย / ออกจากสถานะ ({len(exits)})</b>")
         for c in exits:
-            lines.append(f"   {c['name']} (เดิม {c.get('prev_signal', '-')})")
+            lines.append(f"   👉 <b>{c['name']}</b> — หลุดจากสัญญาณซื้อ (เดิม {c.get('prev_signal', '-')})")
         lines.append("")
 
     if perf and perf.get("summary", {}).get("closed", 0) > 0:

@@ -229,6 +229,27 @@ body {
 .mm .mm-l { font-size: 9.5px; color: var(--muted); letter-spacing: .3px; }
 .mm .mm-v { font-size: 13.5px; font-weight: 700; margin-top: 2px; }
 
+/* ── Recommendation strip (card) + banner (modal) ── */
+.rec {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-top: 14px; padding: 9px 13px; border-radius: 11px; font-weight: 700;
+  border: 1px solid var(--line);
+}
+.rec .rec-label { font-size: 10.5px; color: var(--muted); letter-spacing: .5px; font-weight: 600; }
+.rec .rec-action { font-size: 14px; }
+.rec-banner {
+  margin: 14px 0 4px; padding: 12px 16px; border-radius: 12px; font-weight: 800; font-size: 15px;
+  border: 1px solid var(--line); text-align: center;
+}
+.rec-buy { background: var(--green-soft); border-color: var(--line-strong); }
+.rec-buy .rec-action, .rec-banner.rec-buy { color: var(--green); }
+.rec-hold { background: var(--amber-soft); border-color: rgba(255,194,75,.35); }
+.rec-hold .rec-action, .rec-banner.rec-hold { color: var(--amber); }
+.rec-sell { background: var(--red-soft); border-color: rgba(255,90,90,.4); }
+.rec-sell .rec-action, .rec-banner.rec-sell { color: var(--red); }
+.rec-avoid { background: rgba(255,90,90,.07); border-color: rgba(255,90,90,.25); }
+.rec-avoid .rec-action, .rec-banner.rec-avoid { color: var(--red); }
+
 .empty { text-align: center; color: var(--muted); padding: 70px 20px; font-size: 15px; }
 
 /* ── Backtest view ── */

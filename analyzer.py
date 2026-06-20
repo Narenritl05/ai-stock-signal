@@ -174,6 +174,24 @@ def score_point(price, prev_price, ef, es, r, h, h_prev, vol_ratio, mom5, with_t
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# แปลงสัญญาณเป็น "คำแนะนำ" ภาษาคนชัดๆ: ควรซื้อ / ถือ-รอ / ควรขาย / เลี่ยง
+# (แหล่งความจริงเดียว — ใช้ทั้งแจ้งเตือน Telegram และหน้าเว็บ)
+# ─────────────────────────────────────────────────────────────────────────────
+def recommend(signal: str, trend: str) -> dict:
+    if signal == "STRONG BUY":
+        return {"action": "ควรซื้อ", "text": "🟢 ควรซื้อ — สัญญาณแข็งแรงมาก", "tone": "buy"}
+    if signal == "BUY":
+        return {"action": "ควรซื้อ", "text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก", "tone": "buy"}
+    if signal == "WATCH":
+        return {"action": "ถือ/รอ", "text": "🟡 ถือ/รอจังหวะ — สัญญาณยังไม่ชัด", "tone": "hold"}
+    # AVOID
+    if trend == "DOWN":
+        return {"action": "ควรขาย/เลี่ยง",
+                "text": "🔴 ควรเลี่ยง — แนวโน้มขาลง (ถ้าถืออยู่ ควรพิจารณาขาย)", "tone": "sell"}
+    return {"action": "เลี่ยง", "text": "🔴 ยังไม่น่าสนใจ — เลี่ยงไปก่อน", "tone": "avoid"}
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # ดึงข้อมูลราคา
 # ─────────────────────────────────────────────────────────────────────────────
 def fetch_history(ticker: str, period: str | None = None) -> pd.DataFrame | None:
@@ -226,6 +244,7 @@ def analyze_one(ticker: str, name: str) -> dict | None:
     score, sig, trend, reasons, warnings = score_point(
         price, prev_price, ef, es, r, h, h_prev, vol_ratio, mom5
     )
+    rec = recommend(sig, trend)
 
     # จุด stop loss: เลือกจุดที่ใกล้ราคากว่า ระหว่าง swing low 20 วัน กับ -STOP_LOSS_PCT
     swing_low = _safe(df["Close"].tail(20).min(), price * (1 - config.STOP_LOSS_PCT))
@@ -244,6 +263,9 @@ def analyze_one(ticker: str, name: str) -> dict | None:
         "change_pct": round(change_pct, 2),
         "score": score,
         "signal": sig,
+        "rec_action": rec["action"],
+        "rec_text": rec["text"],
+        "rec_tone": rec["tone"],
         "trend": trend,
         "rsi": round(r, 1),
         "macd_hist": round(h, 4),

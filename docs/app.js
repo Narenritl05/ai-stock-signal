@@ -116,7 +116,24 @@ function cardHTML(x, i) {
         <div class="mm"><div class="mm-l">วอลุ่ม</div><div class="mm-v">${x.volume_ratio}x</div></div>
       </div>
     </div>
+    ${recStrip(x)}
   </div>`;
+}
+
+// ── คำแนะนำ: ควรซื้อ / ถือ-รอ / ควรขาย / เลี่ยง ──
+function recommend(signal, trend) {
+  if (signal === "STRONG BUY") return { action: "ควรซื้อ", text: "🟢 ควรซื้อ — สัญญาณแข็งแรงมาก", tone: "buy" };
+  if (signal === "BUY") return { action: "ควรซื้อ", text: "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก", tone: "buy" };
+  if (signal === "WATCH") return { action: "ถือ/รอ", text: "🟡 ถือ/รอจังหวะ — สัญญาณยังไม่ชัด", tone: "hold" };
+  if (trend === "DOWN") return { action: "ควรขาย/เลี่ยง", text: "🔴 ควรเลี่ยง — แนวโน้มขาลง (ถ้าถืออยู่ ควรพิจารณาขาย)", tone: "sell" };
+  return { action: "เลี่ยง", text: "🔴 ยังไม่น่าสนใจ — เลี่ยงไปก่อน", tone: "avoid" };
+}
+function recOf(x) {
+  return x.rec_text ? { action: x.rec_action, text: x.rec_text, tone: x.rec_tone } : recommend(x.signal, x.trend);
+}
+function recStrip(x) {
+  const r = recOf(x);
+  return `<div class="rec rec-${r.tone}"><span class="rec-label">คำแนะนำ</span><span class="rec-action">${r.action}</span></div>`;
 }
 
 // ── SVG: sparkline area chart ──
@@ -263,10 +280,13 @@ function openModal(ticker) {
   const reasons = (x.reasons || []).map((r) => `<li>${r}</li>`).join("");
   const warns = (x.warnings || []).map((w) => `<li>${w}</li>`).join("");
 
+  const r = recOf(x);
   document.getElementById("modal-content").innerHTML = `
     <div class="md-head"><h2>${x.name}</h2><span class="badge ${cls}">${x.signal}</span></div>
     <div class="md-sub">${x.ticker} · ${fmt(x.price)} บาท
       <span class="change ${x.change_pct >= 0 ? "up" : "down"}">${x.change_pct >= 0 ? "▲" : "▼"} ${Math.abs(x.change_pct).toFixed(2)}%</span></div>
+
+    <div class="rec-banner rec-${r.tone}">${r.text}</div>
 
     <div class="md-chart">${sparkline(x.history, 510, 110)}</div>
 
