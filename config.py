@@ -5,11 +5,11 @@ config.py — ตั้งค่ารายการหุ้นที่จะ
 """
 
 # ─────────────────────────────────────────────────────────────────────────────
-# รายการหุ้นที่จะวิเคราะห์ (Watchlist)
-# ค่าเริ่มต้นคือหุ้นสภาพคล่องสูงใน SET50/SET100 — แก้ได้ตามใจ
+# รายการหุ้นที่จะวิเคราะห์ (Watchlist) — แบ่งเป็น "หมวด" (market)
+# หุ้นไทยต้องมี ".BK" ต่อท้าย / หุ้น US ใช้ ticker ตรงๆ (เช่น NVDA)
 # ─────────────────────────────────────────────────────────────────────────────
-# ค่าเริ่มต้น = หุ้นใน SET50 (ปรับปรุงตามรอบทบทวนดัชนีได้)
-WATCHLIST = {
+# หมวด 1: หุ้นไทย SET50
+WATCHLIST_TH = {
     "ADVANC.BK": "ADVANC",
     "AOT.BK": "AOT",
     "AWC.BK": "AWC",
@@ -61,6 +61,32 @@ WATCHLIST = {
     "TU.BK": "TU",
     "WHA.BK": "WHA",
 }
+
+# หมวด 2: หุ้นต่างประเทศ (US) — เน้นตัวที่ "โมเมนตัม/ผันผวนสูง เหมาะกับการเทรด"
+# มีทั้งหุ้นดังและไม่ดัง (growth/momentum/high-beta) — แก้เพิ่ม-ลบได้
+# ⚠️ ผลตอบแทนสูง = ความเสี่ยงสูง แกว่งแรงทั้งสองทาง
+WATCHLIST_US = {
+    "NVDA": "NVDA", "AMD": "AMD", "AVGO": "AVGO", "MU": "MU", "ARM": "ARM",
+    "SMCI": "SMCI", "TSM": "TSM", "ASML": "ASML", "QCOM": "QCOM", "LRCX": "LRCX",
+    "PLTR": "PLTR", "CRWD": "CRWD", "PANW": "PANW", "NET": "NET", "SNOW": "SNOW",
+    "DDOG": "DDOG", "NOW": "NOW", "ANET": "ANET", "VRT": "VRT", "CLS": "CLS",
+    "APP": "APP", "CRDO": "CRDO", "TSLA": "TSLA", "META": "META", "NFLX": "NFLX",
+    "AMZN": "AMZN", "SHOP": "SHOP", "MELI": "MELI", "COIN": "COIN", "MSTR": "MSTR",
+    "HOOD": "HOOD", "SOFI": "SOFI", "AFRM": "AFRM", "RBLX": "RBLX", "CVNA": "CVNA",
+    "DKNG": "DKNG", "ONON": "ONON", "DUOL": "DUOL",
+}
+
+# โครงสร้าง "หมวดตลาด" — ระบบจะวิเคราะห์ทุกหมวดและเขียนไฟล์แยกให้ dashboard
+MARKETS = {
+    "th": {"name": "หุ้นไทย (SET)", "short": "ไทย", "tag": "TH",
+           "currency": "฿", "file": "signals.json", "watchlist": WATCHLIST_TH},
+    "us": {"name": "หุ้นต่างประเทศ (US)", "short": "ต่างประเทศ", "tag": "US",
+           "currency": "$", "file": "signals_foreign.json", "watchlist": WATCHLIST_US},
+}
+
+# รวมทุกหมวด (ใช้กับ backtest / paper trading ที่คีย์ด้วย ticker)
+WATCHLIST_ALL = {**WATCHLIST_TH, **WATCHLIST_US}
+WATCHLIST = WATCHLIST_TH  # backward-compat (โค้ดเก่าที่อ้าง config.WATCHLIST)
 
 # ─────────────────────────────────────────────────────────────────────────────
 # พารามิเตอร์ของอินดิเคเตอร์ทางเทคนิค

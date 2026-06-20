@@ -173,7 +173,7 @@ def main() -> None:
     print("=" * 60)
     print("AI Stock Signal — Backtest (ทดสอบย้อนหลัง)")
     print("=" * 60)
-    payload = run_backtest(config.WATCHLIST)
+    payload = run_backtest(config.WATCHLIST_ALL)
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:

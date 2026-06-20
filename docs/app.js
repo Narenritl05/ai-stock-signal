@@ -13,11 +13,13 @@ let sortBy = "score";
 let gid = 0; // unique gradient ids
 let lastGenerated = null;       // เช็คว่าข้อมูลเปลี่ยนไหมตอน auto-refresh
 const REFRESH_MS = 60000;       // รีเฟรชหน้าเว็บอัตโนมัติทุก 1 นาที
+let currentMarket = "th";       // หมวดที่กำลังดู (th = ไทย, us = ต่างประเทศ)
+const MARKET_FILES = { th: "signals.json", us: "signals_foreign.json" };
 
 // ── data loading ──
 async function load(isRefresh = false) {
   try {
-    const res = await fetch("data/signals.json?_=" + Date.now());
+    const res = await fetch("data/" + MARKET_FILES[currentMarket] + "?_=" + Date.now());
     if (!res.ok) throw new Error("HTTP " + res.status);
     const data = await res.json();
     // ตอน auto-refresh: ถ้าข้อมูลยังไม่เปลี่ยน ไม่ต้อง re-render (กันกระพริบ)
@@ -63,9 +65,9 @@ async function loadBacktest() {
 // ── render: signals ──
 function renderSignals(data) {
   ALL = data.signals || [];
-  META = { account: data.account_size, risk: data.risk_per_trade_pct };
+  META = { account: data.account_size, risk: data.risk_per_trade_pct, currency: data.currency || "฿" };
   document.getElementById("updated").textContent = "อัปเดต: " + (data.generated_at || "-");
-  renderRegime(data.regime);
+  renderRegime(data.regime, data);
   const s = data.summary || {};
   countUp("s-strong", s.strong_buy ?? 0);
   countUp("s-buy", s.buy ?? 0);
@@ -219,8 +221,11 @@ function renderBacktest(data) {
 }
 
 // ── render: market regime banner ──
-function renderRegime(r) {
+function renderRegime(r, data) {
   const el = document.getElementById("regime-banner");
+  const mlabel = (data && data.market_key === "us") ? "US" : "SET";
+  const pill = document.getElementById("market-status");
+  if (pill) pill.textContent = mlabel + (r ? " · " + r.regime : "");
   if (!el) return;
   if (!r) { el.classList.add("hidden"); return; }
   const map = { BULL: ["bull", "🟢"], NEUTRAL: ["neutral", "🟡"], BEAR: ["bear", "🔴"], UNKNOWN: ["neutral", "⚪"] };
@@ -229,8 +234,6 @@ function renderRegime(r) {
   el.innerHTML = `<span class="rg-emo">${emo}</span>
     <div><b>ภาวะตลาด: ${r.label}</b>
     <small>breadth ${r.breadth}% ของหุ้นยืนเหนือ EMA20 (${r.uptrend}/${r.stocks} ตัว)${r.regime === "BEAR" ? " · ระบบจะแจ้งเฉพาะสัญญาณแข็งแรงมาก" : ""}</small></div>`;
-  const pill = document.getElementById("market-status");
-  if (pill) pill.textContent = "SET · " + r.regime;
 }
 
 // ── render: live paper-trading performance ──
@@ -281,9 +284,10 @@ function openModal(ticker) {
   const warns = (x.warnings || []).map((w) => `<li>${w}</li>`).join("");
 
   const r = recOf(x);
+  const cur = x.currency || META.currency || "฿";
   document.getElementById("modal-content").innerHTML = `
     <div class="md-head"><h2>${x.name}</h2><span class="badge ${cls}">${x.signal}</span></div>
-    <div class="md-sub">${x.ticker} · ${fmt(x.price)} บาท
+    <div class="md-sub">${x.ticker} · ${cur}${fmt(x.price)}
       <span class="change ${x.change_pct >= 0 ? "up" : "down"}">${x.change_pct >= 0 ? "▲" : "▼"} ${Math.abs(x.change_pct).toFixed(2)}%</span></div>
 
     <div class="rec-banner rec-${r.tone}">${r.text}</div>
@@ -299,10 +303,10 @@ function openModal(ticker) {
         <div class="level tp"><div class="lv-l">เป้า 1 / 2</div><div class="lv-v">${fmt(x.target1)}<br><small style="font-size:12px">${fmt(x.target2)}</small></div></div>
       </div></div>
 
-    ${x.pos_shares ? `<div class="md-section"><h3>ขนาดไม้แนะนำ (เสี่ยง ${META.risk ?? 2}% ของพอร์ต ${(META.account ?? 100000).toLocaleString("th-TH")}฿)</h3>
+    ${x.pos_shares ? `<div class="md-section"><h3>ขนาดไม้แนะนำ (เสี่ยง ${META.risk ?? 2}% ของพอร์ต ${cur}${(META.account ?? 100000).toLocaleString("th-TH")})</h3>
       <div class="md-row"><span>จำนวนหุ้น</span><span>${x.pos_shares.toLocaleString("th-TH")} หุ้น</span></div>
-      <div class="md-row"><span>มูลค่าโดยประมาณ</span><span>${fmt(x.pos_value)} บาท</span></div>
-      <div class="md-row"><span>ขาดทุนสูงสุดถ้าโดน stop</span><span style="color:var(--red)">~${fmt((META.account ?? 100000) * (META.risk ?? 2) / 100)} บาท</span></div></div>` : ""}
+      <div class="md-row"><span>มูลค่าโดยประมาณ</span><span>${cur}${fmt(x.pos_value)}</span></div>
+      <div class="md-row"><span>ขาดทุนสูงสุดถ้าโดน stop</span><span style="color:var(--red)">~${cur}${fmt((META.account ?? 100000) * (META.risk ?? 2) / 100)}</span></div></div>` : ""}
 
     <div class="md-section"><h3>ตัวชี้วัด</h3>
       <div class="md-row"><span>คะแนนสัญญาณ</span><span style="color:${scoreColor(x.score)}">${x.score}/100</span></div>
@@ -369,7 +373,21 @@ function moveGlider(tab) {
   g.style.transform = `translateX(${tab.offsetLeft - 5}px)`;
 }
 
+// ── market switch (ไทย / ต่างประเทศ) ──
+function switchMarket(key) {
+  if (!MARKET_FILES[key] || key === currentMarket) return;
+  currentMarket = key;
+  document.querySelectorAll(".ms").forEach((b) => b.classList.toggle("active", b.dataset.market === key));
+  lastGenerated = null;          // บังคับให้ render ใหม่
+  load(false);
+}
+
 // ── events ──
+const marketSwitchEl = document.getElementById("market-switch");
+if (marketSwitchEl) marketSwitchEl.addEventListener("click", (e) => {
+  const b = e.target.closest(".ms");
+  if (b) switchMarket(b.dataset.market);
+});
 document.getElementById("tabs").addEventListener("click", (e) => {
   const tab = e.target.closest(".tab");
   if (tab) switchView(tab.dataset.view);

@@ -29,17 +29,62 @@ from analyzer import analyze_watchlist
 
 ICT = timezone(timedelta(hours=7))
 ROOT = os.path.dirname(os.path.abspath(__file__))
-OUTPUT_PATH = os.path.join(ROOT, "docs", "data", "signals.json")
+DATA_DIR = os.path.join(ROOT, "docs", "data")
 
 BUY_TIER = ("BUY", "STRONG BUY")
 
 
-def _attach_position_sizing(signals: list[dict]) -> None:
+def _process_market(mkey: str, m: dict, generated_at: str, now) -> tuple:
+    """วิเคราะห์ 1 หมวด → เขียนไฟล์ dashboard → คืน (signals, regime, fail_ratio)"""
+    print(f"\n--- หมวด: {m['name']} ({len(m['watchlist'])} ตัว) ---")
+    signals = analyze_watchlist(m["watchlist"])
+    attempted = len(m["watchlist"])
+    fail_ratio = (1 - len(signals) / attempted) if attempted else 0.0
+
+    regime = market.assess_regime(signals) if config.REGIME_ENABLED else None
+
     for s in signals:
+        s["market"] = m["short"]
+        s["market_tag"] = m["tag"]
+        s["currency"] = m["currency"]
         if s["signal"] in BUY_TIER:
             ps = market.position_size(s["entry"], s["stop_loss"])
             s["pos_shares"] = ps["shares"]
             s["pos_value"] = ps["value"]
+
+    if config.NEWS_ENABLED:
+        news.attach_news(signals)
+
+    summary = {
+        "strong_buy": sum(1 for s in signals if s["signal"] == "STRONG BUY"),
+        "buy": sum(1 for s in signals if s["signal"] == "BUY"),
+        "watch": sum(1 for s in signals if s["signal"] == "WATCH"),
+        "avoid": sum(1 for s in signals if s["signal"] == "AVOID"),
+    }
+    payload = {
+        "generated_at": generated_at,
+        "generated_at_iso": now.isoformat(),
+        "market_key": mkey,
+        "market_name": m["name"],
+        "currency": m["currency"],
+        "count": len(signals),
+        "summary": summary,
+        "regime": regime,
+        "notify_min_score": market.notify_min_score(regime),
+        "account_size": config.ACCOUNT_SIZE,
+        "risk_per_trade_pct": config.RISK_PER_TRADE_PCT * 100,
+        "fetch_fail_ratio": round(fail_ratio, 3),
+        "signals": signals,
+    }
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(os.path.join(DATA_DIR, m["file"]), "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    print(f"  บันทึก {len(signals)} ตัว -> {m['file']} "
+          f"(STRONG BUY={summary['strong_buy']} BUY={summary['buy']} "
+          f"WATCH={summary['watch']} AVOID={summary['avoid']})")
+    if regime:
+        print(f"  ภาวะตลาด: {regime['label']} (breadth {regime['breadth']}%)")
+    return signals, regime, fail_ratio
 
 
 def run_pipeline(notify_no_changes: bool = True) -> None:
@@ -51,75 +96,46 @@ def run_pipeline(notify_no_changes: bool = True) -> None:
     print(f"AI Stock Signal — เริ่มวิเคราะห์ {generated_at}")
     print("=" * 60)
 
-    signals = analyze_watchlist(config.WATCHLIST)
+    all_signals: list[dict] = []
+    regimes: list[dict] = []
+    market_min: dict = {}
+    worst_fail = 0.0
+    for mkey, m in config.MARKETS.items():
+        sigs, regime, fail_ratio = _process_market(mkey, m, generated_at, now)
+        all_signals += sigs
+        worst_fail = max(worst_fail, fail_ratio)
+        market_min[m["tag"]] = market.notify_min_score(regime)
+        if regime:
+            regimes.append({**regime, "short": m["short"]})
 
-    attempted = len(config.WATCHLIST)
-    fail_ratio = (1 - len(signals) / attempted) if attempted else 0.0
-
-    # ภาวะตลาด + ขนาดไม้
-    regime = market.assess_regime(signals) if config.REGIME_ENABLED else None
-    _attach_position_sizing(signals)
-
-    # ข่าวประกอบ (ทำไมขึ้น/ลง) — มี cache จึงไม่หนักตอนรันลูปทุก 1 นาที
-    if config.NEWS_ENABLED:
-        news.attach_news(signals)
-
-    # หาสิ่งที่เปลี่ยนเทียบรอบก่อน (กันสแปม)
+    # หาสิ่งที่เปลี่ยน (รวมทุกหมวด — ticker ไม่ซ้ำกันข้ามตลาด)
     prev = state.load_state()
     if config.ALERT_ONLY_CHANGES:
-        changes = state.diff_signals(signals, prev)
+        changes = state.diff_signals(all_signals, prev)
     else:
-        changes = [{**s, "change": "NEW"} for s in signals if s["signal"] in BUY_TIER]
+        changes = [{**s, "change": "NEW"} for s in all_signals if s["signal"] in BUY_TIER]
+    for c in changes:
+        c["min_score"] = market_min.get(c.get("market_tag"), config.NOTIFY_MIN_SCORE)
 
-    # paper trading + ผลจริง
+    # paper trading + ผลจริง (รวมทุกหมวด)
     perf = None
     if config.TRACKER_ENABLED:
-        perf = tracker.update_and_log(signals, changes, generated_at, date_str)
+        perf = tracker.update_and_log(all_signals, changes, generated_at, date_str)
 
-    # เขียนผลลัพธ์สำหรับ dashboard
-    summary = {
-        "strong_buy": sum(1 for s in signals if s["signal"] == "STRONG BUY"),
-        "buy": sum(1 for s in signals if s["signal"] == "BUY"),
-        "watch": sum(1 for s in signals if s["signal"] == "WATCH"),
-        "avoid": sum(1 for s in signals if s["signal"] == "AVOID"),
-    }
-    payload = {
-        "generated_at": generated_at,
-        "generated_at_iso": now.isoformat(),
-        "market": "SET (ตลาดหลักทรัพย์แห่งประเทศไทย)",
-        "count": len(signals),
-        "summary": summary,
-        "regime": regime,
-        "notify_min_score": market.notify_min_score(regime),
-        "account_size": config.ACCOUNT_SIZE,
-        "risk_per_trade_pct": config.RISK_PER_TRADE_PCT * 100,
-        "fetch_fail_ratio": round(fail_ratio, 3),
-        "signals": signals,
-    }
-    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
-    print(f"\nบันทึก {len(signals)} ตัว -> {OUTPUT_PATH}")
-    print(f"สรุป: STRONG BUY={summary['strong_buy']} | BUY={summary['buy']} "
-          f"| WATCH={summary['watch']} | AVOID={summary['avoid']}")
-    if regime:
-        print(f"ภาวะตลาด: {regime['label']} (breadth {regime['breadth']}%)")
-    print(f"การเปลี่ยนแปลงที่จะแจ้ง: {len(changes)} รายการ")
+    print(f"\nการเปลี่ยนแปลงที่จะแจ้ง: {len(changes)} รายการ")
 
-    # แจ้งเตือน — ส่งเฉพาะเมื่อมีการเปลี่ยนแปลงจริง (กันสแปมตอนรันถี่ๆ ทุก 1 นาที)
-    min_score = market.notify_min_score(regime)
-    message = notifier.build_change_message(changes, regime, generated_at, min_score, fail_ratio, perf)
+    # แจ้งเตือน — ส่งเฉพาะเมื่อมีการเปลี่ยนแปลงจริง (กันสแปมตอนรันถี่ๆ)
+    message = notifier.build_change_message(changes, regimes, generated_at, worst_fail, perf)
     notifiable = [c for c in changes
-                  if (c.get("change") in ("NEW", "UPGRADE") and c.get("score", 0) >= min_score)
+                  if (c.get("change") in ("NEW", "UPGRADE")
+                      and c.get("score", 0) >= c.get("min_score", config.NOTIFY_MIN_SCORE))
                   or c.get("change") == "EXIT"]
     if notifiable or notify_no_changes:
         notifier.send_telegram(message)
     else:
         print("  ไม่มีสัญญาณใหม่ — ข้ามการแจ้งเตือน Telegram (กันสแปม)")
 
-    # บันทึก state ไว้เทียบรอบหน้า (ทำหลังคำนวณ diff แล้ว)
-    state.save_state(signals, generated_at)
-
+    state.save_state(all_signals, generated_at)
     print("\nเสร็จสิ้น ✅")
 
 

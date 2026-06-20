@@ -68,21 +68,24 @@ def build_message(signals: list[dict], generated_at: str, min_score: int) -> str
     return "\n".join(lines)
 
 
-def build_change_message(changes: list[dict], regime: dict | None, generated_at: str,
-                         min_score: int, fail_ratio: float = 0.0,
-                         perf: dict | None = None) -> str:
-    """ข้อความแจ้งเตือนแบบ 'เฉพาะที่เปลี่ยน' + ภาวะตลาด + ผลจริง + heartbeat"""
-    lines = ["📊 <b>AI Stock Signal — SET</b>", f"🕐 {generated_at}"]
-    if regime:
+def build_change_message(changes: list[dict], regimes, generated_at: str,
+                         fail_ratio: float = 0.0, perf: dict | None = None) -> str:
+    """ข้อความแจ้งเตือนแบบ 'เฉพาะที่เปลี่ยน' + ภาวะตลาดทุกหมวด + ผลจริง + heartbeat"""
+    if isinstance(regimes, dict) or regimes is None:   # รองรับแบบเก่า (regime เดียว)
+        regimes = [regimes] if regimes else []
+    lines = ["📊 <b>AI Stock Signal</b>", f"🕐 {generated_at}"]
+    for rg in regimes:
+        short = rg.get("short", "ตลาด")
         lines.append(
-            f"{REGIME_EMOJI.get(regime['regime'], '⚪')} ภาวะตลาด: "
-            f"<b>{regime['label']}</b> (breadth {regime['breadth']}%)"
+            f"{REGIME_EMOJI.get(rg['regime'], '⚪')} {short}: "
+            f"<b>{rg['label']}</b> (breadth {rg['breadth']}%)"
         )
     lines.append("")
 
     MAX_LIST = 8  # จำกัดจำนวนในข้อความ กันยาวเกินลิมิต Telegram (4096 ตัวอักษร)
     buys = [c for c in changes
-            if c.get("change") in ("NEW", "UPGRADE") and c.get("score", 0) >= min_score]
+            if c.get("change") in ("NEW", "UPGRADE")
+            and c.get("score", 0) >= c.get("min_score", 0)]
     buys.sort(key=lambda c: c.get("score", 0), reverse=True)
     exits = [c for c in changes if c.get("change") == "EXIT"]
 
@@ -94,11 +97,13 @@ def build_change_message(changes: list[dict], regime: dict | None, generated_at:
         lines.append(f"🟢 <b>ควรซื้อ ({len(buys)})</b>")
         for c in buys[:MAX_LIST]:
             emo = CHANGE_EMOJI.get(c["change"], "•")
-            lines.append(f"{emo} <b>{c['name']}</b> · คะแนน {c['score']}/100")
+            cur = c.get("currency", "")
+            tag = f" [{c['market']}]" if c.get("market") else ""
+            lines.append(f"{emo} <b>{c['name']}</b>{tag} · คะแนน {c['score']}/100")
             lines.append(f"   👉 <b>{c.get('rec_action', 'ควรซื้อ')}</b> ({c['signal']})")
-            lines.append(f"   เข้า ~{c['price']} | ตัดขาดทุน {c['stop_loss']} | เป้า {c['target1']}")
+            lines.append(f"   เข้า ~{cur}{c['price']} | ตัดขาดทุน {cur}{c['stop_loss']} | เป้า {cur}{c['target1']}")
             if c.get("pos_shares"):
-                lines.append(f"   💼 ขนาดไม้แนะนำ ~{c['pos_shares']:,} หุ้น (~{c['pos_value']:,.0f}฿)")
+                lines.append(f"   💼 ขนาดไม้แนะนำ ~{c['pos_shares']:,} หุ้น")
         if len(buys) > MAX_LIST:
             lines.append(f"   …และอีก {len(buys) - MAX_LIST} ตัว (ดูทั้งหมดบนหน้าเว็บ)")
         lines.append("")
@@ -106,7 +111,8 @@ def build_change_message(changes: list[dict], regime: dict | None, generated_at:
     if exits:
         lines.append(f"🔴 <b>ควรขาย / ออกจากสถานะ ({len(exits)})</b>")
         for c in exits[:MAX_LIST]:
-            lines.append(f"   👉 <b>{c['name']}</b> — หลุดจากสัญญาณซื้อ (เดิม {c.get('prev_signal', '-')})")
+            tag = f" [{c['market']}]" if c.get("market") else ""
+            lines.append(f"   👉 <b>{c['name']}</b>{tag} — หลุดจากสัญญาณซื้อ (เดิม {c.get('prev_signal', '-')})")
         if len(exits) > MAX_LIST:
             lines.append(f"   …และอีก {len(exits) - MAX_LIST} ตัว")
         lines.append("")

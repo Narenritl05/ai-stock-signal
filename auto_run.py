@@ -20,13 +20,24 @@ ICT = timezone(timedelta(hours=7))
 
 
 def market_open(now: datetime) -> bool:
-    """ตลาด SET: จ.-ศ. 10:00-12:30 และ 14:30-16:30 (เผื่อหัว-ท้ายเล็กน้อย)"""
-    if now.weekday() >= 5:          # เสาร์/อาทิตย์
-        return False
+    """
+    เปิดทำงานช่วงที่ตลาดเปิด (เวลาไทย) เพื่อกัน Yahoo บล็อกตอนตลาดปิด:
+      SET (จ.-ศ.): 10:00-12:30 และ 14:30-16:30
+      US  (โดยประมาณตามเวลาไทย): ~20:30 เป็นต้นไป (เย็น จ.-ศ.) ถึง ~03:00 (เช้ามืด อ.-ส.)
+    """
+    wd = now.weekday()             # 0=จันทร์ ... 6=อาทิตย์
     t = now.hour * 60 + now.minute
-    morning = (9 * 60 + 55) <= t <= (12 * 60 + 35)
-    afternoon = (14 * 60 + 25) <= t <= (16 * 60 + 35)
-    return morning or afternoon
+    # SET (จ.-ศ.)
+    if wd <= 4 and ((9 * 60 + 55) <= t <= (12 * 60 + 35)
+                    or (14 * 60 + 25) <= t <= (16 * 60 + 35)):
+        return True
+    # US ภาคค่ำของไทย (จ.-ศ.)
+    if wd <= 4 and t >= (20 * 60 + 30):
+        return True
+    # US ช่วงเช้ามืดของไทย (อ.-ส. = คืนวันทำการของ US)
+    if 1 <= wd <= 5 and t <= (3 * 60):
+        return True
+    return False
 
 
 def main() -> None:
