@@ -17,6 +17,7 @@ let lastGenerated = null;       // เช็คว่าข้อมูลเป
 const REFRESH_MS = 60000;       // รีเฟรชหน้าเว็บอัตโนมัติทุก 1 นาที
 let currentMarket = "all";      // หมวดที่กำลังดู (all = ทุกตลาด, th = ไทย, us = ต่างประเทศ)
 const MARKET_FILES = { th: "signals.json", us: "signals_foreign.json" };
+const WORKFLOW_URL = "https://github.com/Narenritl05/ai-stock-signal/actions/workflows/analyze.yml";
 
 // ── data loading ──
 async function load(isRefresh = false) {
@@ -105,6 +106,13 @@ function flashLive() {
   if (!b) return;
   b.classList.add("flash");
   setTimeout(() => b.classList.remove("flash"), 1200);
+}
+
+function refreshLatestData() {
+  lastGenerated = null;
+  document.getElementById("updated").textContent = "กำลังดึงข้อมูลล่าสุด...";
+  load(false);
+  flashLive();
 }
 
 async function loadPerformance() {
@@ -550,6 +558,27 @@ function openModal(ticker) {
   document.getElementById("modal").classList.remove("hidden");
 }
 
+function openUpdateModal() {
+  document.getElementById("modal-content").innerHTML = `
+    <div class="md-head"><h2>อัปเดตข้อมูลล่าสุด</h2><span class="badge s-buy">SAFE</span></div>
+    <div class="md-sub">ระบบอัตโนมัติเดิมยังทำงานตามรอบ GitHub Actions เหมือนเดิม</div>
+
+    <div class="update-help">
+      <div class="update-option">
+        <b>1. รีเฟรชข้อมูลบนหน้าเว็บ</b>
+        <p>ใช้เมื่อ GitHub Actions รันเสร็จแล้ว หรือเปิดเว็บค้างไว้บน iPhone แล้วอยากดึงไฟล์ข้อมูลล่าสุดทันที</p>
+        <button class="update-action" id="force-refresh" type="button">↻ รีเฟรชข้อมูลบนหน้าเว็บ</button>
+      </div>
+      <div class="update-option">
+        <b>2. สั่งให้ GitHub ดึงข้อมูลหุ้นใหม่</b>
+        <p>เปิดหน้า GitHub Actions แล้วกด <b>Run workflow</b> ระบบจะวิเคราะห์หุ้นใหม่ ส่ง Telegram และอัปเดต GitHub Pages โดยไม่ต้องเปิด notebook</p>
+        <a class="update-action primary" href="${WORKFLOW_URL}" target="_blank" rel="noopener">เปิดหน้า Run workflow</a>
+      </div>
+    </div>
+    <p class="bt-disclaimer">เหตุผลที่เว็บไม่สั่งรันให้อัตโนมัติทันที: การทำแบบนั้นต้องใช้ GitHub token ถ้าฝังไว้ในเว็บจะไม่ปลอดภัยและอาจทำให้คนอื่นสั่งงาน repo ของคุณได้</p>`;
+  document.getElementById("modal").classList.remove("hidden");
+}
+
 function escapeHtml(s) {
   return (s || "").replace(/[&<>"']/g, (c) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -637,10 +666,15 @@ document.getElementById("search").addEventListener("input", (e) => {
   drawCards();
 });
 document.getElementById("sort").addEventListener("change", (e) => { sortBy = e.target.value; drawCards(); });
+document.getElementById("manual-update")?.addEventListener("click", openUpdateModal);
 document.getElementById("modal-close").addEventListener("click", () =>
   document.getElementById("modal").classList.add("hidden"));
 document.getElementById("modal").addEventListener("click", (e) => {
   if (e.target.id === "modal") document.getElementById("modal").classList.add("hidden");
+  if (e.target.id === "force-refresh") {
+    document.getElementById("modal").classList.add("hidden");
+    refreshLatestData();
+  }
 });
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") document.getElementById("modal").classList.add("hidden");
