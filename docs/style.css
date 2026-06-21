@@ -478,7 +478,7 @@ body {
 .rk-item.bad { border-left: 3px solid var(--red); }
 .rk-item .rk-ic { font-size: 16px; }
 
-.slip-upload { display: grid; grid-template-columns: minmax(180px, 1fr) auto auto; align-items: center; gap: 10px;
+.slip-upload { display: grid; grid-template-columns: minmax(180px, 1fr) auto auto auto auto; align-items: center; gap: 10px;
   background: var(--surface-solid); border: 1px solid var(--line); border-radius: 12px; padding: 12px; margin-bottom: 14px; }
 .slip-copy b { display: block; font-size: 14px; }
 .slip-copy small { display: block; color: var(--muted); font-size: 12px; margin-top: 3px; }
