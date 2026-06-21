@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-06-21 13:27 (เวลาไทย)",
+  "last_run": "2026-06-21 14:16 (เวลาไทย)",
   "signals": {
     "CPALL.BK": {
       "signal": "STRONG BUY",
@@ -577,11 +577,11 @@
       "signal": "STRONG BUY",
       "score": 82
     },
-    "PG": {
+    "VRTX": {
       "signal": "STRONG BUY",
       "score": 82
     },
-    "VRTX": {
+    "DE": {
       "signal": "STRONG BUY",
       "score": 82
     },
@@ -629,10 +629,6 @@
       "signal": "STRONG BUY",
       "score": 77
     },
-    "DE": {
-      "signal": "STRONG BUY",
-      "score": 77
-    },
     "HON": {
       "signal": "STRONG BUY",
       "score": 77
@@ -661,15 +657,11 @@
       "signal": "BUY",
       "score": 71
     },
-    "TGT": {
-      "signal": "BUY",
-      "score": 70
-    },
     "DUOL": {
       "signal": "BUY",
       "score": 69
     },
-    "LOW": {
+    "PG": {
       "signal": "BUY",
       "score": 69
     },
@@ -801,13 +793,9 @@
       "signal": "WATCH",
       "score": 48
     },
-    "MELI": {
+    "MA": {
       "signal": "WATCH",
-      "score": 47
-    },
-    "REGN": {
-      "signal": "WATCH",
-      "score": 47
+      "score": 48
     },
     "JNJ": {
       "signal": "WATCH",
@@ -821,9 +809,9 @@
       "signal": "AVOID",
       "score": 41
     },
-    "MA": {
+    "MELI": {
       "signal": "AVOID",
-      "score": 40
+      "score": 39
     },
     "RKLB": {
       "signal": "AVOID",
@@ -877,7 +865,19 @@
       "signal": "AVOID",
       "score": 33
     },
+    "REGN": {
+      "signal": "AVOID",
+      "score": 33
+    },
     "TOST": {
+      "signal": "AVOID",
+      "score": 32
+    },
+    "TGT": {
+      "signal": "AVOID",
+      "score": 32
+    },
+    "LOW": {
       "signal": "AVOID",
       "score": 32
     },
@@ -909,10 +909,6 @@
       "signal": "AVOID",
       "score": 26
     },
-    "TMO": {
-      "signal": "AVOID",
-      "score": 26
-    },
     "MRK": {
       "signal": "AVOID",
       "score": 25
@@ -938,10 +934,6 @@
       "score": 21
     },
     "CVX": {
-      "signal": "AVOID",
-      "score": 21
-    },
-    "COP": {
       "signal": "AVOID",
       "score": 21
     },
@@ -1050,6 +1042,14 @@
       "score": 12
     },
     "PATH": {
+      "signal": "AVOID",
+      "score": 12
+    },
+    "TMO": {
+      "signal": "AVOID",
+      "score": 12
+    },
+    "COP": {
       "signal": "AVOID",
       "score": 12
     },
