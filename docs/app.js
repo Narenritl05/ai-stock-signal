@@ -909,6 +909,11 @@ function clearSelectedSlipFile() {
   setSlipStatus("ลบไฟล์ที่เลือกแล้ว ข้อมูลที่บันทึกไว้ยังอยู่", "good");
 }
 
+function clearSlipFileOnly() {
+  const input = document.getElementById("slip-file");
+  if (input) input.value = "";
+}
+
 function fillJournalFormFromSlip(parsed) {
   const nameEl = document.getElementById("jn-name");
   const noteEl = document.getElementById("jn-note");
@@ -974,7 +979,8 @@ async function readDimeSlip() {
       return;
     }
     addJournalItem(parsed);
-    setSlipStatus(`บันทึกแล้ว: ${parsed.side === "SELL" ? "ขาย" : "ซื้อ"} ${parsed.ticker} ${parsed.amount_thb ? "฿" + fmt(parsed.amount_thb) : ""}${parsed.amount_usd ? " / $" + fmt(parsed.amount_usd) : ""}`, "good");
+    clearSlipFileOnly();
+    setSlipStatus(`บันทึกแล้วและล้างไฟล์สลิปออกจากหน้าเว็บแล้ว: ${parsed.side === "SELL" ? "ขาย" : "ซื้อ"} ${parsed.ticker} ${parsed.amount_thb ? "฿" + fmt(parsed.amount_thb) : ""}${parsed.amount_usd ? " / $" + fmt(parsed.amount_usd) : ""}`, "good");
   } catch (e) {
     setSlipStatus(e.message || "อ่านสลิปไม่สำเร็จ", "bad");
   } finally {
