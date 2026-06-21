@@ -178,8 +178,6 @@ function drawCards() {
   document.getElementById("empty").classList.toggle("hidden", list.length > 0);
   const wrap = document.getElementById("cards");
   wrap.innerHTML = list.map((x, i) => cardHTML(x, i)).join("");
-  wrap.querySelectorAll(".card").forEach((el) =>
-    el.addEventListener("click", () => openCardModal(el.dataset.ticker)));
 }
 
 function cardHTML(x, i) {
@@ -736,6 +734,10 @@ document.getElementById("search").addEventListener("input", (e) => {
   drawCards();
 });
 document.getElementById("sort").addEventListener("change", (e) => { sortBy = e.target.value; drawCards(); });
+document.getElementById("cards").addEventListener("click", (e) => {
+  const card = e.target.closest(".card");
+  if (card?.dataset.ticker) openCardModal(card.dataset.ticker);
+});
 document.getElementById("manual-update")?.addEventListener("click", openUpdateModal);
 document.getElementById("modal-close").addEventListener("click", () =>
   document.getElementById("modal").classList.add("hidden"));
