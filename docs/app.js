@@ -903,12 +903,6 @@ function setSlipStatus(text, tone = "") {
   el.className = "slip-status" + (tone ? " " + tone : "");
 }
 
-function clearSelectedSlipFile() {
-  const input = document.getElementById("slip-file");
-  if (input) input.value = "";
-  setSlipStatus("ลบไฟล์ที่เลือกแล้ว ข้อมูลที่บันทึกไว้ยังอยู่", "good");
-}
-
 function clearSlipFileOnly() {
   const input = document.getElementById("slip-file");
   if (input) input.value = "";
@@ -1057,7 +1051,6 @@ document.getElementById("slip-file")?.addEventListener("change", (e) => {
   setSlipStatus(file ? `เลือกไฟล์แล้ว: ${file.name}` : "ยังไม่ได้เลือกไฟล์");
 });
 document.getElementById("slip-read")?.addEventListener("click", readDimeSlip);
-document.getElementById("slip-clear")?.addEventListener("click", clearSelectedSlipFile);
 document.getElementById("jn-add")?.addEventListener("click", addManualJournalItem);
 document.getElementById("jn-list")?.addEventListener("click", (e) => {
   const btn = e.target.closest(".jn-del");
