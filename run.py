@@ -176,7 +176,7 @@ def _write_status(generated_at: str, now, markets: list[dict],
     print(f"  บันทึกสถานะระบบ -> {STATUS_PATH}")
 
 
-def run_pipeline(notify_no_changes: bool = True) -> None:
+def run_pipeline(notify_no_changes: bool = True, send_notification: bool = True) -> None:
     now = datetime.now(ICT)
     generated_at = now.strftime("%Y-%m-%d %H:%M") + " (เวลาไทย)"
     date_str = now.strftime("%Y-%m-%d")
@@ -224,7 +224,10 @@ def run_pipeline(notify_no_changes: bool = True) -> None:
                   or c.get("change") == "EXIT"]
     data_problem = worst_fail >= config.FETCH_FAIL_WARN_RATIO
     telegram_status = "skipped"
-    if notifiable or notify_no_changes or data_problem:
+    if not send_notification:
+        telegram_status = "skipped_by_command"
+        print("  ข้ามการส่ง Telegram notification — เรียกจากคำสั่งที่มีข้อความตอบกลับเอง")
+    elif notifiable or notify_no_changes or data_problem:
         telegram_status = "sent" if notifier.send_telegram(message) else "failed_or_not_configured"
     else:
         print("  ไม่มีสัญญาณใหม่ — ข้ามการแจ้งเตือน Telegram (กันสแปม)")

@@ -614,12 +614,12 @@ function openUpdateModal() {
   const currentStamp = document.getElementById("updated")?.textContent || "-";
   document.getElementById("modal-content").innerHTML = `
     <div class="md-head"><h2>รันอัปเดตข้อมูลใหม่</h2><span class="badge s-buy">SAFE</span></div>
-    <div class="md-sub">${escapeHtml(currentStamp)} · ไม่มีรอบอัปเดตอัตโนมัติแล้ว ต้องกด Run workflow เองเมื่อต้องการข้อมูลใหม่</div>
+    <div class="md-sub">${escapeHtml(currentStamp)} · ระบบอัปเดตอัตโนมัติทุก 30 นาที และยังสั่งรันเองได้เมื่อต้องการข้อมูลใหม่ทันที</div>
 
     <div class="update-help">
       <div class="update-option primary">
         <b>1. ดึงข้อมูลหุ้นใหม่จริง</b>
-        <p>กดปุ่มนี้ แล้วในหน้า GitHub ให้กด <b>Run workflow</b> สีเขียวอีกครั้ง ระบบจะวิเคราะห์หุ้นใหม่ ส่ง Telegram และอัปเดต GitHub Pages โดยไม่ต้องเปิด notebook</p>
+        <p>ปกติ GitHub Actions จะรันเองทุก 30 นาที ถ้าต้องการรันทันทีให้กดปุ่มนี้ แล้วในหน้า GitHub ให้กด <b>Run workflow</b> สีเขียวอีกครั้ง</p>
         <a class="update-action primary" href="${WORKFLOW_URL}" target="_blank" rel="noopener">เปิดหน้า Run workflow</a>
       </div>
       <div class="update-option">
@@ -628,7 +628,7 @@ function openUpdateModal() {
         <button class="update-action" id="force-refresh" type="button">↻ ดึงไฟล์ล่าสุดจากเว็บ</button>
       </div>
     </div>
-    <p class="bt-disclaimer">หมายเหตุ: ปุ่มรีเฟรชไม่ได้วิเคราะห์หุ้นใหม่เอง ถ้าต้องการราคาล่าสุดต้องกด Run workflow ก่อน เพราะเว็บ public ไม่ควรฝัง GitHub token ไว้</p>`;
+    <p class="bt-disclaimer">หมายเหตุ: ปุ่มรีเฟรชดึงไฟล์ที่ deploy ล่าสุดจากเว็บ ไม่ได้ฝัง GitHub token ในหน้า public เพื่อความปลอดภัย</p>`;
   document.getElementById("modal").classList.remove("hidden");
 }
 

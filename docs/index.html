@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20260621-journal-visible" />
+  <link rel="stylesheet" href="style.css?v=20260621-auto30-update" />
 </head>
 <body>
   <div class="aurora"></div>
@@ -28,8 +28,8 @@
         </div>
       </div>
       <div class="appbar-right">
-        <div class="live-badge" id="live-badge" title="อัปเดตข้อมูลเมื่อคุณกดรันเองเท่านั้น">
-          <span class="live-dot"></span>MANUAL
+        <div class="live-badge" id="live-badge" title="GitHub Actions อัปเดตข้อมูลอัตโนมัติทุก 30 นาที">
+          <span class="live-dot"></span>AUTO 30M
         </div>
         <button class="manual-update-btn" id="manual-update" type="button" title="เปิดขั้นตอนอัปเดตข้อมูลด้วยตัวเอง">
           <span>↻</span> รันอัปเดต
@@ -183,8 +183,8 @@
         <ul>
           <li><b>ถ้าเปิดคอม/mini PC ทิ้งไว้</b> Telegram bot แบบถามตอบจะทำงานทันที, ระบบรันตามเวลาที่ตั้งไว้ได้, watchdog/self-heal ตรวจทุก 30 นาทีได้ และหน้าเว็บ local จะเปิดดูจากเครื่องหรือในวง LAN ได้</li>
           <li><b>ถ้าปิดเครื่อง</b> bot ที่รันบนเครื่องจะหยุดตอบ, งาน local ที่ตั้งเวลาไว้จะไม่รัน และเว็บ local เช่น <code>http://localhost:8000/</code> จะเข้าไม่ได้จนกว่าเปิดเครื่องใหม่</li>
-          <li><b>GitHub Actions ยังช่วยได้</b> คุณกด Run workflow เองจาก GitHub ได้ฟรี ระบบจะวิเคราะห์ ส่ง Telegram และอัปเดต GitHub Pages โดยไม่ต้องเปิด notebook</li>
-          <li><b>ข้อมูลบนเว็บไม่หาย</b> ไฟล์ใน <code>docs/data</code> จะยังเป็นข้อมูลรอบล่าสุดที่บันทึกไว้ แต่อาจเก่าลงจนกว่าคุณจะกดรันอัปเดตครั้งใหม่</li>
+          <li><b>GitHub Actions ยังช่วยได้</b> ระบบรันอัตโนมัติทุก 30 นาที และคุณยังกด Run workflow เองได้ฟรี ระบบจะวิเคราะห์ ส่ง Telegram และอัปเดต GitHub Pages โดยไม่ต้องเปิด notebook</li>
+          <li><b>ข้อมูลบนเว็บไม่หาย</b> ไฟล์ใน <code>docs/data</code> จะยังเป็นข้อมูลรอบล่าสุดที่บันทึกไว้ และจะสดขึ้นเมื่อถึงรอบอัตโนมัติ 30 นาทีหรือเมื่อคุณกดรันเอง</li>
         </ul>
       </div>
     </section>
@@ -293,7 +293,7 @@
       </div>
       <div class="about-card">
         <h2>🆓 ฟรี 100% ไม่มีค่า server</h2>
-        <p>GitHub Actions (กดรันเอง) + GitHub Pages (โฮสต์เว็บ) + Yahoo Finance (ข้อมูล) + Telegram (แจ้งเตือน) — ฟรีทั้งหมด</p>
+        <p>GitHub Actions (อัตโนมัติทุก 30 นาที) + GitHub Pages (โฮสต์เว็บ) + Yahoo Finance (ข้อมูล) + Telegram (แจ้งเตือน) — ฟรีทั้งหมด</p>
       </div>
     </section>
 
@@ -310,6 +310,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260621-journal-review-save"></script>
+  <script src="app.js?v=20260621-auto30-update"></script>
 </body>
 </html>

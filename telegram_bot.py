@@ -21,6 +21,7 @@ import config
 import market
 import news
 import notifier
+import run
 from analyzer import analyze_one
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -301,6 +302,82 @@ def _stock_message(query: str) -> str:
     return "\n".join(lines)[:3900]
 
 
+def _latest_summary_message(source: str = "ข้อมูลล่าสุด") -> str:
+    payloads = _load_payloads()
+    status = {}
+    try:
+        with open(os.path.join(DATA_DIR, "status.json"), encoding="utf-8") as f:
+            status = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        status = {}
+
+    generated = status.get("generated_at") or next((p.get("generated_at") for p in payloads if p.get("generated_at")), "-")
+    lines = [
+        "🔄 <b>AI Stock Signal — Update</b>",
+        f"🕐 {html.escape(str(generated))}",
+        f"📌 {html.escape(source)}",
+        "",
+    ]
+
+    total = 0
+    for payload in payloads:
+        summary = payload.get("summary") or {}
+        total += payload.get("count") or len(payload.get("signals", []))
+        name = payload.get("market_name") or payload.get("market_key") or "ตลาด"
+        lines.append(
+            f"• <b>{html.escape(str(name))}</b>: "
+            f"Strong {summary.get('strong_buy', 0)} · Buy {summary.get('buy', 0)} · "
+            f"Watch {summary.get('watch', 0)} · Avoid {summary.get('avoid', 0)}"
+        )
+
+    picks = []
+    for payload in payloads:
+        picks.extend([
+            {**s, "_market_name": payload.get("market_name", ""), "_currency": s.get("currency") or payload.get("currency") or ""}
+            for s in payload.get("signals", [])
+            if s.get("signal") in ("STRONG BUY", "BUY")
+        ])
+    picks.sort(key=lambda x: x.get("score", 0), reverse=True)
+
+    lines += ["", f"รวมข้อมูลล่าสุด {total} ตัว"]
+    if picks:
+        lines += ["", "🟢 ตัวเด่นล่าสุด:"]
+        for s in picks[:8]:
+            cur = s.get("_currency", "")
+            market_label = f" · {s.get('market') or s.get('_market_name')}" if (s.get("market") or s.get("_market_name")) else ""
+            lines.append(
+                f"• <b>{html.escape(_display_ticker(s.get('ticker', '')))}</b>{market_label} — "
+                f"{html.escape(str(s.get('signal', '-')))} {s.get('score', '-')}/100 · "
+                f"{cur}{s.get('price', '-')}"
+            )
+    else:
+        lines += ["", "ยังไม่มี BUY/STRONG BUY ในข้อมูลล่าสุด"]
+
+    warnings = status.get("warnings") or []
+    if warnings:
+        lines += ["", "⚠️ คำเตือนระบบ:"]
+        lines += [f"• {html.escape(str(w))}" for w in warnings[:4]]
+
+    lines += ["", "ดูหุ้นรายตัว: <code>/stock AOT</code> หรือพิมพ์ ticker ได้เลย"]
+    return "\n".join(lines)[:3900]
+
+
+def _update_message() -> str:
+    try:
+        run.run_pipeline(notify_no_changes=False, send_notification=False)
+        return _latest_summary_message("อัปเดตสดจากคำสั่ง Telegram")
+    except Exception as e:
+        return (
+            "🛑 <b>อัปเดตไม่สำเร็จ</b>\n"
+            f"<code>{html.escape(type(e).__name__)}: {html.escape(str(e)[:500])}</code>\n\n"
+            "ลองดู log บนเครื่องที่เปิด Telegram bot หรือใช้ GitHub Actions Run workflow"
+        )
+
+
+def _is_update_command(text: str) -> bool:
+    return text.strip().casefold() in ("update", "/update", "อัปเดต", "อัพเดต")
+
+
 def _send(token: str, chat_id: int | str, text: str) -> None:
     requests.post(
         BOT_API.format(token=token, method="sendMessage"),
@@ -342,8 +419,11 @@ def _handle_text(text: str) -> str:
             "ส่งชื่อหุ้นหรือ ticker มาได้เลยครับ เช่น <code>AOT</code>, <code>PTT</code>, <code>NVDA</code>\n"
             "หรือใช้ <code>/stock AOT</code> เพื่อดูวิเคราะห์เต็ม\n"
             "ค้นหาหุ้นได้ด้วย <code>/search PTT</code> หรือ <code>ค้นหา NVDA</code>\n\n"
+            "สั่งอัปเดตข้อมูลล่าสุดด้วย <code>update</code> หรือ <code>/update</code>\n\n"
             "ระบบจะตอบสถานะซื้อ/ขาย จุดเข้า จุดตัดขาดทุน เป้า อินดิเคเตอร์สำคัญ และข่าวล่าสุด"
         )
+    if _is_update_command(text):
+        return _update_message()
     search_prefixes = ("/search", "/find", "/check", "/shech", "search ", "find ", "check ", "shech ", "ค้นหา ", "หา ")
     for prefix in search_prefixes:
         if text.casefold().startswith(prefix.casefold()):
@@ -391,6 +471,8 @@ def main() -> None:
                 if allowed_chat_id and chat_id != str(allowed_chat_id):
                     print(f"Ignore unauthorized chat: {chat_id}")
                     continue
+                if _is_update_command(text):
+                    _send(token, chat_id, "⏳ กำลังอัปเดตข้อมูลล่าสุด อาจใช้เวลาสักครู่...")
                 _send(token, chat_id, _handle_text(text))
         except KeyboardInterrupt:
             raise

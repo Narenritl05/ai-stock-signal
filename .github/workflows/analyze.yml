@@ -1,11 +1,15 @@
 name: AI Stock Signal
 
 # ─────────────────────────────────────────────────────────────
-# รันวิเคราะห์หุ้นเมื่อกดเอง + ส่ง Telegram + อัปเดต dashboard
+# รันวิเคราะห์หุ้นอัตโนมัติ/เมื่อกดเอง + ส่ง Telegram + อัปเดต dashboard
 # ฟรี 100% บน GitHub Actions (ไม่มีค่า server)
 # ─────────────────────────────────────────────────────────────
 on:
-  workflow_dispatch:           # กดรันเองได้จากหน้า Actions เท่านั้น
+  schedule:
+    # รันทุก 30 นาทีบน GitHub Actions เพื่ออัปเดต dashboard ให้เป็นรอบล่าสุด
+    # หมายเหตุ: schedule ของ GitHub อาจหน่วงเล็กน้อยตามคิวของ GitHub
+    - cron: "*/30 * * * *"
+  workflow_dispatch:           # กดรันเองได้จากหน้า Actions
 
 # ต้องมีสิทธิ์เขียน เพื่อ commit signals.json กลับเข้า repo
 permissions:
@@ -35,6 +39,8 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # รอบอัตโนมัติทุก 30 นาทีไม่ส่ง no-change heartbeat กัน Telegram เด้งถี่เกินไป
+          NOTIFY_NO_CHANGES: ${{ github.event_name == 'schedule' && 'false' || 'true' }}
         run: python run.py
 
       - name: Commit updated signals + state
