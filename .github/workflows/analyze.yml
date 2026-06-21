@@ -6,9 +6,9 @@ name: AI Stock Signal
 # ─────────────────────────────────────────────────────────────
 on:
   schedule:
-    # เวลาเป็น UTC — ตลาด SET ปิด 16:30 น. ไทย (= 09:30 UTC)
-    - cron: "45 9 * * 1-5"    # หลังตลาดปิด ~16:45 น. ไทย (จ.-ศ.)
-    - cron: "30 2 * * 1-5"    # ก่อนเปิดตลาด ~09:30 น. ไทย (จ.-ศ.)
+    # รันทุก 5 นาทีบน GitHub Actions เพื่ออัปเดต dashboard ให้สดที่สุด
+    # หมายเหตุ: schedule ของ GitHub อาจหน่วง/เลื่อนเล็กน้อยตามโหลดของ GitHub
+    - cron: "*/5 * * * *"
   workflow_dispatch:           # กดรันเองได้จากหน้า Actions
 
 # ต้องมีสิทธิ์เขียน เพื่อ commit signals.json กลับเข้า repo
@@ -39,6 +39,8 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # รอบ schedule ทุก 5 นาทีไม่ส่ง heartbeat/no-change กัน Telegram เด้งถี่เกินไป
+          NOTIFY_NO_CHANGES: ${{ github.event_name == 'schedule' && 'false' || 'true' }}
         run: python run.py
 
       - name: Commit updated signals + state

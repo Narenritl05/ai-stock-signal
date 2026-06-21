@@ -236,7 +236,8 @@ def run_pipeline(notify_no_changes: bool = True) -> None:
 
 def main() -> None:
     try:
-        run_pipeline()
+        notify_no_changes = os.getenv("NOTIFY_NO_CHANGES", "true").strip().lower() not in ("0", "false", "no", "off")
+        run_pipeline(notify_no_changes=notify_no_changes)
     except Exception as e:  # ระบบล้ม -> แจ้งเตือนแล้วโยน error ต่อให้ workflow เห็น
         traceback.print_exc()
         try:
