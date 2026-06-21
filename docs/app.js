@@ -115,6 +115,13 @@ function refreshLatestData() {
   flashLive();
 }
 
+function getRisk() {
+  return {
+    account: Number(META.account) || 100000,
+    risk: Number(META.risk) || 2,
+  };
+}
+
 async function loadPerformance() {
   try {
     const res = await fetch("data/performance.json?_=" + Date.now());
@@ -744,8 +751,14 @@ document.getElementById("search").addEventListener("input", (e) => {
 document.getElementById("sort").addEventListener("change", (e) => { sortBy = e.target.value; drawCards(); });
 document.getElementById("cards").addEventListener("click", (e) => {
   const card = e.target.closest(".card");
-  e.target.closest(".card-more")?.blur();
-  if (card?.dataset.ticker) openCardModal(card.dataset.ticker);
+  if (!card?.dataset.ticker) return;
+
+  const moreButton = e.target.closest(".card-more");
+  if (moreButton) {
+    e.preventDefault();
+    moreButton.blur();
+  }
+  openCardModal(card.dataset.ticker);
 });
 document.getElementById("manual-update")?.addEventListener("click", openUpdateModal);
 document.getElementById("modal-close").addEventListener("click", () =>
