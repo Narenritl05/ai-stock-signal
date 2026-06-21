@@ -721,22 +721,6 @@ function saveJournalItems(items) {
   localStorage.setItem(JOURNAL_KEY, JSON.stringify(items));
 }
 
-function journalItemKey(item) {
-  return item.slip_key || item.order_no || item.id || JSON.stringify([item.ticker, item.side, item.amount_thb, item.amount_usd, item.ordered_at]);
-}
-
-function mergeJournalItems(existing, incoming) {
-  const seen = new Set(existing.map(journalItemKey));
-  const merged = [...existing];
-  for (const item of incoming) {
-    const key = journalItemKey(item);
-    if (!key || seen.has(key)) continue;
-    seen.add(key);
-    merged.push({ id: item.id || Date.now().toString(36) + Math.random().toString(36).slice(2, 7), ...item });
-  }
-  return merged.sort((a, b) => String(b.created_at || "").localeCompare(String(a.created_at || "")));
-}
-
 function addJournalItem(item) {
   const items = journalItems();
   if (item.slip_key && items.some((x) => x.slip_key === item.slip_key)) {
@@ -750,43 +734,6 @@ function addJournalItem(item) {
 function deleteJournalItem(id) {
   saveJournalItems(journalItems().filter((x) => x.id !== id));
   renderJournal();
-}
-
-function exportJournal() {
-  const items = journalItems();
-  const payload = {
-    app: "ai-stock-signal",
-    type: "journal",
-    exported_at: new Date().toISOString(),
-    items,
-  };
-  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  const date = new Date().toISOString().slice(0, 10);
-  a.href = url;
-  a.download = `ai-stock-journal-${date}.json`;
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  URL.revokeObjectURL(url);
-  setSlipStatus(`ส่งออก journal แล้ว ${items.length} รายการ นำไฟล์นี้ไปเปิด/นำเข้าบน iPhone ได้`, "good");
-}
-
-async function importJournalFile(file) {
-  if (!file) return;
-  try {
-    const payload = JSON.parse(await file.text());
-    const incoming = Array.isArray(payload) ? payload : payload.items;
-    if (!Array.isArray(incoming)) throw new Error("ไฟล์นี้ไม่ใช่ journal backup");
-    const before = journalItems();
-    const merged = mergeJournalItems(before, incoming);
-    saveJournalItems(merged);
-    renderJournal();
-    setSlipStatus(`นำเข้าแล้ว ${merged.length - before.length} รายการใหม่ รวมทั้งหมด ${merged.length} รายการ`, "good");
-  } catch (e) {
-    setSlipStatus(e.message || "นำเข้า journal ไม่สำเร็จ", "bad");
-  }
 }
 
 function renderJournal() {
@@ -956,6 +903,12 @@ function setSlipStatus(text, tone = "") {
   el.className = "slip-status" + (tone ? " " + tone : "");
 }
 
+function clearSelectedSlipFile() {
+  const input = document.getElementById("slip-file");
+  if (input) input.value = "";
+  setSlipStatus("ลบไฟล์ที่เลือกแล้ว ข้อมูลที่บันทึกไว้ยังอยู่", "good");
+}
+
 function fillJournalFormFromSlip(parsed) {
   const nameEl = document.getElementById("jn-name");
   const noteEl = document.getElementById("jn-note");
@@ -1098,11 +1051,7 @@ document.getElementById("slip-file")?.addEventListener("change", (e) => {
   setSlipStatus(file ? `เลือกไฟล์แล้ว: ${file.name}` : "ยังไม่ได้เลือกไฟล์");
 });
 document.getElementById("slip-read")?.addEventListener("click", readDimeSlip);
-document.getElementById("journal-export")?.addEventListener("click", exportJournal);
-document.getElementById("journal-import")?.addEventListener("change", (e) => {
-  importJournalFile(e.target.files?.[0]);
-  e.target.value = "";
-});
+document.getElementById("slip-clear")?.addEventListener("click", clearSelectedSlipFile);
 document.getElementById("jn-add")?.addEventListener("click", addManualJournalItem);
 document.getElementById("jn-list")?.addEventListener("click", (e) => {
   const btn = e.target.closest(".jn-del");
