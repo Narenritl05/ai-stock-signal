@@ -445,6 +445,15 @@ body {
 .news-meta { font-size: 11.5px; color: var(--muted); margin-top: 4px; }
 .news-empty { color: var(--muted); font-size: 13px; padding: 4px 0; }
 .news-disc { color: var(--muted); font-size: 11.5px; margin-top: 10px; font-style: italic; }
+.source-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 9px; }
+.source-link {
+  display: block; text-decoration: none; color: var(--text);
+  background: var(--bg-2); border: 1px solid var(--line); border-radius: 11px;
+  padding: 11px 13px; transition: .15s;
+}
+.source-link:hover { border-color: var(--line-strong); background: var(--elevated); transform: translateY(-1px); }
+.source-link b { display: block; color: var(--green); font-size: 13.5px; }
+.source-link span { display: block; color: var(--muted); font-size: 11.5px; line-height: 1.45; margin-top: 3px; }
 
 /* ── Risk rules + Journal ── */
 .risk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
@@ -540,6 +549,7 @@ body {
   .tabs { width: 100%; overflow-x: auto; }
   .appbar-right { width: 100%; justify-content: flex-start; flex-wrap: wrap; }
   .update-help { grid-template-columns: 1fr; }
+  .source-grid { grid-template-columns: 1fr; }
   .status-row { grid-template-columns: 1fr; }
   .status-score { text-align: left; }
 }

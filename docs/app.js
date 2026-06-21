@@ -505,6 +505,7 @@ function openModal(ticker) {
     <div class="md-chart">${sparkline(x.history, 510, 110)}</div>
 
     ${newsSection(x)}
+    ${sourceLinksSection(x)}
 
     <div class="md-section"><h3>จุดเข้า / จุดออก (ประเมินคร่าวๆ)</h3>
       <div class="levels">
@@ -599,6 +600,39 @@ function newsSection(x) {
   return `<div class="md-section"><h3>📰 ข่าวที่เกี่ยวข้อง (ทำไมราคาขยับ?)</h3>
     <div class="news-list">${rows}</div>
     <p class="news-disc">ข่าวเป็นบริบทประกอบให้คุณวิเคราะห์เอง · ไม่ใช่สาเหตุที่พิสูจน์แล้ว · ที่มา: Google News</p></div>`;
+}
+
+function sourceLinksSection(x) {
+  const ticker = String(x.ticker || "");
+  const shortTicker = ticker.endsWith(".BK") ? ticker.slice(0, -3) : ticker;
+  const query = encodeURIComponent(`${shortTicker} ${x.name || ""} หุ้น`);
+  const links = [
+    { label: "Yahoo Finance", hint: "ราคา กราฟ ข่าว และข้อมูลบริษัท", url: `https://finance.yahoo.com/quote/${encodeURIComponent(ticker)}` },
+    { label: "Google News", hint: "ข่าวล่าสุดจากหลายสำนักข่าว", url: `https://news.google.com/search?q=${query}&hl=th&gl=TH&ceid=TH:th` },
+  ];
+
+  if (x.market_tag === "TH") {
+    const setCode = encodeURIComponent(shortTicker);
+    links.unshift(
+      { label: "SET Quote", hint: "หน้าหุ้นบนตลาดหลักทรัพย์ไทย", url: `https://www.set.or.th/th/market/product/stock/quote/${setCode}/price` },
+      { label: "SET Factsheet", hint: "ข้อมูลพื้นฐาน งบ และสถิติสำคัญ", url: `https://www.set.or.th/th/market/product/stock/quote/${setCode}/factsheet` }
+    );
+  } else {
+    const usCode = encodeURIComponent(shortTicker.toLowerCase());
+    links.unshift(
+      { label: "Nasdaq Quote", hint: "ราคา ข่าว และข้อมูลหุ้นสหรัฐ", url: `https://www.nasdaq.com/market-activity/stocks/${usCode}` },
+      { label: "SEC Filings", hint: "เอกสารบริษัทจดทะเบียนสหรัฐ", url: `https://www.sec.gov/edgar/search/#/q=${encodeURIComponent(shortTicker)}` }
+    );
+  }
+
+  const rows = links.map((l) => `
+    <a class="source-link" href="${escapeHtml(l.url)}" target="_blank" rel="noopener noreferrer">
+      <b>${escapeHtml(l.label)}</b>
+      <span>${escapeHtml(l.hint)}</span>
+    </a>`).join("");
+  return `<div class="md-section"><h3>แหล่งข้อมูล / เว็บของหุ้นนี้</h3>
+    <div class="source-grid">${rows}</div>
+    <p class="news-disc">ลิงก์เหล่านี้เปิดเว็บภายนอกเพื่อดูข้อมูลและข่าวเพิ่มเติมด้วยตัวเอง</p></div>`;
 }
 
 function backtestSection(ticker) {
