@@ -237,6 +237,16 @@ body {
 .mm { background: var(--bg-2); border-radius: 10px; padding: 7px 6px; text-align: center; }
 .mm .mm-l { font-size: 9.5px; color: var(--muted); letter-spacing: .3px; }
 .mm .mm-v { font-size: 13.5px; font-weight: 700; margin-top: 2px; }
+.card-more {
+  width: 100%; min-height: 42px; margin-top: 10px;
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  background: var(--green-soft); color: var(--green);
+  border: 1px solid var(--line-strong); border-radius: 11px;
+  padding: 9px 13px; font-family: inherit; cursor: pointer; transition: .15s;
+}
+.card-more span { font-size: 14px; font-weight: 900; }
+.card-more small { color: var(--muted); font-size: 11.5px; font-weight: 700; }
+.card-more:hover { background: rgba(0,230,118,.18); transform: translateY(-1px); }
 
 /* ── Recommendation strip (card) + banner (modal) ── */
 .rec {

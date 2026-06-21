@@ -207,6 +207,7 @@ function cardHTML(x, i) {
       </div>
     </div>
     ${recStrip(x)}
+    ${moreButtonHTML()}
   </div>`;
 }
 
@@ -225,7 +226,14 @@ function universeCardHTML(x, i) {
       </div>
     </div>
     <div class="rec rec-hold"><span class="rec-label">Telegram</span><span class="rec-action">/stock ${ticker}</span></div>
+    ${moreButtonHTML()}
   </div>`;
+}
+
+function moreButtonHTML() {
+  return `<button class="card-more" type="button">
+    <span>เพิ่มเติม</span><small>ข้อมูล + ข่าวล่าสุด</small>
+  </button>`;
 }
 
 // ── คำแนะนำ: ควรซื้อ / ถือ-รอ / ควรขาย / เลี่ยง ──
@@ -736,6 +744,7 @@ document.getElementById("search").addEventListener("input", (e) => {
 document.getElementById("sort").addEventListener("change", (e) => { sortBy = e.target.value; drawCards(); });
 document.getElementById("cards").addEventListener("click", (e) => {
   const card = e.target.closest(".card");
+  e.target.closest(".card-more")?.blur();
   if (card?.dataset.ticker) openCardModal(card.dataset.ticker);
 });
 document.getElementById("manual-update")?.addEventListener("click", openUpdateModal);
