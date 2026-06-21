@@ -179,9 +179,7 @@ function drawCards() {
   const wrap = document.getElementById("cards");
   wrap.innerHTML = list.map((x, i) => cardHTML(x, i)).join("");
   wrap.querySelectorAll(".card").forEach((el) =>
-    el.addEventListener("click", () => {
-      if (!el.dataset.universe) openModal(el.dataset.ticker);
-    }));
+    el.addEventListener("click", () => openCardModal(el.dataset.ticker)));
 }
 
 function cardHTML(x, i) {
@@ -465,6 +463,13 @@ function posList(title, list, closed) {
 }
 
 // ── modal ──
+function openCardModal(ticker) {
+  const signal = ALL.find((s) => s.ticker === ticker);
+  if (signal) return openModal(ticker);
+  const stock = UNIVERSE.find((s) => s.ticker === ticker);
+  if (stock) return openUniverseModal(stock);
+}
+
 function openModal(ticker) {
   const x = ALL.find((s) => s.ticker === ticker);
   if (!x) return;
@@ -556,6 +561,36 @@ function openModal(ticker) {
     ${reasons ? `<div class="md-section"><h3>เหตุผลเชิงบวก</h3><ul class="reason-list">${reasons}</ul></div>` : ""}
     ${warns ? `<div class="md-section"><h3>ข้อควรระวัง</h3><ul class="reason-list warn-list">${warns}</ul></div>` : ""}
     ${backtestSection(x.ticker)}`;
+  document.getElementById("modal").classList.remove("hidden");
+}
+
+function openUniverseModal(stock) {
+  const ticker = stock.display_ticker || stock.ticker;
+  const market = stock.market ? ` · ${stock.market}` : "";
+  const x = {
+    ...stock,
+    market_tag: stock.market_tag,
+    name: stock.name || ticker,
+    ticker: stock.ticker,
+    news: [],
+  };
+  document.getElementById("modal-content").innerHTML = `
+    <div class="md-head"><h2>${escapeHtml(x.name)}</h2><span class="badge s-watch">WATCHLIST</span></div>
+    <div class="md-sub">${escapeHtml(ticker)}${escapeHtml(market)} · ยังไม่มีข้อมูลวิเคราะห์ล่าสุดใน dashboard รอบนี้</div>
+
+    <div class="hold-banner hold-wait">
+      <div><span>สถานะข้อมูล</span><b>อยู่ในรายการค้นหา</b></div>
+      <p>หุ้นนี้อยู่ใน watchlist แล้ว แต่ยังไม่มีสัญญาณล่าสุดให้แสดงในไฟล์ข้อมูลรอบปัจจุบัน</p>
+      <small>กดรันอัปเดตบน GitHub Actions หรือถามใน Telegram ด้วย <code>/stock ${escapeHtml(ticker)}</code> เพื่อวิเคราะห์รายตัว</small>
+    </div>
+
+    ${newsSection(x)}
+    ${sourceLinksSection(x)}
+
+    <div class="md-section"><h3>วิธีดูข้อมูลล่าสุด</h3>
+      <div class="md-row"><span>อัปเดตทั้งระบบ</span><span>กดปุ่มรันอัปเดตบนหน้าเว็บ</span></div>
+      <div class="md-row"><span>ถามใน Telegram</span><span><code>/stock ${escapeHtml(ticker)}</code></span></div>
+    </div>`;
   document.getElementById("modal").classList.remove("hidden");
 }
 
