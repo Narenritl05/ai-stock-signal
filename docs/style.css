@@ -503,6 +503,7 @@ body {
 .jn-list { display: flex; flex-direction: column; gap: 8px; }
 .jn-row { display: grid; grid-template-columns: 1.3fr 1fr auto auto; align-items: center; gap: 12px;
   background: var(--surface-solid); border: 1px solid var(--line); border-radius: 11px; padding: 12px 15px; font-size: 13px; }
+.jn-row.jn-row-new { border-color: rgba(0,230,118,.38); background: rgba(0,230,118,.06); }
 .jn-row .jn-n b { font-size: 14.5px; }
 .jn-row .jn-n small { display: block; color: var(--muted); font-size: 11px; margin-top: 2px; }
 .jn-row .jn-muted { color: var(--muted); font-size: 12.5px; }

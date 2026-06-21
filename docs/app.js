@@ -723,12 +723,18 @@ function saveJournalItems(items) {
 
 function addJournalItem(item) {
   const items = journalItems();
-  if (item.slip_key && items.some((x) => x.slip_key === item.slip_key)) {
-    throw new Error("สลิปนี้เคยบันทึกแล้ว");
+  if (item.slip_key) {
+    const existing = items.find((x) => x.slip_key === item.slip_key);
+    if (existing) {
+      renderJournal();
+      return { duplicate: true, item: existing };
+    }
   }
-  items.unshift({ id: Date.now().toString(36), created_at: new Date().toISOString(), ...item });
+  const saved = { id: Date.now().toString(36), created_at: new Date().toISOString(), ...item };
+  items.unshift(saved);
   saveJournalItems(items);
   renderJournal();
+  return { duplicate: false, item: saved };
 }
 
 function deleteJournalItem(id) {
@@ -768,13 +774,25 @@ function renderJournal() {
       ? `<div class="jn-open">${escapeHtml(status)}</div>`
       : `<div class="jn-pl ${closedPl >= 0 ? "up" : "down"}">${closedPl >= 0 ? "+" : ""}฿${fmt(closedPl)}</div>`;
     const tag = x.source === "dime-slip" ? `<span class="jn-tag">Dime slip${x.order_no ? " · " + escapeHtml(x.order_no) : ""}</span>` : "";
-    return `<div class="jn-row">
+    return `<div class="jn-row" data-journal-id="${escapeHtml(x.id)}">
       <div class="jn-n"><b>${side} ${escapeHtml(x.ticker || "-")}</b><small>${escapeHtml([x.market, x.ordered_at || x.created_at?.slice(0, 10)].filter(Boolean).join(" · "))}</small>${tag}</div>
       <div class="jn-muted">${amount}${usd}${x.fx_rate ? ` · FX ${fmt(x.fx_rate)}` : ""}<br>${escapeHtml(x.note || "")}</div>
       ${right}
       <button class="jn-del" data-id="${escapeHtml(x.id)}" type="button" title="ลบรายการ">ลบ</button>
     </div>`;
   }).join("");
+}
+
+function revealJournalItem(id) {
+  if (!id) return;
+  requestAnimationFrame(() => {
+    const rows = [...document.querySelectorAll(".jn-row")];
+    const row = rows.find((r) => r.dataset.journalId === String(id));
+    if (!row) return;
+    row.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    row.classList.add("jn-row-new");
+    setTimeout(() => row.classList.remove("jn-row-new"), 1800);
+  });
 }
 
 function addManualJournalItem() {
@@ -972,9 +990,11 @@ async function readDimeSlip() {
       setSlipStatus(`อ่าน${missing}ไม่ครบ ระบบเติมช่องที่อ่านได้ให้แล้ว ลองกรอกส่วนที่ขาดแล้วกด "บันทึกไม้นี้" เองได้ | OCR: ${slipDebugPreview(parsed.raw_text)}`, "bad");
       return;
     }
-    addJournalItem(parsed);
+    const saved = addJournalItem(parsed);
     clearSlipFileOnly();
-    setSlipStatus(`บันทึกแล้วและล้างไฟล์สลิปออกจากหน้าเว็บแล้ว: ${parsed.side === "SELL" ? "ขาย" : "ซื้อ"} ${parsed.ticker} ${parsed.amount_thb ? "฿" + fmt(parsed.amount_thb) : ""}${parsed.amount_usd ? " / $" + fmt(parsed.amount_usd) : ""}`, "good");
+    revealJournalItem(saved?.item?.id);
+    const prefix = saved?.duplicate ? "สลิปนี้เคยบันทึกแล้ว แสดงรายการเดิมให้แล้ว" : "บันทึกแล้วและล้างไฟล์สลิปออกจากหน้าเว็บแล้ว";
+    setSlipStatus(`${prefix}: ${parsed.side === "SELL" ? "ขาย" : "ซื้อ"} ${parsed.ticker} ${parsed.amount_thb ? "฿" + fmt(parsed.amount_thb) : ""}${parsed.amount_usd ? " / $" + fmt(parsed.amount_usd) : ""}`, "good");
   } catch (e) {
     setSlipStatus(e.message || "อ่านสลิปไม่สำเร็จ", "bad");
   } finally {
@@ -988,6 +1008,7 @@ function switchView(view) {
   document.getElementById("view-" + view).classList.remove("hidden");
   const tabs = [...document.querySelectorAll(".tab")];
   tabs.forEach((t) => t.classList.toggle("active", t.dataset.view === view));
+  if (view === "journal") renderJournal();
   moveGlider(tabs.find((t) => t.dataset.view === view));
 }
 function moveGlider(tab) {
