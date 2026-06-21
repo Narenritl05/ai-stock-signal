@@ -773,7 +773,9 @@ function renderJournal() {
     const right = closedPl == null
       ? `<div class="jn-open">${escapeHtml(status)}</div>`
       : `<div class="jn-pl ${closedPl >= 0 ? "up" : "down"}">${closedPl >= 0 ? "+" : ""}฿${fmt(closedPl)}</div>`;
-    const tag = x.source === "dime-slip" ? `<span class="jn-tag">Dime slip${x.order_no ? " · " + escapeHtml(x.order_no) : ""}</span>` : "";
+    const tag = x.source === "dime-slip"
+      ? `<span class="jn-tag">${x.needs_review ? "รอตรวจสอบ · " : ""}Dime slip${x.order_no ? " · " + escapeHtml(x.order_no) : ""}</span>`
+      : "";
     return `<div class="jn-row" data-journal-id="${escapeHtml(x.id)}">
       <div class="jn-n"><b>${side} ${escapeHtml(x.ticker || "-")}</b><small>${escapeHtml([x.market, x.ordered_at || x.created_at?.slice(0, 10)].filter(Boolean).join(" · "))}</small>${tag}</div>
       <div class="jn-muted">${amount}${usd}${x.fx_rate ? ` · FX ${fmt(x.fx_rate)}` : ""}<br>${escapeHtml(x.note || "")}</div>
@@ -943,6 +945,23 @@ function fillJournalFormFromSlip(parsed) {
   }
 }
 
+function reviewSlipItem(parsed, fileName = "") {
+  const fallbackTicker = parsed.ticker || document.getElementById("jn-name")?.value.trim().toUpperCase() || "DIME SLIP";
+  return {
+    ...parsed,
+    source: "dime-slip",
+    needs_review: true,
+    status: parsed.status || "รอตรวจสอบ",
+    ticker: fallbackTicker,
+    slip_key: parsed.slip_key || DIME_DUP_PREFIX + "review:" + Date.now().toString(36),
+    note: [
+      "OCR อ่านข้อมูลไม่ครบ ต้องตรวจสอบเอง",
+      fileName ? `ไฟล์ ${fileName}` : "",
+      slipDebugPreview(parsed.raw_text),
+    ].filter(Boolean).join(" | "),
+  };
+}
+
 function slipDebugPreview(text) {
   return String(text || "").replace(/\s+/g, " ").trim().slice(0, 180);
 }
@@ -987,7 +1006,10 @@ async function readDimeSlip() {
         !parsed.ticker ? "ticker" : "",
         !parsed.amount_thb ? "ยอดเงิน" : "",
       ].filter(Boolean).join(" และ ");
-      setSlipStatus(`อ่าน${missing}ไม่ครบ ระบบเติมช่องที่อ่านได้ให้แล้ว ลองกรอกส่วนที่ขาดแล้วกด "บันทึกไม้นี้" เองได้ | OCR: ${slipDebugPreview(parsed.raw_text)}`, "bad");
+      const saved = addJournalItem(reviewSlipItem(parsed, file.name));
+      clearSlipFileOnly();
+      revealJournalItem(saved?.item?.id);
+      setSlipStatus(`อ่าน${missing}ไม่ครบ แต่บันทึกรายการรอตรวจสอบให้แล้ว`, "good");
       return;
     }
     const saved = addJournalItem(parsed);
@@ -996,7 +1018,11 @@ async function readDimeSlip() {
     const prefix = saved?.duplicate ? "สลิปนี้เคยบันทึกแล้ว แสดงรายการเดิมให้แล้ว" : "บันทึกแล้วและล้างไฟล์สลิปออกจากหน้าเว็บแล้ว";
     setSlipStatus(`${prefix}: ${parsed.side === "SELL" ? "ขาย" : "ซื้อ"} ${parsed.ticker} ${parsed.amount_thb ? "฿" + fmt(parsed.amount_thb) : ""}${parsed.amount_usd ? " / $" + fmt(parsed.amount_usd) : ""}`, "good");
   } catch (e) {
-    setSlipStatus(e.message || "อ่านสลิปไม่สำเร็จ", "bad");
+    const fallback = reviewSlipItem({ side: "BUY", raw_text: e.message || "OCR failed" }, file.name);
+    const saved = addJournalItem(fallback);
+    clearSlipFileOnly();
+    revealJournalItem(saved?.item?.id);
+    setSlipStatus("OCR อ่านไม่สำเร็จ แต่บันทึกรายการรอตรวจสอบให้แล้ว", "good");
   } finally {
     btn.disabled = false;
   }
