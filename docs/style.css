@@ -484,10 +484,10 @@ body {
 .slip-copy small { display: block; color: var(--muted); font-size: 12px; margin-top: 3px; }
 .slip-picker input { display: none; }
 .slip-picker span, .slip-read { display: inline-flex; align-items: center; justify-content: center; min-height: 38px;
-  border-radius: 10px; border: 1px solid var(--line-strong); padding: 0 13px; font-family: inherit; font-weight: 800; cursor: pointer; }
-.slip-picker span { background: rgba(148,163,184,.08); color: var(--text); }
-.slip-read { background: var(--green-soft); color: var(--green); }
-.slip-read:disabled { opacity: .55; cursor: wait; }
+  border-radius: 10px; border: 1px solid rgba(148,163,184,.20); padding: 0 13px; font-family: inherit; font-weight: 800;
+  background: rgba(148,163,184,.08); color: var(--text); cursor: pointer; transition: .15s; }
+.slip-picker span:hover, .slip-read:hover { background: rgba(148,163,184,.14); border-color: rgba(148,163,184,.30); transform: translateY(-1px); }
+.slip-read:disabled { opacity: .55; cursor: wait; transform: none; }
 .slip-status { grid-column: 1 / -1; color: var(--muted); font-size: 12.5px; line-height: 1.55; }
 .slip-status.good { color: var(--green); }
 .slip-status.bad { color: var(--red); }
