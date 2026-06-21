@@ -17,6 +17,10 @@ let lastGenerated = null;       // เช็คว่าข้อมูลเป
 let currentMarket = "all";      // หมวดที่กำลังดู (all = ทุกตลาด, th = ไทย, us = ต่างประเทศ)
 const MARKET_FILES = { th: "signals.json", us: "signals_foreign.json" };
 const WORKFLOW_URL = "https://github.com/Narenritl05/ai-stock-signal/actions/workflows/analyze.yml";
+const JOURNAL_KEY = "ai_stock_signal_journal_v1";
+const DIME_DUP_PREFIX = "dime:";
+const TESSERACT_SRC = "https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js";
+let tesseractLoadPromise = null;
 
 // ── data loading ──
 async function load(isRefresh = false) {
@@ -696,6 +700,204 @@ function backtestSection(ticker) {
     <p class="bt-disclaimer">อิงข้อมูลในอดีต ไม่การันตีอนาคต และยังไม่หักค่าคอมมิชชั่น/ภาษี</p></div>`;
 }
 
+// ── trading journal + Dime slip OCR ──
+function parseMoney(s) {
+  if (s == null) return null;
+  const v = Number(String(s).replace(/,/g, "").replace(/\s/g, ""));
+  return Number.isFinite(v) ? v : null;
+}
+
+function journalItems() {
+  try {
+    const data = JSON.parse(localStorage.getItem(JOURNAL_KEY) || "[]");
+    return Array.isArray(data) ? data : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function saveJournalItems(items) {
+  localStorage.setItem(JOURNAL_KEY, JSON.stringify(items));
+}
+
+function addJournalItem(item) {
+  const items = journalItems();
+  if (item.slip_key && items.some((x) => x.slip_key === item.slip_key)) {
+    throw new Error("สลิปนี้เคยบันทึกแล้ว");
+  }
+  items.unshift({ id: Date.now().toString(36), created_at: new Date().toISOString(), ...item });
+  saveJournalItems(items);
+  renderJournal();
+}
+
+function deleteJournalItem(id) {
+  saveJournalItems(journalItems().filter((x) => x.id !== id));
+  renderJournal();
+}
+
+function renderJournal() {
+  const items = journalItems();
+  const summaryEl = document.getElementById("jn-summary");
+  const listEl = document.getElementById("jn-list");
+  if (!summaryEl || !listEl) return;
+
+  const closed = items.filter((x) => Number(x.entry) && Number(x.exit) && Number(x.shares));
+  const open = items.length - closed.length;
+  const pl = closed.reduce((sum, x) => sum + (Number(x.exit) - Number(x.entry)) * Number(x.shares), 0);
+  const invested = items.reduce((sum, x) => sum + (Number(x.amount_thb) || (Number(x.entry) || 0) * (Number(x.shares) || 0)), 0);
+  summaryEl.innerHTML = `
+    <div class="bt-stat"><div class="v">${items.length}</div><div class="l">รายการ</div></div>
+    <div class="bt-stat"><div class="v">${open}</div><div class="l">ยังเปิด/รอดำเนินการ</div></div>
+    <div class="bt-stat"><div class="v">฿${fmt(invested)}</div><div class="l">เงินที่บันทึก</div></div>
+    <div class="bt-stat"><div class="v ${pl >= 0 ? "good" : "bad"}">฿${fmt(pl)}</div><div class="l">กำไร/ขาดทุนปิดแล้ว</div></div>`;
+
+  if (!items.length) {
+    listEl.innerHTML = `<div class="jn-empty">ยังไม่มีรายการ</div>`;
+    return;
+  }
+  listEl.innerHTML = items.map((x) => {
+    const side = x.side === "SELL" ? "ขาย" : "ซื้อ";
+    const status = x.status || (x.exit ? "ปิดแล้ว" : "ยังถือ");
+    const amount = x.amount_thb ? `฿${fmt(x.amount_thb)}` : (x.entry ? `฿${fmt(x.entry)} x ${fmt0(x.shares)}` : "-");
+    const usd = x.amount_usd ? ` / $${fmt(x.amount_usd)}` : "";
+    const closedPl = Number(x.entry) && Number(x.exit) && Number(x.shares)
+      ? (Number(x.exit) - Number(x.entry)) * Number(x.shares)
+      : null;
+    const right = closedPl == null
+      ? `<div class="jn-open">${escapeHtml(status)}</div>`
+      : `<div class="jn-pl ${closedPl >= 0 ? "up" : "down"}">${closedPl >= 0 ? "+" : ""}฿${fmt(closedPl)}</div>`;
+    const tag = x.source === "dime-slip" ? `<span class="jn-tag">Dime slip${x.order_no ? " · " + escapeHtml(x.order_no) : ""}</span>` : "";
+    return `<div class="jn-row">
+      <div class="jn-n"><b>${side} ${escapeHtml(x.ticker || "-")}</b><small>${escapeHtml([x.market, x.ordered_at || x.created_at?.slice(0, 10)].filter(Boolean).join(" · "))}</small>${tag}</div>
+      <div class="jn-muted">${amount}${usd}${x.fx_rate ? ` · FX ${fmt(x.fx_rate)}` : ""}<br>${escapeHtml(x.note || "")}</div>
+      ${right}
+      <button class="jn-del" data-id="${escapeHtml(x.id)}" type="button" title="ลบรายการ">ลบ</button>
+    </div>`;
+  }).join("");
+}
+
+function addManualJournalItem() {
+  const ticker = document.getElementById("jn-name")?.value.trim().toUpperCase();
+  if (!ticker) return;
+  addJournalItem({
+    source: "manual",
+    side: "BUY",
+    ticker,
+    entry: parseMoney(document.getElementById("jn-entry")?.value),
+    exit: parseMoney(document.getElementById("jn-exit")?.value),
+    shares: parseMoney(document.getElementById("jn-shares")?.value),
+    note: document.getElementById("jn-note")?.value.trim(),
+  });
+  ["jn-name", "jn-entry", "jn-exit", "jn-shares", "jn-note"].forEach((id) => { const el = document.getElementById(id); if (el) el.value = ""; });
+}
+
+function numberAfter(text, label, currency) {
+  const idx = text.search(label);
+  if (idx < 0) return null;
+  const re = new RegExp("(-?\\s*\\d[\\d,]*(?:\\.\\d+)?)\\s*" + currency, "i");
+  const m = text.slice(idx, idx + 140).match(re);
+  return m ? parseMoney(m[1]) : null;
+}
+
+function slipKeyFromText(text) {
+  const raw = encodeURIComponent(text.slice(0, 500));
+  return DIME_DUP_PREFIX + btoa(raw).replace(/=+$/g, "").slice(0, 40);
+}
+
+function parseDimeSlipText(rawText) {
+  const text = String(rawText || "").replace(/\u00a0/g, " ");
+  const flat = text.replace(/\s+/g, " ").trim();
+  const sideTicker = flat.match(/(?:ซื้อ|ซือ|Buy|ขาย|Sell)\s*([A-Z]{1,8}(?:\.[A-Z]{1,4})?)/i);
+  const sideMatch = flat.match(/ซื้อ|ซือ|Buy|ขาย|Sell/i);
+  const market = flat.match(/\b(NYSE|NASDAQ|AMEX|ARCA|SET|MAI)\b/i)?.[1]?.toUpperCase() || "";
+  const marketTicker = flat.match(/\b([A-Z]{1,8}(?:\.[A-Z]{1,4})?)\s+(?:NYSE|NASDAQ|AMEX|ARCA|SET|MAI)\b/i);
+  const status = flat.match(/(รอดำเนินการ|สำเร็จ|ยกเลิก|ไม่สำเร็จ|pending|completed|cancelled|failed)/i)?.[1] || "";
+  const orderedAt = flat.match(/(\d{1,2}\s*(?:ม\.?ค\.?|ก\.?พ\.?|มี\.?ค\.?|เม\.?ย\.?|พ\.?ค\.?|มิ\.?ย\.?|ก\.?ค\.?|ส\.?ค\.?|ก\.?ย\.?|ต\.?ค\.?|พ\.?ย\.?|ธ\.?ค\.?)\s*\d{2,4}\s*-\s*\d{1,2}:\d{2}\s*น?\.?)/i)?.[1] || "";
+  const fxRate = parseMoney(flat.match(/1\s*USD\s*=\s*([\d,.]+)\s*THB/i)?.[1]);
+  const thbValues = [...flat.matchAll(/(-?\s*\d[\d,]*(?:\.\d+)?)\s*THB/gi)].map((m) => parseMoney(m[1])).filter((v) => v != null);
+  const usdValues = [...flat.matchAll(/(\d[\d,]*(?:\.\d+)?)\s*USD/gi)].map((m) => parseMoney(m[1])).filter((v) => v != null && v !== 1);
+  const orderNoMatch = flat.match(/\b(STK[A-Z0-9]{8,})(?:\s*([0-9]{6,}))?/i);
+  const orderNo = orderNoMatch ? (orderNoMatch[1] + (orderNoMatch[2] || "")).toUpperCase() : "";
+  const ticker = (sideTicker?.[1] || marketTicker?.[1] || "").toUpperCase();
+  const sideWord = sideMatch?.[0]?.toLowerCase() || "";
+  const side = /ขาย|sell/i.test(sideWord) ? "SELL" : "BUY";
+
+  return {
+    source: "dime-slip",
+    slip_key: orderNo ? DIME_DUP_PREFIX + orderNo : slipKeyFromText(flat),
+    side,
+    ticker,
+    market,
+    status,
+    ordered_at: orderedAt,
+    amount_thb: numberAfter(flat, /มูลค่าหุ้น|มูลค่า|ยอดเงิน|จำนวนเงิน/i, "THB") || thbValues.find((v) => v > 0) || null,
+    commission_thb: numberAfter(flat, /ค่าคอมมิชชั่น/i, "THB"),
+    discount_thb: thbValues.find((v) => v < 0) || null,
+    vat_thb: numberAfter(flat, /VAT|ภาษี/i, "THB"),
+    amount_usd: numberAfter(flat, /จำนวนเงิน\s*\(?USD\)?/i, "USD") || usdValues.at(-1) || null,
+    fx_rate: fxRate,
+    order_type: /market|ราคาตลาด/i.test(flat) ? "Market" : "",
+    order_no: orderNo,
+    note: "นำเข้าจากสลิป Dime",
+    raw_text: text.slice(0, 4000),
+  };
+}
+
+function setSlipStatus(text, tone = "") {
+  const el = document.getElementById("slip-status");
+  if (!el) return;
+  el.textContent = text;
+  el.className = "slip-status" + (tone ? " " + tone : "");
+}
+
+function ensureTesseract() {
+  if (window.Tesseract) return Promise.resolve();
+  if (!tesseractLoadPromise) {
+    tesseractLoadPromise = new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = TESSERACT_SRC;
+      script.async = true;
+      script.onload = () => window.Tesseract ? resolve() : reject(new Error("โหลดตัวอ่านสลิปไม่สำเร็จ"));
+      script.onerror = () => reject(new Error("โหลดตัวอ่านสลิปไม่สำเร็จ"));
+      document.head.appendChild(script);
+    });
+  }
+  return tesseractLoadPromise;
+}
+
+async function readDimeSlip() {
+  const input = document.getElementById("slip-file");
+  const btn = document.getElementById("slip-read");
+  const file = input?.files?.[0];
+  if (!file) return setSlipStatus("เลือกไฟล์สลิปก่อน", "bad");
+
+  btn.disabled = true;
+  try {
+    if (!window.Tesseract) {
+      setSlipStatus("กำลังโหลดตัวอ่านสลิป...");
+      await ensureTesseract();
+    }
+    setSlipStatus("กำลังอ่านข้อความจากสลิป...");
+    const result = await Tesseract.recognize(file, "tha+eng", {
+      logger: (m) => {
+        if (m.status === "recognizing text") setSlipStatus(`กำลังอ่านข้อความ ${Math.round((m.progress || 0) * 100)}%`);
+      },
+    });
+    const parsed = parseDimeSlipText(result?.data?.text || "");
+    if (!parsed.ticker || !parsed.amount_thb) {
+      throw new Error("อ่าน ticker หรือยอดเงินไม่ครบ");
+    }
+    addJournalItem(parsed);
+    document.getElementById("jn-name").value = parsed.ticker;
+    document.getElementById("jn-note").value = `${parsed.side === "SELL" ? "ขาย" : "ซื้อ"} ${parsed.ticker} จากสลิป Dime ${parsed.amount_thb ? "฿" + fmt(parsed.amount_thb) : ""}`;
+    setSlipStatus(`บันทึกแล้ว: ${parsed.side === "SELL" ? "ขาย" : "ซื้อ"} ${parsed.ticker} ${parsed.amount_thb ? "฿" + fmt(parsed.amount_thb) : ""}${parsed.amount_usd ? " / $" + fmt(parsed.amount_usd) : ""}`, "good");
+  } catch (e) {
+    setSlipStatus(e.message || "อ่านสลิปไม่สำเร็จ", "bad");
+  } finally {
+    btn.disabled = false;
+  }
+}
+
 // ── tabs ──
 function switchView(view) {
   document.querySelectorAll(".view").forEach((v) => v.classList.add("hidden"));
@@ -760,6 +962,16 @@ document.getElementById("cards").addEventListener("click", (e) => {
   openCardModal(card.dataset.ticker);
 });
 document.getElementById("manual-update")?.addEventListener("click", openUpdateModal);
+document.getElementById("slip-file")?.addEventListener("change", (e) => {
+  const file = e.target.files?.[0];
+  setSlipStatus(file ? `เลือกไฟล์แล้ว: ${file.name}` : "ยังไม่ได้เลือกไฟล์");
+});
+document.getElementById("slip-read")?.addEventListener("click", readDimeSlip);
+document.getElementById("jn-add")?.addEventListener("click", addManualJournalItem);
+document.getElementById("jn-list")?.addEventListener("click", (e) => {
+  const btn = e.target.closest(".jn-del");
+  if (btn?.dataset.id) deleteJournalItem(btn.dataset.id);
+});
 document.getElementById("modal-close").addEventListener("click", () =>
   document.getElementById("modal").classList.add("hidden"));
 document.getElementById("modal").addEventListener("click", (e) => {
@@ -776,4 +988,5 @@ window.addEventListener("resize", () => moveGlider(document.querySelector(".tab.
 
 // init
 moveGlider(document.querySelector(".tab.active"));
+renderJournal();
 load(false);

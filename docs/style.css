@@ -478,6 +478,20 @@ body {
 .rk-item.bad { border-left: 3px solid var(--red); }
 .rk-item .rk-ic { font-size: 16px; }
 
+.slip-upload { display: grid; grid-template-columns: minmax(180px, 1fr) auto auto; align-items: center; gap: 10px;
+  background: var(--surface-solid); border: 1px solid var(--line); border-radius: 12px; padding: 12px; margin-bottom: 14px; }
+.slip-copy b { display: block; font-size: 14px; }
+.slip-copy small { display: block; color: var(--muted); font-size: 12px; margin-top: 3px; }
+.slip-picker input { display: none; }
+.slip-picker span, .slip-read { display: inline-flex; align-items: center; justify-content: center; min-height: 38px;
+  border-radius: 10px; border: 1px solid var(--line-strong); padding: 0 13px; font-family: inherit; font-weight: 800; cursor: pointer; }
+.slip-picker span { background: rgba(148,163,184,.08); color: var(--text); }
+.slip-read { background: var(--green-soft); color: var(--green); }
+.slip-read:disabled { opacity: .55; cursor: wait; }
+.slip-status { grid-column: 1 / -1; color: var(--muted); font-size: 12.5px; line-height: 1.55; }
+.slip-status.good { color: var(--green); }
+.slip-status.bad { color: var(--red); }
+
 .jn-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 18px; }
 .jn-form input { background: var(--surface-solid); border: 1px solid var(--line); color: var(--text);
   border-radius: 10px; padding: 10px 12px; font-family: inherit; font-size: 14px; outline: none; }
@@ -496,6 +510,8 @@ body {
 .jn-row .jn-pl.up { color: var(--green); }
 .jn-row .jn-pl.down { color: var(--red); }
 .jn-row .jn-open { color: var(--amber); font-size: 12px; font-weight: 700; text-align: right; }
+.jn-tag { display: inline-flex; align-items: center; gap: 5px; width: fit-content; margin-top: 5px; padding: 3px 7px;
+  border-radius: 999px; background: rgba(148,163,184,.10); color: var(--muted); font-size: 11px; font-weight: 800; }
 .jn-del { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 15px; }
 .jn-del:hover { color: var(--red); }
 .jn-empty { text-align: center; color: var(--muted); padding: 30px; font-size: 14px; }
@@ -559,6 +575,7 @@ body {
   .tabs { width: 100%; overflow-x: auto; }
   .appbar-right { width: 100%; justify-content: flex-start; flex-wrap: wrap; }
   .update-help { grid-template-columns: 1fr; }
+  .slip-upload { grid-template-columns: 1fr; }
   .source-grid { grid-template-columns: 1fr; }
   .status-row { grid-template-columns: 1fr; }
   .status-score { text-align: left; }

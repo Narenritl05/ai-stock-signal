@@ -125,6 +125,18 @@
         <h2 class="section-title">📓 บันทึกการเทรด (Trading Journal)</h2>
         <span class="section-note">จดทุกไม้ที่ซื้อ-ขายจริง แล้วทบทวน</span>
       </div>
+      <div class="slip-upload">
+        <div class="slip-copy">
+          <b>อัปโหลดสลิป Dime</b>
+          <small>อ่านสลิปในเครื่อง แล้วบันทึกเข้า journal อัตโนมัติ</small>
+        </div>
+        <label class="slip-picker">
+          <input id="slip-file" type="file" accept="image/*" />
+          <span>เลือกสลิป</span>
+        </label>
+        <button id="slip-read" class="slip-read" type="button">อ่านและบันทึก</button>
+        <div id="slip-status" class="slip-status">ยังไม่ได้เลือกไฟล์</div>
+      </div>
       <div class="jn-form">
         <input id="jn-name" type="text" placeholder="ชื่อหุ้น (เช่น PTT)" />
         <input id="jn-entry" type="number" step="0.01" placeholder="ราคาเข้า" />
@@ -298,6 +310,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260621-manual-only"></script>
+  <script src="app.js?v=20260621-dime-slip"></script>
 </body>
 </html>
