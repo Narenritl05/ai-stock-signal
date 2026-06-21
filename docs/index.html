@@ -28,10 +28,10 @@
         </div>
       </div>
       <div class="appbar-right">
-        <div class="live-badge" id="live-badge" title="รีเฟรชข้อมูลอัตโนมัติทุก 1 นาที">
-          <span class="live-dot"></span>LIVE
+        <div class="live-badge" id="live-badge" title="อัปเดตข้อมูลเมื่อคุณกดรันเองเท่านั้น">
+          <span class="live-dot"></span>MANUAL
         </div>
-        <button class="manual-update-btn" id="manual-update" type="button" title="รันอัปเดตข้อมูลใหม่">
+        <button class="manual-update-btn" id="manual-update" type="button" title="เปิดขั้นตอนอัปเดตข้อมูลด้วยตัวเอง">
           <span>↻</span> รันอัปเดต
         </button>
         <div class="market-pill" id="market-pill">
@@ -171,8 +171,8 @@
         <ul>
           <li><b>ถ้าเปิดคอม/mini PC ทิ้งไว้</b> Telegram bot แบบถามตอบจะทำงานทันที, ระบบรันตามเวลาที่ตั้งไว้ได้, watchdog/self-heal ตรวจทุก 30 นาทีได้ และหน้าเว็บ local จะเปิดดูจากเครื่องหรือในวง LAN ได้</li>
           <li><b>ถ้าปิดเครื่อง</b> bot ที่รันบนเครื่องจะหยุดตอบ, งาน local ที่ตั้งเวลาไว้จะไม่รัน และเว็บ local เช่น <code>http://localhost:8000/</code> จะเข้าไม่ได้จนกว่าเปิดเครื่องใหม่</li>
-          <li><b>GitHub Actions ยังช่วยได้</b> งานที่ตั้งไว้บน GitHub ยังรันตามรอบฟรีได้ถ้า repo เปิดใช้งานอยู่ และสามารถส่ง Telegram digest/อัปเดต GitHub Pages จากข้อมูลล่าสุดได้โดยไม่ต้องเปิด notebook</li>
-          <li><b>ข้อมูลบนเว็บไม่หาย</b> ไฟล์ใน <code>docs/data</code> จะยังเป็นข้อมูลรอบล่าสุดที่บันทึกไว้ แต่อาจเก่าลงถ้าไม่มีเครื่องหรือ GitHub Actions ช่วยรันอัปเดต</li>
+          <li><b>GitHub Actions ยังช่วยได้</b> คุณกด Run workflow เองจาก GitHub ได้ฟรี ระบบจะวิเคราะห์ ส่ง Telegram และอัปเดต GitHub Pages โดยไม่ต้องเปิด notebook</li>
+          <li><b>ข้อมูลบนเว็บไม่หาย</b> ไฟล์ใน <code>docs/data</code> จะยังเป็นข้อมูลรอบล่าสุดที่บันทึกไว้ แต่อาจเก่าลงจนกว่าคุณจะกดรันอัปเดตครั้งใหม่</li>
         </ul>
       </div>
     </section>
@@ -242,7 +242,7 @@
           <li><b>ได้</b> หน้าแรกโหมด <code>ทุกตลาด</code> รวมหุ้นไทยและหุ้นต่างประเทศไว้แล้ว ใช้ช่องค้นหาเพื่อดูรายชื่อหุ้นทั้งหมดใน watchlist ได้</li>
           <li><b>เปิดจากเครื่องนี้</b> รันเว็บ local แล้วเข้า <code>http://localhost:8000/</code> เพื่อดู dashboard, สัญญาณ, backtest, สถานะระบบ และข้อมูลรายตัว</li>
           <li><b>เปิดจากมือถือในบ้าน</b> ถ้าใช้ mini PC เป็น server ให้เปิดเว็บแบบ LAN ด้วย <code>http://IP-ของ-mini-PC:8000/</code> โดยไม่ต้องเปิด port ออกอินเทอร์เน็ต</li>
-          <li><b>เปิดจากนอกบ้าน</b> ใช้ GitHub Pages จะปลอดภัยกว่าและไม่มีค่า Cloud เพิ่ม แต่จะเห็นข้อมูลรอบล่าสุดที่ GitHub Actions สร้างไว้ ไม่ใช่หน้าเว็บ local สดจากเครื่อง</li>
+          <li><b>เปิดจากนอกบ้าน</b> ใช้ GitHub Pages จะปลอดภัยกว่าและไม่มีค่า Cloud เพิ่ม แต่จะเห็นข้อมูลรอบล่าสุดที่คุณกด Run workflow สร้างไว้ ไม่ใช่หน้าเว็บ local สดจากเครื่อง</li>
           <li><b>ดูข้อมูลรายตัว</b> กดการ์ดหุ้นในหน้าเว็บเพื่อดูราคา, สัญญาณซื้อ/ขาย, จุดเข้า, stop loss, เป้า, risk/reward, volume, ATR, ข่าว และกรอบถือสั้น/ยาว</li>
         </ul>
       </div>
@@ -281,7 +281,7 @@
       </div>
       <div class="about-card">
         <h2>🆓 ฟรี 100% ไม่มีค่า server</h2>
-        <p>GitHub Actions (รันอัตโนมัติ) + GitHub Pages (โฮสต์เว็บ) + Yahoo Finance (ข้อมูล) + Telegram (แจ้งเตือน) — ฟรีทั้งหมด</p>
+        <p>GitHub Actions (กดรันเอง) + GitHub Pages (โฮสต์เว็บ) + Yahoo Finance (ข้อมูล) + Telegram (แจ้งเตือน) — ฟรีทั้งหมด</p>
       </div>
     </section>
 
@@ -298,6 +298,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260621-more-modal-fix"></script>
+  <script src="app.js?v=20260621-manual-only"></script>
 </body>
 </html>

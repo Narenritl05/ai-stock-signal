@@ -13,8 +13,7 @@ let activeFilter = "ALL";
 let searchTerm = "";
 let sortBy = "score";
 let gid = 0; // unique gradient ids
-let lastGenerated = null;       // เช็คว่าข้อมูลเปลี่ยนไหมตอน auto-refresh
-const REFRESH_MS = 60000;       // รีเฟรชหน้าเว็บอัตโนมัติทุก 1 นาที
+let lastGenerated = null;       // เช็คว่าข้อมูลเปลี่ยนไหมตอนดึงไฟล์ล่าสุดด้วยตัวเอง
 let currentMarket = "all";      // หมวดที่กำลังดู (all = ทุกตลาด, th = ไทย, us = ต่างประเทศ)
 const MARKET_FILES = { th: "signals.json", us: "signals_foreign.json" };
 const WORKFLOW_URL = "https://github.com/Narenritl05/ai-stock-signal/actions/workflows/analyze.yml";
@@ -34,7 +33,7 @@ async function load(isRefresh = false) {
     if (!isRefresh) {
       document.getElementById("updated").textContent = "โหลดข้อมูลไม่สำเร็จ";
       document.getElementById("cards").innerHTML =
-        `<div class="empty">ยังไม่มีข้อมูล — รัน <code>python run.py</code> หรือรอ GitHub Actions ทำงานครั้งแรก<br><small>(${e.message})</small></div>`;
+        `<div class="empty">ยังไม่มีข้อมูล — รัน <code>python run.py</code> หรือกด Run workflow บน GitHub Actions<br><small>(${e.message})</small></div>`;
     }
   }
   loadBacktest();
@@ -611,7 +610,7 @@ function openUpdateModal() {
   const currentStamp = document.getElementById("updated")?.textContent || "-";
   document.getElementById("modal-content").innerHTML = `
     <div class="md-head"><h2>รันอัปเดตข้อมูลใหม่</h2><span class="badge s-buy">SAFE</span></div>
-    <div class="md-sub">${escapeHtml(currentStamp)} · ระบบอัตโนมัติเดิมยังทำงานตามรอบ GitHub Actions เหมือนเดิม</div>
+    <div class="md-sub">${escapeHtml(currentStamp)} · ไม่มีรอบอัปเดตอัตโนมัติแล้ว ต้องกด Run workflow เองเมื่อต้องการข้อมูลใหม่</div>
 
     <div class="update-help">
       <div class="update-option primary">
@@ -778,4 +777,3 @@ window.addEventListener("resize", () => moveGlider(document.querySelector(".tab.
 // init
 moveGlider(document.querySelector(".tab.active"));
 load(false);
-setInterval(() => load(true), REFRESH_MS);   // รีเฟรชข้อมูลอัตโนมัติทุก 1 นาที
