@@ -50,5 +50,6 @@ jobs:
             echo "ไม่มีการเปลี่ยนแปลง — ข้ามการ commit"
           else
             git commit -m "chore: update signals $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
           fi
