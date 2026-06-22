@@ -998,7 +998,7 @@ function renderJournal() {
       ? `<div class="jn-open">${escapeHtml(status)}</div>`
       : `<div class="jn-pl ${closedPl >= 0 ? "up" : "down"}">${closedPl >= 0 ? "+" : ""}฿${fmt(closedPl)}</div>`;
     const tag = x.source === "dime-slip"
-      ? `<span class="jn-tag">${x.needs_review ? "รอตรวจสอบ · " : ""}Dime slip${x.order_no ? " · " + escapeHtml(x.order_no) : ""}</span>`
+      ? `<span class="jn-tag">${x.needs_review ? "รอตรวจสอบ · " : ""}Dime slip${x.ticker_confidence ? " · " + fmt0(x.ticker_confidence) + "%" : ""}${x.order_no ? " · " + escapeHtml(x.order_no) : ""}</span>`
       : "";
     return `<div class="jn-row" data-journal-id="${escapeHtml(x.id)}">
       <div class="jn-n"><b>${side} ${escapeHtml(x.ticker || "-")}</b><small>${escapeHtml([x.market, x.ordered_at || x.created_at?.slice(0, 10)].filter(Boolean).join(" · "))}</small>${tag}</div>
@@ -1076,7 +1076,7 @@ function cleanTickerCandidate(ticker) {
 }
 
 const DIME_MARKET_RE = "\\b(?:NYSE|NASDAQ|AMEX|ARCA|SET|MAI)\\b";
-const DIME_STRONG_STOP_RE = /บัญชี|ชำระเงิน|รับเงิน|พอร์ต|รายละเอียดการโอน|วัตถุประสงค์|หากยกเลิก|ธนาคาร|เลขที่|Dime!\s*Save|Dime!\s*Fast|KKP/i;
+const DIME_STRONG_STOP_RE = /บัญชี|ชำระเงิน|รับเงิน|พอร์ต|รายละเอียดการโอน|วัตถุประสงค์|หากยกเลิก|ธนาคาร|เลขที่|Dime!\s*Save|Dime!\s*Fast/i;
 const DIME_WEAK_TICKER_IGNORE = new Set([
   "USD", "THB", "VAT", "NYSE", "NASDAQ", "AMEX", "ARCA", "SET", "MAI",
   "DIME", "FAST", "SAVE", "MARKET", "STK", "KKP", "KKPS", "KKS",
@@ -1093,25 +1093,28 @@ function cleanSlipLines(text) {
     .filter(Boolean);
 }
 
-function dimeTradeScope(flat) {
-  const text = String(flat || "");
-  const stop = text.search(DIME_STRONG_STOP_RE);
-  return stop > 0 ? text.slice(0, stop) : text;
+function dimeOrderLines(text) {
+  const lines = cleanSlipLines(text);
+  const sideIndex = lines.findIndex((line) => /ซื้อ|ซือ|Buy|ขาย|Sell/i.test(line));
+  const start = sideIndex >= 0
+    ? sideIndex
+    : Math.max(0, lines.findIndex((line) => new RegExp(DIME_MARKET_RE, "i").test(line)) - 1);
+  if (start < 0) return lines.slice(0, 12);
+
+  const scoped = [];
+  for (const line of lines.slice(start, start + 12)) {
+    if (scoped.length && DIME_STRONG_STOP_RE.test(line)) break;
+    scoped.push(line);
+    if (/อัตราแลกเปลี่ยน|จำนวนเงิน\s*\(?USD\)?|ประเภทคำสั่ง|ช่วงเวลา/i.test(line)) break;
+  }
+  return scoped;
 }
 
 function dimeOrderScope(text, flat) {
-  const lines = cleanSlipLines(text);
-  const sideIndex = lines.findIndex((line) => /ซื้อ|ซือ|Buy|ขาย|Sell/i.test(line));
-  if (sideIndex >= 0) {
-    const scoped = [];
-    for (const line of lines.slice(sideIndex, sideIndex + 8)) {
-      if (scoped.length && DIME_STRONG_STOP_RE.test(line)) break;
-      scoped.push(line);
-      if (/มูลค่าหุ้น|ค่าคอมมิชชั่น|คูปอง|อัตราแลกเปลี่ยน|จำนวนเงิน/i.test(line)) break;
-    }
-    return scoped.join(" ");
-  }
-  return dimeTradeScope(flat);
+  const scoped = dimeOrderLines(text).join(" ");
+  if (scoped) return scoped;
+  const stop = String(flat || "").search(DIME_STRONG_STOP_RE);
+  return stop > 0 ? String(flat || "").slice(0, stop) : String(flat || "");
 }
 
 function isWeakDimeTicker(candidate) {
@@ -1125,7 +1128,8 @@ function isStrongDimeTicker(candidate) {
 }
 
 function fallbackTicker(scope, market = "") {
-  const scoped = dimeTradeScope(scope);
+  const stop = String(scope || "").search(DIME_STRONG_STOP_RE);
+  const scoped = stop > 0 ? String(scope || "").slice(0, stop) : String(scope || "");
   const nearMarket = market
     ? scoped.match(new RegExp(`\\b([A-Z0-9]{1,8})\\s+${market}\\b`, "i"))?.[1]
     : "";
@@ -1143,21 +1147,59 @@ function fallbackTicker(scope, market = "") {
   return { ticker: generic || "", source: generic ? "weak-fallback" : "" };
 }
 
+function addDimeTickerCandidate(candidates, ticker, source, score, detail = "") {
+  const cleaned = cleanTickerCandidate(ticker);
+  if (!cleaned) return;
+  const strong = source === "side-line" || source === "next-line" || source === "market-line";
+  if (strong ? !isStrongDimeTicker(cleaned) : isWeakDimeTicker(cleaned)) return;
+  const known = knownTickers().includes(cleaned);
+  candidates.push({
+    ticker: cleaned,
+    source,
+    score: score + (known ? 18 : 0),
+    detail,
+  });
+}
+
 function dimeTickerFromText(text, flat, market) {
-  const orderScope = dimeOrderScope(text, flat);
-  const sideTicker = orderScope.match(/(?:ซื้อ|ซือ|Buy|ขาย|Sell)\s*[:\-]?\s*([A-Z0-9]{1,8}(?:\.[A-Z0-9]{1,4})?)/i);
-  const sideCleaned = cleanTickerCandidate(sideTicker?.[1]);
-  if (isStrongDimeTicker(sideCleaned)) return { ticker: sideCleaned, source: "side-line" };
+  const lines = dimeOrderLines(text);
+  const orderScope = lines.join(" ");
+  const candidates = [];
+  lines.forEach((line, idx) => {
+    const sideTicker = line.match(/(?:ซื้อ|ซือ|Buy|ขาย|Sell)\s*[:\-]?\s*([A-Z0-9]{1,8}(?:\.[A-Z0-9]{1,4})?)/i);
+    addDimeTickerCandidate(candidates, sideTicker?.[1], "side-line", 120, line);
 
-  const marketTicker = orderScope.match(new RegExp(`\\b([A-Z][A-Z0-9]{0,7}(?:\\.[A-Z0-9]{1,4})?)\\s+${DIME_MARKET_RE}`, "i"));
-  const marketCleaned = cleanTickerCandidate(marketTicker?.[1]);
-  if (isStrongDimeTicker(marketCleaned)) return { ticker: marketCleaned, source: "market-line" };
+    if (/ซื้อ|ซือ|Buy|ขาย|Sell/i.test(line)) {
+      const next = lines[idx + 1] || "";
+      const nextTicker = next.match(/\b([A-Z][A-Z0-9]{0,7}(?:\.[A-Z0-9]{1,4})?)\b/i);
+      addDimeTickerCandidate(candidates, nextTicker?.[1], "next-line", 105, next);
+    }
 
-  const reversedMarketTicker = orderScope.match(new RegExp(`${DIME_MARKET_RE}\\s+([A-Z][A-Z0-9]{0,7}(?:\\.[A-Z0-9]{1,4})?)\\b`, "i"));
-  const reversedCleaned = cleanTickerCandidate(reversedMarketTicker?.[1]);
-  if (isStrongDimeTicker(reversedCleaned)) return { ticker: reversedCleaned, source: "market-line" };
+    const marketTicker = line.match(new RegExp(`\\b([A-Z][A-Z0-9]{0,7}(?:\\.[A-Z0-9]{1,4})?)\\s+${DIME_MARKET_RE}`, "i"));
+    addDimeTickerCandidate(candidates, marketTicker?.[1], "market-line", 100, line);
 
-  return fallbackTicker(orderScope, market);
+    const reversedMarketTicker = line.match(new RegExp(`${DIME_MARKET_RE}\\s+([A-Z][A-Z0-9]{0,7}(?:\\.[A-Z0-9]{1,4})?)\\b`, "i"));
+    addDimeTickerCandidate(candidates, reversedMarketTicker?.[1], "market-line", 92, line);
+  });
+
+  for (const t of knownTickers()) {
+    if (t.length >= 2 && !isWeakDimeTicker(t) && new RegExp(`\\b${t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(orderScope)) {
+      addDimeTickerCandidate(candidates, t, "universe-in-order", 70, orderScope);
+    }
+  }
+
+  const fallback = fallbackTicker(orderScope, market);
+  addDimeTickerCandidate(candidates, fallback.ticker, fallback.source, fallback.source === "market-fallback" ? 65 : 30, orderScope);
+
+  candidates.sort((a, b) => b.score - a.score);
+  const best = candidates[0] || { ticker: "", source: "", score: 0, detail: "" };
+  return {
+    ticker: best.ticker,
+    source: best.source,
+    confidence: Math.min(99, Math.max(0, best.score)),
+    candidates,
+    order_scope: orderScope,
+  };
 }
 
 function moneyValues(text, currency) {
@@ -1196,6 +1238,9 @@ function parseDimeSlipText(rawText) {
     side,
     ticker,
     ticker_source: tickerMatch.source,
+    ticker_confidence: tickerMatch.confidence,
+    ticker_candidates: tickerMatch.candidates?.slice(0, 5),
+    order_scope: tickerMatch.order_scope,
     market,
     status,
     ordered_at: orderedAt,
@@ -1252,6 +1297,7 @@ function reviewSlipItem(parsed, fileName = "") {
     slip_key: parsed.slip_key || DIME_DUP_PREFIX + "review:" + Date.now().toString(36),
     note: [
       "OCR อ่านข้อมูลไม่ครบ ต้องตรวจสอบเอง",
+      parsed.ticker_confidence ? `ticker confidence ${parsed.ticker_confidence}% (${parsed.ticker_source || "unknown"})` : "",
       fileName ? `ไฟล์ ${fileName}` : "",
       slipDebugPreview(parsed.raw_text),
     ].filter(Boolean).join(" | "),
@@ -1260,6 +1306,98 @@ function reviewSlipItem(parsed, fileName = "") {
 
 function slipDebugPreview(text) {
   return String(text || "").replace(/\s+/g, " ").trim().slice(0, 180);
+}
+
+async function canvasFromImageFile(file) {
+  const bitmap = window.createImageBitmap
+    ? await createImageBitmap(file)
+    : await new Promise((resolve, reject) => {
+      const img = new Image();
+      const url = URL.createObjectURL(file);
+      img.onload = () => {
+        URL.revokeObjectURL(url);
+        resolve(img);
+      };
+      img.onerror = () => {
+        URL.revokeObjectURL(url);
+        reject(new Error("เปิดรูปสลิปไม่สำเร็จ"));
+      };
+      img.src = url;
+    });
+  const maxWidth = 1600;
+  const targetWidth = Math.min(maxWidth, Math.max(bitmap.width, 1300));
+  const scale = targetWidth / bitmap.width;
+  const canvas = document.createElement("canvas");
+  canvas.width = Math.round(bitmap.width * scale);
+  canvas.height = Math.round(bitmap.height * scale);
+  const ctx = canvas.getContext("2d", { willReadFrequently: true });
+  ctx.fillStyle = "#fff";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.imageSmoothingEnabled = true;
+  ctx.imageSmoothingQuality = "high";
+  ctx.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+  bitmap.close?.();
+  return canvas;
+}
+
+async function makeDimeOcrCanvas(file) {
+  const canvas = await canvasFromImageFile(file);
+  const ctx = canvas.getContext("2d", { willReadFrequently: true });
+  const img = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const data = img.data;
+  for (let i = 0; i < data.length; i += 4) {
+    const gray = data[i] * 0.299 + data[i + 1] * 0.587 + data[i + 2] * 0.114;
+    const boosted = Math.max(0, Math.min(255, (gray - 128) * 1.35 + 128));
+    data[i] = boosted;
+    data[i + 1] = boosted;
+    data[i + 2] = boosted;
+  }
+  ctx.putImageData(img, 0, 0);
+  return canvas;
+}
+
+function scoreDimeParsed(parsed) {
+  if (!parsed) return 0;
+  return (parsed.ticker_confidence || 0) +
+    (parsed.ticker ? 25 : 0) +
+    (parsed.amount_thb ? 22 : 0) +
+    (parsed.amount_usd ? 8 : 0) +
+    (parsed.order_no ? 8 : 0) +
+    (parsed.market ? 5 : 0);
+}
+
+async function runDimeOcrAttempt(image, label, logger) {
+  const result = await Tesseract.recognize(image, "tha+eng", {
+    logger,
+    tessedit_pageseg_mode: "6",
+    preserve_interword_spaces: "1",
+  });
+  const text = result?.data?.text || "";
+  const parsed = parseDimeSlipText(text);
+  return { label, text, parsed, score: scoreDimeParsed(parsed) };
+}
+
+async function smartReadDimeSlip(file, onProgress) {
+  const attempts = [];
+  const enhanced = await makeDimeOcrCanvas(file);
+  attempts.push(await runDimeOcrAttempt(enhanced, "enhanced", (m) => {
+    if (m.status === "recognizing text") onProgress?.(Math.round((m.progress || 0) * 70));
+  }));
+
+  const bestFirst = attempts[0];
+  if (!bestFirst.parsed?.ticker || !bestFirst.parsed?.amount_thb || (bestFirst.parsed?.ticker_confidence || 0) < 90) {
+    attempts.push(await runDimeOcrAttempt(file, "original", (m) => {
+      if (m.status === "recognizing text") onProgress?.(70 + Math.round((m.progress || 0) * 30));
+    }));
+  }
+
+  attempts.sort((a, b) => b.score - a.score);
+  const best = attempts[0];
+  best.parsed.raw_text = attempts.map((x) => `[${x.label}]\n${x.text}`).join("\n\n---\n\n").slice(0, 8000);
+  best.parsed.ocr_engine = "dime-smart-v2";
+  best.parsed.ocr_attempt = best.label;
+  best.parsed.ocr_score = best.score;
+  return best;
 }
 
 function ensureTesseract() {
@@ -1289,18 +1427,15 @@ async function readDimeSlip() {
       setSlipStatus("กำลังโหลดตัวอ่านสลิป...");
       await ensureTesseract();
     }
-    setSlipStatus("กำลังอ่านข้อความจากสลิป...");
-    const result = await Tesseract.recognize(file, "tha+eng", {
-      logger: (m) => {
-        if (m.status === "recognizing text") setSlipStatus(`กำลังอ่านข้อความ ${Math.round((m.progress || 0) * 100)}%`);
-      },
-    });
-    const parsed = parseDimeSlipText(result?.data?.text || "");
+    setSlipStatus("กำลังอ่านข้อความแบบ Dime Smart OCR...");
+    const ocr = await smartReadDimeSlip(file, (pct) => setSlipStatus(`กำลังอ่านข้อความแบบ Dime Smart OCR ${pct}%`));
+    const parsed = ocr.parsed;
     fillJournalFormFromSlip(parsed);
-    if (!parsed.ticker || !parsed.amount_thb) {
+    if (!parsed.ticker || !parsed.amount_thb || (parsed.ticker_confidence || 0) < 80) {
       const missing = [
         !parsed.ticker ? "ticker" : "",
         !parsed.amount_thb ? "ยอดเงิน" : "",
+        parsed.ticker && (parsed.ticker_confidence || 0) < 80 ? "ความมั่นใจ ticker ต่ำ" : "",
       ].filter(Boolean).join(" และ ");
       const saved = addJournalItem(reviewSlipItem(parsed, file.name));
       clearSlipFileOnly();
@@ -1312,7 +1447,7 @@ async function readDimeSlip() {
     clearSlipFileOnly();
     revealJournalItem(saved?.item?.id);
     const prefix = saved?.updated ? "สลิปนี้เคยบันทึกแล้ว อัปเดตรายการเดิมให้แล้ว" : saved?.duplicate ? "สลิปนี้เคยบันทึกแล้ว แสดงรายการเดิมให้แล้ว" : "บันทึกแล้วและล้างไฟล์สลิปออกจากหน้าเว็บแล้ว";
-    setSlipStatus(`${prefix}: ${parsed.side === "SELL" ? "ขาย" : "ซื้อ"} ${parsed.ticker} ${parsed.amount_thb ? "฿" + fmt(parsed.amount_thb) : ""}${parsed.amount_usd ? " / $" + fmt(parsed.amount_usd) : ""}`, "good");
+    setSlipStatus(`${prefix}: ${parsed.side === "SELL" ? "ขาย" : "ซื้อ"} ${parsed.ticker} ${parsed.amount_thb ? "฿" + fmt(parsed.amount_thb) : ""}${parsed.amount_usd ? " / $" + fmt(parsed.amount_usd) : ""} · มั่นใจ ${parsed.ticker_confidence || 0}%`, "good");
   } catch (e) {
     const fallback = reviewSlipItem({ side: "BUY", raw_text: e.message || "OCR failed" }, file.name);
     const saved = addJournalItem(fallback);
