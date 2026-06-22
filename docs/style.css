@@ -524,6 +524,11 @@ body {
 .jn-row .jn-n b { font-size: 14.5px; }
 .jn-row .jn-n small { display: block; color: var(--muted); font-size: 11px; margin-top: 2px; }
 .jn-row .jn-muted { color: var(--muted); font-size: 12.5px; }
+.jn-details { display: grid; gap: 5px; min-width: 190px; color: var(--muted); font-size: 12px; }
+.jn-detail { display: grid; grid-template-columns: 58px minmax(0, 1fr); align-items: baseline; gap: 8px; }
+.jn-detail span { color: rgba(148,163,184,.82); font-size: 11px; font-weight: 800; }
+.jn-detail b { color: var(--muted); font-weight: 700; min-width: 0; overflow-wrap: anywhere; line-height: 1.35; }
+.jn-detail:first-child b { color: var(--text); }
 .jn-row .jn-pl { font-weight: 800; font-family: "Inter", sans-serif; text-align: right; }
 .jn-row .jn-pl.up { color: var(--green); }
 .jn-row .jn-pl.down { color: var(--red); }

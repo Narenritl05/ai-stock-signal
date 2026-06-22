@@ -1070,6 +1070,40 @@ function renderDimeWorkflow(item) {
   </div>`;
 }
 
+function compactSlipPreview(text) {
+  return String(text || "")
+    .replace(/\[[^\]]+\]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 90);
+}
+
+function notePart(note, prefix) {
+  return String(note || "").split("|").map((x) => x.trim()).find((x) => x.startsWith(prefix)) || "";
+}
+
+function renderJournalDetails(item, amount, usd) {
+  if (item.source !== "dime-slip") {
+    return `<div class="jn-muted">${amount}${usd}${item.fx_rate ? ` · FX ${fmt(item.fx_rate)}` : ""}<br>${escapeHtml(item.note || "")}</div>`;
+  }
+  const file = notePart(item.note, "ไฟล์ ").replace(/^ไฟล์\s*/, "");
+  const confidence = item.ticker_confidence ? `${fmt0(item.ticker_confidence)}%${item.ticker_source ? " · " + item.ticker_source : ""}` : "";
+  const rows = [
+    ["ยอด", [amount, usd, item.fx_rate ? "FX " + fmt(item.fx_rate) : ""].filter(Boolean).join(" · ")],
+    item.entry && item.shares ? ["สำเร็จ", `$${fmt(item.entry)} x ${Number(item.shares).toLocaleString("th-TH", { maximumFractionDigits: 8 })} หุ้น`] : null,
+    item.transaction_id ? ["อ้างอิง", item.transaction_id] : null,
+    item.order_no ? ["คำสั่ง", item.order_no] : null,
+    file ? ["ไฟล์", file] : null,
+    confidence ? ["OCR", confidence] : null,
+    item.validation_checks?.length ? ["ตรวจสูตร", item.validation_checks.every((x) => x.ok) ? "ผ่าน" : "ต้องตรวจสอบ"] : null,
+    item.needs_review ? ["หมายเหตุ", "OCR อ่านข้อมูลไม่ครบ ต้องตรวจสอบเอง"] : null,
+    item.raw_text && item.needs_review ? ["OCR preview", compactSlipPreview(item.raw_text)] : null,
+  ].filter(Boolean);
+  return `<div class="jn-details">${rows.map(([label, value]) => `
+    <div class="jn-detail"><span>${escapeHtml(label)}</span><b>${escapeHtml(value || "-")}</b></div>
+  `).join("")}</div>`;
+}
+
 function renderJournal() {
   const items = journalItems();
   const summaryEl = document.getElementById("jn-summary");
@@ -1101,6 +1135,7 @@ function renderJournal() {
       : null;
     const projection = renderJournalProjection(x, closedPl);
     const workflow = renderDimeWorkflow(x);
+    const details = renderJournalDetails(x, amount, usd);
     const right = closedPl == null
       ? `<div class="jn-open">${escapeHtml(status)}</div>`
       : `<div class="jn-pl ${closedPl >= 0 ? "up" : "down"}">${closedPl >= 0 ? "+" : ""}฿${fmt(closedPl)}</div>`;
@@ -1109,7 +1144,7 @@ function renderJournal() {
       : "";
     return `<div class="jn-row" data-journal-id="${escapeHtml(x.id)}">
       <div class="jn-n"><b>${side} ${escapeHtml(x.ticker || "-")}</b><small>${escapeHtml([x.market, x.ordered_at || x.created_at?.slice(0, 10)].filter(Boolean).join(" · "))}</small>${tag}</div>
-      <div class="jn-muted">${amount}${usd}${x.fx_rate ? ` · FX ${fmt(x.fx_rate)}` : ""}<br>${escapeHtml(x.note || "")}</div>
+      ${details}
       ${projection}
       ${workflow}
       ${right}
