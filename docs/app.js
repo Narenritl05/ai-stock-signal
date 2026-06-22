@@ -931,6 +931,7 @@ function approvePendingDimeSlip(id) {
     needs_review: false,
     validation_override: true,
     approved_at: new Date().toISOString(),
+    cancelled_at: "",
     status: "อนุมัติรอผล",
   });
 }
@@ -1047,12 +1048,21 @@ function dimeWorkflow(item) {
 function renderDimeWorkflow(item) {
   const wf = dimeWorkflow(item);
   if (!wf) return "";
-  const actions = wf.code === "pending" || wf.code === "review"
-    ? `<div class="jn-actions">
-        <button class="jn-approve" data-id="${escapeHtml(item.id)}" type="button">อนุมัติรอผล</button>
-        <button class="jn-cancel" data-id="${escapeHtml(item.id)}" type="button">ยกเลิก</button>
-      </div>`
-    : "";
+  let actions = "";
+  if (wf.code === "pending" || wf.code === "review") {
+    actions = `<div class="jn-actions">
+      <button class="jn-approve" data-id="${escapeHtml(item.id)}" type="button">อนุมัติรอผล</button>
+      <button class="jn-cancel" data-id="${escapeHtml(item.id)}" type="button">ยกเลิก</button>
+    </div>`;
+  } else if (wf.code === "approved_waiting") {
+    actions = `<div class="jn-actions">
+      <button class="jn-cancel" data-id="${escapeHtml(item.id)}" type="button">ยกเลิกติดตาม</button>
+    </div>`;
+  } else if (wf.code === "cancelled") {
+    actions = `<div class="jn-actions">
+      <button class="jn-approve" data-id="${escapeHtml(item.id)}" type="button">กลับมาติดตาม</button>
+    </div>`;
+  }
   return `<div class="jn-workflow ${wf.tone}">
     <b>${wf.label}</b>
     <small>${wf.desc}</small>
