@@ -826,8 +826,16 @@ async function importJournalItemsFromFile(event) {
 function addJournalItem(item) {
   const items = journalItems();
   if (item.slip_key) {
-    const existing = items.find((x) => x.slip_key === item.slip_key);
+    const existingIndex = items.findIndex((x) => x.slip_key === item.slip_key);
+    const existing = items[existingIndex];
     if (existing) {
+      if (item.source === "dime-slip") {
+        const updated = { ...existing, ...item, id: existing.id, created_at: existing.created_at, updated_at: new Date().toISOString() };
+        items[existingIndex] = updated;
+        saveJournalItems(items);
+        renderJournal();
+        return { duplicate: true, updated: true, item: updated };
+      }
       renderJournal();
       return { duplicate: true, item: existing };
     }
@@ -952,17 +960,24 @@ function cleanTickerCandidate(ticker) {
     .replace(/[^A-Z.]/g, "");
 }
 
+function dimeTradeScope(flat) {
+  const text = String(flat || "");
+  const stop = text.search(/บัญชีชำระเงิน|พอร์ตโฟลิโอ|รายละเอียดการโอน|วัตถุประสงค์|หากยกเลิก/i);
+  return stop > 0 ? text.slice(0, stop) : text;
+}
+
 function fallbackTicker(flat, market) {
+  const scoped = dimeTradeScope(flat);
   const ignore = new Set(["USD", "THB", "VAT", "NYSE", "NASDAQ", "AMEX", "ARCA", "SET", "MAI", "DIME", "FAST", "SAVE", "MARKET"]);
   for (const t of knownTickers()) {
-    if (t.length >= 2 && new RegExp(`\\b${t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(flat)) return t;
+    if (t.length >= 2 && new RegExp(`\\b${t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(scoped)) return t;
   }
   if (market) {
-    const nearMarket = flat.match(new RegExp(`\\b([A-Z0-9]{1,8})\\s+${market}\\b`, "i"))?.[1];
+    const nearMarket = scoped.match(new RegExp(`\\b([A-Z0-9]{1,8})\\s+${market}\\b`, "i"))?.[1];
     const cleaned = cleanTickerCandidate(nearMarket);
     if (cleaned && !ignore.has(cleaned)) return cleaned;
   }
-  return [...flat.matchAll(/\b[A-Z][A-Z0-9]{1,7}\b/g)]
+  return [...scoped.matchAll(/\b[A-Z][A-Z0-9]{1,7}\b/g)]
     .map((m) => cleanTickerCandidate(m[0]))
     .find((x) => !ignore.has(x) && !/^\d+$/.test(x)) || "";
 }
@@ -980,10 +995,11 @@ function slipKeyFromText(text) {
 function parseDimeSlipText(rawText) {
   const text = normalizeSlipText(rawText);
   const flat = text.replace(/\s+/g, " ").trim();
-  const sideTicker = flat.match(/(?:ซื้อ|ซือ|Buy|ขาย|Sell)\s*([A-Z0-9]{1,8}(?:\.[A-Z0-9]{1,4})?)/i);
-  const sideMatch = flat.match(/ซื้อ|ซือ|Buy|ขาย|Sell/i);
+  const tradeScope = dimeTradeScope(flat);
+  const sideTicker = tradeScope.match(/(?:ซื้อ|ซือ|Buy|ขาย|Sell)\s*([A-Z0-9]{1,8}(?:\.[A-Z0-9]{1,4})?)/i);
+  const sideMatch = tradeScope.match(/ซื้อ|ซือ|Buy|ขาย|Sell/i) || flat.match(/ซื้อ|ซือ|Buy|ขาย|Sell/i);
   const market = flat.match(/\b(NYSE|NASDAQ|AMEX|ARCA|SET|MAI)\b/i)?.[1]?.toUpperCase() || "";
-  const marketTicker = flat.match(/\b([A-Z]{1,8}(?:\.[A-Z]{1,4})?)\s+(?:NYSE|NASDAQ|AMEX|ARCA|SET|MAI)\b/i);
+  const marketTicker = tradeScope.match(/\b([A-Z]{1,8}(?:\.[A-Z]{1,4})?)\s+(?:NYSE|NASDAQ|AMEX|ARCA|SET|MAI)\b/i);
   const status = flat.match(/(รอดำเนินการ|สำเร็จ|ยกเลิก|ไม่สำเร็จ|pending|completed|cancelled|failed)/i)?.[1] || "";
   const orderedAt = flat.match(/(\d{1,2}\s*(?:ม\.?ค\.?|ก\.?พ\.?|มี\.?ค\.?|เม\.?ย\.?|พ\.?ค\.?|มิ\.?ย\.?|ก\.?ค\.?|ส\.?ค\.?|ก\.?ย\.?|ต\.?ค\.?|พ\.?ย\.?|ธ\.?ค\.?)\s*\d{2,4}\s*-\s*\d{1,2}:\d{2}\s*น?\.?)/i)?.[1] || "";
   const fxRate = parseMoney(flat.match(/1\s*USD\s*=\s*([\d,.]+)\s*THB/i)?.[1]);
@@ -1117,7 +1133,7 @@ async function readDimeSlip() {
     const saved = addJournalItem(parsed);
     clearSlipFileOnly();
     revealJournalItem(saved?.item?.id);
-    const prefix = saved?.duplicate ? "สลิปนี้เคยบันทึกแล้ว แสดงรายการเดิมให้แล้ว" : "บันทึกแล้วและล้างไฟล์สลิปออกจากหน้าเว็บแล้ว";
+    const prefix = saved?.updated ? "สลิปนี้เคยบันทึกแล้ว อัปเดตรายการเดิมให้แล้ว" : saved?.duplicate ? "สลิปนี้เคยบันทึกแล้ว แสดงรายการเดิมให้แล้ว" : "บันทึกแล้วและล้างไฟล์สลิปออกจากหน้าเว็บแล้ว";
     setSlipStatus(`${prefix}: ${parsed.side === "SELL" ? "ขาย" : "ซื้อ"} ${parsed.ticker} ${parsed.amount_thb ? "฿" + fmt(parsed.amount_thb) : ""}${parsed.amount_usd ? " / $" + fmt(parsed.amount_usd) : ""}`, "good");
   } catch (e) {
     const fallback = reviewSlipItem({ side: "BUY", raw_text: e.message || "OCR failed" }, file.name);
