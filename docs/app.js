@@ -1052,7 +1052,7 @@ function renderDimeWorkflow(item) {
   if (wf.code === "pending" || wf.code === "review") {
     actions = `<div class="jn-actions">
       <button class="jn-approve" data-id="${escapeHtml(item.id)}" type="button">อนุมัติรอผล</button>
-      <button class="jn-cancel" data-id="${escapeHtml(item.id)}" type="button">ยกเลิก</button>
+      <button class="jn-cancel" data-id="${escapeHtml(item.id)}" type="button">ไม่ติดตาม</button>
     </div>`;
   } else if (wf.code === "approved_waiting") {
     actions = `<div class="jn-actions">
@@ -1142,9 +1142,11 @@ function renderJournal() {
     const projection = renderJournalProjection(x, closedPl);
     const workflow = renderDimeWorkflow(x);
     const details = renderJournalDetails(x, amount, usd);
-    const right = closedPl == null
-      ? `<div class="jn-open">${escapeHtml(status)}</div>`
-      : `<div class="jn-pl ${closedPl >= 0 ? "up" : "down"}">${closedPl >= 0 ? "+" : ""}฿${fmt(closedPl)}</div>`;
+    const right = x.source === "dime-slip"
+      ? `<div class="jn-right-spacer"></div>`
+      : closedPl == null
+        ? `<div class="jn-open">${escapeHtml(status)}</div>`
+        : `<div class="jn-pl ${closedPl >= 0 ? "up" : "down"}">${closedPl >= 0 ? "+" : ""}฿${fmt(closedPl)}</div>`;
     const tag = x.source === "dime-slip"
       ? `<span class="jn-tag">${x.needs_review ? "รอตรวจสอบ · " : ""}Dime slip${x.ticker_confidence ? " · " + fmt0(x.ticker_confidence) + "%" : ""}${x.order_no ? " · " + escapeHtml(x.order_no) : ""}</span>`
       : "";
