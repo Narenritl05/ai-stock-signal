@@ -738,9 +738,11 @@ function repairDimeJournalItems(items) {
   const repaired = items.map((item) => {
     if (item?.source !== "dime-slip" || !item.raw_text) return item;
     const parsed = parseDimeSlipText(item.raw_text);
-    const parsedTicker = cleanTickerCandidate(parsed.ticker);
+    const inferredTicker = inferDimeTickerFromRawText(item.raw_text);
+    const parsedTicker = cleanTickerCandidate(parsed.ticker || inferredTicker);
     const oldTicker = cleanTickerCandidate(item.ticker);
-    const canTrustTicker = parsedTicker && parsed.ticker_source !== "weak-fallback";
+    const isPlaceholderTicker = oldTicker === "DIME" || oldTicker === "DIMESLIP" || /DIME\s*SLIP/i.test(item.ticker || "");
+    const canTrustTicker = parsedTicker && (parsed.ticker_source !== "weak-fallback" || isPlaceholderTicker || parsedTicker === inferredTicker);
     const shouldUpdateTicker = canTrustTicker && parsedTicker !== oldTicker;
     const shouldUpgradeSchema = parsed.slip_schema && parsed.slip_schema !== item.slip_schema;
     const shouldFillCompleted = parsed.slip_schema === "completed-trade" && (
@@ -758,8 +760,8 @@ function repairDimeJournalItems(items) {
       slip_approval_status: parsed.slip_schema === "completed-trade" ? "completed" : (item.slip_approval_status || parsed.slip_approval_status),
       ticker: shouldUpdateTicker ? parsedTicker : item.ticker,
       stock_full_name: parsed.stock_full_name || item.stock_full_name,
-      ticker_confidence: parsed.ticker_confidence || item.ticker_confidence,
-      ticker_source: parsed.ticker_source || item.ticker_source,
+      ticker_confidence: parsed.ticker_confidence || (shouldUpdateTicker ? 72 : item.ticker_confidence),
+      ticker_source: parsed.ticker_source || (shouldUpdateTicker ? "raw-infer" : item.ticker_source),
       market: parsed.market || item.market,
       status: parsed.status || item.status,
       ordered_at: parsed.ordered_at || item.ordered_at,
@@ -1226,6 +1228,20 @@ function cleanTickerCandidate(ticker) {
     .replace(/[^A-Z.]/g, "");
 }
 
+function inferDimeTickerFromRawText(text) {
+  const raw = String(text || "").toUpperCase();
+  const normalized = raw
+    .replace(/\b7SM\b/g, "TSM")
+    .replace(/\bT5M\b/g, "TSM")
+    .replace(/\bTSN\b/g, "TSM")
+    .replace(/\bT\s*S\s*M\b/g, "TSM");
+  const tickers = knownTickers();
+  for (const t of tickers) {
+    if (t.length >= 2 && new RegExp(`\\b${t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(normalized)) return t;
+  }
+  return "";
+}
+
 const DIME_MARKET_RE = "\\b(?:NYSE|NASDAQ|AMEX|ARCA|SET|MAI)\\b";
 const DIME_STRONG_STOP_RE = /บัญชี|ชำระเงิน|รับเงิน|พอร์ต|รายละเอียดการโอน|วัตถุประสงค์|หากยกเลิก|ธนาคาร|เลขที่|Dime!\s*Save|Dime!\s*Fast/i;
 const DIME_WEAK_TICKER_IGNORE = new Set([
@@ -1471,7 +1487,8 @@ function parseDimeSlipText(rawText) {
   const orderNoMatch = flat.match(/\b(STK[A-Z0-9]{8,})(?:\s*([0-9]{6,}))?/i);
   const orderNo = orderNoMatch ? (orderNoMatch[1] + (orderNoMatch[2] || "")).toUpperCase() : "";
   const completed = extractDimeCompletedFields(text, flat);
-  const ticker = cleanTickerCandidate(tickerMatch.ticker);
+  const inferredTicker = inferDimeTickerFromRawText(text);
+  const ticker = cleanTickerCandidate(tickerMatch.ticker || inferredTicker);
   const stockFullName = extractDimeAssetName(text, ticker);
   const sideWord = sideMatch?.[0]?.toLowerCase() || "";
   const side = /ขาย|sell/i.test(sideWord) ? "SELL" : "BUY";
@@ -1481,7 +1498,7 @@ function parseDimeSlipText(rawText) {
   const amountUsd = completed.gross_amount_usd ||
     numberAfter(flat, /จำนวนเงิน\s*\(?USD\)?|ยอดรวม\s*\(?USD\)?/i, "USD") ||
     usdValues.at(-1) || null;
-  const confidence = Math.min(99, Math.max(0, (tickerMatch.confidence || 0) + (completed.confidence_boost || 0)));
+  const confidence = Math.min(99, Math.max(0, (tickerMatch.confidence || (inferredTicker ? 72 : 0)) + (completed.confidence_boost || 0)));
   const primaryId = completed.reference_number || orderNo;
 
   return {
@@ -1493,7 +1510,7 @@ function parseDimeSlipText(rawText) {
     side,
     ticker,
     stock_full_name: stockFullName,
-    ticker_source: tickerMatch.source,
+    ticker_source: tickerMatch.source || (inferredTicker ? "raw-infer" : ""),
     ticker_confidence: confidence,
     ticker_candidates: tickerMatch.candidates?.slice(0, 5),
     order_scope: tickerMatch.order_scope,
@@ -1553,13 +1570,16 @@ function fillJournalFormFromSlip(parsed) {
 }
 
 function reviewSlipItem(parsed, fileName = "") {
-  const fallbackTicker = parsed.ticker || document.getElementById("jn-name")?.value.trim().toUpperCase() || "DIME SLIP";
+  const inferredTicker = inferDimeTickerFromRawText(parsed.raw_text);
+  const fallbackTicker = parsed.ticker || inferredTicker || document.getElementById("jn-name")?.value.trim().toUpperCase() || "รอตรวจสอบสลิป";
   return {
     ...parsed,
     source: "dime-slip",
     needs_review: true,
     status: parsed.status || "รอตรวจสอบ",
     ticker: fallbackTicker,
+    ticker_source: parsed.ticker_source || (inferredTicker ? "raw-infer" : "needs-review"),
+    ticker_confidence: parsed.ticker_confidence || (inferredTicker ? 72 : 0),
     slip_key: parsed.slip_key || DIME_DUP_PREFIX + "review:" + Date.now().toString(36),
     note: [
       "OCR อ่านข้อมูลไม่ครบ ต้องตรวจสอบเอง",
