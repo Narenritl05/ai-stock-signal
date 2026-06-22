@@ -2022,6 +2022,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "HMPRO.BK",
+      "name": "HMPRO",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-06-22",
+      "entry": 6.2,
+      "stop": 5.95,
+      "target": 6.82,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-22",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "PSL.BK",
+      "name": "PSL",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-06-22",
+      "entry": 7.2,
+      "stop": 6.9,
+      "target": 7.92,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-22",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
