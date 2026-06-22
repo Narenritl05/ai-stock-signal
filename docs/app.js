@@ -716,7 +716,10 @@ function parseMoney(s) {
 function journalItems() {
   try {
     const data = JSON.parse(localStorage.getItem(JOURNAL_KEY) || "[]");
-    return Array.isArray(data) ? data : [];
+    if (!Array.isArray(data)) return [];
+    const repaired = repairDimeJournalItems(data);
+    if (repaired.changed) saveJournalItems(repaired.items);
+    return repaired.items;
   } catch (e) {
     return [];
   }
@@ -724,6 +727,33 @@ function journalItems() {
 
 function saveJournalItems(items) {
   localStorage.setItem(JOURNAL_KEY, JSON.stringify(items));
+}
+
+function repairDimeJournalItems(items) {
+  let changed = false;
+  const repaired = items.map((item) => {
+    if (item?.source !== "dime-slip" || !item.raw_text) return item;
+    const parsed = parseDimeSlipText(item.raw_text);
+    const parsedTicker = cleanTickerCandidate(parsed.ticker);
+    const oldTicker = cleanTickerCandidate(item.ticker);
+    if (!parsedTicker || parsedTicker === oldTicker || parsed.ticker_source === "weak-fallback") return item;
+    changed = true;
+    return {
+      ...item,
+      ticker: parsedTicker,
+      market: parsed.market || item.market,
+      status: parsed.status || item.status,
+      ordered_at: parsed.ordered_at || item.ordered_at,
+      amount_thb: parsed.amount_thb || item.amount_thb,
+      amount_usd: parsed.amount_usd || item.amount_usd,
+      fx_rate: parsed.fx_rate || item.fx_rate,
+      order_no: parsed.order_no || item.order_no,
+      slip_key: parsed.slip_key || item.slip_key,
+      corrected_from_ticker: item.corrected_from_ticker || item.ticker,
+      updated_at: new Date().toISOString(),
+    };
+  });
+  return { changed, items: repaired };
 }
 
 function setJournalIoStatus(text, tone = "") {
@@ -1045,26 +1075,89 @@ function cleanTickerCandidate(ticker) {
     .replace(/[^A-Z.]/g, "");
 }
 
+const DIME_MARKET_RE = "\\b(?:NYSE|NASDAQ|AMEX|ARCA|SET|MAI)\\b";
+const DIME_STRONG_STOP_RE = /บัญชี|ชำระเงิน|รับเงิน|พอร์ต|รายละเอียดการโอน|วัตถุประสงค์|หากยกเลิก|ธนาคาร|เลขที่|Dime!\s*Save|Dime!\s*Fast|KKP/i;
+const DIME_WEAK_TICKER_IGNORE = new Set([
+  "USD", "THB", "VAT", "NYSE", "NASDAQ", "AMEX", "ARCA", "SET", "MAI",
+  "DIME", "FAST", "SAVE", "MARKET", "STK", "KKP", "KKPS", "KKS",
+]);
+const DIME_STRONG_TICKER_IGNORE = new Set([
+  "USD", "THB", "VAT", "NYSE", "NASDAQ", "AMEX", "ARCA", "SET", "MAI",
+  "DIME", "FAST", "SAVE", "MARKET", "STK",
+]);
+
+function cleanSlipLines(text) {
+  return String(text || "")
+    .split(/\n+/)
+    .map((line) => line.replace(/\s+/g, " ").trim())
+    .filter(Boolean);
+}
+
 function dimeTradeScope(flat) {
   const text = String(flat || "");
-  const stop = text.search(/บัญชีชำระเงิน|พอร์ตโฟลิโอ|รายละเอียดการโอน|วัตถุประสงค์|หากยกเลิก/i);
+  const stop = text.search(DIME_STRONG_STOP_RE);
   return stop > 0 ? text.slice(0, stop) : text;
 }
 
-function fallbackTicker(flat, market) {
-  const scoped = dimeTradeScope(flat);
-  const ignore = new Set(["USD", "THB", "VAT", "NYSE", "NASDAQ", "AMEX", "ARCA", "SET", "MAI", "DIME", "FAST", "SAVE", "MARKET"]);
+function dimeOrderScope(text, flat) {
+  const lines = cleanSlipLines(text);
+  const sideIndex = lines.findIndex((line) => /ซื้อ|ซือ|Buy|ขาย|Sell/i.test(line));
+  if (sideIndex >= 0) {
+    const scoped = [];
+    for (const line of lines.slice(sideIndex, sideIndex + 8)) {
+      if (scoped.length && DIME_STRONG_STOP_RE.test(line)) break;
+      scoped.push(line);
+      if (/มูลค่าหุ้น|ค่าคอมมิชชั่น|คูปอง|อัตราแลกเปลี่ยน|จำนวนเงิน/i.test(line)) break;
+    }
+    return scoped.join(" ");
+  }
+  return dimeTradeScope(flat);
+}
+
+function isWeakDimeTicker(candidate) {
+  const cleaned = cleanTickerCandidate(candidate);
+  return !cleaned || DIME_WEAK_TICKER_IGNORE.has(cleaned) || /^\d+$/.test(cleaned) || /^STK/i.test(cleaned);
+}
+
+function isStrongDimeTicker(candidate) {
+  const cleaned = cleanTickerCandidate(candidate);
+  return !!cleaned && !DIME_STRONG_TICKER_IGNORE.has(cleaned) && !/^\d+$/.test(cleaned) && !/^STK/i.test(cleaned);
+}
+
+function fallbackTicker(scope, market = "") {
+  const scoped = dimeTradeScope(scope);
+  const nearMarket = market
+    ? scoped.match(new RegExp(`\\b([A-Z0-9]{1,8})\\s+${market}\\b`, "i"))?.[1]
+    : "";
+  const marketCleaned = cleanTickerCandidate(nearMarket);
+  if (marketCleaned && !isWeakDimeTicker(marketCleaned)) return { ticker: marketCleaned, source: "market-fallback" };
+
   for (const t of knownTickers()) {
-    if (t.length >= 2 && new RegExp(`\\b${t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(scoped)) return t;
+    if (t.length >= 2 && !isWeakDimeTicker(t) && new RegExp(`\\b${t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(scoped)) {
+      return { ticker: t, source: "weak-fallback" };
+    }
   }
-  if (market) {
-    const nearMarket = scoped.match(new RegExp(`\\b([A-Z0-9]{1,8})\\s+${market}\\b`, "i"))?.[1];
-    const cleaned = cleanTickerCandidate(nearMarket);
-    if (cleaned && !ignore.has(cleaned)) return cleaned;
-  }
-  return [...scoped.matchAll(/\b[A-Z][A-Z0-9]{1,7}\b/g)]
+  const generic = [...scoped.matchAll(/\b[A-Z][A-Z0-9]{1,7}\b/g)]
     .map((m) => cleanTickerCandidate(m[0]))
-    .find((x) => !ignore.has(x) && !/^\d+$/.test(x)) || "";
+    .find((x) => !isWeakDimeTicker(x));
+  return { ticker: generic || "", source: generic ? "weak-fallback" : "" };
+}
+
+function dimeTickerFromText(text, flat, market) {
+  const orderScope = dimeOrderScope(text, flat);
+  const sideTicker = orderScope.match(/(?:ซื้อ|ซือ|Buy|ขาย|Sell)\s*[:\-]?\s*([A-Z0-9]{1,8}(?:\.[A-Z0-9]{1,4})?)/i);
+  const sideCleaned = cleanTickerCandidate(sideTicker?.[1]);
+  if (isStrongDimeTicker(sideCleaned)) return { ticker: sideCleaned, source: "side-line" };
+
+  const marketTicker = orderScope.match(new RegExp(`\\b([A-Z][A-Z0-9]{0,7}(?:\\.[A-Z0-9]{1,4})?)\\s+${DIME_MARKET_RE}`, "i"));
+  const marketCleaned = cleanTickerCandidate(marketTicker?.[1]);
+  if (isStrongDimeTicker(marketCleaned)) return { ticker: marketCleaned, source: "market-line" };
+
+  const reversedMarketTicker = orderScope.match(new RegExp(`${DIME_MARKET_RE}\\s+([A-Z][A-Z0-9]{0,7}(?:\\.[A-Z0-9]{1,4})?)\\b`, "i"));
+  const reversedCleaned = cleanTickerCandidate(reversedMarketTicker?.[1]);
+  if (isStrongDimeTicker(reversedCleaned)) return { ticker: reversedCleaned, source: "market-line" };
+
+  return fallbackTicker(orderScope, market);
 }
 
 function moneyValues(text, currency) {
@@ -1080,11 +1173,10 @@ function slipKeyFromText(text) {
 function parseDimeSlipText(rawText) {
   const text = normalizeSlipText(rawText);
   const flat = text.replace(/\s+/g, " ").trim();
-  const tradeScope = dimeTradeScope(flat);
-  const sideTicker = tradeScope.match(/(?:ซื้อ|ซือ|Buy|ขาย|Sell)\s*([A-Z0-9]{1,8}(?:\.[A-Z0-9]{1,4})?)/i);
-  const sideMatch = tradeScope.match(/ซื้อ|ซือ|Buy|ขาย|Sell/i) || flat.match(/ซื้อ|ซือ|Buy|ขาย|Sell/i);
+  const orderScope = dimeOrderScope(text, flat);
+  const tickerMatch = dimeTickerFromText(text, flat, flat.match(new RegExp(DIME_MARKET_RE, "i"))?.[0]?.toUpperCase() || "");
+  const sideMatch = orderScope.match(/ซื้อ|ซือ|Buy|ขาย|Sell/i) || flat.match(/ซื้อ|ซือ|Buy|ขาย|Sell/i);
   const market = flat.match(/\b(NYSE|NASDAQ|AMEX|ARCA|SET|MAI)\b/i)?.[1]?.toUpperCase() || "";
-  const marketTicker = tradeScope.match(/\b([A-Z]{1,8}(?:\.[A-Z]{1,4})?)\s+(?:NYSE|NASDAQ|AMEX|ARCA|SET|MAI)\b/i);
   const status = flat.match(/(รอดำเนินการ|สำเร็จ|ยกเลิก|ไม่สำเร็จ|pending|completed|cancelled|failed)/i)?.[1] || "";
   const orderedAt = flat.match(/(\d{1,2}\s*(?:ม\.?ค\.?|ก\.?พ\.?|มี\.?ค\.?|เม\.?ย\.?|พ\.?ค\.?|มิ\.?ย\.?|ก\.?ค\.?|ส\.?ค\.?|ก\.?ย\.?|ต\.?ค\.?|พ\.?ย\.?|ธ\.?ค\.?)\s*\d{2,4}\s*-\s*\d{1,2}:\d{2}\s*น?\.?)/i)?.[1] || "";
   const fxRate = parseMoney(flat.match(/1\s*USD\s*=\s*([\d,.]+)\s*THB/i)?.[1]);
@@ -1092,7 +1184,7 @@ function parseDimeSlipText(rawText) {
   const usdValues = moneyValues(flat, "USD").filter((v) => v !== 1);
   const orderNoMatch = flat.match(/\b(STK[A-Z0-9]{8,})(?:\s*([0-9]{6,}))?/i);
   const orderNo = orderNoMatch ? (orderNoMatch[1] + (orderNoMatch[2] || "")).toUpperCase() : "";
-  const ticker = cleanTickerCandidate(sideTicker?.[1] || marketTicker?.[1] || fallbackTicker(flat, market));
+  const ticker = cleanTickerCandidate(tickerMatch.ticker);
   const sideWord = sideMatch?.[0]?.toLowerCase() || "";
   const side = /ขาย|sell/i.test(sideWord) ? "SELL" : "BUY";
   const amountThb = numberAfter(flat, /มูลค่าหุ้น|มูลค่า|ยอดเงิน|จำนวนเงิน/i, "THB") ||
@@ -1103,6 +1195,7 @@ function parseDimeSlipText(rawText) {
     slip_key: orderNo ? DIME_DUP_PREFIX + orderNo : slipKeyFromText(flat),
     side,
     ticker,
+    ticker_source: tickerMatch.source,
     market,
     status,
     ordered_at: orderedAt,
