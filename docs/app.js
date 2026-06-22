@@ -713,6 +713,10 @@ function parseMoney(s) {
   return Number.isFinite(v) ? v : null;
 }
 
+function round2(n) {
+  return Math.round((Number(n) + Number.EPSILON) * 100) / 100;
+}
+
 function journalItems() {
   try {
     const data = JSON.parse(localStorage.getItem(JOURNAL_KEY) || "[]");
@@ -736,20 +740,44 @@ function repairDimeJournalItems(items) {
     const parsed = parseDimeSlipText(item.raw_text);
     const parsedTicker = cleanTickerCandidate(parsed.ticker);
     const oldTicker = cleanTickerCandidate(item.ticker);
-    if (!parsedTicker || parsedTicker === oldTicker || parsed.ticker_source === "weak-fallback") return item;
+    const canTrustTicker = parsedTicker && parsed.ticker_source !== "weak-fallback";
+    const shouldUpdateTicker = canTrustTicker && parsedTicker !== oldTicker;
+    const shouldUpgradeSchema = parsed.slip_schema && parsed.slip_schema !== item.slip_schema;
+    const shouldFillCompleted = parsed.slip_schema === "completed-trade" && (
+      parsed.transaction_id !== item.transaction_id ||
+      parsed.executed_price_usd !== item.executed_price_usd ||
+      parsed.executed_shares !== item.executed_shares ||
+      parsed.total_amount_thb !== item.total_amount_thb
+    );
+    if (!shouldUpdateTicker && !shouldUpgradeSchema && !shouldFillCompleted) return item;
     changed = true;
     return {
       ...item,
-      ticker: parsedTicker,
+      transaction_type: parsed.transaction_type || item.transaction_type,
+      slip_schema: parsed.slip_schema || item.slip_schema,
+      ticker: shouldUpdateTicker ? parsedTicker : item.ticker,
+      stock_full_name: parsed.stock_full_name || item.stock_full_name,
+      ticker_confidence: parsed.ticker_confidence || item.ticker_confidence,
+      ticker_source: parsed.ticker_source || item.ticker_source,
       market: parsed.market || item.market,
       status: parsed.status || item.status,
       ordered_at: parsed.ordered_at || item.ordered_at,
       amount_thb: parsed.amount_thb || item.amount_thb,
       amount_usd: parsed.amount_usd || item.amount_usd,
       fx_rate: parsed.fx_rate || item.fx_rate,
+      entry: parsed.entry || item.entry,
+      shares: parsed.shares || item.shares,
+      transaction_id: parsed.transaction_id || item.transaction_id,
+      reference_valid: parsed.reference_valid ?? item.reference_valid,
+      executed_price_usd: parsed.executed_price_usd || item.executed_price_usd,
+      executed_shares: parsed.executed_shares || item.executed_shares,
+      gross_amount_usd: parsed.gross_amount_usd || item.gross_amount_usd,
+      fees_usd: parsed.fees_usd ?? item.fees_usd,
+      total_amount_thb: parsed.total_amount_thb || item.total_amount_thb,
+      validation_checks: parsed.validation_checks || item.validation_checks,
       order_no: parsed.order_no || item.order_no,
       slip_key: parsed.slip_key || item.slip_key,
-      corrected_from_ticker: item.corrected_from_ticker || item.ticker,
+      corrected_from_ticker: shouldUpdateTicker ? (item.corrected_from_ticker || item.ticker) : item.corrected_from_ticker,
       updated_at: new Date().toISOString(),
     };
   });
@@ -1095,10 +1123,14 @@ function cleanSlipLines(text) {
 
 function dimeOrderLines(text) {
   const lines = cleanSlipLines(text);
-  const sideIndex = lines.findIndex((line) => /ซื้อ|ซือ|Buy|ขาย|Sell/i.test(line));
+  const sideIndex = lines.findIndex((line) => /ซื้อ|ซือ|Buy|ขาย|Sell/i.test(line) && !/ประเภทรายการ|transaction\s*type/i.test(line));
+  const assetIndex = lines.findIndex((line) => /(?:^|\s)(?:หุ้น|stock|symbol)\s*[:\-]?\s*[A-Z0-9]{1,8}/i.test(line));
+  const marketIndex = lines.findIndex((line) => new RegExp(DIME_MARKET_RE, "i").test(line));
   const start = sideIndex >= 0
     ? sideIndex
-    : Math.max(0, lines.findIndex((line) => new RegExp(DIME_MARKET_RE, "i").test(line)) - 1);
+    : assetIndex >= 0
+      ? assetIndex
+      : Math.max(0, marketIndex - 1);
   if (start < 0) return lines.slice(0, 12);
 
   const scoped = [];
@@ -1150,7 +1182,7 @@ function fallbackTicker(scope, market = "") {
 function addDimeTickerCandidate(candidates, ticker, source, score, detail = "") {
   const cleaned = cleanTickerCandidate(ticker);
   if (!cleaned) return;
-  const strong = source === "side-line" || source === "next-line" || source === "market-line";
+  const strong = source === "side-line" || source === "next-line" || source === "market-line" || source === "asset-label";
   if (strong ? !isStrongDimeTicker(cleaned) : isWeakDimeTicker(cleaned)) return;
   const known = knownTickers().includes(cleaned);
   candidates.push({
@@ -1166,6 +1198,9 @@ function dimeTickerFromText(text, flat, market) {
   const orderScope = lines.join(" ");
   const candidates = [];
   lines.forEach((line, idx) => {
+    const assetLabelTicker = line.match(/(?:^|\s)(?:หุ้น|stock|symbol)\s*[:\-]?\s*([A-Z0-9]{1,8}(?:\.[A-Z0-9]{1,4})?)/i);
+    addDimeTickerCandidate(candidates, assetLabelTicker?.[1], "asset-label", 118, line);
+
     const sideTicker = line.match(/(?:ซื้อ|ซือ|Buy|ขาย|Sell)\s*[:\-]?\s*([A-Z0-9]{1,8}(?:\.[A-Z0-9]{1,4})?)/i);
     addDimeTickerCandidate(candidates, sideTicker?.[1], "side-line", 120, line);
 
@@ -1207,6 +1242,92 @@ function moneyValues(text, currency) {
   return [...text.matchAll(re)].map((m) => parseMoney(m[1])).filter((v) => v != null);
 }
 
+function numberNearLabel(text, label, tailPattern = "") {
+  const idx = text.search(label);
+  if (idx < 0) return null;
+  const chunk = text.slice(idx, idx + 220);
+  const pattern = tailPattern
+    ? new RegExp(`(-?\\s*\\d[\\d,]*(?:[\\s.]\\d{1,8})?)\\s*${tailPattern}`, "i")
+    : /(-?\s*\d[\d,]*(?:[\s.]\d{1,8})?)/i;
+  const match = chunk.match(pattern);
+  return match ? parseMoney(match[1]) : null;
+}
+
+function extractDimeReference(flat) {
+  const refRe = /^20\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])\d{17}$/;
+  const refs = [...flat.matchAll(/\b(20\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])\d{17})\b/g)].map((m) => m[1]);
+  if (refs[0]) return { value: refs[0], valid: true };
+  const loose = flat.match(/(?:เลขที่อ้างอิง|reference)[^\d]*(\d[\d\s-]{20,35})/i)?.[1];
+  const cleaned = loose ? loose.replace(/\D/g, "") : "";
+  return { value: cleaned || "", valid: refRe.test(cleaned) };
+}
+
+function extractDimeDateTime(flat) {
+  return flat.match(/(\d{1,2}\s*(?:ม\.?ค\.?|ก\.?พ\.?|มี\.?ค\.?|เม\.?ย\.?|พ\.?ค\.?|มิ\.?ย\.?|ก\.?ค\.?|ส\.?ค\.?|ก\.?ย\.?|ต\.?ค\.?|พ\.?ย\.?|ธ\.?ค\.?)\s*\d{2,4}\s*(?:-|,)?\s*\d{1,2}:\d{2}\s*น?\.?)/i)?.[1] || "";
+}
+
+function extractDimeAssetName(text, ticker) {
+  const cleanTicker = cleanTickerCandidate(ticker);
+  if (!cleanTicker) return "";
+  const lines = cleanSlipLines(text);
+  const idx = lines.findIndex((line) => new RegExp(`\\b${cleanTicker}\\b`, "i").test(line));
+  const sameLine = lines[idx] || "";
+  const afterTicker = sameLine.split(new RegExp(`\\b${cleanTicker}\\b`, "i"))[1]?.trim();
+  if (afterTicker && /[A-Za-z]{4,}/.test(afterTicker) && !new RegExp(DIME_MARKET_RE, "i").test(afterTicker)) return afterTicker.slice(0, 140);
+  const next = lines[idx + 1] || "";
+  if (/[A-Za-z]{4,}/.test(next) && !/USD|THB|ราคา|จำนวน|ยอด|บัญชี/i.test(next)) return next.slice(0, 140);
+  return "";
+}
+
+function extractDimeCompletedFields(text, flat) {
+  const reference = extractDimeReference(flat);
+  const avgPrice = numberNearLabel(flat, /ราคาเฉลี่ย|avg(?:erage)?\s*price/i, "USD");
+  const quantity = numberNearLabel(flat, /จำนวนหุ้นที่สำเร็จ|จำนวนหุ้น|shares|quantity/i, "(?:หุ้น|share|shares)?");
+  const subtotalUsd = numberNearLabel(flat, /ยอดรวม\s*\(?USD\)?|gross|subtotal/i, "USD");
+  const totalThb = numberNearLabel(flat, /รวมทั้งหมด|total|ยอดเงินสุทธิ|ยอดรวม\s*\(?THB\)?/i, "THB");
+  const fxRate = numberNearLabel(flat, /อัตราแลกเปลี่ยน|exchange\s*rate/i, "(?:THB\\s*\\/\\s*USD|THB|บาท)") ||
+    parseMoney(flat.match(/([0-9][\d,.]{1,12})\s*THB\s*\/\s*USD/i)?.[1]);
+  const feeUsdValues = [
+    numberNearLabel(flat, /commission|ค่าคอมมิชชั่น/i, "USD"),
+    numberNearLabel(flat, /trading\s*fee|ค่าธรรมเนียม/i, "USD"),
+    numberNearLabel(flat, /VAT|ภาษี/i, "USD"),
+  ].filter((v) => v != null);
+  const feesUsd = feeUsdValues.length ? feeUsdValues.reduce((sum, v) => sum + v, 0) : null;
+
+  const checks = [];
+  if (avgPrice && quantity && subtotalUsd) {
+    const calc = round2(avgPrice * quantity);
+    checks.push({ name: "asset_value_usd", ok: Math.abs(calc - subtotalUsd) <= 0.02, expected: calc, actual: subtotalUsd });
+  }
+  if (subtotalUsd && fxRate && totalThb) {
+    const calc = round2((subtotalUsd + (feesUsd || 0)) * fxRate);
+    checks.push({ name: "settlement_thb", ok: Math.abs(calc - totalThb) <= 0.08, expected: calc, actual: totalThb });
+  }
+
+  const isCompleted = !!(reference.value || avgPrice || quantity || subtotalUsd || totalThb);
+  const confidenceBoost = (reference.valid ? 16 : 0) +
+    (avgPrice ? 8 : 0) +
+    (quantity ? 8 : 0) +
+    (subtotalUsd ? 6 : 0) +
+    (totalThb ? 8 : 0) +
+    checks.filter((c) => c.ok).length * 10 -
+    checks.filter((c) => !c.ok).length * 18;
+
+  return {
+    is_completed: isCompleted,
+    reference_number: reference.value,
+    reference_valid: reference.valid,
+    executed_price_usd: avgPrice,
+    executed_shares: quantity,
+    gross_amount_usd: subtotalUsd,
+    total_amount_thb: totalThb,
+    fees_usd: feesUsd,
+    exchange_rate: fxRate,
+    validation_checks: checks,
+    confidence_boost: confidenceBoost,
+  };
+}
+
 function slipKeyFromText(text) {
   const raw = encodeURIComponent(text.slice(0, 500));
   return DIME_DUP_PREFIX + btoa(raw).replace(/=+$/g, "").slice(0, 40);
@@ -1220,36 +1341,57 @@ function parseDimeSlipText(rawText) {
   const sideMatch = orderScope.match(/ซื้อ|ซือ|Buy|ขาย|Sell/i) || flat.match(/ซื้อ|ซือ|Buy|ขาย|Sell/i);
   const market = flat.match(/\b(NYSE|NASDAQ|AMEX|ARCA|SET|MAI)\b/i)?.[1]?.toUpperCase() || "";
   const status = flat.match(/(รอดำเนินการ|สำเร็จ|ยกเลิก|ไม่สำเร็จ|pending|completed|cancelled|failed)/i)?.[1] || "";
-  const orderedAt = flat.match(/(\d{1,2}\s*(?:ม\.?ค\.?|ก\.?พ\.?|มี\.?ค\.?|เม\.?ย\.?|พ\.?ค\.?|มิ\.?ย\.?|ก\.?ค\.?|ส\.?ค\.?|ก\.?ย\.?|ต\.?ค\.?|พ\.?ย\.?|ธ\.?ค\.?)\s*\d{2,4}\s*-\s*\d{1,2}:\d{2}\s*น?\.?)/i)?.[1] || "";
+  const orderedAt = extractDimeDateTime(flat);
   const fxRate = parseMoney(flat.match(/1\s*USD\s*=\s*([\d,.]+)\s*THB/i)?.[1]);
   const thbValues = moneyValues(flat, "THB");
   const usdValues = moneyValues(flat, "USD").filter((v) => v !== 1);
   const orderNoMatch = flat.match(/\b(STK[A-Z0-9]{8,})(?:\s*([0-9]{6,}))?/i);
   const orderNo = orderNoMatch ? (orderNoMatch[1] + (orderNoMatch[2] || "")).toUpperCase() : "";
+  const completed = extractDimeCompletedFields(text, flat);
   const ticker = cleanTickerCandidate(tickerMatch.ticker);
+  const stockFullName = extractDimeAssetName(text, ticker);
   const sideWord = sideMatch?.[0]?.toLowerCase() || "";
   const side = /ขาย|sell/i.test(sideWord) ? "SELL" : "BUY";
-  const amountThb = numberAfter(flat, /มูลค่าหุ้น|มูลค่า|ยอดเงิน|จำนวนเงิน/i, "THB") ||
+  const amountThb = completed.total_amount_thb ||
+    numberAfter(flat, /มูลค่าหุ้น|มูลค่า|ยอดเงิน|จำนวนเงิน/i, "THB") ||
     thbValues.filter((v) => v > 0).sort((a, b) => b - a)[0] || null;
+  const amountUsd = completed.gross_amount_usd ||
+    numberAfter(flat, /จำนวนเงิน\s*\(?USD\)?|ยอดรวม\s*\(?USD\)?/i, "USD") ||
+    usdValues.at(-1) || null;
+  const confidence = Math.min(99, Math.max(0, (tickerMatch.confidence || 0) + (completed.confidence_boost || 0)));
+  const primaryId = completed.reference_number || orderNo;
 
   return {
     source: "dime-slip",
-    slip_key: orderNo ? DIME_DUP_PREFIX + orderNo : slipKeyFromText(flat),
+    transaction_type: side === "SELL" ? "ขายหุ้น" : "ซื้อหุ้น",
+    slip_schema: completed.is_completed ? "completed-trade" : "order-request",
+    slip_key: primaryId ? DIME_DUP_PREFIX + primaryId : slipKeyFromText(flat),
     side,
     ticker,
+    stock_full_name: stockFullName,
     ticker_source: tickerMatch.source,
-    ticker_confidence: tickerMatch.confidence,
+    ticker_confidence: confidence,
     ticker_candidates: tickerMatch.candidates?.slice(0, 5),
     order_scope: tickerMatch.order_scope,
     market,
-    status,
+    status: completed.is_completed && !status ? "สำเร็จ" : status,
     ordered_at: orderedAt,
     amount_thb: amountThb,
+    entry: completed.executed_price_usd || null,
+    shares: completed.executed_shares || null,
     commission_thb: numberAfter(flat, /ค่าคอมมิชชั่น/i, "THB"),
     discount_thb: thbValues.find((v) => v < 0) || null,
     vat_thb: numberAfter(flat, /VAT|ภาษี/i, "THB"),
-    amount_usd: numberAfter(flat, /จำนวนเงิน\s*\(?USD\)?/i, "USD") || usdValues.at(-1) || null,
-    fx_rate: fxRate,
+    amount_usd: amountUsd,
+    fx_rate: completed.exchange_rate || fxRate,
+    transaction_id: completed.reference_number || "",
+    reference_valid: completed.reference_valid,
+    executed_price_usd: completed.executed_price_usd,
+    executed_shares: completed.executed_shares,
+    gross_amount_usd: completed.gross_amount_usd,
+    fees_usd: completed.fees_usd,
+    total_amount_thb: completed.total_amount_thb,
+    validation_checks: completed.validation_checks,
     order_type: /market|ราคาตลาด/i.test(flat) ? "Market" : "",
     order_no: orderNo,
     note: "นำเข้าจากสลิป Dime",
@@ -1362,6 +1504,12 @@ function scoreDimeParsed(parsed) {
     (parsed.ticker ? 25 : 0) +
     (parsed.amount_thb ? 22 : 0) +
     (parsed.amount_usd ? 8 : 0) +
+    (parsed.transaction_id ? 12 : 0) +
+    (parsed.reference_valid ? 10 : 0) +
+    (parsed.executed_price_usd ? 8 : 0) +
+    (parsed.executed_shares ? 8 : 0) +
+    (parsed.validation_checks?.filter((x) => x.ok).length || 0) * 12 -
+    (parsed.validation_checks?.filter((x) => !x.ok).length || 0) * 24 +
     (parsed.order_no ? 8 : 0) +
     (parsed.market ? 5 : 0);
 }
@@ -1431,11 +1579,14 @@ async function readDimeSlip() {
     const ocr = await smartReadDimeSlip(file, (pct) => setSlipStatus(`กำลังอ่านข้อความแบบ Dime Smart OCR ${pct}%`));
     const parsed = ocr.parsed;
     fillJournalFormFromSlip(parsed);
-    if (!parsed.ticker || !parsed.amount_thb || (parsed.ticker_confidence || 0) < 80) {
+    const hasBadValidation = parsed.validation_checks?.some((x) => !x.ok) ||
+      (parsed.slip_schema === "completed-trade" && parsed.transaction_id && !parsed.reference_valid);
+    if (!parsed.ticker || !parsed.amount_thb || (parsed.ticker_confidence || 0) < 80 || hasBadValidation) {
       const missing = [
         !parsed.ticker ? "ticker" : "",
         !parsed.amount_thb ? "ยอดเงิน" : "",
         parsed.ticker && (parsed.ticker_confidence || 0) < 80 ? "ความมั่นใจ ticker ต่ำ" : "",
+        hasBadValidation ? "validation ไม่ผ่าน" : "",
       ].filter(Boolean).join(" และ ");
       const saved = addJournalItem(reviewSlipItem(parsed, file.name));
       clearSlipFileOnly();
