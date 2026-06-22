@@ -755,6 +755,7 @@ function repairDimeJournalItems(items) {
       ...item,
       transaction_type: parsed.transaction_type || item.transaction_type,
       slip_schema: parsed.slip_schema || item.slip_schema,
+      slip_approval_status: parsed.slip_schema === "completed-trade" ? "completed" : (item.slip_approval_status || parsed.slip_approval_status),
       ticker: shouldUpdateTicker ? parsedTicker : item.ticker,
       stock_full_name: parsed.stock_full_name || item.stock_full_name,
       ticker_confidence: parsed.ticker_confidence || item.ticker_confidence,
@@ -893,7 +894,10 @@ function addJournalItem(item) {
     const existing = items[existingIndex];
     if (existing) {
       if (item.source === "dime-slip") {
-        const updated = { ...existing, ...item, id: existing.id, created_at: existing.created_at, updated_at: new Date().toISOString() };
+        const approvalStatus = item.slip_schema === "completed-trade"
+          ? "completed"
+          : existing.slip_approval_status || item.slip_approval_status;
+        const updated = { ...existing, ...item, slip_approval_status: approvalStatus, id: existing.id, created_at: existing.created_at, updated_at: new Date().toISOString() };
         items[existingIndex] = updated;
         saveJournalItems(items);
         renderJournal();
@@ -908,6 +912,35 @@ function addJournalItem(item) {
   saveJournalItems(items);
   renderJournal();
   return { duplicate: false, item: saved };
+}
+
+function updateJournalItem(id, patch) {
+  const items = journalItems();
+  const idx = items.findIndex((x) => x.id === id);
+  if (idx < 0) return null;
+  const next = { ...items[idx], ...patch, updated_at: new Date().toISOString() };
+  items[idx] = next;
+  saveJournalItems(items);
+  renderJournal();
+  return next;
+}
+
+function approvePendingDimeSlip(id) {
+  return updateJournalItem(id, {
+    slip_approval_status: "approved_waiting",
+    needs_review: false,
+    validation_override: true,
+    approved_at: new Date().toISOString(),
+    status: "อนุมัติรอผล",
+  });
+}
+
+function cancelPendingDimeSlip(id) {
+  return updateJournalItem(id, {
+    slip_approval_status: "cancelled",
+    cancelled_at: new Date().toISOString(),
+    status: "ยกเลิก/ไม่ติดตาม",
+  });
 }
 
 function deleteJournalItem(id) {
@@ -993,16 +1026,51 @@ function renderJournalProjection(item, closedPl) {
   </div>`;
 }
 
+function dimeWorkflow(item) {
+  if (item.source !== "dime-slip") return null;
+  if (item.slip_approval_status === "cancelled" || /ยกเลิก|cancel/i.test(item.status || "")) {
+    return { code: "cancelled", label: "ยกเลิก/ไม่ติดตาม", tone: "bad", desc: "เก็บไว้เป็นประวัติ แต่ไม่นับเป็นรายการรอผล" };
+  }
+  const validationBad = !item.validation_override && (item.validation_checks?.some((x) => !x.ok) || (item.slip_schema === "completed-trade" && item.transaction_id && item.reference_valid === false));
+  if (validationBad || item.needs_review) {
+    return { code: "review", label: "รอตรวจสอบ", tone: "warn", desc: "OCR หรือ validation ยังไม่มั่นใจ ต้องเช็กก่อนใช้จริง" };
+  }
+  if (item.slip_schema === "completed-trade" || Number(item.entry) > 0 && Number(item.shares) > 0) {
+    return { code: "completed", label: "สำเร็จแล้ว", tone: "good", desc: "มีราคาซื้อเฉลี่ยและจำนวนหุ้นจริงแล้ว" };
+  }
+  if (item.slip_approval_status === "approved_waiting") {
+    return { code: "approved_waiting", label: "อนุมัติรอผล", tone: "wait", desc: "คุณยืนยันคำสั่งแล้ว รอสลิปสำเร็จจาก Dime" };
+  }
+  return { code: "pending", label: "รอดำเนินการ", tone: "wait", desc: "เป็นสลิปส่งคำสั่ง ยังไม่ใช่หุ้นที่ถือจริง" };
+}
+
+function renderDimeWorkflow(item) {
+  const wf = dimeWorkflow(item);
+  if (!wf) return "";
+  const actions = wf.code === "pending" || wf.code === "review"
+    ? `<div class="jn-actions">
+        <button class="jn-approve" data-id="${escapeHtml(item.id)}" type="button">อนุมัติรอผล</button>
+        <button class="jn-cancel" data-id="${escapeHtml(item.id)}" type="button">ยกเลิก</button>
+      </div>`
+    : "";
+  return `<div class="jn-workflow ${wf.tone}">
+    <b>${wf.label}</b>
+    <small>${wf.desc}</small>
+    ${actions}
+  </div>`;
+}
+
 function renderJournal() {
   const items = journalItems();
   const summaryEl = document.getElementById("jn-summary");
   const listEl = document.getElementById("jn-list");
   if (!summaryEl || !listEl) return;
 
-  const closed = items.filter((x) => Number(x.entry) && Number(x.exit) && Number(x.shares));
-  const open = items.length - closed.length;
+  const activeItems = items.filter((x) => dimeWorkflow(x)?.code !== "cancelled");
+  const closed = activeItems.filter((x) => Number(x.entry) && Number(x.exit) && Number(x.shares));
+  const open = activeItems.length - closed.length;
   const pl = closed.reduce((sum, x) => sum + (Number(x.exit) - Number(x.entry)) * Number(x.shares), 0);
-  const invested = items.reduce((sum, x) => sum + (Number(x.amount_thb) || (Number(x.entry) || 0) * (Number(x.shares) || 0)), 0);
+  const invested = activeItems.reduce((sum, x) => sum + (Number(x.amount_thb) || (Number(x.entry) || 0) * (Number(x.shares) || 0)), 0);
   summaryEl.innerHTML = `
     <div class="bt-stat"><div class="v">${items.length}</div><div class="l">รายการ</div></div>
     <div class="bt-stat"><div class="v">${open}</div><div class="l">ยังเปิด/รอดำเนินการ</div></div>
@@ -1022,6 +1090,7 @@ function renderJournal() {
       ? (Number(x.exit) - Number(x.entry)) * Number(x.shares)
       : null;
     const projection = renderJournalProjection(x, closedPl);
+    const workflow = renderDimeWorkflow(x);
     const right = closedPl == null
       ? `<div class="jn-open">${escapeHtml(status)}</div>`
       : `<div class="jn-pl ${closedPl >= 0 ? "up" : "down"}">${closedPl >= 0 ? "+" : ""}฿${fmt(closedPl)}</div>`;
@@ -1032,6 +1101,7 @@ function renderJournal() {
       <div class="jn-n"><b>${side} ${escapeHtml(x.ticker || "-")}</b><small>${escapeHtml([x.market, x.ordered_at || x.created_at?.slice(0, 10)].filter(Boolean).join(" · "))}</small>${tag}</div>
       <div class="jn-muted">${amount}${usd}${x.fx_rate ? ` · FX ${fmt(x.fx_rate)}` : ""}<br>${escapeHtml(x.note || "")}</div>
       ${projection}
+      ${workflow}
       ${right}
       <button class="jn-del" data-id="${escapeHtml(x.id)}" type="button" title="ลบรายการ">ลบ</button>
     </div>`;
@@ -1365,6 +1435,7 @@ function parseDimeSlipText(rawText) {
     source: "dime-slip",
     transaction_type: side === "SELL" ? "ขายหุ้น" : "ซื้อหุ้น",
     slip_schema: completed.is_completed ? "completed-trade" : "order-request",
+    slip_approval_status: completed.is_completed ? "completed" : "pending",
     slip_key: primaryId ? DIME_DUP_PREFIX + primaryId : slipKeyFromText(flat),
     side,
     ticker,
@@ -1684,8 +1755,12 @@ document.getElementById("jn-add")?.addEventListener("click", addManualJournalIte
 document.getElementById("jn-export")?.addEventListener("click", exportJournalItems);
 document.getElementById("jn-import-file")?.addEventListener("change", importJournalItemsFromFile);
 document.getElementById("jn-list")?.addEventListener("click", (e) => {
-  const btn = e.target.closest(".jn-del");
-  if (btn?.dataset.id) deleteJournalItem(btn.dataset.id);
+  const del = e.target.closest(".jn-del");
+  if (del?.dataset.id) deleteJournalItem(del.dataset.id);
+  const approve = e.target.closest(".jn-approve");
+  if (approve?.dataset.id) approvePendingDimeSlip(approve.dataset.id);
+  const cancel = e.target.closest(".jn-cancel");
+  if (cancel?.dataset.id) cancelPendingDimeSlip(cancel.dataset.id);
 });
 document.getElementById("modal-close").addEventListener("click", () =>
   document.getElementById("modal").classList.add("hidden"));

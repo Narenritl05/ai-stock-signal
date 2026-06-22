@@ -518,7 +518,7 @@ body {
   font-size: 15px; font-weight: 700; cursor: pointer; transition: .15s; }
 .jn-add:hover { background: rgba(0,230,118,.18); }
 .jn-list { display: flex; flex-direction: column; gap: 8px; }
-.jn-row { display: grid; grid-template-columns: 1.1fr .85fr 1.05fr auto auto; align-items: center; gap: 12px;
+.jn-row { display: grid; grid-template-columns: 1.05fr .8fr 1fr .9fr auto auto; align-items: center; gap: 12px;
   background: var(--surface-solid); border: 1px solid var(--line); border-radius: 11px; padding: 12px 15px; font-size: 13px; }
 .jn-row.jn-row-new { border-color: rgba(0,230,118,.38); background: rgba(0,230,118,.06); }
 .jn-row .jn-n b { font-size: 14.5px; }
@@ -536,6 +536,24 @@ body {
 .jn-calc .up, .jn-calc span.up { color: var(--green); }
 .jn-calc .down, .jn-calc span.down { color: var(--red); }
 .jn-calc.muted b, .jn-calc.muted span { color: var(--muted); }
+.jn-workflow { display: grid; gap: 4px; min-width: 132px; padding: 8px 10px; border-radius: 10px;
+  background: rgba(148,163,184,.055); border: 1px solid rgba(148,163,184,.13); }
+.jn-workflow b { font-size: 12px; }
+.jn-workflow small { color: var(--muted); font-size: 11px; line-height: 1.35; }
+.jn-workflow.good { border-color: rgba(0,230,118,.18); background: rgba(0,230,118,.055); }
+.jn-workflow.good b { color: var(--green); }
+.jn-workflow.wait { border-color: rgba(255,194,75,.22); background: rgba(255,194,75,.055); }
+.jn-workflow.wait b { color: var(--amber); }
+.jn-workflow.warn { border-color: rgba(255,194,75,.30); background: rgba(255,194,75,.075); }
+.jn-workflow.warn b { color: var(--amber); }
+.jn-workflow.bad { border-color: rgba(255,90,90,.22); background: rgba(255,90,90,.055); }
+.jn-workflow.bad b { color: var(--red); }
+.jn-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 2px; }
+.jn-actions button { border: 1px solid rgba(148,163,184,.18); background: rgba(148,163,184,.08);
+  color: var(--muted); border-radius: 8px; padding: 5px 8px; font-family: inherit; font-size: 11px; font-weight: 800; cursor: pointer; }
+.jn-actions button:hover { color: var(--text); border-color: rgba(148,163,184,.28); background: rgba(148,163,184,.13); }
+.jn-actions .jn-approve { color: var(--green); }
+.jn-actions .jn-cancel { color: var(--red); }
 .jn-tag { display: inline-flex; align-items: center; gap: 5px; width: fit-content; margin-top: 5px; padding: 3px 7px;
   border-radius: 999px; background: rgba(148,163,184,.10); color: var(--muted); font-size: 11px; font-weight: 800; }
 .jn-del { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 15px; }
