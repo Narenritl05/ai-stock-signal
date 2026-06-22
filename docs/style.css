@@ -518,7 +518,7 @@ body {
   font-size: 15px; font-weight: 700; cursor: pointer; transition: .15s; }
 .jn-add:hover { background: rgba(0,230,118,.18); }
 .jn-list { display: flex; flex-direction: column; gap: 8px; }
-.jn-row { display: grid; grid-template-columns: 1.3fr 1fr auto auto; align-items: center; gap: 12px;
+.jn-row { display: grid; grid-template-columns: 1.1fr .85fr 1.05fr auto auto; align-items: center; gap: 12px;
   background: var(--surface-solid); border: 1px solid var(--line); border-radius: 11px; padding: 12px 15px; font-size: 13px; }
 .jn-row.jn-row-new { border-color: rgba(0,230,118,.38); background: rgba(0,230,118,.06); }
 .jn-row .jn-n b { font-size: 14.5px; }
@@ -528,6 +528,14 @@ body {
 .jn-row .jn-pl.up { color: var(--green); }
 .jn-row .jn-pl.down { color: var(--red); }
 .jn-row .jn-open { color: var(--amber); font-size: 12px; font-weight: 700; text-align: right; }
+.jn-calc { display: grid; gap: 3px; min-width: 150px; padding: 8px 10px; border-radius: 10px;
+  background: rgba(148,163,184,.06); border: 1px solid rgba(148,163,184,.12); }
+.jn-calc b { display: flex; justify-content: space-between; gap: 8px; font-size: 12px; color: var(--text); }
+.jn-calc span { font-family: "Inter", sans-serif; font-weight: 900; }
+.jn-calc small { color: var(--muted); font-size: 11px; line-height: 1.35; }
+.jn-calc .up, .jn-calc span.up { color: var(--green); }
+.jn-calc .down, .jn-calc span.down { color: var(--red); }
+.jn-calc.muted b, .jn-calc.muted span { color: var(--muted); }
 .jn-tag { display: inline-flex; align-items: center; gap: 5px; width: fit-content; margin-top: 5px; padding: 3px 7px;
   border-radius: 999px; background: rgba(148,163,184,.10); color: var(--muted); font-size: 11px; font-weight: 800; }
 .jn-del { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 15px; }
@@ -600,6 +608,9 @@ body {
   .source-grid { grid-template-columns: 1fr; }
   .status-row { grid-template-columns: 1fr; }
   .status-score { text-align: left; }
+  .jn-row { grid-template-columns: 1fr; align-items: stretch; }
+  .jn-row .jn-open, .jn-row .jn-pl { text-align: left; }
+  .jn-del { justify-self: start; padding: 4px 0; }
 }
 @media (max-width: 480px) {
   .cards, .status-grid { grid-template-columns: 1fr; }

@@ -42,6 +42,7 @@ async function load(isRefresh = false) {
   }
   loadBacktest();
   loadPerformance();
+  renderJournal();
   loadStatus();
   loadUniverse().then(() => {
     if (searchTerm) drawCards();
@@ -333,6 +334,10 @@ function fmt0(n) {
 function fmtPct(n) {
   const v = Number(n || 0);
   return `${v >= 0 ? "+" : ""}${v.toFixed(2)}%`;
+}
+function fmtSignedMoney(n) {
+  const v = Number(n || 0);
+  return `${v >= 0 ? "+" : "-"}฿${fmt(Math.abs(v))}`;
 }
 
 // ── count-up animation ──
@@ -852,6 +857,84 @@ function deleteJournalItem(id) {
   renderJournal();
 }
 
+function stockLookupKey(ticker) {
+  return String(ticker || "").replace(/\.BK$/i, "").toUpperCase();
+}
+
+function findLatestSignal(ticker, market = "") {
+  const key = stockLookupKey(ticker);
+  if (!key) return null;
+  const marketKey = String(market || "").toUpperCase();
+  return ALL.find((s) => {
+    const sameTicker = stockLookupKey(s.ticker) === key || stockLookupKey(s.display_ticker) === key || stockLookupKey(s.name) === key;
+    if (!sameTicker) return false;
+    if (!marketKey) return true;
+    return String(s.market || s.market_key || "").toUpperCase().includes(marketKey) ||
+      String(s.exchange || "").toUpperCase().includes(marketKey);
+  }) || ALL.find((s) => stockLookupKey(s.ticker) === key || stockLookupKey(s.display_ticker) === key || stockLookupKey(s.name) === key) || null;
+}
+
+function journalCostBasis(item) {
+  const entry = Number(item.entry);
+  const shares = Number(item.shares);
+  if (entry > 0 && shares > 0) return { amount: entry * shares, entry, shares, mode: "shares" };
+  if (Number(item.amount_thb) > 0) return { amount: Number(item.amount_thb), entry: null, shares: null, mode: "amount" };
+  if (Number(item.amount_usd) > 0 && Number(item.fx_rate) > 0) {
+    return { amount: Number(item.amount_usd) * Number(item.fx_rate), entry: null, shares: null, mode: "amount" };
+  }
+  return { amount: 0, entry: entry > 0 ? entry : null, shares: shares > 0 ? shares : null, mode: "none" };
+}
+
+function journalProjection(item) {
+  const signal = findLatestSignal(item.ticker, item.market);
+  const basis = journalCostBasis(item);
+  if (!signal || !basis.amount) return { signal, basis };
+
+  const currentPrice = Number(signal.price);
+  const entryPrice = basis.entry;
+  const currentPct = entryPrice > 0 && currentPrice > 0 ? ((currentPrice - entryPrice) / entryPrice) * 100 : null;
+  const currentMoney = currentPct == null ? null : basis.amount * currentPct / 100;
+  const targetPct = Number(signal.upside1_pct) || (Number(signal.target1) > 0 && currentPrice > 0 ? ((Number(signal.target1) - currentPrice) / currentPrice) * 100 : null);
+  const lossPct = Number(signal.downside_pct) || (Number(signal.stop_loss) > 0 && currentPrice > 0 ? ((currentPrice - Number(signal.stop_loss)) / currentPrice) * 100 : null);
+
+  return {
+    signal,
+    basis,
+    currentPrice,
+    currentPct,
+    currentMoney,
+    targetPct,
+    targetMoney: targetPct == null ? null : basis.amount * targetPct / 100,
+    lossPct,
+    lossMoney: lossPct == null ? null : basis.amount * lossPct / 100,
+  };
+}
+
+function renderJournalProjection(item, closedPl) {
+  const p = journalProjection(item);
+  if (closedPl != null) {
+    const cost = (Number(item.entry) || 0) * (Number(item.shares) || 0);
+    const pct = cost > 0 ? (closedPl / cost) * 100 : null;
+    return `<div class="jn-calc closed">
+      <b>ปิดแล้ว</b>
+      <span class="${closedPl >= 0 ? "up" : "down"}">${pct == null ? "" : fmtPct(pct) + " · "}${fmtSignedMoney(closedPl)}</span>
+    </div>`;
+  }
+  if (!p.signal || !p.basis.amount) {
+    return `<div class="jn-calc muted">
+      <b>คำนวณยังไม่ได้</b>
+      <span>รอราคาล่าสุดหรือกรอกต้นทุนเพิ่ม</span>
+    </div>`;
+  }
+  const currentClass = (p.currentMoney || 0) >= 0 ? "up" : "down";
+  return `<div class="jn-calc">
+    <b>ปัจจุบัน <span>${p.currentPct == null ? "-" : fmtPct(p.currentPct)}</span></b>
+    <span class="${currentClass}">${p.currentMoney == null ? "-" : fmtSignedMoney(p.currentMoney)}</span>
+    <small>โอกาสกำไร ${p.targetPct == null ? "-" : fmtPct(p.targetPct)} · ${p.targetMoney == null ? "-" : fmtSignedMoney(p.targetMoney)}</small>
+    <small>เสี่ยงขาดทุน ${p.lossPct == null ? "-" : "-" + fmt(p.lossPct) + "%"} · ${p.lossMoney == null ? "-" : "-฿" + fmt(p.lossMoney)}</small>
+  </div>`;
+}
+
 function renderJournal() {
   const items = journalItems();
   const summaryEl = document.getElementById("jn-summary");
@@ -880,6 +963,7 @@ function renderJournal() {
     const closedPl = Number(x.entry) && Number(x.exit) && Number(x.shares)
       ? (Number(x.exit) - Number(x.entry)) * Number(x.shares)
       : null;
+    const projection = renderJournalProjection(x, closedPl);
     const right = closedPl == null
       ? `<div class="jn-open">${escapeHtml(status)}</div>`
       : `<div class="jn-pl ${closedPl >= 0 ? "up" : "down"}">${closedPl >= 0 ? "+" : ""}฿${fmt(closedPl)}</div>`;
@@ -889,6 +973,7 @@ function renderJournal() {
     return `<div class="jn-row" data-journal-id="${escapeHtml(x.id)}">
       <div class="jn-n"><b>${side} ${escapeHtml(x.ticker || "-")}</b><small>${escapeHtml([x.market, x.ordered_at || x.created_at?.slice(0, 10)].filter(Boolean).join(" · "))}</small>${tag}</div>
       <div class="jn-muted">${amount}${usd}${x.fx_rate ? ` · FX ${fmt(x.fx_rate)}` : ""}<br>${escapeHtml(x.note || "")}</div>
+      ${projection}
       ${right}
       <button class="jn-del" data-id="${escapeHtml(x.id)}" type="button" title="ลบรายการ">ลบ</button>
     </div>`;
