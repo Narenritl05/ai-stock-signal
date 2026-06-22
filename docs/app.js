@@ -1088,20 +1088,26 @@ function renderJournalDetails(item, amount, usd) {
   }
   const file = notePart(item.note, "ไฟล์ ").replace(/^ไฟล์\s*/, "");
   const confidence = item.ticker_confidence ? `${fmt0(item.ticker_confidence)}%${item.ticker_source ? " · " + item.ticker_source : ""}` : "";
-  const rows = [
-    ["ยอด", [amount, usd, item.fx_rate ? "FX " + fmt(item.fx_rate) : ""].filter(Boolean).join(" · ")],
-    item.entry && item.shares ? ["สำเร็จ", `$${fmt(item.entry)} x ${Number(item.shares).toLocaleString("th-TH", { maximumFractionDigits: 8 })} หุ้น`] : null,
+  const total = [amount, usd].filter(Boolean).join(" / ");
+  const sub = [
+    item.fx_rate ? "FX " + fmt(item.fx_rate) : "",
+    item.entry && item.shares ? `$${fmt(item.entry)} x ${Number(item.shares).toLocaleString("th-TH", { maximumFractionDigits: 8 })} หุ้น` : "",
+  ].filter(Boolean).join(" · ");
+  const chips = [
     item.transaction_id ? ["อ้างอิง", item.transaction_id] : null,
     item.order_no ? ["คำสั่ง", item.order_no] : null,
     file ? ["ไฟล์", file] : null,
     confidence ? ["OCR", confidence] : null,
     item.validation_checks?.length ? ["ตรวจสูตร", item.validation_checks.every((x) => x.ok) ? "ผ่าน" : "ต้องตรวจสอบ"] : null,
-    item.needs_review ? ["หมายเหตุ", "OCR อ่านข้อมูลไม่ครบ ต้องตรวจสอบเอง"] : null,
-    item.raw_text && item.needs_review ? ["OCR preview", compactSlipPreview(item.raw_text)] : null,
   ].filter(Boolean);
-  return `<div class="jn-details">${rows.map(([label, value]) => `
-    <div class="jn-detail"><span>${escapeHtml(label)}</span><b>${escapeHtml(value || "-")}</b></div>
-  `).join("")}</div>`;
+  const review = item.needs_review
+    ? `<div class="jn-review"><b>ต้องตรวจสอบ</b><span>OCR อ่านข้อมูลไม่ครบ${item.raw_text ? " · " + escapeHtml(compactSlipPreview(item.raw_text)) : ""}</span></div>`
+    : "";
+  return `<div class="jn-details">
+    <div class="jn-amount"><b>${escapeHtml(total || "-")}</b>${sub ? `<span>${escapeHtml(sub)}</span>` : ""}</div>
+    ${chips.length ? `<div class="jn-chips">${chips.map(([label, value]) => `<span><em>${escapeHtml(label)}</em>${escapeHtml(value || "-")}</span>`).join("")}</div>` : ""}
+    ${review}
+  </div>`;
 }
 
 function renderJournal() {
