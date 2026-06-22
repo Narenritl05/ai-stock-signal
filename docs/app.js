@@ -721,6 +721,108 @@ function saveJournalItems(items) {
   localStorage.setItem(JOURNAL_KEY, JSON.stringify(items));
 }
 
+function setJournalIoStatus(text, tone = "") {
+  const el = document.getElementById("jn-io-status");
+  if (!el) return;
+  el.textContent = text || "";
+  el.className = "jn-io-status" + (tone ? " " + tone : "");
+}
+
+function journalDedupeKey(item) {
+  if (!item || typeof item !== "object") return "";
+  if (item.slip_key) return `slip:${item.slip_key}`;
+  if (item.order_no) return `order:${item.order_no}`;
+  if (item.id) return `id:${item.id}`;
+  return [
+    "manual",
+    item.source || "",
+    item.side || "",
+    item.ticker || "",
+    item.entry ?? "",
+    item.exit ?? "",
+    item.shares ?? "",
+    item.amount_thb ?? "",
+    item.amount_usd ?? "",
+    item.created_at || "",
+  ].join(":");
+}
+
+function normalizeImportedJournalItems(payload) {
+  const raw = Array.isArray(payload)
+    ? payload
+    : Array.isArray(payload?.items)
+      ? payload.items
+      : Array.isArray(payload?.journal)
+        ? payload.journal
+        : Array.isArray(payload?.trades)
+          ? payload.trades
+          : null;
+  if (!raw) return null;
+  const stamp = Date.now().toString(36);
+  return raw
+    .filter((x) => x && typeof x === "object")
+    .map((x, idx) => ({
+      ...x,
+      id: String(x.id || `import_${stamp}_${idx}`),
+      created_at: String(x.created_at || new Date().toISOString()),
+    }));
+}
+
+function exportJournalItems() {
+  const items = journalItems();
+  const payload = {
+    app: "ai-stock-signal",
+    type: "trading-journal",
+    exported_at: new Date().toISOString(),
+    count: items.length,
+    items,
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const date = new Date().toISOString().slice(0, 10);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `ai-stock-journal-${date}.json`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+  setJournalIoStatus(items.length ? `ส่งออก ${items.length} รายการแล้ว` : "ส่งออกไฟล์ว่างแล้ว", "good");
+}
+
+async function importJournalItemsFromFile(event) {
+  const input = event?.target;
+  const file = input?.files?.[0];
+  if (!file) return;
+  try {
+    const payload = JSON.parse(await file.text());
+    const imported = normalizeImportedJournalItems(payload);
+    if (!imported) throw new Error("รูปแบบไฟล์ไม่ใช่ trading journal JSON");
+
+    const current = journalItems();
+    const keys = new Set(current.map(journalDedupeKey).filter(Boolean));
+    const additions = [];
+    let skipped = 0;
+    imported.forEach((item) => {
+      const key = journalDedupeKey(item);
+      if (key && keys.has(key)) {
+        skipped += 1;
+        return;
+      }
+      if (key) keys.add(key);
+      additions.push(item);
+    });
+
+    if (additions.length) saveJournalItems([...additions, ...current]);
+    renderJournal();
+    setJournalIoStatus(`นำเข้า ${additions.length} รายการ${skipped ? ` · ข้ามซ้ำ ${skipped} รายการ` : ""}`, additions.length ? "good" : "");
+  } catch (e) {
+    setJournalIoStatus(`นำเข้าไม่สำเร็จ: ${e.message}`, "bad");
+  } finally {
+    if (input) input.value = "";
+  }
+}
+
 function addJournalItem(item) {
   const items = journalItems();
   if (item.slip_key) {
@@ -1099,6 +1201,8 @@ document.getElementById("slip-file")?.addEventListener("change", (e) => {
 });
 document.getElementById("slip-read")?.addEventListener("click", readDimeSlip);
 document.getElementById("jn-add")?.addEventListener("click", addManualJournalItem);
+document.getElementById("jn-export")?.addEventListener("click", exportJournalItems);
+document.getElementById("jn-import-file")?.addEventListener("change", importJournalItemsFromFile);
 document.getElementById("jn-list")?.addEventListener("click", (e) => {
   const btn = e.target.closest(".jn-del");
   if (btn?.dataset.id) deleteJournalItem(btn.dataset.id);

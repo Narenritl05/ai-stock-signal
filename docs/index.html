@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20260621-auto30-update" />
+  <link rel="stylesheet" href="style.css?v=20260622-journal-io" />
 </head>
 <body>
   <div class="aurora"></div>
@@ -124,6 +124,20 @@
       <div class="bt-head-row" style="margin-top:28px">
         <h2 class="section-title">📓 บันทึกการเทรด (Trading Journal)</h2>
         <span class="section-note">จดทุกไม้ที่ซื้อ-ขายจริง แล้วทบทวน</span>
+      </div>
+      <div class="jn-tools">
+        <div class="jn-tools-copy">
+          <b>ข้อมูลบันทึกเทรด</b>
+          <small>ส่งออกเพื่อเก็บสำรอง หรือนำเข้าไปดูต่อบนเครื่องอื่น</small>
+        </div>
+        <div class="jn-tools-actions">
+          <button id="jn-export" class="jn-tool-btn" type="button">ส่งออก</button>
+          <label class="jn-tool-btn jn-import">
+            <input id="jn-import-file" type="file" accept="application/json,.json" />
+            นำเข้า
+          </label>
+        </div>
+        <div id="jn-io-status" class="jn-io-status"></div>
       </div>
       <div class="slip-upload">
         <div class="slip-copy">
@@ -310,6 +324,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260621-auto30-update"></script>
+  <script src="app.js?v=20260622-journal-io"></script>
 </body>
 </html>
