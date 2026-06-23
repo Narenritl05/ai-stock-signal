@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-24 02:54 (เวลาไทย)",
+  "generated_at": "2026-06-24 04:28 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 23,
-    "open": 125,
-    "win_rate": 4.3,
-    "avg_return": -4.95,
-    "total_return": -69.4,
+    "closed": 24,
+    "open": 124,
+    "win_rate": 4.2,
+    "avg_return": -5.05,
+    "total_return": -71.7,
     "by_target": 1,
-    "by_stop": 22,
+    "by_stop": 23,
     "by_time": 0
   },
   "open_positions": [
@@ -2087,23 +2087,6 @@
       "return_pct": null
     },
     {
-      "ticker": "MU",
-      "name": "MU",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-06-20",
-      "entry": 1133.99,
-      "stop": 1054.61,
-      "target": 1247.39,
-      "status": "open",
-      "days": 4,
-      "last_date": "2026-06-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "CRWD",
       "name": "CRWD",
       "signal": "BUY",
@@ -2155,6 +2138,23 @@
       "exit_date": "2026-06-24",
       "reason": "stop",
       "return_pct": -5.37
+    },
+    {
+      "ticker": "MU",
+      "name": "MU",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-06-20",
+      "entry": 1133.99,
+      "stop": 1054.61,
+      "target": 1247.39,
+      "status": "closed",
+      "days": 4,
+      "last_date": "2026-06-24",
+      "exit": 1054.61,
+      "exit_date": "2026-06-24",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "SMCI",
