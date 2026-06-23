@@ -621,13 +621,13 @@
       "entry": 210.69,
       "stop": 200.42,
       "target": 231.76,
-      "status": "open",
+      "status": "closed",
       "days": 4,
       "last_date": "2026-06-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 200.42,
+      "exit_date": "2026-06-24",
+      "reason": "stop",
+      "return_pct": -5.37
     },
     {
       "ticker": "DUOL",
@@ -2474,13 +2474,13 @@
       "entry": 39.75,
       "stop": 36.97,
       "target": 43.73,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-06-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 36.97,
+      "exit_date": "2026-06-24",
+      "reason": "stop",
+      "return_pct": -7.49
     },
     {
       "ticker": "SNNP.BK",
@@ -2491,13 +2491,13 @@
       "entry": 6.65,
       "stop": 6.6,
       "target": 7.32,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-06-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 6.6,
+      "exit_date": "2026-06-24",
+      "reason": "stop",
+      "return_pct": -1.25
     },
     {
       "ticker": "JNJ",
