@@ -188,6 +188,9 @@ function drawCards() {
 
   document.getElementById("empty").classList.toggle("hidden", list.length > 0);
   const wrap = document.getElementById("cards");
+  wrap.classList.remove("cards-refresh");
+  void wrap.offsetWidth;
+  wrap.classList.add("cards-refresh");
   wrap.innerHTML = list.map((x, i) => cardHTML(x, i)).join("");
 }
 
@@ -1757,7 +1760,12 @@ async function readDimeSlip() {
 // ── tabs ──
 function switchView(view) {
   document.querySelectorAll(".view").forEach((v) => v.classList.add("hidden"));
-  document.getElementById("view-" + view).classList.remove("hidden");
+  const activeView = document.getElementById("view-" + view);
+  activeView.classList.remove("hidden");
+  activeView.classList.remove("view-enter");
+  void activeView.offsetWidth;
+  activeView.classList.add("view-enter");
+  setTimeout(() => activeView.classList.remove("view-enter"), 420);
   const tabs = [...document.querySelectorAll(".tab")];
   tabs.forEach((t) => t.classList.toggle("active", t.dataset.view === view));
   if (view === "journal") renderJournal();
@@ -1784,6 +1792,17 @@ const marketSwitchEl = document.getElementById("market-switch");
 if (marketSwitchEl) marketSwitchEl.addEventListener("click", (e) => {
   const b = e.target.closest(".ms");
   if (b) switchMarket(b.dataset.market);
+});
+document.addEventListener("pointerdown", (e) => {
+  const target = e.target.closest(".tab, .chip, .tile, .card-more, .ms, .update-action, .news-item, .source-link, .slip-picker span, .slip-read, .jn-tool-btn, .jn-add, .jn-actions button");
+  if (!target || target.disabled || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const rect = target.getBoundingClientRect();
+  const ripple = document.createElement("span");
+  ripple.className = "tap-ripple";
+  ripple.style.setProperty("--ripple-x", `${e.clientX - rect.left}px`);
+  ripple.style.setProperty("--ripple-y", `${e.clientY - rect.top}px`);
+  target.appendChild(ripple);
+  setTimeout(() => ripple.remove(), 600);
 });
 document.getElementById("tabs").addEventListener("click", (e) => {
   const tab = e.target.closest(".tab");
