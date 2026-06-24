@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-06-25 02:39 (เวลาไทย)",
+  "last_run": "2026-06-25 04:19 (เวลาไทย)",
   "signals": {
     "SJWD.BK": {
       "signal": "STRONG BUY",
@@ -565,6 +565,14 @@
       "signal": "BUY",
       "score": 74
     },
+    "ALAB": {
+      "signal": "BUY",
+      "score": 74
+    },
+    "CAT": {
+      "signal": "BUY",
+      "score": 74
+    },
     "V": {
       "signal": "BUY",
       "score": 70
@@ -581,7 +589,15 @@
       "signal": "BUY",
       "score": 69
     },
+    "LRCX": {
+      "signal": "BUY",
+      "score": 69
+    },
     "SHOP": {
+      "signal": "BUY",
+      "score": 69
+    },
+    "KLAC": {
       "signal": "BUY",
       "score": 69
     },
@@ -593,9 +609,9 @@
       "signal": "BUY",
       "score": 69
     },
-    "CAT": {
+    "DUOL": {
       "signal": "BUY",
-      "score": 69
+      "score": 67
     },
     "TGT": {
       "signal": "BUY",
@@ -606,10 +622,6 @@
       "score": 64
     },
     "ABBV": {
-      "signal": "BUY",
-      "score": 64
-    },
-    "VRTX": {
       "signal": "BUY",
       "score": 64
     },
@@ -629,19 +641,11 @@
       "signal": "BUY",
       "score": 63
     },
-    "REGN": {
+    "URI": {
       "signal": "BUY",
       "score": 63
     },
-    "LRCX": {
-      "signal": "BUY",
-      "score": 62
-    },
     "HOOD": {
-      "signal": "BUY",
-      "score": 62
-    },
-    "KLAC": {
       "signal": "BUY",
       "score": 62
     },
@@ -661,11 +665,7 @@
       "signal": "BUY",
       "score": 62
     },
-    "ALAB": {
-      "signal": "BUY",
-      "score": 60
-    },
-    "DUOL": {
+    "VRTX": {
       "signal": "WATCH",
       "score": 59
     },
@@ -674,6 +674,14 @@
       "score": 59
     },
     "MELI": {
+      "signal": "WATCH",
+      "score": 56
+    },
+    "SOFI": {
+      "signal": "WATCH",
+      "score": 56
+    },
+    "CVNA": {
       "signal": "WATCH",
       "score": 56
     },
@@ -701,6 +709,10 @@
       "signal": "WATCH",
       "score": 55
     },
+    "MU": {
+      "signal": "WATCH",
+      "score": 55
+    },
     "PANW": {
       "signal": "WATCH",
       "score": 55
@@ -709,19 +721,11 @@
       "signal": "WATCH",
       "score": 51
     },
-    "MU": {
-      "signal": "WATCH",
-      "score": 48
-    },
     "CRWD": {
       "signal": "WATCH",
       "score": 48
     },
     "SNOW": {
-      "signal": "WATCH",
-      "score": 48
-    },
-    "SOFI": {
       "signal": "WATCH",
       "score": 48
     },
@@ -753,13 +757,21 @@
       "signal": "WATCH",
       "score": 48
     },
-    "URI": {
+    "MARA": {
       "signal": "WATCH",
       "score": 48
     },
     "RIOT": {
       "signal": "WATCH",
       "score": 48
+    },
+    "REGN": {
+      "signal": "WATCH",
+      "score": 47
+    },
+    "VRT": {
+      "signal": "AVOID",
+      "score": 44
     },
     "JPM": {
       "signal": "AVOID",
@@ -769,27 +781,19 @@
       "signal": "AVOID",
       "score": 44
     },
-    "CVNA": {
-      "signal": "AVOID",
-      "score": 40
-    },
     "PYPL": {
       "signal": "AVOID",
       "score": 40
-    },
-    "WMT": {
-      "signal": "AVOID",
-      "score": 40
-    },
-    "VRT": {
-      "signal": "AVOID",
-      "score": 39
     },
     "SMCI": {
       "signal": "AVOID",
       "score": 38
     },
-    "PATH": {
+    "ONON": {
+      "signal": "AVOID",
+      "score": 34
+    },
+    "WMT": {
       "signal": "AVOID",
       "score": 34
     },
@@ -809,15 +813,19 @@
       "signal": "AVOID",
       "score": 32
     },
+    "PATH": {
+      "signal": "AVOID",
+      "score": 28
+    },
+    "AVGO": {
+      "signal": "AVOID",
+      "score": 27
+    },
     "NET": {
       "signal": "AVOID",
       "score": 26
     },
     "DDOG": {
-      "signal": "AVOID",
-      "score": 26
-    },
-    "ONON": {
       "signal": "AVOID",
       "score": 26
     },
@@ -832,6 +840,10 @@
     "LNG": {
       "signal": "AVOID",
       "score": 26
+    },
+    "BLK": {
+      "signal": "AVOID",
+      "score": 25
     },
     "NOW": {
       "signal": "AVOID",
@@ -857,19 +869,15 @@
       "signal": "AVOID",
       "score": 20
     },
-    "BLK": {
-      "signal": "AVOID",
-      "score": 20
-    },
     "COST": {
       "signal": "AVOID",
       "score": 20
     },
-    "LULU": {
+    "NKE": {
       "signal": "AVOID",
       "score": 20
     },
-    "ISRG": {
+    "LULU": {
       "signal": "AVOID",
       "score": 20
     },
@@ -878,6 +886,10 @@
       "score": 18
     },
     "ASML": {
+      "signal": "AVOID",
+      "score": 18
+    },
+    "CLS": {
       "signal": "AVOID",
       "score": 18
     },
@@ -890,10 +902,6 @@
       "score": 18
     },
     "QBTS": {
-      "signal": "AVOID",
-      "score": 18
-    },
-    "MARA": {
       "signal": "AVOID",
       "score": 18
     },
@@ -925,6 +933,18 @@
       "signal": "AVOID",
       "score": 16
     },
+    "XOM": {
+      "signal": "AVOID",
+      "score": 16
+    },
+    "SLB": {
+      "signal": "AVOID",
+      "score": 16
+    },
+    "JD": {
+      "signal": "AVOID",
+      "score": 16
+    },
     "BIDU": {
       "signal": "AVOID",
       "score": 16
@@ -933,15 +953,7 @@
       "signal": "AVOID",
       "score": 12
     },
-    "AVGO": {
-      "signal": "AVOID",
-      "score": 12
-    },
     "QCOM": {
-      "signal": "AVOID",
-      "score": 12
-    },
-    "CLS": {
       "signal": "AVOID",
       "score": 12
     },
@@ -997,19 +1009,15 @@
       "signal": "AVOID",
       "score": 12
     },
-    "NKE": {
-      "signal": "AVOID",
-      "score": 12
-    },
     "MCD": {
       "signal": "AVOID",
       "score": 12
     },
-    "LMT": {
+    "ISRG": {
       "signal": "AVOID",
       "score": 12
     },
-    "NIO": {
+    "LMT": {
       "signal": "AVOID",
       "score": 12
     },
@@ -1025,19 +1033,11 @@
       "signal": "AVOID",
       "score": 8
     },
-    "XOM": {
-      "signal": "AVOID",
-      "score": 8
-    },
     "CVX": {
       "signal": "AVOID",
       "score": 8
     },
     "COP": {
-      "signal": "AVOID",
-      "score": 8
-    },
-    "SLB": {
       "signal": "AVOID",
       "score": 8
     },
@@ -1049,11 +1049,11 @@
       "signal": "AVOID",
       "score": 8
     },
-    "JD": {
+    "PDD": {
       "signal": "AVOID",
       "score": 8
     },
-    "PDD": {
+    "NIO": {
       "signal": "AVOID",
       "score": 8
     },
