@@ -2515,6 +2515,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "SAPPE.BK",
+      "name": "SAPPE",
+      "signal": "BUY",
+      "score": 67,
+      "entry_date": "2026-06-24",
+      "entry": 31.0,
+      "stop": 29.5,
+      "target": 34.1,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-24",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "TLI.BK",
+      "name": "TLI",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-06-24",
+      "entry": 11.3,
+      "stop": 10.9,
+      "target": 12.43,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-24",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
