@@ -3042,6 +3042,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "LLY",
+      "name": "LLY",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-06-25",
+      "entry": 1134.93,
+      "stop": 1064.15,
+      "target": 1248.42,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-25",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "STX",
+      "name": "STX",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-06-25",
+      "entry": 1034.99,
+      "stop": 962.55,
+      "target": 1138.49,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-25",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
