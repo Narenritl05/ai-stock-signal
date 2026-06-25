@@ -487,6 +487,25 @@ function posList(title, list, closed) {
 }
 
 // ── modal ──
+let modalCloseTimer = null;
+
+function showModal() {
+  const modal = document.getElementById("modal");
+  clearTimeout(modalCloseTimer);
+  modal.classList.remove("hidden", "is-closing");
+  void modal.offsetWidth;
+}
+
+function closeModal() {
+  const modal = document.getElementById("modal");
+  if (modal.classList.contains("hidden") || modal.classList.contains("is-closing")) return;
+  modal.classList.add("is-closing");
+  modalCloseTimer = setTimeout(() => {
+    modal.classList.add("hidden");
+    modal.classList.remove("is-closing");
+  }, 260);
+}
+
 function openCardModal(ticker) {
   const signal = ALL.find((s) => s.ticker === ticker);
   if (signal) return openModal(ticker);
@@ -585,7 +604,7 @@ function openModal(ticker) {
     ${reasons ? `<div class="md-section"><h3>เหตุผลเชิงบวก</h3><ul class="reason-list">${reasons}</ul></div>` : ""}
     ${warns ? `<div class="md-section"><h3>ข้อควรระวัง</h3><ul class="reason-list warn-list">${warns}</ul></div>` : ""}
     ${backtestSection(x.ticker)}`;
-  document.getElementById("modal").classList.remove("hidden");
+  showModal();
 }
 
 function openUniverseModal(stock) {
@@ -615,7 +634,7 @@ function openUniverseModal(stock) {
       <div class="md-row"><span>อัปเดตทั้งระบบ</span><span>กดปุ่มรันอัปเดตบนหน้าเว็บ</span></div>
       <div class="md-row"><span>ถามใน Telegram</span><span><code>/stock ${escapeHtml(ticker)}</code></span></div>
     </div>`;
-  document.getElementById("modal").classList.remove("hidden");
+  showModal();
 }
 
 function openUpdateModal() {
@@ -637,7 +656,7 @@ function openUpdateModal() {
       </div>
     </div>
     <p class="bt-disclaimer">หมายเหตุ: ปุ่มรีเฟรชดึงไฟล์ที่ deploy ล่าสุดจากเว็บ ไม่ได้ฝัง GitHub token ในหน้า public เพื่อความปลอดภัย</p>`;
-  document.getElementById("modal").classList.remove("hidden");
+  showModal();
 }
 
 function escapeHtml(s) {
@@ -1759,14 +1778,17 @@ async function readDimeSlip() {
 
 // ── tabs ──
 function switchView(view) {
+  const tabs = [...document.querySelectorAll(".tab")];
+  const currentIndex = tabs.findIndex((t) => t.classList.contains("active"));
+  const nextIndex = tabs.findIndex((t) => t.dataset.view === view);
   document.querySelectorAll(".view").forEach((v) => v.classList.add("hidden"));
   const activeView = document.getElementById("view-" + view);
   activeView.classList.remove("hidden");
-  activeView.classList.remove("view-enter");
+  activeView.classList.remove("view-enter", "view-back");
+  activeView.classList.toggle("view-back", nextIndex < currentIndex);
   void activeView.offsetWidth;
   activeView.classList.add("view-enter");
-  setTimeout(() => activeView.classList.remove("view-enter"), 420);
-  const tabs = [...document.querySelectorAll(".tab")];
+  setTimeout(() => activeView.classList.remove("view-enter", "view-back"), 760);
   tabs.forEach((t) => t.classList.toggle("active", t.dataset.view === view));
   if (view === "journal") renderJournal();
   moveGlider(tabs.find((t) => t.dataset.view === view));
@@ -1854,17 +1876,16 @@ document.getElementById("jn-list")?.addEventListener("click", (e) => {
   const cancel = e.target.closest(".jn-cancel");
   if (cancel?.dataset.id) cancelPendingDimeSlip(cancel.dataset.id);
 });
-document.getElementById("modal-close").addEventListener("click", () =>
-  document.getElementById("modal").classList.add("hidden"));
+document.getElementById("modal-close").addEventListener("click", closeModal);
 document.getElementById("modal").addEventListener("click", (e) => {
-  if (e.target.id === "modal") document.getElementById("modal").classList.add("hidden");
+  if (e.target.id === "modal") closeModal();
   if (e.target.id === "force-refresh") {
-    document.getElementById("modal").classList.add("hidden");
+    closeModal();
     refreshLatestData();
   }
 });
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") document.getElementById("modal").classList.add("hidden");
+  if (e.key === "Escape") closeModal();
 });
 window.addEventListener("resize", () => moveGlider(document.querySelector(".tab.active")));
 
