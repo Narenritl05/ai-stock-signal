@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-25 07:05 (เวลาไทย)",
-  "generated_at_iso": "2026-06-25T07:05:25.981450+07:00",
+  "generated_at": "2026-06-25 11:43 (เวลาไทย)",
+  "generated_at_iso": "2026-06-25T11:43:22.063188+07:00",
   "status": "ok",
-  "telegram": "skipped",
+  "telegram": "sent",
   "overall": {
     "attempted": 269,
     "received": 266,
@@ -21,17 +21,17 @@
       "failed": 2,
       "fetch_fail_ratio": 0.015,
       "summary": {
-        "strong_buy": 8,
-        "buy": 30,
-        "watch": 31,
-        "avoid": 63
+        "strong_buy": 6,
+        "buy": 31,
+        "watch": 47,
+        "avoid": 48
       },
       "regime": {
-        "regime": "NEUTRAL",
-        "breadth": 59.8,
-        "label": "ตลาดไซด์เวย์ — เลือกเฉพาะตัวแข็งแรง",
+        "regime": "BULL",
+        "breadth": 66.7,
+        "label": "ตลาดขาขึ้น (Risk-on)",
         "stocks": 132,
-        "uptrend": 79
+        "uptrend": 88
       }
     },
     {
