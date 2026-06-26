@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-26 13:51 (เวลาไทย)",
+  "generated_at": "2026-06-26 17:20 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 37,
-    "open": 148,
-    "win_rate": 10.8,
-    "avg_return": -4.26,
-    "total_return": -81.1,
-    "by_target": 4,
+    "closed": 38,
+    "open": 147,
+    "win_rate": 13.2,
+    "avg_return": -3.91,
+    "total_return": -79.3,
+    "by_target": 5,
     "by_stop": 33,
     "by_time": 0
   },
@@ -157,23 +157,6 @@
       "entry": 9.85,
       "stop": 9.16,
       "target": 10.84,
-      "status": "open",
-      "days": 1,
-      "last_date": "2026-06-26",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "DOHOME.BK",
-      "name": "DOHOME",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-06-25",
-      "entry": 3.44,
-      "stop": 3.3,
-      "target": 3.78,
       "status": "open",
       "days": 1,
       "last_date": "2026-06-26",
@@ -2531,6 +2514,23 @@
   ],
   "closed_positions": [
     {
+      "ticker": "DOHOME.BK",
+      "name": "DOHOME",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-06-25",
+      "entry": 3.44,
+      "stop": 3.3,
+      "target": 3.78,
+      "status": "closed",
+      "days": 1,
+      "last_date": "2026-06-26",
+      "exit": 3.78,
+      "exit_date": "2026-06-26",
+      "reason": "target",
+      "return_pct": 9.38
+    },
+    {
       "ticker": "OSP.BK",
       "name": "OSP",
       "signal": "BUY",
@@ -3022,23 +3022,6 @@
       "exit_date": "2026-06-23",
       "reason": "stop",
       "return_pct": -2.87
-    },
-    {
-      "ticker": "PSL.BK",
-      "name": "PSL",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-06-22",
-      "entry": 7.2,
-      "stop": 6.9,
-      "target": 7.92,
-      "status": "closed",
-      "days": 1,
-      "last_date": "2026-06-23",
-      "exit": 6.9,
-      "exit_date": "2026-06-23",
-      "reason": "stop",
-      "return_pct": -4.67
     }
   ]
 }
