@@ -3093,6 +3093,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "MEGA.BK",
+      "name": "MEGA",
+      "signal": "STRONG BUY",
+      "score": 77,
+      "entry_date": "2026-06-26",
+      "entry": 35.5,
+      "stop": 34.0,
+      "target": 39.05,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-26",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "TOP.BK",
+      "name": "TOP",
+      "signal": "BUY",
+      "score": 71,
+      "entry_date": "2026-06-26",
+      "entry": 46.5,
+      "stop": 43.75,
+      "target": 51.15,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-26",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "BJC.BK",
+      "name": "BJC",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-06-26",
+      "entry": 14.4,
+      "stop": 13.9,
+      "target": 15.84,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-26",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
