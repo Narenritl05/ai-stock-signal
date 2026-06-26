@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-27 02:16 (เวลาไทย)",
+  "generated_at": "2026-06-27 04:04 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 48,
-    "open": 144,
-    "win_rate": 10.4,
-    "avg_return": -4.65,
-    "total_return": -90.5,
+    "closed": 49,
+    "open": 145,
+    "win_rate": 10.2,
+    "avg_return": -4.71,
+    "total_return": -91.2,
     "by_target": 5,
-    "by_stop": 43,
+    "by_stop": 44,
     "by_time": 0
   },
   "open_positions": [
@@ -38,6 +38,40 @@
       "entry": 229.13,
       "stop": 218.38,
       "target": 252.05,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-27",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "ZS",
+      "name": "ZS",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-06-27",
+      "entry": 132.26,
+      "stop": 123.8,
+      "target": 145.49,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-27",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "LULU",
+      "name": "LULU",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-06-27",
+      "entry": 117.57,
+      "stop": 109.34,
+      "target": 129.33,
       "status": "open",
       "days": 0,
       "last_date": "2026-06-27",
@@ -1611,23 +1645,6 @@
       "return_pct": null
     },
     {
-      "ticker": "GS",
-      "name": "GS",
-      "signal": "STRONG BUY",
-      "score": 77,
-      "entry_date": "2026-06-21",
-      "entry": 1096.56,
-      "stop": 1019.8,
-      "target": 1206.22,
-      "status": "open",
-      "days": 6,
-      "last_date": "2026-06-27",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "UPST",
       "name": "UPST",
       "signal": "STRONG BUY",
@@ -2497,6 +2514,23 @@
       "return_pct": -7.5
     },
     {
+      "ticker": "GS",
+      "name": "GS",
+      "signal": "STRONG BUY",
+      "score": 77,
+      "entry_date": "2026-06-21",
+      "entry": 1096.56,
+      "stop": 1019.8,
+      "target": 1206.22,
+      "status": "closed",
+      "days": 6,
+      "last_date": "2026-06-27",
+      "exit": 1019.8,
+      "exit_date": "2026-06-27",
+      "reason": "stop",
+      "return_pct": -7.5
+    },
+    {
       "ticker": "CVNA",
       "name": "CVNA",
       "signal": "BUY",
@@ -2954,23 +2988,6 @@
       "exit_date": "2026-06-24",
       "reason": "stop",
       "return_pct": -1.25
-    },
-    {
-      "ticker": "QCOM",
-      "name": "QCOM",
-      "signal": "STRONG BUY",
-      "score": 81,
-      "entry_date": "2026-06-20",
-      "entry": 226.11,
-      "stop": 210.28,
-      "target": 248.72,
-      "status": "closed",
-      "days": 3,
-      "last_date": "2026-06-23",
-      "exit": 210.28,
-      "exit_date": "2026-06-23",
-      "reason": "stop",
-      "return_pct": -7.5
     }
   ]
 }
