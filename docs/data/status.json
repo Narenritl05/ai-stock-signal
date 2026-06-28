@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-28 06:08 (เวลาไทย)",
-  "generated_at_iso": "2026-06-28T06:08:52.345360+07:00",
+  "generated_at": "2026-06-28 08:32 (เวลาไทย)",
+  "generated_at_iso": "2026-06-28T08:32:40.347956+07:00",
   "status": "ok",
-  "telegram": "skipped",
+  "telegram": "sent",
   "overall": {
     "attempted": 269,
     "received": 266,
@@ -45,17 +45,17 @@
       "failed": 1,
       "fetch_fail_ratio": 0.007,
       "summary": {
-        "strong_buy": 11,
+        "strong_buy": 22,
         "buy": 26,
-        "watch": 23,
-        "avoid": 74
+        "watch": 17,
+        "avoid": 69
       },
       "regime": {
         "regime": "NEUTRAL",
-        "breadth": 45.5,
+        "breadth": 47.0,
         "label": "ตลาดไซด์เวย์ — เลือกเฉพาะตัวแข็งแรง",
         "stocks": 134,
-        "uptrend": 61
+        "uptrend": 63
       }
     }
   ],
