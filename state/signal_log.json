@@ -1539,13 +1539,13 @@
       "entry": 229.01,
       "stop": 212.98,
       "target": 251.91,
-      "status": "open",
+      "status": "closed",
       "days": 7,
       "last_date": "2026-06-28",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 251.91,
+      "exit_date": "2026-06-28",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "WFC",

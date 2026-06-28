@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-28 08:32 (เวลาไทย)",
+  "generated_at": "2026-06-28 13:13 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 64,
-    "open": 148,
-    "win_rate": 7.8,
-    "avg_return": -5.34,
-    "total_return": -97.2,
-    "by_target": 5,
+    "closed": 65,
+    "open": 147,
+    "win_rate": 9.2,
+    "avg_return": -5.11,
+    "total_return": -97.0,
+    "by_target": 6,
     "by_stop": 59,
     "by_time": 0
   },
@@ -1730,23 +1730,6 @@
       "return_pct": null
     },
     {
-      "ticker": "HON",
-      "name": "HON",
-      "signal": "STRONG BUY",
-      "score": 77,
-      "entry_date": "2026-06-21",
-      "entry": 229.01,
-      "stop": 212.98,
-      "target": 251.91,
-      "status": "open",
-      "days": 7,
-      "last_date": "2026-06-28",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "WFC",
       "name": "WFC",
       "signal": "STRONG BUY",
@@ -2531,6 +2514,23 @@
   ],
   "closed_positions": [
     {
+      "ticker": "HON",
+      "name": "HON",
+      "signal": "STRONG BUY",
+      "score": 77,
+      "entry_date": "2026-06-21",
+      "entry": 229.01,
+      "stop": 212.98,
+      "target": 251.91,
+      "status": "closed",
+      "days": 7,
+      "last_date": "2026-06-28",
+      "exit": 251.91,
+      "exit_date": "2026-06-28",
+      "reason": "target",
+      "return_pct": 9.5
+    },
+    {
       "ticker": "ZS",
       "name": "ZS",
       "signal": "BUY",
@@ -3022,23 +3022,6 @@
       "exit_date": "2026-06-25",
       "reason": "target",
       "return_pct": 9.51
-    },
-    {
-      "ticker": "RBF.BK",
-      "name": "RBF",
-      "signal": "BUY",
-      "score": 69,
-      "entry_date": "2026-06-21",
-      "entry": 4.62,
-      "stop": 4.3,
-      "target": 5.08,
-      "status": "closed",
-      "days": 4,
-      "last_date": "2026-06-25",
-      "exit": 5.08,
-      "exit_date": "2026-06-25",
-      "reason": "target",
-      "return_pct": 9.46
     }
   ]
 }
