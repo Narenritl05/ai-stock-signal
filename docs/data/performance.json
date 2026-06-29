@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-30 02:02 (เวลาไทย)",
+  "generated_at": "2026-06-30 04:06 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
     "closed": 73,
-    "open": 149,
+    "open": 150,
     "win_rate": 17.8,
     "avg_return": -3.74,
     "total_return": -94.7,
@@ -12,6 +12,23 @@
     "by_time": 0
   },
   "open_positions": [
+    {
+      "ticker": "CELH",
+      "name": "CELH",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-06-30",
+      "entry": 29.79,
+      "stop": 27.75,
+      "target": 32.77,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-30",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
     {
       "ticker": "IRPC.BK",
       "name": "IRPC",
