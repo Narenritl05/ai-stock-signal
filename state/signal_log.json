@@ -3705,6 +3705,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "PTG.BK",
+      "name": "PTG",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-06-29",
+      "entry": 7.35,
+      "stop": 7.1,
+      "target": 8.08,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-29",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
