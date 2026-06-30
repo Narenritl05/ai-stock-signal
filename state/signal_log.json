@@ -3892,6 +3892,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "BCP.BK",
+      "name": "BCP",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-06-30",
+      "entry": 33.5,
+      "stop": 32.0,
+      "target": 36.85,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-30",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "ZEN.BK",
+      "name": "ZEN",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-06-30",
+      "entry": 5.3,
+      "stop": 5.15,
+      "target": 5.83,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-06-30",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
