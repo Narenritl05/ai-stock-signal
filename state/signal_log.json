@@ -4249,6 +4249,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "PTT.BK",
+      "name": "PTT",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-01",
+      "entry": 35.75,
+      "stop": 34.5,
+      "target": 39.33,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-01",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "CBG.BK",
+      "name": "CBG",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-07-01",
+      "entry": 47.75,
+      "stop": 44.41,
+      "target": 52.53,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-01",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
