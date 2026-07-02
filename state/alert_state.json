@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-03 02:59 (เวลาไทย)",
+  "last_run": "2026-07-03 04:17 (เวลาไทย)",
   "signals": {
     "SIRI.BK": {
       "signal": "STRONG BUY",
@@ -529,6 +529,10 @@
       "signal": "AVOID",
       "score": 12
     },
+    "NET": {
+      "signal": "STRONG BUY",
+      "score": 82
+    },
     "APP": {
       "signal": "STRONG BUY",
       "score": 82
@@ -557,9 +561,9 @@
       "signal": "STRONG BUY",
       "score": 76
     },
-    "NET": {
-      "signal": "BUY",
-      "score": 74
+    "MCD": {
+      "signal": "STRONG BUY",
+      "score": 76
     },
     "SOFI": {
       "signal": "BUY",
@@ -638,10 +642,6 @@
       "score": 68
     },
     "PYPL": {
-      "signal": "BUY",
-      "score": 68
-    },
-    "MCD": {
       "signal": "BUY",
       "score": 68
     },
