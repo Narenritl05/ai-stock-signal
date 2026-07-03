@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-04 01:09 (เวลาไทย)",
+  "generated_at": "2026-07-04 02:56 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 120,
+    "closed": 121,
     "open": 186,
-    "win_rate": 37.5,
-    "avg_return": -0.68,
-    "total_return": -69.7,
+    "win_rate": 37.2,
+    "avg_return": -0.73,
+    "total_return": -72.0,
     "by_target": 45,
-    "by_stop": 75,
+    "by_stop": 76,
     "by_time": 0
   },
   "open_positions": [
@@ -30,14 +30,14 @@
       "return_pct": null
     },
     {
-      "ticker": "RS.BK",
-      "name": "RS",
+      "ticker": "BBL.BK",
+      "name": "BBL",
       "signal": "BUY",
-      "score": 68,
+      "score": 60,
       "entry_date": "2026-07-04",
-      "entry": 0.14,
-      "stop": 0.13,
-      "target": 0.15,
+      "entry": 191.0,
+      "stop": 177.63,
+      "target": 210.1,
       "status": "open",
       "days": 0,
       "last_date": "2026-07-04",
@@ -47,14 +47,14 @@
       "return_pct": null
     },
     {
-      "ticker": "BBL.BK",
-      "name": "BBL",
+      "ticker": "BRI.BK",
+      "name": "BRI",
       "signal": "BUY",
-      "score": 60,
+      "score": 63,
       "entry_date": "2026-07-04",
-      "entry": 191.0,
-      "stop": 177.63,
-      "target": 210.1,
+      "entry": 1.33,
+      "stop": 1.24,
+      "target": 1.46,
       "status": "open",
       "days": 0,
       "last_date": "2026-07-04",
@@ -3211,6 +3211,23 @@
       "return_pct": -7.27
     },
     {
+      "ticker": "RS.BK",
+      "name": "RS",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-07-04",
+      "entry": 0.14,
+      "stop": 0.13,
+      "target": 0.15,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-07-04",
+      "exit": 0.13,
+      "exit_date": "2026-07-04",
+      "reason": "stop",
+      "return_pct": -7.64
+    },
+    {
       "ticker": "RATCH.BK",
       "name": "RATCH",
       "signal": "STRONG BUY",
@@ -3668,23 +3685,6 @@
       "exit_date": "2026-07-01",
       "reason": "target",
       "return_pct": 9.5
-    },
-    {
-      "ticker": "UPST",
-      "name": "UPST",
-      "signal": "STRONG BUY",
-      "score": 77,
-      "entry_date": "2026-06-21",
-      "entry": 32.43,
-      "stop": 30.16,
-      "target": 35.67,
-      "status": "closed",
-      "days": 10,
-      "last_date": "2026-07-01",
-      "exit": 35.67,
-      "exit_date": "2026-07-01",
-      "reason": "target",
-      "return_pct": 9.49
     }
   ]
 }
