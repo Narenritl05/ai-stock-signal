@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-06 11:49 (เวลาไทย)",
+  "generated_at": "2026-07-06 15:57 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 126,
-    "open": 184,
-    "win_rate": 39.7,
-    "avg_return": -0.33,
-    "total_return": -55.9,
-    "by_target": 50,
+    "closed": 127,
+    "open": 185,
+    "win_rate": 40.2,
+    "avg_return": -0.25,
+    "total_return": -51.7,
+    "by_target": 51,
     "by_stop": 76,
     "by_time": 0
   },
@@ -55,6 +55,40 @@
       "entry": 10.6,
       "stop": 10.0,
       "target": 11.66,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-06",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "CPF.BK",
+      "name": "CPF",
+      "signal": "BUY",
+      "score": 65,
+      "entry_date": "2026-07-06",
+      "entry": 21.6,
+      "stop": 20.09,
+      "target": 23.76,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-06",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "THANI.BK",
+      "name": "THANI",
+      "signal": "BUY",
+      "score": 65,
+      "entry_date": "2026-07-06",
+      "entry": 1.91,
+      "stop": 1.78,
+      "target": 2.1,
       "status": "open",
       "days": 0,
       "last_date": "2026-07-06",
@@ -2274,23 +2308,6 @@
       "return_pct": null
     },
     {
-      "ticker": "AEONTS.BK",
-      "name": "AEONTS",
-      "signal": "BUY",
-      "score": 70,
-      "entry_date": "2026-06-21",
-      "entry": 96.25,
-      "stop": 93.5,
-      "target": 105.88,
-      "status": "open",
-      "days": 15,
-      "last_date": "2026-07-06",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "MC.BK",
       "name": "MC",
       "signal": "BUY",
@@ -3177,6 +3194,23 @@
       "return_pct": 9.5
     },
     {
+      "ticker": "AEONTS.BK",
+      "name": "AEONTS",
+      "signal": "BUY",
+      "score": 70,
+      "entry_date": "2026-06-21",
+      "entry": 96.25,
+      "stop": 93.5,
+      "target": 105.88,
+      "status": "closed",
+      "days": 15,
+      "last_date": "2026-07-06",
+      "exit": 105.88,
+      "exit_date": "2026-07-06",
+      "reason": "target",
+      "return_pct": 9.51
+    },
+    {
       "ticker": "THANI.BK",
       "name": "THANI",
       "signal": "BUY",
@@ -3634,23 +3668,6 @@
       "exit_date": "2026-07-02",
       "reason": "stop",
       "return_pct": -7.5
-    },
-    {
-      "ticker": "CELH",
-      "name": "CELH",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-06-30",
-      "entry": 29.79,
-      "stop": 27.75,
-      "target": 32.77,
-      "status": "closed",
-      "days": 2,
-      "last_date": "2026-07-02",
-      "exit": 32.77,
-      "exit_date": "2026-07-02",
-      "reason": "target",
-      "return_pct": 9.5
     }
   ]
 }
