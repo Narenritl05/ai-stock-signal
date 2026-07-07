@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-07 08:15 (เวลาไทย)",
+  "generated_at": "2026-07-07 12:32 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 134,
+    "closed": 135,
     "open": 197,
-    "win_rate": 41.8,
-    "avg_return": 0.01,
-    "total_return": -35.0,
-    "by_target": 56,
+    "win_rate": 42.2,
+    "avg_return": 0.08,
+    "total_return": -28.8,
+    "by_target": 57,
     "by_stop": 78,
     "by_time": 0
   },
@@ -89,6 +89,23 @@
       "entry": 26.75,
       "stop": 24.88,
       "target": 29.43,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-07",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "STA.BK",
+      "name": "STA",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-07-07",
+      "entry": 17.8,
+      "stop": 16.6,
+      "target": 19.58,
       "status": "open",
       "days": 0,
       "last_date": "2026-07-07",
@@ -1900,23 +1917,6 @@
       "return_pct": null
     },
     {
-      "ticker": "SPRC.BK",
-      "name": "SPRC",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-06-25",
-      "entry": 7.2,
-      "stop": 6.9,
-      "target": 7.92,
-      "status": "open",
-      "days": 12,
-      "last_date": "2026-07-07",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "TKN.BK",
       "name": "TKN",
       "signal": "STRONG BUY",
@@ -3364,6 +3364,23 @@
   ],
   "closed_positions": [
     {
+      "ticker": "SPRC.BK",
+      "name": "SPRC",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-06-25",
+      "entry": 7.2,
+      "stop": 6.9,
+      "target": 7.92,
+      "status": "closed",
+      "days": 12,
+      "last_date": "2026-07-07",
+      "exit": 7.92,
+      "exit_date": "2026-07-07",
+      "reason": "target",
+      "return_pct": 9.5
+    },
+    {
       "ticker": "ASTS",
       "name": "ASTS",
       "signal": "BUY",
@@ -3855,23 +3872,6 @@
       "exit_date": "2026-07-03",
       "reason": "target",
       "return_pct": 9.58
-    },
-    {
-      "ticker": "KTB.BK",
-      "name": "KTB",
-      "signal": "STRONG BUY",
-      "score": 77,
-      "entry_date": "2026-06-20",
-      "entry": 36.0,
-      "stop": 34.5,
-      "target": 39.6,
-      "status": "closed",
-      "days": 12,
-      "last_date": "2026-07-02",
-      "exit": 39.6,
-      "exit_date": "2026-07-02",
-      "reason": "target",
-      "return_pct": 9.5
     }
   ]
 }
