@@ -5643,6 +5643,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "SPRC.BK",
+      "name": "SPRC",
+      "signal": "BUY",
+      "score": 72,
+      "entry_date": "2026-07-07",
+      "entry": 7.9,
+      "stop": 7.35,
+      "target": 8.69,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-07",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "GUNKUL.BK",
+      "name": "GUNKUL",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-07-07",
+      "entry": 4.46,
+      "stop": 4.15,
+      "target": 4.91,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-07",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
