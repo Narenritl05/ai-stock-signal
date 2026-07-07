@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-07 16:32 (เวลาไทย)",
+  "generated_at": "2026-07-07 19:24 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 135,
+    "closed": 136,
     "open": 199,
-    "win_rate": 42.2,
-    "avg_return": 0.08,
-    "total_return": -28.8,
-    "by_target": 57,
+    "win_rate": 42.6,
+    "avg_return": 0.15,
+    "total_return": -22.0,
+    "by_target": 58,
     "by_stop": 78,
     "by_time": 0
   },
@@ -140,6 +140,23 @@
       "entry": 4.46,
       "stop": 4.15,
       "target": 4.91,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-07",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "RS.BK",
+      "name": "RS",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-07-07",
+      "entry": 0.14,
+      "stop": 0.13,
+      "target": 0.15,
       "status": "open",
       "days": 0,
       "last_date": "2026-07-07",
@@ -3175,23 +3192,6 @@
       "return_pct": null
     },
     {
-      "ticker": "SCGP.BK",
-      "name": "SCGP",
-      "signal": "STRONG BUY",
-      "score": 77,
-      "entry_date": "2026-06-20",
-      "entry": 26.5,
-      "stop": 24.64,
-      "target": 29.15,
-      "status": "open",
-      "days": 17,
-      "last_date": "2026-07-07",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "BTS.BK",
       "name": "BTS",
       "signal": "STRONG BUY",
@@ -3397,6 +3397,23 @@
     }
   ],
   "closed_positions": [
+    {
+      "ticker": "SCGP.BK",
+      "name": "SCGP",
+      "signal": "STRONG BUY",
+      "score": 77,
+      "entry_date": "2026-06-20",
+      "entry": 26.5,
+      "stop": 24.64,
+      "target": 29.15,
+      "status": "closed",
+      "days": 17,
+      "last_date": "2026-07-07",
+      "exit": 29.15,
+      "exit_date": "2026-07-07",
+      "reason": "target",
+      "return_pct": 9.5
+    },
     {
       "ticker": "SPRC.BK",
       "name": "SPRC",
@@ -3889,23 +3906,6 @@
       "exit_date": "2026-07-03",
       "reason": "stop",
       "return_pct": -7.64
-    },
-    {
-      "ticker": "BRI.BK",
-      "name": "BRI",
-      "signal": "STRONG BUY",
-      "score": 76,
-      "entry_date": "2026-07-03",
-      "entry": 1.29,
-      "stop": 1.22,
-      "target": 1.42,
-      "status": "closed",
-      "days": 0,
-      "last_date": "2026-07-03",
-      "exit": 1.42,
-      "exit_date": "2026-07-03",
-      "reason": "target",
-      "return_pct": 9.58
     }
   ]
 }
