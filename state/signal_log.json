@@ -5762,6 +5762,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "RS.BK",
+      "name": "RS",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-07-08",
+      "entry": 0.14,
+      "stop": 0.13,
+      "target": 0.15,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-08",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
