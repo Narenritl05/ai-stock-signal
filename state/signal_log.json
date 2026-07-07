@@ -5745,6 +5745,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "XOM",
+      "name": "XOM",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-08",
+      "entry": 141.46,
+      "stop": 136.06,
+      "target": 155.6,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-08",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }

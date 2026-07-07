@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-08 00:32 (เวลาไทย)",
+  "generated_at": "2026-07-08 02:47 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
     "closed": 147,
-    "open": 191,
+    "open": 192,
     "win_rate": 41.5,
     "avg_return": -0.08,
     "total_return": -45.2,
@@ -12,6 +12,23 @@
     "by_time": 0
   },
   "open_positions": [
+    {
+      "ticker": "XOM",
+      "name": "XOM",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-08",
+      "entry": 141.46,
+      "stop": 136.06,
+      "target": 155.6,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-08",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
     {
       "ticker": "CELH",
       "name": "CELH",
