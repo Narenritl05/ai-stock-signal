@@ -5813,6 +5813,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "RATCH.BK",
+      "name": "RATCH",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-07-08",
+      "entry": 35.25,
+      "stop": 32.78,
+      "target": 38.78,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-08",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
