@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-09 07:05 (เวลาไทย)",
+  "generated_at": "2026-07-09 11:28 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 161,
-    "open": 199,
-    "win_rate": 39.8,
-    "avg_return": -0.33,
-    "total_return": -65.1,
-    "by_target": 64,
+    "closed": 162,
+    "open": 198,
+    "win_rate": 40.1,
+    "avg_return": -0.27,
+    "total_return": -61.7,
+    "by_target": 65,
     "by_stop": 97,
     "by_time": 0
   },
@@ -2070,23 +2070,6 @@
       "return_pct": null
     },
     {
-      "ticker": "SINGER.BK",
-      "name": "SINGER",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-06-25",
-      "entry": 9.85,
-      "stop": 9.16,
-      "target": 10.84,
-      "status": "open",
-      "days": 14,
-      "last_date": "2026-07-09",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "SNNP.BK",
       "name": "SNNP",
       "signal": "BUY",
@@ -3398,6 +3381,23 @@
   ],
   "closed_positions": [
     {
+      "ticker": "SINGER.BK",
+      "name": "SINGER",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-06-25",
+      "entry": 9.85,
+      "stop": 9.16,
+      "target": 10.84,
+      "status": "closed",
+      "days": 14,
+      "last_date": "2026-07-09",
+      "exit": 10.84,
+      "exit_date": "2026-07-09",
+      "reason": "target",
+      "return_pct": 9.55
+    },
+    {
       "ticker": "RS.BK",
       "name": "RS",
       "signal": "BUY",
@@ -3889,23 +3889,6 @@
       "exit_date": "2026-07-07",
       "reason": "stop",
       "return_pct": -7.5
-    },
-    {
-      "ticker": "GPSC.BK",
-      "name": "GPSC",
-      "signal": "BUY",
-      "score": 72,
-      "entry_date": "2026-06-20",
-      "entry": 43.5,
-      "stop": 40.45,
-      "target": 47.85,
-      "status": "closed",
-      "days": 16,
-      "last_date": "2026-07-06",
-      "exit": 47.85,
-      "exit_date": "2026-07-06",
-      "reason": "target",
-      "return_pct": 9.5
     }
   ]
 }

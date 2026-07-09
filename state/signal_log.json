@@ -2763,13 +2763,13 @@
       "entry": 9.85,
       "stop": 9.16,
       "target": 10.84,
-      "status": "open",
+      "status": "closed",
       "days": 14,
       "last_date": "2026-07-09",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 10.84,
+      "exit_date": "2026-07-09",
+      "reason": "target",
+      "return_pct": 9.55
     },
     {
       "ticker": "DOHOME.BK",
