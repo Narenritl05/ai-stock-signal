@@ -6697,6 +6697,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "AXP",
+      "name": "AXP",
+      "signal": "BUY",
+      "score": 70,
+      "entry_date": "2026-07-11",
+      "entry": 350.83,
+      "stop": 326.27,
+      "target": 385.91,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-11",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
