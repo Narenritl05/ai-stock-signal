@@ -6714,6 +6714,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "PLANB.BK",
+      "name": "PLANB",
+      "signal": "STRONG BUY",
+      "score": 77,
+      "entry_date": "2026-07-11",
+      "entry": 5.4,
+      "stop": 5.02,
+      "target": 5.94,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-11",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "SINGER.BK",
+      "name": "SINGER",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-07-11",
+      "entry": 12.7,
+      "stop": 11.81,
+      "target": 13.97,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-11",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
