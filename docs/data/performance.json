@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-10 19:39 (เวลาไทย)",
+  "generated_at": "2026-07-10 22:28 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 195,
-    "open": 190,
-    "win_rate": 43.1,
-    "avg_return": 0.13,
-    "total_return": -28.2,
-    "by_target": 76,
+    "closed": 196,
+    "open": 191,
+    "win_rate": 43.4,
+    "avg_return": 0.18,
+    "total_return": -21.4,
+    "by_target": 77,
     "by_stop": 102,
     "by_time": 17
   },
@@ -259,6 +259,40 @@
       "entry": 12.7,
       "stop": 11.81,
       "target": 13.97,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-10",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "ALAB",
+      "name": "ALAB",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-10",
+      "entry": 415.3,
+      "stop": 386.23,
+      "target": 456.83,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-10",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "ETN",
+      "name": "ETN",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-10",
+      "entry": 409.89,
+      "stop": 391.39,
+      "target": 450.87,
       "status": "open",
       "days": 0,
       "last_date": "2026-07-10",
@@ -2240,23 +2274,6 @@
       "return_pct": null
     },
     {
-      "ticker": "MELI",
-      "name": "MELI",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-06-26",
-      "entry": 1669.74,
-      "stop": 1583.66,
-      "target": 1836.71,
-      "status": "open",
-      "days": 14,
-      "last_date": "2026-07-10",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "MA",
       "name": "MA",
       "signal": "BUY",
@@ -3568,6 +3585,23 @@
       "return_pct": 9.5
     },
     {
+      "ticker": "MELI",
+      "name": "MELI",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-06-26",
+      "entry": 1669.74,
+      "stop": 1583.66,
+      "target": 1836.71,
+      "status": "closed",
+      "days": 14,
+      "last_date": "2026-07-10",
+      "exit": 1836.71,
+      "exit_date": "2026-07-10",
+      "reason": "target",
+      "return_pct": 9.5
+    },
+    {
       "ticker": "BCP.BK",
       "name": "BCP",
       "signal": "BUY",
@@ -3736,23 +3770,6 @@
       "exit_date": "2026-07-09",
       "reason": "target",
       "return_pct": 9.64
-    },
-    {
-      "ticker": "JMART.BK",
-      "name": "JMART",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-06-21",
-      "entry": 9.25,
-      "stop": 8.6,
-      "target": 10.18,
-      "status": "closed",
-      "days": 18,
-      "last_date": "2026-07-09",
-      "exit": 10.18,
-      "exit_date": "2026-07-09",
-      "reason": "target",
-      "return_pct": 9.55
     }
   ]
 }
