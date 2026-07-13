@@ -4395,13 +4395,13 @@
       "entry": 190.12,
       "stop": 176.81,
       "target": 209.13,
-      "status": "open",
+      "status": "closed",
       "days": 12,
       "last_date": "2026-07-13",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 209.13,
+      "exit_date": "2026-07-13",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "RKLB",
@@ -6027,13 +6027,13 @@
       "entry": 516.61,
       "stop": 480.45,
       "target": 568.27,
-      "status": "open",
+      "status": "closed",
       "days": 5,
       "last_date": "2026-07-13",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 480.45,
+      "exit_date": "2026-07-13",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "RS.BK",
@@ -6248,13 +6248,13 @@
       "entry": 268.48,
       "stop": 249.69,
       "target": 295.33,
-      "status": "open",
+      "status": "closed",
       "days": 4,
       "last_date": "2026-07-13",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 249.69,
+      "exit_date": "2026-07-13",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "STX",
@@ -6265,13 +6265,13 @@
       "entry": 936.37,
       "stop": 870.82,
       "target": 1030.01,
-      "status": "open",
+      "status": "closed",
       "days": 4,
       "last_date": "2026-07-13",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 870.82,
+      "exit_date": "2026-07-13",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "JNJ",
@@ -6554,13 +6554,13 @@
       "entry": 415.3,
       "stop": 386.23,
       "target": 456.83,
-      "status": "open",
+      "status": "closed",
       "days": 3,
       "last_date": "2026-07-13",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 386.23,
+      "exit_date": "2026-07-13",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "ETN",
