@@ -7054,6 +7054,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "BDMS.BK",
+      "name": "BDMS",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-07-14",
+      "entry": 19.4,
+      "stop": 18.2,
+      "target": 21.34,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-14",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
