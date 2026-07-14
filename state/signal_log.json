@@ -6384,13 +6384,13 @@
       "entry": 19.8,
       "stop": 18.7,
       "target": 21.78,
-      "status": "open",
+      "status": "closed",
       "days": 4,
       "last_date": "2026-07-14",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 18.7,
+      "exit_date": "2026-07-14",
+      "reason": "stop",
+      "return_pct": -6.06
     },
     {
       "ticker": "WHAUP.BK",
@@ -6520,13 +6520,13 @@
       "entry": 0.84,
       "stop": 0.82,
       "target": 0.92,
-      "status": "open",
+      "status": "closed",
       "days": 4,
       "last_date": "2026-07-14",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 0.92,
+      "exit_date": "2026-07-14",
+      "reason": "target",
+      "return_pct": 9.02
     },
     {
       "ticker": "SINGER.BK",
@@ -6877,13 +6877,13 @@
       "entry": 1.39,
       "stop": 1.34,
       "target": 1.53,
-      "status": "open",
+      "status": "closed",
       "days": 1,
       "last_date": "2026-07-14",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 1.53,
+      "exit_date": "2026-07-14",
+      "reason": "target",
+      "return_pct": 9.57
     },
     {
       "ticker": "CBG.BK",
