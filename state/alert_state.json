@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-15 03:06 (เวลาไทย)",
+  "last_run": "2026-07-15 04:29 (เวลาไทย)",
   "signals": {
     "BTS.BK": {
       "signal": "STRONG BUY",
@@ -529,6 +529,10 @@
       "signal": "AVOID",
       "score": 12
     },
+    "MS": {
+      "signal": "STRONG BUY",
+      "score": 85
+    },
     "CMG": {
       "signal": "STRONG BUY",
       "score": 82
@@ -538,10 +542,6 @@
       "score": 77
     },
     "PATH": {
-      "signal": "STRONG BUY",
-      "score": 77
-    },
-    "MS": {
       "signal": "STRONG BUY",
       "score": 77
     },
@@ -620,6 +620,10 @@
     "JD": {
       "signal": "BUY",
       "score": 68
+    },
+    "BAC": {
+      "signal": "BUY",
+      "score": 67
     },
     "CRWD": {
       "signal": "BUY",
@@ -702,14 +706,6 @@
       "score": 59
     },
     "OKTA": {
-      "signal": "WATCH",
-      "score": 59
-    },
-    "JPM": {
-      "signal": "WATCH",
-      "score": 59
-    },
-    "BAC": {
       "signal": "WATCH",
       "score": 59
     },
@@ -818,6 +814,10 @@
       "score": 47
     },
     "PANW": {
+      "signal": "WATCH",
+      "score": 45
+    },
+    "JPM": {
       "signal": "WATCH",
       "score": 45
     },
