@@ -7224,6 +7224,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "MS",
+      "name": "MS",
+      "signal": "STRONG BUY",
+      "score": 77,
+      "entry_date": "2026-07-14",
+      "entry": 228.03,
+      "stop": 212.07,
+      "target": 250.84,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-14",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "ZS",
+      "name": "ZS",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-14",
+      "entry": 154.7,
+      "stop": 143.87,
+      "target": 170.17,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-14",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
