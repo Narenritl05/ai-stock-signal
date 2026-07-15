@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-15 21:44 (เวลาไทย)",
-  "generated_at_iso": "2026-07-15T21:44:38.189741+07:00",
+  "generated_at": "2026-07-15 23:16 (เวลาไทย)",
+  "generated_at_iso": "2026-07-15T23:16:43.872842+07:00",
   "status": "ok",
   "telegram": "sent",
   "overall": {
     "attempted": 269,
-    "received": 265,
-    "failed": 4,
-    "fetch_fail_ratio": 0.015
+    "received": 266,
+    "failed": 3,
+    "fetch_fail_ratio": 0.011
   },
   "markets": [
     {
@@ -41,21 +41,21 @@
       "tag": "US",
       "file": "signals_foreign.json",
       "attempted": 135,
-      "received": 133,
-      "failed": 2,
-      "fetch_fail_ratio": 0.015,
+      "received": 134,
+      "failed": 1,
+      "fetch_fail_ratio": 0.007,
       "summary": {
-        "strong_buy": 6,
-        "buy": 41,
-        "watch": 31,
-        "avoid": 55
+        "strong_buy": 8,
+        "buy": 33,
+        "watch": 34,
+        "avoid": 59
       },
       "regime": {
         "regime": "NEUTRAL",
-        "breadth": 58.6,
+        "breadth": 54.5,
         "label": "ตลาดไซด์เวย์ — เลือกเฉพาะตัวแข็งแรง",
-        "stocks": 133,
-        "uptrend": 78
+        "stocks": 134,
+        "uptrend": 73
       }
     }
   ],
