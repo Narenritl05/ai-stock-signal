@@ -7513,6 +7513,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "BEM.BK",
+      "name": "BEM",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-15",
+      "entry": 6.45,
+      "stop": 6.0,
+      "target": 7.09,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-15",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
