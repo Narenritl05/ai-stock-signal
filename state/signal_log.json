@@ -7462,6 +7462,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "PRM.BK",
+      "name": "PRM",
+      "signal": "STRONG BUY",
+      "score": 77,
+      "entry_date": "2026-07-15",
+      "entry": 9.15,
+      "stop": 8.65,
+      "target": 10.06,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-15",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "WHAUP.BK",
+      "name": "WHAUP",
+      "signal": "BUY",
+      "score": 69,
+      "entry_date": "2026-07-15",
+      "entry": 7.85,
+      "stop": 7.3,
+      "target": 8.63,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-15",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "SNNP.BK",
+      "name": "SNNP",
+      "signal": "BUY",
+      "score": 67,
+      "entry_date": "2026-07-15",
+      "entry": 7.1,
+      "stop": 6.6,
+      "target": 7.81,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-15",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
