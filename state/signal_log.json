@@ -7700,6 +7700,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML",
+      "signal": "STRONG BUY",
+      "score": 76,
+      "entry_date": "2026-07-16",
+      "entry": 1815.27,
+      "stop": 1726.04,
+      "target": 1996.8,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-16",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "GE",
+      "name": "GE",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-16",
+      "entry": 360.35,
+      "stop": 351.29,
+      "target": 396.39,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-16",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
