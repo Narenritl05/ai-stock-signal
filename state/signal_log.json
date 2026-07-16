@@ -7921,6 +7921,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "TIDLOR.BK",
+      "name": "TIDLOR",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-16",
+      "entry": 19.3,
+      "stop": 18.7,
+      "target": 21.23,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-16",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
