@@ -8006,6 +8006,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "UNH",
+      "name": "UNH",
+      "signal": "BUY",
+      "score": 71,
+      "entry_date": "2026-07-16",
+      "entry": 436.43,
+      "stop": 405.88,
+      "target": 480.08,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-16",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "REGN",
+      "name": "REGN",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-16",
+      "entry": 678.84,
+      "stop": 631.32,
+      "target": 746.72,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-16",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
