@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-17 02:58 (เวลาไทย)",
+  "last_run": "2026-07-17 04:06 (เวลาไทย)",
   "signals": {
     "HANA.BK": {
       "signal": "STRONG BUY",
@@ -725,6 +725,10 @@
       "signal": "WATCH",
       "score": 59
     },
+    "LOW": {
+      "signal": "WATCH",
+      "score": 57
+    },
     "TOST": {
       "signal": "WATCH",
       "score": 56
@@ -756,10 +760,6 @@
     "JD": {
       "signal": "WATCH",
       "score": 50
-    },
-    "LOW": {
-      "signal": "WATCH",
-      "score": 49
     },
     "DDOG": {
       "signal": "WATCH",
@@ -817,11 +817,11 @@
       "signal": "AVOID",
       "score": 39
     },
-    "NFLX": {
-      "signal": "AVOID",
-      "score": 34
-    },
     "ISRG": {
+      "signal": "AVOID",
+      "score": 39
+    },
+    "NFLX": {
       "signal": "AVOID",
       "score": 34
     },
@@ -870,6 +870,10 @@
       "score": 26
     },
     "MCD": {
+      "signal": "AVOID",
+      "score": 26
+    },
+    "ETN": {
       "signal": "AVOID",
       "score": 26
     },
@@ -949,9 +953,9 @@
       "signal": "AVOID",
       "score": 18
     },
-    "ETN": {
+    "ORCL": {
       "signal": "AVOID",
-      "score": 18
+      "score": 16
     },
     "RIOT": {
       "signal": "AVOID",
@@ -1040,10 +1044,6 @@
     "MARA": {
       "signal": "AVOID",
       "score": 12
-    },
-    "ORCL": {
-      "signal": "AVOID",
-      "score": 8
     },
     "IONQ": {
       "signal": "AVOID",
