@@ -8040,6 +8040,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "COST",
+      "name": "COST",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-17",
+      "entry": 942.86,
+      "stop": 912.97,
+      "target": 1037.15,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-17",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
