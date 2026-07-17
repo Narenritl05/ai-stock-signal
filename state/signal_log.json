@@ -6911,13 +6911,13 @@
       "entry": 347.74,
       "stop": 323.4,
       "target": 382.51,
-      "status": "open",
+      "status": "closed",
       "days": 4,
       "last_date": "2026-07-17",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 323.4,
+      "exit_date": "2026-07-17",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "CKP.BK",
@@ -7540,13 +7540,13 @@
       "entry": 9.49,
       "stop": 8.83,
       "target": 10.44,
-      "status": "open",
+      "status": "closed",
       "days": 2,
       "last_date": "2026-07-17",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 8.83,
+      "exit_date": "2026-07-17",
+      "reason": "stop",
+      "return_pct": -7.45
     },
     {
       "ticker": "LI",
