@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-17 13:36 (เวลาไทย)",
+  "generated_at": "2026-07-17 16:05 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 294,
-    "open": 189,
-    "win_rate": 52.7,
-    "avg_return": 0.97,
-    "total_return": 710.0,
-    "by_target": 98,
+    "closed": 295,
+    "open": 190,
+    "win_rate": 52.9,
+    "avg_return": 1.0,
+    "total_return": 786.9,
+    "by_target": 99,
     "by_stop": 118,
     "by_time": 78
   },
@@ -174,6 +174,40 @@
       "entry": 1.12,
       "stop": 1.04,
       "target": 1.23,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-17",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "GPSC.BK",
+      "name": "GPSC",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-07-17",
+      "entry": 54.25,
+      "stop": 50.45,
+      "target": 59.68,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-17",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "TOP.BK",
+      "name": "TOP",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-07-17",
+      "entry": 61.75,
+      "stop": 57.43,
+      "target": 67.93,
       "status": "open",
       "days": 0,
       "last_date": "2026-07-17",
@@ -2937,23 +2971,6 @@
       "return_pct": null
     },
     {
-      "ticker": "DITTO.BK",
-      "name": "DITTO",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-06-30",
-      "entry": 14.2,
-      "stop": 13.21,
-      "target": 15.62,
-      "status": "open",
-      "days": 17,
-      "last_date": "2026-07-17",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "ADVANC.BK",
       "name": "ADVANC",
       "signal": "BUY",
@@ -3260,6 +3277,23 @@
       "exit_date": "2026-07-17",
       "reason": "target",
       "return_pct": 9.72
+    },
+    {
+      "ticker": "DITTO.BK",
+      "name": "DITTO",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-06-30",
+      "entry": 14.2,
+      "stop": 13.21,
+      "target": 15.62,
+      "status": "closed",
+      "days": 17,
+      "last_date": "2026-07-17",
+      "exit": 15.62,
+      "exit_date": "2026-07-17",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "AAPL",
@@ -3719,23 +3753,6 @@
       "exit_date": "2026-07-15",
       "reason": "target",
       "return_pct": 9.5
-    },
-    {
-      "ticker": "PYPL",
-      "name": "PYPL",
-      "signal": "BUY",
-      "score": 69,
-      "entry_date": "2026-07-14",
-      "entry": 46.85,
-      "stop": 43.57,
-      "target": 51.53,
-      "status": "closed",
-      "days": 1,
-      "last_date": "2026-07-15",
-      "exit": 51.53,
-      "exit_date": "2026-07-15",
-      "reason": "target",
-      "return_pct": 9.49
     }
   ]
 }
