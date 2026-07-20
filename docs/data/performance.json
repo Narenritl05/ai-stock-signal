@@ -1,17 +1,34 @@
 {
-  "generated_at": "2026-07-20 09:58 (เวลาไทย)",
+  "generated_at": "2026-07-20 12:02 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 317,
-    "open": 175,
-    "win_rate": 53.3,
-    "avg_return": 0.94,
-    "total_return": 782.6,
-    "by_target": 100,
+    "closed": 319,
+    "open": 174,
+    "win_rate": 53.6,
+    "avg_return": 1.0,
+    "total_return": 959.0,
+    "by_target": 102,
     "by_stop": 124,
     "by_time": 93
   },
   "open_positions": [
+    {
+      "ticker": "MAJOR.BK",
+      "name": "MAJOR",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-20",
+      "entry": 6.9,
+      "stop": 6.6,
+      "target": 7.59,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-20",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
     {
       "ticker": "TKN.BK",
       "name": "TKN",
@@ -1407,23 +1424,6 @@
       "return_pct": null
     },
     {
-      "ticker": "ACE.BK",
-      "name": "ACE",
-      "signal": "STRONG BUY",
-      "score": 78,
-      "entry_date": "2026-07-13",
-      "entry": 1.29,
-      "stop": 1.28,
-      "target": 1.42,
-      "status": "open",
-      "days": 7,
-      "last_date": "2026-07-20",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "HANA.BK",
       "name": "HANA",
       "signal": "BUY",
@@ -2682,23 +2682,6 @@
       "return_pct": null
     },
     {
-      "ticker": "PSL.BK",
-      "name": "PSL",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-02",
-      "entry": 7.1,
-      "stop": 6.85,
-      "target": 7.81,
-      "status": "open",
-      "days": 18,
-      "last_date": "2026-07-20",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "ADBE",
       "name": "ADBE",
       "signal": "BUY",
@@ -3143,6 +3126,40 @@
       "return_pct": 6.77
     },
     {
+      "ticker": "PSL.BK",
+      "name": "PSL",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-02",
+      "entry": 7.1,
+      "stop": 6.85,
+      "target": 7.81,
+      "status": "closed",
+      "days": 18,
+      "last_date": "2026-07-20",
+      "exit": 7.81,
+      "exit_date": "2026-07-20",
+      "reason": "target",
+      "return_pct": 9.5
+    },
+    {
+      "ticker": "ACE.BK",
+      "name": "ACE",
+      "signal": "STRONG BUY",
+      "score": 78,
+      "entry_date": "2026-07-13",
+      "entry": 1.29,
+      "stop": 1.28,
+      "target": 1.42,
+      "status": "closed",
+      "days": 7,
+      "last_date": "2026-07-20",
+      "exit": 1.42,
+      "exit_date": "2026-07-20",
+      "reason": "target",
+      "return_pct": 9.58
+    },
+    {
       "ticker": "PTTGC.BK",
       "name": "PTTGC",
       "signal": "BUY",
@@ -3464,40 +3481,6 @@
       "exit_date": "2026-07-17",
       "reason": "stop",
       "return_pct": -7.45
-    },
-    {
-      "ticker": "MEGA.BK",
-      "name": "MEGA",
-      "signal": "STRONG BUY",
-      "score": 77,
-      "entry_date": "2026-06-26",
-      "entry": 35.5,
-      "stop": 34.0,
-      "target": 39.05,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-07-16",
-      "exit": 37.75,
-      "exit_date": "2026-07-16",
-      "reason": "time",
-      "return_pct": 5.84
-    },
-    {
-      "ticker": "BJC.BK",
-      "name": "BJC",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-06-26",
-      "entry": 14.4,
-      "stop": 13.9,
-      "target": 15.84,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-07-16",
-      "exit": 14.7,
-      "exit_date": "2026-07-16",
-      "reason": "time",
-      "return_pct": 1.58
     }
   ]
 }
