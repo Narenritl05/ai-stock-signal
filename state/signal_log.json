@@ -8601,6 +8601,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "BAC",
+      "name": "BAC",
+      "signal": "BUY",
+      "score": 69,
+      "entry_date": "2026-07-21",
+      "entry": 60.42,
+      "stop": 56.98,
+      "target": 66.46,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-21",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
