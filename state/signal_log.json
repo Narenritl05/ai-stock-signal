@@ -8618,6 +8618,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "TTB.BK",
+      "name": "TTB",
+      "signal": "BUY",
+      "score": 65,
+      "entry_date": "2026-07-21",
+      "entry": 2.96,
+      "stop": 2.75,
+      "target": 3.26,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-21",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "TQM.BK",
+      "name": "TQM",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-07-21",
+      "entry": 17.0,
+      "stop": 15.81,
+      "target": 18.7,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-21",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
