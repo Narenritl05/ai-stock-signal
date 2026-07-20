@@ -7234,13 +7234,13 @@
       "entry": 228.03,
       "stop": 212.07,
       "target": 250.84,
-      "status": "open",
+      "status": "closed",
       "days": 6,
       "last_date": "2026-07-20",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 212.07,
+      "exit_date": "2026-07-20",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "ZS",

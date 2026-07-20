@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-20 22:27 (เวลาไทย)",
+  "generated_at": "2026-07-20 23:55 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 325,
-    "open": 177,
-    "win_rate": 54.2,
-    "avg_return": 1.1,
-    "total_return": 1439.4,
+    "closed": 326,
+    "open": 176,
+    "win_rate": 54.0,
+    "avg_return": 1.07,
+    "total_return": 1324.0,
     "by_target": 107,
-    "by_stop": 125,
+    "by_stop": 126,
     "by_time": 93
   },
   "open_positions": [
@@ -1483,23 +1483,6 @@
       "entry": 5.07,
       "stop": 4.73,
       "target": 5.58,
-      "status": "open",
-      "days": 6,
-      "last_date": "2026-07-20",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "MS",
-      "name": "MS",
-      "signal": "STRONG BUY",
-      "score": 77,
-      "entry_date": "2026-07-14",
-      "entry": 228.03,
-      "stop": 212.07,
-      "target": 250.84,
       "status": "open",
       "days": 6,
       "last_date": "2026-07-20",
@@ -3313,6 +3296,23 @@
       "return_pct": 9.58
     },
     {
+      "ticker": "MS",
+      "name": "MS",
+      "signal": "STRONG BUY",
+      "score": 77,
+      "entry_date": "2026-07-14",
+      "entry": 228.03,
+      "stop": 212.07,
+      "target": 250.84,
+      "status": "closed",
+      "days": 6,
+      "last_date": "2026-07-20",
+      "exit": 212.07,
+      "exit_date": "2026-07-20",
+      "reason": "stop",
+      "return_pct": -7.5
+    },
+    {
       "ticker": "PTTGC.BK",
       "name": "PTTGC",
       "signal": "BUY",
@@ -3515,23 +3515,6 @@
       "exit_date": "2026-07-17",
       "reason": "target",
       "return_pct": 9.5
-    },
-    {
-      "ticker": "NFLX",
-      "name": "NFLX",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-07-02",
-      "entry": 77.22,
-      "stop": 71.82,
-      "target": 84.95,
-      "status": "closed",
-      "days": 15,
-      "last_date": "2026-07-17",
-      "exit": 71.82,
-      "exit_date": "2026-07-17",
-      "reason": "stop",
-      "return_pct": -7.49
     }
   ]
 }
