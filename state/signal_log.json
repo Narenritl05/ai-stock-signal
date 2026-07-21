@@ -8686,6 +8686,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "ADVANC.BK",
+      "name": "ADVANC",
+      "signal": "BUY",
+      "score": 70,
+      "entry_date": "2026-07-21",
+      "entry": 384.0,
+      "stop": 357.12,
+      "target": 422.4,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-21",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
