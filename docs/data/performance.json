@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-22 00:52 (เวลาไทย)",
+  "generated_at": "2026-07-22 02:12 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 356,
-    "open": 168,
-    "win_rate": 54.2,
-    "avg_return": 1.06,
-    "total_return": 1715.4,
+    "closed": 357,
+    "open": 167,
+    "win_rate": 54.1,
+    "avg_return": 1.04,
+    "total_return": 1603.7,
     "by_target": 109,
-    "by_stop": 129,
+    "by_stop": 130,
     "by_time": 118
   },
   "open_positions": [
@@ -2750,23 +2750,6 @@
       "return_pct": null
     },
     {
-      "ticker": "MCD",
-      "name": "MCD",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-07-03",
-      "entry": 280.39,
-      "stop": 264.54,
-      "target": 308.43,
-      "status": "open",
-      "days": 19,
-      "last_date": "2026-07-22",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "DOHOME.BK",
       "name": "DOHOME",
       "signal": "STRONG BUY",
@@ -3109,6 +3092,23 @@
       "return_pct": 2.07
     },
     {
+      "ticker": "MCD",
+      "name": "MCD",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-07-03",
+      "entry": 280.39,
+      "stop": 264.54,
+      "target": 308.43,
+      "status": "closed",
+      "days": 19,
+      "last_date": "2026-07-22",
+      "exit": 264.54,
+      "exit_date": "2026-07-22",
+      "reason": "stop",
+      "return_pct": -6.15
+    },
+    {
       "ticker": "PANW",
       "name": "PANW",
       "signal": "BUY",
@@ -3362,23 +3362,6 @@
       "exit_date": "2026-07-21",
       "reason": "target",
       "return_pct": 9.5
-    },
-    {
-      "ticker": "TTB.BK",
-      "name": "TTB",
-      "signal": "BUY",
-      "score": 65,
-      "entry_date": "2026-07-20",
-      "entry": 2.96,
-      "stop": 2.75,
-      "target": 3.26,
-      "status": "closed",
-      "days": 1,
-      "last_date": "2026-07-21",
-      "exit": 2.75,
-      "exit_date": "2026-07-21",
-      "reason": "stop",
-      "return_pct": -7.59
     }
   ]
 }

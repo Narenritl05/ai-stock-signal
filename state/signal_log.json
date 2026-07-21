@@ -4973,13 +4973,13 @@
       "entry": 280.39,
       "stop": 264.54,
       "target": 308.43,
-      "status": "open",
+      "status": "closed",
       "days": 19,
       "last_date": "2026-07-22",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 264.54,
+      "exit_date": "2026-07-22",
+      "reason": "stop",
+      "return_pct": -6.15
     },
     {
       "ticker": "BRI.BK",
