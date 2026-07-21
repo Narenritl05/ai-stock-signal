@@ -8873,6 +8873,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "STX",
+      "name": "STX",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-21",
+      "entry": 895.48,
+      "stop": 832.8,
+      "target": 985.03,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-21",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
