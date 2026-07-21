@@ -8907,6 +8907,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "LLY",
+      "name": "LLY",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-22",
+      "entry": 1175.41,
+      "stop": 1107.08,
+      "target": 1292.95,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-22",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }

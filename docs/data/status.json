@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-22 02:12 (เวลาไทย)",
-  "generated_at_iso": "2026-07-22T02:12:04.738486+07:00",
+  "generated_at": "2026-07-22 03:42 (เวลาไทย)",
+  "generated_at_iso": "2026-07-22T03:42:36.317968+07:00",
   "status": "ok",
   "telegram": "sent",
   "overall": {
     "attempted": 269,
-    "received": 264,
-    "failed": 5,
-    "fetch_fail_ratio": 0.019
+    "received": 266,
+    "failed": 3,
+    "fetch_fail_ratio": 0.011
   },
   "markets": [
     {
@@ -17,21 +17,21 @@
       "tag": "TH",
       "file": "signals.json",
       "attempted": 134,
-      "received": 131,
-      "failed": 3,
-      "fetch_fail_ratio": 0.022,
+      "received": 132,
+      "failed": 2,
+      "fetch_fail_ratio": 0.015,
       "summary": {
         "strong_buy": 16,
-        "buy": 48,
+        "buy": 49,
         "watch": 43,
         "avoid": 24
       },
       "regime": {
         "regime": "BULL",
-        "breadth": 93.1,
+        "breadth": 93.2,
         "label": "ตลาดขาขึ้น (Risk-on)",
-        "stocks": 131,
-        "uptrend": 122
+        "stocks": 132,
+        "uptrend": 123
       }
     },
     {
@@ -41,21 +41,21 @@
       "tag": "US",
       "file": "signals_foreign.json",
       "attempted": 135,
-      "received": 133,
-      "failed": 2,
-      "fetch_fail_ratio": 0.015,
+      "received": 134,
+      "failed": 1,
+      "fetch_fail_ratio": 0.007,
       "summary": {
         "strong_buy": 2,
-        "buy": 24,
-        "watch": 36,
-        "avoid": 71
+        "buy": 26,
+        "watch": 34,
+        "avoid": 72
       },
       "regime": {
         "regime": "NEUTRAL",
-        "breadth": 47.4,
+        "breadth": 47.8,
         "label": "ตลาดไซด์เวย์ — เลือกเฉพาะตัวแข็งแรง",
-        "stocks": 133,
-        "uptrend": 63
+        "stocks": 134,
+        "uptrend": 64
       }
     }
   ],
