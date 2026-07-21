@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-21 09:08 (เวลาไทย)",
+  "generated_at": "2026-07-21 12:34 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 338,
-    "open": 171,
-    "win_rate": 53.6,
-    "avg_return": 1.0,
-    "total_return": 1162.1,
-    "by_target": 107,
+    "closed": 339,
+    "open": 172,
+    "win_rate": 53.7,
+    "avg_return": 1.03,
+    "total_return": 1282.7,
+    "by_target": 108,
     "by_stop": 127,
     "by_time": 104
   },
@@ -123,6 +123,40 @@
       "entry": 17.0,
       "stop": 15.81,
       "target": 18.7,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-21",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "CK.BK",
+      "name": "CK",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-21",
+      "entry": 19.2,
+      "stop": 18.3,
+      "target": 21.12,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-21",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "ITC.BK",
+      "name": "ITC",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-21",
+      "entry": 16.4,
+      "stop": 16.0,
+      "target": 18.04,
       "status": "open",
       "days": 0,
       "last_date": "2026-07-21",
@@ -2410,23 +2444,6 @@
       "return_pct": null
     },
     {
-      "ticker": "SJWD.BK",
-      "name": "SJWD",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-07-06",
-      "entry": 8.55,
-      "stop": 7.95,
-      "target": 9.41,
-      "status": "open",
-      "days": 15,
-      "last_date": "2026-07-21",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "BGRIM.BK",
       "name": "BGRIM",
       "signal": "BUY",
@@ -3109,6 +3126,23 @@
       "return_pct": -2.72
     },
     {
+      "ticker": "SJWD.BK",
+      "name": "SJWD",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-07-06",
+      "entry": 8.55,
+      "stop": 7.95,
+      "target": 9.41,
+      "status": "closed",
+      "days": 15,
+      "last_date": "2026-07-21",
+      "exit": 9.41,
+      "exit_date": "2026-07-21",
+      "reason": "target",
+      "return_pct": 9.56
+    },
+    {
       "ticker": "TTB.BK",
       "name": "TTB",
       "signal": "BUY",
@@ -3413,23 +3447,6 @@
       "exit_date": "2026-07-20",
       "reason": "target",
       "return_pct": 9.58
-    },
-    {
-      "ticker": "MS",
-      "name": "MS",
-      "signal": "STRONG BUY",
-      "score": 77,
-      "entry_date": "2026-07-14",
-      "entry": 228.03,
-      "stop": 212.07,
-      "target": 250.84,
-      "status": "closed",
-      "days": 6,
-      "last_date": "2026-07-20",
-      "exit": 212.07,
-      "exit_date": "2026-07-20",
-      "reason": "stop",
-      "return_pct": -7.5
     }
   ]
 }
