@@ -8941,6 +8941,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "HENG.BK",
+      "name": "HENG",
+      "signal": "BUY",
+      "score": 69,
+      "entry_date": "2026-07-22",
+      "entry": 0.95,
+      "stop": 0.91,
+      "target": 1.04,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-22",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "PSL.BK",
+      "name": "PSL",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-07-22",
+      "entry": 8.45,
+      "stop": 7.86,
+      "target": 9.29,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-22",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
