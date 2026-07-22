@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-23 01:07 (เวลาไทย)",
+  "generated_at": "2026-07-23 02:51 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 376,
-    "open": 168,
-    "win_rate": 53.7,
-    "avg_return": 0.94,
-    "total_return": 1243.6,
+    "closed": 377,
+    "open": 167,
+    "win_rate": 53.6,
+    "avg_return": 0.92,
+    "total_return": 1142.8,
     "by_target": 111,
-    "by_stop": 140,
+    "by_stop": 141,
     "by_time": 125
   },
   "open_positions": [
@@ -633,23 +633,6 @@
       "entry": 9.75,
       "stop": 9.07,
       "target": 10.73,
-      "status": "open",
-      "days": 2,
-      "last_date": "2026-07-23",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "COIN",
-      "name": "COIN",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-07-21",
-      "entry": 180.32,
-      "stop": 167.7,
-      "target": 198.35,
       "status": "open",
       "days": 2,
       "last_date": "2026-07-23",
@@ -2990,6 +2973,23 @@
       "return_pct": 9.16
     },
     {
+      "ticker": "COIN",
+      "name": "COIN",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-07-21",
+      "entry": 180.32,
+      "stop": 167.7,
+      "target": 198.35,
+      "status": "closed",
+      "days": 2,
+      "last_date": "2026-07-23",
+      "exit": 167.7,
+      "exit_date": "2026-07-23",
+      "reason": "stop",
+      "return_pct": -7.5
+    },
+    {
       "ticker": "GOOG",
       "name": "GOOG",
       "signal": "BUY",
@@ -3362,23 +3362,6 @@
       "exit_date": "2026-07-22",
       "reason": "stop",
       "return_pct": -6.53
-    },
-    {
-      "ticker": "NIO",
-      "name": "NIO",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-14",
-      "entry": 5.07,
-      "stop": 4.73,
-      "target": 5.58,
-      "status": "closed",
-      "days": 8,
-      "last_date": "2026-07-22",
-      "exit": 4.73,
-      "exit_date": "2026-07-22",
-      "reason": "stop",
-      "return_pct": -7.21
     }
   ]
 }

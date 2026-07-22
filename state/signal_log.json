@@ -8815,13 +8815,13 @@
       "entry": 180.32,
       "stop": 167.7,
       "target": 198.35,
-      "status": "open",
+      "status": "closed",
       "days": 2,
       "last_date": "2026-07-23",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 167.7,
+      "exit_date": "2026-07-23",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "MSTR",
