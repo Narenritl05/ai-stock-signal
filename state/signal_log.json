@@ -7013,13 +7013,13 @@
       "entry": 132.34,
       "stop": 123.08,
       "target": 145.57,
-      "status": "open",
+      "status": "closed",
       "days": 8,
       "last_date": "2026-07-22",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 123.08,
+      "exit_date": "2026-07-22",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "LH.BK",
@@ -7200,13 +7200,13 @@
       "entry": 115.8,
       "stop": 108.82,
       "target": 127.38,
-      "status": "open",
+      "status": "closed",
       "days": 8,
       "last_date": "2026-07-22",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 108.82,
+      "exit_date": "2026-07-22",
+      "reason": "stop",
+      "return_pct": -6.53
     },
     {
       "ticker": "NIO",
@@ -7574,13 +7574,13 @@
       "entry": 14.05,
       "stop": 13.06,
       "target": 15.45,
-      "status": "open",
+      "status": "closed",
       "days": 7,
       "last_date": "2026-07-22",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 13.06,
+      "exit_date": "2026-07-22",
+      "reason": "stop",
+      "return_pct": -7.55
     },
     {
       "ticker": "PFE",
