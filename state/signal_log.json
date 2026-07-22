@@ -9247,6 +9247,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "META",
+      "name": "META",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-07-23",
+      "entry": 627.17,
+      "stop": 583.27,
+      "target": 689.89,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-23",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-23 02:51 (เวลาไทย)",
+  "last_run": "2026-07-23 04:00 (เวลาไทย)",
   "signals": {
     "ERW.BK": {
       "signal": "STRONG BUY",
@@ -529,6 +529,10 @@
       "signal": "AVOID",
       "score": 12
     },
+    "ELF": {
+      "signal": "STRONG BUY",
+      "score": 82
+    },
     "SMCI": {
       "signal": "STRONG BUY",
       "score": 81
@@ -546,10 +550,6 @@
       "score": 70
     },
     "LNG": {
-      "signal": "BUY",
-      "score": 69
-    },
-    "JD": {
       "signal": "BUY",
       "score": 69
     },
@@ -576,10 +576,6 @@
     "CLSK": {
       "signal": "BUY",
       "score": 68
-    },
-    "ELF": {
-      "signal": "BUY",
-      "score": 64
     },
     "CVX": {
       "signal": "BUY",
@@ -612,6 +608,10 @@
     "HON": {
       "signal": "BUY",
       "score": 63
+    },
+    "META": {
+      "signal": "BUY",
+      "score": 62
     },
     "AAPL": {
       "signal": "BUY",
@@ -649,6 +649,10 @@
       "signal": "WATCH",
       "score": 56
     },
+    "RTX": {
+      "signal": "WATCH",
+      "score": 56
+    },
     "ETN": {
       "signal": "WATCH",
       "score": 56
@@ -668,6 +672,10 @@
     "JPM": {
       "signal": "WATCH",
       "score": 52
+    },
+    "JD": {
+      "signal": "WATCH",
+      "score": 51
     },
     "XOM": {
       "signal": "WATCH",
@@ -709,19 +717,11 @@
       "signal": "WATCH",
       "score": 48
     },
-    "KO": {
-      "signal": "WATCH",
-      "score": 48
-    },
     "PFE": {
       "signal": "WATCH",
       "score": 48
     },
     "TMO": {
-      "signal": "WATCH",
-      "score": 48
-    },
-    "RTX": {
       "signal": "WATCH",
       "score": 48
     },
@@ -733,25 +733,25 @@
       "signal": "WATCH",
       "score": 47
     },
+    "BAC": {
+      "signal": "WATCH",
+      "score": 46
+    },
     "PYPL": {
       "signal": "AVOID",
       "score": 44
     },
-    "BAC": {
-      "signal": "AVOID",
-      "score": 38
-    },
     "SLB": {
+      "signal": "AVOID",
+      "score": 40
+    },
+    "URI": {
       "signal": "AVOID",
       "score": 34
     },
     "COST": {
       "signal": "AVOID",
       "score": 33
-    },
-    "META": {
-      "signal": "AVOID",
-      "score": 32
     },
     "AMZN": {
       "signal": "AVOID",
@@ -796,6 +796,10 @@
     "ORCL": {
       "signal": "AVOID",
       "score": 30
+    },
+    "RGTI": {
+      "signal": "AVOID",
+      "score": 28
     },
     "ARM": {
       "signal": "AVOID",
@@ -849,15 +853,19 @@
       "signal": "AVOID",
       "score": 26
     },
+    "NKE": {
+      "signal": "AVOID",
+      "score": 26
+    },
     "LULU": {
       "signal": "AVOID",
       "score": 26
     },
-    "LMT": {
+    "LLY": {
       "signal": "AVOID",
       "score": 26
     },
-    "URI": {
+    "LMT": {
       "signal": "AVOID",
       "score": 26
     },
@@ -901,15 +909,7 @@
       "signal": "AVOID",
       "score": 20
     },
-    "RGTI": {
-      "signal": "AVOID",
-      "score": 20
-    },
     "QBTS": {
-      "signal": "AVOID",
-      "score": 20
-    },
-    "RKLB": {
       "signal": "AVOID",
       "score": 20
     },
@@ -961,14 +961,6 @@
       "signal": "AVOID",
       "score": 18
     },
-    "RBLX": {
-      "signal": "AVOID",
-      "score": 18
-    },
-    "DUOL": {
-      "signal": "AVOID",
-      "score": 18
-    },
     "OKTA": {
       "signal": "AVOID",
       "score": 18
@@ -985,7 +977,7 @@
       "signal": "AVOID",
       "score": 18
     },
-    "LLY": {
+    "KO": {
       "signal": "AVOID",
       "score": 18
     },
@@ -1005,6 +997,10 @@
       "signal": "AVOID",
       "score": 16
     },
+    "RKLB": {
+      "signal": "AVOID",
+      "score": 16
+    },
     "TSLA": {
       "signal": "AVOID",
       "score": 12
@@ -1013,7 +1009,15 @@
       "signal": "AVOID",
       "score": 12
     },
+    "RBLX": {
+      "signal": "AVOID",
+      "score": 12
+    },
     "CVNA": {
+      "signal": "AVOID",
+      "score": 12
+    },
+    "DUOL": {
       "signal": "AVOID",
       "score": 12
     },
@@ -1034,10 +1038,6 @@
       "score": 12
     },
     "UPST": {
-      "signal": "AVOID",
-      "score": 12
-    },
-    "NKE": {
       "signal": "AVOID",
       "score": 12
     },
