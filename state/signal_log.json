@@ -9519,6 +9519,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "LMT",
+      "name": "LMT",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-24",
+      "entry": 570.9,
+      "stop": 530.94,
+      "target": 627.99,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-24",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
