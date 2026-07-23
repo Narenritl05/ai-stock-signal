@@ -9281,6 +9281,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "TTA.BK",
+      "name": "TTA",
+      "signal": "BUY",
+      "score": 69,
+      "entry_date": "2026-07-23",
+      "entry": 5.15,
+      "stop": 4.79,
+      "target": 5.67,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-23",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "PTTEP.BK",
+      "name": "PTTEP",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-07-23",
+      "entry": 151.5,
+      "stop": 140.89,
+      "target": 166.65,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-23",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "DELTA.BK",
+      "name": "DELTA",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-23",
+      "entry": 312.0,
+      "stop": 295.0,
+      "target": 343.2,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-23",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
