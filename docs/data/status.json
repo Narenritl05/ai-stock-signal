@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-24 02:06 (เวลาไทย)",
-  "generated_at_iso": "2026-07-24T02:06:49.435243+07:00",
+  "generated_at": "2026-07-24 03:34 (เวลาไทย)",
+  "generated_at_iso": "2026-07-24T03:34:51.480861+07:00",
   "status": "ok",
   "telegram": "sent",
   "overall": {
     "attempted": 269,
-    "received": 265,
-    "failed": 4,
-    "fetch_fail_ratio": 0.015
+    "received": 266,
+    "failed": 3,
+    "fetch_fail_ratio": 0.011
   },
   "markets": [
     {
@@ -17,21 +17,21 @@
       "tag": "TH",
       "file": "signals.json",
       "attempted": 134,
-      "received": 131,
-      "failed": 3,
-      "fetch_fail_ratio": 0.022,
+      "received": 132,
+      "failed": 2,
+      "fetch_fail_ratio": 0.015,
       "summary": {
         "strong_buy": 16,
         "buy": 40,
-        "watch": 44,
+        "watch": 45,
         "avoid": 31
       },
       "regime": {
         "regime": "BULL",
-        "breadth": 80.9,
+        "breadth": 81.1,
         "label": "ตลาดขาขึ้น (Risk-on)",
-        "stocks": 131,
-        "uptrend": 106
+        "stocks": 132,
+        "uptrend": 107
       }
     },
     {
@@ -45,17 +45,17 @@
       "failed": 1,
       "fetch_fail_ratio": 0.007,
       "summary": {
-        "strong_buy": 6,
-        "buy": 22,
+        "strong_buy": 9,
+        "buy": 21,
         "watch": 17,
-        "avoid": 89
+        "avoid": 87
       },
       "regime": {
         "regime": "BEAR",
-        "breadth": 34.3,
+        "breadth": 35.8,
         "label": "ตลาดขาลง — ระวังสัญญาณซื้อ",
         "stocks": 134,
-        "uptrend": 46
+        "uptrend": 48
       }
     }
   ],

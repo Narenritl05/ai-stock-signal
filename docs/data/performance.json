@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-24 02:06 (เวลาไทย)",
+  "generated_at": "2026-07-24 03:34 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 394,
-    "open": 167,
-    "win_rate": 52.3,
-    "avg_return": 0.77,
-    "total_return": 685.7,
+    "closed": 395,
+    "open": 166,
+    "win_rate": 52.2,
+    "avg_return": 0.75,
+    "total_return": 636.3,
     "by_target": 115,
-    "by_stop": 152,
+    "by_stop": 153,
     "by_time": 127
   },
   "open_positions": [
@@ -2359,23 +2359,6 @@
       "return_pct": null
     },
     {
-      "ticker": "ONON",
-      "name": "ONON",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-10",
-      "entry": 37.3,
-      "stop": 35.14,
-      "target": 41.03,
-      "status": "open",
-      "days": 14,
-      "last_date": "2026-07-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "ABBV",
       "name": "ABBV",
       "signal": "BUY",
@@ -2922,6 +2905,23 @@
       "return_pct": -7.5
     },
     {
+      "ticker": "ONON",
+      "name": "ONON",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-10",
+      "entry": 37.3,
+      "stop": 35.14,
+      "target": 41.03,
+      "status": "closed",
+      "days": 14,
+      "last_date": "2026-07-24",
+      "exit": 35.14,
+      "exit_date": "2026-07-24",
+      "reason": "stop",
+      "return_pct": -6.29
+    },
+    {
       "ticker": "HD",
       "name": "HD",
       "signal": "BUY",
@@ -3345,23 +3345,6 @@
       "exit_date": "2026-07-22",
       "reason": "time",
       "return_pct": 6.67
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CRWD",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-07-02",
-      "entry": 193.18,
-      "stop": 179.66,
-      "target": 212.5,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-07-22",
-      "exit": 190.63,
-      "exit_date": "2026-07-22",
-      "reason": "time",
-      "return_pct": -1.82
     }
   ]
 }
