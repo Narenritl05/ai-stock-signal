@@ -6741,13 +6741,13 @@
       "entry": 12.7,
       "stop": 11.81,
       "target": 13.97,
-      "status": "open",
+      "status": "closed",
       "days": 12,
       "last_date": "2026-07-23",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 11.81,
+      "exit_date": "2026-07-23",
+      "reason": "stop",
+      "return_pct": -7.51
     },
     {
       "ticker": "AH.BK",
@@ -8203,13 +8203,13 @@
       "entry": 1.12,
       "stop": 1.04,
       "target": 1.23,
-      "status": "open",
+      "status": "closed",
       "days": 6,
       "last_date": "2026-07-23",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 1.04,
+      "exit_date": "2026-07-23",
+      "reason": "stop",
+      "return_pct": -7.64
     },
     {
       "ticker": "GPSC.BK",
