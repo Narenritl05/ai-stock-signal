@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-23 21:39 (เวลาไทย)",
-  "generated_at_iso": "2026-07-23T21:39:48.322403+07:00",
+  "generated_at": "2026-07-23 23:23 (เวลาไทย)",
+  "generated_at_iso": "2026-07-23T23:23:02.372088+07:00",
   "status": "ok",
   "telegram": "sent",
   "overall": {
     "attempted": 269,
-    "received": 265,
-    "failed": 4,
-    "fetch_fail_ratio": 0.015
+    "received": 266,
+    "failed": 3,
+    "fetch_fail_ratio": 0.011
   },
   "markets": [
     {
@@ -41,21 +41,21 @@
       "tag": "US",
       "file": "signals_foreign.json",
       "attempted": 135,
-      "received": 133,
-      "failed": 2,
-      "fetch_fail_ratio": 0.015,
+      "received": 134,
+      "failed": 1,
+      "fetch_fail_ratio": 0.007,
       "summary": {
         "strong_buy": 4,
-        "buy": 26,
-        "watch": 18,
-        "avoid": 85
+        "buy": 24,
+        "watch": 19,
+        "avoid": 87
       },
       "regime": {
         "regime": "BEAR",
-        "breadth": 36.8,
+        "breadth": 35.1,
         "label": "ตลาดขาลง — ระวังสัญญาณซื้อ",
-        "stocks": 133,
-        "uptrend": 49
+        "stocks": 134,
+        "uptrend": 47
       }
     }
   ],
