@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-24 11:10 (เวลาไทย)",
+  "generated_at": "2026-07-24 14:04 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 400,
-    "open": 162,
-    "win_rate": 52.0,
-    "avg_return": 0.75,
-    "total_return": 645.4,
+    "closed": 401,
+    "open": 161,
+    "win_rate": 51.9,
+    "avg_return": 0.73,
+    "total_return": 589.7,
     "by_target": 117,
-    "by_stop": 156,
+    "by_stop": 157,
     "by_time": 127
   },
   "open_positions": [
@@ -2019,23 +2019,6 @@
       "return_pct": null
     },
     {
-      "ticker": "WHA.BK",
-      "name": "WHA",
-      "signal": "BUY",
-      "score": 72,
-      "entry_date": "2026-07-14",
-      "entry": 5.45,
-      "stop": 5.07,
-      "target": 5.99,
-      "status": "open",
-      "days": 10,
-      "last_date": "2026-07-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "RCL.BK",
       "name": "RCL",
       "signal": "BUY",
@@ -2871,6 +2854,23 @@
       "return_pct": 9.5
     },
     {
+      "ticker": "WHA.BK",
+      "name": "WHA",
+      "signal": "BUY",
+      "score": 72,
+      "entry_date": "2026-07-14",
+      "entry": 5.45,
+      "stop": 5.07,
+      "target": 5.99,
+      "status": "closed",
+      "days": 10,
+      "last_date": "2026-07-24",
+      "exit": 5.07,
+      "exit_date": "2026-07-24",
+      "reason": "stop",
+      "return_pct": -7.47
+    },
+    {
       "ticker": "GLOBAL.BK",
       "name": "GLOBAL",
       "signal": "STRONG BUY",
@@ -3260,23 +3260,6 @@
       "exit_date": "2026-07-23",
       "reason": "stop",
       "return_pct": -4.85
-    },
-    {
-      "ticker": "COIN",
-      "name": "COIN",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-07-21",
-      "entry": 180.32,
-      "stop": 167.7,
-      "target": 198.35,
-      "status": "closed",
-      "days": 2,
-      "last_date": "2026-07-23",
-      "exit": 167.7,
-      "exit_date": "2026-07-23",
-      "reason": "stop",
-      "return_pct": -7.5
     }
   ]
 }

@@ -6979,13 +6979,13 @@
       "entry": 5.45,
       "stop": 5.07,
       "target": 5.99,
-      "status": "open",
+      "status": "closed",
       "days": 10,
       "last_date": "2026-07-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 5.07,
+      "exit_date": "2026-07-24",
+      "reason": "stop",
+      "return_pct": -7.47
     },
     {
       "ticker": "RCL.BK",
