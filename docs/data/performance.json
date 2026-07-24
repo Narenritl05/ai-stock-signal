@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-25 00:02 (เวลาไทย)",
+  "generated_at": "2026-07-25 01:55 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 405,
-    "open": 160,
-    "win_rate": 51.4,
-    "avg_return": 0.66,
-    "total_return": 418.8,
+    "closed": 406,
+    "open": 159,
+    "win_rate": 51.2,
+    "avg_return": 0.64,
+    "total_return": 379.9,
     "by_target": 117,
-    "by_stop": 161,
+    "by_stop": 162,
     "by_time": 127
   },
   "open_positions": [
@@ -616,23 +616,6 @@
       "entry": 972.18,
       "stop": 904.13,
       "target": 1069.4,
-      "status": "open",
-      "days": 3,
-      "last_date": "2026-07-25",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "WDC",
-      "name": "WDC",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-07-22",
-      "entry": 560.35,
-      "stop": 521.13,
-      "target": 616.38,
       "status": "open",
       "days": 3,
       "last_date": "2026-07-25",
@@ -2735,6 +2718,23 @@
   ],
   "closed_positions": [
     {
+      "ticker": "WDC",
+      "name": "WDC",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-07-22",
+      "entry": 560.35,
+      "stop": 521.13,
+      "target": 616.38,
+      "status": "closed",
+      "days": 3,
+      "last_date": "2026-07-25",
+      "exit": 521.13,
+      "exit_date": "2026-07-25",
+      "reason": "stop",
+      "return_pct": -7.5
+    },
+    {
       "ticker": "BBL.BK",
       "name": "BBL",
       "signal": "BUY",
@@ -3226,23 +3226,6 @@
       "exit_date": "2026-07-23",
       "reason": "stop",
       "return_pct": -7.5
-    },
-    {
-      "ticker": "SINGER.BK",
-      "name": "SINGER",
-      "signal": "BUY",
-      "score": 60,
-      "entry_date": "2026-07-11",
-      "entry": 12.7,
-      "stop": 11.81,
-      "target": 13.97,
-      "status": "closed",
-      "days": 12,
-      "last_date": "2026-07-23",
-      "exit": 11.81,
-      "exit_date": "2026-07-23",
-      "reason": "stop",
-      "return_pct": -7.51
     }
   ]
 }

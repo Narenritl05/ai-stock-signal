@@ -9087,13 +9087,13 @@
       "entry": 560.35,
       "stop": 521.13,
       "target": 616.38,
-      "status": "open",
+      "status": "closed",
       "days": 3,
       "last_date": "2026-07-25",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 521.13,
+      "exit_date": "2026-07-25",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "RIOT",
