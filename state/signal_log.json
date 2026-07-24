@@ -6724,13 +6724,13 @@
       "entry": 5.4,
       "stop": 5.02,
       "target": 5.94,
-      "status": "open",
+      "status": "closed",
       "days": 13,
       "last_date": "2026-07-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 5.94,
+      "exit_date": "2026-07-24",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "SINGER.BK",
@@ -7081,13 +7081,13 @@
       "entry": 7.5,
       "stop": 6.97,
       "target": 8.25,
-      "status": "open",
+      "status": "closed",
       "days": 10,
       "last_date": "2026-07-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 6.97,
+      "exit_date": "2026-07-24",
+      "reason": "stop",
+      "return_pct": -7.57
     },
     {
       "ticker": "MC.BK",
@@ -7472,13 +7472,13 @@
       "entry": 9.15,
       "stop": 8.65,
       "target": 10.06,
-      "status": "open",
+      "status": "closed",
       "days": 9,
       "last_date": "2026-07-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 10.06,
+      "exit_date": "2026-07-24",
+      "reason": "target",
+      "return_pct": 9.45
     },
     {
       "ticker": "WHAUP.BK",
@@ -7931,13 +7931,13 @@
       "entry": 19.3,
       "stop": 18.7,
       "target": 21.23,
-      "status": "open",
+      "status": "closed",
       "days": 8,
       "last_date": "2026-07-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 18.7,
+      "exit_date": "2026-07-24",
+      "reason": "stop",
+      "return_pct": -3.61
     },
     {
       "ticker": "TU.BK",
@@ -8662,13 +8662,13 @@
       "entry": 19.2,
       "stop": 18.3,
       "target": 21.12,
-      "status": "open",
+      "status": "closed",
       "days": 3,
       "last_date": "2026-07-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 18.3,
+      "exit_date": "2026-07-24",
+      "reason": "stop",
+      "return_pct": -5.19
     },
     {
       "ticker": "ITC.BK",
@@ -9529,6 +9529,23 @@
       "entry": 570.9,
       "stop": 530.94,
       "target": 627.99,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-24",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "PLANB.BK",
+      "name": "PLANB",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-07-24",
+      "entry": 5.95,
+      "stop": 5.53,
+      "target": 6.54,
       "status": "open",
       "days": 0,
       "last_date": "2026-07-24",
