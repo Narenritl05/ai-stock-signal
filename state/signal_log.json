@@ -7880,13 +7880,13 @@
       "entry": 67.25,
       "stop": 64.25,
       "target": 73.98,
-      "status": "open",
+      "status": "closed",
       "days": 8,
       "last_date": "2026-07-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 64.25,
+      "exit_date": "2026-07-24",
+      "reason": "stop",
+      "return_pct": -4.96
     },
     {
       "ticker": "RBF.BK",

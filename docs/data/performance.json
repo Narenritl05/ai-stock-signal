@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-24 14:04 (เวลาไทย)",
+  "generated_at": "2026-07-24 16:42 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 401,
-    "open": 161,
-    "win_rate": 51.9,
-    "avg_return": 0.73,
-    "total_return": 589.7,
+    "closed": 402,
+    "open": 160,
+    "win_rate": 51.7,
+    "avg_return": 0.72,
+    "total_return": 555.5,
     "by_target": 117,
-    "by_stop": 157,
+    "by_stop": 158,
     "by_time": 127
   },
   "open_positions": [
@@ -1560,23 +1560,6 @@
       "return_pct": null
     },
     {
-      "ticker": "CPN.BK",
-      "name": "CPN",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-16",
-      "entry": 67.25,
-      "stop": 64.25,
-      "target": 73.98,
-      "status": "open",
-      "days": 8,
-      "last_date": "2026-07-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "RBF.BK",
       "name": "RBF",
       "signal": "BUY",
@@ -2922,6 +2905,23 @@
       "return_pct": -5.9
     },
     {
+      "ticker": "CPN.BK",
+      "name": "CPN",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-16",
+      "entry": 67.25,
+      "stop": 64.25,
+      "target": 73.98,
+      "status": "closed",
+      "days": 8,
+      "last_date": "2026-07-24",
+      "exit": 64.25,
+      "exit_date": "2026-07-24",
+      "reason": "stop",
+      "return_pct": -4.96
+    },
+    {
       "ticker": "TIDLOR.BK",
       "name": "TIDLOR",
       "signal": "BUY",
@@ -3243,23 +3243,6 @@
       "exit_date": "2026-07-23",
       "reason": "stop",
       "return_pct": -7.64
-    },
-    {
-      "ticker": "MAJOR.BK",
-      "name": "MAJOR",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-20",
-      "entry": 6.9,
-      "stop": 6.6,
-      "target": 7.59,
-      "status": "closed",
-      "days": 3,
-      "last_date": "2026-07-23",
-      "exit": 6.6,
-      "exit_date": "2026-07-23",
-      "reason": "stop",
-      "return_pct": -4.85
     }
   ]
 }
