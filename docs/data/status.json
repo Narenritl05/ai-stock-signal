@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-25 03:17 (เวลาไทย)",
-  "generated_at_iso": "2026-07-25T03:17:07.560509+07:00",
+  "generated_at": "2026-07-25 04:35 (เวลาไทย)",
+  "generated_at_iso": "2026-07-25T04:35:22.321822+07:00",
   "status": "ok",
-  "telegram": "skipped",
+  "telegram": "sent",
   "overall": {
     "attempted": 269,
     "received": 265,
@@ -21,10 +21,10 @@
       "failed": 3,
       "fetch_fail_ratio": 0.022,
       "summary": {
-        "strong_buy": 6,
-        "buy": 32,
-        "watch": 38,
-        "avoid": 55
+        "strong_buy": 4,
+        "buy": 41,
+        "watch": 32,
+        "avoid": 54
       },
       "regime": {
         "regime": "BULL",
