@@ -9689,6 +9689,23 @@
       "exit_date": "2026-07-26",
       "reason": "stop",
       "return_pct": -7.5
+    },
+    {
+      "ticker": "CRDO",
+      "name": "CRDO",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-07-26",
+      "entry": 236.5,
+      "stop": 219.94,
+      "target": 260.15,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-26",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
