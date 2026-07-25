@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-25 10:46 (เวลาไทย)",
+  "generated_at": "2026-07-25 13:11 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 406,
-    "open": 159,
-    "win_rate": 51.2,
-    "avg_return": 0.64,
-    "total_return": 379.9,
+    "closed": 407,
+    "open": 160,
+    "win_rate": 51.1,
+    "avg_return": 0.63,
+    "total_return": 366.0,
     "by_target": 117,
-    "by_stop": 162,
+    "by_stop": 163,
     "by_time": 127
   },
   "open_positions": [
@@ -38,6 +38,40 @@
       "entry": 5.4,
       "stop": 5.02,
       "target": 5.94,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-25",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "CRDO",
+      "name": "CRDO",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-07-25",
+      "entry": 236.5,
+      "stop": 219.94,
+      "target": 260.15,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-25",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "WDC",
+      "name": "WDC",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-07-25",
+      "entry": 558.3,
+      "stop": 519.22,
+      "target": 614.13,
       "status": "open",
       "days": 0,
       "last_date": "2026-07-25",
@@ -1645,23 +1679,6 @@
       "return_pct": null
     },
     {
-      "ticker": "PG",
-      "name": "PG",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-16",
-      "entry": 149.66,
-      "stop": 146.08,
-      "target": 164.63,
-      "status": "open",
-      "days": 9,
-      "last_date": "2026-07-25",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "UNH",
       "name": "UNH",
       "signal": "BUY",
@@ -2718,6 +2735,23 @@
   ],
   "closed_positions": [
     {
+      "ticker": "PG",
+      "name": "PG",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-16",
+      "entry": 149.66,
+      "stop": 146.08,
+      "target": 164.63,
+      "status": "closed",
+      "days": 9,
+      "last_date": "2026-07-25",
+      "exit": 146.08,
+      "exit_date": "2026-07-25",
+      "reason": "stop",
+      "return_pct": -2.89
+    },
+    {
       "ticker": "WDC",
       "name": "WDC",
       "signal": "BUY",
@@ -3209,23 +3243,6 @@
       "exit_date": "2026-07-23",
       "reason": "target",
       "return_pct": 9.51
-    },
-    {
-      "ticker": "BA.BK",
-      "name": "BA",
-      "signal": "BUY",
-      "score": 71,
-      "entry_date": "2026-07-10",
-      "entry": 19.0,
-      "stop": 17.67,
-      "target": 20.9,
-      "status": "closed",
-      "days": 13,
-      "last_date": "2026-07-23",
-      "exit": 17.67,
-      "exit_date": "2026-07-23",
-      "reason": "stop",
-      "return_pct": -7.5
     }
   ]
 }
