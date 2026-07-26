@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-27 05:28 (เวลาไทย)",
+  "generated_at": "2026-07-27 06:29 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 427,
-    "open": 149,
-    "win_rate": 50.4,
-    "avg_return": 0.49,
-    "total_return": 180.2,
+    "closed": 428,
+    "open": 148,
+    "win_rate": 50.2,
+    "avg_return": 0.47,
+    "total_return": 159.2,
     "by_target": 117,
-    "by_stop": 171,
+    "by_stop": 172,
     "by_time": 139
   },
   "open_positions": [
@@ -21,23 +21,6 @@
       "entry": 296.33,
       "stop": 275.59,
       "target": 325.96,
-      "status": "open",
-      "days": 0,
-      "last_date": "2026-07-27",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "CRDO",
-      "name": "CRDO",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-07-27",
-      "entry": 236.5,
-      "stop": 219.94,
-      "target": 260.15,
       "status": "open",
       "days": 0,
       "last_date": "2026-07-27",
@@ -2667,6 +2650,23 @@
       "return_pct": -7.5
     },
     {
+      "ticker": "CRDO",
+      "name": "CRDO",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-07-27",
+      "entry": 236.5,
+      "stop": 219.94,
+      "target": 260.15,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-07-27",
+      "exit": 219.94,
+      "exit_date": "2026-07-27",
+      "reason": "stop",
+      "return_pct": -7.5
+    },
+    {
       "ticker": "SAWAD.BK",
       "name": "SAWAD",
       "signal": "BUY",
@@ -3039,23 +3039,6 @@
       "exit_date": "2026-07-24",
       "reason": "target",
       "return_pct": 9.5
-    },
-    {
-      "ticker": "WHA.BK",
-      "name": "WHA",
-      "signal": "BUY",
-      "score": 72,
-      "entry_date": "2026-07-14",
-      "entry": 5.45,
-      "stop": 5.07,
-      "target": 5.99,
-      "status": "closed",
-      "days": 10,
-      "last_date": "2026-07-24",
-      "exit": 5.07,
-      "exit_date": "2026-07-24",
-      "reason": "stop",
-      "return_pct": -7.47
     }
   ]
 }
