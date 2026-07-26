@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-26 15:17 (เวลาไทย)",
+  "generated_at": "2026-07-26 17:17 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
     "closed": 419,
-    "open": 153,
+    "open": 154,
     "win_rate": 50.6,
     "avg_return": 0.52,
     "total_return": 216.6,
@@ -12,6 +12,23 @@
     "by_time": 133
   },
   "open_positions": [
+    {
+      "ticker": "CRDO",
+      "name": "CRDO",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-07-26",
+      "entry": 236.5,
+      "stop": 219.94,
+      "target": 260.15,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-26",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
     {
       "ticker": "MTC.BK",
       "name": "MTC",
