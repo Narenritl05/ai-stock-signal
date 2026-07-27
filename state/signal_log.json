@@ -10233,6 +10233,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "SHOP",
+      "name": "SHOP",
+      "signal": "BUY",
+      "score": 71,
+      "entry_date": "2026-07-28",
+      "entry": 126.88,
+      "stop": 118.0,
+      "target": 139.57,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-28",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "QBTS",
+      "name": "QBTS",
+      "signal": "BUY",
+      "score": 67,
+      "entry_date": "2026-07-28",
+      "entry": 19.51,
+      "stop": 18.14,
+      "target": 21.46,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-28",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "RTX",
+      "name": "RTX",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-07-28",
+      "entry": 218.42,
+      "stop": 203.13,
+      "target": 240.26,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-28",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
