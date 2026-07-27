@@ -10284,6 +10284,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "AWC.BK",
+      "name": "AWC",
+      "signal": "STRONG BUY",
+      "score": 77,
+      "entry_date": "2026-07-28",
+      "entry": 3.0,
+      "stop": 2.79,
+      "target": 3.3,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-28",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "CPN.BK",
+      "name": "CPN",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-07-28",
+      "entry": 67.75,
+      "stop": 64.5,
+      "target": 74.53,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-28",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
