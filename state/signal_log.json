@@ -10260,13 +10260,13 @@
       "entry": 19.51,
       "stop": 18.14,
       "target": 21.46,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-07-28",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 18.14,
+      "exit_date": "2026-07-28",
+      "reason": "stop",
+      "return_pct": -7.52
     },
     {
       "ticker": "RTX",
