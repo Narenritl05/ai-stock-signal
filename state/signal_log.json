@@ -10573,6 +10573,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "VRTX",
+      "name": "VRTX",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-29",
+      "entry": 487.3,
+      "stop": 472.57,
+      "target": 536.04,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-29",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
