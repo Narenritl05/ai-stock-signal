@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-28 10:18 (เวลาไทย)",
+  "last_run": "2026-07-28 13:07 (เวลาไทย)",
   "signals": {
     "ERW.BK": {
       "signal": "STRONG BUY",
@@ -573,6 +573,14 @@
       "signal": "BUY",
       "score": 68
     },
+    "QBTS": {
+      "signal": "BUY",
+      "score": 67
+    },
+    "CRM": {
+      "signal": "BUY",
+      "score": 64
+    },
     "HUBS": {
       "signal": "BUY",
       "score": 64
@@ -665,10 +673,6 @@
       "signal": "WATCH",
       "score": 56
     },
-    "CRM": {
-      "signal": "WATCH",
-      "score": 56
-    },
     "ZS": {
       "signal": "WATCH",
       "score": 56
@@ -733,6 +737,10 @@
       "signal": "WATCH",
       "score": 51
     },
+    "NOW": {
+      "signal": "WATCH",
+      "score": 50
+    },
     "LOW": {
       "signal": "WATCH",
       "score": 49
@@ -765,10 +773,6 @@
       "signal": "AVOID",
       "score": 42
     },
-    "NOW": {
-      "signal": "AVOID",
-      "score": 42
-    },
     "ONON": {
       "signal": "AVOID",
       "score": 42
@@ -778,6 +782,10 @@
       "score": 42
     },
     "NFLX": {
+      "signal": "AVOID",
+      "score": 41
+    },
+    "AI": {
       "signal": "AVOID",
       "score": 41
     },
@@ -809,10 +817,6 @@
       "signal": "AVOID",
       "score": 34
     },
-    "AI": {
-      "signal": "AVOID",
-      "score": 33
-    },
     "MS": {
       "signal": "AVOID",
       "score": 33
@@ -832,10 +836,6 @@
     "ORCL": {
       "signal": "AVOID",
       "score": 30
-    },
-    "QBTS": {
-      "signal": "AVOID",
-      "score": 29
     },
     "RKLB": {
       "signal": "AVOID",
