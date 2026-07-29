@@ -10709,6 +10709,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "NKE",
+      "name": "NKE",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-30",
+      "entry": 43.4,
+      "stop": 40.99,
+      "target": 47.75,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-30",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "XPEV",
+      "name": "XPEV",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-30",
+      "entry": 13.26,
+      "stop": 12.33,
+      "target": 14.58,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-30",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
