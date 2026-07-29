@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-30 03:28 (เวลาไทย)",
+  "last_run": "2026-07-30 04:27 (เวลาไทย)",
   "signals": {
     "ERW.BK": {
       "signal": "STRONG BUY",
@@ -557,6 +557,10 @@
       "signal": "STRONG BUY",
       "score": 82
     },
+    "BLK": {
+      "signal": "STRONG BUY",
+      "score": 77
+    },
     "JNJ": {
       "signal": "STRONG BUY",
       "score": 77
@@ -572,10 +576,6 @@
     "REGN": {
       "signal": "BUY",
       "score": 72
-    },
-    "BLK": {
-      "signal": "BUY",
-      "score": 69
     },
     "ELF": {
       "signal": "BUY",
@@ -617,6 +617,10 @@
       "signal": "BUY",
       "score": 68
     },
+    "V": {
+      "signal": "BUY",
+      "score": 67
+    },
     "HUBS": {
       "signal": "BUY",
       "score": 64
@@ -648,6 +652,10 @@
     "RTX": {
       "signal": "BUY",
       "score": 64
+    },
+    "SNOW": {
+      "signal": "BUY",
+      "score": 63
     },
     "MELI": {
       "signal": "BUY",
@@ -717,17 +725,9 @@
       "signal": "BUY",
       "score": 60
     },
-    "V": {
-      "signal": "WATCH",
-      "score": 59
-    },
     "ABBV": {
       "signal": "WATCH",
       "score": 59
-    },
-    "SNOW": {
-      "signal": "WATCH",
-      "score": 58
     },
     "ADBE": {
       "signal": "WATCH",
@@ -738,6 +738,10 @@
       "score": 58
     },
     "NET": {
+      "signal": "WATCH",
+      "score": 56
+    },
+    "MSFT": {
       "signal": "WATCH",
       "score": 56
     },
@@ -773,10 +777,6 @@
       "signal": "WATCH",
       "score": 48
     },
-    "MSFT": {
-      "signal": "WATCH",
-      "score": 48
-    },
     "BAC": {
       "signal": "WATCH",
       "score": 48
@@ -808,6 +808,10 @@
     "DKNG": {
       "signal": "AVOID",
       "score": 38
+    },
+    "RIOT": {
+      "signal": "AVOID",
+      "score": 34
     },
     "CELH": {
       "signal": "AVOID",
@@ -842,10 +846,6 @@
       "score": 26
     },
     "PG": {
-      "signal": "AVOID",
-      "score": 26
-    },
-    "RIOT": {
       "signal": "AVOID",
       "score": 26
     },
