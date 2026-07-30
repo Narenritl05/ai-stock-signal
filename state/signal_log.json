@@ -11015,6 +11015,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "STX",
+      "name": "STX",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-07-31",
+      "entry": 851.68,
+      "stop": 792.06,
+      "target": 936.85,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-31",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "RIOT",
+      "name": "RIOT",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-07-31",
+      "entry": 22.12,
+      "stop": 20.57,
+      "target": 24.33,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-31",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "OKTA",
+      "name": "OKTA",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-31",
+      "entry": 140.42,
+      "stop": 136.1,
+      "target": 154.46,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-31",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
