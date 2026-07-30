@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-31 03:40 (เวลาไทย)",
-  "generated_at_iso": "2026-07-31T03:40:53.329380+07:00",
+  "generated_at": "2026-07-31 05:01 (เวลาไทย)",
+  "generated_at_iso": "2026-07-31T05:01:33.712450+07:00",
   "market_key": "us",
   "market_name": "หุ้นต่างประเทศ (US)",
   "currency": "$",
   "count": 134,
   "summary": {
-    "strong_buy": 8,
-    "buy": 36,
+    "strong_buy": 9,
+    "buy": 35,
     "watch": 26,
     "avoid": 64
   },
@@ -131,7 +131,7 @@
         {
           "title": "ServiceNow Inc (NOW) หุ้น ปิด ขึ้น 7.11% เมื่อวันที่ 27 ก.ค.: มันส่งสัญญาณอะไร?",
           "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbk9acVdQcDN4OUlaX2pJR0dKOGFoX0w1NTNacG1JREZ0RnFSMG4zY21wVFoycUZsMFJ2cmlBNFIwaENTcUlaVTFudkdhdjZBeGpSNzVZWC1rNzZxcXQtbGk1R080MlNINDZ6LTJwSklOM2pGUVVGVW5LYTJXYy1PQlBUVXhJOEs4aGI5ekJB?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
@@ -143,13 +143,145 @@
         {
           "title": "หุ้นชั้นนำเคลื่อนไหวหลังตลาดปิด: GOOGL, TSLA, NOW, IBM, TXN, MOH, URI",
           "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5NM3RmaC1vdm91S1pialM4VFNMMm1ZcHY5aEdQanV5U3FmODBIVW1xd3diWjVrNDVlU1BDaFBfMGZPemlmaW9HZnJKckZmZEJwb3BlZTJGNXhtd3VHVkZ4YWtpOW5uWV92YVBVZXJPMEY5b2loRE9z?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "23/07/2026"
         },
         {
           "title": "โครงสร้างผู้ถือหุ้น ServiceNow Inc (NOW): ผู้ถือหุ้นรายใหญ่และการถือครองของนักลงทุนสถาบัน",
           "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1qSGFDdWtjaVc2Y0llbGRVeXJVVDZsMEpqSjhTSUlpcWZEaklkMFlQcHdkell3eVRWWkZkUDAxRFo4NnNjTVAtcEdsZTZuODRrUjNNLW1qTzJsSFZ0R1RVaEdSNzJjempRc1E?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
+          "published": "2 วันที่แล้ว"
+        }
+      ]
+    },
+    {
+      "ticker": "SHOP",
+      "name": "SHOP",
+      "price": 122.4,
+      "open": 126.0,
+      "day_high": 126.61,
+      "day_low": 122.29,
+      "prev_close": 129.17,
+      "change_pct": -5.24,
+      "score": 82,
+      "signal": "STRONG BUY",
+      "rec_action": "ควรซื้อ",
+      "rec_text": "🟢 ควรซื้อ — สัญญาณแข็งแรงมาก",
+      "rec_tone": "buy",
+      "holding_style": "LONG",
+      "holding_label": "ถือยาว",
+      "holding_period": "2-8 สัปดาห์",
+      "holding_text": "เหมาะถือยาวกว่าเดิมตามเทรนด์ ใช้ EMA20/50 และ stop loss เป็นเส้นคุมเกม",
+      "holding_reason": "แนวโน้มหลักยังเป็นบวกและโมเมนตัมไม่ร้อนเกินไป",
+      "holding_tone": "long",
+      "trend": "UP",
+      "ema_fast": 121.57,
+      "ema_slow": 118.64,
+      "rsi": 52.1,
+      "macd_hist": 0.0821,
+      "volume": 10343367,
+      "avg_volume": 7806428,
+      "volume_ratio": 1.32,
+      "momentum_5d": 9.29,
+      "return_20d": 0.63,
+      "return_60d": -4.04,
+      "atr14": 6.29,
+      "atr_pct": 5.14,
+      "volatility20": 57.29,
+      "turnover": 1266028136.58,
+      "high_20d": 133.99,
+      "low_20d": 111.06,
+      "high_120d": 139.1,
+      "low_120d": 94.0,
+      "from_high_120d_pct": -12.01,
+      "from_low_120d_pct": 30.21,
+      "entry": 122.4,
+      "stop_loss": 113.83,
+      "target1": 134.64,
+      "target2": 146.88,
+      "downside_pct": 7.0,
+      "upside1_pct": 10.0,
+      "upside2_pct": 20.0,
+      "risk_reward1": 1.43,
+      "risk_reward2": 2.86,
+      "history": [
+        112.94,
+        116.04,
+        109.54,
+        110.78,
+        110.42,
+        108.2,
+        110.47,
+        108.24,
+        112.49,
+        113.23,
+        108.09,
+        108.85,
+        107.98,
+        107.68,
+        114.17,
+        111.62,
+        116.86,
+        114.21,
+        114.18,
+        121.63,
+        119.46,
+        120.14,
+        121.88,
+        119.22,
+        123.17,
+        122.54,
+        124.74,
+        125.68,
+        123.55,
+        125.06,
+        123.56,
+        124.48,
+        123.03,
+        118.42,
+        112.0,
+        113.75,
+        126.88,
+        130.28,
+        129.17,
+        122.4
+      ],
+      "reasons": [
+        "ราคายืนเหนือ EMA20 และ EMA50 (เทรนด์ขาขึ้นชัด)",
+        "RSI 52 อยู่โซนแข็งแรงแต่ยังไม่ร้อนแรงเกินไป",
+        "MACD อยู่ฝั่งบวก",
+        "วอลุ่มสูงกว่าค่าเฉลี่ย 1.3 เท่า",
+        "ราคา +9.3% ใน 5 วัน (โมเมนตัมแรง)"
+      ],
+      "warnings": [],
+      "market": "ต่างประเทศ",
+      "market_tag": "US",
+      "currency": "$",
+      "pos_shares": 200,
+      "pos_value": 24480.0,
+      "news": [
+        {
+          "title": "Shopify Inc (SHOP) หุ้น เคลื่อนไหว ลง 3.86% เมื่อวันที่ 30 ก.ค.: เผยปัจจัยขับเคลื่อนสำคัญ",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUmFaQnpYWEplZXVralMwYWt2YmNXam9MOUdvb21TWHdMbFFSamlBNmZhWjJfbjg2UXhVQ21CYTN3ZThjOW1YcGlEWHVfODNMQnJ1bDVmYUIzbnRzaExVLXF1NnZVbEFGQzZiMzhDUnNhdFlKV1hFczlLdGZON3VhUVZERXdJb0JZXzM0UGhYdw?oc=5",
+          "source": "TradingKey",
+          "published": "6 ชม.ที่แล้ว"
+        },
+        {
+          "title": "หุ้นที่มีราคาเปิดกระโดดขึ้น (Gap Up) และกระโดดลง (Gap Down) สูงสุดในวันจันทร์: SAP, SHOP, SONY และหุ้นอื่น ๆ",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMzROc1drQ2VDcDA1T0dpcjRna08weDIxT1Ayd0FxM2VfaUNibWRnLXotN0g5MXVyazBjMW1XNFkyZk4yUG9xdURjQlRrNmE2UUpTYnQtTlVkUkdGSXVNREU3MEl1dUp0NUNvOGtYMnhGc1hybjlYTjJZaklLS1JscmhJanVyN3k0OWN2U0VpSWEwM3k0?oc=5",
+          "source": "Moomoo",
+          "published": "2 วันที่แล้ว"
+        },
+        {
+          "title": "หุ้น SHOP ร่วงหนัก: ทำไมผลประกอบการของ Shopify ที่พลาดเป้าส่งสัญญาณถึงปัญหา AI ที่ใหญ่กว่า",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5jLXhmVEZSM3U1ZWlJWnpNZTZEVmxCWUZEVWIyQ1MzX3J3dlNsYU9QRHQ2QkpMaUhqMFZRYndDZ29icGkxX2ptOHR4cFBUVTRwc1BfZzBWYzBkNTBJ?oc=5",
+          "source": "VT Markets",
+          "published": "23/06/2026"
+        },
+        {
+          "title": "Shopify Inc (SHOP) หุ้น เคลื่อนไหว ขึ้น 3.55% เมื่อวันที่ 28 ก.ค.: การวิเคราะห์ฉบับสมบูรณ์",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQMEtjRDZyaV9QdmZjY3lGYm44T3ppbjI0RWtQbGVlZkx5N3REaHpvWGpsdWxJeGFHQm0taWpvT3A2RzhhTndGYXJJWklfMFI1cjd4QnlWc0pkX1FMdHJFN19vQUZtWE12UVVHbVFUOHNGWEg1OEtZSEg0ZlNMYmdKUzYxX09PSGpnclF0R0hwTQ?oc=5",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         }
       ]
@@ -179,16 +311,16 @@
       "ema_slow": 11.35,
       "rsi": 59.2,
       "macd_hist": 0.0592,
-      "volume": 65030599,
-      "avg_volume": 86212664,
-      "volume_ratio": 0.75,
+      "volume": 66470700,
+      "avg_volume": 86284670,
+      "volume_ratio": 0.77,
       "momentum_5d": 21.27,
       "return_20d": 7.1,
       "return_60d": 14.22,
       "atr14": 0.81,
       "atr_pct": 6.58,
       "volatility20": 62.83,
-      "turnover": 804428502.19,
+      "turnover": 822242551.39,
       "high_20d": 12.83,
       "low_20d": 10.16,
       "high_120d": 13.34,
@@ -262,7 +394,7 @@
         {
           "title": "โครงสร้างผู้ถือหุ้น UiPath Inc (PATH): ผู้ถือหุ้นรายใหญ่และการถือครองของนักลงทุนสถาบัน",
           "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8tM2p1VnV6NDZJWXJGalhJUEhpOU9JZkNuZEEtbjNtOTBleU9zRmxWQTFvRlJWU2twX2lTdzFtdzlkaXJCLVlIb1JmWklhVXFOc2ZacmZwazM3V09aRy1OSlRHby1PVjVUeDdz?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
@@ -274,13 +406,13 @@
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ UiPath Inc (PATH): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0tX3FOaTNkZDJLWlJOVjh1eHlERG5TOUVzVWhza01UTFlZNmNzaURGU2FpX0NZeDc5NGYxN1VrT1YycFhhanp4ajlEbjM0czFxcmJTOFBpLXdCOE1tdTRULWNCelNiM1p1Um5Ea2ZLcFlORjg?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
           "title": "ความเชื่อมั่นของนักลงทุนสถาบันต่อ UiPath Inc (PATH)",
           "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE91UUNsZlJUNV9sZlpvNXVhMnRyVlJ2NFliWlVCUFZhU1FxQlVaSm9hd3hvWDBPLVdfZTlLbXRBblV4U2JoYUxkeG5VYmJoQW80NFJWSEpiNEdydUxQNUcyS0w5Y2x2bjRzUldv?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         }
       ]
@@ -393,7 +525,7 @@
         {
           "title": "BlackRock Inc (BLK) หุ้น เคลื่อนไหว ขึ้น 3.55% เมื่อวันที่ 28 ก.ค.: มันส่งสัญญาณอะไร?",
           "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVWJFV1p3MTJ5S3B3MkJ4V0pYdHpGRXo4ZURCdGhkV3NJbm1sQzZ0UFo0ZmpOMmxZQ25oeFhReEV5TkdyMDQ2dzg2ZjdtRzZ6SmhYYzZIcmFVY2d4OGxaMG85QnR6WUVIOGVmUXpKRVVJVU5kQzZnWEptT3E5ZVV6Qk14WDU2dHhZaGFSTV9B?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
@@ -403,9 +535,9 @@
           "published": "6 วันที่แล้ว"
         },
         {
-          "title": "BLK|BlackRock Inc|ราคา:1098.360|เปลี่ยน%:+36.220",
+          "title": "BLK|BlackRock Inc|ราคา:1081.800|เปลี่ยน%:-15.750",
           "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE81SU1FWHEyNS1tUEtXbjBiMFBITzlVN19aNngwX1l1YnJsbUNDZGNRQngwdFpVdnYwdXFnMUtwck9ILU9KLTFxRURiRHYzemM5OElBby1GZUJiVVFqN2tDSnoySHdUTS1Sa1lkYjUzdHY?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "4 วันที่แล้ว"
         },
         {
@@ -526,7 +658,7 @@
         {
           "title": "โครงสร้างผู้ถือหุ้น Target Corp (TGT): ผู้ถือหุ้นรายใหญ่และการถือครองของนักลงทุนสถาบัน",
           "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4zUUlMQXJzZERaLUpfeHljdUlRQkM0V2o0LXZUdk00VmRscXJmaVh3aDdMMWFERmROb1dPSVplalRfRHlNbl9sd2ZWS0c5bHUwQ0dBT3lKNjVGSFlWZXRYMEtXRXNlb2RwOUE?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
@@ -538,13 +670,13 @@
         {
           "title": "ความเชื่อมั่นของนักลงทุนสถาบันต่อ Target Corp (TGT)",
           "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5PaXhLQkMxUDFPcWFBeWpJQ0lGZDNoa2ZiZnRwVGJKM0hxRWlLN0Juc1huTG53OEZLY2tDWkU4d0VjeWRZblJJWkw1WU1PZlV3bzlVV3NJVnBGQ2NJV3F1ZzcxaFFlbFozV3c?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
           "title": "รายละเอียดรายได้ Target Corp (TGT): กลุ่มธุรกิจ รายได้ตามภูมิภาค และสัดส่วนกำไร",
           "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Gakt6WUpBbWtBZUczd0NzOVVIbTBEWHR5SXlLX0VEbDZJSHpwVmtXZGdoczZyOVJyS0FzRHR6a3NZbTBmdVVCZzZIRkVoeGUzcHNZM19yS2dfamlqVHZmVnh6ZlFwdkU?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         }
       ]
@@ -574,16 +706,16 @@
       "ema_slow": 343.69,
       "rsi": 63.5,
       "macd_hist": 0.1858,
-      "volume": 7046453,
-      "avg_volume": 7758887,
-      "volume_ratio": 0.91,
+      "volume": 8389060,
+      "avg_volume": 7826018,
+      "volume_ratio": 1.07,
       "momentum_5d": 4.17,
       "return_20d": 4.33,
       "return_60d": 12.29,
       "atr14": 8.33,
       "atr_pct": 2.28,
       "volatility20": 23.66,
-      "turnover": 2580904262.9,
+      "turnover": 3072660914.04,
       "high_20d": 373.97,
       "low_20d": 344.42,
       "high_120d": 373.97,
@@ -658,13 +790,7 @@
           "title": "WASH ลุ้นครึ่งหลังโต V-Shape มี Upside 81.3% เป้า 7.25 บ. - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
           "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8ybkhqOFR2NnRHXzBWbXR4czQ4alVHcUpWbnFBeko0N2lnbGRibHkzVndhckhITjY0RVFOeFlDNTIzTi1PSjQ0M3B5RnFFamdFNlFSbg?oc=5",
           "source": "HoonVision",
-          "published": "16 ชม.ที่แล้ว"
-        },
-        {
-          "title": "หุ้น Visa คงเรตติ้ง ซื้อ จาก Deutsche Bank หลังผลประกอบการไตรมาสแข็งแกร่ง",
-          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPdm5kQ1d0ajlzZTNaUDFZd2xEcmZVLXkteDRFRUdaQXJwdHpqMVRBQ015LXNoeDR0MWFPT0lDNXYtV09IMjhoRU92QXZJSkRkMlAwQTNEWERZdDZ2VXJfU3FuQV9nbDZlSi1Od1p4ZVRjR2I4MEdDNzJzWkhlOGNaUFJmQQ?oc=5",
-          "source": "Investing.com",
-          "published": "1 วันที่แล้ว"
+          "published": "18 ชม.ที่แล้ว"
         },
         {
           "title": "Erste Group ปรับเพิ่มคำแนะนำการลงทุนหุ้น Visa (V.US) เป็น \"ซื้อ\" (Buy)",
@@ -673,9 +799,15 @@
           "published": "3 วันที่แล้ว"
         },
         {
+          "title": "หุ้น Visa คงเรตติ้ง ซื้อ จาก Deutsche Bank หลังผลประกอบการไตรมาสแข็งแกร่ง",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPdm5kQ1d0ajlzZTNaUDFZd2xEcmZVLXkteDRFRUdaQXJwdHpqMVRBQ015LXNoeDR0MWFPT0lDNXYtV09IMjhoRU92QXZJSkRkMlAwQTNEWERZdDZ2VXJfU3FuQV9nbDZlSi1Od1p4ZVRjR2I4MEdDNzJzWkhlOGNaUFJmQQ?oc=5",
+          "source": "th.investing.com",
+          "published": "1 วันที่แล้ว"
+        },
+        {
           "title": "โครงสร้างผู้ถือหุ้น Visa Inc (V): ผู้ถือหุ้นรายใหญ่และการถือครองของนักลงทุนสถาบัน",
           "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1wZjJJcGs2Zjc5ZUlqZU5YbUZLdlFPUEI0NkxhcENPelVkYVFra1BnWno2RWxPTzZFX1RfUWNZenBVa1FjYkhueFYzY0lpQTdFNk5LNGVoamhFeG0zaldRRERnM1QweFk?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "4 วันที่แล้ว"
         }
       ]
@@ -788,26 +920,26 @@
         {
           "title": "Evercore ISI ปรับเพิ่มเป้าราคาหุ้น Chipotle จากแนวโน้มการเข้าใช้บริการที่ดีขึ้น",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBZdG5JakM0YVVUbGRrOFlPcUZ3UWtqRWxoRHB0VmxHVWdsZFVvWWQyNHFfeWpNeDhfRmdkckhsT0JnM1RVdlFuVDVXMFQ2MFRlc0ZLb3g5WlMzOGNKOEdjZTBkVEUxQnd6NDZmUzhtdU9zT28?oc=5",
-          "source": "Investing.com",
-          "published": "10 ชม.ที่แล้ว"
+          "source": "th.investing.com",
+          "published": "12 ชม.ที่แล้ว"
+        },
+        {
+          "title": "เงินปันผลและการแบ่งหุ้นของ Chipotle Mexican Grill Inc (CMG): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBPZnV0QW1Da3BHZ1UxejEtWEZtTGloYjJVTDc0UjgzX2t5bkRxaWd6djNkZXdUaGI5aVUtcDNQNjBvbU1kN0Z2WFp4bU1jMWdWWEJBMFpfa215VkpMc29TQ0hxTTZ4UTJKeFNNYWVLa1NuUQ?oc=5",
+          "source": "TradingKey",
+          "published": "22 ชม.ที่แล้ว"
         },
         {
           "title": "FitFlop ภายใต้ CMG ร่วมส่งต่อความห่วงใย มอบรองเท้ากว่า 397 คู่ มูลค่ากว่า 8.9 แสนบาท แก่กระทรวง พม. เพื่อส่งต่อผู้สูงอายุและผู้ขาดแคลน - มิติหุ้น | ชี้ชัดทุกการลงทุน",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5zY1FvR283TGQ0MmF0VnB4UnR2Y3VXVlAyWjV2SjBKRUVvRHFDYnBRenlaSThIRWFXN1dPRU1QZWJmY2pDVmI0LVlET3RJMkRmMWlNdEdR?oc=5",
           "source": "มิติหุ้น",
-          "published": "17 ชม.ที่แล้ว"
-        },
-        {
-          "title": "สุขภาพทางการเงินของ Chipotle Mexican Grill Inc (CMG): การวิเคราะห์ความสามารถในการทำกำไรและงบดุล",
-          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE96LUtDT0swOFVyd2ZzNUl6RlV0ZjdKYUpjUjN0S3Mwb0ptYmxYQnJqcDF2aUpIN2thbTg5Q3c0UllGRHBfa2NpUHZtQWZzQ2R2T3FDeDBFdVptMXptRzZNeDY4bnVMbV8yMnd2c2lKY0YzSUk?oc=5",
-          "source": "tradingkey.com",
-          "published": "2 วันที่แล้ว"
+          "published": "18 ชม.ที่แล้ว"
         },
         {
           "title": "Raymond James ปรับเพิ่มเป้าราคาหุ้น Chipotle หลังกระแสลูกค้าแข็งแกร่ง",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE05aXRJS2NuV2tuaWlJMGRNdWdJQ0Mxa1ZER2ZJeEcybVBkLW9yekQwSUx5SVhsUURVSnZjMU4wcjlvaDQ0M3RxamZJVTFlSkNvalFMMmlTZnNHNVZtUFFkY1Z0RWxWU1RlX0t1ODM3dVFUTWM?oc=5",
-          "source": "Investing.com",
-          "published": "9 ชม.ที่แล้ว"
+          "source": "th.investing.com",
+          "published": "11 ชม.ที่แล้ว"
         }
       ]
     },
@@ -815,7 +947,7 @@
       "ticker": "REGN",
       "name": "REGN",
       "price": 738.34,
-      "open": 701.9,
+      "open": 700.0,
       "day_high": 740.0,
       "day_low": 694.98,
       "prev_close": 695.42,
@@ -919,10 +1051,16 @@
       "pos_value": 0.0,
       "news": [
         {
+          "title": "BofA ปรับเพิ่มเป้าราคาหุ้น Regeneron หลังยอดขายยาแข็งแกร่ง",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE90RnJxVjkzdTJhMVFVVjJHMTRDTDRIUEtFaUFnYVR1cW9lWEUtTDhJQXJDMTI0OWVLOFJQTHd0bFNnVlFNX3c1UjU0NXFrU1IxdUg4RWZocnpxLTV4VWhvQjZjdWtQM0VMTVMyVzhyOElLUjQ?oc=5",
+          "source": "th.investing.com",
+          "published": "3 ชม.ที่แล้ว"
+        },
+        {
           "title": "ทําไมหุ้น Regeneron Pharmaceuticals ถึงปรับตัวขึ้นวันนี้?",
           "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB3c0pVY2ZtbXFxTnJpbUI4NWF6WVZLNGE2SlhPZ1JEX0c4TlR6M1FmTG1ObWp3MXZDNmpBSXVURVpsRC0ySmw4cmtld1lCWWhWQjFSMHcxYXVjbXpuNTA1N2Nua2JxVmctdEFPZlpjYnpxeFJUTmc?oc=5",
-          "source": "Investing.com",
-          "published": "8 ชม.ที่แล้ว"
+          "source": "th.investing.com",
+          "published": "9 ชม.ที่แล้ว"
         },
         {
           "title": "Regeneron Pharmaceuticals (REGN) กระดานสนทนาหุ้นและฟอรั่ม",
@@ -931,14 +1069,8 @@
           "published": "16/07/2026"
         },
         {
-          "title": "Regeneron Pharma กำไรและรายได้สูงกว่าคาดใน Q2",
-          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9kdkN0eWJ3MDE5TVZmZklKWXRKNzVqZXY3MkUzRU9sc2dhZnhWaEJxVHFYeF9aUFJMVWp6Yl9IN0MwS0ZwbENQQ1d0YTFudDhBdjM4c0s2MS1OSjdEZnM2M3BBc1R2dDRWRElaNEpZZnFJMHM?oc=5",
-          "source": "Investing.com",
-          "published": "9 ชม.ที่แล้ว"
-        },
-        {
-          "title": "ฟอรัมพูดคุยเกี่ยวกับหุ้น IPSEN SA SPONS ADR EA REPR 0.25 ORD (IPSEY)",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5MdjZwMkZWNm9ZenpjMERlZkNJamE5V2NkQk9yUExaYlhZMnQ0aDlIT3FhRWhGQVFHWVJLeUtGUU9HM0ktTk1uWTM4R1V3aGF5NUFqZUYxa1dHZEZqNFJ3?oc=5",
+          "title": "Goldman Sachs Maintains Regeneron Pharmaceuticals(REGN.US) With Buy Rating, Cuts Target Price to $965",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQazVnN0c2MmZ0cWVHZ3ZSVW1ub0d4ZGhaVHVtc3BmbUhxRlFFdWhTaXczNUsyaXBNY2I0VVl6OW82R2pwb3VLWnZWOUhFdmxqM05MU0lkUGl3Mkd1MGJyamw5alB3S2NweHAyZFFSQnBpSVVEWnh3bGp3SWxJQkliek94YTd2QjhfTnhiazdoZHJVYU1qM09Pdy1abnlzQ093RGRLdHZjc3E2b05BWjlxNUloajNoamJ3ckhJSWc5NA?oc=5",
           "source": "Moomoo",
           "published": "22/07/2026"
         }
@@ -1053,157 +1185,26 @@
         {
           "title": "หุ้นหลังตลาดปิด: META, MSFT, CMG, SBUX, CVNA, LRCX, FTNT, QCOM, TDOC",
           "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBIQmU0VXNoZExVOGtObU01TkJpLUZQTC1GdHl0RW5kR3dGSjNGYWFQeXRVNWMtZHAwQVljVkMybHVXMFEtc0dVQUFDUDlDTm5qdFVQajVCMHhfUEJCcGQyVXpkRGdtNkIzQzdGeklsUHZtekpYSmZj?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "1 วันที่แล้ว"
-        },
-        {
-          "title": "Starbucks Gains 6% After Hours on Fiscal Q3 Adjusted Earnings Beat, Higher Guidance",
-          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQnJnQUVTdE1iQy05MU5UMzdzQ3lQcEVDb0ZnQXFsV1c1cVlsQmhtX1lEb0d4QTdESEUtSVhBLVBEZGhBMXlnanNlOEpFRERWNkgzekxKeldYWkxYQkFyYjg2NEk4NThWTmtEeDFIOTctekNfS21najBPdW1CV3FNN09DQ3BHdk9zb3pXeF9tc1NuOGNDT1lRSEQxSFFBeWd5ZEtOcVV6UV8?oc=5",
-          "source": "Moomoo",
-          "published": "23 ชม.ที่แล้ว"
         },
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ Starbucks Corp (SBUX): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE11QmpZWTRYS3dpOE5pNHJkeXdNay1JaHY5bEhHOWVhUVp4N1k1V01lSWV4WTJwWVhOM2JaNlV2azhmNm5ZTm41cTNJVWJabEdReHJ0SHNPWmIwVWJyWW13d3JVMDUtdVJqYU8yM19lMGxmZkE?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "4 วันที่แล้ว"
+        },
+        {
+          "title": "UBS ยังคงคำแนะนำ \"ถือ\" สำหรับหุ้น Starbucks (SBUX.US) และคงราคาเป้าหมายที่ 105 ดอลลาร์",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUmtib3JwLVp4UFBtT3Vtby01cG5IeWt4LTA4Smx0NUx3bjZpRVo5S2NTeTh2cDVKVmQ4YVhhUWRFZ1RleHpSb0I3ZkMxTkVJYmpVVHpTWkhYRWhQMXhIc1VGQVltYWFGRXlqTnRNaWtqUzl3R1lrYzFyTWZhblRaU3Q3U2I4WTFscHVUbHpFR3E0LUhmc3JRTnhKcjU0RWhCMXprckVBR2VpVnl6eUJlLUtZX2NzUQ?oc=5",
+          "source": "Moomoo",
+          "published": "6 วันที่แล้ว"
         },
         {
           "title": "Starbucks กำไรและรายได้สูงกว่าคาดใน Q3",
           "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBDU1FxTUkySGNpdHZpa180ek5oN0JUOXRXdG94R1NHb09mNWJoVmNNZ0I4MHB1YmxjOTlrazREaFNXN2tBdTlpbEJ6OUFFOUlOdzNkNHJPdmlBUXJlYWtNQjIwUQ?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "1 วันที่แล้ว"
-        }
-      ]
-    },
-    {
-      "ticker": "SHOP",
-      "name": "SHOP",
-      "price": 122.4,
-      "open": 126.32,
-      "day_high": 126.61,
-      "day_low": 122.29,
-      "prev_close": 129.17,
-      "change_pct": -5.24,
-      "score": 74,
-      "signal": "BUY",
-      "rec_action": "ควรซื้อ",
-      "rec_text": "🟢 ควรซื้อ — สัญญาณเทคนิคเป็นบวก",
-      "rec_tone": "buy",
-      "holding_style": "LONG",
-      "holding_label": "ถือยาว",
-      "holding_period": "2-8 สัปดาห์",
-      "holding_text": "เหมาะถือยาวกว่าเดิมตามเทรนด์ ใช้ EMA20/50 และ stop loss เป็นเส้นคุมเกม",
-      "holding_reason": "แนวโน้มหลักยังเป็นบวกและโมเมนตัมไม่ร้อนเกินไป",
-      "holding_tone": "long",
-      "trend": "UP",
-      "ema_fast": 121.57,
-      "ema_slow": 118.64,
-      "rsi": 52.1,
-      "macd_hist": 0.0821,
-      "volume": 9907247,
-      "avg_volume": 7784622,
-      "volume_ratio": 1.27,
-      "momentum_5d": 9.29,
-      "return_20d": 0.63,
-      "return_60d": -4.04,
-      "atr14": 6.29,
-      "atr_pct": 5.14,
-      "volatility20": 57.29,
-      "turnover": 1212647047.92,
-      "high_20d": 133.99,
-      "low_20d": 111.06,
-      "high_120d": 139.1,
-      "low_120d": 94.0,
-      "from_high_120d_pct": -12.01,
-      "from_low_120d_pct": 30.21,
-      "entry": 122.4,
-      "stop_loss": 113.83,
-      "target1": 134.64,
-      "target2": 146.88,
-      "downside_pct": 7.0,
-      "upside1_pct": 10.0,
-      "upside2_pct": 20.0,
-      "risk_reward1": 1.43,
-      "risk_reward2": 2.86,
-      "history": [
-        112.94,
-        116.04,
-        109.54,
-        110.78,
-        110.42,
-        108.2,
-        110.47,
-        108.24,
-        112.49,
-        113.23,
-        108.09,
-        108.85,
-        107.98,
-        107.68,
-        114.17,
-        111.62,
-        116.86,
-        114.21,
-        114.18,
-        121.63,
-        119.46,
-        120.14,
-        121.88,
-        119.22,
-        123.17,
-        122.54,
-        124.74,
-        125.68,
-        123.55,
-        125.06,
-        123.56,
-        124.48,
-        123.03,
-        118.42,
-        112.0,
-        113.75,
-        126.88,
-        130.28,
-        129.17,
-        122.4
-      ],
-      "reasons": [
-        "ราคายืนเหนือ EMA20 และ EMA50 (เทรนด์ขาขึ้นชัด)",
-        "RSI 52 อยู่โซนแข็งแรงแต่ยังไม่ร้อนแรงเกินไป",
-        "MACD อยู่ฝั่งบวก",
-        "ราคา +9.3% ใน 5 วัน (โมเมนตัมแรง)"
-      ],
-      "warnings": [],
-      "market": "ต่างประเทศ",
-      "market_tag": "US",
-      "currency": "$",
-      "pos_shares": 200,
-      "pos_value": 24480.0,
-      "news": [
-        {
-          "title": "Shopify Inc (SHOP) หุ้น เคลื่อนไหว ลง 3.86% เมื่อวันที่ 30 ก.ค.: เผยปัจจัยขับเคลื่อนสำคัญ",
-          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUmFaQnpYWEplZXVralMwYWt2YmNXam9MOUdvb21TWHdMbFFSamlBNmZhWjJfbjg2UXhVQ21CYTN3ZThjOW1YcGlEWHVfODNMQnJ1bDVmYUIzbnRzaExVLXF1NnZVbEFGQzZiMzhDUnNhdFlKV1hFczlLdGZON3VhUVZERXdJb0JZXzM0UGhYdw?oc=5",
-          "source": "tradingkey.com",
-          "published": "5 ชม.ที่แล้ว"
-        },
-        {
-          "title": "หุ้นที่มีราคาเปิดกระโดดขึ้น (Gap Up) และกระโดดลง (Gap Down) สูงสุดในวันจันทร์: SAP, SHOP, SONY และหุ้นอื่น ๆ",
-          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMzROc1drQ2VDcDA1T0dpcjRna08weDIxT1Ayd0FxM2VfaUNibWRnLXotN0g5MXVyazBjMW1XNFkyZk4yUG9xdURjQlRrNmE2UUpTYnQtTlVkUkdGSXVNREU3MEl1dUp0NUNvOGtYMnhGc1hybjlYTjJZaklLS1JscmhJanVyN3k0OWN2U0VpSWEwM3k0?oc=5",
-          "source": "Moomoo",
-          "published": "2 วันที่แล้ว"
-        },
-        {
-          "title": "หุ้น SHOP ร่วงหนัก: ทำไมผลประกอบการของ Shopify ที่พลาดเป้าส่งสัญญาณถึงปัญหา AI ที่ใหญ่กว่า",
-          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5jLXhmVEZSM3U1ZWlJWnpNZTZEVmxCWUZEVWIyQ1MzX3J3dlNsYU9QRHQ2QkpMaUhqMFZRYndDZ29icGkxX2ptOHR4cFBUVTRwc1BfZzBWYzBkNTBJ?oc=5",
-          "source": "VT Markets",
-          "published": "23/06/2026"
-        },
-        {
-          "title": "Shopify Inc (SHOP) หุ้น เคลื่อนไหว ขึ้น 3.55% เมื่อวันที่ 28 ก.ค.: การวิเคราะห์ฉบับสมบูรณ์",
-          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQMEtjRDZyaV9QdmZjY3lGYm44T3ppbjI0RWtQbGVlZkx5N3REaHpvWGpsdWxJeGFHQm0taWpvT3A2RzhhTndGYXJJWklfMFI1cjd4QnlWc0pkX1FMdHJFN19vQUZtWE12UVVHbVFUOHNGWEg1OEtZSEg0ZlNMYmdKUzYxX09PSGpnclF0R0hwTQ?oc=5",
-          "source": "tradingkey.com",
-          "published": "2 วันที่แล้ว"
         }
       ]
     },
@@ -1211,7 +1212,7 @@
       "ticker": "DUOL",
       "name": "DUOL",
       "price": 133.6,
-      "open": 135.9,
+      "open": 135.25,
       "day_high": 136.31,
       "day_low": 129.67,
       "prev_close": 140.17,
@@ -1315,25 +1316,25 @@
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ Duolingo Inc (DUOL): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE92dkxNLXB4NHpPc2ZpTnBYV3Bsa3ZFRmlKQjY4b3pabEtaTkpuSzZyRTYxUEJ3aEwySWhsT19pLXA2YnBOWGtablBMa244bXd3dVhYbFJnSjctQjRyN0IxQWpuV3lSWW5nQmhxUFhwbmw3SjQ?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
           "title": "การวิเคราะห์ทางเทคนิค Duolingo Inc (DUOL): แนวรับ แนวต้าน ตัวชี้วัด และค่าเฉลี่ยเคลื่อนที่",
           "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5rMlI4dkJaZ2djd2VWYTFvY3cxYkdRYjFLVXFjdmlyZUZ0ei04ejNXSEgwcmRrUVFIQ3lCWmFZNHNBemZibEJITUI2QzEzWW1oenR0SEozZWpsNWpGZE9LaHZXX2xEaW5IYjlr?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
           "title": "วิเคราะหุ้น Duolingo ทำไมถึงยังน่าสนใจแม้เวลานี้ราคาจะผันผวนก็ตาม",
           "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRGhINU9Sem5SaFdIQkpjSDBXWHNxejg1ZkUxdFVpNVdZVjczcWw2LUs4OTJ4b00yS3JwQlZwUmVWelM2WDd4V0lrd3p2dWgtWHBJRTJBazl2ZFNNOHJDUEhVYU5qWmo1WldtWEJ3UDJfTmpOZlNLSUt6RmNXRjkzZFQ5UWJTaGI4WEtUdUdybw?oc=5",
-          "source": "efinancethai.com",
+          "source": "eFinanceThai",
           "published": "17/11/2025"
         },
         {
           "title": "คาดการณ์ผลประกอบการ Duolingo Inc (DUOL): ประมาณการ EPS และการเติบโตของรายได้ในอนาคต",
           "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBhRm9jdm5aWWZaMEgwQS04b1ZQc3B2bVBaamNFNUpLbExueDhvUjJJNDU5em1vTTlUdXZ6WXk5WWxFbk5WVzN6TW4tSnJIbW13SkZiZXJHUlRyWDVQN3JPUHo2Wk5hSUgxeEE?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         }
       ]
@@ -1342,7 +1343,7 @@
       "ticker": "ADBE",
       "name": "ADBE",
       "price": 247.9,
-      "open": 251.5,
+      "open": 251.55,
       "day_high": 255.3,
       "day_low": 242.42,
       "prev_close": 263.43,
@@ -1363,16 +1364,16 @@
       "ema_slow": 230.78,
       "rsi": 58.8,
       "macd_hist": 3.6356,
-      "volume": 6579731,
-      "avg_volume": 5779626,
-      "volume_ratio": 1.14,
+      "volume": 6859688,
+      "avg_volume": 5793624,
+      "volume_ratio": 1.18,
       "momentum_5d": 16.84,
       "return_20d": 17.5,
       "return_60d": -2.39,
       "atr14": 13.25,
       "atr_pct": 5.35,
       "volatility20": 58.06,
-      "turnover": 1631115274.74,
+      "turnover": 1700516613.33,
       "high_20d": 266.28,
       "low_20d": 210.88,
       "high_120d": 285.36,
@@ -1444,21 +1445,21 @@
       "pos_value": 24790.0,
       "news": [
         {
-          "title": "ADBE|Adobe Inc|ราคา:237.670|เปลี่ยน%:+12.560",
-          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9tWWhUTGtQdnRLSUR6VXVVQ1RLZ04yZnBURlhRSzEweF9fdmVnQzBGeHVuclZwdEdINEhEZHdGRGpzbFBzbzVzMEpBVlNsUlc2eGlQSFh1d2xaUW1EcjFsWFVLX2t5Q2QxMUROV1Y1WVYzdw?oc=5",
-          "source": "tradingkey.com",
-          "published": "3 วันที่แล้ว"
+          "title": "คอมมูนิตี้และฟอรัมพูดคุยเกี่ยวกับหุ้น ADBE 260731 280.00C (ADBE260731C280000)",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9pbmt2ZFdVQWNMWkdPWTg4RF9DRW5UampaT2NPejZ3VlN4dWdrZ3lLVVRvaUxwb2RjTVpzUVBZNTd5VWdrdGdwWkFHN0JMbGhBbVVzSFZRT1dCZ29Fc09mRnRGSllsUXBqek1BSV9ZQXY0UQ?oc=5",
+          "source": "Moomoo",
+          "published": "1 วันที่แล้ว"
         },
         {
-          "title": "คอมมูนิตี้และฟอรัมพูดคุยเกี่ยวกับหุ้น ADBE 260724 235.00P (ADBE260724P235000)",
-          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9oS0ZVR0VmbExXX0JoYkdqWUlNZWxqLTVNQU5wdEJKSXNzalh3YXA0V3lSdHpSY1g4X2xhbGo0U3FHd1oyNzU5MmN5TzVROHZkdGJvakxDRkhjSWhVb1dhaHRwMkRYaUlYZ1hjWk5QUzZhdw?oc=5",
-          "source": "Moomoo",
-          "published": "23/07/2026"
+          "title": "ADBE|Adobe Inc|ราคา:237.670|เปลี่ยน%:+12.560",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9tWWhUTGtQdnRLSUR6VXVVQ1RLZ04yZnBURlhRSzEweF9fdmVnQzBGeHVuclZwdEdINEhEZHdGRGpzbFBzbzVzMEpBVlNsUlc2eGlQSFh1d2xaUW1EcjFsWFVLX2t5Q2QxMUROV1Y1WVYzdw?oc=5",
+          "source": "TradingKey",
+          "published": "3 วันที่แล้ว"
         },
         {
           "title": "ทําไมหุ้น Adobe ถึงร่วงลงในวันนี้?",
           "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBqZHBaN0wxSllza1hyS1pSY2xvYlJ0aUlXS1lmQkNtTVkxVmVnRDRuRXV0X3FMNEFsZUIydGVxaGhYMWdLc0o2eTFpRC1pRDJJMU5wZlJxN1B6ZDUycWdIbGxVbnh3c3dyNkhscGhzLVdFVUQzX0E?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "12/06/2026"
         },
         {
@@ -1578,18 +1579,18 @@
           "title": "\"หุ้นอิเล็ก” ร่วงยกแผง! DELTA นำกลุ่มดิ่ง 7% ตามแรงขายหุ้น AI-เซมิคอนดักเตอร์โลก",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9RN0JGbm8wbXFKcUIzYWZETkltdDJmeXJBMmRIQUJzTHZPS2VEQjI5OXJ5eFkyeFlOYW9IZjQwUGxIeWVTSEMtTk9RcDZ0RzVrRjg1T3Rn?oc=5",
           "source": "ข่าวหุ้นธุรกิจออนไลน์",
-          "published": "16 ชม.ที่แล้ว"
+          "published": "17 ชม.ที่แล้ว"
         },
         {
           "title": "ผู้อํานวยการทีม Team plc ซื้อหุ้น 10,000 หุ้น ที่ราคา 15.5 เพนนีต่อหุ้น",
           "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBmRWg0R1ZKMlBHZF9sZk5zTmV5WU5yUzYwSUJZYzBPcUM4bDdwMFQ3RW9TSEY3bkpObHJOOWM0bkpwS2t1WVlieXEzZkJBRzVoT3lmaXNzTjd6NTNDaEdValBfUGs1a3FyMU9BMnVkYw?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "2 วันที่แล้ว"
         },
         {
           "title": "โครงสร้างผู้ถือหุ้น Atlassian Corp (TEAM): ผู้ถือหุ้นรายใหญ่และการถือครองของนักลงทุนสถาบัน",
           "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1JaG9xTHdyeVZ5YXFLMS1obkg5QjFfZHpZd0FGQk1DZjA4c095TUVjeWFxSEtKVEk3R01fWl9YcWZxN2N4elp6WGo0ZXdLMldvSTNGRkZ6UVIwbVo3b3NVUmhWcXRMaHFpbC1F?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
@@ -1604,7 +1605,7 @@
       "ticker": "ZS",
       "name": "ZS",
       "price": 148.39,
-      "open": 150.6,
+      "open": 150.0,
       "day_high": 151.46,
       "day_low": 143.87,
       "prev_close": 153.77,
@@ -1625,8 +1626,8 @@
       "ema_slow": 143.99,
       "rsi": 53.7,
       "macd_hist": 0.277,
-      "volume": 2858730,
-      "avg_volume": 2369211,
+      "volume": 2878345,
+      "avg_volume": 2370192,
       "volume_ratio": 1.21,
       "momentum_5d": 6.22,
       "return_20d": 1.32,
@@ -1634,7 +1635,7 @@
       "atr14": 7.87,
       "atr_pct": 5.3,
       "volatility20": 49.69,
-      "turnover": 424206942.96,
+      "turnover": 427117612.79,
       "high_20d": 156.98,
       "low_20d": 138.03,
       "high_120d": 191.25,
@@ -1714,19 +1715,19 @@
         {
           "title": "โครงสร้างผู้ถือหุ้น Zscaler Inc (ZS): ผู้ถือหุ้นรายใหญ่และการถือครองของนักลงทุนสถาบัน",
           "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1oakh5MzBKVG9kRnVuQWdob0RJMGdrbXdHMGhJaTFJTkIwdExMOVFsTGh2endkNlJibV9sRkVJbXUwVjJtZ2d4d3E1YTFlY2FOTXlYeFV6X0RZQm8tNFlsTFliVnZUdVll?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
           "title": "ทําไมหุ้น Zscaler ถึงร่วงหนักวันนี้?",
           "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Ec1FNQ3YtVThaTTNJXzJDOEpSbEo2dldEZU1ydmlXWjcyRHhwMFNodm5ndGRhRm5Jd0dUaFVfWVBYUFVoWkhWVDZJb09MN25DREh5REJHM0dPblZWV2hGcmxrUHVtdl9HTnVKckc3ZG5PSVpyVFE?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "27/05/2026"
         },
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ Zscaler Inc (ZS): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBreEotSGZGWEhrYmlqckd1Y3A0RWhRLWIwck9GQVdYU1ZBLUE0SnFfSG5MTjU0b3IyODJMYTUwaDZzSmtpSG1RTERiRDJsMk1xOXRsRGhyeHRXR2prSUM4Ui1KM21SN2ZPUURyODBNcHk?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         }
       ]
@@ -1839,7 +1840,7 @@
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ HubSpot Inc (HUBS): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1SeHhaSHJGRXdWVFpxWGd4Rk90aDM4T2g2WEtYdk51SGczX2NiQ2tmMmp6amtRLXFiTHV5cUZGeG9GSktLeWZSeWhlOUt2dGR4bm5ieWFyZ3FRZGhkdW4td041WExFSkl5TkxOT1BYZC05S3c?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
@@ -1857,7 +1858,7 @@
         {
           "title": "โครงสร้างผู้ถือหุ้น HubSpot Inc (HUBS): ผู้ถือหุ้นรายใหญ่และการถือครองของนักลงทุนสถาบัน",
           "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5kYk9BZHZlRnhLWjJmZmtGMG5OdF9SZlp0dlZ5X3BuWEpMZGV2RlVQRGlnWWhhajlRUy1hWFdpbTh6MHp5bHdQcGFBc0RZU0lHWGlma01ZWVAxZGhZMVczN0lVdFhlcDRaR0hN?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         }
       ]
@@ -1972,7 +1973,7 @@
         {
           "title": "หุ้น Elf Beauty อาจเคลื่อนไหว 13% ในรายงานผลประกอบการวันที่ 5 ส.ค.",
           "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA2OWxSU0gzOWpVck5lMFB4T0ZYSlZuUTJIRFRKbU92dHNsYmxEWlRfdWdNRzh2TFQzbGkwcVZ2MEF3akEzRk1GZTlNYUhjVTFHUHRuSzV0YmNKZzN4c0tzOUVDcWtWLW54MjF3dWZla0RBdDB6aGc?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "1 วันที่แล้ว"
         },
         {
@@ -1984,7 +1985,7 @@
         {
           "title": "คาดการณ์ผลประกอบการ elf Beauty Inc (ELF): ประมาณการ EPS และการเติบโตของรายได้ในอนาคต",
           "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4zdnN1RkQtcTdFMVZPVTc2YmtucEZjOUY0aW5Ud0FWR1JSbkt3aDE3SnFVV3NzX1NZRk1weHlVa0p0T3FaQVhPbVptcTh3QXJibEt0WTFmSHNaRXRNS1F2U3hqZGxVTU04?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
@@ -2105,8 +2106,8 @@
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ Snowflake Inc (SNOW): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9BN0RXdS1TWHhHcGd5dEdiOEwwNE56NEpZcjMxV1k4VEtmdkdfenIxVVZVdVpJRS1oLWtfMUpZd1pfeFJzemZYQUhlajJKNEMxdmVyRTJEZjNGU2FDQ3BIcXNRaTBfVVljeURuSmo4ZFZsNEE?oc=5",
-          "source": "tradingkey.com",
-          "published": "2 วันที่แล้ว"
+          "source": "TradingKey",
+          "published": "3 วันที่แล้ว"
         },
         {
           "title": "กรรมการบริษัท Snowflake (SNOW.US) ขายหุ้นสามัญมูลค่า 82.32 ล้านดอลลาร์สหรัฐ",
@@ -2244,13 +2245,13 @@
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ Mastercard Inc (MA): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE05V2g3SlhBSWZjZURVcmNRcGFzT2xTY3Jqdk5DS2M1RW9ENWY1UjZLZnFDTmNKZDdndGVnVWNTSFhkRnlNbmNTczhSQzRGU0lIRmEwdkpFSU9hQ2pxdW1pWjVFQTBLZ2xSYllZcEduQ3I?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
           "title": "หุ้น FinTech ชั้นนํามีโอกาสแสดงผลงานเกินคาดและปรับเป้าขึ้น ตาม Baird",
           "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1kVTFyT0kxWjFHQmZidkFkWFJrdFJJVEhqQUxQd1hsaFViMlhHT2o0dmdJU01CR0RuamFLVmI4RlBYNm1rYWpVZloxVkxLZmFfOU9VTDNUbXo3REpLcml6SWp6ckFySVNseUVHNWpCX1NRcWI1Zmc?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "20/07/2026"
         },
         {
@@ -2265,7 +2266,7 @@
       "ticker": "AAPL",
       "name": "AAPL",
       "price": 333.43,
-      "open": 333.1,
+      "open": 333.13,
       "day_high": 334.75,
       "day_low": 329.59,
       "prev_close": 338.19,
@@ -2367,28 +2368,28 @@
       "pos_value": 0.0,
       "news": [
         {
+          "title": "หุ้นแอปเปิลร่วงลงกว่า 4% หลังปิดตลาด แม้กำไรไตรมาส 3 จะเพิ่มขึ้น 27% และรายได้สูงกว่าที่คาดการณ์",
+          "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVGJnVVQ5TTIzOG5QdWFBdGhxQm1mX19rcHU5bXEydkdKSjNidmNjcVBYYXpScURfM0xITkFRWS1DRnptQk9lUGRmVUYxYkJXSkdzX0hUYnNmSDlwLUNwd29tQkRndVRsMk85dzNYUEo0b0NiRUc0MWV0MFpGeEI0NU41bkZpVW85UTVFWnREOGJOTmJKdnhVOV8yZlN2VlZ4a01lYVdHcjhpMUhnYk1iV1dOeXlMeFZscjZPWW5OVElHbDk5aGxFa0RaNTBpWlhPSWVDdHlWTDNYVUt5VVU4?oc=5",
+          "source": "TradingKey",
+          "published": "38 นาทีที่แล้ว"
+        },
+        {
+          "title": "KeyBanc ยังคงอันดับความน่าเชื่อถือหุ้น Apple (AAPL.US) ที่ระดับ \"ขาย\" (Sell) และคงราคาเป้าหมายที่ 250 ดอลลาร์",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdWdsOXExY1hqM3VNVzRfOU5vNmdiNGN2WlBESml5TGEzUV9PdkhYbGF1WUJaaXJtWnhqMnFXWjFXalN6N1V3S2VLb3hnMUhxYlFNbmY1U0o5cFBVdDN6V25JbkItYndnV3VGZS16S21mX3BSWG8tek5hVWR5RndiamlJcTdfam1iNlNRcEZkUVA2aENWdEI0OUxlN0prb1ZLUEVGU3BsbC1yaFZwYkNxWkI2VWNxdw?oc=5",
+          "source": "Moomoo",
+          "published": "2 วันที่แล้ว"
+        },
+        {
           "title": "แอปเปิลเผชิญแรงกดดันจากสภาคองเกรสก่อนการรายงานผลประกอบการ: คุกจะฝ่าทางตันด้านต้นทุนหน่วยความจำได้อย่างไร?",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORjRDSUppUlloU1lyZEFHelUwdHMteTd2U1R6aV9EQUZET2hpeEk2TjF5QzdPZmZlQzhQbUNVbVMzamc1ZTg4czQxZWpNRVdKX1F3a2htaFk0NGMxUjZ4eTJwdkJaUzZGQTdCckprYk1jelVNaVVxdlJ6aWpFQUxKNDl2QjdzVjNVTjJ5V192NmxJWmNfNTlzQkJPUGhFV0FPUXVMQjhuX1pCUkxYZmpJM2kteVpzaVNaenc3X3l5UDlKZw?oc=5",
-          "source": "tradingkey.com",
-          "published": "7 ชม.ที่แล้ว"
+          "source": "TradingKey",
+          "published": "8 ชม.ที่แล้ว"
         },
         {
           "title": "AAPL 260724 120.00C (AAPL260724C120000) สายออปชันหุ้น | ข้อมูลราคา & ข่าวสาร",
           "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5zUzhKRzFhWTRiX2hORHVPem4tS1dDUVBhQUtSYmRPenJrakx2VkxWYWcxbmJaczJGbmxZR0szUUF3LWV6dWExZzl5R09PN0JnSC1UU1VhMmVDdzM1SE50WHNKaV8?oc=5",
           "source": "Moomoo",
-          "published": "5 วันที่แล้ว"
-        },
-        {
-          "title": "โครงสร้างผู้ถือหุ้น Apple Inc (AAPL): ผู้ถือหุ้นรายใหญ่และการถือครองของนักลงทุนสถาบัน",
-          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1kbFFhZ2hCODNDNHVsUkMyNnA3dnNmb29jTGVMSWkxQlVKbDIydzNQZlpOeEQ4N1ZfOE5oTUVpNnpkV2N4MDFOLXhsT0VIUTE0cnczSzFYQVl0TmEwUVIwQ3QzbUxub3JRUXJZ?oc=5",
-          "source": "tradingkey.com",
-          "published": "3 วันที่แล้ว"
-        },
-        {
-          "title": "Monness ยังคงคำแนะนำ \"ซื้อ\" สำหรับหุ้น Apple (AAPL.US) และคงราคาเป้าหมายที่ 335 ดอลลาร์",
-          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdkk5R1NtQkpLQ1NsWmY4dU1VY04zVVZ0RkFtX04yOU5yREVoUWdjSHVUOTM0TTYyb0Y0ZDVEMDlfTkR3WmxKWnpSX2FaSHR4THJnSm5pWUNnOTlGNDJSRTZvaEFNaGtEaVJGajlFT05VandJaWhaQ3ZCVkI0WFYyZXZFb3cwbEtpYmQ2TmVpbEhfYnhnM3FfLVFmLVQwV05RSVZURUw4YURSa0FtODhFUThiX0Q?oc=5",
-          "source": "Moomoo",
-          "published": "13/07/2026"
+          "published": "6 วันที่แล้ว"
         }
       ]
     },
@@ -2501,18 +2502,18 @@
           "title": "กรรมการของ Datadog (DDOG.US) ขายหุ้นสามัญมูลค่า 4.9 ล้านดอลลาร์สหรัฐ",
           "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSUFrVVlNdUw4RTBLeVZKYnRwRGJCZGQzVC1meHItMEdHNlFGM1FIOEtwQmUxRWdaRmctb3h1Rzg3YjdnbHgzZHFRc21uRFRWOWpOVVNFR2xqa2lkenA5Q3dxdEw4a2hEUGRhTWxlNHRTbXlNa1ZkdzEzbkZmc1lMMTNDelNObHlhUTg5WUVUY19EU2JhVVItX29WZ3g1QUlo?oc=5",
           "source": "Moomoo",
-          "published": "2 วันที่แล้ว"
+          "published": "3 วันที่แล้ว"
         },
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ Datadog Inc (DDOG): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8xSUluTnc1ZVFCQWswanF6cU40UVBDY1JfelM2am5xamF0RXpBNGIza2F6U1YzcmNwVGg5cmRKbVJWVlA1UVMzYnBnZ0RFWmM5MmtKUDJSLVdWbnpSUVNHbTZIT0xJRk9qdlNybEl1cWNtd0U?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
           "title": "สุขภาพทางการเงินของ Datadog Inc (DDOG): การวิเคราะห์ความสามารถในการทำกำไรและงบดุล",
           "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1lWEdlbld1RUxiY3FkY2pJc0VDcktzclVoTWl1d0U0ZWJac1l6M2ZfX1FnQ2JOZkpUR25tS0tEM0pLVXVmR2NmaHZ6QlUtNDJfODhGbjlpMzM0azdIeTRHN054cndPQ1lWRXdDRHM0SnN5YlRV?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
@@ -2631,14 +2632,14 @@
         {
           "title": "CLS|Celestica Inc|ราคา:328.635|เปลี่ยน%:-21.565",
           "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1SNXZCWUJ0R2FuSW5xUnlFaFdsNWp1bi1NcWppLW9wNkc5NmUyMUZZS05EZm5qYUNlbjZmYllQWjlTcEJWUG9FOHZFZ1g0TTlwMW5aNnk4b2ZtZXJDRFA2TlJrWFlJWVVtcEtKUUJPQjc?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
           "title": "GUIDANCE: (CLS) Celestica Now Expects 2026 Adjusted EPS $11.30, Vs. FactSet Est of $10.28",
           "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeW9MZ1Z1a09sSjdLLXdNcU1LSmRDY2ltS3UzWVZ4ME9icnhKOURkR0ctcXMwdm1NaEZmTExKYXVOOVNiNlZ4NjlhQlpjd3N4X21yRjdTWmY4OEk4bFZYVGM1cFEwaVpTVU00UWNpUEZOV1NBMDF5dkhmZTlvZm5qcEl6b1NxdDZUbnNIWXl6dlM2cUc2a1RsUDdsZjZUaml3SUZpSWNn?oc=5",
           "source": "Moomoo",
-          "published": "2 วันที่แล้ว"
+          "published": "3 วันที่แล้ว"
         },
         {
           "title": "เหตุใดราคาหุ้น CLS จึงพุ่งขึ้นหลังประกาศผลประกอบการ: การเติบโต 62% และการทดสอบมูลค่า 6.35 พันล้านดอลลาร์ในไตรมาสที่ 4",
@@ -2649,7 +2650,7 @@
         {
           "title": "รายละเอียดรายได้ Celestica Inc (CLS): กลุ่มธุรกิจ รายได้ตามภูมิภาค และสัดส่วนกำไร",
           "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiVXoyQjVBN05odnlHVmtyMm1tbmtfZE1hbTNtbWRhTFZ1bzFaWk1HOWFCWVdaR1BRcTllMnk2RkZSVUtWWlgzSk9iTy1kdk54Sk1nVFo0aTd3QWtRUm1PNTRhcXNQYjQ?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         }
       ]
@@ -2658,7 +2659,7 @@
       "ticker": "NFLX",
       "name": "NFLX",
       "price": 73.17,
-      "open": 71.48,
+      "open": 71.49,
       "day_high": 73.32,
       "day_low": 70.55,
       "prev_close": 73.63,
@@ -2762,7 +2763,7 @@
         {
           "title": "Netflix Inc (NFLX) หุ้น เคลื่อนไหว ขึ้น 3.61% เมื่อวันที่ 28 ก.ค.: ข้อมูลสำคัญที่นักลงทุนควรรู้",
           "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSFRvalFfUHJLS1ZMVy1EWHRJeU4xaEdsc3JKSVpmMkNxWU9aVEJfcFZtMDJjampJVXlWMm9pYVpDVjhmSTZHd2lPVmVhZmJIbXBfUDNZUDVBWnNzSmFhT1dGVG5LMlRRVjYyM2t1U0lPVDNzRnE1aVlFQldtTEpiSXZhSEhJQndEcWFiNXp3SQ?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
@@ -2774,7 +2775,7 @@
         {
           "title": "Netflix ในวันที่ไร้เงาของ Reed Hastings และเหตุผลที่ราคาหุ้นร่วง 9% หลังประกาศงบ",
           "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9DYlJjdTZkN2dfTVF2UDdFQmFTa2RnR3JBRUxOSV9QMmp3cU9ENnlKcjNFdE1BWlQwRTZIOW1wSXo0Vk1sTklKU1RfMnRiY09fQzVFZHVJdw?oc=5",
-          "source": "finnomena.com",
+          "source": "Finnomena",
           "published": "17/04/2026"
         },
         {
@@ -2810,16 +2811,16 @@
       "ema_slow": 9.23,
       "rsi": 51.3,
       "macd_hist": 0.0692,
-      "volume": 3000776,
-      "avg_volume": 5095688,
-      "volume_ratio": 0.59,
+      "volume": 3674061,
+      "avg_volume": 5129353,
+      "volume_ratio": 0.72,
       "momentum_5d": 11.29,
       "return_20d": -3.82,
       "return_60d": -1.63,
       "atr14": 0.46,
       "atr_pct": 5.07,
       "volatility20": 45.25,
-      "turnover": 27217037.4,
+      "turnover": 33323732.15,
       "high_20d": 9.63,
       "low_20d": 7.91,
       "high_120d": 12.06,
@@ -2883,9 +2884,7 @@
         "MACD เป็นบวกและกำลังเพิ่มขึ้น (โมเมนตัมขาขึ้น)",
         "ราคา +11.3% ใน 5 วัน (โมเมนตัมแรง)"
       ],
-      "warnings": [
-        "วอลุ่มเบาบาง สภาพคล่องต่ำ"
-      ],
+      "warnings": [],
       "market": "ต่างประเทศ",
       "market_tag": "US",
       "currency": "$",
@@ -2893,28 +2892,28 @@
       "pos_value": 28117.0,
       "news": [
         {
-          "title": "ทำไม Apple เป็น Safe Haven ในยุค AI? หุ้นพุ่งทำสถิติใหม่ สวนกระแสเทขายหุ้น AI",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5aY0VDVl94ek84bV9RQ1VtY0lZY25WNFJGMVQ3MkNmYVdGM2oyaTBQT05XbUV6SDJ2U0ZSRFY1SklSaXRzZGlUZFJIcTlDWmNsSThrUTRqYnJzM0sydzBhdmItdzljZUEwWFE?oc=5",
-          "source": "thairath.co.th",
-          "published": "9 ชม.ที่แล้ว"
-        },
-        {
           "title": "TISCO เตือนลดเสี่ยงหุ้น AI เกมลงทุนเปลี่ยนเน้นพื้นฐาน - HoonVision | หุ้นวิชั่น - หุ้น ข่าวหุ้น หุ้นไทยวันนี้ หุ้นวันนี้ หุ้นเด่น วิเคราะห์หุ้น ธุรกิจ การเงิน เศรษฐกิจ การลงทุน ดัชนีราคาหุ้น",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAwYnA2OVhTc2I1OGFOQXpRWVpCOXRGdEU4MmtlMU5NbHF0T3VER1pJQ0VBclhlZHRUODlIQWlJSEpsYk1uSmlzQWZObVRGbnZNUGNwSmhn?oc=5",
           "source": "HoonVision",
-          "published": "15 ชม.ที่แล้ว"
+          "published": "16 ชม.ที่แล้ว"
+        },
+        {
+          "title": "ทำไม Apple เป็น Safe Haven ในยุค AI? หุ้นพุ่งทำสถิติใหม่ สวนกระแสเทขายหุ้น AI",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5aY0VDVl94ek84bV9RQ1VtY0lZY25WNFJGMVQ3MkNmYVdGM2oyaTBQT05XbUV6SDJ2U0ZSRFY1SklSaXRzZGlUZFJIcTlDWmNsSThrUTRqYnJzM0sydzBhdmItdzljZUEwWFE?oc=5",
+          "source": "Thairath.co.th",
+          "published": "11 ชม.ที่แล้ว"
         },
         {
           "title": "LH Fund คลอด ‘LHAI-INFRA’ เกาะเมกะเทรนด์ AI",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xTXJrQVFHblZtczBEeVhBeDhzZ0VaNFpPbklOanNQM3V0WXd3NS1lSHVSWGQ0UjZiZ0xwQXdsMWhHdXdlNVNiNjJNd3NyYmQ4MzVocjZ3?oc=5",
           "source": "มิติหุ้น",
-          "published": "6 ชม.ที่แล้ว"
+          "published": "8 ชม.ที่แล้ว"
         },
         {
-          "title": "หุ้น DELTA ร่วง โบรก 3 รายแห่ปรับลดกำไร ชี้ราคาลงตามหุ้น AI-ชิปในตปท.",
-          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Gb1phQVNxVk5QRktMUFJ0cEZfUkF0WkZLS0NUVmpDemZSbU5HamlYcmVuUW5NYnliSl9qelR2N3c3c0xod3VIbzYxTW5KR0ltV3lhU21ZZ2Q2NzhGNy05bjQzUE0yZWl2NG5F?oc=5",
-          "source": "Thunhoon",
-          "published": "16 ชม.ที่แล้ว"
+          "title": "สรุปเหตุการณ์ หุ้นเกาหลีใต้! AI ทุบกระดานดิ่งแรง รายย่อยโดนบังคับขาย",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5BdVVqT24taFJLOXpDdmFjYkNfbGxjOHZvcUE3SWxZQ3RFdGRHYkZyQy1kNGI0NVlITHRoWFBrUTRhTWxUQmNXeDFUTzhiTFg1S2dsZG15Q3BpUGp2cnlfLVVSUG5fdw?oc=5",
+          "source": "pptvhd36",
+          "published": "11 ชม.ที่แล้ว"
         }
       ]
     },
@@ -2943,16 +2942,16 @@
       "ema_slow": 121.52,
       "rsi": 53.6,
       "macd_hist": 0.6977,
-      "volume": 1968399,
-      "avg_volume": 2526689,
-      "volume_ratio": 0.78,
+      "volume": 2025095,
+      "avg_volume": 2529524,
+      "volume_ratio": 0.8,
       "momentum_5d": 8.0,
       "return_20d": 2.64,
       "return_60d": -7.37,
       "atr14": 3.97,
       "atr_pct": 3.32,
       "volatility20": 31.46,
-      "turnover": 235174467.52,
+      "turnover": 241948222.03,
       "high_20d": 122.0,
       "low_20d": 109.2,
       "high_120d": 192.49,
@@ -3024,21 +3023,21 @@
       "pos_value": 23894.0,
       "news": [
         {
-          "title": "Lululemon Athletica | SCHEDULE 13D/A: Others",
-          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdXBwdmtsZkdmNFBuemRDMEdhQkRHbC1YeHg5VmlIRUpTdjZiaG1aSDU4VndQU0FhSDdzMEZKMUxDYkNDMlR0SmhmUVNlOU1fME9GaEJGV2tEelJya0R2QVVjVDFtZ05vSVRMYkNfRXZXTTUzUnYxR3lzR0hCbXJlWWZ4RkZzZGV6VGdJb2tjZ196MTQ?oc=5",
+          "title": "Top Midday Stories: Stocks Up on Cooler-Than-Expected Inflation Report; Micron Earnings, Guidance Top Estimates",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTGlmeHJwOE14X3VPejhSbDNOYzVlV3B3UDZUV3NzQkFxMWRoQlRjN2NRSjYxRUYzbTc1UG00aktFR1luODRibmNteVNZRmVrRFhHQTlSSXlYVlhmTGhDNHBNZzA5OWZTNUdySHBPOUM3cFVYcTNkUm5QSEw4eXJMNnhLeUh0N3RONFY2ZVgwLWpMWW85Mk9sbFpfOEp2aFd1c2doS1lzX3A4Yk0?oc=5",
           "source": "Moomoo",
-          "published": "21/07/2026"
+          "published": "2 วันที่แล้ว"
         },
         {
           "title": "RDAC|Rising Dragon Acquisition Corp|ราคา:6.250|เปลี่ยน%:+0.100",
           "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5kbVNKN0VFVjhIMFBjc01tOWJFUzlEbHpGd19rbWNBVjdxZF9kdHpLNGxPZEdhQjNPM21RSnVGMW5kMDJ1T3NEZ2dmZnZGZEJXY2g0WEl1TE5wRTdVbVJwcVphc1N6ZEpv?oc=5",
-          "source": "tradingkey.com",
-          "published": "4 วันที่แล้ว"
+          "source": "TradingKey",
+          "published": "5 วันที่แล้ว"
         },
         {
           "title": "Jefferies ยืนยันเรตติ้งหุ้น Lululemon Athletica ชี้สินค้าปรับตัวดีขึ้น",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBsNUE4TXVRUEVaX29OcURGU0lOemlwSDRKYUVsUXlkNHVJUDI0UnlDVG5xcTlURFoxQndnUUN5SGx2dUxPMnJ4MGlPNVRVN1ZlSGhRQjI2NTBZVU5mME4tYnFwMXNjSXY4bHFvRHduU2hOYWM?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "09/07/2026"
         },
         {
@@ -3157,7 +3156,7 @@
         {
           "title": "Boeing Co (BA) หุ้น เคลื่อนไหว ขึ้น 5.04% เมื่อวันที่ 28 ก.ค.: ข้อเท็จจริงเบื้องหลังการเคลื่อนไหว",
           "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQ01lcW9QTnZPLTNwc1o3X3E0RExBbmwyYzBLSTNzQy1wVmFaLWlRVm0wQUpqT1V6YVoyall1anczTWVFUVRtRWlwblJPUndaMTZpVnBhcEFydjNLZ2JkVUNVa1VqZnN4LTdLYmthRUJXVUtnS1k4MEMxMldNa3BCc1N0am0wcVZaa2Y2dw?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
@@ -3288,19 +3287,19 @@
         {
           "title": "Li Bang International เตรียมแยกหุ้นแบบย้อนกลับในอัตรา 1 ต่อ 200",
           "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5UR1ZXMUYydEM3U0tneC1FM3c2VWR5cHQ3TjNKRDl6UFRMOG1mMThuWVBrRzVVQm1XRzhIY1M5RHFiV2VaT18zMVlMeGhUNm1PcjBwdEcwOWNXam1CeEdqcDdfbUtxeTFZUzIwczE0OA?oc=5",
-          "source": "Investing.com",
-          "published": "22 ชม.ที่แล้ว"
+          "source": "th.investing.com",
+          "published": "23 ชม.ที่แล้ว"
         },
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ Li Auto Inc (LI): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBhYnFVdmptOEY1clJtRndGcFItQTk1a1U3b0tDUVFVVnRoUmZ2NEJGNWxtN2RKU2J6QTA5U2FuSGl3eXN2VXZpZFpMZFBuamlWd3g3WnlTbG9MS0hCTjNXNHM2LV84NTVJV2prRlZxY0w?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
           "title": "ความเชื่อมั่นของนักลงทุนสถาบันต่อ Li Auto Inc (LI)",
           "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5IOEpnRTdkaGs3TVdNYk5MeUtYY3hOM3YzRzd6dk9zUjZwcDMwTkE1eV9yMU1KczJiN0RvS1FBeHVva3laZkdnMUFmS1Zwc2Fvak9EUDdhMHpvaDB4WFh0QlY1TTVXZXJ5?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
@@ -3315,7 +3314,7 @@
       "ticker": "STX",
       "name": "STX",
       "price": 851.68,
-      "open": 878.91,
+      "open": 875.65,
       "day_high": 901.18,
       "day_low": 831.0,
       "prev_close": 764.43,
@@ -3421,13 +3420,13 @@
         {
           "title": "Seagate Technology Holdings PLC (STX) หุ้น เคลื่อนไหว ลง 8.42% เมื่อวันที่ 28 ก.ค.: ข้อมูลสำคัญที่นักลงทุนควรรู้",
           "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPa254cUJNVjdiN19KbzNFOXB6WVZzUVBzbUt5OUFPUVJGbHR5WWFRb2tuYTJfMmlyaXNFTUZrRDVfaFVibFVkSnBkX3hMQ3FRb3FXOEY2N1pXOVY1MjNBbGQxektwbml5VVRseXpuNVllUWg5ZGRYN20xSkFIVmVuMDEzQWNWcnlOR2JWWGFR?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
           "title": "หุ้นชั้นนำที่เคลื่อนไหวหลังตลาดปิด: F, BE, STX, WDC, KLAC, SWKS, NXPI, CSGP, ENPH",
           "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAxQ2M0Qm9EeEtqazM4NmFBUEY4by1KQ0N3d3NFOFJ6bU9zM2RrajFKaDFHNzU4RWNlak9oWWJQYjNCdC1TQy16M3FfOGY1N05WdDRUMDFjaHJsdTMza3ktTmNIdDY3T1FjbjhxbklLc1BVai1EaE9Z?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "2 วันที่แล้ว"
         },
         {
@@ -3469,8 +3468,8 @@
       "ema_slow": 28.37,
       "rsi": 70.0,
       "macd_hist": 0.1852,
-      "volume": 9106203,
-      "avg_volume": 9868130,
+      "volume": 9107621,
+      "avg_volume": 9868201,
       "volume_ratio": 0.92,
       "momentum_5d": 15.67,
       "return_20d": 14.42,
@@ -3478,7 +3477,7 @@
       "atr14": 1.33,
       "atr_pct": 4.06,
       "volatility20": 39.63,
-      "turnover": 299138754.66,
+      "turnover": 299185335.95,
       "high_20d": 33.06,
       "low_20d": 27.92,
       "high_120d": 33.06,
@@ -3551,13 +3550,13 @@
         {
           "title": "หุ้น Toast อาจเคลื่อนไหว 11% เมื่อประกาศผลประกอบการในเดือนสิงหาคม",
           "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5tVTRQaVp3RERuQU8tdmptV1hEZFM0S2pBUTVIOGZCd2xIVE56NTVKWXZqeDk4dWtHVGxic0pMakotd21TaHZOTWJZdDZNU0pTV1N1UWxxRERXN010cFl5aUFKMWRYWnJRazZzZTZxMzB4b1pPVXc?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "2 วันที่แล้ว"
         },
         {
           "title": "โครงสร้างผู้ถือหุ้น Toast Inc (TOST): ผู้ถือหุ้นรายใหญ่และการถือครองของนักลงทุนสถาบัน",
           "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5HSEFZYjlFcVRYamQ4ZkJYUFM3T0tudXQwR2EtZmxPTEU4N1NDV2k2d1A1MGNyaW1GYndDT0NrVmxlcF83cVNValNfSlBEa1BBLU9XdHhiY1dnT01uTnNGeVhiSkFBYXNPa2JF?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
@@ -3569,7 +3568,7 @@
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ Toast Inc (TOST): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1qSVAwa3lDS2ZlbzhqaDJ0b0k5ai12YmZJRUNFVlRub3BVVDBQWkQ1bDRYWEFzLWpqb3R5WmxBcVc5NVpDOXcxV0lidlNoUmt4V3RGbXZITmdyam5LbHg1RmliMm1MNW1FM2RmeGJBajJ1Umc?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         }
       ]
@@ -3681,7 +3680,7 @@
         {
           "title": "Coca-Cola Co (KO) หุ้น เคลื่อนไหว ขึ้น 5.65% เมื่อวันที่ 28 ก.ค.: การวิเคราะห์ฉบับสมบูรณ์",
           "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMVBNYkU1NC1TOWVPQ2dMakJIWlBib190OEpncmtkUFZkX0UtNWNGRTdXX1dmUjdmOVo0eHhOdlBaZG1KeGwxY1hJTEhvYWhZb3ZtdG1kc0ZNRm5kdFhaN24wZXlROWhSZVk5bkFGcEF3bUMyUFVKcGVRaEFuSV9ZLTVPWk9wcGpQYkFxVA?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
@@ -3693,7 +3692,7 @@
         {
           "title": "หุ้นเคลื่อนไหวหลังตลาดปิด: NFLX, ISRG, KO, AA, RGNX",
           "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBLMUJOMXpIV3pXSzNfM1J6OHNoMjJuREkxSndwT0NEM2tQMVNVWFJNbmJRZTNJNE5BVFRxcGY2d2dWT2lwMzVGQWdKMTZfZXE0dGQyMmtHTzRTNGFRV3QyT3pHWXh6UTBNVHpJMzMxbllzYzRPVGJZ?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "17/07/2026"
         },
         {
@@ -3817,19 +3816,19 @@
         {
           "title": "Novo Nordisk A/S (NVO) หุ้น ปิด ขึ้น 3.02% เมื่อวันที่ 15 ก.ค.: ปัจจัยขับเคลื่อนเบื้องหลังการเคลื่อนไหว",
           "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUGlJOVkzYzAzRHQxejZmUDVtWTV3WjJxTUdoZURrZTlCZFh5RWgyQUxqaXBsaVlyeEhINUFTYzR3VmtXWTZOamlXa1Uxa2VwZWgxTUlNeGNWLVlqc3I3d1F2OUhraTVIaW9ZbFlXanpoREpadWZQT21pUWNmM05xQUNSNHc1MHlVYlRCQ3R3?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "16/07/2026"
         },
         {
           "title": "หุ้น Novo Nordisk ร่วงหลังอัปเดตจากการประชุม ADA",
           "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBrSFRsOFpNa2NrT01lVWkteV8wQ3dzWlpyS2xfNTgyNENxT0pFMVI1MkYzS2Y5MTFIVmJaNnVlOWtVZVNhNE5BNEVlaHBUVTBGMUVzTjZGVGstbHVmZi1LcGpEYjdDYzFiLTNpSlNHTmVXUWJralE?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "08/06/2026"
         },
         {
           "title": "NVO|Novo Nordisk A/S|ราคา:49.790|เปลี่ยน%:+0.120",
           "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1XR3JPanRLdGFxdVFNRlZMbkdfTV9JcG9BdTJ1N2I4VEZ4b2lIRjJmSHE0ZU1ndDdWY19QQXJPSlBRTGR6bmhDa0RqUnhVbHB3WTBXa21VckZZRXViN0dkMXdPcUpZOVE5UkVB?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         }
       ]
@@ -3859,16 +3858,16 @@
       "ema_slow": 22.57,
       "rsi": 49.5,
       "macd_hist": 0.1252,
-      "volume": 24704937,
-      "avg_volume": 17460731,
-      "volume_ratio": 1.41,
+      "volume": 25657868,
+      "avg_volume": 17508378,
+      "volume_ratio": 1.47,
       "momentum_5d": -7.29,
       "return_20d": -7.68,
       "return_60d": 18.42,
       "atr14": 2.11,
       "atr_pct": 9.52,
       "volatility20": 122.23,
-      "turnover": 546473227.17,
+      "turnover": 567552061.69,
       "high_20d": 25.17,
       "low_20d": 17.44,
       "high_120d": 30.32,
@@ -3930,7 +3929,7 @@
         "ราคายืนเหนือ EMA20 (เริ่มฟื้นตัว)",
         "RSI 49 อยู่โซนแข็งแรงแต่ยังไม่ร้อนแรงเกินไป",
         "MACD เป็นบวกและกำลังเพิ่มขึ้น (โมเมนตัมขาขึ้น)",
-        "วอลุ่มสูงกว่าค่าเฉลี่ย 1.4 เท่า"
+        "วอลุ่มสูงกว่าค่าเฉลี่ย 1.5 เท่า"
       ],
       "warnings": [
         "ราคา -7.3% ใน 5 วัน (กำลังร่วง)"
@@ -3950,7 +3949,7 @@
         {
           "title": "ความเชื่อมั่นของนักลงทุนสถาบันต่อ Riot Platforms Inc (RIOT)",
           "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9LZE1fWVpPcXliblZscnppVDZOeXk3SmM5RHQzekZIYnBxM3J1WGlhcjVYU0w2RDdKU1FaZ3pIZ2lleFN3aXItNTNkUUhmUXUzdm1rcEFUaWZaN18tZ0xxa3ZEWXRNMGo4bXhZ?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
@@ -3962,7 +3961,7 @@
         {
           "title": "การวิเคราะห์ทางเทคนิค Riot Platforms Inc (RIOT): แนวรับ แนวต้าน ตัวชี้วัด และค่าเฉลี่ยเคลื่อนที่",
           "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1qb2lmX29OLVgzNUpWdEFFTTNhWnNWVllrcFJCNDJzZW1CY0xWbm1DWlNRX01rUERTSkpFSHYtN2pMUTYwRDlKZmdleHlVLVVNUUxyd3RGWjdwVVZMalgyOVpLajFFZy0ya3E4?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         }
       ]
@@ -3971,7 +3970,7 @@
       "ticker": "MSFT",
       "name": "MSFT",
       "price": 451.1,
-      "open": 437.9,
+      "open": 438.5,
       "day_high": 458.69,
       "day_low": 432.44,
       "prev_close": 390.54,
@@ -4077,13 +4076,19 @@
         {
           "title": "Microsoft Corp (MSFT) หุ้น เคลื่อนไหว ขึ้น 15.00% เมื่อวันที่ 30 ก.ค.: มันส่งสัญญาณอะไร?",
           "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORnZfSUJmUjl3ak9fSzRHU21DZGVBZXZWT25YYjNfbnJFaXJ0eGVaNnVXM1lDS3BZTGxaQmZ0UGhnWjBKcXdBNGFEd2E0c0I4UTFrVE44clRrNlhqTy1UQlNmWUR6R1JMTi1qakpuLVhIako0THBYektCcjhlT2J5b3pEOXJJSFhrSjRObmNFQQ?oc=5",
-          "source": "tradingkey.com",
-          "published": "6 ชม.ที่แล้ว"
+          "source": "TradingKey",
+          "published": "7 ชม.ที่แล้ว"
+        },
+        {
+          "title": "ตลาดผันผวน แต่ MSFT แอบบวกมา 2% — นี่แหละคือตรรกะหุ้น \"สมอเรือ\" ที่อาจารย์ย้ำมาตลอด",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORFl6dXF0QnF6ZmpJcDlQTGlSbkZPUWhYU2dkY2RKdjR6RlJScXhoX0lkcXFSWGZSb3ZZNGc4SzlubG5LcFVxTzJCSnBaUFFpdk1BYzNUNTlFbHo5TjJqSEx2cnBOaVNfLVA2dHdWX3ZMWURzbzg1NVJpb0E4Tlo1V2JXWEpsWnBxN0lFS0JqeDlpR0pLbkl0YV9HNXNPNjg5ZWs4Qkl2Y2o1NWlqUEhLZGZRVDRxdmgxU2xR?oc=5",
+          "source": "Moomoo",
+          "published": "2 วันที่แล้ว"
         },
         {
           "title": "หุ้นหลังตลาดปิด: META, MSFT, CMG, SBUX, CVNA, LRCX, FTNT, QCOM, TDOC",
           "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBIQmU0VXNoZExVOGtObU01TkJpLUZQTC1GdHl0RW5kR3dGSjNGYWFQeXRVNWMtZHAwQVljVkMybHVXMFEtc0dVQUFDUDlDTm5qdFVQajVCMHhfUEJCcGQyVXpkRGdtNkIzQzdGeklsUHZtekpYSmZj?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "1 วันที่แล้ว"
         },
         {
@@ -4091,12 +4096,6 @@
           "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE13LTJpQWJvRmhuR2ctZzJLTEtRTV9yV1hoc2hkWEdab0RSLTF6LXpYNWlUZGIxdkdXMUY0cUVFVWs4Sk5iS0lYdnFNd2hjcGRvOUE?oc=5",
           "source": "EBC Financial Group",
           "published": "1 วันที่แล้ว"
-        },
-        {
-          "title": "Microsoft Corp (MSFT) หุ้น เคลื่อนไหว ขึ้น 3.09% เมื่อวันที่ 27 ก.ค.: ข้อมูลสำคัญที่นักลงทุนควรรู้",
-          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPVE4zSE1nNUxFS1Rzd0RENjVWY2MxZ0VfMXRhNDN0cEJPX0g3QTEtRG9OUjNGRmUwNFp1RG1Ba29lMjREQVRKbVhpWmNxanVEOERDYUFtaGgxVk1xdjJfc2JGNkRyWGJ3bEVvdkZBM0F0aHJSNFlWNVBQdklsOTFsaXJjVDl1dU1rZTQxR3lDVQ?oc=5",
-          "source": "tradingkey.com",
-          "published": "3 วันที่แล้ว"
         }
       ]
     },
@@ -4104,7 +4103,7 @@
       "ticker": "OKTA",
       "name": "OKTA",
       "price": 140.42,
-      "open": 136.91,
+      "open": 136.88,
       "day_high": 140.85,
       "day_low": 135.88,
       "prev_close": 136.91,
@@ -4208,13 +4207,13 @@
         {
           "title": "โครงสร้างผู้ถือหุ้น Okta Inc (OKTA): ผู้ถือหุ้นรายใหญ่และการถือครองของนักลงทุนสถาบัน",
           "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9mRW9vMm9TaGRadmFmOUdYeGFuNURwT2ZFajV0bjJ0MjlJeE9SWldYa1VKWTNhaGtfU2owY0h1TndrTW1NSE51ajM1WHB0dk1QQzlicEZkaFpoMlQ4ZmlDamRPbkxKTmFoZW40?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
           "title": "KeyBanc ปรับเพิ่มเป้าราคาหุ้น Okta เป็น $175 จากศักยภาพด้าน AI",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9zRmV3M3cxa0pZMmRUSzFUT3ktSFdmZUhqQi1MRHdXRUxPSWNMMGNjNWlwNUU2Q2FYaHUwaGNMTXBTMzF5NjUtazFEQ1VnVmtYMDBpdThvbHhpM2ZXbkV2WHM3WmZrNmRidnRqWXhmNVd3a0U?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "10/07/2026"
         },
         {
@@ -4226,7 +4225,7 @@
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ Okta Inc (OKTA): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA4Nk9FNkFaSVh2bjk5OTJVOENjOWZpY0xLUDFZNjZ1T2NnWENDX1M2dGZXV0o1Sjc3U1VHOGFkMWJzVU1oTEZyZG1TNkptTlNWeWRfVmc5X2NjcldRMVZsOFZRREJhSDM3LWR3dlVwVHp0N0U?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         }
       ]
@@ -4256,16 +4255,16 @@
       "ema_slow": 343.32,
       "rsi": 52.4,
       "macd_hist": -0.7683,
-      "volume": 2070580,
-      "avg_volume": 3912984,
-      "volume_ratio": 0.53,
+      "volume": 3184858,
+      "avg_volume": 3968697,
+      "volume_ratio": 0.8,
       "momentum_5d": 1.73,
       "return_20d": -5.19,
       "return_60d": 26.72,
       "atr14": 10.96,
       "atr_pct": 3.09,
       "volatility20": 31.19,
-      "turnover": 735138740.89,
+      "turnover": 1130752011.53,
       "high_20d": 382.49,
       "low_20d": 336.53,
       "high_120d": 382.49,
@@ -4329,9 +4328,7 @@
         "MACD ติดลบแต่กำลังหดตัว (อาจกำลังกลับตัว)",
         "ราคา +1.7% ใน 5 วัน"
       ],
-      "warnings": [
-        "วอลุ่มเบาบาง สภาพคล่องต่ำ"
-      ],
+      "warnings": [],
       "market": "ต่างประเทศ",
       "market_tag": "US",
       "currency": "$",
@@ -4341,20 +4338,20 @@
         {
           "title": "Oppenheimer ยืนยันเรตติ้ง Outperform หุ้น GE HealthCare เป้าหมาย $85",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE15aW02eDlGVG1Ha3VzazRiM3VMRUFSREJzSGtIZ1dSc1VqZVpiaW1OWnVwMkFlR3pCc2dNNHBOZVVvczdDWUVSN1VhU3NNczMzLTR3VWxKOTNhdFdoYjU1R3VCS2NGT2toNHFCQVhySmlRQms?oc=5",
-          "source": "Investing.com",
-          "published": "9 ชม.ที่แล้ว"
+          "source": "th.investing.com",
+          "published": "11 ชม.ที่แล้ว"
+        },
+        {
+          "title": "Ge Vernova Inc (GEV) หุ้น เคลื่อนไหว ขึ้น 7.46% เมื่อวันที่ 30 ก.ค.: ข้อมูลสำคัญที่นักลงทุนควรรู้",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOeUJxSFRHMzJUaXQydEEzaEEwbnNURlBmekhFSmRJbXA5cjR1OHIyRUJvYkNDYm9BQUVENEpCTlBtSWEzMHZ6RUc3amZPeUdDX28wVmN2UDF4a1FWVTNuWkpaQ2l6V0IyOXVGLWEzQnVWQjhzOUNBTk5SWmpqc0VvMjJvTWVpM3h2bkZZSjlB?oc=5",
+          "source": "TradingKey",
+          "published": "3 ชม.ที่แล้ว"
         },
         {
           "title": "Mizuho ปรับเพิ่มเป้าราคาหุ้น GE HealthCare เป็น $85 จากการเติบโตของออเดอร์",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1ITG1IZmhwbk9fRXJWcXdmdGR2WHVDLU5FVVJxbkdkLVpFSHJYSG1UZHpWb2tiT1NFSWtlbXg0MnFLR1dwMzRtUzQ5b2I3MVI0UzNmdWRxLXY5SXBiSnczNG94WlJ0eEcwcHNnZmxRSWlwdUk?oc=5",
-          "source": "Investing.com",
-          "published": "10 ชม.ที่แล้ว"
-        },
-        {
-          "title": "General Electric Co (GE) หุ้น เคลื่อนไหว ลง 3.13% เมื่อวันที่ 29 ก.ค.: เผยปัจจัยขับเคลื่อนสำคัญ",
-          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSHFMU0JDZlFDUnE3NWZVZnJlQ1VjZDFxOE0tWkVEcFdKQWNMUlZpUEFiM1R0MWNjZDlla3A0UWpYYkFZUFBRZUxPVG52Z1dhSWVKRTlpaHNsSWJDSVRLUms0ZEI4QjJPem1qbzVPSlFSZFMzdWVSdE9vY2FUZkRwQ0F6Yk0tT1NKOXJucw?oc=5",
-          "source": "tradingkey.com",
-          "published": "1 วันที่แล้ว"
+          "source": "th.investing.com",
+          "published": "11 ชม.ที่แล้ว"
         },
         {
           "title": "Bernstein ปรับเป้าหมายราคาหุ้น GE Aerospace เป็น 421 ดอลลาร์ จากเดิม 405 ดอลลาร์ พร้อมคงคำแนะนำเป็น Outperform",
@@ -4368,7 +4365,7 @@
       "ticker": "PDD",
       "name": "PDD",
       "price": 87.44,
-      "open": 86.54,
+      "open": 86.63,
       "day_high": 87.53,
       "day_low": 85.75,
       "prev_close": 88.32,
@@ -4472,7 +4469,7 @@
         {
           "title": "PDD|PDD Holdings Inc|ราคา:84.850|เปลี่ยน%:+2.190",
           "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBITnZFTlYzNkZ1TTIzUVFrVGkwQUgwVUtBYWdsbC1JZVZCQ3hSVmN1VmVwdlRsdHJDd1dQOXEwbUg2VUhEcXVLcktMeWIyVjI1LXdGUWhHZHRiTXhnS0RVMm9aUzJQcE90VDUwampwR3k?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
@@ -4484,13 +4481,13 @@
         {
           "title": "ทําไมหุ้น PDD ถึงร่วงหนักวันนี้?",
           "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Za2VHUHJCakZUQzM5Z0NpQ0JYVDZVYVFZb0VVLTdIcWtTZU14SjU5TXhhVnFJSXVHTFBoNHNvTTZ5RG1kaFBvbHAxX0V5ODR0eVJfUkxKUU9NRXg3d19GVEtiNmZaRjVYYlBVbTlCVUo5NWFUbWc?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "27/05/2026"
         },
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ PDD Holdings Inc (PDD): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1yV2FGcXB0TWYzc1kzNnRvZnU2eGxob3AwbDktTzdiYnY1bEFFQVMzbUlVUThfUXNiTThVTzhGLVNrZmVOT1VSdlpiNThVMVd4MG1FV3VpX3VhTHdiRDVZSXB6RjlwRkh0TVZ3Q25CSXhpZw?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "5 วันที่แล้ว"
         }
       ]
@@ -4603,25 +4600,25 @@
         {
           "title": "โครงสร้างผู้ถือหุ้น NIO Inc (NIO): ผู้ถือหุ้นรายใหญ่และการถือครองของนักลงทุนสถาบัน",
           "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE10YjllYnVOQTBRbEQwLTRoN0gwWUYwbVA3M1luRHVpMGYycWx2UlpHY19OWWJsMVFQQmlJQW96elZRQVRzcG10Q3d0Z2NVQ0NzNDd1cC1FdjJLa3RsZzcwMGluRlRxcXlyOEE?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
-          "title": "Changxin Technology พุ่งทะยานกว่า 465% ในวันแรกของการซื้อขาย ส่งผลให้การลงทุนเชิงกลยุทธ์มูลค่า 158 ล้านหยวนของ William Li ผู้ก่อตั้ง NIO มีกำไรที่ยังไม่รับรู้สูงถึง 740 ล้านหยวน",
-          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5uclEybU5obTBFNFdPQ2J0dTZWVWlnOUhMVGplY0U3elFReVZmR0dreHpmSmRWOUI2TlFMcThablBmQWNRY3c0cjQwUW41SUNYS3Z0Tnh5dw?oc=5",
+          "title": "$undefined (NIO.US)$ ตอนนี้ค่าเฉลี่ยรายสัปดาห์ยังคงทะลุระดับ 110k อย่างต่อเนื่อง",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOFh6b2Q1dWdaa25MMlNOMDBreXMyemNIdUZQaVc0Q1A5V1RfazFRY0VuajI2YXJ2RTBPeE1OVjlIcWQyRUM4TW9HNzdwdTY1RmRsQTdVb0RJd0FBTFZ6eVdhUXVFS1VZLXhNV0x6czgtaXBaR3dhN1lRUDhicERBVlMtTGZSUzBzMS1zZVllWWlQMVc3NVRTekpMUmxTX1FzYWtybzNB?oc=5",
           "source": "Moomoo",
           "published": "3 วันที่แล้ว"
         },
         {
           "title": "NIO ปรับตัวขึ้นหลัง Goldman Sachs อัปเกรดเป็น ซื้อ จากการเติบโตแข็งแกร่งและมูลค่าที่น่าสนใจ",
           "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5DLTZCUExlU2JsSmZEY29JZmZGUWRSZ0QwUXZUaDM3WWZfMWpPSzQzUHJoQmFaXzJ0eEdnUFJfRTJXVGJ5X3pNc3ZPRjFLNXRoYjN5eEJfaU0tS3R0R2N6bDBqNzI4REhfWWJReHc4OA?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "13/07/2026"
         },
         {
           "title": "NIO|NIO Inc|ราคา:4.640|เปลี่ยน%:+0.020",
           "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8zazlSX3BQX1ZuVTEwQzc4alEwQzB3TlBJS0FnUzVwQWhhcnVJZXRqTnpHTFVmcTZ3d2tvclBmWHdYR1AwZERQUzFmbXdKVElyZU9qYzRiUWM4RWZkVmZvbEZtcWNsUUJEYnFkWmR5MkM?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "4 วันที่แล้ว"
         }
       ]
@@ -4733,26 +4730,26 @@
         {
           "title": "สรุปกองทุน TISCOHD-A หุ้นไทยปันผลสูง",
           "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE53Tl9WVG5TaWw4RkVsR0JhTUhRblZBZVdKa0F1bndyWlplcWdRcVZVeUhUbGFSaU5peHVkU21vZFVibWVoZFd4TnJJVUVUaHNhcnFxbUNvYThiS2U5NHNJandrQ2h0OEEwX0t0WEQtenJRT013?oc=5",
-          "source": "finnomena.com",
+          "source": "Finnomena",
           "published": "27/05/2026"
         },
         {
           "title": "สรุปกองทุน LHGDEFENSE-A หุ้นกลุ่มเทคโนโลยีด้านการป้องกันประเทศ",
           "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1wTDVySFdTTUhHY3NmQ3ozUUdvUFhWNThxa1VXMEFsT2hJQmV5a2NNektfOTIyZk1yN3Z2bldsWWdHTWhMTmo5OUE1LVJJMWV2UnJQeDFnbU0wOGYtSnQtUmJBM2xHa3RYaHRxWHNRMXVPZ1ozNld1LQ?oc=5",
-          "source": "finnomena.com",
+          "source": "Finnomena",
           "published": "30/06/2026"
-        },
-        {
-          "title": "CPL คว้าเรทติ้ง A จากการประเมินผลหุ้นยั่งยืน SET ESG Rating ประจำปี 2568",
-          "link": "https://news.google.com/rss/articles/CBMihgVBVV95cUxNWjQ1NzhBOE0yZVBSU1kzM09ocmtFbGY1bEdwb1JGUUZZWmtnR2wtRXNDcHNmTlRGc21xN3ZYejBkaDlBOXpjeV95Q29kRWZEQWFNOXFaQnBoaHZiQkxLblBZcFBUcVVXSXp6WXZEU21YX3FEaF9KV0tEZktlMGdMcklkcmJrZ2JnNGk2N0lRZkMzQXNPYjJhZnhKR2pObmY3LUp2Ylc3M1F0U3VXQl9DbkJnLW5ELWwxN2xRNWplSkc0ZlFtYmxzMGllUlk1SHpyRVpNajlPU3hobTJUQ1VZZkZ0TTJyM3duSFh5U0JXQVBsOExfeWN3SDRxOFEydTFJUFhXejFtcWJJWWJOc01MRUxBOHdZNU5JUkNXVkh4NFd4Wm02S3JIcXVWWTNtOHJtUldZQUtWaWRyQzhkSEljbkp3OHZ2YnR6RC1JUkYxQkwyaVhrZUxvN3RqVWpNVUF2Ny1uZ1NaeHU5RXBTM20ya1hQVzNNckNzWnJtS2w4dF92NXIySEh3NmhzVTFMYnFDMFI2d2hlekJhdlZZRmNFSHlkWUlZSmF2ZFAzZkQ4c1pVZ3ZjWk9uUThpMDhtTGh5UUdNeURsTUZzTE5nejB5OERYXzB2Wl8tRTM0MEREVk9UWkxTNXJIaEpsY3lhV0ptdXM1WWEyT01xZHh1azBnMzZPRjBjV3lvUldfQ2hTSk03QVNOYVQ3YWlnV0JrUDFUYnYtSU5ibWtlOE5FNU5tVlN5VG1nYWszckhjYWVKLWhLWlpsalBSU1EzZGZEWUcyWE1WVS1BVGdkcXFpdzdKWWh5LXhOZ3RGWG9uY25LS05WR3YxV293U2xQeWVvMVYwT0t5NzhR?oc=5",
-          "source": "Share2Trade",
-          "published": "18/12/2025"
         },
         {
           "title": "บล.ทิสโก้คาด \"หุ้นญี่ปุ่น\" ยังมีอัพไซด์ระยะกลาง-ยาว เชียร์ทยอยลงทุนกอง KT-JAPANALL-A",
           "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1FZXRrZUF4Y21FZUZQQ3hUUk5yOFl5OGxLcEZvWjNGSW85U2Nodzd4VzFuYUdzNXM0QVlSaDd3SUxtVUhjVFZQNjE4bG8wUQ?oc=5",
           "source": "Hoonsmart",
           "published": "06/10/2025"
+        },
+        {
+          "title": "A - ผลประกอบการสำคัญ - ตลาดหลักทรัพย์แห่งประเทศไทย",
+          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWERTQndFdjZVMFliMXBTTGxUZHVmcFJ3OVM5TEJBUFgzd0FaZ2o2cFFxMm02MTNUby1mSW1LWmp6amRtSEU0S1VWOGhiOHQyb09fRjRtT29RYmg2YUU0eENLM2M5MDVVMm5NTXBhNUlSdDNaSml6ald3UUFDNmRQdDU5alB4bXJBUUtfU2hvSUJzUjlGdUI0?oc=5",
+          "source": "set.or.th",
+          "published": "27/05/2022"
         }
       ]
     },
@@ -4781,16 +4778,16 @@
       "ema_slow": 123.32,
       "rsi": 58.0,
       "macd_hist": 0.1504,
-      "volume": 5344676,
-      "avg_volume": 8455408,
-      "volume_ratio": 0.63,
+      "volume": 6981235,
+      "avg_volume": 8537236,
+      "volume_ratio": 0.82,
       "momentum_5d": -0.53,
       "return_20d": 3.53,
       "return_60d": 15.57,
       "atr14": 3.34,
       "atr_pct": 2.58,
       "volatility20": 29.32,
-      "turnover": 693685462.16,
+      "turnover": 906094443.78,
       "high_20d": 135.05,
       "low_20d": 120.16,
       "high_120d": 135.05,
@@ -4863,13 +4860,13 @@
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ Merck & Co Inc (MRK): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBBcHZJSGtSM1BDMWRrXzVfRDFwQnlnYk1NaWFEM1V3QlRveldVWmx3TzJZSXRmQ3BNdmw2WW95RlhZa0tHb0JLUE5GeklVLXJQYUZEUFVSOFBWeC1vY1RQNzZZdTNXYVM5MzNFNi0yUEJuZw?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
           "title": "การวิเคราะห์ทางเทคนิค Merck & Co Inc (MRK): แนวรับ แนวต้าน ตัวชี้วัด และค่าเฉลี่ยเคลื่อนที่",
           "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKQ1JuOGtrZjBDcXRyLVI4Z1ZwNnpaZ2ZLQzgyQnIwNUdTWlBoNFl1d29Ga2FKM1ZaaUlMTEJRdWhwZ0dyTzdFQzhveGNvMW1yeGhPLVdKUXVBanREbnAweHVYMHRVTDMyV2c?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
@@ -4879,9 +4876,9 @@
           "published": "10/07/2026"
         },
         {
-          "title": "MRK|Merck & Co Inc|ราคา:132.750|เปลี่ยน%:+1.990",
-          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5mcUJSUHJmWXBqOWpXT1ljeEk0di1FanNVMGl5dWxtYmVrRHA0SHhfVEZxaWotem05SVZ2Mm1qSU9qMUtZTHJOTVhjZVhBMnhKQlA2dU9yR2VOVTFGczRHZ1hvUnFWdjhabGRCdm8zd3U?oc=5",
-          "source": "tradingkey.com",
+          "title": "MRK|Merck & Co Inc|ราคา:131.070|",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5KNURjUk5CVTc3b2hCRS1nUHd5dVM0c3hqNzZ1UmFWeWNPMWZ5amh5WlNBTzVxZTlDYkhxSDVsazYya3VWcDZoWXhGNlpKUDJrMlMwalFTNnQ4ZUV3NWp2Q3U0aGd0dU9JUlFj?oc=5",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         }
       ]
@@ -4890,7 +4887,7 @@
       "ticker": "HON",
       "name": "HON",
       "price": 241.91,
-      "open": 241.88,
+      "open": 241.06,
       "day_high": 242.42,
       "day_low": 237.36,
       "prev_close": 241.12,
@@ -4911,16 +4908,16 @@
       "ema_slow": 233.2,
       "rsi": 58.0,
       "macd_hist": 1.9757,
-      "volume": 2499596,
-      "avg_volume": 3681364,
-      "volume_ratio": 0.68,
+      "volume": 2829298,
+      "avg_volume": 3697849,
+      "volume_ratio": 0.77,
       "momentum_5d": -1.77,
       "return_20d": 9.09,
       "return_60d": 10.66,
       "atr14": 6.84,
       "atr_pct": 2.83,
       "volatility20": 31.97,
-      "turnover": 604677277.51,
+      "turnover": 684435489.54,
       "high_20d": 252.0,
       "low_20d": 218.1,
       "high_120d": 258.86,
@@ -4993,19 +4990,19 @@
         {
           "title": "Kenneth J. West ผู้บริหาร Honeywell ขายหุ้นมูลค่า 4.15 ล้านดอลลาร์",
           "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4waEN3OHJyT1pqaWhQRjlVQzlNLTFsaUFTeHUyTjdRNVhsT01xMWR3TnJaM21WcVRvOEVSNE96VlV2R3BzRVJTOXdkNWVDaWg1SmZWVFhvcm9aVTZBdGt0SWFDMG1ZN2h0bVpmanF3UGZnMGJxd3BoSzVB?oc=5",
-          "source": "Investing.com",
-          "published": "11 ชม.ที่แล้ว"
+          "source": "th.investing.com",
+          "published": "12 ชม.ที่แล้ว"
         },
         {
           "title": "ฟอรัมพูดคุยเกี่ยวกับหุ้น HON HAI PRECISION INDUSTRY SPON GDS EACH REP 2 SHS TWD10 REG'S' (HNHPF)",
           "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5wYlhBNXZOOHF5U2tmdjZ2cmVfdW03YlZVS0RnUGh1NG9MdnhrTG5VM3A3aEl2NFNBSjYyZ1Vubm10UzBaZlRZRTJkZXFuTF9PSDBpOENSRXFpTExJYjln?oc=5",
           "source": "Moomoo",
-          "published": "4 วันที่แล้ว"
+          "published": "5 วันที่แล้ว"
         },
         {
           "title": "HON|Honeywell International Inc|ราคา:245.690|เปลี่ยน%:+2.540",
           "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1IYVhZNGp5M1pWbjVKZFc1andlNWxqQWt1S2lXclkyUDdCVmVLeDQ3dmpZc1B5R3VnZlhsQ3o1WG5uMXl4ZDRYSEd3WHZoUWxqQ0ZWMGUyZVRtTG1hMlpVWlNXcnJZT3dDNU9XMDJJR2E?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
@@ -5123,8 +5120,8 @@
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ Chevron Corp (CVX): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBjR0RFMEZlOXlLMHdWV2IwS2Y0bldhVjdrTUJoM0ZtXzJDS2hWOVg0QnI4UlJEYVhoUjA0NWFIN2FwV1hNNW05VnVaVF9LQUJlMGc5a2JVYjhaQ2ZSa3Y1dlJHR0E5WHpiX01oWjRWeDAtdw?oc=5",
-          "source": "tradingkey.com",
-          "published": "2 วันที่แล้ว"
+          "source": "TradingKey",
+          "published": "3 วันที่แล้ว"
         },
         {
           "title": "CVX 260724 140.00P (CVX260724P140000) สายออปชันหุ้น | ข้อมูลราคา & ข่าวสาร",
@@ -5133,16 +5130,16 @@
           "published": "23/07/2026"
         },
         {
-          "title": "หุ้น Chevron อาจเคลื่อนไหว 2.9% เมื่อประกาศผลประกอบการ 31 ก.ค.",
-          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1pMFFBUzhfdGlKQ05KN0g0WXRSbWFEeC1SQUZ5d0VXdURWR3AyaElZU2txMEZ3MDI0TWpZZ0g5WUdyV1NkbXNXeHlGc1VnSXJJU0RzV3JSYzEzTW9MdlhTMkt1cGQyejJ4RW9BZ09nTGhRaXpPaXc?oc=5",
-          "source": "Investing.com",
-          "published": "6 วันที่แล้ว"
-        },
-        {
           "title": "เปิดโผ 4 หุ้นแกร่ง “CVX-COP-GD-RTX” รับมือตะวันออกกลางเดือด!",
           "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE14ZEVCbFJaaWFzTWVlNFUzcFpNNm93SWlnTXJCbWpGeENrMDNGMFh3V3FNclZxZ1poZ0x0MDc1bUltZlBqczFpX0hZTTl3ZXhUSTJtcXk0RHFFTGg3TW1GN3JiTFU3Uk5DUHc?oc=5",
           "source": "wealthythai.com",
           "published": "18/04/2026"
+        },
+        {
+          "title": "หุ้น Chevron อาจเคลื่อนไหว 2.9% เมื่อประกาศผลประกอบการ 31 ก.ค.",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1pMFFBUzhfdGlKQ05KN0g0WXRSbWFEeC1SQUZ5d0VXdURWR3AyaElZU2txMEZ3MDI0TWpZZ0g5WUdyV1NkbXNXeHlGc1VnSXJJU0RzV3JSYzEzTW9MdlhTMkt1cGQyejJ4RW9BZ09nTGhRaXpPaXc?oc=5",
+          "source": "th.investing.com",
+          "published": "6 วันที่แล้ว"
         }
       ]
     },
@@ -5171,16 +5168,16 @@
       "ema_slow": 114.29,
       "rsi": 59.8,
       "macd_hist": 0.6592,
-      "volume": 4620396,
-      "avg_volume": 6218834,
-      "volume_ratio": 0.74,
+      "volume": 6496003,
+      "avg_volume": 6312615,
+      "volume_ratio": 1.03,
       "momentum_5d": -0.97,
       "return_20d": 15.32,
       "return_60d": -4.0,
       "atr14": 3.24,
       "atr_pct": 2.72,
       "volatility20": 32.27,
-      "turnover": 549965730.24,
+      "turnover": 773219229.16,
       "high_20d": 122.38,
       "low_20d": 103.4,
       "high_120d": 134.87,
@@ -5253,19 +5250,19 @@
         {
           "title": "ConocoPhillips (COP) หุ้น เคลื่อนไหว ขึ้น 3.57% เมื่อวันที่ 29 ก.ค.: ข้อเท็จจริงเบื้องหลังการเคลื่อนไหว",
           "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUW52SW44QXFfODVCWnpOdzV6RVRuS25JLXM5MUFGY1ZSYTB3RU1hbnlXVnJxTHRYV3FOTkJBeFZ0Ykx3Y19yQS0tdUJkWWFuLWJyVTRySUo2TUFwcWZrcHUtVVgtRmJ0bDc2S1lwRDJDNFhmWlBuRk1mcmdnS1pESVgwcmk0aE12b3QwbWhB?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "1 วันที่แล้ว"
         },
         {
-          "title": "COP 260724 107.00C (COP260724C107000) สายออปชันหุ้น | ข้อมูลราคา & ข่าวสาร",
-          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9HT3p2YjFreXQ5WXZidFcxcmtwQzR3UEJlXzBuN2VkRllzTndibk9pbktfd0xVdWxXeVJfc2dfS1VCNFNaOWxqS2ZzM2lhbFRJaEcxMktUYTdoQzUzOTJjZ01nWQ?oc=5",
+          "title": "COP 260717 50.00P (COP260717P50000) สายออปชันหุ้น | ข้อมูลราคา & ข่าวสาร",
+          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TdmRONmgweTkzellHZm1pc05xeEY0V3dDZGtIMnUzQzItbTZlTjRrTmY3azFjU2l6WkVLZ3lqd3ZRaUhQc1FTM3FRTlAwcGlpMnV6RGplRE92QmVXeVFyUFpB?oc=5",
           "source": "Moomoo",
-          "published": "22/07/2026"
+          "published": "18/07/2026"
         },
         {
           "title": "ConocoPhillips (COP) หุ้น เคลื่อนไหว ลง 3.21% เมื่อวันที่ 27 ก.ค.: ข้อเท็จจริงเบื้องหลังการเคลื่อนไหว",
           "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQd0djYXlPbjA5eFl4ZlhBeEpEbFRNcHFTRWVDUmpjLTFVVXNCTGdodWdSSUpnMzFVMGl4bWpKYjV2WHZHeDhEaGFaX19CeGo1R3BqWUVRY0I1Qk5CVHdDM1RqbVU0bVpfVEdpQzFGNld5WTNKbDh0UkdlMm16aEctMUUxbHlndGF2ZDVES1R3?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
@@ -5385,26 +5382,26 @@
         {
           "title": "โครงสร้างผู้ถือหุ้น Occidental Petroleum Corp (OXY): ผู้ถือหุ้นรายใหญ่และการถือครองของนักลงทุนสถาบัน",
           "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9JZmx3Mnd6WG93NzR6bVFIQ3ZPeWpnQk9oNE9TYUxhaTlOMUJkYjc4TVl6dnpOQlRuRlE0RUpGcU9mT3VGb09QQkQ2NHhvVEU0ZDN2UExpV2R2NTFFanA5OHg2dmdIR2M3bEE?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
-        },
-        {
-          "title": "OXY 260724 45.50P (OXY260724P45500) สายออปชันหุ้น | ข้อมูลราคา & ข่าวสาร",
-          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBZUV9jaWliTFBEVWdCeGlZcFJyUkxOcVhVeXRYaTg1ZXB4TTZHYTBnNFJXWHBCbEEwa3NVdjhhc0NYNlJXanhwZEFzc0dFdXEwU2steXZLRVJfV1FHb18tVDNn?oc=5",
-          "source": "Moomoo",
-          "published": "22/07/2026"
-        },
-        {
-          "title": "สุขภาพทางการเงินของ Occidental Petroleum Corp (OXY): การวิเคราะห์ความสามารถในการทำกำไรและงบดุล",
-          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBRc291ODFyWFBqT3psWFFjaDE0aFFEOEtaOGMtalVSZUpDYWhiVVh6YlQyblh1bUpsRzVnNzNGRXhvQnBaNTZHTkV5YnU1SDNwM0dnMUwxcWdBZ2s3eGFRa2VQMXFUVjZ5X0lHdkQ5R3Q4MHc?oc=5",
-          "source": "tradingkey.com",
-          "published": "2 วันที่แล้ว"
         },
         {
           "title": "OXY 260724 47.00P (OXY260724P47000) สายออปชันหุ้น | ข้อมูลราคา & ข่าวสาร",
           "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1UZXYwSHY4bXZ2TTdyNVlZLS11TWNWRDE3NjlFdUtZVWZNZTZsT0ZISkxFN0RyMUt3RW9VblFLR05ZMWNPbkVHZU1tN2dEQkx2Q1gtQ1ZINFNvVXV1TG1VUU5n?oc=5",
           "source": "Moomoo",
           "published": "6 วันที่แล้ว"
+        },
+        {
+          "title": "สุขภาพทางการเงินของ Occidental Petroleum Corp (OXY): การวิเคราะห์ความสามารถในการทำกำไรและงบดุล",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBRc291ODFyWFBqT3psWFFjaDE0aFFEOEtaOGMtalVSZUpDYWhiVVh6YlQyblh1bUpsRzVnNzNGRXhvQnBaNTZHTkV5YnU1SDNwM0dnMUwxcWdBZ2s3eGFRa2VQMXFUVjZ5X0lHdkQ5R3Q4MHc?oc=5",
+          "source": "TradingKey",
+          "published": "2 วันที่แล้ว"
+        },
+        {
+          "title": "รายละเอียดรายได้ Occidental Petroleum Corp (OXY): กลุ่มธุรกิจ รายได้ตามภูมิภาค และสัดส่วนกำไร",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8zWmgxRWI4alZmMXdlOUJlM29nWU1XSVBLT250UnNoLU5leVNScEpSdW1CMWMyNkk3T2d3OHdQTmx3akR4bnJkbTFkblBiSnpzdUNrRjF5SVExMmFKbGg5N1ZGb2hzWTQ?oc=5",
+          "source": "TradingKey",
+          "published": "4 วันที่แล้ว"
         }
       ]
     },
@@ -5522,18 +5519,18 @@
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ On Holding AG (ONON): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE44Z0Q5V1Z6VmlmV09jX2lBdE9jQ3UtbXBtdEUtVXlZMkoyTTBZRHN3Q1A5STQ3OEphNFh2YXZLeEUtNEFYbjNGU1ZnS3p6ODZkZVJnRXZRN2JZSkg0ZGN3dHJaTTRBWFhoSDBnQ20weUJCcHM?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
           "title": "งบดุล On Holding AG (ONON)",
           "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1pMXU0R284OFpqSVp3TWZROXR4M3h6OFBlSFBLTmVaQUtsUkJvNEl1VUY1UnNpUThpdTY0UjE3bkczLTFfRTFBQ2dHN29mOThxdHBEeVVxTlNVR0s0dDFqem95Mm02OFJQNEtFZ1BUYWg?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
-          "title": "ONON 260724 42.00P (ONON260724P42000) สายออปชันหุ้น | ข้อมูลราคา & ข่าวสาร",
-          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9tYWpqYVAyWUxsS2drWWthMFF0Vl8yR3g4LTRwOFpUcERhdG1VbmZ3S0lfXzNQSkk2OTZ1TWFjcDktMjZFcjNzeXZVNHUtWUd1OXhaX1Z0eHZOWGhOOGlqbWFyTQ?oc=5",
+          "title": "ONON 260724 35.50P (ONON260724P35500) สายออปชันหุ้น | ข้อมูลราคา & ข่าวสาร",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ZZkpKeHJ4cG1rcERZY1RFdnlid2p2c2pPVXVpdF9HZUVNZTlSOGhMWVM4MmxVYjhRckVKMWE1bDhFYkt2Mk1hcDZjN045NWx0Qk9HWkZ0ejVRV2hQX1BSYjY5TQ?oc=5",
           "source": "Moomoo",
           "published": "21/07/2026"
         }
@@ -5647,7 +5644,7 @@
         {
           "title": "Salesforce Inc (CRM) หุ้น ปิด ขึ้น 4.51% เมื่อวันที่ 28 ก.ค.: มันส่งสัญญาณอะไร?",
           "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd1V4dGowQW81WGtlay1CMVk4d2QwNXBSN2drNG5TaWdfUFozaHM4WnNWbURRWUN3bkJRSDFLcUtkUzlGdGNvZThmWkNkb3gxX0FhWW9nSXRDYm5OMjJwMG5ObkhzODBLcFFyWEp6Z1JEejd2MkgzVW9FMk5KWndNdVExM2R5N1NORVNtUEpB?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
@@ -5659,7 +5656,7 @@
         {
           "title": "Salesforce Inc (CRM) หุ้น เคลื่อนไหว ขึ้น 4.02% เมื่อวันที่ 29 ก.ค.: ข้อเท็จจริงเบื้องหลังการเคลื่อนไหว",
           "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSXJNM2JhcFBoME9hUFcxMUpCSGJtUUJwTnBfeGFYM2ZCTy1lRnhxaFI5cEo3SGVtREs5MFpEN1Q5RWVSTGJBVVNjRWJsdXM4Nl82QVg0bm5lTERmLUFVT2s1Zm5LN3hFSmhNdGlZLWE3QXBlM3JOUnN2ZEIyLTYtMU1sSk9hdVY4RlhYZjlR?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "1 วันที่แล้ว"
         },
         {
@@ -5674,7 +5671,7 @@
       "ticker": "INTU",
       "name": "INTU",
       "price": 315.5,
-      "open": 317.0,
+      "open": 316.1,
       "day_high": 318.99,
       "day_low": 303.87,
       "prev_close": 333.13,
@@ -5784,19 +5781,19 @@
         {
           "title": "สุขภาพทางการเงินของ Intuit Inc (INTU): การวิเคราะห์ความสามารถในการทำกำไรและงบดุล",
           "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5LSTNVeTRlOGdFUEdsX1VwMXM0LTY1SlpkTVAwd2JiMFQxa1ZIUVhkV3ZEeFZNSTg0dTdVb2dabElMS0JDdjJVa28tbGlxbHFId1F1dno5T2xqUjJlZjlFUGhYb3BHeFRneFVvWlFJODJpamM3?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
           "title": "ทําไมหุ้น Intuit ถึงร่วงหนักวันนี้?",
           "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBsa2hjbU5LbTBXbnZxSFBXV0JCNDJsWllCRGhnUWNKUTU3S0lWbFhWSlNHSW0wdjQ4eWxWUFR3QlFubElLeWczM2JyaV9YYjh4Z2s5SGJVN0ZVWnlxaTI5WWRyOVZVZVlWZjA4Vml3V0JfMXhIZVE?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "21/05/2026"
         },
         {
           "title": "โครงสร้างผู้ถือหุ้น Intuit Inc (INTU): ผู้ถือหุ้นรายใหญ่และการถือครองของนักลงทุนสถาบัน",
           "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9WWmJ0ZWtvQkctZHJPamYweGZIMnh1YkUyUnRpT2hxLUdHZUp2X3hrbzQ2ZEYyTVQ3REkyaFRvc2NRNW9CNFhFRjhVejYzaFowQnJ6a3VpM0FYaHYtTjVrUWxUeGhBTGREQUI4?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "6 วันที่แล้ว"
         }
       ]
@@ -5805,7 +5802,7 @@
       "ticker": "AVGO",
       "name": "AVGO",
       "price": 387.84,
-      "open": 380.35,
+      "open": 380.67,
       "day_high": 388.68,
       "day_low": 377.54,
       "prev_close": 370.32,
@@ -5912,19 +5909,19 @@
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ Broadcom Inc (AVGO): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE44dUZ0UzdiQnVoRXBYZlR0UFZaRmp2UkotdHM2U2FWNDhOQmNBQkF0dGVaWm1VZHVyUjNOLXhlX09kUUhpSmN5S2tSSXI1R0hvT09WZ0lNa0VVTjlBZTM2SGZBSndnYUEwUC1GRWJyNjVKbUE?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
           "title": "Broadcom Perpetual Futures ข่าวหุ้น (AVGO/USD)",
           "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8xbHF1cXBuX3B6RWQ1VjJZRllPeFZJeTdXZGNOZ1hfcGlxcnBBYVpoZEFOQ1hWbXAza2tCZGoySmpRRW82cnQ1eHlBTXlnd2g5cFFjOVoydlRjM0pNS1pSZWtkU21ZQTdPTFZ2U2ZWNzF2Q3ZyYXgw?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "6 วันที่แล้ว"
         },
         {
           "title": "Broadcom Inc (AVGO) หุ้น เคลื่อนไหว ลง 3.10% เมื่อวันที่ 24 ก.ค.: มันส่งสัญญาณอะไร?",
           "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPYWk3OVdIOVlVOHdYR0lYVmxJSWM1ZG5NOEZyLTZsOTNjeHdRVkkydkx3VFlUVzRHazB0Nk1Rc3MzZzZyMG9ocWttOEczemJnN2JfclZIYUFIQUlQekNLS0xma2RJb0ZiSnlJeUJPa2drZC0tQnRWbnU0Q0JFUUFZSDFzVHRYQ3Axam5sX1lyOA?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "6 วันที่แล้ว"
         }
       ]
@@ -6034,13 +6031,13 @@
         {
           "title": "Arista Networks Inc (ANET) หุ้น เคลื่อนไหว ลง 6.42% เมื่อวันที่ 29 ก.ค.: เผยปัจจัยขับเคลื่อนสำคัญ",
           "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZmdLWWkxU0tabVNhdkFSXzIwbVFVc3pGVGdhVXhWWGh5MWphdEtSeWlWQVpqX3hiUWQxTWRnUXN4c0xJTHVReTllVF9hM0xnd1F6d0J0Qkl6ek1CLUlTTUNISE5OYjk3VW9hX2dDQzkyNWhfaWI5VFpGYUQtdHQ1MUtmaUx0cmdFU2RjVzlybw?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "1 วันที่แล้ว"
         },
         {
           "title": "Arista Networks Inc (ANET) หุ้น เคลื่อนไหว ลง 3.56% เมื่อวันที่ 27 ก.ค.: ข้อมูลสำคัญที่นักลงทุนควรรู้",
           "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPTkxNbDRnUWZCaFVkU1hzZXRGcllkMGRjWi1FdGI4R01zeXhoaG03SDVVX1BZOFlQYUh2dmM3MEM5U3c4bm8xdzVadFpYWmlGd0x6MFdJZTN5dUdLanQ4X0dYY3BFTUJaUExhd0pDVHNyMWEyZlQyVThQbmViVWw3YW1FdUljNGhaM0E2NkNVdw?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
@@ -6052,7 +6049,7 @@
         {
           "title": "โครงสร้างผู้ถือหุ้น Arista Networks Inc (ANET): ผู้ถือหุ้นรายใหญ่และการถือครองของนักลงทุนสถาบัน",
           "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9ReGdud19XWDFhV2I4aV9xOFd5eWE4MmkxUW9jT0U3QzM1YTNSUHk4aDRWazZKMlhuNEZfeDFGbXhXV2NtMkRIUmdlN3dkcTFZWk1BWHAzLVh6TUJTZjdCY0xoTDJrVC1DeUlF?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         }
       ]
@@ -6162,25 +6159,25 @@
         {
           "title": "Western Digital Corp (WDC) หุ้น เคลื่อนไหว ขึ้น 6.78% เมื่อวันที่ 29 ก.ค.: ปัจจัยขับเคลื่อนเบื้องหลังการเคลื่อนไหว",
           "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQb3NBdWtkbHkxUEZScGU4SG9SU0lhSTJnSnlDQncwXzNRQ3FXaTQwMzFNX1oxSHQtQnUxUEF1cFZiWjg0TGZVSGJGZG1neTdwaEppTVpNeU9JOEx3ZU4zLVN1eDV2SEhaOEl2TnJSNjZjOWYxXzhoWWlELTQtTE5JTEdwYm5US2dFSzVVaDRR?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "1 วันที่แล้ว"
         },
         {
           "title": "Rosenblatt ปรับเพิ่มเป้าราคาหุ้น Western Digital เป็น $900",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8wRUJETTZPRVp4SnN1U0I3TUpycWRFSnFmRjJveW9IbHpFX3p5Q0NSVmZlNFVhbTY0aHhRVUVucVRTb3pJNVE3SzdFa1Bkd0FGVlZBb1l3QjNIc2dsdXBhUEZUeExIV2tkcUpYVmw1Q3BmMDg?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "2 วันที่แล้ว"
         },
         {
           "title": "Western Digital Corp (WDC) หุ้น ปิด ลง 7.00% เมื่อวันที่ 28 ก.ค.: ข้อเท็จจริงเบื้องหลังการเคลื่อนไหว",
           "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbVAxZFl2SjBpMEdxR1hWU0lTNUxBQnRmMk52LXB3d0VyZDdOcTE0ZWFkX1dZaFBwZ0VXdWRLbXpIWTR4TFFFZ1IyX0RXbG5HWUZrRHpJQUhYYW1rV0VWWm9KQnNVUEZmc0szeG1YOVY1YXRmd1JJWVF6Xy1ValdxQXBlU3pPZDNkTXd2cG9n?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "2 วันที่แล้ว"
         },
         {
           "title": "หุ้นชั้นนำที่เคลื่อนไหวหลังตลาดปิด: F, BE, STX, WDC, KLAC, SWKS, NXPI, CSGP, ENPH",
           "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAxQ2M0Qm9EeEtqazM4NmFBUEY4by1KQ0N3d3NFOFJ6bU9zM2RrajFKaDFHNzU4RWNlak9oWWJQYjNCdC1TQy16M3FfOGY1N05WdDRUMDFjaHJsdTMza3ktTmNIdDY3T1FjbjhxbklLc1BVai1EaE9Z?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "2 วันที่แล้ว"
         }
       ]
@@ -6210,16 +6207,16 @@
       "ema_slow": 14.29,
       "rsi": 51.4,
       "macd_hist": 0.0377,
-      "volume": 30376411,
-      "avg_volume": 24046030,
-      "volume_ratio": 1.26,
+      "volume": 30473928,
+      "avg_volume": 24050906,
+      "volume_ratio": 1.27,
       "momentum_5d": -6.85,
       "return_20d": 6.75,
       "return_60d": 13.42,
       "atr14": 1.51,
       "atr_pct": 10.36,
       "volatility20": 124.31,
-      "turnover": 441673014.78,
+      "turnover": 443090911.96,
       "high_20d": 16.1,
       "low_20d": 11.83,
       "high_120d": 19.17,
@@ -6292,7 +6289,7 @@
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ CleanSpark Inc (CLSK): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBtaDYxMkV5bzg2cUdZN1BtU0VfY1ZxcW0tY2p5c01FQmxCX3FzWnFRdGJOcjFwNjNxVmUwdUFncDJQU2tNQTFFSy11Y3Y0VVNqR01yWGdjTWt5cEpVeExranRaMFlHQ2l5TjBRR1JwaTdmVHc?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
@@ -6304,13 +6301,13 @@
         {
           "title": "โครงสร้างผู้ถือหุ้น CleanSpark Inc (CLSK): ผู้ถือหุ้นรายใหญ่และการถือครองของนักลงทุนสถาบัน",
           "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9tRmhSYzVrcDhwb1FPUXlmWlB3V3pfWnpwZWZJSWxQNzNXT1doN00zV1hndWhibjFfbFdyaHJDYjV6azVZT1lhdncyOWVySldxTGZLdTMyNV9yODA4LTFSQVdXMGlyQUMtX29Z?oc=5",
-          "source": "tradingkey.com",
+          "source": "TradingKey",
           "published": "3 วันที่แล้ว"
         },
         {
           "title": "BTIG ยืนยันเรตติ้งหุ้น CleanSpark หลังได้สัญญา HPC มูลค่า 6.6 พันล้านดอลลาร์",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE91RXg1QTlhUVhOeFV3UXR6aWFwSlA1Y3VRZkYxYUFLUnZ0d096dG01S3NET0ZQSjdYQlAwS18wWkhfb0g4cEhjZHNQWnFUVlBWN3hmNHlYSHdYQ24xUW9ad1J4UkpuR25mVy1pTFRoR1RINzQ?oc=5",
-          "source": "Investing.com",
+          "source": "th.investing.com",
           "published": "14/07/2026"
         }
       ]
@@ -6340,16 +6337,16 @@
       "ema_slow": 167.35,
       "rsi": 50.1,
       "macd_hist": 0.5878,
-      "volume": 6869373,
-      "avg_volume": 6641233,
-      "volume_ratio": 1.03,
+      "volume": 7514714,
+      "avg_volume": 6673500,
+      "volume_ratio": 1.13,
       "momentum_5d": 1.5,
       "return_20d": 2.73,
       "return_60d": -19.41,
       "atr14": 9.07,
       "atr_pct": 5.55,
       "volatility20": 60.57,
-      "turnover": 1123692047.92,
+      "turnover": 1229256929.88,
       "high_20d": 181.49,
       "low_20d": 152.58,
       "high_120d": 222.35,
@@ -6419,21 +6416,21 @@
       "currency": "$",
       "news": [
         {
-          "title": "Rosenblatt Securities คงคำแนะนำ \"ซื้อ\" สำหรับหุ้น Coinbase (COIN.US) และคงราคาเป้าหมายที่ 240 ดอลลาร์",
-          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQZkdab3FEUDRTbFFZZ0dOZzM0UXA1UjFBYmZYU3F3MFUyMGdxQ3p1TWZ0MU5kYjdxRGVCTTZ2eDlaZy11VEZNS3B5elRYTXhtTjc2Z0tEcDRRcDFwZGdTWUNiNHdXSkU0WlY4ZkxaalFYM1ZjazlXWF9maFlrTXZHM3VNUTRlVUhkWEJCV2RuWmNIX1pZc2FFMFlwcS13YzRlSlZGUW82b2VENXlIRjN1WFJtMVlPbHM3MDRERlA3QTZjN3c?oc=5",
+          "title": "COIN 260731 270.00P (COIN260731P270000) สายออปชันหุ้น | ข้อมูลราคา & ข่าวสาร",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1zNmRvVUp2bDUyME54WGI1d2hjX0VUSWFrMjY0Z3NrY0hJbmg2QWVZMmZ4X1Q1OUdMVzZMd2JXSmZPbHZnODVDM0lPM0VUc3pGYUNVRGJlOTA1al9iNWRiMkNCcUY?oc=5",
           "source": "Moomoo",
-          "published": "1 วันที่แล้ว"
+          "published": "3 วันที่แล้ว"
         },
         {
           "title": "เงินปันผลและการแบ่งหุ้นของ Coinbase Global Inc (COIN): ประวัติการจ่ายเงินและไทม์ไลน์เหตุการณ์",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1TZ1VBeGszVjNwMXozMGM0NEx5enBuWVdIMUd3RmZDN1liQXNNbDN6ZVFHSEJ4RkVjMnVGREkzbXp5WlM5QlVXNlpzLWZVaE0wdUFHNi05WjVUc25HSms0QkZpY0RaX2hRTVdTSUNYTDltLTA?oc=5",
-          "source": "tradingkey.com",
-          "published": "2 วันที่แล้ว"
+          "source": "TradingKey",
+          "published": "3 วันที่แล้ว"
         },
         {
           "title": "COIN80 - ข้อมูลหลักทรัพย์ - ตลาดหลักทรัพย์แห่งประเทศไทย",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9jV0xZc0NJTXUwT2RUMy04cXlnaTFpM1VHRC1jTWQzQmZmUDB2b0gzd3FTUXZ0c0QtRUpWZmY2cDVhR2lsOVlIdUl6ay1MZGliU2ZWQnFyVUxxRzZzT0NlcklFWlFBbDJocjdqYkhVc2k3TXctVzZTQ2MyWQ?oc=5",
-          "source": "SET",
+          "source": "set.or.th",
           "published": "14/05/2026"
         },
         {
@@ -6448,7 +6445,7 @@
       "ticker": "COST",
       "name": "COST",
       "price": 954.17,
-      "open": 955.04,
+      "open": 954.31,
       "day_high": 960.76,
       "day_low": 949.76,
       "prev_close": 974.03,
@@ -6550,20 +6547,20 @@
         {
           "title": "Amazon.com Inc (AMZN) หุ้น เคลื่อนไหว ขึ้น 4.50% เมื่อวันที่ 30 ก.ค.: การวิเคราะห์ฉบับสมบูรณ์",
           "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPR3JlLVYzUTJQLXNCWEc5d1NBQmhCVUxxcF9MWDh4VzhNT21TRkJlX3czaVNVRVYtSTZEck00V01ZRTVseG80ODlOSTAzZDkxMWZDeVJuY1F1bmRJZVNLVERTdGkxeVRUX2xGdEZrdXZuX3JhZkRlajJWOC1WaGstZ1ZKRzhEc0hOVjE5dTM0VQ?oc=5",
-          "source": "tradingkey.com",
-          "published": "6 ชม.ที่แล้ว"
-        },
-        {
-          "title": "เปิดโผ 3 หุ้นแบงก์เด่น กำไรครึ่งหลังยังแรง ราคาย่อเป็นจังหวะ “สะสม”",
-          "link": "https://news.google.com/rss/articles/CBMinAZBVV95cUxPMkJxcko5R0N6VEE3bDJFdWVrMW1mV1dJVnFkMFp6UmMtUVJjRzgwcUZOdTg1X192Rkw1NDBZa0F0TVluM1VJeGVKTUM3ZEhOdjdON1pNbWdMVlNnZGt6SUpPY2hDTGtITDlDaHJKMFY3SHZtbEg3VGUyXzJYZ2pVS2FFSUhhMUhFRlBSdGJfNGdJcW9zSzBPUzRKb1J5aTVaM2J1YzFBVE1XVUtCNnFKZ1hfV0ZhUG1SUlhrOTIzQmljVEFKYVAxUzBUbXJaQUMwOFIyRy1uVWJydVlpcmQ5WFQyalh5WEo4MG1sOFBSdUhTTDlfbmRCN0pJSGI5RFBJNDV4Zm5YYzdpUE5JT2tQd3hLY3ZOalZrQlYxUGtrTlZvcDZ6czFUNl9uVC1WOC1JTXN2SGV3Z0oxUjJ0ZG5hY3draFIweG5mWGhJejRBVk5kaGFxQ09ESXpBWm5OWGp4TFVxWmEzc0dGeXRfOWZQbmd0QnN0T1BMRWxHakRsT2hZa1ZkazF1MnptMllFTkVyOHBPZlI4S2lvWUZGVFlPdnA1RWV6MHk0bEVtTGU1Y1B2dGhiZTlsMWRENHpYcUpfUk4tdkFJcm9TdG83bTZFa0Y5NnlYM0Z1SS12TGZ1Z0h1NWw5SkVNNWZzWHUyN0NLd3BYU3RpVEhTdzhjb2pqZEZSZkliUkE1Q21teVZFZ0RGRTFSZDNNRTBDRkFiRHRvSDhReHBpekd4VzV1ZF9BNVd0dWFwUWV1VXk3UzgyclhGeXpzZTZvWmlyVnFncnpVRllNZjRFSzVPSWFhbkJDcWFLaUQwcTBCZEU4TW5OMExCakl4eWtHUXI0YWFnOWNQSk1PMUJoVWNVSjRYRUpUQnJ6emVLcmNwZ0YtNnppSHBnSGxDNHZ1ZjdEbnoyYmhPSjh6am9WZF83SDNxWDZzUWJLM2ZwQzEyWE10bGVNUTZBSzA0eGJSRkdTU2hYMVBrR2NkSzBjWkNHdHZ2dFdFeld2NDZoUndvdTJLNldpMXBrdDEycl9rcW5sRVVndUd4T3d0T1hVQTlkMlRN?oc=5",
-          "source": "Share2Trade",
-          "published": "3 วันที่แล้ว"
+          "source": "TradingKey",
+          "published": "7 ชม.ที่แล้ว"
         },
         {
           "title": "รัฐบาลเปิดมหกรรม “ไทยช่วยไทย x Local Low Cost” ลดราคาสินค้า 17 หมวด เริ่ม 1-15 ส.ค.นี้ | ข่าวหุ้นธุรกิจ",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5GcEZGNHFrU1BpMUVlZXF6NlkyY2gtTHV6R2pVMFFBQmd1d1FIYzdlMmRHa3ZOX3ByQ010LUJPUUpDdFFMUW0zaHVTdWczSTNrLTh4RS1n?oc=5",
           "source": "LINE TODAY",
           "published": "1 วันที่แล้ว"
+        },
+        {
+          "title": "เปิดโผ 3 หุ้นแบงก์เด่น กำไรครึ่งหลังยังแรง ราคาย่อเป็นจังหวะ “สะสม”",
+          "link": "https://news.google.com/rss/articles/CBMinAZBVV95cUxPMkJxcko5R0N6VEE3bDJFdWVrMW1mV1dJVnFkMFp6UmMtUVJjRzgwcUZOdTg1X192Rkw1NDBZa0F0TVluM1VJeGVKTUM3ZEhOdjdON1pNbWdMVlNnZGt6SUpPY2hDTGtITDlDaHJKMFY3SHZtbEg3VGUyXzJYZ2pVS2FFSUhhMUhFRlBSdGJfNGdJcW9zSzBPUzRKb1J5aTVaM2J1YzFBVE1XVUtCNnFKZ1hfV0ZhUG1SUlhrOTIzQmljVEFKYVAxUzBUbXJaQUMwOFIyRy1uVWJydVlpcmQ5WFQyalh5WEo4MG1sOFBSdUhTTDlfbmRCN0pJSGI5RFBJNDV4Zm5YYzdpUE5JT2tQd3hLY3ZOalZrQlYxUGtrTlZvcDZ6czFUNl9uVC1WOC1JTXN2SGV3Z0oxUjJ0ZG5hY3draFIweG5mWGhJejRBVk5kaGFxQ09ESXpBWm5OWGp4TFVxWmEzc0dGeXRfOWZQbmd0QnN0T1BMRWxHakRsT2hZa1ZkazF1MnptMllFTkVyOHBPZlI4S2lvWUZGVFlPdnA1RWV6MHk0bEVtTGU1Y1B2dGhiZTlsMWRENHpYcUpfUk4tdkFJcm9TdG83bTZFa0Y5NnlYM0Z1SS12TGZ1Z0h1NWw5SkVNNWZzWHUyN0NLd3BYU3RpVEhTdzhjb2pqZEZSZkliUkE1Q21teVZFZ0RGRTFSZDNNRTBDRkFiRHRvSDhReHBpekd4VzV1ZF9BNVd0dWFwUWV1VXk3UzgyclhGeXpzZTZvWmlyVnFncnpVRllNZjRFSzVPSWFhbkJDcWFLaUQwcTBCZEU4TW5OMExCakl4eWtHUXI0YWFnOWNQSk1PMUJoVWNVSjRYRUpUQnJ6emVLcmNwZ0YtNnppSHBnSGxDNHZ1ZjdEbnoyYmhPSjh6am9WZF83SDNxWDZzUWJLM2ZwQzEyWE10bGVNUTZBSzA0eGJSRkdTU2hYMVBrR2NkSzBjWkNHdHZ2dFdFeld2NDZoUndvdTJLNldpMXBrdDEycl9rcW5sRVVndUd4T3d0T1hVQTlkMlRN?oc=5",
+          "source": "share2trade.com",
+          "published": "3 วันที่แล้ว"
         },
         {
           "title": "หุ้นเทคฯ ทั่วโลกปรับฐานแรง! หมดรอบขาขึ้นแล้วหรือไม่ พร้อมชำแหละเบื้องหลังทำมราคาดิ่งหนัก",
@@ -6598,16 +6595,16 @@
       "ema_slow": 141.83,
       "rsi": 50.8,
       "macd_hist": 0.8203,
-      "volume": 7767914,
-      "avg_volume": 9027720,
-      "volume_ratio": 0.86,
+      "volume": 8231350,
+      "avg_volume": 9050892,
+      "volume_ratio": 0.91,
       "momentum_5d": 3.89,
       "return_20d": -0.68,
       "return_60d": -8.35,
       "atr14": 3.26,
       "atr_pct": 2.32,
       "volatility20": 27.38,
-      "turnover": 1089061519.09,
+      "turnover": 1154035244.88,
       "high_20d": 149.04,
       "low_20d": 133.73,
       "high_120d": 168.19,
@@ -6910,16 +6907,16 @@
       "ema_slow": 115.45,
       "rsi": 56.3,
       "macd_hist": 0.5886,
-      "volume": 7173617,
-      "avg_volume": 11877880,
-      "volume_ratio": 0.6,
+      "volume": 7728700,
+      "avg_volume": 11905635,
+      "volume_ratio": 0.65,
       "momentum_5d": 1.98,
       "return_20d": 18.71,
       "return_60d": -11.92,
       "atr14": 3.58,
       "atr_pct": 3.08,
       "volatility20": 49.87,
-      "turnover": 834435127.25,
+      "turnover": 899002381.64,
       "high_20d": 121.86,
       "low_20d": 95.19,
       "high_120d": 166.72,
@@ -7014,16 +7011,16 @@
       "ema_slow": 323.63,
       "rsi": 50.6,
       "macd_hist": -0.7283,
-      "volume": 1384330,
-      "avg_volume": 1321226,
-      "volume_ratio": 1.05,
+      "volume": 1456813,
+      "avg_volume": 1324850,
+      "volume_ratio": 1.1,
       "momentum_5d": 8.94,
       "return_20d": -9.32,
       "return_60d": 23.12,
       "atr14": 18.53,
       "atr_pct": 5.68,
       "volatility20": 43.9,
-      "turnover": 451125467.16,
+      "turnover": 474746227.55,
       "high_20d": 373.33,
       "low_20d": 291.79,
       "high_120d": 412.0,
@@ -7224,16 +7221,16 @@
       "ema_slow": 20.54,
       "rsi": 45.1,
       "macd_hist": 0.0934,
-      "volume": 19856515,
-      "avg_volume": 18764675,
-      "volume_ratio": 1.06,
+      "volume": 19996513,
+      "avg_volume": 18771675,
+      "volume_ratio": 1.07,
       "momentum_5d": 5.15,
       "return_20d": -23.49,
       "return_60d": -14.05,
       "atr14": 1.46,
       "atr_pct": 8.12,
       "volatility20": 113.47,
-      "turnover": 357020130.61,
+      "turnover": 359537294.59,
       "high_20d": 24.68,
       "low_20d": 16.02,
       "high_120d": 31.55,
@@ -7308,7 +7305,7 @@
       "ticker": "PYPL",
       "name": "PYPL",
       "price": 57.65,
-      "open": 57.4,
+      "open": 57.46,
       "day_high": 57.89,
       "day_low": 56.65,
       "prev_close": 58.35,
@@ -7954,16 +7951,16 @@
       "ema_slow": 239.89,
       "rsi": 59.7,
       "macd_hist": -0.2706,
-      "volume": 4890130,
-      "avg_volume": 5893761,
-      "volume_ratio": 0.83,
+      "volume": 6398916,
+      "avg_volume": 5969200,
+      "volume_ratio": 1.07,
       "momentum_5d": 0.19,
       "return_20d": 3.26,
       "return_60d": 24.54,
       "atr14": 6.02,
       "atr_pct": 2.34,
       "volatility20": 28.32,
-      "turnover": 1258768381.21,
+      "turnover": 1647144990.99,
       "high_20d": 267.47,
       "low_20d": 241.47,
       "high_120d": 267.47,
@@ -8142,7 +8139,7 @@
       "ticker": "MSTR",
       "name": "MSTR",
       "price": 97.74,
-      "open": 95.09,
+      "open": 95.17,
       "day_high": 98.22,
       "day_low": 94.33,
       "prev_close": 93.33,
@@ -8268,16 +8265,16 @@
       "ema_slow": 14.02,
       "rsi": 45.5,
       "macd_hist": 0.0476,
-      "volume": 4439846,
-      "avg_volume": 6500172,
-      "volume_ratio": 0.68,
+      "volume": 5184394,
+      "avg_volume": 6537399,
+      "volume_ratio": 0.79,
       "momentum_5d": 1.72,
       "return_20d": -4.56,
       "return_60d": -18.77,
       "atr14": 0.54,
       "atr_pct": 4.17,
       "volatility20": 41.83,
-      "turnover": 57629199.05,
+      "turnover": 67293431.75,
       "high_20d": 14.46,
       "low_20d": 12.32,
       "high_120d": 20.48,
@@ -8478,16 +8475,16 @@
       "ema_slow": 144.75,
       "rsi": 51.4,
       "macd_hist": -1.8004,
-      "volume": 10455892,
-      "avg_volume": 5350974,
-      "volume_ratio": 1.95,
+      "volume": 10681900,
+      "avg_volume": 5362275,
+      "volume_ratio": 1.99,
       "momentum_5d": 1.79,
       "return_20d": -2.98,
       "return_60d": 72.85,
       "atr14": 7.1,
       "atr_pct": 4.6,
       "volatility20": 37.24,
-      "turnover": 1612821341.0,
+      "turnover": 1647683075.0,
       "high_20d": 170.35,
       "low_20d": 143.77,
       "high_120d": 170.35,
@@ -8561,7 +8558,7 @@
       "ticker": "MELI",
       "name": "MELI",
       "price": 1885.73,
-      "open": 1845.01,
+      "open": 1850.53,
       "day_high": 1888.0,
       "day_low": 1829.3,
       "prev_close": 1863.31,
@@ -8974,7 +8971,7 @@
       "ticker": "JD",
       "name": "JD",
       "price": 32.31,
-      "open": 32.59,
+      "open": 32.55,
       "day_high": 32.58,
       "day_low": 31.83,
       "prev_close": 32.2,
@@ -9205,16 +9202,16 @@
       "ema_slow": 50.96,
       "rsi": 44.4,
       "macd_hist": -0.7524,
-      "volume": 17637708,
-      "avg_volume": 7366380,
-      "volume_ratio": 2.39,
+      "volume": 25032475,
+      "avg_volume": 7736118,
+      "volume_ratio": 3.24,
       "momentum_5d": 2.36,
       "return_20d": -16.01,
       "return_60d": 2.31,
       "atr14": 2.75,
       "atr_pct": 5.64,
       "volatility20": 48.89,
-      "turnover": 858427216.06,
+      "turnover": 1218330512.41,
       "high_20d": 58.4,
       "low_20d": 45.76,
       "high_120d": 76.58,
@@ -9275,7 +9272,7 @@
       "reasons": [
         "RSI 44 เริ่มฟื้นจากโซนขายมากเกินไป",
         "MACD ติดลบแต่กำลังหดตัว (อาจกำลังกลับตัว)",
-        "วอลุ่มพุ่ง 2.4 เท่าของค่าเฉลี่ย (มีแรงซื้อเข้า)",
+        "วอลุ่มพุ่ง 3.2 เท่าของค่าเฉลี่ย (มีแรงซื้อเข้า)",
         "ราคา +2.4% ใน 5 วัน"
       ],
       "warnings": [
@@ -9416,16 +9413,16 @@
       "ema_slow": 275.6,
       "rsi": 46.3,
       "macd_hist": 0.5227,
-      "volume": 3123776,
-      "avg_volume": 4437613,
-      "volume_ratio": 0.7,
+      "volume": 3858452,
+      "avg_volume": 4474347,
+      "volume_ratio": 0.86,
       "momentum_5d": 2.15,
       "return_20d": -0.37,
       "return_60d": -4.87,
       "atr14": 5.39,
       "atr_pct": 2.01,
       "volatility20": 25.86,
-      "turnover": 838546437.07,
+      "turnover": 1035762864.3,
       "high_20d": 287.1,
       "low_20d": 260.96,
       "high_120d": 337.56,
@@ -9500,7 +9497,7 @@
       "ticker": "APP",
       "name": "APP",
       "price": 403.87,
-      "open": 393.02,
+      "open": 392.62,
       "day_high": 406.38,
       "day_low": 390.05,
       "prev_close": 399.46,
@@ -9606,7 +9603,7 @@
       "ticker": "RGTI",
       "name": "RGTI",
       "price": 14.86,
-      "open": 13.6,
+      "open": 13.59,
       "day_high": 15.0,
       "day_low": 13.49,
       "prev_close": 13.22,
@@ -9921,7 +9918,7 @@
       "ticker": "ARM",
       "name": "ARM",
       "price": 241.54,
-      "open": 258.0,
+      "open": 259.58,
       "day_high": 268.48,
       "day_low": 232.67,
       "prev_close": 224.89,
@@ -10133,7 +10130,7 @@
       "ticker": "AMZN",
       "name": "AMZN",
       "price": 235.5,
-      "open": 233.35,
+      "open": 233.25,
       "day_high": 239.82,
       "day_low": 231.06,
       "prev_close": 226.65,
@@ -10259,8 +10256,8 @@
       "ema_slow": 73.28,
       "rsi": 46.1,
       "macd_hist": -1.194,
-      "volume": 4026265,
-      "avg_volume": 3696803,
+      "volume": 4026428,
+      "avg_volume": 3696811,
       "volume_ratio": 1.09,
       "momentum_5d": 2.86,
       "return_20d": -12.64,
@@ -10268,7 +10265,7 @@
       "atr14": 3.35,
       "atr_pct": 4.58,
       "volatility20": 42.18,
-      "turnover": 294923911.25,
+      "turnover": 294935851.0,
       "high_20d": 86.8,
       "low_20d": 69.62,
       "high_120d": 86.8,
@@ -10341,7 +10338,7 @@
       "ticker": "WMT",
       "name": "WMT",
       "price": 111.1,
-      "open": 111.61,
+      "open": 112.0,
       "day_high": 113.03,
       "day_low": 110.43,
       "prev_close": 114.22,
@@ -10549,7 +10546,7 @@
       "ticker": "SMCI",
       "name": "SMCI",
       "price": 27.73,
-      "open": 26.84,
+      "open": 26.8,
       "day_high": 28.17,
       "day_low": 26.65,
       "prev_close": 25.7,
@@ -10570,16 +10567,16 @@
       "ema_slow": 29.94,
       "rsi": 47.2,
       "macd_hist": 0.3315,
-      "volume": 36094644,
-      "avg_volume": 43628087,
-      "volume_ratio": 0.83,
+      "volume": 37241621,
+      "avg_volume": 43685436,
+      "volume_ratio": 0.85,
       "momentum_5d": -11.12,
       "return_20d": 0.29,
       "return_60d": -0.68,
       "atr14": 2.3,
       "atr_pct": 8.29,
       "volatility20": 102.43,
-      "turnover": 1000904461.6,
+      "turnover": 1032710133.28,
       "high_20d": 32.59,
       "low_20d": 23.38,
       "high_120d": 51.4,
@@ -10781,16 +10778,16 @@
       "ema_slow": 351.34,
       "rsi": 42.1,
       "macd_hist": -1.4222,
-      "volume": 29500625,
-      "avg_volume": 28956111,
-      "volume_ratio": 1.02,
+      "volume": 29924768,
+      "avg_volume": 28977318,
+      "volume_ratio": 1.03,
       "momentum_5d": 5.03,
       "return_20d": -7.63,
       "return_60d": -12.89,
       "atr14": 11.92,
       "atr_pct": 3.57,
       "volatility20": 38.59,
-      "turnover": 9843178645.53,
+      "turnover": 9984698200.47,
       "high_20d": 375.27,
       "low_20d": 314.9,
       "high_120d": 408.37,
@@ -11303,8 +11300,8 @@
       "ema_slow": 213.22,
       "rsi": 37.1,
       "macd_hist": -5.5985,
-      "volume": 17356216,
-      "avg_volume": 13066885,
+      "volume": 17447964,
+      "avg_volume": 13071473,
       "volume_ratio": 1.33,
       "momentum_5d": -17.56,
       "return_20d": -32.26,
@@ -11312,7 +11309,7 @@
       "atr14": 14.46,
       "atr_pct": 8.02,
       "volatility20": 76.36,
-      "turnover": 3129846463.06,
+      "turnover": 3146391380.07,
       "high_20d": 267.33,
       "low_20d": 169.81,
       "high_120d": 307.37,
@@ -11388,7 +11385,7 @@
       "ticker": "AMAT",
       "name": "AMAT",
       "price": 501.77,
-      "open": 482.48,
+      "open": 482.9,
       "day_high": 508.47,
       "day_low": 476.12,
       "prev_close": 436.45,
@@ -11409,16 +11406,16 @@
       "ema_slow": 528.87,
       "rsi": 44.4,
       "macd_hist": -13.6729,
-      "volume": 11627672,
-      "avg_volume": 8814018,
-      "volume_ratio": 1.32,
+      "volume": 12120342,
+      "avg_volume": 8838652,
+      "volume_ratio": 1.37,
       "momentum_5d": -10.84,
       "return_20d": -22.91,
       "return_60d": 28.36,
       "atr14": 42.02,
       "atr_pct": 8.37,
       "volatility20": 91.44,
-      "turnover": 5834416851.69,
+      "turnover": 6081623872.18,
       "high_20d": 657.0,
       "low_20d": 436.33,
       "high_120d": 739.67,
@@ -11479,7 +11476,7 @@
       "reasons": [
         "RSI 44 เริ่มฟื้นจากโซนขายมากเกินไป",
         "MACD ติดลบแต่กำลังหดตัว (อาจกำลังกลับตัว)",
-        "วอลุ่มสูงกว่าค่าเฉลี่ย 1.3 เท่า"
+        "วอลุ่มสูงกว่าค่าเฉลี่ย 1.4 เท่า"
       ],
       "warnings": [
         "ราคา -10.8% ใน 5 วัน (กำลังร่วง)"
@@ -11514,8 +11511,8 @@
       "ema_slow": 25.07,
       "rsi": 42.4,
       "macd_hist": -0.062,
-      "volume": 10674493,
-      "avg_volume": 10724944,
+      "volume": 10684782,
+      "avg_volume": 10725459,
       "volume_ratio": 1.0,
       "momentum_5d": 3.99,
       "return_20d": -7.95,
@@ -11523,7 +11520,7 @@
       "atr14": 1.02,
       "atr_pct": 4.29,
       "volatility20": 38.27,
-      "turnover": 253198966.63,
+      "turnover": 253443021.7,
       "high_20d": 27.52,
       "low_20d": 22.31,
       "high_120d": 30.13,
@@ -11703,7 +11700,7 @@
       "ticker": "AMD",
       "name": "AMD",
       "price": 485.39,
-      "open": 460.0,
+      "open": 459.16,
       "day_high": 498.2,
       "day_low": 457.68,
       "prev_close": 429.56,
@@ -11932,16 +11929,16 @@
       "ema_slow": 415.04,
       "rsi": 45.9,
       "macd_hist": -3.311,
-      "volume": 15020211,
-      "avg_volume": 15282440,
-      "volume_ratio": 0.98,
+      "volume": 17295107,
+      "avg_volume": 15396185,
+      "volume_ratio": 1.12,
       "momentum_5d": -2.95,
       "return_20d": -9.21,
       "return_60d": 0.66,
       "atr14": 17.52,
       "atr_pct": 4.34,
       "volatility20": 49.45,
-      "turnover": 6057801261.74,
+      "turnover": 6975289561.95,
       "high_20d": 461.47,
       "low_20d": 372.72,
       "high_120d": 479.0,
@@ -12240,16 +12237,16 @@
       "ema_slow": 17.28,
       "rsi": 45.1,
       "macd_hist": -0.2117,
-      "volume": 81821209,
-      "avg_volume": 88148485,
-      "volume_ratio": 0.93,
+      "volume": 82954127,
+      "avg_volume": 88205131,
+      "volume_ratio": 0.94,
       "momentum_5d": -1.08,
       "return_20d": -10.68,
       "return_60d": 1.67,
       "atr14": 0.91,
       "atr_pct": 5.5,
       "volatility20": 60.11,
-      "turnover": 1347595256.05,
+      "turnover": 1366254414.73,
       "high_20d": 19.74,
       "low_20d": 14.88,
       "high_120d": 22.0,
@@ -12861,16 +12858,16 @@
       "ema_slow": 43.68,
       "rsi": 46.6,
       "macd_hist": -0.0072,
-      "volume": 14534125,
-      "avg_volume": 18412096,
-      "volume_ratio": 0.79,
+      "volume": 16919629,
+      "avg_volume": 18531371,
+      "volume_ratio": 0.91,
       "momentum_5d": 3.17,
       "return_20d": -1.79,
       "return_60d": -0.98,
       "atr14": 1.37,
       "atr_pct": 3.23,
       "volatility20": 31.96,
-      "turnover": 614648159.56,
+      "turnover": 715531125.9,
       "high_20d": 45.04,
       "low_20d": 40.69,
       "high_120d": 67.43,
@@ -12966,16 +12963,16 @@
       "ema_slow": 299.78,
       "rsi": 28.8,
       "macd_hist": -7.8159,
-      "volume": 13590963,
-      "avg_volume": 5832643,
-      "volume_ratio": 2.33,
+      "volume": 14460922,
+      "avg_volume": 5876141,
+      "volume_ratio": 2.46,
       "momentum_5d": -25.17,
       "return_20d": -26.95,
       "return_60d": -31.25,
       "atr14": 20.09,
       "atr_pct": 8.83,
       "volatility20": 78.2,
-      "turnover": 3091944082.5,
+      "turnover": 3289859755.0,
       "high_20d": 338.88,
       "low_20d": 220.92,
       "high_120d": 379.86,
@@ -13035,7 +13032,7 @@
       ],
       "reasons": [
         "RSI 29 โซน oversold — มีโอกาสเด้ง แต่ต้องรอสัญญาณยืนยัน",
-        "วอลุ่มพุ่ง 2.3 เท่าของค่าเฉลี่ย (มีแรงซื้อเข้า)"
+        "วอลุ่มพุ่ง 2.5 เท่าของค่าเฉลี่ย (มีแรงซื้อเข้า)"
       ],
       "warnings": [
         "ราคาอยู่ใต้ EMA20/50 (เทรนด์ขาลง)",
@@ -13051,7 +13048,7 @@
       "ticker": "META",
       "name": "META",
       "price": 539.03,
-      "open": 526.0,
+      "open": 525.74,
       "day_high": 539.88,
       "day_low": 524.52,
       "prev_close": 585.61,
@@ -13072,16 +13069,16 @@
       "ema_slow": 608.84,
       "rsi": 32.1,
       "macd_hist": -10.8765,
-      "volume": 41822464,
-      "avg_volume": 18859693,
-      "volume_ratio": 2.22,
+      "volume": 42028145,
+      "avg_volume": 18869977,
+      "volume_ratio": 2.23,
       "momentum_5d": -11.07,
       "return_20d": -12.05,
       "return_60d": -11.61,
       "atr14": 24.36,
       "atr_pct": 4.52,
       "volatility20": 52.51,
-      "turnover": 22543563995.19,
+      "turnover": 22654432230.64,
       "high_20d": 686.08,
       "low_20d": 524.52,
       "high_120d": 690.88,
@@ -13157,7 +13154,7 @@
       "ticker": "ASML",
       "name": "ASML",
       "price": 1651.44,
-      "open": 1645.07,
+      "open": 1645.64,
       "day_high": 1676.69,
       "day_low": 1626.44,
       "prev_close": 1550.69,
@@ -13282,16 +13279,16 @@
       "ema_slow": 220.57,
       "rsi": 43.5,
       "macd_hist": -4.9364,
-      "volume": 6786806,
-      "avg_volume": 6187140,
-      "volume_ratio": 1.1,
+      "volume": 6892820,
+      "avg_volume": 6192441,
+      "volume_ratio": 1.11,
       "momentum_5d": -14.98,
       "return_20d": -22.39,
       "return_60d": 11.67,
       "atr14": 20.88,
       "atr_pct": 10.38,
       "volatility20": 105.19,
-      "turnover": 1364690962.91,
+      "turnover": 1386008258.22,
       "high_20d": 280.5,
       "low_20d": 177.0,
       "high_120d": 308.67,
@@ -13492,16 +13489,16 @@
       "ema_slow": 215.66,
       "rsi": 40.0,
       "macd_hist": -3.6943,
-      "volume": 27283511,
-      "avg_volume": 25201185,
-      "volume_ratio": 1.08,
+      "volume": 28995831,
+      "avg_volume": 25286801,
+      "volume_ratio": 1.15,
       "momentum_5d": -12.43,
       "return_20d": -32.61,
       "return_60d": 12.03,
       "atr14": 17.14,
       "atr_pct": 9.35,
       "volatility20": 95.37,
-      "turnover": 5001067649.56,
+      "turnover": 5314935910.79,
       "high_20d": 274.88,
       "low_20d": 162.9,
       "high_120d": 329.8,
@@ -13783,7 +13780,7 @@
       "ticker": "RKLB",
       "name": "RKLB",
       "price": 64.68,
-      "open": 60.93,
+      "open": 60.85,
       "day_high": 64.84,
       "day_low": 59.68,
       "prev_close": 58.6,
@@ -13804,16 +13801,16 @@
       "ema_slow": 85.54,
       "rsi": 37.4,
       "macd_hist": -0.0387,
-      "volume": 17020510,
-      "avg_volume": 19348385,
-      "volume_ratio": 0.88,
+      "volume": 17724622,
+      "avg_volume": 19383591,
+      "volume_ratio": 0.91,
       "momentum_5d": -7.59,
       "return_20d": -35.37,
       "return_60d": -19.46,
       "atr14": 5.72,
       "atr_pct": 8.85,
       "volatility20": 89.02,
-      "turnover": 1100886591.99,
+      "turnover": 1146428556.37,
       "high_20d": 106.99,
       "low_20d": 58.2,
       "high_120d": 151.0,
@@ -13888,7 +13885,7 @@
       "ticker": "ASTS",
       "name": "ASTS",
       "price": 58.44,
-      "open": 55.05,
+      "open": 55.0,
       "day_high": 58.51,
       "day_low": 54.4,
       "prev_close": 53.03,
@@ -13992,7 +13989,7 @@
       "ticker": "UPST",
       "name": "UPST",
       "price": 27.04,
-      "open": 26.52,
+      "open": 26.51,
       "day_high": 27.17,
       "day_low": 25.89,
       "prev_close": 26.6,
@@ -14117,16 +14114,16 @@
       "ema_slow": 897.09,
       "rsi": 35.1,
       "macd_hist": -12.5475,
-      "volume": 2680460,
-      "avg_volume": 2998038,
-      "volume_ratio": 0.89,
+      "volume": 3151057,
+      "avg_volume": 3021567,
+      "volume_ratio": 1.04,
       "momentum_5d": -9.55,
       "return_20d": -18.23,
       "return_60d": -7.33,
       "atr14": 40.68,
       "atr_pct": 5.03,
       "volatility20": 39.36,
-      "turnover": 2168867443.66,
+      "turnover": 2549646307.14,
       "high_20d": 999.43,
       "low_20d": 776.0,
       "high_120d": 1071.47,
@@ -14222,16 +14219,16 @@
       "ema_slow": 114.93,
       "rsi": 43.2,
       "macd_hist": -0.0383,
-      "volume": 2233766,
-      "avg_volume": 2128033,
-      "volume_ratio": 1.05,
+      "volume": 2268896,
+      "avg_volume": 2129789,
+      "volume_ratio": 1.07,
       "momentum_5d": 0.08,
       "return_20d": -8.87,
       "return_60d": -15.69,
       "atr14": 3.98,
       "atr_pct": 3.7,
       "volatility20": 37.99,
-      "turnover": 240085177.18,
+      "turnover": 243860949.7,
       "high_20d": 119.83,
       "low_20d": 102.62,
       "high_120d": 152.37,
@@ -14429,16 +14426,16 @@
       "ema_slow": 1137.66,
       "rsi": 46.9,
       "macd_hist": -3.4421,
-      "volume": 2475613,
-      "avg_volume": 2345095,
-      "volume_ratio": 1.06,
+      "volume": 3023808,
+      "avg_volume": 2372505,
+      "volume_ratio": 1.27,
       "momentum_5d": -2.61,
       "return_20d": -3.09,
       "return_60d": 19.53,
       "atr14": 35.11,
       "atr_pct": 3.04,
       "volatility20": 31.37,
-      "turnover": 2859258674.08,
+      "turnover": 3492407437.17,
       "high_20d": 1249.45,
       "low_20d": 1134.4,
       "high_120d": 1249.45,
@@ -14823,7 +14820,7 @@
       "ticker": "QCOM",
       "name": "QCOM",
       "price": 151.6,
-      "open": 146.55,
+      "open": 146.5,
       "day_high": 154.16,
       "day_low": 146.0,
       "prev_close": 155.68,
@@ -14929,7 +14926,7 @@
       "ticker": "TSLA",
       "name": "TSLA",
       "price": 308.85,
-      "open": 302.7,
+      "open": 302.89,
       "day_high": 310.87,
       "day_low": 301.35,
       "prev_close": 298.32,
@@ -15159,16 +15156,16 @@
       "ema_slow": 130.59,
       "rsi": 43.3,
       "macd_hist": -0.7046,
-      "volume": 25482779,
-      "avg_volume": 35525098,
-      "volume_ratio": 0.72,
+      "volume": 27558808,
+      "avg_volume": 35628900,
+      "volume_ratio": 0.77,
       "momentum_5d": -0.9,
       "return_20d": -2.76,
       "return_60d": -16.28,
       "atr14": 6.63,
       "atr_pct": 5.43,
       "volatility20": 48.26,
-      "turnover": 3115524614.98,
+      "turnover": 3369339924.95,
       "high_20d": 138.9,
       "low_20d": 117.89,
       "high_120d": 163.7,
