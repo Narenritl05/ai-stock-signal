@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-31 15:41 (เวลาไทย)",
+  "generated_at": "2026-07-31 18:25 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 494,
-    "open": 172,
-    "win_rate": 48.4,
-    "avg_return": 0.21,
-    "total_return": -16.1,
+    "closed": 495,
+    "open": 173,
+    "win_rate": 48.3,
+    "avg_return": 0.19,
+    "total_return": -23.0,
     "by_target": 130,
-    "by_stop": 206,
+    "by_stop": 207,
     "by_time": 158
   },
   "open_positions": [
@@ -183,23 +183,6 @@
       "return_pct": null
     },
     {
-      "ticker": "RS.BK",
-      "name": "RS",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-07-31",
-      "entry": 0.13,
-      "stop": 0.12,
-      "target": 0.14,
-      "status": "open",
-      "days": 0,
-      "last_date": "2026-07-31",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "AEONTS.BK",
       "name": "AEONTS",
       "signal": "BUY",
@@ -327,6 +310,40 @@
       "entry": 26.75,
       "stop": 24.88,
       "target": 29.43,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-31",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "BLA.BK",
+      "name": "BLA",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-07-31",
+      "entry": 26.0,
+      "stop": 25.25,
+      "target": 28.6,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-07-31",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "KTC.BK",
+      "name": "KTC",
+      "signal": "BUY",
+      "score": 61,
+      "entry_date": "2026-07-31",
+      "entry": 38.25,
+      "stop": 36.5,
+      "target": 42.08,
       "status": "open",
       "days": 0,
       "last_date": "2026-07-31",
@@ -3058,6 +3075,23 @@
       "return_pct": -6.72
     },
     {
+      "ticker": "RS.BK",
+      "name": "RS",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-07-31",
+      "entry": 0.13,
+      "stop": 0.12,
+      "target": 0.14,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-07-31",
+      "exit": 0.12,
+      "exit_date": "2026-07-31",
+      "reason": "stop",
+      "return_pct": -8.19
+    },
+    {
       "ticker": "JNJ",
       "name": "JNJ",
       "signal": "BUY",
@@ -3430,23 +3464,6 @@
       "exit_date": "2026-07-29",
       "reason": "time",
       "return_pct": -3.12
-    },
-    {
-      "ticker": "TRUE.BK",
-      "name": "TRUE",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-09",
-      "entry": 13.3,
-      "stop": 12.5,
-      "target": 14.63,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-07-29",
-      "exit": 13.9,
-      "exit_date": "2026-07-29",
-      "reason": "time",
-      "return_pct": 4.01
     }
   ]
 }
