@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-08-01 09:46 (เวลาไทย)",
+  "last_run": "2026-08-01 12:50 (เวลาไทย)",
   "signals": {
     "CPALL.BK": {
       "signal": "STRONG BUY",
@@ -561,6 +561,10 @@
       "signal": "STRONG BUY",
       "score": 76
     },
+    "AI": {
+      "signal": "STRONG BUY",
+      "score": 76
+    },
     "BABA": {
       "signal": "STRONG BUY",
       "score": 76
@@ -592,6 +596,10 @@
     "ELF": {
       "signal": "BUY",
       "score": 74
+    },
+    "SNOW": {
+      "signal": "BUY",
+      "score": 72
     },
     "MSFT": {
       "signal": "BUY",
@@ -641,10 +649,6 @@
       "signal": "BUY",
       "score": 68
     },
-    "AI": {
-      "signal": "BUY",
-      "score": 68
-    },
     "PDD": {
       "signal": "BUY",
       "score": 68
@@ -660,10 +664,6 @@
     "CVX": {
       "signal": "BUY",
       "score": 67
-    },
-    "SNOW": {
-      "signal": "BUY",
-      "score": 64
     },
     "AVGO": {
       "signal": "BUY",
@@ -769,6 +769,14 @@
       "signal": "WATCH",
       "score": 55
     },
+    "CLS": {
+      "signal": "WATCH",
+      "score": 52
+    },
+    "QBTS": {
+      "signal": "WATCH",
+      "score": 52
+    },
     "CELH": {
       "signal": "WATCH",
       "score": 52
@@ -820,10 +828,6 @@
     "RGTI": {
       "signal": "WATCH",
       "score": 46
-    },
-    "CLS": {
-      "signal": "AVOID",
-      "score": 44
     },
     "LMT": {
       "signal": "AVOID",
@@ -906,10 +910,6 @@
       "score": 26
     },
     "AMAT": {
-      "signal": "AVOID",
-      "score": 26
-    },
-    "QBTS": {
       "signal": "AVOID",
       "score": 26
     },
