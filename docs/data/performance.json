@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-03 15:36 (เวลาไทย)",
+  "generated_at": "2026-08-03 19:17 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 517,
-    "open": 173,
-    "win_rate": 47.8,
-    "avg_return": 0.13,
-    "total_return": -42.7,
-    "by_target": 133,
+    "closed": 518,
+    "open": 174,
+    "win_rate": 47.9,
+    "avg_return": 0.15,
+    "total_return": -37.3,
+    "by_target": 134,
     "by_stop": 217,
     "by_time": 167
   },
@@ -89,6 +89,40 @@
       "entry": 11.8,
       "stop": 11.6,
       "target": 12.98,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-03",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "CRC.BK",
+      "name": "CRC",
+      "signal": "BUY",
+      "score": 72,
+      "entry_date": "2026-08-03",
+      "entry": 26.5,
+      "stop": 24.64,
+      "target": 29.15,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-03",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "RS.BK",
+      "name": "RS",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-08-03",
+      "entry": 0.13,
+      "stop": 0.12,
+      "target": 0.14,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-03",
@@ -2767,23 +2801,6 @@
       "return_pct": null
     },
     {
-      "ticker": "AH.BK",
-      "name": "AH",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-07-15",
-      "entry": 14.8,
-      "stop": 13.76,
-      "target": 16.28,
-      "status": "open",
-      "days": 19,
-      "last_date": "2026-08-03",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "WFC",
       "name": "WFC",
       "signal": "BUY",
@@ -3056,6 +3073,23 @@
       "exit_date": "2026-08-03",
       "reason": "time",
       "return_pct": 0.35
+    },
+    {
+      "ticker": "AH.BK",
+      "name": "AH",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-07-15",
+      "entry": 14.8,
+      "stop": 13.76,
+      "target": 16.28,
+      "status": "closed",
+      "days": 19,
+      "last_date": "2026-08-03",
+      "exit": 16.28,
+      "exit_date": "2026-08-03",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "CENTEL.BK",
@@ -3447,23 +3481,6 @@
       "exit_date": "2026-07-31",
       "reason": "stop",
       "return_pct": -6.72
-    },
-    {
-      "ticker": "RS.BK",
-      "name": "RS",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-07-31",
-      "entry": 0.13,
-      "stop": 0.12,
-      "target": 0.14,
-      "status": "closed",
-      "days": 0,
-      "last_date": "2026-07-31",
-      "exit": 0.12,
-      "exit_date": "2026-07-31",
-      "reason": "stop",
-      "return_pct": -8.19
     }
   ]
 }
