@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-08-04 03:42 (เวลาไทย)",
+  "last_run": "2026-08-04 05:03 (เวลาไทย)",
   "signals": {
     "CPALL.BK": {
       "signal": "STRONG BUY",
@@ -601,6 +601,10 @@
       "signal": "BUY",
       "score": 72
     },
+    "TGT": {
+      "signal": "BUY",
+      "score": 72
+    },
     "URI": {
       "signal": "BUY",
       "score": 70
@@ -674,10 +678,6 @@
       "score": 68
     },
     "TOST": {
-      "signal": "BUY",
-      "score": 64
-    },
-    "TGT": {
       "signal": "BUY",
       "score": 64
     },
@@ -873,13 +873,13 @@
       "signal": "AVOID",
       "score": 40
     },
+    "PLTR": {
+      "signal": "AVOID",
+      "score": 39
+    },
     "ALAB": {
       "signal": "AVOID",
       "score": 38
-    },
-    "PLTR": {
-      "signal": "AVOID",
-      "score": 34
     },
     "OKLO": {
       "signal": "AVOID",
