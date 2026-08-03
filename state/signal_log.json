@@ -12001,6 +12001,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "ALAB",
+      "name": "ALAB",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-08-04",
+      "entry": 326.11,
+      "stop": 303.28,
+      "target": 358.72,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-04",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
