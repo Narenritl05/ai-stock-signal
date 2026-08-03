@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-03 08:07 (เวลาไทย)",
+  "generated_at": "2026-08-03 12:00 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 515,
-    "open": 170,
-    "win_rate": 47.6,
-    "avg_return": 0.1,
-    "total_return": -52.2,
-    "by_target": 131,
+    "closed": 516,
+    "open": 169,
+    "win_rate": 47.7,
+    "avg_return": 0.12,
+    "total_return": -47.7,
+    "by_target": 132,
     "by_stop": 217,
     "by_time": 167
   },
@@ -2750,23 +2750,6 @@
       "return_pct": null
     },
     {
-      "ticker": "CENTEL.BK",
-      "name": "CENTEL",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-15",
-      "entry": 36.5,
-      "stop": 35.0,
-      "target": 40.15,
-      "status": "open",
-      "days": 19,
-      "last_date": "2026-08-03",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "WHAUP.BK",
       "name": "WHAUP",
       "signal": "BUY",
@@ -3005,6 +2988,23 @@
       "exit_date": "2026-08-03",
       "reason": "time",
       "return_pct": 0.35
+    },
+    {
+      "ticker": "CENTEL.BK",
+      "name": "CENTEL",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-15",
+      "entry": 36.5,
+      "stop": 35.0,
+      "target": 40.15,
+      "status": "closed",
+      "days": 19,
+      "last_date": "2026-08-03",
+      "exit": 40.15,
+      "exit_date": "2026-08-03",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "ICHI.BK",
@@ -3396,23 +3396,6 @@
       "exit_date": "2026-07-30",
       "reason": "time",
       "return_pct": 2.25
-    },
-    {
-      "ticker": "ABBV",
-      "name": "ABBV",
-      "signal": "BUY",
-      "score": 62,
-      "entry_date": "2026-07-10",
-      "entry": 250.66,
-      "stop": 233.11,
-      "target": 275.73,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-07-30",
-      "exit": 266.26,
-      "exit_date": "2026-07-30",
-      "reason": "time",
-      "return_pct": 5.72
     }
   ]
 }

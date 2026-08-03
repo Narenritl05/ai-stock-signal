@@ -7387,13 +7387,13 @@
       "entry": 36.5,
       "stop": 35.0,
       "target": 40.15,
-      "status": "open",
+      "status": "closed",
       "days": 19,
       "last_date": "2026-08-03",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 40.15,
+      "exit_date": "2026-08-03",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "CRC.BK",
