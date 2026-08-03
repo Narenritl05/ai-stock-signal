@@ -12018,6 +12018,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "SNOW",
+      "name": "SNOW",
+      "signal": "BUY",
+      "score": 72,
+      "entry_date": "2026-08-04",
+      "entry": 307.53,
+      "stop": 286.0,
+      "target": 338.28,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-04",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "UPST",
+      "name": "UPST",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-08-04",
+      "entry": 29.43,
+      "stop": 27.37,
+      "target": 32.37,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-04",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
