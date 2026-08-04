@@ -12222,6 +12222,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IONQ",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-08-04",
+      "entry": 38.85,
+      "stop": 36.13,
+      "target": 42.73,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-04",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "RGTI",
+      "name": "RGTI",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-04",
+      "entry": 16.02,
+      "stop": 14.9,
+      "target": 17.62,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-04",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "QBTS",
+      "name": "QBTS",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-04",
+      "entry": 19.98,
+      "stop": 18.58,
+      "target": 21.98,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-04",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
