@@ -13089,6 +13089,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "QH.BK",
+      "name": "QH",
+      "signal": "BUY",
+      "score": 69,
+      "entry_date": "2026-08-06",
+      "entry": 1.44,
+      "stop": 1.37,
+      "target": 1.58,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-06",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "RS.BK",
+      "name": "RS",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-08-06",
+      "entry": 0.13,
+      "stop": 0.12,
+      "target": 0.14,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-06",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "BPP.BK",
+      "name": "BPP",
+      "signal": "BUY",
+      "score": 65,
+      "entry_date": "2026-08-06",
+      "entry": 15.1,
+      "stop": 14.04,
+      "target": 16.61,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-06",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
