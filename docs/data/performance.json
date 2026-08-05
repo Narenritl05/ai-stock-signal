@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-06 01:26 (เวลาไทย)",
+  "generated_at": "2026-08-06 03:06 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 584,
+    "closed": 585,
     "open": 185,
-    "win_rate": 49.8,
-    "avg_return": 0.31,
-    "total_return": 56.1,
+    "win_rate": 49.7,
+    "avg_return": 0.3,
+    "total_return": 44.4,
     "by_target": 150,
-    "by_stop": 230,
+    "by_stop": 231,
     "by_time": 204
   },
   "open_positions": [
@@ -72,6 +72,23 @@
       "entry": 26.0,
       "stop": 25.25,
       "target": 28.6,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-06",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "ALAB",
+      "name": "ALAB",
+      "signal": "BUY",
+      "score": 65,
+      "entry_date": "2026-08-06",
+      "entry": 318.43,
+      "stop": 296.14,
+      "target": 350.27,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-06",
@@ -769,23 +786,6 @@
       "entry": 210.65,
       "stop": 195.91,
       "target": 231.72,
-      "status": "open",
-      "days": 2,
-      "last_date": "2026-08-06",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "AMD",
-      "name": "AMD",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-08-04",
-      "entry": 520.54,
-      "stop": 484.1,
-      "target": 572.6,
       "status": "open",
       "days": 2,
       "last_date": "2026-08-06",
@@ -3364,6 +3364,23 @@
       "return_pct": 1.98
     },
     {
+      "ticker": "AMD",
+      "name": "AMD",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-08-04",
+      "entry": 520.54,
+      "stop": 484.1,
+      "target": 572.6,
+      "status": "closed",
+      "days": 2,
+      "last_date": "2026-08-06",
+      "exit": 484.1,
+      "exit_date": "2026-08-06",
+      "reason": "stop",
+      "return_pct": -7.5
+    },
+    {
       "ticker": "TLI.BK",
       "name": "TLI",
       "signal": "BUY",
@@ -3651,23 +3668,6 @@
       "exit_date": "2026-08-05",
       "reason": "target",
       "return_pct": 9.5
-    },
-    {
-      "ticker": "AI",
-      "name": "AI",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-07-28",
-      "entry": 9.08,
-      "stop": 8.44,
-      "target": 9.98,
-      "status": "closed",
-      "days": 8,
-      "last_date": "2026-08-05",
-      "exit": 9.98,
-      "exit_date": "2026-08-05",
-      "reason": "target",
-      "return_pct": 9.41
     }
   ]
 }
