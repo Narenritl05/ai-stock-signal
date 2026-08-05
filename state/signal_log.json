@@ -12851,6 +12851,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "RBF.BK",
+      "name": "RBF",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-05",
+      "entry": 5.1,
+      "stop": 4.9,
+      "target": 5.61,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-05",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "OSP.BK",
+      "name": "OSP",
+      "signal": "BUY",
+      "score": 61,
+      "entry_date": "2026-08-05",
+      "entry": 17.4,
+      "stop": 17.2,
+      "target": 19.14,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-05",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
