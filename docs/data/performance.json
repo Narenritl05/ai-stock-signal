@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-05 06:31 (เวลาไทย)",
+  "generated_at": "2026-08-05 09:00 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 564,
-    "open": 188,
-    "win_rate": 49.3,
-    "avg_return": 0.28,
-    "total_return": 25.5,
+    "closed": 565,
+    "open": 187,
+    "win_rate": 49.2,
+    "avg_return": 0.27,
+    "total_return": 16.1,
     "by_target": 146,
-    "by_stop": 226,
+    "by_stop": 227,
     "by_time": 192
   },
   "open_positions": [
@@ -480,23 +480,6 @@
       "entry": 16.02,
       "stop": 14.9,
       "target": 17.62,
-      "status": "open",
-      "days": 1,
-      "last_date": "2026-08-05",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "QBTS",
-      "name": "QBTS",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-04",
-      "entry": 19.98,
-      "stop": 18.58,
-      "target": 21.98,
       "status": "open",
       "days": 1,
       "last_date": "2026-08-05",
@@ -3500,6 +3483,23 @@
       "return_pct": 9.5
     },
     {
+      "ticker": "QBTS",
+      "name": "QBTS",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-04",
+      "entry": 19.98,
+      "stop": 18.58,
+      "target": 21.98,
+      "status": "closed",
+      "days": 1,
+      "last_date": "2026-08-05",
+      "exit": 18.58,
+      "exit_date": "2026-08-05",
+      "reason": "stop",
+      "return_pct": -7.51
+    },
+    {
       "ticker": "RS.BK",
       "name": "RS",
       "signal": "BUY",
@@ -3702,23 +3702,6 @@
       "exit_date": "2026-08-04",
       "reason": "time",
       "return_pct": 5.99
-    },
-    {
-      "ticker": "TU.BK",
-      "name": "TU",
-      "signal": "BUY",
-      "score": 70,
-      "entry_date": "2026-07-16",
-      "entry": 11.9,
-      "stop": 11.3,
-      "target": 13.09,
-      "status": "closed",
-      "days": 19,
-      "last_date": "2026-08-04",
-      "exit": 13.09,
-      "exit_date": "2026-08-04",
-      "reason": "target",
-      "return_pct": 9.5
     }
   ]
 }

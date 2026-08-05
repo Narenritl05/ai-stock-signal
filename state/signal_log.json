@@ -12266,13 +12266,13 @@
       "entry": 19.98,
       "stop": 18.58,
       "target": 21.98,
-      "status": "open",
+      "status": "closed",
       "days": 1,
       "last_date": "2026-08-05",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 18.58,
+      "exit_date": "2026-08-05",
+      "reason": "stop",
+      "return_pct": -7.51
     },
     {
       "ticker": "CRDO",
