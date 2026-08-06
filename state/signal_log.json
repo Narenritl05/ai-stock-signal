@@ -13191,6 +13191,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "ICHI.BK",
+      "name": "ICHI",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-06",
+      "entry": 15.0,
+      "stop": 14.3,
+      "target": 16.5,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-06",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
