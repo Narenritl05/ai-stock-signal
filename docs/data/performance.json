@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-06 15:25 (เวลาไทย)",
+  "generated_at": "2026-08-06 17:59 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 588,
-    "open": 189,
-    "win_rate": 49.7,
-    "avg_return": 0.29,
-    "total_return": 34.3,
+    "closed": 589,
+    "open": 188,
+    "win_rate": 49.6,
+    "avg_return": 0.28,
+    "total_return": 29.7,
     "by_target": 151,
-    "by_stop": 233,
+    "by_stop": 234,
     "by_time": 204
   },
   "open_positions": [
@@ -55,23 +55,6 @@
       "entry": 3.64,
       "stop": 3.39,
       "target": 4.0,
-      "status": "open",
-      "days": 0,
-      "last_date": "2026-08-06",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "BLA.BK",
-      "name": "BLA",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-06",
-      "entry": 26.0,
-      "stop": 25.25,
-      "target": 28.6,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-06",
@@ -3483,6 +3466,23 @@
       "return_pct": -7.51
     },
     {
+      "ticker": "BLA.BK",
+      "name": "BLA",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-06",
+      "entry": 26.0,
+      "stop": 25.25,
+      "target": 28.6,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-08-06",
+      "exit": 25.25,
+      "exit_date": "2026-08-06",
+      "reason": "stop",
+      "return_pct": -3.38
+    },
+    {
       "ticker": "RS.BK",
       "name": "RS",
       "signal": "BUY",
@@ -3719,23 +3719,6 @@
       "exit_date": "2026-08-05",
       "reason": "time",
       "return_pct": 1.61
-    },
-    {
-      "ticker": "UNH",
-      "name": "UNH",
-      "signal": "BUY",
-      "score": 71,
-      "entry_date": "2026-07-16",
-      "entry": 436.43,
-      "stop": 405.88,
-      "target": 480.08,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-08-05",
-      "exit": 411.02,
-      "exit_date": "2026-08-05",
-      "reason": "time",
-      "return_pct": -6.32
     }
   ]
 }
