@@ -12793,13 +12793,13 @@
       "entry": 21.83,
       "stop": 20.3,
       "target": 24.01,
-      "status": "open",
+      "status": "closed",
       "days": 1,
       "last_date": "2026-08-06",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 20.3,
+      "exit_date": "2026-08-06",
+      "reason": "stop",
+      "return_pct": -7.51
     },
     {
       "ticker": "LRCX",
