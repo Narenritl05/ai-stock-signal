@@ -13412,6 +13412,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "EA.BK",
+      "name": "EA",
+      "signal": "STRONG BUY",
+      "score": 81,
+      "entry_date": "2026-08-07",
+      "entry": 3.08,
+      "stop": 2.88,
+      "target": 3.39,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-07",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "CK.BK",
+      "name": "CK",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-07",
+      "entry": 18.6,
+      "stop": 18.0,
+      "target": 20.46,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-07",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "FORTH.BK",
+      "name": "FORTH",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-08-07",
+      "entry": 17.0,
+      "stop": 15.81,
+      "target": 18.7,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-07",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
