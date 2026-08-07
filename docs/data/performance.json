@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-07 21:08 (เวลาไทย)",
+  "generated_at": "2026-08-07 22:22 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 606,
+    "closed": 607,
     "open": 190,
-    "win_rate": 49.2,
-    "avg_return": 0.26,
-    "total_return": 12.5,
-    "by_target": 157,
+    "win_rate": 49.3,
+    "avg_return": 0.27,
+    "total_return": 23.2,
+    "by_target": 158,
     "by_stop": 243,
     "by_time": 206
   },
@@ -208,6 +208,23 @@
       "entry": 570.22,
       "stop": 530.3,
       "target": 627.24,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-07",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "TXN",
+      "name": "TXN",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-07",
+      "entry": 284.62,
+      "stop": 269.04,
+      "target": 313.08,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-07",
@@ -1849,23 +1866,6 @@
       "return_pct": null
     },
     {
-      "ticker": "AVGO",
-      "name": "AVGO",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-31",
-      "entry": 386.04,
-      "stop": 370.32,
-      "target": 424.64,
-      "status": "open",
-      "days": 7,
-      "last_date": "2026-08-07",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "BIDU",
       "name": "BIDU",
       "signal": "BUY",
@@ -3381,6 +3381,23 @@
       "return_pct": 9.5
     },
     {
+      "ticker": "AVGO",
+      "name": "AVGO",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-31",
+      "entry": 386.04,
+      "stop": 370.32,
+      "target": 424.64,
+      "status": "closed",
+      "days": 7,
+      "last_date": "2026-08-07",
+      "exit": 424.64,
+      "exit_date": "2026-08-07",
+      "reason": "target",
+      "return_pct": 9.5
+    },
+    {
       "ticker": "PANW",
       "name": "PANW",
       "signal": "BUY",
@@ -3736,23 +3753,6 @@
       "exit_date": "2026-08-06",
       "reason": "stop",
       "return_pct": -7.47
-    },
-    {
-      "ticker": "AMD",
-      "name": "AMD",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-08-04",
-      "entry": 520.54,
-      "stop": 484.1,
-      "target": 572.6,
-      "status": "closed",
-      "days": 2,
-      "last_date": "2026-08-06",
-      "exit": 484.1,
-      "exit_date": "2026-08-06",
-      "reason": "stop",
-      "return_pct": -7.5
     }
   ]
 }
