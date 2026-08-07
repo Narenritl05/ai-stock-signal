@@ -13616,6 +13616,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "DKNG",
+      "name": "DKNG",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-08-08",
+      "entry": 24.03,
+      "stop": 22.35,
+      "target": 26.43,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-08",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
