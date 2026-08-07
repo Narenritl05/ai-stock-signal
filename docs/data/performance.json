@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-07 15:33 (เวลาไทย)",
+  "generated_at": "2026-08-07 16:56 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 598,
+    "closed": 599,
     "open": 194,
-    "win_rate": 48.8,
-    "avg_return": 0.19,
-    "total_return": -23.1,
+    "win_rate": 48.7,
+    "avg_return": 0.18,
+    "total_return": -29.4,
     "by_target": 151,
-    "by_stop": 241,
+    "by_stop": 242,
     "by_time": 206
   },
   "open_positions": [
@@ -81,23 +81,6 @@
       "return_pct": null
     },
     {
-      "ticker": "RS.BK",
-      "name": "RS",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-08-07",
-      "entry": 0.13,
-      "stop": 0.12,
-      "target": 0.14,
-      "status": "open",
-      "days": 0,
-      "last_date": "2026-08-07",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "BANPU.BK",
       "name": "BANPU",
       "signal": "BUY",
@@ -157,6 +140,23 @@
       "entry": 17.0,
       "stop": 15.81,
       "target": 18.7,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-07",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "CHAYO.BK",
+      "name": "CHAYO",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-07",
+      "entry": 1.41,
+      "stop": 1.36,
+      "target": 1.55,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-07",
@@ -3381,6 +3381,23 @@
       "return_pct": -7.51
     },
     {
+      "ticker": "RS.BK",
+      "name": "RS",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-08-07",
+      "entry": 0.13,
+      "stop": 0.12,
+      "target": 0.14,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-08-07",
+      "exit": 0.12,
+      "exit_date": "2026-08-07",
+      "reason": "stop",
+      "return_pct": -8.19
+    },
+    {
       "ticker": "COST",
       "name": "COST",
       "signal": "BUY",
@@ -3804,23 +3821,6 @@
       "exit_date": "2026-08-05",
       "reason": "time",
       "return_pct": 0.73
-    },
-    {
-      "ticker": "ORI.BK",
-      "name": "ORI",
-      "signal": "STRONG BUY",
-      "score": 77,
-      "entry_date": "2026-07-16",
-      "entry": 1.98,
-      "stop": 1.84,
-      "target": 2.18,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-08-05",
-      "exit": 2.08,
-      "exit_date": "2026-08-05",
-      "reason": "time",
-      "return_pct": 4.55
     }
   ]
 }
