@@ -12232,13 +12232,13 @@
       "entry": 38.85,
       "stop": 36.13,
       "target": 42.73,
-      "status": "open",
+      "status": "closed",
       "days": 3,
       "last_date": "2026-08-07",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 42.73,
+      "exit_date": "2026-08-07",
+      "reason": "target",
+      "return_pct": 9.49
     },
     {
       "ticker": "RGTI",
@@ -12436,13 +12436,13 @@
       "entry": 74.27,
       "stop": 69.07,
       "target": 81.7,
-      "status": "open",
+      "status": "closed",
       "days": 3,
       "last_date": "2026-08-07",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 81.7,
+      "exit_date": "2026-08-07",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "ASTS",
