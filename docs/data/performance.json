@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-08 06:56 (เวลาไทย)",
+  "generated_at": "2026-08-08 08:26 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 611,
-    "open": 192,
-    "win_rate": 49.4,
-    "avg_return": 0.31,
-    "total_return": 50.4,
+    "closed": 612,
+    "open": 191,
+    "win_rate": 49.3,
+    "avg_return": 0.29,
+    "total_return": 39.1,
     "by_target": 161,
-    "by_stop": 244,
+    "by_stop": 245,
     "by_time": 206
   },
   "open_positions": [
@@ -157,23 +157,6 @@
       "entry": 1.5,
       "stop": 1.4,
       "target": 1.65,
-      "status": "open",
-      "days": 1,
-      "last_date": "2026-08-08",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "QBTS",
-      "name": "QBTS",
-      "signal": "BUY",
-      "score": 60,
-      "entry_date": "2026-08-07",
-      "entry": 19.41,
-      "stop": 18.05,
-      "target": 21.35,
       "status": "open",
       "days": 1,
       "last_date": "2026-08-08",
@@ -3296,6 +3279,23 @@
       "return_pct": 9.49
     },
     {
+      "ticker": "QBTS",
+      "name": "QBTS",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-08-07",
+      "entry": 19.41,
+      "stop": 18.05,
+      "target": 21.35,
+      "status": "closed",
+      "days": 1,
+      "last_date": "2026-08-08",
+      "exit": 18.05,
+      "exit_date": "2026-08-08",
+      "reason": "stop",
+      "return_pct": -7.51
+    },
+    {
       "ticker": "EA.BK",
       "name": "EA",
       "signal": "STRONG BUY",
@@ -3770,23 +3770,6 @@
       "exit_date": "2026-08-06",
       "reason": "time",
       "return_pct": 1.98
-    },
-    {
-      "ticker": "KTB.BK",
-      "name": "KTB",
-      "signal": "BUY",
-      "score": 62,
-      "entry_date": "2026-07-22",
-      "entry": 41.0,
-      "stop": 38.13,
-      "target": 45.1,
-      "status": "closed",
-      "days": 15,
-      "last_date": "2026-08-06",
-      "exit": 45.1,
-      "exit_date": "2026-08-06",
-      "reason": "target",
-      "return_pct": 9.5
     }
   ]
 }

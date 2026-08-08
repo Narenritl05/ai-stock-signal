@@ -13371,13 +13371,13 @@
       "entry": 19.41,
       "stop": 18.05,
       "target": 21.35,
-      "status": "open",
+      "status": "closed",
       "days": 1,
       "last_date": "2026-08-08",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 18.05,
+      "exit_date": "2026-08-08",
+      "reason": "stop",
+      "return_pct": -7.51
     },
     {
       "ticker": "RS.BK",
