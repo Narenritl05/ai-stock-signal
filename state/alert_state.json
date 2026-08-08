@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-08-08 10:08 (เวลาไทย)",
+  "last_run": "2026-08-08 11:33 (เวลาไทย)",
   "signals": {
     "NER.BK": {
       "signal": "STRONG BUY",
@@ -597,6 +597,10 @@
       "signal": "STRONG BUY",
       "score": 77
     },
+    "IONQ": {
+      "signal": "STRONG BUY",
+      "score": 76
+    },
     "RGTI": {
       "signal": "STRONG BUY",
       "score": 76
@@ -665,7 +669,7 @@
       "signal": "BUY",
       "score": 68
     },
-    "IONQ": {
+    "QBTS": {
       "signal": "BUY",
       "score": 68
     },
@@ -729,6 +733,10 @@
       "signal": "BUY",
       "score": 63
     },
+    "ONON": {
+      "signal": "BUY",
+      "score": 63
+    },
     "OKTA": {
       "signal": "BUY",
       "score": 63
@@ -761,6 +769,10 @@
       "signal": "BUY",
       "score": 62
     },
+    "ELF": {
+      "signal": "BUY",
+      "score": 60
+    },
     "TMO": {
       "signal": "WATCH",
       "score": 59
@@ -786,10 +798,6 @@
       "score": 56
     },
     "NFLX": {
-      "signal": "WATCH",
-      "score": 55
-    },
-    "ONON": {
       "signal": "WATCH",
       "score": 55
     },
@@ -822,10 +830,6 @@
       "score": 52
     },
     "VRT": {
-      "signal": "WATCH",
-      "score": 52
-    },
-    "ELF": {
       "signal": "WATCH",
       "score": 52
     },
@@ -994,10 +998,6 @@
       "score": 26
     },
     "HUBS": {
-      "signal": "AVOID",
-      "score": 26
-    },
-    "QBTS": {
       "signal": "AVOID",
       "score": 26
     },

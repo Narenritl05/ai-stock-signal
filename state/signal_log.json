@@ -13650,6 +13650,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "QBTS",
+      "name": "QBTS",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-08-08",
+      "entry": 20.76,
+      "stop": 19.31,
+      "target": 22.84,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-08",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "ELF",
+      "name": "ELF",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-08-08",
+      "entry": 98.49,
+      "stop": 91.6,
+      "target": 108.34,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-08",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
