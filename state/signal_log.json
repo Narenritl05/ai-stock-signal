@@ -13752,6 +13752,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "PLTR",
+      "name": "PLTR",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-08-10",
+      "entry": 177.12,
+      "stop": 164.72,
+      "target": 194.83,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-10",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
