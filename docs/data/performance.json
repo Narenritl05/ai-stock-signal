@@ -1,17 +1,34 @@
 {
-  "generated_at": "2026-08-10 08:47 (เวลาไทย)",
+  "generated_at": "2026-08-10 10:48 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 632,
+    "closed": 633,
     "open": 173,
-    "win_rate": 49.8,
-    "avg_return": 0.33,
-    "total_return": 80.0,
-    "by_target": 161,
+    "win_rate": 49.9,
+    "avg_return": 0.34,
+    "total_return": 97.0,
+    "by_target": 162,
     "by_stop": 245,
     "by_time": 226
   },
   "open_positions": [
+    {
+      "ticker": "ILM.BK",
+      "name": "ILM",
+      "signal": "BUY",
+      "score": 69,
+      "entry_date": "2026-08-10",
+      "entry": 13.4,
+      "stop": 13.0,
+      "target": 14.74,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-10",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
     {
       "ticker": "BDMS.BK",
       "name": "BDMS",
@@ -2903,23 +2920,6 @@
       "return_pct": null
     },
     {
-      "ticker": "PSL.BK",
-      "name": "PSL",
-      "signal": "BUY",
-      "score": 60,
-      "entry_date": "2026-07-22",
-      "entry": 8.45,
-      "stop": 7.86,
-      "target": 9.29,
-      "status": "open",
-      "days": 19,
-      "last_date": "2026-08-10",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "MEGA.BK",
       "name": "MEGA",
       "signal": "STRONG BUY",
@@ -3194,6 +3194,23 @@
       "return_pct": 6.65
     },
     {
+      "ticker": "PSL.BK",
+      "name": "PSL",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-07-22",
+      "entry": 8.45,
+      "stop": 7.86,
+      "target": 9.29,
+      "status": "closed",
+      "days": 19,
+      "last_date": "2026-08-10",
+      "exit": 9.29,
+      "exit_date": "2026-08-10",
+      "reason": "target",
+      "return_pct": 9.44
+    },
+    {
       "ticker": "AMATA.BK",
       "name": "AMATA",
       "signal": "STRONG BUY",
@@ -3447,23 +3464,6 @@
       "exit_date": "2026-08-07",
       "reason": "target",
       "return_pct": 9.5
-    },
-    {
-      "ticker": "STX",
-      "name": "STX",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-07-31",
-      "entry": 851.68,
-      "stop": 792.06,
-      "target": 936.85,
-      "status": "closed",
-      "days": 7,
-      "last_date": "2026-08-07",
-      "exit": 792.06,
-      "exit_date": "2026-08-07",
-      "reason": "stop",
-      "return_pct": -7.5
     }
   ]
 }
