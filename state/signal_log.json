@@ -13735,6 +13735,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "ADBE",
+      "name": "ADBE",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-08-10",
+      "entry": 270.2,
+      "stop": 251.29,
+      "target": 297.22,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-10",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
