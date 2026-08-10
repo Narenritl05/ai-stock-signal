@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-10 10:48 (เวลาไทย)",
+  "generated_at": "2026-08-10 12:20 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 633,
-    "open": 173,
-    "win_rate": 49.9,
-    "avg_return": 0.34,
-    "total_return": 97.0,
-    "by_target": 162,
+    "closed": 634,
+    "open": 172,
+    "win_rate": 50.0,
+    "avg_return": 0.36,
+    "total_return": 116.0,
+    "by_target": 163,
     "by_stop": 245,
     "by_time": 226
   },
@@ -2818,23 +2818,6 @@
       "return_pct": null
     },
     {
-      "ticker": "TTA.BK",
-      "name": "TTA",
-      "signal": "BUY",
-      "score": 69,
-      "entry_date": "2026-07-23",
-      "entry": 5.15,
-      "stop": 4.79,
-      "target": 5.67,
-      "status": "open",
-      "days": 18,
-      "last_date": "2026-08-10",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "PTTEP.BK",
       "name": "PTTEP",
       "signal": "BUY",
@@ -3211,6 +3194,23 @@
       "return_pct": 9.44
     },
     {
+      "ticker": "TTA.BK",
+      "name": "TTA",
+      "signal": "BUY",
+      "score": 69,
+      "entry_date": "2026-07-23",
+      "entry": 5.15,
+      "stop": 4.79,
+      "target": 5.67,
+      "status": "closed",
+      "days": 18,
+      "last_date": "2026-08-10",
+      "exit": 5.67,
+      "exit_date": "2026-08-10",
+      "reason": "target",
+      "return_pct": 9.6
+    },
+    {
       "ticker": "AMATA.BK",
       "name": "AMATA",
       "signal": "STRONG BUY",
@@ -3444,23 +3444,6 @@
       "days": 10,
       "last_date": "2026-08-07",
       "exit": 120.44,
-      "exit_date": "2026-08-07",
-      "reason": "target",
-      "return_pct": 9.5
-    },
-    {
-      "ticker": "MSFT",
-      "name": "MSFT",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-30",
-      "entry": 455.57,
-      "stop": 423.68,
-      "target": 501.13,
-      "status": "closed",
-      "days": 8,
-      "last_date": "2026-08-07",
-      "exit": 501.13,
       "exit_date": "2026-08-07",
       "reason": "target",
       "return_pct": 9.5
