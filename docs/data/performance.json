@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-11 11:15 (เวลาไทย)",
+  "generated_at": "2026-08-11 12:34 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 648,
+    "closed": 649,
     "open": 173,
-    "win_rate": 50.2,
-    "avg_return": 0.38,
-    "total_return": 148.7,
+    "win_rate": 50.1,
+    "avg_return": 0.36,
+    "total_return": 131.9,
     "by_target": 168,
-    "by_stop": 250,
+    "by_stop": 251,
     "by_time": 230
   },
   "open_positions": [
@@ -191,6 +191,23 @@
       "entry": 133.5,
       "stop": 124.5,
       "target": 146.85,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-11",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "TTA.BK",
+      "name": "TTA",
+      "signal": "BUY",
+      "score": 72,
+      "entry_date": "2026-08-11",
+      "entry": 5.8,
+      "stop": 5.39,
+      "target": 6.38,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-11",
@@ -1900,23 +1917,6 @@
       "return_pct": null
     },
     {
-      "ticker": "ONEE.BK",
-      "name": "ONEE",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-31",
-      "entry": 3.2,
-      "stop": 3.0,
-      "target": 3.52,
-      "status": "open",
-      "days": 11,
-      "last_date": "2026-08-11",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "TOA.BK",
       "name": "TOA",
       "signal": "BUY",
@@ -3058,6 +3058,23 @@
       "return_pct": 9.49
     },
     {
+      "ticker": "ONEE.BK",
+      "name": "ONEE",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-31",
+      "entry": 3.2,
+      "stop": 3.0,
+      "target": 3.52,
+      "status": "closed",
+      "days": 11,
+      "last_date": "2026-08-11",
+      "exit": 3.0,
+      "exit_date": "2026-08-11",
+      "reason": "stop",
+      "return_pct": -6.75
+    },
+    {
       "ticker": "ORCL",
       "name": "ORCL",
       "signal": "BUY",
@@ -3447,23 +3464,6 @@
       "exit_date": "2026-08-10",
       "reason": "stop",
       "return_pct": -7.49
-    },
-    {
-      "ticker": "RS.BK",
-      "name": "RS",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-08-10",
-      "entry": 0.13,
-      "stop": 0.12,
-      "target": 0.14,
-      "status": "closed",
-      "days": 0,
-      "last_date": "2026-08-10",
-      "exit": 0.12,
-      "exit_date": "2026-08-10",
-      "reason": "stop",
-      "return_pct": -8.19
     }
   ]
 }
