@@ -13915,13 +13915,13 @@
       "entry": 0.13,
       "stop": 0.12,
       "target": 0.14,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-08-11",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 0.12,
+      "exit_date": "2026-08-11",
+      "reason": "stop",
+      "return_pct": -8.19
     },
     {
       "ticker": "IRPC.BK",

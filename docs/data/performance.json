@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-11 13:56 (เวลาไทย)",
+  "generated_at": "2026-08-11 15:08 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 649,
-    "open": 173,
-    "win_rate": 50.1,
-    "avg_return": 0.36,
-    "total_return": 131.9,
+    "closed": 650,
+    "open": 172,
+    "win_rate": 50.0,
+    "avg_return": 0.35,
+    "total_return": 112.9,
     "by_target": 168,
-    "by_stop": 251,
+    "by_stop": 252,
     "by_time": 230
   },
   "open_positions": [
@@ -140,23 +140,6 @@
       "entry": 137.19,
       "stop": 127.59,
       "target": 150.91,
-      "status": "open",
-      "days": 0,
-      "last_date": "2026-08-11",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "RS.BK",
-      "name": "RS",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-08-11",
-      "entry": 0.13,
-      "stop": 0.12,
-      "target": 0.14,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-11",
@@ -3160,6 +3143,23 @@
       "return_pct": -7.48
     },
     {
+      "ticker": "RS.BK",
+      "name": "RS",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-08-11",
+      "entry": 0.13,
+      "stop": 0.12,
+      "target": 0.14,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-08-11",
+      "exit": 0.12,
+      "exit_date": "2026-08-11",
+      "reason": "stop",
+      "return_pct": -8.19
+    },
+    {
       "ticker": "ILM.BK",
       "name": "ILM",
       "signal": "BUY",
@@ -3447,23 +3447,6 @@
       "exit_date": "2026-08-10",
       "reason": "target",
       "return_pct": 9.5
-    },
-    {
-      "ticker": "RIOT",
-      "name": "RIOT",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-04",
-      "entry": 21.9,
-      "stop": 20.37,
-      "target": 24.09,
-      "status": "closed",
-      "days": 6,
-      "last_date": "2026-08-10",
-      "exit": 20.37,
-      "exit_date": "2026-08-10",
-      "reason": "stop",
-      "return_pct": -7.49
     }
   ]
 }
