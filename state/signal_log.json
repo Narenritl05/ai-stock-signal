@@ -14449,6 +14449,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "ZS",
+      "name": "ZS",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-08-13",
+      "entry": 176.8,
+      "stop": 164.42,
+      "target": 194.48,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-13",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "LMT",
+      "name": "LMT",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-08-13",
+      "entry": 606.94,
+      "stop": 564.45,
+      "target": 667.63,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-13",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
