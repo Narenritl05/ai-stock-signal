@@ -14296,6 +14296,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "ONON",
+      "name": "ONON",
+      "signal": "STRONG BUY",
+      "score": 90,
+      "entry_date": "2026-08-12",
+      "entry": 38.78,
+      "stop": 36.07,
+      "target": 42.66,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-12",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "MDB",
+      "name": "MDB",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-08-12",
+      "entry": 416.67,
+      "stop": 387.5,
+      "target": 458.34,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-12",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
