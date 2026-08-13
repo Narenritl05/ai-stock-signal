@@ -11450,13 +11450,13 @@
       "entry": 372.37,
       "stop": 346.3,
       "target": 409.61,
-      "status": "open",
+      "status": "closed",
       "days": 13,
       "last_date": "2026-08-13",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 409.61,
+      "exit_date": "2026-08-13",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "AVGO",
@@ -14051,13 +14051,13 @@
       "entry": 31.85,
       "stop": 29.63,
       "target": 35.04,
-      "status": "open",
+      "status": "closed",
       "days": 2,
       "last_date": "2026-08-13",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 29.63,
+      "exit_date": "2026-08-13",
+      "reason": "stop",
+      "return_pct": -7.47
     },
     {
       "ticker": "NOW",
@@ -14323,13 +14323,13 @@
       "entry": 416.67,
       "stop": 387.5,
       "target": 458.34,
-      "status": "open",
+      "status": "closed",
       "days": 1,
       "last_date": "2026-08-13",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 458.34,
+      "exit_date": "2026-08-13",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "ETN",
