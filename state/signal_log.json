@@ -14857,6 +14857,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "MDB",
+      "name": "MDB",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-08-14",
+      "entry": 472.29,
+      "stop": 439.23,
+      "target": 519.52,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-14",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
