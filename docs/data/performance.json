@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-13 15:48 (เวลาไทย)",
+  "generated_at": "2026-08-13 16:58 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 685,
-    "open": 175,
-    "win_rate": 49.5,
-    "avg_return": 0.33,
-    "total_return": 101.3,
-    "by_target": 176,
-    "by_stop": 266,
+    "closed": 688,
+    "open": 173,
+    "win_rate": 49.6,
+    "avg_return": 0.35,
+    "total_return": 123.4,
+    "by_target": 178,
+    "by_stop": 267,
     "by_time": 243
   },
   "open_positions": [
@@ -183,6 +183,23 @@
       "return_pct": null
     },
     {
+      "ticker": "MEGA.BK",
+      "name": "MEGA",
+      "signal": "STRONG BUY",
+      "score": 77,
+      "entry_date": "2026-08-13",
+      "entry": 39.0,
+      "stop": 37.25,
+      "target": 42.9,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-13",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
       "ticker": "XOM",
       "name": "XOM",
       "signal": "STRONG BUY",
@@ -259,23 +276,6 @@
       "entry": 43.62,
       "stop": 40.57,
       "target": 47.98,
-      "status": "open",
-      "days": 1,
-      "last_date": "2026-08-13",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "TASCO.BK",
-      "name": "TASCO",
-      "signal": "BUY",
-      "score": 62,
-      "entry_date": "2026-08-12",
-      "entry": 14.7,
-      "stop": 13.8,
-      "target": 16.17,
       "status": "open",
       "days": 1,
       "last_date": "2026-08-13",
@@ -1424,23 +1424,6 @@
       "return_pct": null
     },
     {
-      "ticker": "GGC.BK",
-      "name": "GGC",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-05",
-      "entry": 4.06,
-      "stop": 3.84,
-      "target": 4.47,
-      "status": "open",
-      "days": 8,
-      "last_date": "2026-08-13",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "ORI.BK",
       "name": "ORI",
       "signal": "BUY",
@@ -2512,23 +2495,6 @@
       "return_pct": null
     },
     {
-      "ticker": "SINGER.BK",
-      "name": "SINGER",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-30",
-      "entry": 12.1,
-      "stop": 11.25,
-      "target": 13.31,
-      "status": "open",
-      "days": 14,
-      "last_date": "2026-08-13",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "TISCO.BK",
       "name": "TISCO",
       "signal": "BUY",
@@ -3092,6 +3058,23 @@
       "return_pct": 1.89
     },
     {
+      "ticker": "SINGER.BK",
+      "name": "SINGER",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-07-30",
+      "entry": 12.1,
+      "stop": 11.25,
+      "target": 13.31,
+      "status": "closed",
+      "days": 14,
+      "last_date": "2026-08-13",
+      "exit": 11.25,
+      "exit_date": "2026-08-13",
+      "reason": "stop",
+      "return_pct": -7.52
+    },
+    {
       "ticker": "KCE.BK",
       "name": "KCE",
       "signal": "BUY",
@@ -3107,6 +3090,23 @@
       "exit_date": "2026-08-13",
       "reason": "target",
       "return_pct": 9.5
+    },
+    {
+      "ticker": "GGC.BK",
+      "name": "GGC",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-05",
+      "entry": 4.06,
+      "stop": 3.84,
+      "target": 4.47,
+      "status": "closed",
+      "days": 8,
+      "last_date": "2026-08-13",
+      "exit": 4.47,
+      "exit_date": "2026-08-13",
+      "reason": "target",
+      "return_pct": 9.6
     },
     {
       "ticker": "CENTEL.BK",
@@ -3158,6 +3158,23 @@
       "exit_date": "2026-08-13",
       "reason": "stop",
       "return_pct": -7.5
+    },
+    {
+      "ticker": "TASCO.BK",
+      "name": "TASCO",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-08-12",
+      "entry": 14.7,
+      "stop": 13.8,
+      "target": 16.17,
+      "status": "closed",
+      "days": 1,
+      "last_date": "2026-08-13",
+      "exit": 16.17,
+      "exit_date": "2026-08-13",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "AU.BK",
@@ -3447,57 +3464,6 @@
       "exit_date": "2026-08-11",
       "reason": "time",
       "return_pct": 2.11
-    },
-    {
-      "ticker": "RATCH.BK",
-      "name": "RATCH",
-      "signal": "BUY",
-      "score": 60,
-      "entry_date": "2026-07-22",
-      "entry": 39.5,
-      "stop": 36.73,
-      "target": 43.45,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-08-11",
-      "exit": 39.25,
-      "exit_date": "2026-08-11",
-      "reason": "time",
-      "return_pct": -1.13
-    },
-    {
-      "ticker": "HUMAN.BK",
-      "name": "HUMAN",
-      "signal": "BUY",
-      "score": 61,
-      "entry_date": "2026-07-23",
-      "entry": 4.82,
-      "stop": 4.56,
-      "target": 5.3,
-      "status": "closed",
-      "days": 19,
-      "last_date": "2026-08-11",
-      "exit": 4.56,
-      "exit_date": "2026-08-11",
-      "reason": "stop",
-      "return_pct": -5.89
-    },
-    {
-      "ticker": "SLB",
-      "name": "SLB",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-23",
-      "entry": 48.23,
-      "stop": 45.09,
-      "target": 53.05,
-      "status": "closed",
-      "days": 19,
-      "last_date": "2026-08-11",
-      "exit": 53.05,
-      "exit_date": "2026-08-11",
-      "reason": "target",
-      "return_pct": 9.49
     }
   ]
 }
