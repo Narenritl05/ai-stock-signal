@@ -14483,6 +14483,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "TGT",
+      "name": "TGT",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-08-13",
+      "entry": 154.0,
+      "stop": 143.22,
+      "target": 169.4,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-13",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
