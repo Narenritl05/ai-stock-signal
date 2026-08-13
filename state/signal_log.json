@@ -14891,6 +14891,40 @@
       "exit_date": "2026-08-14",
       "reason": "stop",
       "return_pct": -3.51
+    },
+    {
+      "ticker": "ACE.BK",
+      "name": "ACE",
+      "signal": "BUY",
+      "score": 71,
+      "entry_date": "2026-08-14",
+      "entry": 1.33,
+      "stop": 1.29,
+      "target": 1.46,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-14",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "UV.BK",
+      "name": "UV",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-14",
+      "entry": 1.03,
+      "stop": 0.98,
+      "target": 1.13,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-14",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
