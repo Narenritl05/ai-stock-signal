@@ -14884,13 +14884,13 @@
       "entry": 1.33,
       "stop": 1.29,
       "target": 1.46,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-08-14",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 1.29,
+      "exit_date": "2026-08-14",
+      "reason": "stop",
+      "return_pct": -3.51
     }
   ]
 }
