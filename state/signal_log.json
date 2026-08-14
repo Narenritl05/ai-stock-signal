@@ -11688,13 +11688,13 @@
       "entry": 10.1,
       "stop": 9.6,
       "target": 11.11,
-      "status": "open",
+      "status": "closed",
       "days": 11,
       "last_date": "2026-08-14",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 9.6,
+      "exit_date": "2026-08-14",
+      "reason": "stop",
+      "return_pct": -5.45
     },
     {
       "ticker": "THANI.BK",

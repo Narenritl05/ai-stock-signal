@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-14 08:24 (เวลาไทย)",
+  "generated_at": "2026-08-14 10:35 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 699,
-    "open": 179,
-    "win_rate": 49.5,
-    "avg_return": 0.35,
-    "total_return": 124.5,
+    "closed": 700,
+    "open": 178,
+    "win_rate": 49.4,
+    "avg_return": 0.34,
+    "total_return": 112.2,
     "by_target": 182,
-    "by_stop": 273,
+    "by_stop": 274,
     "by_time": 244
   },
   "open_positions": [
@@ -2172,23 +2172,6 @@
       "return_pct": null
     },
     {
-      "ticker": "SISB.BK",
-      "name": "SISB",
-      "signal": "BUY",
-      "score": 67,
-      "entry_date": "2026-08-03",
-      "entry": 10.1,
-      "stop": 9.6,
-      "target": 11.11,
-      "status": "open",
-      "days": 11,
-      "last_date": "2026-08-14",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "THANI.BK",
       "name": "THANI",
       "signal": "BUY",
@@ -3092,6 +3075,23 @@
       "return_pct": 9.5
     },
     {
+      "ticker": "SISB.BK",
+      "name": "SISB",
+      "signal": "BUY",
+      "score": 67,
+      "entry_date": "2026-08-03",
+      "entry": 10.1,
+      "stop": 9.6,
+      "target": 11.11,
+      "status": "closed",
+      "days": 11,
+      "last_date": "2026-08-14",
+      "exit": 9.6,
+      "exit_date": "2026-08-14",
+      "reason": "stop",
+      "return_pct": -5.45
+    },
+    {
       "ticker": "ACE.BK",
       "name": "ACE",
       "signal": "BUY",
@@ -3549,23 +3549,6 @@
       "exit_date": "2026-08-12",
       "reason": "time",
       "return_pct": -1.38
-    },
-    {
-      "ticker": "SYNEX.BK",
-      "name": "SYNEX",
-      "signal": "BUY",
-      "score": 62,
-      "entry_date": "2026-07-23",
-      "entry": 9.8,
-      "stop": 9.11,
-      "target": 10.78,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-08-12",
-      "exit": 9.7,
-      "exit_date": "2026-08-12",
-      "reason": "time",
-      "return_pct": -1.52
     }
   ]
 }
