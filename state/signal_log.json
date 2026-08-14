@@ -15190,13 +15190,13 @@
       "entry": 31.25,
       "stop": 29.06,
       "target": 34.38,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-08-15",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 29.06,
+      "exit_date": "2026-08-15",
+      "reason": "stop",
+      "return_pct": -7.51
     },
     {
       "ticker": "M.BK",
@@ -15207,13 +15207,13 @@
       "entry": 21.6,
       "stop": 20.9,
       "target": 23.76,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-08-15",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 20.9,
+      "exit_date": "2026-08-15",
+      "reason": "stop",
+      "return_pct": -3.74
     }
   ]
 }
