@@ -11705,13 +11705,13 @@
       "entry": 2.34,
       "stop": 2.18,
       "target": 2.57,
-      "status": "open",
+      "status": "closed",
       "days": 11,
       "last_date": "2026-08-14",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 2.18,
+      "exit_date": "2026-08-14",
+      "reason": "stop",
+      "return_pct": -7.34
     },
     {
       "ticker": "MC.BK",
@@ -13014,13 +13014,13 @@
       "entry": 3.82,
       "stop": 3.7,
       "target": 4.2,
-      "status": "open",
+      "status": "closed",
       "days": 8,
       "last_date": "2026-08-14",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 3.7,
+      "exit_date": "2026-08-14",
+      "reason": "stop",
+      "return_pct": -3.64
     },
     {
       "ticker": "SCC.BK",
@@ -14969,13 +14969,13 @@
       "entry": 0.13,
       "stop": 0.12,
       "target": 0.14,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-08-14",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 0.12,
+      "exit_date": "2026-08-14",
+      "reason": "stop",
+      "return_pct": -8.19
     },
     {
       "ticker": "MAJOR.BK",
