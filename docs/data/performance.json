@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-15 07:55 (เวลาไทย)",
+  "generated_at": "2026-08-15 09:11 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 717,
-    "open": 181,
-    "win_rate": 48.7,
-    "avg_return": 0.26,
-    "total_return": 23.3,
+    "closed": 718,
+    "open": 180,
+    "win_rate": 48.6,
+    "avg_return": 0.25,
+    "total_return": 14.1,
     "by_target": 185,
-    "by_stop": 288,
+    "by_stop": 289,
     "by_time": 244
   },
   "open_positions": [
@@ -293,23 +293,6 @@
       "entry": 7.15,
       "stop": 6.65,
       "target": 7.87,
-      "status": "open",
-      "days": 1,
-      "last_date": "2026-08-15",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "QBTS",
-      "name": "QBTS",
-      "signal": "BUY",
-      "score": 60,
-      "entry_date": "2026-08-14",
-      "entry": 20.9,
-      "stop": 19.44,
-      "target": 22.99,
       "status": "open",
       "days": 1,
       "last_date": "2026-08-15",
@@ -3143,6 +3126,23 @@
       "return_pct": -7.49
     },
     {
+      "ticker": "QBTS",
+      "name": "QBTS",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-08-14",
+      "entry": 20.9,
+      "stop": 19.44,
+      "target": 22.99,
+      "status": "closed",
+      "days": 1,
+      "last_date": "2026-08-15",
+      "exit": 19.44,
+      "exit_date": "2026-08-15",
+      "reason": "stop",
+      "return_pct": -7.49
+    },
+    {
       "ticker": "AMATA.BK",
       "name": "AMATA",
       "signal": "STRONG BUY",
@@ -3583,23 +3583,6 @@
       "exit_date": "2026-08-13",
       "reason": "time",
       "return_pct": 1.89
-    },
-    {
-      "ticker": "NIO",
-      "name": "NIO",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-29",
-      "entry": 4.84,
-      "stop": 4.5,
-      "target": 5.32,
-      "status": "closed",
-      "days": 15,
-      "last_date": "2026-08-13",
-      "exit": 4.5,
-      "exit_date": "2026-08-13",
-      "reason": "stop",
-      "return_pct": -7.52
     }
   ]
 }

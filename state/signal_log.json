@@ -15003,13 +15003,13 @@
       "entry": 20.9,
       "stop": 19.44,
       "target": 22.99,
-      "status": "open",
+      "status": "closed",
       "days": 1,
       "last_date": "2026-08-15",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 19.44,
+      "exit_date": "2026-08-15",
+      "reason": "stop",
+      "return_pct": -7.49
     },
     {
       "ticker": "PLANB.BK",
