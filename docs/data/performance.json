@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-17 21:52 (เวลาไทย)",
+  "generated_at": "2026-08-17 22:19 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 755,
-    "open": 161,
+    "closed": 757,
+    "open": 160,
     "win_rate": 48.9,
     "avg_return": 0.31,
-    "total_return": 77.3,
-    "by_target": 193,
-    "by_stop": 296,
+    "total_return": 79.6,
+    "by_target": 194,
+    "by_stop": 297,
     "by_time": 266
   },
   "open_positions": [
@@ -285,6 +285,23 @@
       "return_pct": null
     },
     {
+      "ticker": "AMAT",
+      "name": "AMAT",
+      "signal": "STRONG BUY",
+      "score": 77,
+      "entry_date": "2026-08-17",
+      "entry": 537.32,
+      "stop": 499.71,
+      "target": 591.05,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-17",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
       "ticker": "CENTEL.BK",
       "name": "CENTEL",
       "signal": "STRONG BUY",
@@ -429,23 +446,6 @@
       "entry": 339.44,
       "stop": 315.68,
       "target": 373.38,
-      "status": "open",
-      "days": 3,
-      "last_date": "2026-08-17",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HUBS",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-08-14",
-      "entry": 233.65,
-      "stop": 217.3,
-      "target": 257.02,
       "status": "open",
       "days": 3,
       "last_date": "2026-08-17",
@@ -1747,23 +1747,6 @@
       "return_pct": null
     },
     {
-      "ticker": "ASML",
-      "name": "ASML",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-08-05",
-      "entry": 1712.79,
-      "stop": 1592.89,
-      "target": 1884.06,
-      "status": "open",
-      "days": 12,
-      "last_date": "2026-08-17",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "MSTR",
       "name": "MSTR",
       "signal": "BUY",
@@ -3024,6 +3007,23 @@
       "return_pct": -5.15
     },
     {
+      "ticker": "ASML",
+      "name": "ASML",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-08-05",
+      "entry": 1712.79,
+      "stop": 1592.89,
+      "target": 1884.06,
+      "status": "closed",
+      "days": 12,
+      "last_date": "2026-08-17",
+      "exit": 1884.06,
+      "exit_date": "2026-08-17",
+      "reason": "target",
+      "return_pct": 9.5
+    },
+    {
       "ticker": "ORI.BK",
       "name": "ORI",
       "signal": "BUY",
@@ -3126,6 +3126,23 @@
       "return_pct": 9.5
     },
     {
+      "ticker": "HUBS",
+      "name": "HUBS",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-08-14",
+      "entry": 233.65,
+      "stop": 217.3,
+      "target": 257.02,
+      "status": "closed",
+      "days": 3,
+      "last_date": "2026-08-17",
+      "exit": 217.3,
+      "exit_date": "2026-08-17",
+      "reason": "stop",
+      "return_pct": -7.5
+    },
+    {
       "ticker": "UV.BK",
       "name": "UV",
       "signal": "BUY",
@@ -3226,40 +3243,6 @@
       "exit_date": "2026-08-17",
       "reason": "target",
       "return_pct": 7.19
-    },
-    {
-      "ticker": "PTT.BK",
-      "name": "PTT",
-      "signal": "BUY",
-      "score": 62,
-      "entry_date": "2026-07-27",
-      "entry": 39.0,
-      "stop": 36.27,
-      "target": 42.9,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-08-16",
-      "exit": 39.75,
-      "exit_date": "2026-08-16",
-      "reason": "time",
-      "return_pct": 1.42
-    },
-    {
-      "ticker": "SPRC.BK",
-      "name": "SPRC",
-      "signal": "BUY",
-      "score": 60,
-      "entry_date": "2026-07-27",
-      "entry": 10.7,
-      "stop": 9.95,
-      "target": 11.77,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-08-16",
-      "exit": 11.4,
-      "exit_date": "2026-08-16",
-      "reason": "time",
-      "return_pct": 6.04
     }
   ]
 }
