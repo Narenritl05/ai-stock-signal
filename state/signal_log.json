@@ -15639,6 +15639,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "BA",
+      "name": "BA",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-08-18",
+      "entry": 227.15,
+      "stop": 211.25,
+      "target": 249.86,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-18",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
