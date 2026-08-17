@@ -15588,6 +15588,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "QBTS",
+      "name": "QBTS",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-08-17",
+      "entry": 21.22,
+      "stop": 19.73,
+      "target": 23.34,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-17",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
