@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-17 16:07 (เวลาไทย)",
+  "generated_at": "2026-08-17 17:03 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 749,
-    "open": 163,
-    "win_rate": 49.0,
-    "avg_return": 0.32,
-    "total_return": 90.0,
+    "closed": 750,
+    "open": 162,
+    "win_rate": 48.9,
+    "avg_return": 0.31,
+    "total_return": 80.3,
     "by_target": 191,
-    "by_stop": 292,
+    "by_stop": 293,
     "by_time": 266
   },
   "open_positions": [
@@ -1968,23 +1968,6 @@
       "return_pct": null
     },
     {
-      "ticker": "CKP.BK",
-      "name": "CKP",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-04",
-      "entry": 2.58,
-      "stop": 2.46,
-      "target": 2.84,
-      "status": "open",
-      "days": 13,
-      "last_date": "2026-08-17",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "URI",
       "name": "URI",
       "signal": "BUY",
@@ -3041,6 +3024,23 @@
       "return_pct": 9.5
     },
     {
+      "ticker": "CKP.BK",
+      "name": "CKP",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-04",
+      "entry": 2.58,
+      "stop": 2.46,
+      "target": 2.84,
+      "status": "closed",
+      "days": 13,
+      "last_date": "2026-08-17",
+      "exit": 2.46,
+      "exit_date": "2026-08-17",
+      "reason": "stop",
+      "return_pct": -5.15
+    },
+    {
       "ticker": "ORI.BK",
       "name": "ORI",
       "signal": "BUY",
@@ -3277,23 +3277,6 @@
       "exit_date": "2026-08-16",
       "reason": "time",
       "return_pct": 0.22
-    },
-    {
-      "ticker": "LULU",
-      "name": "LULU",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-27",
-      "entry": 117.58,
-      "stop": 110.63,
-      "target": 129.34,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-08-16",
-      "exit": 119.55,
-      "exit_date": "2026-08-16",
-      "reason": "time",
-      "return_pct": 1.18
     }
   ]
 }
