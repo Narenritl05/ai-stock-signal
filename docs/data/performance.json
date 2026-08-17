@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-18 02:08 (เวลาไทย)",
+  "generated_at": "2026-08-18 02:49 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 762,
-    "open": 159,
-    "win_rate": 48.7,
-    "avg_return": 0.28,
-    "total_return": 48.2,
+    "closed": 763,
+    "open": 158,
+    "win_rate": 48.6,
+    "avg_return": 0.27,
+    "total_return": 37.1,
     "by_target": 194,
-    "by_stop": 301,
+    "by_stop": 302,
     "by_time": 267
   },
   "open_positions": [
@@ -514,23 +514,6 @@
       "entry": 962.46,
       "stop": 924.59,
       "target": 1058.71,
-      "status": "open",
-      "days": 4,
-      "last_date": "2026-08-18",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "MDB",
-      "name": "MDB",
-      "signal": "BUY",
-      "score": 60,
-      "entry_date": "2026-08-14",
-      "entry": 472.29,
-      "stop": 439.23,
-      "target": 519.52,
       "status": "open",
       "days": 4,
       "last_date": "2026-08-18",
@@ -2752,6 +2735,23 @@
       "return_pct": -7.5
     },
     {
+      "ticker": "MDB",
+      "name": "MDB",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-08-14",
+      "entry": 472.29,
+      "stop": 439.23,
+      "target": 519.52,
+      "status": "closed",
+      "days": 4,
+      "last_date": "2026-08-18",
+      "exit": 439.23,
+      "exit_date": "2026-08-18",
+      "reason": "stop",
+      "return_pct": -7.5
+    },
+    {
       "ticker": "BCPG.BK",
       "name": "BCPG",
       "signal": "BUY",
@@ -3209,23 +3209,6 @@
       "exit_date": "2026-08-17",
       "reason": "stop",
       "return_pct": -7.5
-    },
-    {
-      "ticker": "UV.BK",
-      "name": "UV",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-14",
-      "entry": 1.03,
-      "stop": 0.98,
-      "target": 1.13,
-      "status": "closed",
-      "days": 3,
-      "last_date": "2026-08-17",
-      "exit": 0.98,
-      "exit_date": "2026-08-17",
-      "reason": "stop",
-      "return_pct": -5.35
     }
   ]
 }
