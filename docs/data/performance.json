@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-17 17:03 (เวลาไทย)",
+  "generated_at": "2026-08-17 17:55 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 750,
+    "closed": 751,
     "open": 162,
     "win_rate": 48.9,
-    "avg_return": 0.31,
-    "total_return": 80.3,
+    "avg_return": 0.3,
+    "total_return": 70.6,
     "by_target": 191,
-    "by_stop": 293,
+    "by_stop": 294,
     "by_time": 266
   },
   "open_positions": [
@@ -208,6 +208,23 @@
       "entry": 3.02,
       "stop": 2.81,
       "target": 3.32,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-17",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "TRUE.BK",
+      "name": "TRUE",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-17",
+      "entry": 13.6,
+      "stop": 13.15,
+      "target": 14.96,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-17",
@@ -463,23 +480,6 @@
       "entry": 1.33,
       "stop": 1.29,
       "target": 1.46,
-      "status": "open",
-      "days": 3,
-      "last_date": "2026-08-17",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "UV.BK",
-      "name": "UV",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-14",
-      "entry": 1.03,
-      "stop": 0.98,
-      "target": 1.13,
       "status": "open",
       "days": 3,
       "last_date": "2026-08-17",
@@ -3075,6 +3075,23 @@
       "return_pct": 9.51
     },
     {
+      "ticker": "UV.BK",
+      "name": "UV",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-14",
+      "entry": 1.03,
+      "stop": 0.98,
+      "target": 1.13,
+      "status": "closed",
+      "days": 3,
+      "last_date": "2026-08-17",
+      "exit": 0.98,
+      "exit_date": "2026-08-17",
+      "reason": "stop",
+      "return_pct": -5.35
+    },
+    {
       "ticker": "PLANB.BK",
       "name": "PLANB",
       "signal": "BUY",
@@ -3260,23 +3277,6 @@
       "exit_date": "2026-08-16",
       "reason": "time",
       "return_pct": -0.24
-    },
-    {
-      "ticker": "PEP",
-      "name": "PEP",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-27",
-      "entry": 139.78,
-      "stop": 134.95,
-      "target": 153.76,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-08-16",
-      "exit": 140.79,
-      "exit_date": "2026-08-16",
-      "reason": "time",
-      "return_pct": 0.22
     }
   ]
 }
