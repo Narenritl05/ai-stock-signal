@@ -15333,6 +15333,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "BTS.BK",
+      "name": "BTS",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-08-17",
+      "entry": 2.1,
+      "stop": 2.06,
+      "target": 2.31,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-17",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "BCPG.BK",
+      "name": "BCPG",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-17",
+      "entry": 7.15,
+      "stop": 7.0,
+      "target": 7.87,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-17",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
