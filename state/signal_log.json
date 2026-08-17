@@ -13626,13 +13626,13 @@
       "entry": 24.03,
       "stop": 22.35,
       "target": 26.43,
-      "status": "open",
+      "status": "closed",
       "days": 9,
       "last_date": "2026-08-17",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 26.43,
+      "exit_date": "2026-08-17",
+      "reason": "target",
+      "return_pct": 9.49
     },
     {
       "ticker": "EA.BK",
@@ -14357,13 +14357,13 @@
       "entry": 915.53,
       "stop": 851.44,
       "target": 1007.08,
-      "status": "open",
+      "status": "closed",
       "days": 5,
       "last_date": "2026-08-17",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 1007.08,
+      "exit_date": "2026-08-17",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "STX",
