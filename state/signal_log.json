@@ -15418,6 +15418,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "CK.BK",
+      "name": "CK",
+      "signal": "STRONG BUY",
+      "score": 76,
+      "entry_date": "2026-08-17",
+      "entry": 19.1,
+      "stop": 18.0,
+      "target": 21.01,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-17",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "PTT.BK",
+      "name": "PTT",
+      "signal": "BUY",
+      "score": 69,
+      "entry_date": "2026-08-17",
+      "entry": 39.5,
+      "stop": 38.0,
+      "target": 43.45,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-17",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "BGRIM.BK",
+      "name": "BGRIM",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-17",
+      "entry": 18.4,
+      "stop": 17.7,
+      "target": 20.24,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-17",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
