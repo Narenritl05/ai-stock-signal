@@ -15928,6 +15928,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "GGC.BK",
+      "name": "GGC",
+      "signal": "BUY",
+      "score": 65,
+      "entry_date": "2026-08-18",
+      "entry": 5.55,
+      "stop": 5.16,
+      "target": 6.11,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-18",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "CBG.BK",
+      "name": "CBG",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-08-18",
+      "entry": 56.75,
+      "stop": 52.78,
+      "target": 62.43,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-18",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
