@@ -14663,13 +14663,13 @@
       "entry": 345.88,
       "stop": 321.66,
       "target": 380.46,
-      "status": "open",
+      "status": "closed",
       "days": 5,
       "last_date": "2026-08-18",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 321.66,
+      "exit_date": "2026-08-18",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "AMD",

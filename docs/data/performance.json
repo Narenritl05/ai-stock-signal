@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-18 20:37 (เวลาไทย)",
+  "generated_at": "2026-08-18 21:27 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 770,
-    "open": 174,
-    "win_rate": 48.6,
-    "avg_return": 0.27,
-    "total_return": 32.7,
+    "closed": 771,
+    "open": 173,
+    "win_rate": 48.5,
+    "avg_return": 0.26,
+    "total_return": 22.8,
     "by_target": 197,
-    "by_stop": 306,
+    "by_stop": 307,
     "by_time": 267
   },
   "open_positions": [
@@ -1092,23 +1092,6 @@
       "entry": 99.57,
       "stop": 92.6,
       "target": 109.53,
-      "status": "open",
-      "days": 5,
-      "last_date": "2026-08-18",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "CLS",
-      "name": "CLS",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-08-13",
-      "entry": 345.88,
-      "stop": 321.66,
-      "target": 380.46,
       "status": "open",
       "days": 5,
       "last_date": "2026-08-18",
@@ -3075,6 +3058,23 @@
       "return_pct": -4.99
     },
     {
+      "ticker": "CLS",
+      "name": "CLS",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-08-13",
+      "entry": 345.88,
+      "stop": 321.66,
+      "target": 380.46,
+      "status": "closed",
+      "days": 5,
+      "last_date": "2026-08-18",
+      "exit": 321.66,
+      "exit_date": "2026-08-18",
+      "reason": "stop",
+      "return_pct": -7.5
+    },
+    {
       "ticker": "RCL.BK",
       "name": "RCL",
       "signal": "BUY",
@@ -3464,23 +3464,6 @@
       "exit_date": "2026-08-17",
       "reason": "stop",
       "return_pct": -5.15
-    },
-    {
-      "ticker": "ASML",
-      "name": "ASML",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-08-05",
-      "entry": 1712.79,
-      "stop": 1592.89,
-      "target": 1884.06,
-      "status": "closed",
-      "days": 12,
-      "last_date": "2026-08-17",
-      "exit": 1884.06,
-      "exit_date": "2026-08-17",
-      "reason": "target",
-      "return_pct": 9.5
     }
   ]
 }
