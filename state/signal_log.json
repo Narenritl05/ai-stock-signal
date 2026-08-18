@@ -15979,6 +15979,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "HANA.BK",
+      "name": "HANA",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-08-18",
+      "entry": 49.5,
+      "stop": 46.03,
+      "target": 54.45,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-18",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
