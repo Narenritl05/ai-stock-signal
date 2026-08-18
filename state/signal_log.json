@@ -15962,6 +15962,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "DITTO.BK",
+      "name": "DITTO",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-08-18",
+      "entry": 15.0,
+      "stop": 14.2,
+      "target": 16.5,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-18",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
