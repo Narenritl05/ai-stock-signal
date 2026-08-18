@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-18 07:54 (เวลาไทย)",
+  "generated_at": "2026-08-18 09:13 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 763,
-    "open": 162,
+    "closed": 764,
+    "open": 161,
     "win_rate": 48.6,
-    "avg_return": 0.27,
-    "total_return": 37.1,
+    "avg_return": 0.26,
+    "total_return": 26.8,
     "by_target": 194,
-    "by_stop": 302,
+    "by_stop": 303,
     "by_time": 267
   },
   "open_positions": [
@@ -344,23 +344,6 @@
       "entry": 537.32,
       "stop": 499.71,
       "target": 591.05,
-      "status": "open",
-      "days": 1,
-      "last_date": "2026-08-18",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "QBTS",
-      "name": "QBTS",
-      "signal": "BUY",
-      "score": 60,
-      "entry_date": "2026-08-17",
-      "entry": 21.22,
-      "stop": 19.73,
-      "target": 23.34,
       "status": "open",
       "days": 1,
       "last_date": "2026-08-18",
@@ -2871,6 +2854,23 @@
       "return_pct": -4.3
     },
     {
+      "ticker": "QBTS",
+      "name": "QBTS",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-08-17",
+      "entry": 21.22,
+      "stop": 19.73,
+      "target": 23.34,
+      "status": "closed",
+      "days": 1,
+      "last_date": "2026-08-18",
+      "exit": 19.73,
+      "exit_date": "2026-08-18",
+      "reason": "stop",
+      "return_pct": -7.52
+    },
+    {
       "ticker": "PRM.BK",
       "name": "PRM",
       "signal": "BUY",
@@ -3260,23 +3260,6 @@
       "exit_date": "2026-08-17",
       "reason": "target",
       "return_pct": 9.5
-    },
-    {
-      "ticker": "HUBS",
-      "name": "HUBS",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-08-14",
-      "entry": 233.65,
-      "stop": 217.3,
-      "target": 257.02,
-      "status": "closed",
-      "days": 3,
-      "last_date": "2026-08-17",
-      "exit": 217.3,
-      "exit_date": "2026-08-17",
-      "reason": "stop",
-      "return_pct": -7.5
     }
   ]
 }
