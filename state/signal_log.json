@@ -11569,13 +11569,13 @@
       "entry": 762.63,
       "stop": 709.25,
       "target": 838.89,
-      "status": "open",
+      "status": "closed",
       "days": 19,
       "last_date": "2026-08-20",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 838.89,
+      "exit_date": "2026-08-20",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "BTS.BK",
@@ -15088,13 +15088,13 @@
       "entry": 502.14,
       "stop": 466.99,
       "target": 552.36,
-      "status": "open",
+      "status": "closed",
       "days": 6,
       "last_date": "2026-08-20",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 466.99,
+      "exit_date": "2026-08-20",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "DDOG",

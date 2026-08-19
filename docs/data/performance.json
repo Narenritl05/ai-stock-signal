@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-20 00:49 (เวลาไทย)",
+  "generated_at": "2026-08-20 01:26 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 815,
-    "open": 154,
+    "closed": 817,
+    "open": 152,
     "win_rate": 47.2,
     "avg_return": 0.13,
-    "total_return": -57.0,
-    "by_target": 203,
-    "by_stop": 327,
+    "total_return": -56.5,
+    "by_target": 204,
+    "by_stop": 328,
     "by_time": 285
   },
   "open_positions": [
@@ -1194,23 +1194,6 @@
       "entry": 7.15,
       "stop": 6.65,
       "target": 7.87,
-      "status": "open",
-      "days": 6,
-      "last_date": "2026-08-20",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "WDC",
-      "name": "WDC",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-08-14",
-      "entry": 502.14,
-      "stop": 466.99,
-      "target": 552.36,
       "status": "open",
       "days": 6,
       "last_date": "2026-08-20",
@@ -2612,23 +2595,6 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
-    },
-    {
-      "ticker": "REGN",
-      "name": "REGN",
-      "signal": "BUY",
-      "score": 60,
-      "entry_date": "2026-08-01",
-      "entry": 762.63,
-      "stop": 709.25,
-      "target": 838.89,
-      "status": "open",
-      "days": 19,
-      "last_date": "2026-08-20",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
     }
   ],
   "closed_positions": [
@@ -2801,6 +2767,40 @@
       "exit_date": "2026-08-20",
       "reason": "time",
       "return_pct": -2.93
+    },
+    {
+      "ticker": "REGN",
+      "name": "REGN",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-08-01",
+      "entry": 762.63,
+      "stop": 709.25,
+      "target": 838.89,
+      "status": "closed",
+      "days": 19,
+      "last_date": "2026-08-20",
+      "exit": 838.89,
+      "exit_date": "2026-08-20",
+      "reason": "target",
+      "return_pct": 9.5
+    },
+    {
+      "ticker": "WDC",
+      "name": "WDC",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-08-14",
+      "entry": 502.14,
+      "stop": 466.99,
+      "target": 552.36,
+      "status": "closed",
+      "days": 6,
+      "last_date": "2026-08-20",
+      "exit": 466.99,
+      "exit_date": "2026-08-20",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "KKP.BK",
@@ -3107,40 +3107,6 @@
       "exit_date": "2026-08-19",
       "reason": "target",
       "return_pct": 9.5
-    },
-    {
-      "ticker": "PANW",
-      "name": "PANW",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-08-12",
-      "entry": 385.5,
-      "stop": 358.51,
-      "target": 424.05,
-      "status": "closed",
-      "days": 7,
-      "last_date": "2026-08-19",
-      "exit": 358.51,
-      "exit_date": "2026-08-19",
-      "reason": "stop",
-      "return_pct": -7.5
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CRWD",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-08-12",
-      "entry": 221.95,
-      "stop": 206.41,
-      "target": 244.14,
-      "status": "closed",
-      "days": 7,
-      "last_date": "2026-08-19",
-      "exit": 206.41,
-      "exit_date": "2026-08-19",
-      "reason": "stop",
-      "return_pct": -7.5
     }
   ]
 }
