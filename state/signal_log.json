@@ -16115,6 +16115,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "RS.BK",
+      "name": "RS",
+      "signal": "STRONG BUY",
+      "score": 81,
+      "entry_date": "2026-08-19",
+      "entry": 0.14,
+      "stop": 0.13,
+      "target": 0.15,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-19",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "BH.BK",
+      "name": "BH",
+      "signal": "STRONG BUY",
+      "score": 77,
+      "entry_date": "2026-08-19",
+      "entry": 196.0,
+      "stop": 182.28,
+      "target": 215.6,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-19",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "PTG.BK",
+      "name": "PTG",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-19",
+      "entry": 7.65,
+      "stop": 7.3,
+      "target": 8.42,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-19",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
