@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-20 02:48 (เวลาไทย)",
+  "generated_at": "2026-08-20 03:20 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 818,
-    "open": 152,
-    "win_rate": 47.2,
-    "avg_return": 0.12,
-    "total_return": -58.8,
+    "closed": 819,
+    "open": 153,
+    "win_rate": 47.1,
+    "avg_return": 0.11,
+    "total_return": -61.2,
     "by_target": 204,
-    "by_stop": 329,
+    "by_stop": 330,
     "by_time": 285
   },
   "open_positions": [
@@ -38,6 +38,40 @@
       "entry": 552.51,
       "stop": 513.83,
       "target": 607.76,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-20",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "PDD",
+      "name": "PDD",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-20",
+      "entry": 90.2,
+      "stop": 83.89,
+      "target": 99.22,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-20",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "PFE",
+      "name": "PFE",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-08-20",
+      "entry": 28.24,
+      "stop": 26.26,
+      "target": 31.06,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-20",
@@ -1849,23 +1883,6 @@
       "return_pct": null
     },
     {
-      "ticker": "TXN",
-      "name": "TXN",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-07",
-      "entry": 284.62,
-      "stop": 269.04,
-      "target": 313.08,
-      "status": "open",
-      "days": 13,
-      "last_date": "2026-08-20",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "SCC.BK",
       "name": "SCC",
       "signal": "BUY",
@@ -2803,6 +2820,23 @@
       "return_pct": -5.28
     },
     {
+      "ticker": "TXN",
+      "name": "TXN",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-07",
+      "entry": 284.62,
+      "stop": 269.04,
+      "target": 313.08,
+      "status": "closed",
+      "days": 13,
+      "last_date": "2026-08-20",
+      "exit": 269.04,
+      "exit_date": "2026-08-20",
+      "reason": "stop",
+      "return_pct": -5.97
+    },
+    {
       "ticker": "WDC",
       "name": "WDC",
       "signal": "BUY",
@@ -3090,23 +3124,6 @@
       "exit_date": "2026-08-19",
       "reason": "stop",
       "return_pct": -7.5
-    },
-    {
-      "ticker": "VRTX",
-      "name": "VRTX",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-07",
-      "entry": 488.44,
-      "stop": 470.72,
-      "target": 537.28,
-      "status": "closed",
-      "days": 12,
-      "last_date": "2026-08-19",
-      "exit": 537.28,
-      "exit_date": "2026-08-19",
-      "reason": "target",
-      "return_pct": 9.5
     }
   ]
 }
