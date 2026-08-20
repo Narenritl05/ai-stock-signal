@@ -16591,6 +16591,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "RS.BK",
+      "name": "RS",
+      "signal": "STRONG BUY",
+      "score": 76,
+      "entry_date": "2026-08-20",
+      "entry": 0.14,
+      "stop": 0.13,
+      "target": 0.15,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-20",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "UV.BK",
+      "name": "UV",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-08-20",
+      "entry": 1.03,
+      "stop": 0.98,
+      "target": 1.13,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-20",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "SINGER.BK",
+      "name": "SINGER",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-20",
+      "entry": 11.7,
+      "stop": 11.2,
+      "target": 12.87,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-20",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
