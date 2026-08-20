@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-20 21:30 (เวลาไทย)",
+  "generated_at": "2026-08-20 22:27 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 828,
-    "open": 156,
-    "win_rate": 47.0,
-    "avg_return": 0.09,
-    "total_return": -68.8,
-    "by_target": 207,
-    "by_stop": 336,
+    "closed": 831,
+    "open": 154,
+    "win_rate": 47.1,
+    "avg_return": 0.1,
+    "total_return": -65.4,
+    "by_target": 209,
+    "by_stop": 337,
     "by_time": 285
   },
   "open_positions": [
@@ -268,6 +268,23 @@
       "return_pct": null
     },
     {
+      "ticker": "RIOT",
+      "name": "RIOT",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-08-20",
+      "entry": 20.49,
+      "stop": 19.06,
+      "target": 22.54,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-20",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
       "ticker": "BJC.BK",
       "name": "BJC",
       "signal": "STRONG BUY",
@@ -412,23 +429,6 @@
       "entry": 275.01,
       "stop": 255.76,
       "target": 302.51,
-      "status": "open",
-      "days": 1,
-      "last_date": "2026-08-20",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "COIN",
-      "name": "COIN",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-19",
-      "entry": 155.17,
-      "stop": 145.41,
-      "target": 170.69,
       "status": "open",
       "days": 1,
       "last_date": "2026-08-20",
@@ -1577,23 +1577,6 @@
       "return_pct": null
     },
     {
-      "ticker": "IONQ",
-      "name": "IONQ",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-12",
-      "entry": 43.62,
-      "stop": 40.57,
-      "target": 47.98,
-      "status": "open",
-      "days": 8,
-      "last_date": "2026-08-20",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "GFPT.BK",
       "name": "GFPT",
       "signal": "BUY",
@@ -2546,23 +2529,6 @@
       "return_pct": null
     },
     {
-      "ticker": "TMO",
-      "name": "TMO",
-      "signal": "BUY",
-      "score": 62,
-      "entry_date": "2026-08-04",
-      "entry": 564.93,
-      "stop": 525.39,
-      "target": 621.43,
-      "status": "open",
-      "days": 16,
-      "last_date": "2026-08-20",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "BRI.BK",
       "name": "BRI",
       "signal": "BUY",
@@ -2888,6 +2854,23 @@
       "return_pct": -7.5
     },
     {
+      "ticker": "TMO",
+      "name": "TMO",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-08-04",
+      "entry": 564.93,
+      "stop": 525.39,
+      "target": 621.43,
+      "status": "closed",
+      "days": 16,
+      "last_date": "2026-08-20",
+      "exit": 621.43,
+      "exit_date": "2026-08-20",
+      "reason": "target",
+      "return_pct": 9.5
+    },
+    {
       "ticker": "MSTR",
       "name": "MSTR",
       "signal": "BUY",
@@ -2990,6 +2973,23 @@
       "return_pct": -7.5
     },
     {
+      "ticker": "IONQ",
+      "name": "IONQ",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-12",
+      "entry": 43.62,
+      "stop": 40.57,
+      "target": 47.98,
+      "status": "closed",
+      "days": 8,
+      "last_date": "2026-08-20",
+      "exit": 40.57,
+      "exit_date": "2026-08-20",
+      "reason": "stop",
+      "return_pct": -7.49
+    },
+    {
       "ticker": "WDC",
       "name": "WDC",
       "signal": "BUY",
@@ -3075,6 +3075,23 @@
       "return_pct": -7.64
     },
     {
+      "ticker": "COIN",
+      "name": "COIN",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-19",
+      "entry": 155.17,
+      "stop": 145.41,
+      "target": 170.69,
+      "status": "closed",
+      "days": 1,
+      "last_date": "2026-08-20",
+      "exit": 170.69,
+      "exit_date": "2026-08-20",
+      "reason": "target",
+      "return_pct": 9.5
+    },
+    {
       "ticker": "RS.BK",
       "name": "RS",
       "signal": "STRONG BUY",
@@ -3124,57 +3141,6 @@
       "exit_date": "2026-08-19",
       "reason": "time",
       "return_pct": 2.87
-    },
-    {
-      "ticker": "BH.BK",
-      "name": "BH",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-30",
-      "entry": 185.0,
-      "stop": 179.0,
-      "target": 203.5,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-08-19",
-      "exit": 191.0,
-      "exit_date": "2026-08-19",
-      "reason": "time",
-      "return_pct": 2.74
-    },
-    {
-      "ticker": "CPF.BK",
-      "name": "CPF",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-07-30",
-      "entry": 22.1,
-      "stop": 20.8,
-      "target": 24.31,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-08-19",
-      "exit": 22.5,
-      "exit_date": "2026-08-19",
-      "reason": "time",
-      "return_pct": 1.31
-    },
-    {
-      "ticker": "BJC.BK",
-      "name": "BJC",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-07-30",
-      "entry": 16.1,
-      "stop": 14.97,
-      "target": 17.71,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-08-19",
-      "exit": 15.8,
-      "exit_date": "2026-08-19",
-      "reason": "time",
-      "return_pct": -2.36
     }
   ]
 }
