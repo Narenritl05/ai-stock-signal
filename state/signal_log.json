@@ -12521,13 +12521,13 @@
       "entry": 89.18,
       "stop": 83.87,
       "target": 98.09,
-      "status": "open",
+      "status": "closed",
       "days": 17,
       "last_date": "2026-08-21",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 83.87,
+      "exit_date": "2026-08-21",
+      "reason": "stop",
+      "return_pct": -6.45
     },
     {
       "ticker": "GS",
@@ -15632,13 +15632,13 @@
       "entry": 370.77,
       "stop": 344.81,
       "target": 407.84,
-      "status": "open",
+      "status": "closed",
       "days": 3,
       "last_date": "2026-08-21",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 344.81,
+      "exit_date": "2026-08-21",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "BA",
