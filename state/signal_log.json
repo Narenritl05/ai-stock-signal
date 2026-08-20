@@ -16642,6 +16642,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "BCH.BK",
+      "name": "BCH",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-08-20",
+      "entry": 11.5,
+      "stop": 10.69,
+      "target": 12.65,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-20",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
