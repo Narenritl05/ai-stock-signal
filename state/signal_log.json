@@ -16601,13 +16601,13 @@
       "entry": 0.14,
       "stop": 0.13,
       "target": 0.15,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-08-20",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 0.15,
+      "exit_date": "2026-08-20",
+      "reason": "target",
+      "return_pct": 6.64
     },
     {
       "ticker": "UV.BK",

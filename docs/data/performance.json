@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-20 16:27 (เวลาไทย)",
+  "generated_at": "2026-08-20 17:00 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 819,
-    "open": 162,
-    "win_rate": 47.1,
-    "avg_return": 0.11,
-    "total_return": -61.2,
-    "by_target": 204,
+    "closed": 820,
+    "open": 161,
+    "win_rate": 47.2,
+    "avg_return": 0.12,
+    "total_return": -58.7,
+    "by_target": 205,
     "by_stop": 330,
     "by_time": 285
   },
@@ -140,23 +140,6 @@
       "entry": 2.56,
       "stop": 2.46,
       "target": 2.82,
-      "status": "open",
-      "days": 0,
-      "last_date": "2026-08-20",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "RS.BK",
-      "name": "RS",
-      "signal": "STRONG BUY",
-      "score": 76,
-      "entry_date": "2026-08-20",
-      "entry": 0.14,
-      "stop": 0.13,
-      "target": 0.15,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-20",
@@ -3041,6 +3024,23 @@
       "return_pct": -7.64
     },
     {
+      "ticker": "RS.BK",
+      "name": "RS",
+      "signal": "STRONG BUY",
+      "score": 76,
+      "entry_date": "2026-08-20",
+      "entry": 0.14,
+      "stop": 0.13,
+      "target": 0.15,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-08-20",
+      "exit": 0.15,
+      "exit_date": "2026-08-20",
+      "reason": "target",
+      "return_pct": 6.64
+    },
+    {
       "ticker": "JNJ",
       "name": "JNJ",
       "signal": "BUY",
@@ -3260,23 +3260,6 @@
       "exit_date": "2026-08-19",
       "reason": "target",
       "return_pct": 9.5
-    },
-    {
-      "ticker": "VRT",
-      "name": "VRT",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-08-06",
-      "entry": 282.96,
-      "stop": 263.15,
-      "target": 311.26,
-      "status": "closed",
-      "days": 13,
-      "last_date": "2026-08-19",
-      "exit": 263.15,
-      "exit_date": "2026-08-19",
-      "reason": "stop",
-      "return_pct": -7.5
     }
   ]
 }
