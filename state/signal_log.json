@@ -16540,6 +16540,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "CHG.BK",
+      "name": "CHG",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-08-20",
+      "entry": 1.61,
+      "stop": 1.51,
+      "target": 1.77,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-20",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "COM7.BK",
+      "name": "COM7",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-20",
+      "entry": 30.5,
+      "stop": 29.0,
+      "target": 33.55,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-20",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "CKP.BK",
+      "name": "CKP",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-20",
+      "entry": 2.56,
+      "stop": 2.46,
+      "target": 2.82,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-20",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
