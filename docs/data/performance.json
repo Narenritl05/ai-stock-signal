@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-21 20:40 (เวลาไทย)",
+  "generated_at": "2026-08-21 21:28 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 840,
-    "open": 158,
+    "closed": 841,
+    "open": 157,
     "win_rate": 46.8,
-    "avg_return": 0.09,
-    "total_return": -68.7,
-    "by_target": 211,
+    "avg_return": 0.1,
+    "total_return": -65.8,
+    "by_target": 212,
     "by_stop": 343,
     "by_time": 286
   },
@@ -480,23 +480,6 @@
       "entry": 7.65,
       "stop": 7.3,
       "target": 8.42,
-      "status": "open",
-      "days": 2,
-      "last_date": "2026-08-21",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "HOOD",
-      "name": "HOOD",
-      "signal": "STRONG BUY",
-      "score": 77,
-      "entry_date": "2026-08-19",
-      "entry": 96.25,
-      "stop": 89.51,
-      "target": 105.88,
       "status": "open",
       "days": 2,
       "last_date": "2026-08-21",
@@ -2769,6 +2752,23 @@
       "return_pct": -7.5
     },
     {
+      "ticker": "HOOD",
+      "name": "HOOD",
+      "signal": "STRONG BUY",
+      "score": 77,
+      "entry_date": "2026-08-19",
+      "entry": 96.25,
+      "stop": 89.51,
+      "target": 105.88,
+      "status": "closed",
+      "days": 2,
+      "last_date": "2026-08-21",
+      "exit": 105.88,
+      "exit_date": "2026-08-21",
+      "reason": "target",
+      "return_pct": 9.51
+    },
+    {
       "ticker": "BTG.BK",
       "name": "BTG",
       "signal": "BUY",
@@ -3192,23 +3192,6 @@
       "exit_date": "2026-08-20",
       "reason": "stop",
       "return_pct": -7.49
-    },
-    {
-      "ticker": "ELF",
-      "name": "ELF",
-      "signal": "BUY",
-      "score": 62,
-      "entry_date": "2026-08-13",
-      "entry": 91.5,
-      "stop": 85.09,
-      "target": 100.65,
-      "status": "closed",
-      "days": 7,
-      "last_date": "2026-08-20",
-      "exit": 100.65,
-      "exit_date": "2026-08-20",
-      "reason": "target",
-      "return_pct": 9.5
     }
   ]
 }
