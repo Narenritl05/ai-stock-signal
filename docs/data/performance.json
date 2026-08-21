@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-22 00:22 (เวลาไทย)",
+  "generated_at": "2026-08-22 00:54 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
     "closed": 844,
-    "open": 155,
+    "open": 156,
     "win_rate": 46.8,
     "avg_return": 0.1,
     "total_return": -67.0,
@@ -12,6 +12,23 @@
     "by_time": 286
   },
   "open_positions": [
+    {
+      "ticker": "ASML",
+      "name": "ASML",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-08-22",
+      "entry": 1764.05,
+      "stop": 1640.57,
+      "target": 1940.46,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-22",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
     {
       "ticker": "TASCO.BK",
       "name": "TASCO",

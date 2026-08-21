@@ -16982,6 +16982,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-08-22",
+      "entry": 1764.05,
+      "stop": 1640.57,
+      "target": 1940.46,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-22",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
