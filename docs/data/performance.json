@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-22 02:46 (เวลาไทย)",
+  "generated_at": "2026-08-22 03:19 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 845,
+    "closed": 846,
     "open": 157,
-    "win_rate": 46.9,
-    "avg_return": 0.11,
-    "total_return": -63.8,
+    "win_rate": 46.8,
+    "avg_return": 0.1,
+    "total_return": -66.6,
     "by_target": 214,
-    "by_stop": 345,
+    "by_stop": 346,
     "by_time": 286
   },
   "open_positions": [
@@ -55,6 +55,23 @@
       "entry": 119.33,
       "stop": 110.98,
       "target": 131.27,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-22",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "A",
+      "name": "A",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-08-22",
+      "entry": 159.0,
+      "stop": 147.87,
+      "target": 174.9,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-22",
@@ -1560,23 +1577,6 @@
       "return_pct": null
     },
     {
-      "ticker": "LMT",
-      "name": "LMT",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-08-13",
-      "entry": 606.94,
-      "stop": 564.45,
-      "target": 667.63,
-      "status": "open",
-      "days": 9,
-      "last_date": "2026-08-22",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "TGT",
       "name": "TGT",
       "signal": "BUY",
@@ -2701,6 +2701,23 @@
       "return_pct": 9.5
     },
     {
+      "ticker": "LMT",
+      "name": "LMT",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-08-13",
+      "entry": 606.94,
+      "stop": 564.45,
+      "target": 667.63,
+      "status": "closed",
+      "days": 9,
+      "last_date": "2026-08-22",
+      "exit": 564.45,
+      "exit_date": "2026-08-22",
+      "reason": "stop",
+      "return_pct": -7.5
+    },
+    {
       "ticker": "TOP.BK",
       "name": "TOP",
       "signal": "BUY",
@@ -3175,23 +3192,6 @@
       "exit_date": "2026-08-20",
       "reason": "stop",
       "return_pct": -5.28
-    },
-    {
-      "ticker": "TXN",
-      "name": "TXN",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-07",
-      "entry": 284.62,
-      "stop": 269.04,
-      "target": 313.08,
-      "status": "closed",
-      "days": 13,
-      "last_date": "2026-08-20",
-      "exit": 269.04,
-      "exit_date": "2026-08-20",
-      "reason": "stop",
-      "return_pct": -5.97
     }
   ]
 }
