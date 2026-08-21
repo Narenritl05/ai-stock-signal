@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-21 12:03 (เวลาไทย)",
+  "generated_at": "2026-08-21 12:56 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 837,
-    "open": 157,
+    "closed": 838,
+    "open": 156,
     "win_rate": 46.8,
-    "avg_return": 0.09,
-    "total_return": -70.4,
+    "avg_return": 0.08,
+    "total_return": -70.9,
     "by_target": 210,
-    "by_stop": 341,
+    "by_stop": 342,
     "by_time": 286
   },
   "open_positions": [
@@ -89,23 +89,6 @@
       "entry": 44.25,
       "stop": 42.75,
       "target": 48.68,
-      "status": "open",
-      "days": 0,
-      "last_date": "2026-08-21",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "KTC.BK",
-      "name": "KTC",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-21",
-      "entry": 38.0,
-      "stop": 37.5,
-      "target": 41.8,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-21",
@@ -2769,6 +2752,23 @@
       "return_pct": -3.83
     },
     {
+      "ticker": "KTC.BK",
+      "name": "KTC",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-21",
+      "entry": 38.0,
+      "stop": 37.5,
+      "target": 41.8,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-08-21",
+      "exit": 37.5,
+      "exit_date": "2026-08-21",
+      "reason": "stop",
+      "return_pct": -1.82
+    },
+    {
       "ticker": "STA.BK",
       "name": "STA",
       "signal": "BUY",
@@ -3175,23 +3175,6 @@
       "exit_date": "2026-08-20",
       "reason": "stop",
       "return_pct": -7.5
-    },
-    {
-      "ticker": "WMT",
-      "name": "WMT",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-18",
-      "entry": 116.06,
-      "stop": 108.4,
-      "target": 127.67,
-      "status": "closed",
-      "days": 2,
-      "last_date": "2026-08-20",
-      "exit": 108.4,
-      "exit_date": "2026-08-20",
-      "reason": "stop",
-      "return_pct": -7.1
     }
   ]
 }
