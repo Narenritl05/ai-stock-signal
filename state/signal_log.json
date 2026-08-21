@@ -16999,6 +16999,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "COIN",
+      "name": "COIN",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-22",
+      "entry": 186.39,
+      "stop": 173.34,
+      "target": 205.03,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-22",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
