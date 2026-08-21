@@ -17050,6 +17050,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "TOP.BK",
+      "name": "TOP",
+      "signal": "BUY",
+      "score": 69,
+      "entry_date": "2026-08-22",
+      "entry": 64.0,
+      "stop": 61.25,
+      "target": 70.4,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-22",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
