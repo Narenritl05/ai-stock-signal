@@ -14034,13 +14034,13 @@
       "entry": 127.92,
       "stop": 118.96,
       "target": 140.71,
-      "status": "open",
+      "status": "closed",
       "days": 13,
       "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 118.96,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "JD",
@@ -14680,13 +14680,13 @@
       "entry": 494.24,
       "stop": 459.64,
       "target": 543.66,
-      "status": "open",
+      "status": "closed",
       "days": 11,
       "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 459.64,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "ELF",
@@ -15156,13 +15156,13 @@
       "entry": 33.69,
       "stop": 31.79,
       "target": 37.05,
-      "status": "open",
+      "status": "closed",
       "days": 9,
       "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 37.05,
+      "exit_date": "2026-08-24",
+      "reason": "target",
+      "return_pct": 9.47
     },
     {
       "ticker": "OKTA",
@@ -15564,13 +15564,13 @@
       "entry": 37.92,
       "stop": 35.26,
       "target": 41.71,
-      "status": "open",
+      "status": "closed",
       "days": 7,
       "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 35.26,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -7.51
     },
     {
       "ticker": "AMAT",
@@ -15649,13 +15649,13 @@
       "entry": 227.15,
       "stop": 211.25,
       "target": 249.86,
-      "status": "open",
+      "status": "closed",
       "days": 6,
       "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 211.25,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "RS.BK",
@@ -16975,13 +16975,13 @@
       "entry": 12.23,
       "stop": 11.68,
       "target": 13.46,
-      "status": "open",
+      "status": "closed",
       "days": 3,
       "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 11.68,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -5.0
     },
     {
       "ticker": "ASML",
@@ -17152,6 +17152,57 @@
       "exit_date": "2026-08-24",
       "reason": "stop",
       "return_pct": -7.64
+    },
+    {
+      "ticker": "AXP",
+      "name": "AXP",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-24",
+      "entry": 342.08,
+      "stop": 331.15,
+      "target": 376.29,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-24",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "MCD",
+      "name": "MCD",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-24",
+      "entry": 271.92,
+      "stop": 265.23,
+      "target": 299.11,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-24",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "PG",
+      "name": "PG",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-24",
+      "entry": 146.51,
+      "stop": 142.97,
+      "target": 161.16,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-24",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
