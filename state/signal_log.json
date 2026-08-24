@@ -15513,13 +15513,13 @@
       "entry": 13.6,
       "stop": 13.15,
       "target": 14.96,
-      "status": "open",
+      "status": "closed",
       "days": 7,
       "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 13.15,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -3.81
     },
     {
       "ticker": "MSFT",
@@ -15785,13 +15785,13 @@
       "entry": 2.98,
       "stop": 2.88,
       "target": 3.28,
-      "status": "open",
+      "status": "closed",
       "days": 6,
       "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 2.88,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -3.86
     },
     {
       "ticker": "GPSC.BK",
@@ -15921,13 +15921,13 @@
       "entry": 67.25,
       "stop": 64.5,
       "target": 73.98,
-      "status": "open",
+      "status": "closed",
       "days": 6,
       "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 64.5,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -4.59
     },
     {
       "ticker": "GGC.BK",
@@ -15989,13 +15989,13 @@
       "entry": 49.5,
       "stop": 46.03,
       "target": 54.45,
-      "status": "open",
+      "status": "closed",
       "days": 6,
       "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 46.03,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -7.51
     },
     {
       "ticker": "KCE.BK",
@@ -16244,13 +16244,13 @@
       "entry": 25.25,
       "stop": 24.2,
       "target": 27.78,
-      "status": "open",
+      "status": "closed",
       "days": 5,
       "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 24.2,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -4.66
     },
     {
       "ticker": "NVO",
@@ -16924,13 +16924,13 @@
       "entry": 0.14,
       "stop": 0.13,
       "target": 0.15,
-      "status": "open",
+      "status": "closed",
       "days": 3,
       "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 0.13,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -7.64
     },
     {
       "ticker": "BEM.BK",
