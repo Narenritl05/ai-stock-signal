@@ -1,17 +1,34 @@
 {
-  "generated_at": "2026-08-24 09:22 (เวลาไทย)",
+  "generated_at": "2026-08-24 10:30 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 866,
+    "closed": 867,
     "open": 138,
-    "win_rate": 46.7,
+    "win_rate": 46.6,
     "avg_return": 0.07,
-    "total_return": -74.1,
+    "total_return": -74.7,
     "by_target": 214,
-    "by_stop": 346,
+    "by_stop": 347,
     "by_time": 306
   },
   "open_positions": [
+    {
+      "ticker": "SNNP.BK",
+      "name": "SNNP",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-24",
+      "entry": 6.85,
+      "stop": 6.69,
+      "target": 7.53,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-24",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
     {
       "ticker": "ASML",
       "name": "ASML",
@@ -1194,23 +1211,6 @@
       "entry": 16.8,
       "stop": 16.0,
       "target": 18.48,
-      "status": "open",
-      "days": 7,
-      "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "BTS.BK",
-      "name": "BTS",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-08-17",
-      "entry": 2.1,
-      "stop": 2.06,
-      "target": 2.31,
       "status": "open",
       "days": 7,
       "last_date": "2026-08-24",
@@ -2616,6 +2616,23 @@
       "return_pct": -2.25
     },
     {
+      "ticker": "BTS.BK",
+      "name": "BTS",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-08-17",
+      "entry": 2.1,
+      "stop": 2.06,
+      "target": 2.31,
+      "status": "closed",
+      "days": 7,
+      "last_date": "2026-08-24",
+      "exit": 2.06,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -2.4
+    },
+    {
       "ticker": "BRI.BK",
       "name": "BRI",
       "signal": "BUY",
@@ -2852,23 +2869,6 @@
       "exit_date": "2026-08-21",
       "reason": "target",
       "return_pct": 9.51
-    },
-    {
-      "ticker": "BTG.BK",
-      "name": "BTG",
-      "signal": "BUY",
-      "score": 62,
-      "entry_date": "2026-08-20",
-      "entry": 21.0,
-      "stop": 20.3,
-      "target": 23.1,
-      "status": "closed",
-      "days": 1,
-      "last_date": "2026-08-21",
-      "exit": 20.3,
-      "exit_date": "2026-08-21",
-      "reason": "stop",
-      "return_pct": -3.83
     }
   ]
 }
