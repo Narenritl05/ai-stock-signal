@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-24 20:45 (เวลาไทย)",
+  "generated_at": "2026-08-24 21:35 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 885,
-    "open": 127,
+    "closed": 886,
+    "open": 128,
     "win_rate": 45.8,
-    "avg_return": -0.04,
-    "total_return": -90.4,
-    "by_target": 215,
+    "avg_return": -0.03,
+    "total_return": -89.5,
+    "by_target": 216,
     "by_stop": 364,
     "by_time": 306
   },
@@ -106,6 +106,40 @@
       "entry": 146.51,
       "stop": 142.97,
       "target": 161.16,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-24",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "INTU",
+      "name": "INTU",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-08-24",
+      "entry": 370.17,
+      "stop": 344.26,
+      "target": 407.19,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-24",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "UPST",
+      "name": "UPST",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-24",
+      "entry": 30.35,
+      "stop": 28.23,
+      "target": 33.39,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-24",
@@ -1475,23 +1509,6 @@
       "return_pct": null
     },
     {
-      "ticker": "TGT",
-      "name": "TGT",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-08-13",
-      "entry": 154.0,
-      "stop": 143.22,
-      "target": 169.4,
-      "status": "open",
-      "days": 11,
-      "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "AOT.BK",
       "name": "AOT",
       "signal": "BUY",
@@ -2480,6 +2497,23 @@
       "return_pct": -7.5
     },
     {
+      "ticker": "TGT",
+      "name": "TGT",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-08-13",
+      "entry": 154.0,
+      "stop": 143.22,
+      "target": 169.4,
+      "status": "closed",
+      "days": 11,
+      "last_date": "2026-08-24",
+      "exit": 169.4,
+      "exit_date": "2026-08-24",
+      "reason": "target",
+      "return_pct": 9.5
+    },
+    {
       "ticker": "AMD",
       "name": "AMD",
       "signal": "BUY",
@@ -2665,23 +2699,6 @@
       "exit_date": "2026-08-24",
       "reason": "stop",
       "return_pct": -4.66
-    },
-    {
-      "ticker": "JMT.BK",
-      "name": "JMT",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-21",
-      "entry": 11.9,
-      "stop": 11.4,
-      "target": 13.09,
-      "status": "closed",
-      "days": 3,
-      "last_date": "2026-08-24",
-      "exit": 11.4,
-      "exit_date": "2026-08-24",
-      "reason": "stop",
-      "return_pct": -4.7
     }
   ]
 }
