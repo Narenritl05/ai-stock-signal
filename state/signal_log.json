@@ -13150,13 +13150,13 @@
       "entry": 7.8,
       "stop": 7.55,
       "target": 8.58,
-      "status": "open",
+      "status": "closed",
       "days": 18,
       "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 7.55,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -3.71
     },
     {
       "ticker": "AP.BK",
@@ -13473,13 +13473,13 @@
       "entry": 1.41,
       "stop": 1.36,
       "target": 1.55,
-      "status": "open",
+      "status": "closed",
       "days": 17,
       "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 1.36,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -4.05
     },
     {
       "ticker": "OKLO",
@@ -15751,13 +15751,13 @@
       "entry": 10.4,
       "stop": 9.67,
       "target": 11.44,
-      "status": "open",
+      "status": "closed",
       "days": 6,
       "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 9.67,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -7.52
     },
     {
       "ticker": "BGRIM.BK",
@@ -17145,13 +17145,13 @@
       "entry": 0.14,
       "stop": 0.13,
       "target": 0.15,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 0.13,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -7.64
     }
   ]
 }
