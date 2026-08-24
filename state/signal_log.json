@@ -17101,6 +17101,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "TIDLOR.BK",
+      "name": "TIDLOR",
+      "signal": "BUY",
+      "score": 70,
+      "entry_date": "2026-08-24",
+      "entry": 19.4,
+      "stop": 18.9,
+      "target": 21.34,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-24",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "RS.BK",
+      "name": "RS",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-08-24",
+      "entry": 0.14,
+      "stop": 0.13,
+      "target": 0.15,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-24",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
