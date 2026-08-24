@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-24 11:23 (เวลาไทย)",
+  "generated_at": "2026-08-24 12:10 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 873,
+    "closed": 874,
     "open": 132,
-    "win_rate": 46.3,
+    "win_rate": 46.2,
     "avg_return": 0.03,
-    "total_return": -81.8,
+    "total_return": -82.7,
     "by_target": 214,
-    "by_stop": 353,
+    "by_stop": 354,
     "by_time": 306
   },
   "open_positions": [
@@ -21,6 +21,23 @@
       "entry": 6.85,
       "stop": 6.69,
       "target": 7.53,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-24",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "STGT.BK",
+      "name": "STGT",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-08-24",
+      "entry": 10.9,
+      "stop": 10.3,
+      "target": 11.99,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-24",
@@ -140,23 +157,6 @@
       "entry": 206.45,
       "stop": 192.0,
       "target": 227.09,
-      "status": "open",
-      "days": 3,
-      "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "JMT.BK",
-      "name": "JMT",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-21",
-      "entry": 11.9,
-      "stop": 11.4,
-      "target": 13.09,
       "status": "open",
       "days": 3,
       "last_date": "2026-08-24",
@@ -2616,6 +2616,23 @@
       "return_pct": -4.66
     },
     {
+      "ticker": "JMT.BK",
+      "name": "JMT",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-21",
+      "entry": 11.9,
+      "stop": 11.4,
+      "target": 13.09,
+      "status": "closed",
+      "days": 3,
+      "last_date": "2026-08-24",
+      "exit": 11.4,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -4.7
+    },
+    {
       "ticker": "RS.BK",
       "name": "RS",
       "signal": "BUY",
@@ -2750,23 +2767,6 @@
       "exit_date": "2026-08-22",
       "reason": "stop",
       "return_pct": -7.5
-    },
-    {
-      "ticker": "TOP.BK",
-      "name": "TOP",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-08-21",
-      "entry": 64.0,
-      "stop": 61.25,
-      "target": 70.4,
-      "status": "closed",
-      "days": 1,
-      "last_date": "2026-08-22",
-      "exit": 61.25,
-      "exit_date": "2026-08-22",
-      "reason": "stop",
-      "return_pct": -4.8
     }
   ]
 }
