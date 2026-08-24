@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-25 04:27 (เวลาไทย)",
+  "generated_at": "2026-08-25 04:54 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 894,
+    "closed": 895,
     "open": 126,
-    "win_rate": 46.2,
-    "avg_return": -0.01,
-    "total_return": -87.8,
+    "win_rate": 46.1,
+    "avg_return": -0.02,
+    "total_return": -88.7,
     "by_target": 216,
-    "by_stop": 364,
+    "by_stop": 365,
     "by_time": 314
   },
   "open_positions": [
@@ -38,23 +38,6 @@
       "entry": 16.8,
       "stop": 15.8,
       "target": 18.48,
-      "status": "open",
-      "days": 0,
-      "last_date": "2026-08-25",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "RS.BK",
-      "name": "RS",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-08-25",
-      "entry": 0.14,
-      "stop": 0.13,
-      "target": 0.15,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-25",
@@ -106,6 +89,23 @@
       "entry": 169.89,
       "stop": 158.0,
       "target": 186.88,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-25",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "HANA.BK",
+      "name": "HANA",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-08-25",
+      "entry": 45.75,
+      "stop": 42.55,
+      "target": 50.33,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-25",
@@ -2293,6 +2293,23 @@
       "return_pct": 2.87
     },
     {
+      "ticker": "RS.BK",
+      "name": "RS",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-08-25",
+      "entry": 0.14,
+      "stop": 0.13,
+      "target": 0.15,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-08-25",
+      "exit": 0.13,
+      "exit_date": "2026-08-25",
+      "reason": "stop",
+      "return_pct": -7.64
+    },
+    {
       "ticker": "HMPRO.BK",
       "name": "HMPRO",
       "signal": "STRONG BUY",
@@ -2648,23 +2665,6 @@
       "exit_date": "2026-08-24",
       "reason": "target",
       "return_pct": 9.47
-    },
-    {
-      "ticker": "BTS.BK",
-      "name": "BTS",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-08-17",
-      "entry": 2.1,
-      "stop": 2.06,
-      "target": 2.31,
-      "status": "closed",
-      "days": 7,
-      "last_date": "2026-08-24",
-      "exit": 2.06,
-      "exit_date": "2026-08-24",
-      "reason": "stop",
-      "return_pct": -2.4
     }
   ]
 }
