@@ -17305,6 +17305,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "TOST",
+      "name": "TOST",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-08-25",
+      "entry": 36.83,
+      "stop": 34.25,
+      "target": 40.51,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-25",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
