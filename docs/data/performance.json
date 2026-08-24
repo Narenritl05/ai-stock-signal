@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-24 13:02 (เวลาไทย)",
+  "generated_at": "2026-08-24 14:35 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 874,
-    "open": 134,
+    "closed": 875,
+    "open": 133,
     "win_rate": 46.2,
-    "avg_return": 0.03,
-    "total_return": -82.7,
+    "avg_return": 0.02,
+    "total_return": -84.0,
     "by_target": 214,
-    "by_stop": 354,
+    "by_stop": 355,
     "by_time": 306
   },
   "open_positions": [
@@ -55,23 +55,6 @@
       "entry": 19.4,
       "stop": 18.9,
       "target": 21.34,
-      "status": "open",
-      "days": 0,
-      "last_date": "2026-08-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "RS.BK",
-      "name": "RS",
-      "signal": "BUY",
-      "score": 60,
-      "entry_date": "2026-08-24",
-      "entry": 0.14,
-      "stop": 0.13,
-      "target": 0.15,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-24",
@@ -2684,6 +2667,23 @@
       "return_pct": -7.64
     },
     {
+      "ticker": "RS.BK",
+      "name": "RS",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-08-24",
+      "entry": 0.14,
+      "stop": 0.13,
+      "target": 0.15,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-08-24",
+      "exit": 0.13,
+      "exit_date": "2026-08-24",
+      "reason": "stop",
+      "return_pct": -7.64
+    },
+    {
       "ticker": "BRI.BK",
       "name": "BRI",
       "signal": "BUY",
@@ -2784,23 +2784,6 @@
       "exit_date": "2026-08-22",
       "reason": "target",
       "return_pct": 9.5
-    },
-    {
-      "ticker": "LMT",
-      "name": "LMT",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-08-13",
-      "entry": 606.94,
-      "stop": 564.45,
-      "target": 667.63,
-      "status": "closed",
-      "days": 9,
-      "last_date": "2026-08-22",
-      "exit": 564.45,
-      "exit_date": "2026-08-22",
-      "reason": "stop",
-      "return_pct": -7.5
     }
   ]
 }
