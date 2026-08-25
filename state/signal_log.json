@@ -17492,6 +17492,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "VGI.BK",
+      "name": "VGI",
+      "signal": "BUY",
+      "score": 70,
+      "entry_date": "2026-08-25",
+      "entry": 1.04,
+      "stop": 0.97,
+      "target": 1.14,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-25",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
