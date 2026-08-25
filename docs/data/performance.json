@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-26 00:06 (เวลาไทย)",
+  "generated_at": "2026-08-26 00:54 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 907,
-    "open": 133,
-    "win_rate": 45.9,
+    "closed": 908,
+    "open": 132,
+    "win_rate": 45.8,
     "avg_return": -0.06,
-    "total_return": -92.1,
+    "total_return": -92.7,
     "by_target": 216,
-    "by_stop": 370,
+    "by_stop": 371,
     "by_time": 321
   },
   "open_positions": [
@@ -1007,23 +1007,6 @@
       "entry": 46.86,
       "stop": 43.72,
       "target": 51.55,
-      "status": "open",
-      "days": 7,
-      "last_date": "2026-08-26",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "MDB",
-      "name": "MDB",
-      "signal": "BUY",
-      "score": 62,
-      "entry_date": "2026-08-19",
-      "entry": 432.55,
-      "stop": 402.27,
-      "target": 475.8,
       "status": "open",
       "days": 7,
       "last_date": "2026-08-26",
@@ -2395,6 +2378,23 @@
       "return_pct": 5.83
     },
     {
+      "ticker": "MDB",
+      "name": "MDB",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-08-19",
+      "entry": 432.55,
+      "stop": 402.27,
+      "target": 475.8,
+      "status": "closed",
+      "days": 7,
+      "last_date": "2026-08-26",
+      "exit": 402.27,
+      "exit_date": "2026-08-26",
+      "reason": "stop",
+      "return_pct": -7.5
+    },
+    {
       "ticker": "SPALI.BK",
       "name": "SPALI",
       "signal": "STRONG BUY",
@@ -2767,23 +2767,6 @@
       "exit_date": "2026-08-24",
       "reason": "time",
       "return_pct": 1.56
-    },
-    {
-      "ticker": "TU.BK",
-      "name": "TU",
-      "signal": "BUY",
-      "score": 60,
-      "entry_date": "2026-08-04",
-      "entry": 13.1,
-      "stop": 12.18,
-      "target": 14.41,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-08-24",
-      "exit": 13.0,
-      "exit_date": "2026-08-24",
-      "reason": "time",
-      "return_pct": -1.26
     }
   ]
 }
