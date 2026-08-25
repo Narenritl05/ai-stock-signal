@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-25 17:02 (เวลาไทย)",
+  "generated_at": "2026-08-25 17:58 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 899,
+    "closed": 900,
     "open": 131,
     "win_rate": 45.9,
     "avg_return": -0.05,
-    "total_return": -91.2,
+    "total_return": -91.8,
     "by_target": 216,
-    "by_stop": 369,
+    "by_stop": 370,
     "by_time": 314
   },
   "open_positions": [
@@ -200,23 +200,6 @@
       "return_pct": null
     },
     {
-      "ticker": "RS.BK",
-      "name": "RS",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-08-25",
-      "entry": 0.14,
-      "stop": 0.13,
-      "target": 0.15,
-      "status": "open",
-      "days": 0,
-      "last_date": "2026-08-25",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "ONEE.BK",
       "name": "ONEE",
       "signal": "BUY",
@@ -242,6 +225,23 @@
       "entry": 1.04,
       "stop": 0.97,
       "target": 1.14,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-25",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "BLA.BK",
+      "name": "BLA",
+      "signal": "STRONG BUY",
+      "score": 85,
+      "entry_date": "2026-08-25",
+      "entry": 24.9,
+      "stop": 23.8,
+      "target": 27.39,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-25",
@@ -2463,6 +2463,23 @@
       "return_pct": -7.64
     },
     {
+      "ticker": "RS.BK",
+      "name": "RS",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-08-25",
+      "entry": 0.14,
+      "stop": 0.13,
+      "target": 0.15,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-08-25",
+      "exit": 0.13,
+      "exit_date": "2026-08-25",
+      "reason": "stop",
+      "return_pct": -7.64
+    },
+    {
       "ticker": "HMPRO.BK",
       "name": "HMPRO",
       "signal": "STRONG BUY",
@@ -2733,23 +2750,6 @@
       "exit_date": "2026-08-24",
       "reason": "stop",
       "return_pct": -3.71
-    },
-    {
-      "ticker": "CHAYO.BK",
-      "name": "CHAYO",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-07",
-      "entry": 1.41,
-      "stop": 1.36,
-      "target": 1.55,
-      "status": "closed",
-      "days": 17,
-      "last_date": "2026-08-24",
-      "exit": 1.36,
-      "exit_date": "2026-08-24",
-      "reason": "stop",
-      "return_pct": -4.05
     }
   ]
 }
