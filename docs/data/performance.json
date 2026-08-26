@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-26 12:28 (เวลาไทย)",
+  "generated_at": "2026-08-26 13:00 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 908,
-    "open": 142,
+    "closed": 909,
+    "open": 141,
     "win_rate": 45.8,
-    "avg_return": -0.06,
-    "total_return": -92.7,
+    "avg_return": -0.07,
+    "total_return": -92.9,
     "by_target": 216,
-    "by_stop": 371,
+    "by_stop": 372,
     "by_time": 321
   },
   "open_positions": [
@@ -567,23 +567,6 @@
       "target": 1288.85,
       "status": "open",
       "days": 1,
-      "last_date": "2026-08-26",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "SNNP.BK",
-      "name": "SNNP",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-24",
-      "entry": 6.85,
-      "stop": 6.69,
-      "target": 7.53,
-      "status": "open",
-      "days": 2,
       "last_date": "2026-08-26",
       "exit": null,
       "exit_date": null,
@@ -2565,6 +2548,23 @@
       "return_pct": -7.5
     },
     {
+      "ticker": "SNNP.BK",
+      "name": "SNNP",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-24",
+      "entry": 6.85,
+      "stop": 6.69,
+      "target": 7.53,
+      "status": "closed",
+      "days": 2,
+      "last_date": "2026-08-26",
+      "exit": 6.69,
+      "exit_date": "2026-08-26",
+      "reason": "stop",
+      "return_pct": -2.84
+    },
+    {
       "ticker": "SPALI.BK",
       "name": "SPALI",
       "signal": "STRONG BUY",
@@ -2920,23 +2920,6 @@
       "exit_date": "2026-08-24",
       "reason": "time",
       "return_pct": -6.64
-    },
-    {
-      "ticker": "TIDLOR.BK",
-      "name": "TIDLOR",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-04",
-      "entry": 19.4,
-      "stop": 18.7,
-      "target": 21.34,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-08-24",
-      "exit": 19.8,
-      "exit_date": "2026-08-24",
-      "reason": "time",
-      "return_pct": 1.56
     }
   ]
 }

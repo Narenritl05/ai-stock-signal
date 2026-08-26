@@ -17077,13 +17077,13 @@
       "entry": 6.85,
       "stop": 6.69,
       "target": 7.53,
-      "status": "open",
+      "status": "closed",
       "days": 2,
       "last_date": "2026-08-26",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 6.69,
+      "exit_date": "2026-08-26",
+      "reason": "stop",
+      "return_pct": -2.84
     },
     {
       "ticker": "STGT.BK",
