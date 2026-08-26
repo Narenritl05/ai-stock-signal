@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-26 16:09 (เวลาไทย)",
+  "generated_at": "2026-08-26 17:04 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 910,
-    "open": 141,
-    "win_rate": 45.8,
-    "avg_return": -0.06,
-    "total_return": -92.2,
-    "by_target": 217,
+    "closed": 911,
+    "open": 142,
+    "win_rate": 45.9,
+    "avg_return": -0.05,
+    "total_return": -91.5,
+    "by_target": 218,
     "by_stop": 372,
     "by_time": 321
   },
@@ -225,6 +225,40 @@
       "entry": 66.5,
       "stop": 64.75,
       "target": 73.15,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-26",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "IVL.BK",
+      "name": "IVL",
+      "signal": "BUY",
+      "score": 71,
+      "entry_date": "2026-08-26",
+      "entry": 22.2,
+      "stop": 21.2,
+      "target": 24.42,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-26",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "TOA.BK",
+      "name": "TOA",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-26",
+      "entry": 15.6,
+      "stop": 15.1,
+      "target": 17.16,
       "status": "open",
       "days": 0,
       "last_date": "2026-08-26",
@@ -1407,23 +1441,6 @@
       "return_pct": null
     },
     {
-      "ticker": "BGRIM.BK",
-      "name": "BGRIM",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-18",
-      "entry": 18.4,
-      "stop": 17.7,
-      "target": 20.24,
-      "status": "open",
-      "days": 8,
-      "last_date": "2026-08-26",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "GPSC.BK",
       "name": "GPSC",
       "signal": "BUY",
@@ -2548,6 +2565,23 @@
       "return_pct": 9.51
     },
     {
+      "ticker": "BGRIM.BK",
+      "name": "BGRIM",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-18",
+      "entry": 18.4,
+      "stop": 17.7,
+      "target": 20.24,
+      "status": "closed",
+      "days": 8,
+      "last_date": "2026-08-26",
+      "exit": 20.24,
+      "exit_date": "2026-08-26",
+      "reason": "target",
+      "return_pct": 9.5
+    },
+    {
       "ticker": "MDB",
       "name": "MDB",
       "signal": "BUY",
@@ -2903,23 +2937,6 @@
       "exit_date": "2026-08-24",
       "reason": "time",
       "return_pct": -2.94
-    },
-    {
-      "ticker": "SAK.BK",
-      "name": "SAK",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-04",
-      "entry": 3.46,
-      "stop": 3.22,
-      "target": 3.81,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-08-24",
-      "exit": 3.24,
-      "exit_date": "2026-08-24",
-      "reason": "time",
-      "return_pct": -6.86
     }
   ]
 }
