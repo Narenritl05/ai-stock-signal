@@ -17679,6 +17679,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "TISCO.BK",
+      "name": "TISCO",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-26",
+      "entry": 127.0,
+      "stop": 124.5,
+      "target": 139.7,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-26",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "AP.BK",
+      "name": "AP",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-26",
+      "entry": 8.2,
+      "stop": 8.1,
+      "target": 9.02,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-26",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "BA.BK",
+      "name": "BA",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-26",
+      "entry": 19.6,
+      "stop": 18.7,
+      "target": 21.56,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-26",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
