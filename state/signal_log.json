@@ -17849,6 +17849,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "CPN.BK",
+      "name": "CPN",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-26",
+      "entry": 66.5,
+      "stop": 64.75,
+      "target": 73.15,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-26",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
