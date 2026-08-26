@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-26 15:06 (เวลาไทย)",
+  "generated_at": "2026-08-26 16:09 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 909,
-    "open": 142,
+    "closed": 910,
+    "open": 141,
     "win_rate": 45.8,
-    "avg_return": -0.07,
-    "total_return": -92.9,
-    "by_target": 216,
+    "avg_return": -0.06,
+    "total_return": -92.2,
+    "by_target": 217,
     "by_stop": 372,
     "by_time": 321
   },
@@ -2053,23 +2053,6 @@
       "return_pct": null
     },
     {
-      "ticker": "BCP.BK",
-      "name": "BCP",
-      "signal": "BUY",
-      "score": 60,
-      "entry_date": "2026-08-13",
-      "entry": 49.75,
-      "stop": 46.27,
-      "target": 54.73,
-      "status": "open",
-      "days": 13,
-      "last_date": "2026-08-26",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "XOM",
       "name": "XOM",
       "signal": "STRONG BUY",
@@ -2548,6 +2531,23 @@
       "return_pct": 5.83
     },
     {
+      "ticker": "BCP.BK",
+      "name": "BCP",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-08-13",
+      "entry": 49.75,
+      "stop": 46.27,
+      "target": 54.73,
+      "status": "closed",
+      "days": 13,
+      "last_date": "2026-08-26",
+      "exit": 54.73,
+      "exit_date": "2026-08-26",
+      "reason": "target",
+      "return_pct": 9.51
+    },
+    {
       "ticker": "MDB",
       "name": "MDB",
       "signal": "BUY",
@@ -2920,23 +2920,6 @@
       "exit_date": "2026-08-24",
       "reason": "time",
       "return_pct": -6.86
-    },
-    {
-      "ticker": "SAWAD.BK",
-      "name": "SAWAD",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-04",
-      "entry": 25.25,
-      "stop": 23.48,
-      "target": 27.78,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-08-24",
-      "exit": 23.7,
-      "exit_date": "2026-08-24",
-      "reason": "time",
-      "return_pct": -6.64
     }
   ]
 }
