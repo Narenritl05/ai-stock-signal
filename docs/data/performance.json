@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-27 06:59 (เวลาไทย)",
+  "generated_at": "2026-08-27 15:34 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 917,
+    "closed": 918,
     "open": 150,
-    "win_rate": 45.7,
+    "win_rate": 45.6,
     "avg_return": -0.07,
-    "total_return": -93.1,
+    "total_return": -93.2,
     "by_target": 218,
-    "by_stop": 375,
+    "by_stop": 376,
     "by_time": 324
   },
   "open_positions": [
@@ -98,6 +98,23 @@
       "return_pct": null
     },
     {
+      "ticker": "TLI.BK",
+      "name": "TLI",
+      "signal": "STRONG BUY",
+      "score": 77,
+      "entry_date": "2026-08-27",
+      "entry": 11.6,
+      "stop": 11.1,
+      "target": 12.76,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-27",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
       "ticker": "AH.BK",
       "name": "AH",
       "signal": "BUY",
@@ -174,23 +191,6 @@
       "entry": 19.6,
       "stop": 18.7,
       "target": 21.56,
-      "status": "open",
-      "days": 1,
-      "last_date": "2026-08-27",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "OSP.BK",
-      "name": "OSP",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-26",
-      "entry": 17.7,
-      "stop": 17.4,
-      "target": 19.47,
       "status": "open",
       "days": 1,
       "last_date": "2026-08-27",
@@ -2616,6 +2616,23 @@
       "return_pct": 4.48
     },
     {
+      "ticker": "OSP.BK",
+      "name": "OSP",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-26",
+      "entry": 17.7,
+      "stop": 17.4,
+      "target": 19.47,
+      "status": "closed",
+      "days": 1,
+      "last_date": "2026-08-27",
+      "exit": 17.4,
+      "exit_date": "2026-08-27",
+      "reason": "stop",
+      "return_pct": -2.19
+    },
+    {
       "ticker": "KTC.BK",
       "name": "KTC",
       "signal": "BUY",
@@ -3039,23 +3056,6 @@
       "exit_date": "2026-08-25",
       "reason": "stop",
       "return_pct": -4.8
-    },
-    {
-      "ticker": "RS.BK",
-      "name": "RS",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-08-25",
-      "entry": 0.14,
-      "stop": 0.13,
-      "target": 0.15,
-      "status": "closed",
-      "days": 0,
-      "last_date": "2026-08-25",
-      "exit": 0.13,
-      "exit_date": "2026-08-25",
-      "reason": "stop",
-      "return_pct": -7.64
     },
     {
       "ticker": "RS.BK",
