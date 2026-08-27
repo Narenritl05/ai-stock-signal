@@ -18087,6 +18087,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "SCC.BK",
+      "name": "SCC",
+      "signal": "STRONG BUY",
+      "score": 76,
+      "entry_date": "2026-08-27",
+      "entry": 257.0,
+      "stop": 245.0,
+      "target": 282.7,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-27",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "KTC.BK",
+      "name": "KTC",
+      "signal": "BUY",
+      "score": 71,
+      "entry_date": "2026-08-27",
+      "entry": 38.0,
+      "stop": 37.0,
+      "target": 41.8,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-27",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "BCP.BK",
+      "name": "BCP",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-08-27",
+      "entry": 54.75,
+      "stop": 50.92,
+      "target": 60.23,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-27",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
