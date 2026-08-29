@@ -18590,13 +18590,13 @@
       "entry": 241.45,
       "stop": 224.55,
       "target": 265.59,
-      "status": "open",
+      "status": "closed",
       "days": 1,
       "last_date": "2026-08-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 224.55,
+      "exit_date": "2026-08-30",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "MARA",
@@ -18607,13 +18607,13 @@
       "entry": 11.87,
       "stop": 11.04,
       "target": 13.06,
-      "status": "open",
+      "status": "closed",
       "days": 1,
       "last_date": "2026-08-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 11.04,
+      "exit_date": "2026-08-30",
+      "reason": "stop",
+      "return_pct": -7.49
     },
     {
       "ticker": "CLSK",
@@ -18624,13 +18624,13 @@
       "entry": 12.95,
       "stop": 12.04,
       "target": 14.24,
-      "status": "open",
+      "status": "closed",
       "days": 1,
       "last_date": "2026-08-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 12.04,
+      "exit_date": "2026-08-30",
+      "reason": "stop",
+      "return_pct": -7.53
     }
   ]
 }
