@@ -14765,13 +14765,13 @@
       "entry": 7.5,
       "stop": 7.0,
       "target": 8.25,
-      "status": "open",
+      "status": "closed",
       "days": 17,
       "last_date": "2026-08-31",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 7.0,
+      "exit_date": "2026-08-31",
+      "reason": "stop",
+      "return_pct": -7.17
     },
     {
       "ticker": "TSLA",
@@ -16091,13 +16091,13 @@
       "entry": 16.7,
       "stop": 15.53,
       "target": 18.37,
-      "status": "open",
+      "status": "closed",
       "days": 12,
       "last_date": "2026-08-31",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 15.53,
+      "exit_date": "2026-08-31",
+      "reason": "stop",
+      "return_pct": -7.51
     },
     {
       "ticker": "KKP.BK",
@@ -17451,13 +17451,13 @@
       "entry": 11.9,
       "stop": 11.7,
       "target": 13.09,
-      "status": "open",
+      "status": "closed",
       "days": 6,
       "last_date": "2026-08-31",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 11.7,
+      "exit_date": "2026-08-31",
+      "reason": "stop",
+      "return_pct": -2.18
     },
     {
       "ticker": "RS.BK",
@@ -17706,13 +17706,13 @@
       "entry": 8.2,
       "stop": 8.1,
       "target": 9.02,
-      "status": "open",
+      "status": "closed",
       "days": 5,
       "last_date": "2026-08-31",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 8.1,
+      "exit_date": "2026-08-31",
+      "reason": "stop",
+      "return_pct": -1.72
     },
     {
       "ticker": "BA.BK",
@@ -17842,13 +17842,13 @@
       "entry": 14.4,
       "stop": 14.05,
       "target": 15.84,
-      "status": "open",
+      "status": "closed",
       "days": 5,
       "last_date": "2026-08-31",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 14.05,
+      "exit_date": "2026-08-31",
+      "reason": "stop",
+      "return_pct": -2.93
     },
     {
       "ticker": "CPN.BK",
@@ -18631,6 +18631,40 @@
       "exit_date": "2026-08-30",
       "reason": "stop",
       "return_pct": -7.53
+    },
+    {
+      "ticker": "TTB.BK",
+      "name": "TTB",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-31",
+      "entry": 3.0,
+      "stop": 2.8,
+      "target": 3.3,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-31",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "TOA.BK",
+      "name": "TOA",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-08-31",
+      "entry": 15.6,
+      "stop": 14.73,
+      "target": 17.16,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-08-31",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
