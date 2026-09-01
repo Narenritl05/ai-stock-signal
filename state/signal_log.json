@@ -18801,6 +18801,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "JPM",
+      "name": "JPM",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-09-01",
+      "entry": 356.02,
+      "stop": 351.55,
+      "target": 391.62,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-01",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
