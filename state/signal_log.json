@@ -16720,13 +16720,13 @@
       "entry": 621.52,
       "stop": 580.63,
       "target": 683.67,
-      "status": "open",
+      "status": "closed",
       "days": 13,
       "last_date": "2026-09-02",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 683.67,
+      "exit_date": "2026-09-02",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "RIOT",
@@ -18199,13 +18199,13 @@
       "entry": 226.78,
       "stop": 210.91,
       "target": 249.46,
-      "status": "open",
+      "status": "closed",
       "days": 5,
       "last_date": "2026-09-02",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 210.91,
+      "exit_date": "2026-09-02",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "OKTA",
@@ -18216,13 +18216,13 @@
       "entry": 172.77,
       "stop": 160.68,
       "target": 190.05,
-      "status": "open",
+      "status": "closed",
       "days": 5,
       "last_date": "2026-09-02",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 160.68,
+      "exit_date": "2026-09-02",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "NVDA",
@@ -18267,13 +18267,13 @@
       "entry": 385.87,
       "stop": 358.86,
       "target": 424.46,
-      "status": "open",
+      "status": "closed",
       "days": 5,
       "last_date": "2026-09-02",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 358.86,
+      "exit_date": "2026-09-02",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "NET",
@@ -18284,13 +18284,13 @@
       "entry": 306.76,
       "stop": 285.29,
       "target": 337.44,
-      "status": "open",
+      "status": "closed",
       "days": 5,
       "last_date": "2026-09-02",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 285.29,
+      "exit_date": "2026-09-02",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "DDOG",
@@ -18318,13 +18318,13 @@
       "entry": 444.84,
       "stop": 413.7,
       "target": 489.32,
-      "status": "open",
+      "status": "closed",
       "days": 5,
       "last_date": "2026-09-02",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 413.7,
+      "exit_date": "2026-09-02",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "NOW",
@@ -18352,13 +18352,13 @@
       "entry": 330.87,
       "stop": 307.71,
       "target": 363.96,
-      "status": "open",
+      "status": "closed",
       "days": 5,
       "last_date": "2026-09-02",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 307.71,
+      "exit_date": "2026-09-02",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "CRDO",
