@@ -18954,6 +18954,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "XOM",
+      "name": "XOM",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-09-02",
+      "entry": 164.55,
+      "stop": 153.03,
+      "target": 181.01,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-02",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "ZS",
+      "name": "ZS",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-09-02",
+      "entry": 178.37,
+      "stop": 165.88,
+      "target": 196.21,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-02",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
