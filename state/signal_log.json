@@ -15292,13 +15292,13 @@
       "entry": 11.3,
       "stop": 10.51,
       "target": 12.43,
-      "status": "open",
+      "status": "closed",
       "days": 16,
       "last_date": "2026-09-02",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 10.51,
+      "exit_date": "2026-09-02",
+      "reason": "stop",
+      "return_pct": -7.49
     },
     {
       "ticker": "DMT.BK",
@@ -15377,13 +15377,13 @@
       "entry": 4.44,
       "stop": 4.13,
       "target": 4.88,
-      "status": "open",
+      "status": "closed",
       "days": 16,
       "last_date": "2026-09-02",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 4.13,
+      "exit_date": "2026-09-02",
+      "reason": "stop",
+      "return_pct": -7.48
     },
     {
       "ticker": "GUNKUL.BK",
@@ -17502,13 +17502,13 @@
       "entry": 1.04,
       "stop": 0.97,
       "target": 1.14,
-      "status": "open",
+      "status": "closed",
       "days": 8,
       "last_date": "2026-09-02",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 0.97,
+      "exit_date": "2026-09-02",
+      "reason": "stop",
+      "return_pct": -7.23
     },
     {
       "ticker": "BLA.BK",
@@ -17519,13 +17519,13 @@
       "entry": 24.9,
       "stop": 23.8,
       "target": 27.39,
-      "status": "open",
+      "status": "closed",
       "days": 8,
       "last_date": "2026-09-02",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 23.8,
+      "exit_date": "2026-09-02",
+      "reason": "stop",
+      "return_pct": -4.92
     },
     {
       "ticker": "GS",
@@ -18709,13 +18709,13 @@
       "entry": 0.14,
       "stop": 0.13,
       "target": 0.15,
-      "status": "open",
+      "status": "closed",
       "days": 2,
       "last_date": "2026-09-02",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 0.13,
+      "exit_date": "2026-09-02",
+      "reason": "stop",
+      "return_pct": -7.64
     },
     {
       "ticker": "TOP.BK",
