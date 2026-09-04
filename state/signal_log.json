@@ -19804,6 +19804,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "AMD",
+      "name": "AMD",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-09-05",
+      "entry": 477.57,
+      "stop": 456.16,
+      "target": 525.33,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-05",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "WDC",
+      "name": "WDC",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-09-05",
+      "entry": 467.46,
+      "stop": 435.38,
+      "target": 514.21,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-05",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
