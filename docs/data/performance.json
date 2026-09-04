@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-04 07:39 (เวลาไทย)",
+  "generated_at": "2026-09-04 12:22 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1042,
+    "closed": 1043,
     "open": 105,
     "win_rate": 42.8,
-    "avg_return": -0.39,
+    "avg_return": -0.4,
     "total_return": -99.8,
     "by_target": 233,
-    "by_stop": 459,
+    "by_stop": 460,
     "by_time": 350
   },
   "open_positions": [
@@ -115,16 +115,16 @@
       "return_pct": null
     },
     {
-      "ticker": "EGCO.BK",
-      "name": "EGCO",
+      "ticker": "CENTEL.BK",
+      "name": "CENTEL",
       "signal": "BUY",
-      "score": 69,
-      "entry_date": "2026-09-03",
-      "entry": 133.0,
-      "stop": 129.0,
-      "target": 146.3,
+      "score": 63,
+      "entry_date": "2026-09-04",
+      "entry": 43.0,
+      "stop": 39.99,
+      "target": 47.3,
       "status": "open",
-      "days": 1,
+      "days": 0,
       "last_date": "2026-09-04",
       "exit": null,
       "exit_date": null,
@@ -1868,6 +1868,23 @@
       "return_pct": 9.5
     },
     {
+      "ticker": "EGCO.BK",
+      "name": "EGCO",
+      "signal": "BUY",
+      "score": 69,
+      "entry_date": "2026-09-03",
+      "entry": 133.0,
+      "stop": 129.0,
+      "target": 146.3,
+      "status": "closed",
+      "days": 1,
+      "last_date": "2026-09-04",
+      "exit": 129.0,
+      "exit_date": "2026-09-04",
+      "reason": "stop",
+      "return_pct": -3.51
+    },
+    {
       "ticker": "BJC.BK",
       "name": "BJC",
       "signal": "STRONG BUY",
@@ -2291,23 +2308,6 @@
       "exit_date": "2026-09-02",
       "reason": "stop",
       "return_pct": -6.65
-    },
-    {
-      "ticker": "PLANB.BK",
-      "name": "PLANB",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-08-18",
-      "entry": 6.6,
-      "stop": 6.14,
-      "target": 7.26,
-      "status": "closed",
-      "days": 15,
-      "last_date": "2026-09-02",
-      "exit": 6.14,
-      "exit_date": "2026-09-02",
-      "reason": "stop",
-      "return_pct": -7.47
     }
   ]
 }
