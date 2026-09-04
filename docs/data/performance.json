@@ -1,34 +1,17 @@
 {
-  "generated_at": "2026-09-05 00:21 (เวลาไทย)",
+  "generated_at": "2026-09-05 02:45 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1046,
-    "open": 119,
+    "closed": 1047,
+    "open": 118,
     "win_rate": 42.7,
-    "avg_return": -0.4,
-    "total_return": -99.8,
+    "avg_return": -0.41,
+    "total_return": -99.9,
     "by_target": 234,
-    "by_stop": 462,
+    "by_stop": 463,
     "by_time": 350
   },
   "open_positions": [
-    {
-      "ticker": "RS.BK",
-      "name": "RS",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-09-05",
-      "entry": 0.14,
-      "stop": 0.13,
-      "target": 0.15,
-      "status": "open",
-      "days": 0,
-      "last_date": "2026-09-05",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
     {
       "ticker": "MRVL",
       "name": "MRVL",
@@ -2038,6 +2021,23 @@
   ],
   "closed_positions": [
     {
+      "ticker": "RS.BK",
+      "name": "RS",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-09-05",
+      "entry": 0.14,
+      "stop": 0.13,
+      "target": 0.15,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-09-05",
+      "exit": 0.13,
+      "exit_date": "2026-09-05",
+      "reason": "stop",
+      "return_pct": -7.64
+    },
+    {
       "ticker": "CENTEL.BK",
       "name": "CENTEL",
       "signal": "STRONG BUY",
@@ -2529,23 +2529,6 @@
       "exit_date": "2026-09-02",
       "reason": "time",
       "return_pct": -2.16
-    },
-    {
-      "ticker": "M.BK",
-      "name": "M",
-      "signal": "BUY",
-      "score": 69,
-      "entry_date": "2026-08-15",
-      "entry": 21.6,
-      "stop": 20.9,
-      "target": 23.76,
-      "status": "closed",
-      "days": 18,
-      "last_date": "2026-09-02",
-      "exit": 20.9,
-      "exit_date": "2026-09-02",
-      "reason": "stop",
-      "return_pct": -3.74
     }
   ]
 }

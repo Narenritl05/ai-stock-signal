@@ -19763,13 +19763,13 @@
       "entry": 0.14,
       "stop": 0.13,
       "target": 0.15,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-09-05",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 0.13,
+      "exit_date": "2026-09-05",
+      "reason": "stop",
+      "return_pct": -7.64
     },
     {
       "ticker": "MRVL",
