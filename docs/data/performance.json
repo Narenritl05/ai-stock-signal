@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-05 07:14 (เวลาไทย)",
+  "generated_at": "2026-09-05 11:45 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1049,
-    "open": 120,
+    "closed": 1050,
+    "open": 121,
     "win_rate": 42.6,
     "avg_return": -0.42,
     "total_return": -99.9,
     "by_target": 234,
-    "by_stop": 465,
+    "by_stop": 466,
     "by_time": 350
   },
   "open_positions": [
@@ -64,14 +64,14 @@
       "return_pct": null
     },
     {
-      "ticker": "LULU",
-      "name": "LULU",
-      "signal": "STRONG BUY",
-      "score": 81,
+      "ticker": "DE",
+      "name": "DE",
+      "signal": "BUY",
+      "score": 64,
       "entry_date": "2026-09-05",
-      "entry": 121.77,
-      "stop": 115.0,
-      "target": 133.95,
+      "entry": 694.41,
+      "stop": 645.8,
+      "target": 763.85,
       "status": "open",
       "days": 0,
       "last_date": "2026-09-05",
@@ -81,14 +81,31 @@
       "return_pct": null
     },
     {
-      "ticker": "DE",
-      "name": "DE",
-      "signal": "BUY",
-      "score": 64,
+      "ticker": "ALAB",
+      "name": "ALAB",
+      "signal": "STRONG BUY",
+      "score": 81,
       "entry_date": "2026-09-05",
-      "entry": 694.41,
-      "stop": 645.8,
-      "target": 763.85,
+      "entry": 310.4,
+      "stop": 288.67,
+      "target": 341.44,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-05",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "AMD",
+      "name": "AMD",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-09-05",
+      "entry": 477.57,
+      "stop": 456.16,
+      "target": 525.33,
       "status": "open",
       "days": 0,
       "last_date": "2026-09-05",
@@ -2106,6 +2123,23 @@
       "return_pct": -4.98
     },
     {
+      "ticker": "LULU",
+      "name": "LULU",
+      "signal": "STRONG BUY",
+      "score": 81,
+      "entry_date": "2026-09-05",
+      "entry": 121.77,
+      "stop": 115.0,
+      "target": 133.95,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-09-05",
+      "exit": 115.0,
+      "exit_date": "2026-09-05",
+      "reason": "stop",
+      "return_pct": -6.06
+    },
+    {
       "ticker": "CENTEL.BK",
       "name": "CENTEL",
       "signal": "STRONG BUY",
@@ -2546,23 +2580,6 @@
       "exit_date": "2026-09-03",
       "reason": "stop",
       "return_pct": -6.79
-    },
-    {
-      "ticker": "ZS",
-      "name": "ZS",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-08-13",
-      "entry": 176.8,
-      "stop": 164.42,
-      "target": 194.48,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-09-02",
-      "exit": 177.55,
-      "exit_date": "2026-09-02",
-      "reason": "time",
-      "return_pct": -0.08
     }
   ]
 }
