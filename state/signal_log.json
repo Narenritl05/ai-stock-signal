@@ -18029,13 +18029,13 @@
       "entry": 107.14,
       "stop": 99.64,
       "target": 117.85,
-      "status": "open",
+      "status": "closed",
       "days": 15,
       "last_date": "2026-09-10",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 99.64,
+      "exit_date": "2026-09-10",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "FTNT",
@@ -19627,13 +19627,13 @@
       "entry": 277.62,
       "stop": 258.19,
       "target": 305.38,
-      "status": "open",
+      "status": "closed",
       "days": 6,
       "last_date": "2026-09-10",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 258.19,
+      "exit_date": "2026-09-10",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "CLS",
@@ -19746,13 +19746,13 @@
       "entry": 834.97,
       "stop": 794.19,
       "target": 918.47,
-      "status": "open",
+      "status": "closed",
       "days": 6,
       "last_date": "2026-09-10",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 794.19,
+      "exit_date": "2026-09-10",
+      "reason": "stop",
+      "return_pct": -5.38
     },
     {
       "ticker": "RS.BK",
@@ -20528,13 +20528,13 @@
       "entry": 12.49,
       "stop": 11.9,
       "target": 13.74,
-      "status": "open",
+      "status": "closed",
       "days": 1,
       "last_date": "2026-09-10",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 11.9,
+      "exit_date": "2026-09-10",
+      "reason": "stop",
+      "return_pct": -5.22
     },
     {
       "ticker": "RBF.BK",
