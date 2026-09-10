@@ -21147,6 +21147,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "SCGP.BK",
+      "name": "SCGP",
+      "signal": "STRONG BUY",
+      "score": 95,
+      "entry_date": "2026-09-10",
+      "entry": 31.0,
+      "stop": 28.83,
+      "target": 34.1,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-10",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "BLA.BK",
+      "name": "BLA",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-09-10",
+      "entry": 24.3,
+      "stop": 23.4,
+      "target": 26.73,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-10",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
