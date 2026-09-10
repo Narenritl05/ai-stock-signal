@@ -19712,13 +19712,13 @@
       "entry": 65.2,
       "stop": 60.64,
       "target": 71.72,
-      "status": "open",
+      "status": "closed",
       "days": 7,
       "last_date": "2026-09-11",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 60.64,
+      "exit_date": "2026-09-11",
+      "reason": "stop",
+      "return_pct": -7.49
     },
     {
       "ticker": "CLSK",
@@ -19882,13 +19882,13 @@
       "entry": 310.4,
       "stop": 288.67,
       "target": 341.44,
-      "status": "open",
+      "status": "closed",
       "days": 6,
       "last_date": "2026-09-11",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 288.67,
+      "exit_date": "2026-09-11",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "AMD",
