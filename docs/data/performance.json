@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-12 01:55 (เวลาไทย)",
+  "generated_at": "2026-09-12 04:31 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1140,
+    "closed": 1141,
     "open": 122,
     "win_rate": 41.3,
     "avg_return": -0.55,
     "total_return": -100.0,
     "by_target": 245,
-    "by_stop": 513,
+    "by_stop": 514,
     "by_time": 382
   },
   "open_positions": [
@@ -72,6 +72,23 @@
       "entry": 324.41,
       "stop": 301.7,
       "target": 356.85,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-12",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "KCE.BK",
+      "name": "KCE",
+      "signal": "BUY",
+      "score": 65,
+      "entry_date": "2026-09-12",
+      "entry": 66.0,
+      "stop": 61.38,
+      "target": 72.6,
       "status": "open",
       "days": 0,
       "last_date": "2026-09-12",
@@ -293,23 +310,6 @@
       "entry": 653.69,
       "stop": 607.93,
       "target": 719.06,
-      "status": "open",
-      "days": 2,
-      "last_date": "2026-09-12",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "CVNA",
-      "name": "CVNA",
-      "signal": "STRONG BUY",
-      "score": 77,
-      "entry_date": "2026-09-10",
-      "entry": 74.72,
-      "stop": 69.49,
-      "target": 82.19,
       "status": "open",
       "days": 2,
       "last_date": "2026-09-12",
@@ -2089,6 +2089,23 @@
   ],
   "closed_positions": [
     {
+      "ticker": "CVNA",
+      "name": "CVNA",
+      "signal": "STRONG BUY",
+      "score": 77,
+      "entry_date": "2026-09-10",
+      "entry": 74.72,
+      "stop": 69.49,
+      "target": 82.19,
+      "status": "closed",
+      "days": 2,
+      "last_date": "2026-09-12",
+      "exit": 69.49,
+      "exit_date": "2026-09-12",
+      "reason": "stop",
+      "return_pct": -7.5
+    },
+    {
       "ticker": "KCE.BK",
       "name": "KCE",
       "signal": "BUY",
@@ -2580,23 +2597,6 @@
       "exit_date": "2026-09-10",
       "reason": "stop",
       "return_pct": -5.38
-    },
-    {
-      "ticker": "LI",
-      "name": "LI",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-09-09",
-      "entry": 12.49,
-      "stop": 11.9,
-      "target": 13.74,
-      "status": "closed",
-      "days": 1,
-      "last_date": "2026-09-10",
-      "exit": 11.9,
-      "exit_date": "2026-09-10",
-      "reason": "stop",
-      "return_pct": -5.22
     }
   ]
 }
