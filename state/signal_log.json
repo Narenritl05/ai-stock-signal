@@ -21181,6 +21181,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "SLB",
+      "name": "SLB",
+      "signal": "BUY",
+      "score": 70,
+      "entry_date": "2026-09-11",
+      "entry": 57.05,
+      "stop": 53.06,
+      "target": 62.75,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-11",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "ALAB",
+      "name": "ALAB",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-09-11",
+      "entry": 300.54,
+      "stop": 279.5,
+      "target": 330.59,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-11",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "OKLO",
+      "name": "OKLO",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-09-11",
+      "entry": 42.57,
+      "stop": 39.59,
+      "target": 46.83,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-11",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
