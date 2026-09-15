@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-16 01:20 (เวลาไทย)",
+  "generated_at": "2026-09-16 04:34 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1178,
-    "open": 120,
-    "win_rate": 40.7,
-    "avg_return": -0.64,
+    "closed": 1180,
+    "open": 118,
+    "win_rate": 40.6,
+    "avg_return": -0.65,
     "total_return": -100.0,
     "by_target": 247,
-    "by_stop": 537,
+    "by_stop": 539,
     "by_time": 394
   },
   "open_positions": [
@@ -1016,23 +1016,6 @@
       "return_pct": null
     },
     {
-      "ticker": "MELI",
-      "name": "MELI",
-      "signal": "BUY",
-      "score": 62,
-      "entry_date": "2026-09-09",
-      "entry": 1978.36,
-      "stop": 1839.87,
-      "target": 2176.2,
-      "status": "open",
-      "days": 7,
-      "last_date": "2026-09-16",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "AAPL",
       "name": "AAPL",
       "signal": "BUY",
@@ -1679,23 +1662,6 @@
       "return_pct": null
     },
     {
-      "ticker": "SMCI",
-      "name": "SMCI",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-09-04",
-      "entry": 39.0,
-      "stop": 36.27,
-      "target": 42.9,
-      "status": "open",
-      "days": 12,
-      "last_date": "2026-09-16",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "CLS",
       "name": "CLS",
       "signal": "BUY",
@@ -2087,6 +2053,40 @@
       "exit_date": "2026-09-16",
       "reason": "time",
       "return_pct": 2.61
+    },
+    {
+      "ticker": "SMCI",
+      "name": "SMCI",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-09-04",
+      "entry": 39.0,
+      "stop": 36.27,
+      "target": 42.9,
+      "status": "closed",
+      "days": 12,
+      "last_date": "2026-09-16",
+      "exit": 36.27,
+      "exit_date": "2026-09-16",
+      "reason": "stop",
+      "return_pct": -7.5
+    },
+    {
+      "ticker": "MELI",
+      "name": "MELI",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-09-09",
+      "entry": 1978.36,
+      "stop": 1839.87,
+      "target": 2176.2,
+      "status": "closed",
+      "days": 7,
+      "last_date": "2026-09-16",
+      "exit": 1839.87,
+      "exit_date": "2026-09-16",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "RATCH.BK",
@@ -2529,40 +2529,6 @@
       "exit_date": "2026-09-14",
       "reason": "time",
       "return_pct": 8.79
-    },
-    {
-      "ticker": "GS",
-      "name": "GS",
-      "signal": "BUY",
-      "score": 70,
-      "entry_date": "2026-08-25",
-      "entry": 1046.31,
-      "stop": 980.75,
-      "target": 1150.94,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-09-14",
-      "exit": 1029.18,
-      "exit_date": "2026-09-14",
-      "reason": "time",
-      "return_pct": -2.14
-    },
-    {
-      "ticker": "TSM",
-      "name": "TSM",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-25",
-      "entry": 418.68,
-      "stop": 389.38,
-      "target": 460.55,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-09-14",
-      "exit": 433.24,
-      "exit_date": "2026-09-14",
-      "reason": "time",
-      "return_pct": 2.98
     }
   ]
 }
