@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-15 10:00 (เวลาไทย)",
+  "generated_at": "2026-09-15 15:50 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1172,
+    "closed": 1173,
     "open": 116,
-    "win_rate": 40.7,
-    "avg_return": -0.63,
+    "win_rate": 40.8,
+    "avg_return": -0.62,
     "total_return": -100.0,
-    "by_target": 246,
+    "by_target": 247,
     "by_stop": 534,
     "by_time": 392
   },
@@ -370,6 +370,23 @@
       "return_pct": null
     },
     {
+      "ticker": "TASCO.BK",
+      "name": "TASCO",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-09-15",
+      "entry": 17.5,
+      "stop": 16.8,
+      "target": 19.25,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-15",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
       "ticker": "BBL.BK",
       "name": "BBL",
       "signal": "BUY",
@@ -531,23 +548,6 @@
       "entry": 15.5,
       "stop": 14.9,
       "target": 17.05,
-      "status": "open",
-      "days": 4,
-      "last_date": "2026-09-15",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "IIG.BK",
-      "name": "IIG",
-      "signal": "STRONG BUY",
-      "score": 76,
-      "entry_date": "2026-09-11",
-      "entry": 1.43,
-      "stop": 1.33,
-      "target": 1.57,
       "status": "open",
       "days": 4,
       "last_date": "2026-09-15",
@@ -2259,6 +2259,23 @@
       "return_pct": -7.5
     },
     {
+      "ticker": "IIG.BK",
+      "name": "IIG",
+      "signal": "STRONG BUY",
+      "score": 76,
+      "entry_date": "2026-09-11",
+      "entry": 1.43,
+      "stop": 1.33,
+      "target": 1.57,
+      "status": "closed",
+      "days": 4,
+      "last_date": "2026-09-15",
+      "exit": 1.57,
+      "exit_date": "2026-09-15",
+      "reason": "target",
+      "return_pct": 9.29
+    },
+    {
       "ticker": "KBANK.BK",
       "name": "KBANK",
       "signal": "BUY",
@@ -2478,23 +2495,6 @@
       "exit_date": "2026-09-14",
       "reason": "stop",
       "return_pct": -5.52
-    },
-    {
-      "ticker": "AP.BK",
-      "name": "AP",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-09-09",
-      "entry": 8.15,
-      "stop": 8.0,
-      "target": 8.96,
-      "status": "closed",
-      "days": 5,
-      "last_date": "2026-09-14",
-      "exit": 8.0,
-      "exit_date": "2026-09-14",
-      "reason": "stop",
-      "return_pct": -2.34
     }
   ]
 }
