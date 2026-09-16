@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-09-17 03:46 (เวลาไทย)",
+  "last_run": "2026-09-17 06:28 (เวลาไทย)",
   "signals": {
     "RS.BK": {
       "signal": "STRONG BUY",
@@ -621,6 +621,10 @@
       "signal": "WATCH",
       "score": 56
     },
+    "INTC": {
+      "signal": "WATCH",
+      "score": 56
+    },
     "MRK": {
       "signal": "WATCH",
       "score": 56
@@ -650,10 +654,6 @@
       "score": 48
     },
     "MSTR": {
-      "signal": "WATCH",
-      "score": 48
-    },
-    "INTC": {
       "signal": "WATCH",
       "score": 48
     },
@@ -809,11 +809,19 @@
       "signal": "AVOID",
       "score": 20
     },
+    "WDC": {
+      "signal": "AVOID",
+      "score": 20
+    },
     "PATH": {
       "signal": "AVOID",
       "score": 20
     },
     "IONQ": {
+      "signal": "AVOID",
+      "score": 20
+    },
+    "JPM": {
       "signal": "AVOID",
       "score": 20
     },
@@ -969,10 +977,6 @@
       "signal": "AVOID",
       "score": 12
     },
-    "WDC": {
-      "signal": "AVOID",
-      "score": 12
-    },
     "STX": {
       "signal": "AVOID",
       "score": 12
@@ -990,10 +994,6 @@
       "score": 12
     },
     "OKLO": {
-      "signal": "AVOID",
-      "score": 12
-    },
-    "JPM": {
       "signal": "AVOID",
       "score": 12
     },
