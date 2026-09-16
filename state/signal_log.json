@@ -21191,13 +21191,13 @@
       "entry": 57.05,
       "stop": 53.06,
       "target": 62.75,
-      "status": "open",
+      "status": "closed",
       "days": 6,
       "last_date": "2026-09-17",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 53.06,
+      "exit_date": "2026-09-17",
+      "reason": "stop",
+      "return_pct": -7.49
     },
     {
       "ticker": "ALAB",
@@ -22177,13 +22177,13 @@
       "entry": 17.5,
       "stop": 16.8,
       "target": 19.25,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-09-17",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 16.8,
+      "exit_date": "2026-09-17",
+      "reason": "stop",
+      "return_pct": -4.5
     },
     {
       "ticker": "SCC.BK",
