@@ -23238,6 +23238,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "SINGER.BK",
+      "name": "SINGER",
+      "signal": "BUY",
+      "score": 71,
+      "entry_date": "2026-09-21",
+      "entry": 11.0,
+      "stop": 10.4,
+      "target": 12.1,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-21",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "GGC.BK",
+      "name": "GGC",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-09-21",
+      "entry": 6.75,
+      "stop": 6.28,
+      "target": 7.43,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-21",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "GULF.BK",
+      "name": "GULF",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-09-21",
+      "entry": 62.25,
+      "stop": 60.25,
+      "target": 68.48,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-21",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
