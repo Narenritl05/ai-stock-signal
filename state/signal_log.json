@@ -23510,6 +23510,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "BGRIM.BK",
+      "name": "BGRIM",
+      "signal": "BUY",
+      "score": 71,
+      "entry_date": "2026-09-22",
+      "entry": 19.3,
+      "stop": 18.3,
+      "target": 21.23,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-22",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
