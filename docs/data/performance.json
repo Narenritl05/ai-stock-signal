@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-23 06:25 (เวลาไทย)",
+  "generated_at": "2026-09-23 08:37 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1253,
+    "closed": 1254,
     "open": 145,
     "win_rate": 40.5,
     "avg_return": -0.62,
     "total_return": -100.0,
     "by_target": 266,
-    "by_stop": 574,
+    "by_stop": 575,
     "by_time": 413
   },
   "open_positions": [
@@ -123,6 +123,23 @@
       "entry": 198.27,
       "stop": 184.39,
       "target": 218.1,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-23",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "ARM",
+      "name": "ARM",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-09-23",
+      "entry": 322.9,
+      "stop": 300.3,
+      "target": 355.19,
       "status": "open",
       "days": 0,
       "last_date": "2026-09-23",
@@ -276,23 +293,6 @@
       "entry": 299.05,
       "stop": 278.12,
       "target": 328.95,
-      "status": "open",
-      "days": 1,
-      "last_date": "2026-09-23",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "ONON",
-      "name": "ONON",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-09-22",
-      "entry": 29.97,
-      "stop": 27.87,
-      "target": 32.96,
       "status": "open",
       "days": 1,
       "last_date": "2026-09-23",
@@ -2684,6 +2684,23 @@
       "return_pct": 9.5
     },
     {
+      "ticker": "ONON",
+      "name": "ONON",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-09-22",
+      "entry": 29.97,
+      "stop": 27.87,
+      "target": 32.96,
+      "status": "closed",
+      "days": 1,
+      "last_date": "2026-09-23",
+      "exit": 27.87,
+      "exit_date": "2026-09-23",
+      "reason": "stop",
+      "return_pct": -7.51
+    },
+    {
       "ticker": "PRM.BK",
       "name": "PRM",
       "signal": "BUY",
@@ -2971,23 +2988,6 @@
       "exit_date": "2026-09-20",
       "reason": "time",
       "return_pct": 4.83
-    },
-    {
-      "ticker": "TOA.BK",
-      "name": "TOA",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-08-31",
-      "entry": 15.6,
-      "stop": 14.73,
-      "target": 17.16,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-09-20",
-      "exit": 15.5,
-      "exit_date": "2026-09-20",
-      "reason": "time",
-      "return_pct": -1.14
     }
   ]
 }
