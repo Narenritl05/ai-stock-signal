@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-23 14:11 (เวลาไทย)",
+  "generated_at": "2026-09-23 19:51 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1255,
+    "closed": 1256,
     "open": 151,
-    "win_rate": 40.5,
-    "avg_return": -0.62,
+    "win_rate": 40.4,
+    "avg_return": -0.63,
     "total_return": -100.0,
     "by_target": 266,
-    "by_stop": 576,
+    "by_stop": 577,
     "by_time": 413
   },
   "open_positions": [
@@ -259,6 +259,23 @@
       "entry": 17.1,
       "stop": 16.8,
       "target": 18.81,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-23",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "OSP.BK",
+      "name": "OSP",
+      "signal": "STRONG BUY",
+      "score": 76,
+      "entry_date": "2026-09-23",
+      "entry": 16.4,
+      "stop": 16.0,
+      "target": 18.04,
       "status": "open",
       "days": 0,
       "last_date": "2026-09-23",
@@ -1177,23 +1194,6 @@
       "entry": 37.25,
       "stop": 36.25,
       "target": 40.98,
-      "status": "open",
-      "days": 5,
-      "last_date": "2026-09-23",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "CPF.BK",
-      "name": "CPF",
-      "signal": "BUY",
-      "score": 69,
-      "entry_date": "2026-09-18",
-      "entry": 23.1,
-      "stop": 22.2,
-      "target": 25.41,
       "status": "open",
       "days": 5,
       "last_date": "2026-09-23",
@@ -2786,6 +2786,23 @@
       "return_pct": 9.5
     },
     {
+      "ticker": "CPF.BK",
+      "name": "CPF",
+      "signal": "BUY",
+      "score": 69,
+      "entry_date": "2026-09-18",
+      "entry": 23.1,
+      "stop": 22.2,
+      "target": 25.41,
+      "status": "closed",
+      "days": 5,
+      "last_date": "2026-09-23",
+      "exit": 22.2,
+      "exit_date": "2026-09-23",
+      "reason": "stop",
+      "return_pct": -4.4
+    },
+    {
       "ticker": "MU",
       "name": "MU",
       "signal": "BUY",
@@ -3073,23 +3090,6 @@
       "exit_date": "2026-09-21",
       "reason": "target",
       "return_pct": 9.5
-    },
-    {
-      "ticker": "LI",
-      "name": "LI",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-09-19",
-      "entry": 12.14,
-      "stop": 11.65,
-      "target": 13.35,
-      "status": "closed",
-      "days": 2,
-      "last_date": "2026-09-21",
-      "exit": 11.65,
-      "exit_date": "2026-09-21",
-      "reason": "stop",
-      "return_pct": -4.54
     }
   ]
 }
