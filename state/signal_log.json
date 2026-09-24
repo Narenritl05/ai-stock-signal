@@ -20732,13 +20732,13 @@
       "entry": 6.25,
       "stop": 5.81,
       "target": 6.88,
-      "status": "open",
+      "status": "closed",
       "days": 15,
       "last_date": "2026-09-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 5.81,
+      "exit_date": "2026-09-24",
+      "reason": "stop",
+      "return_pct": -7.54
     },
     {
       "ticker": "RCL.BK",
@@ -23894,13 +23894,13 @@
       "entry": 17.1,
       "stop": 16.8,
       "target": 18.81,
-      "status": "open",
+      "status": "closed",
       "days": 1,
       "last_date": "2026-09-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 16.8,
+      "exit_date": "2026-09-24",
+      "reason": "stop",
+      "return_pct": -2.25
     },
     {
       "ticker": "OSP.BK",
