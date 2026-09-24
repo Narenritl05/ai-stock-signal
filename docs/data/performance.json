@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-24 08:35 (เวลาไทย)",
+  "generated_at": "2026-09-24 14:04 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1261,
+    "closed": 1262,
     "open": 151,
     "win_rate": 40.6,
     "avg_return": -0.61,
     "total_return": -100.0,
     "by_target": 267,
-    "by_stop": 578,
+    "by_stop": 579,
     "by_time": 416
   },
   "open_positions": [
@@ -72,6 +72,23 @@
       "entry": 277.12,
       "stop": 267.75,
       "target": 304.83,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-24",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "BCP.BK",
+      "name": "BCP",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-09-24",
+      "entry": 55.25,
+      "stop": 52.05,
+      "target": 60.78,
       "status": "open",
       "days": 0,
       "last_date": "2026-09-24",
@@ -1917,23 +1934,6 @@
       "return_pct": null
     },
     {
-      "ticker": "MEGA.BK",
-      "name": "MEGA",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-09-11",
-      "entry": 36.5,
-      "stop": 35.0,
-      "target": 40.15,
-      "status": "open",
-      "days": 13,
-      "last_date": "2026-09-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "TXN",
       "name": "TXN",
       "signal": "BUY",
@@ -2633,6 +2633,23 @@
       "return_pct": 2.99
     },
     {
+      "ticker": "MEGA.BK",
+      "name": "MEGA",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-09-11",
+      "entry": 36.5,
+      "stop": 35.0,
+      "target": 40.15,
+      "status": "closed",
+      "days": 13,
+      "last_date": "2026-09-24",
+      "exit": 35.0,
+      "exit_date": "2026-09-24",
+      "reason": "stop",
+      "return_pct": -4.61
+    },
+    {
       "ticker": "CRWD",
       "name": "CRWD",
       "signal": "STRONG BUY",
@@ -3070,23 +3087,6 @@
       "days": 11,
       "last_date": "2026-09-21",
       "exit": 719.06,
-      "exit_date": "2026-09-21",
-      "reason": "target",
-      "return_pct": 9.5
-    },
-    {
-      "ticker": "NET",
-      "name": "NET",
-      "signal": "STRONG BUY",
-      "score": 76,
-      "entry_date": "2026-09-10",
-      "entry": 314.18,
-      "stop": 292.19,
-      "target": 345.6,
-      "status": "closed",
-      "days": 11,
-      "last_date": "2026-09-21",
-      "exit": 345.6,
       "exit_date": "2026-09-21",
       "reason": "target",
       "return_pct": 9.5
