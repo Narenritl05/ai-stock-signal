@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-25 06:56 (เวลาไทย)",
+  "generated_at": "2026-09-25 10:35 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1270,
-    "open": 149,
+    "closed": 1271,
+    "open": 148,
     "win_rate": 40.7,
     "avg_return": -0.58,
     "total_return": -100.0,
     "by_target": 272,
-    "by_stop": 581,
+    "by_stop": 582,
     "by_time": 417
   },
   "open_positions": [
@@ -752,23 +752,6 @@
       "entry": 6.75,
       "stop": 6.28,
       "target": 7.43,
-      "status": "open",
-      "days": 4,
-      "last_date": "2026-09-25",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "GULF.BK",
-      "name": "GULF",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-09-21",
-      "entry": 62.25,
-      "stop": 60.25,
-      "target": 68.48,
       "status": "open",
       "days": 4,
       "last_date": "2026-09-25",
@@ -2633,6 +2616,23 @@
       "return_pct": 9.5
     },
     {
+      "ticker": "GULF.BK",
+      "name": "GULF",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-09-21",
+      "entry": 62.25,
+      "stop": 60.25,
+      "target": 68.48,
+      "status": "closed",
+      "days": 4,
+      "last_date": "2026-09-25",
+      "exit": 60.25,
+      "exit_date": "2026-09-25",
+      "reason": "stop",
+      "return_pct": -3.71
+    },
+    {
       "ticker": "IONQ",
       "name": "IONQ",
       "signal": "BUY",
@@ -3039,23 +3039,6 @@
       "exit_date": "2026-09-23",
       "reason": "stop",
       "return_pct": -7.51
-    },
-    {
-      "ticker": "PRM.BK",
-      "name": "PRM",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-09-02",
-      "entry": 9.65,
-      "stop": 9.4,
-      "target": 10.61,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-09-22",
-      "exit": 9.6,
-      "exit_date": "2026-09-22",
-      "reason": "time",
-      "return_pct": -1.02
     }
   ]
 }
