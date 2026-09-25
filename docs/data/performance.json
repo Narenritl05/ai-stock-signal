@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-26 02:05 (เวลาไทย)",
+  "generated_at": "2026-09-26 05:35 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
     "closed": 1275,
-    "open": 151,
+    "open": 153,
     "win_rate": 40.7,
     "avg_return": -0.57,
     "total_return": -100.0,
@@ -12,6 +12,40 @@
     "by_time": 417
   },
   "open_positions": [
+    {
+      "ticker": "BLK",
+      "name": "BLK",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-09-26",
+      "entry": 1086.31,
+      "stop": 1037.24,
+      "target": 1194.94,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-26",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "GE",
+      "name": "GE",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-09-26",
+      "entry": 327.09,
+      "stop": 307.05,
+      "target": 359.8,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-26",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
     {
       "ticker": "CHG.BK",
       "name": "CHG",
