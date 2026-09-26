@@ -24275,6 +24275,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "INTC",
+      "name": "INTC",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-09-26",
+      "entry": 127.39,
+      "stop": 118.47,
+      "target": 140.13,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-09-26",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
