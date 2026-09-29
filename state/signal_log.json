@@ -23333,13 +23333,13 @@
       "entry": 463.18,
       "stop": 430.76,
       "target": 509.5,
-      "status": "open",
+      "status": "closed",
       "days": 9,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 509.5,
+      "exit_date": "2026-09-30",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "IONQ",
@@ -23384,13 +23384,13 @@
       "entry": 115.96,
       "stop": 107.84,
       "target": 127.56,
-      "status": "open",
+      "status": "closed",
       "days": 9,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 107.84,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "AMZN",
@@ -23758,13 +23758,13 @@
       "entry": 198.27,
       "stop": 184.39,
       "target": 218.1,
-      "status": "open",
+      "status": "closed",
       "days": 7,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 184.39,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "ARM",
