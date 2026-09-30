@@ -21395,13 +21395,13 @@
       "entry": 190.0,
       "stop": 186.05,
       "target": 209.0,
-      "status": "open",
+      "status": "closed",
       "days": 18,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 186.05,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -2.58
     },
     {
       "ticker": "OR.BK",
@@ -21446,13 +21446,13 @@
       "entry": 324.41,
       "stop": 301.7,
       "target": 356.85,
-      "status": "open",
+      "status": "closed",
       "days": 18,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 301.7,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "KCE.BK",
@@ -23180,13 +23180,13 @@
       "entry": 131.5,
       "stop": 125.5,
       "target": 144.65,
-      "status": "open",
+      "status": "closed",
       "days": 9,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 125.5,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -5.06
     },
     {
       "ticker": "CHAYO.BK",
@@ -23809,13 +23809,13 @@
       "entry": 10.3,
       "stop": 9.6,
       "target": 11.33,
-      "status": "open",
+      "status": "closed",
       "days": 7,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 9.6,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -7.3
     },
     {
       "ticker": "AOT.BK",
@@ -23911,13 +23911,13 @@
       "entry": 16.4,
       "stop": 16.0,
       "target": 18.04,
-      "status": "open",
+      "status": "closed",
       "days": 7,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 16.0,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -2.94
     },
     {
       "ticker": "BJC.BK",
@@ -24421,13 +24421,13 @@
       "entry": 3.74,
       "stop": 3.6,
       "target": 4.11,
-      "status": "open",
+      "status": "closed",
       "days": 2,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 3.6,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -4.24
     },
     {
       "ticker": "ILM.BK",
@@ -24610,6 +24610,23 @@
       "target": 905.48,
       "status": "open",
       "days": 1,
+      "last_date": "2026-09-30",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "SNOW",
+      "name": "SNOW",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-09-30",
+      "entry": 346.95,
+      "stop": 322.67,
+      "target": 381.65,
+      "status": "open",
+      "days": 0,
       "last_date": "2026-09-30",
       "exit": null,
       "exit_date": null,
