@@ -22092,13 +22092,13 @@
       "entry": 12.1,
       "stop": 11.9,
       "target": 13.31,
-      "status": "open",
+      "status": "closed",
       "days": 14,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 11.9,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -2.15
     },
     {
       "ticker": "KKP.BK",
@@ -22738,13 +22738,13 @@
       "entry": 2.46,
       "stop": 2.36,
       "target": 2.71,
-      "status": "open",
+      "status": "closed",
       "days": 12,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 2.36,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -4.57
     },
     {
       "ticker": "KTC.BK",
@@ -22959,13 +22959,13 @@
       "entry": 1.48,
       "stop": 1.38,
       "target": 1.63,
-      "status": "open",
+      "status": "closed",
       "days": 11,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 1.38,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -7.26
     },
     {
       "ticker": "TTA.BK",
@@ -23265,13 +23265,13 @@
       "entry": 6.75,
       "stop": 6.28,
       "target": 7.43,
-      "status": "open",
+      "status": "closed",
       "days": 9,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 6.28,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -7.46
     },
     {
       "ticker": "GULF.BK",
@@ -23537,13 +23537,13 @@
       "entry": 22.0,
       "stop": 21.3,
       "target": 24.2,
-      "status": "open",
+      "status": "closed",
       "days": 8,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 21.3,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -3.68
     },
     {
       "ticker": "TTB.BK",
@@ -23792,13 +23792,13 @@
       "entry": 1.79,
       "stop": 1.72,
       "target": 1.97,
-      "status": "open",
+      "status": "closed",
       "days": 7,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 1.72,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -4.41
     },
     {
       "ticker": "JMART.BK",
@@ -23826,13 +23826,13 @@
       "entry": 62.75,
       "stop": 60.5,
       "target": 69.03,
-      "status": "open",
+      "status": "closed",
       "days": 7,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 60.5,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -4.09
     },
     {
       "ticker": "BDMS.BK",
@@ -24013,13 +24013,13 @@
       "entry": 55.25,
       "stop": 52.05,
       "target": 60.78,
-      "status": "open",
+      "status": "closed",
       "days": 6,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 52.05,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -6.29
     },
     {
       "ticker": "CHG.BK",
@@ -24387,13 +24387,13 @@
       "entry": 6.3,
       "stop": 5.86,
       "target": 6.93,
-      "status": "open",
+      "status": "closed",
       "days": 2,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 6.93,
+      "exit_date": "2026-09-30",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "TASCO.BK",
@@ -24404,13 +24404,13 @@
       "entry": 17.0,
       "stop": 16.8,
       "target": 18.7,
-      "status": "open",
+      "status": "closed",
       "days": 2,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 16.8,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -1.68
     },
     {
       "ticker": "ERW.BK",
@@ -24455,13 +24455,13 @@
       "entry": 6.7,
       "stop": 6.6,
       "target": 7.37,
-      "status": "open",
+      "status": "closed",
       "days": 2,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 6.6,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -1.99
     },
     {
       "ticker": "TLI.BK",
@@ -24557,13 +24557,13 @@
       "entry": 16.1,
       "stop": 15.9,
       "target": 17.71,
-      "status": "open",
+      "status": "closed",
       "days": 1,
       "last_date": "2026-09-30",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 15.9,
+      "exit_date": "2026-09-30",
+      "reason": "stop",
+      "return_pct": -1.74
     },
     {
       "ticker": "OKTA",
