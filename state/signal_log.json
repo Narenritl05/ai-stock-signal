@@ -22194,13 +22194,13 @@
       "entry": 264.0,
       "stop": 245.52,
       "target": 290.4,
-      "status": "open",
+      "status": "closed",
       "days": 14,
       "last_date": "2026-10-01",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 245.52,
+      "exit_date": "2026-10-01",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "BCPG.BK",
@@ -22534,13 +22534,13 @@
       "entry": 13.1,
       "stop": 12.4,
       "target": 14.41,
-      "status": "open",
+      "status": "closed",
       "days": 13,
       "last_date": "2026-10-01",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 12.4,
+      "exit_date": "2026-10-01",
+      "reason": "stop",
+      "return_pct": -5.84
     },
     {
       "ticker": "ACE.BK",
@@ -23095,13 +23095,13 @@
       "entry": 62.71,
       "stop": 58.32,
       "target": 68.98,
-      "status": "open",
+      "status": "closed",
       "days": 12,
       "last_date": "2026-10-01",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 58.32,
+      "exit_date": "2026-10-01",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "NOW",
@@ -23452,13 +23452,13 @@
       "entry": 137.92,
       "stop": 128.27,
       "target": 151.71,
-      "status": "open",
+      "status": "closed",
       "days": 9,
       "last_date": "2026-10-01",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 151.71,
+      "exit_date": "2026-10-01",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "AVGO",
@@ -23520,13 +23520,13 @@
       "entry": 19.3,
       "stop": 18.3,
       "target": 21.23,
-      "status": "open",
+      "status": "closed",
       "days": 9,
       "last_date": "2026-10-01",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 18.3,
+      "exit_date": "2026-10-01",
+      "reason": "stop",
+      "return_pct": -5.68
     },
     {
       "ticker": "MINT.BK",
@@ -23588,13 +23588,13 @@
       "entry": 299.05,
       "stop": 278.12,
       "target": 328.95,
-      "status": "open",
+      "status": "closed",
       "days": 9,
       "last_date": "2026-10-01",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 328.95,
+      "exit_date": "2026-10-01",
+      "reason": "target",
+      "return_pct": 9.5
     },
     {
       "ticker": "ONON",
@@ -23843,13 +23843,13 @@
       "entry": 20.2,
       "stop": 19.17,
       "target": 22.22,
-      "status": "open",
+      "status": "closed",
       "days": 8,
       "last_date": "2026-10-01",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 19.17,
+      "exit_date": "2026-10-01",
+      "reason": "stop",
+      "return_pct": -5.6
     },
     {
       "ticker": "CK.BK",
@@ -24149,13 +24149,13 @@
       "entry": 15.2,
       "stop": 14.14,
       "target": 16.72,
-      "status": "open",
+      "status": "closed",
       "days": 6,
       "last_date": "2026-10-01",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 14.14,
+      "exit_date": "2026-10-01",
+      "reason": "stop",
+      "return_pct": -7.47
     },
     {
       "ticker": "ACE.BK",
@@ -24353,13 +24353,13 @@
       "entry": 12.9,
       "stop": 12.5,
       "target": 14.19,
-      "status": "open",
+      "status": "closed",
       "days": 3,
       "last_date": "2026-10-01",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 12.5,
+      "exit_date": "2026-10-01",
+      "reason": "stop",
+      "return_pct": -3.6
     },
     {
       "ticker": "DCC.BK",
@@ -24727,6 +24727,23 @@
       "entry": 17.2,
       "stop": 16.7,
       "target": 18.92,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-01",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "MAJOR.BK",
+      "name": "MAJOR",
+      "signal": "STRONG BUY",
+      "score": 75,
+      "entry_date": "2026-10-01",
+      "entry": 7.1,
+      "stop": 6.9,
+      "target": 7.81,
       "status": "open",
       "days": 0,
       "last_date": "2026-10-01",
