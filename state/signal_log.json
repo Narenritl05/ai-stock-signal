@@ -24632,6 +24632,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "TXN",
+      "name": "TXN",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-10-01",
+      "entry": 281.69,
+      "stop": 261.97,
+      "target": 309.86,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-01",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QCOM",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-10-01",
+      "entry": 184.1,
+      "stop": 171.21,
+      "target": 202.51,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-01",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IONQ",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-10-01",
+      "entry": 43.91,
+      "stop": 40.84,
+      "target": 48.3,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-01",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
