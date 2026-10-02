@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-10-02 06:18 (เวลาไทย)",
+  "last_run": "2026-10-02 09:23 (เวลาไทย)",
   "signals": {
     "PLANB.BK": {
       "signal": "STRONG BUY",
@@ -869,6 +869,10 @@
       "signal": "AVOID",
       "score": 20
     },
+    "JNJ": {
+      "signal": "AVOID",
+      "score": 20
+    },
     "QCOM": {
       "signal": "AVOID",
       "score": 18
@@ -945,6 +949,10 @@
       "signal": "AVOID",
       "score": 16
     },
+    "LOW": {
+      "signal": "AVOID",
+      "score": 16
+    },
     "MCD": {
       "signal": "AVOID",
       "score": 16
@@ -997,10 +1005,6 @@
       "signal": "AVOID",
       "score": 12
     },
-    "JNJ": {
-      "signal": "AVOID",
-      "score": 12
-    },
     "VRTX": {
       "signal": "AVOID",
       "score": 12
@@ -1030,10 +1034,6 @@
       "score": 8
     },
     "MELI": {
-      "signal": "AVOID",
-      "score": 8
-    },
-    "LOW": {
       "signal": "AVOID",
       "score": 8
     },
