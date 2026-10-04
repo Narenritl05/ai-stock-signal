@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27 13:02 (เวลาไทย)",
+  "generated_at": "2026-10-04 13:34 (เวลาไทย)",
   "period": "2y",
   "entry_score": 60,
   "max_hold_days": 20,
@@ -8,8 +8,8 @@
   "cost_roundtrip_pct": 0.5,
   "caveat": "หักต้นทุนไป-กลับแล้ว · ทดสอบบนหุ้นในลิสต์ปัจจุบัน (มี survivorship bias) · อดีตไม่การันตีอนาคต",
   "overall": {
-    "total_trades": 6496,
-    "overall_win_rate": 47.0,
+    "total_trades": 6476,
+    "overall_win_rate": 46.9,
     "avg_return_per_trade": 0.21,
     "stocks_tested": 265
   },
@@ -17,200 +17,189 @@
     {
       "ticker": "MU",
       "name": "MU",
-      "trades": 49,
-      "win_rate": 65.3,
-      "avg_return": 3.53,
-      "total_return": 369.6,
+      "trades": 48,
+      "win_rate": 66.7,
+      "avg_return": 3.75,
+      "total_return": 404.2,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 4.8
-    },
-    {
-      "ticker": "WDC",
-      "name": "WDC",
-      "trades": 42,
-      "win_rate": 61.9,
-      "avg_return": 3.28,
-      "total_return": 241.0,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 5.2
+      "avg_hold": 5.0
     },
     {
       "ticker": "TER",
       "name": "TER",
-      "trades": 40,
-      "win_rate": 62.5,
-      "avg_return": 2.97,
-      "total_return": 183.1,
+      "trades": 41,
+      "win_rate": 63.4,
+      "avg_return": 3.19,
+      "total_return": 218.0,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 6.3
+      "avg_hold": 6.1
     },
     {
-      "ticker": "IRPC.BK",
-      "name": "IRPC",
-      "trades": 31,
-      "win_rate": 61.3,
-      "avg_return": 3.12,
-      "total_return": 135.2,
+      "ticker": "WDC",
+      "name": "WDC",
+      "trades": 43,
+      "win_rate": 60.5,
+      "avg_return": 2.91,
+      "total_return": 198.3,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 6.3
+      "avg_hold": 5.1
     },
     {
       "ticker": "PTTGC.BK",
       "name": "PTTGC",
       "trades": 26,
       "win_rate": 65.4,
-      "avg_return": 3.44,
-      "total_return": 122.9,
+      "avg_return": 3.51,
+      "total_return": 127.5,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 10.3
+      "avg_hold": 10.5
     },
     {
-      "ticker": "STX",
-      "name": "STX",
-      "trades": 44,
-      "win_rate": 56.8,
-      "avg_return": 2.09,
-      "total_return": 113.5,
+      "ticker": "IRPC.BK",
+      "name": "IRPC",
+      "trades": 31,
+      "win_rate": 61.3,
+      "avg_return": 2.92,
+      "total_return": 120.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 5.3
+      "avg_hold": 6.4
     },
     {
       "ticker": "DELTA.BK",
       "name": "DELTA",
       "trades": 33,
       "win_rate": 60.6,
-      "avg_return": 2.63,
-      "total_return": 111.4,
+      "avg_return": 2.61,
+      "total_return": 109.8,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 5.6
+      "avg_hold": 5.8
     },
     {
       "ticker": "SPRC.BK",
       "name": "SPRC",
       "trades": 26,
       "win_rate": 65.4,
-      "avg_return": 2.95,
-      "total_return": 100.2,
+      "avg_return": 3.09,
+      "total_return": 107.3,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 10.8
+      "avg_hold": 11.0
+    },
+    {
+      "ticker": "STX",
+      "name": "STX",
+      "trades": 45,
+      "win_rate": 55.6,
+      "avg_return": 1.94,
+      "total_return": 103.3,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 5.3
     },
     {
       "ticker": "M.BK",
       "name": "M",
-      "trades": 21,
-      "win_rate": 61.9,
-      "avg_return": 3.38,
-      "total_return": 90.8,
+      "trades": 22,
+      "win_rate": 59.1,
+      "avg_return": 2.89,
+      "total_return": 76.5,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 9.6
+      "avg_hold": 9.3
     },
     {
-      "ticker": "THANI.BK",
-      "name": "THANI",
-      "trades": 20,
-      "win_rate": 70.0,
-      "avg_return": 3.1,
-      "total_return": 75.8,
+      "ticker": "HANA.BK",
+      "name": "HANA",
+      "trades": 34,
+      "win_rate": 55.9,
+      "avg_return": 1.97,
+      "total_return": 73.7,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 6.7
+    },
+    {
+      "ticker": "TOP.BK",
+      "name": "TOP",
+      "trades": 24,
+      "win_rate": 62.5,
+      "avg_return": 2.52,
+      "total_return": 70.2,
       "best": 9.5,
       "worst": -7.5,
       "avg_hold": 11.2
+    },
+    {
+      "ticker": "LRCX",
+      "name": "LRCX",
+      "trades": 37,
+      "win_rate": 56.8,
+      "avg_return": 1.76,
+      "total_return": 68.8,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 7.1
     },
     {
       "ticker": "KKP.BK",
       "name": "KKP",
       "trades": 23,
       "win_rate": 60.9,
-      "avg_return": 2.63,
-      "total_return": 74.3,
+      "avg_return": 2.44,
+      "total_return": 66.3,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 14.5
+      "avg_hold": 14.6
     },
     {
-      "ticker": "HANA.BK",
-      "name": "HANA",
-      "trades": 33,
-      "win_rate": 57.6,
-      "avg_return": 1.95,
-      "total_return": 70.0,
+      "ticker": "CAT",
+      "name": "CAT",
+      "trades": 22,
+      "win_rate": 63.6,
+      "avg_return": 2.61,
+      "total_return": 65.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 6.8
+      "avg_hold": 12.2
     },
     {
-      "ticker": "JNJ",
-      "name": "JNJ",
-      "trades": 17,
-      "win_rate": 64.7,
-      "avg_return": 3.29,
-      "total_return": 68.6,
+      "ticker": "THANI.BK",
+      "name": "THANI",
+      "trades": 20,
+      "win_rate": 65.0,
+      "avg_return": 2.77,
+      "total_return": 64.3,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 16.6
-    },
-    {
-      "ticker": "TOP.BK",
-      "name": "TOP",
-      "trades": 24,
-      "win_rate": 58.3,
-      "avg_return": 2.41,
-      "total_return": 66.0,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 11.0
+      "avg_hold": 11.4
     },
     {
       "ticker": "TGT",
       "name": "TGT",
       "trades": 20,
       "win_rate": 60.0,
-      "avg_return": 2.77,
-      "total_return": 65.9,
+      "avg_return": 2.72,
+      "total_return": 64.3,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 14.3
+      "avg_hold": 14.6
     },
     {
-      "ticker": "CAT",
-      "name": "CAT",
-      "trades": 22,
-      "win_rate": 59.1,
-      "avg_return": 2.48,
-      "total_return": 60.5,
+      "ticker": "JNJ",
+      "name": "JNJ",
+      "trades": 17,
+      "win_rate": 64.7,
+      "avg_return": 2.96,
+      "total_return": 59.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 12.0
-    },
-    {
-      "ticker": "SJWD.BK",
-      "name": "SJWD",
-      "trades": 21,
-      "win_rate": 61.9,
-      "avg_return": 2.51,
-      "total_return": 59.5,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 11.4
-    },
-    {
-      "ticker": "INTC",
-      "name": "INTC",
-      "trades": 49,
-      "win_rate": 51.0,
-      "avg_return": 1.3,
-      "total_return": 59.0,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 4.2
+      "avg_hold": 16.9
     },
     {
       "ticker": "RTX",
@@ -235,17 +224,6 @@
       "avg_hold": 9.9
     },
     {
-      "ticker": "BGRIM.BK",
-      "name": "BGRIM",
-      "trades": 24,
-      "win_rate": 58.3,
-      "avg_return": 2.19,
-      "total_return": 56.7,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 9.5
-    },
-    {
       "ticker": "COM7.BK",
       "name": "COM7",
       "trades": 19,
@@ -254,40 +232,84 @@
       "total_return": 54.3,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 12.4
+      "avg_hold": 12.5
+    },
+    {
+      "ticker": "ELF",
+      "name": "ELF",
+      "trades": 26,
+      "win_rate": 57.7,
+      "avg_return": 2.02,
+      "total_return": 54.2,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 6.7
+    },
+    {
+      "ticker": "BGRIM.BK",
+      "name": "BGRIM",
+      "trades": 24,
+      "win_rate": 58.3,
+      "avg_return": 2.08,
+      "total_return": 52.7,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 9.8
+    },
+    {
+      "ticker": "KTB.BK",
+      "name": "KTB",
+      "trades": 23,
+      "win_rate": 60.9,
+      "avg_return": 2.03,
+      "total_return": 52.5,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 15.9
+    },
+    {
+      "ticker": "INTC",
+      "name": "INTC",
+      "trades": 50,
+      "win_rate": 52.0,
+      "avg_return": 1.2,
+      "total_return": 52.5,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 4.2
+    },
+    {
+      "ticker": "SJWD.BK",
+      "name": "SJWD",
+      "trades": 21,
+      "win_rate": 57.1,
+      "avg_return": 2.29,
+      "total_return": 52.3,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 11.7
     },
     {
       "ticker": "AMD",
       "name": "AMD",
       "trades": 35,
       "win_rate": 54.3,
-      "avg_return": 1.51,
-      "total_return": 50.0,
+      "avg_return": 1.53,
+      "total_return": 50.8,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 5.1
+      "avg_hold": 5.2
     },
     {
-      "ticker": "GUNKUL.BK",
-      "name": "GUNKUL",
-      "trades": 24,
-      "win_rate": 58.3,
-      "avg_return": 1.88,
-      "total_return": 46.5,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 10.7
-    },
-    {
-      "ticker": "LRCX",
-      "name": "LRCX",
+      "ticker": "NET",
+      "name": "NET",
       "trades": 38,
-      "win_rate": 55.3,
-      "avg_return": 1.29,
-      "total_return": 44.0,
+      "win_rate": 50.0,
+      "avg_return": 1.33,
+      "total_return": 45.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 6.9
+      "avg_hold": 6.7
     },
     {
       "ticker": "AMATA.BK",
@@ -301,17 +323,6 @@
       "avg_hold": 10.4
     },
     {
-      "ticker": "KCE.BK",
-      "name": "KCE",
-      "trades": 32,
-      "win_rate": 53.1,
-      "avg_return": 1.46,
-      "total_return": 43.0,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 6.9
-    },
-    {
       "ticker": "TMO",
       "name": "TMO",
       "trades": 17,
@@ -323,37 +334,48 @@
       "avg_hold": 14.5
     },
     {
-      "ticker": "KTB.BK",
-      "name": "KTB",
-      "trades": 23,
-      "win_rate": 60.9,
-      "avg_return": 1.73,
-      "total_return": 42.3,
+      "ticker": "KCE.BK",
+      "name": "KCE",
+      "trades": 33,
+      "win_rate": 51.5,
+      "avg_return": 1.39,
+      "total_return": 41.8,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 15.4
+      "avg_hold": 6.7
     },
     {
-      "ticker": "GE",
-      "name": "GE",
-      "trades": 23,
-      "win_rate": 60.9,
-      "avg_return": 1.78,
-      "total_return": 41.6,
+      "ticker": "CRWD",
+      "name": "CRWD",
+      "trades": 32,
+      "win_rate": 53.1,
+      "avg_return": 1.38,
+      "total_return": 39.7,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 13.2
+      "avg_hold": 7.8
     },
     {
-      "ticker": "AOT.BK",
-      "name": "AOT",
-      "trades": 19,
-      "win_rate": 52.6,
-      "avg_return": 2.06,
-      "total_return": 40.7,
+      "ticker": "GUNKUL.BK",
+      "name": "GUNKUL",
+      "trades": 24,
+      "win_rate": 54.2,
+      "avg_return": 1.68,
+      "total_return": 39.5,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 12.3
+      "avg_hold": 10.9
+    },
+    {
+      "ticker": "KLAC",
+      "name": "KLAC",
+      "trades": 37,
+      "win_rate": 51.4,
+      "avg_return": 1.21,
+      "total_return": 38.3,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 8.1
     },
     {
       "ticker": "ORCL",
@@ -367,37 +389,26 @@
       "avg_hold": 6.3
     },
     {
-      "ticker": "KBANK.BK",
-      "name": "KBANK",
-      "trades": 18,
-      "win_rate": 66.7,
-      "avg_return": 1.89,
-      "total_return": 36.4,
+      "ticker": "AOT.BK",
+      "name": "AOT",
+      "trades": 19,
+      "win_rate": 52.6,
+      "avg_return": 1.85,
+      "total_return": 35.0,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 17.1
+      "avg_hold": 12.6
     },
     {
-      "ticker": "SINGER.BK",
-      "name": "SINGER",
-      "trades": 28,
-      "win_rate": 53.6,
-      "avg_return": 1.44,
-      "total_return": 35.7,
+      "ticker": "XOM",
+      "name": "XOM",
+      "trades": 21,
+      "win_rate": 61.9,
+      "avg_return": 1.59,
+      "total_return": 34.9,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 6.3
-    },
-    {
-      "ticker": "ELF",
-      "name": "ELF",
-      "trades": 27,
-      "win_rate": 51.9,
-      "avg_return": 1.48,
-      "total_return": 35.5,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 6.3
+      "avg_hold": 16.1
     },
     {
       "ticker": "GS",
@@ -411,48 +422,37 @@
       "avg_hold": 15.0
     },
     {
-      "ticker": "XOM",
-      "name": "XOM",
-      "trades": 20,
-      "win_rate": 60.0,
-      "avg_return": 1.65,
-      "total_return": 34.3,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 16.7
-    },
-    {
-      "ticker": "NET",
-      "name": "NET",
-      "trades": 39,
-      "win_rate": 48.7,
-      "avg_return": 1.1,
+      "ticker": "TTB.BK",
+      "name": "TTB",
+      "trades": 18,
+      "win_rate": 66.7,
+      "avg_return": 1.73,
       "total_return": 34.2,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 6.5
+      "avg_hold": 18.7
     },
     {
-      "ticker": "JPM",
-      "name": "JPM",
-      "trades": 18,
-      "win_rate": 55.6,
-      "avg_return": 1.8,
-      "total_return": 33.5,
+      "ticker": "GE",
+      "name": "GE",
+      "trades": 24,
+      "win_rate": 58.3,
+      "avg_return": 1.46,
+      "total_return": 33.3,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 18.1
+      "avg_hold": 12.8
     },
     {
-      "ticker": "ERW.BK",
-      "name": "ERW",
-      "trades": 26,
-      "win_rate": 50.0,
-      "avg_return": 1.4,
-      "total_return": 32.4,
+      "ticker": "AFRM",
+      "name": "AFRM",
+      "trades": 31,
+      "win_rate": 51.6,
+      "avg_return": 1.27,
+      "total_return": 32.7,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 8.8
+      "avg_hold": 6.3
     },
     {
       "ticker": "MS",
@@ -466,37 +466,15 @@
       "avg_hold": 15.9
     },
     {
-      "ticker": "SCC.BK",
-      "name": "SCC",
-      "trades": 23,
-      "win_rate": 56.5,
-      "avg_return": 1.48,
-      "total_return": 31.9,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 12.1
-    },
-    {
-      "ticker": "TTB.BK",
-      "name": "TTB",
+      "ticker": "JPM",
+      "name": "JPM",
       "trades": 18,
-      "win_rate": 66.7,
-      "avg_return": 1.61,
-      "total_return": 31.5,
+      "win_rate": 55.6,
+      "avg_return": 1.7,
+      "total_return": 30.9,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 18.7
-    },
-    {
-      "ticker": "RCL.BK",
-      "name": "RCL",
-      "trades": 23,
-      "win_rate": 56.5,
-      "avg_return": 1.4,
-      "total_return": 30.8,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 14.7
+      "avg_hold": 18.2
     },
     {
       "ticker": "AP.BK",
@@ -510,81 +488,81 @@
       "avg_hold": 17.1
     },
     {
-      "ticker": "BA.BK",
-      "name": "BA",
-      "trades": 20,
-      "win_rate": 55.0,
-      "avg_return": 1.55,
-      "total_return": 29.7,
+      "ticker": "JMT.BK",
+      "name": "JMT",
+      "trades": 21,
+      "win_rate": 52.4,
+      "avg_return": 1.61,
+      "total_return": 30.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 12.1
+      "avg_hold": 9.9
     },
     {
-      "ticker": "CRC.BK",
-      "name": "CRC",
-      "trades": 23,
-      "win_rate": 56.5,
-      "avg_return": 1.42,
-      "total_return": 29.4,
+      "ticker": "DDOG",
+      "name": "DDOG",
+      "trades": 31,
+      "win_rate": 51.6,
+      "avg_return": 1.21,
+      "total_return": 30.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 10.8
-    },
-    {
-      "ticker": "FORTH.BK",
-      "name": "FORTH",
-      "trades": 27,
-      "win_rate": 51.9,
-      "avg_return": 1.31,
-      "total_return": 29.3,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 5.4
-    },
-    {
-      "ticker": "KLAC",
-      "name": "KLAC",
-      "trades": 37,
-      "win_rate": 51.4,
-      "avg_return": 1.0,
-      "total_return": 28.4,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 7.9
-    },
-    {
-      "ticker": "OSP.BK",
-      "name": "OSP",
-      "trades": 20,
-      "win_rate": 50.0,
-      "avg_return": 1.47,
-      "total_return": 28.0,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 13.2
+      "avg_hold": 6.8
     },
     {
       "ticker": "HOOD",
       "name": "HOOD",
-      "trades": 54,
-      "win_rate": 48.1,
-      "avg_return": 0.81,
-      "total_return": 27.9,
+      "trades": 53,
+      "win_rate": 49.1,
+      "avg_return": 0.84,
+      "total_return": 29.0,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 3.5
+      "avg_hold": 3.6
     },
     {
-      "ticker": "BBL.BK",
-      "name": "BBL",
-      "trades": 19,
-      "win_rate": 73.7,
-      "avg_return": 1.37,
-      "total_return": 26.7,
+      "ticker": "ADI",
+      "name": "ADI",
+      "trades": 23,
+      "win_rate": 52.2,
+      "avg_return": 1.41,
+      "total_return": 29.0,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 16.5
+      "avg_hold": 11.8
+    },
+    {
+      "ticker": "SINGER.BK",
+      "name": "SINGER",
+      "trades": 28,
+      "win_rate": 50.0,
+      "avg_return": 1.22,
+      "total_return": 27.5,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 6.5
+    },
+    {
+      "ticker": "BA.BK",
+      "name": "BA",
+      "trades": 21,
+      "win_rate": 52.4,
+      "avg_return": 1.38,
+      "total_return": 27.1,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 11.8
+    },
+    {
+      "ticker": "TSM",
+      "name": "TSM",
+      "trades": 26,
+      "win_rate": 53.8,
+      "avg_return": 1.2,
+      "total_return": 26.8,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 11.6
     },
     {
       "ticker": "WHAUP.BK",
@@ -595,18 +573,18 @@
       "total_return": 26.5,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 14.8
+      "avg_hold": 14.6
     },
     {
-      "ticker": "DDOG",
-      "name": "DDOG",
-      "trades": 31,
-      "win_rate": 51.6,
-      "avg_return": 1.09,
-      "total_return": 25.8,
+      "ticker": "OSP.BK",
+      "name": "OSP",
+      "trades": 20,
+      "win_rate": 50.0,
+      "avg_return": 1.41,
+      "total_return": 26.4,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 6.6
+      "avg_hold": 13.4
     },
     {
       "ticker": "BH.BK",
@@ -620,6 +598,28 @@
       "avg_hold": 14.2
     },
     {
+      "ticker": "ERW.BK",
+      "name": "ERW",
+      "trades": 26,
+      "win_rate": 50.0,
+      "avg_return": 1.21,
+      "total_return": 25.7,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 8.9
+    },
+    {
+      "ticker": "MRVL",
+      "name": "MRVL",
+      "trades": 49,
+      "win_rate": 49.0,
+      "avg_return": 0.83,
+      "total_return": 25.7,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 4.8
+    },
+    {
       "ticker": "CVX",
       "name": "CVX",
       "trades": 18,
@@ -631,15 +631,37 @@
       "avg_hold": 18.2
     },
     {
-      "ticker": "TISCO.BK",
-      "name": "TISCO",
+      "ticker": "SCC.BK",
+      "name": "SCC",
+      "trades": 23,
+      "win_rate": 56.5,
+      "avg_return": 1.26,
+      "total_return": 25.0,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 12.3
+    },
+    {
+      "ticker": "RCL.BK",
+      "name": "RCL",
+      "trades": 24,
+      "win_rate": 54.2,
+      "avg_return": 1.15,
+      "total_return": 24.7,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 14.2
+    },
+    {
+      "ticker": "KBANK.BK",
+      "name": "KBANK",
       "trades": 17,
-      "win_rate": 70.6,
-      "avg_return": 1.36,
-      "total_return": 25.3,
-      "best": 6.08,
-      "worst": -2.25,
-      "avg_hold": 20.0
+      "win_rate": 64.7,
+      "avg_return": 1.45,
+      "total_return": 24.3,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 17.9
     },
     {
       "ticker": "CRDO",
@@ -664,17 +686,6 @@
       "avg_hold": 16.9
     },
     {
-      "ticker": "AFRM",
-      "name": "AFRM",
-      "trades": 32,
-      "win_rate": 50.0,
-      "avg_return": 1.0,
-      "total_return": 22.7,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 6.1
-    },
-    {
       "ticker": "GPSC.BK",
       "name": "GPSC",
       "trades": 22,
@@ -686,59 +697,37 @@
       "avg_hold": 10.8
     },
     {
-      "ticker": "CRWD",
-      "name": "CRWD",
-      "trades": 33,
-      "win_rate": 51.5,
-      "avg_return": 0.93,
-      "total_return": 22.1,
+      "ticker": "BBL.BK",
+      "name": "BBL",
+      "trades": 19,
+      "win_rate": 73.7,
+      "avg_return": 1.17,
+      "total_return": 21.7,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 7.5
+      "avg_hold": 16.8
     },
     {
-      "ticker": "ADI",
-      "name": "ADI",
-      "trades": 23,
-      "win_rate": 52.2,
-      "avg_return": 1.15,
-      "total_return": 21.8,
+      "ticker": "AMAT",
+      "name": "AMAT",
+      "trades": 41,
+      "win_rate": 51.2,
+      "avg_return": 0.77,
+      "total_return": 20.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 11.6
+      "avg_hold": 6.2
     },
     {
-      "ticker": "JMT.BK",
-      "name": "JMT",
-      "trades": 22,
+      "ticker": "FORTH.BK",
+      "name": "FORTH",
+      "trades": 28,
       "win_rate": 50.0,
-      "avg_return": 1.19,
-      "total_return": 20.3,
+      "avg_return": 1.0,
+      "total_return": 19.6,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 9.9
-    },
-    {
-      "ticker": "ANET",
-      "name": "ANET",
-      "trades": 35,
-      "win_rate": 48.6,
-      "avg_return": 0.86,
-      "total_return": 19.8,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 7.3
-    },
-    {
-      "ticker": "AXP",
-      "name": "AXP",
-      "trades": 17,
-      "win_rate": 47.1,
-      "avg_return": 1.29,
-      "total_return": 19.8,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 16.1
+      "avg_hold": 5.3
     },
     {
       "ticker": "UNH",
@@ -752,37 +741,70 @@
       "avg_hold": 13.1
     },
     {
-      "ticker": "A",
-      "name": "A",
-      "trades": 20,
-      "win_rate": 60.0,
-      "avg_return": 1.11,
-      "total_return": 18.8,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 12.8
-    },
-    {
-      "ticker": "KO",
-      "name": "KO",
+      "ticker": "TISCO.BK",
+      "name": "TISCO",
       "trades": 18,
-      "win_rate": 55.6,
-      "avg_return": 1.05,
-      "total_return": 18.6,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 17.9
+      "win_rate": 61.1,
+      "avg_return": 1.0,
+      "total_return": 19.2,
+      "best": 6.08,
+      "worst": -2.46,
+      "avg_hold": 19.1
     },
     {
-      "ticker": "SCB.BK",
-      "name": "SCB",
-      "trades": 19,
-      "win_rate": 63.2,
-      "avg_return": 0.96,
-      "total_return": 18.2,
+      "ticker": "ANET",
+      "name": "ANET",
+      "trades": 33,
+      "win_rate": 48.5,
+      "avg_return": 0.86,
+      "total_return": 18.7,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 19.5
+      "avg_hold": 7.8
+    },
+    {
+      "ticker": "TXN",
+      "name": "TXN",
+      "trades": 22,
+      "win_rate": 50.0,
+      "avg_return": 1.09,
+      "total_return": 18.7,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 10.5
+    },
+    {
+      "ticker": "AXP",
+      "name": "AXP",
+      "trades": 17,
+      "win_rate": 47.1,
+      "avg_return": 1.26,
+      "total_return": 18.3,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 16.0
+    },
+    {
+      "ticker": "CVNA",
+      "name": "CVNA",
+      "trades": 39,
+      "win_rate": 48.7,
+      "avg_return": 0.78,
+      "total_return": 18.0,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 5.5
+    },
+    {
+      "ticker": "STA.BK",
+      "name": "STA",
+      "trades": 24,
+      "win_rate": 50.0,
+      "avg_return": 0.95,
+      "total_return": 17.5,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 10.9
     },
     {
       "ticker": "OXY",
@@ -796,48 +818,81 @@
       "avg_hold": 13.9
     },
     {
-      "ticker": "AWC.BK",
-      "name": "AWC",
-      "trades": 18,
-      "win_rate": 55.6,
-      "avg_return": 1.12,
-      "total_return": 16.7,
+      "ticker": "OKTA",
+      "name": "OKTA",
+      "trades": 30,
+      "win_rate": 46.7,
+      "avg_return": 0.85,
+      "total_return": 16.9,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 12.6
+      "avg_hold": 8.5
     },
     {
-      "ticker": "DE",
-      "name": "DE",
-      "trades": 21,
-      "win_rate": 57.1,
-      "avg_return": 0.94,
-      "total_return": 16.4,
+      "ticker": "AWC.BK",
+      "name": "AWC",
+      "trades": 19,
+      "win_rate": 52.6,
+      "avg_return": 1.04,
+      "total_return": 16.1,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 12.2
+    },
+    {
+      "ticker": "KO",
+      "name": "KO",
+      "trades": 18,
+      "win_rate": 55.6,
+      "avg_return": 0.91,
+      "total_return": 15.7,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 18.2
+    },
+    {
+      "ticker": "CRC.BK",
+      "name": "CRC",
+      "trades": 24,
+      "win_rate": 54.2,
+      "avg_return": 0.89,
+      "total_return": 15.6,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 10.2
+    },
+    {
+      "ticker": "A",
+      "name": "A",
+      "trades": 20,
+      "win_rate": 60.0,
+      "avg_return": 0.95,
+      "total_return": 15.4,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 13.1
+    },
+    {
+      "ticker": "BJC.BK",
+      "name": "BJC",
+      "trades": 17,
+      "win_rate": 52.9,
+      "avg_return": 1.07,
+      "total_return": 15.3,
       "best": 9.5,
       "worst": -7.5,
       "avg_hold": 14.2
     },
     {
-      "ticker": "STA.BK",
-      "name": "STA",
-      "trades": 24,
-      "win_rate": 50.0,
-      "avg_return": 0.89,
-      "total_return": 15.9,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 10.8
-    },
-    {
-      "ticker": "TSM",
-      "name": "TSM",
-      "trades": 27,
-      "win_rate": 51.9,
+      "ticker": "SCB.BK",
+      "name": "SCB",
+      "trades": 19,
+      "win_rate": 63.2,
       "avg_return": 0.82,
-      "total_return": 15.5,
+      "total_return": 15.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 11.2
+      "avg_hold": 19.1
     },
     {
       "ticker": "SAPPE.BK",
@@ -851,17 +906,6 @@
       "avg_hold": 12.1
     },
     {
-      "ticker": "AAPL",
-      "name": "AAPL",
-      "trades": 19,
-      "win_rate": 63.2,
-      "avg_return": 0.94,
-      "total_return": 14.9,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 14.8
-    },
-    {
       "ticker": "LOW",
       "name": "LOW",
       "trades": 12,
@@ -873,114 +917,37 @@
       "avg_hold": 16.9
     },
     {
-      "ticker": "BJC.BK",
-      "name": "BJC",
-      "trades": 16,
-      "win_rate": 56.2,
-      "avg_return": 1.06,
-      "total_return": 14.2,
+      "ticker": "AAPL",
+      "name": "AAPL",
+      "trades": 19,
+      "win_rate": 57.9,
+      "avg_return": 0.82,
+      "total_return": 12.4,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 14.8
+      "avg_hold": 15.1
     },
     {
-      "ticker": "MRK",
-      "name": "MRK",
-      "trades": 18,
-      "win_rate": 61.1,
-      "avg_return": 0.91,
-      "total_return": 14.0,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 16.5
-    },
-    {
-      "ticker": "WHA.BK",
-      "name": "WHA",
-      "trades": 20,
-      "win_rate": 55.0,
-      "avg_return": 0.9,
-      "total_return": 13.9,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 12.1
-    },
-    {
-      "ticker": "MRVL",
-      "name": "MRVL",
-      "trades": 50,
+      "ticker": "META",
+      "name": "META",
+      "trades": 25,
       "win_rate": 48.0,
-      "avg_return": 0.6,
-      "total_return": 13.4,
+      "avg_return": 0.76,
+      "total_return": 11.8,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 4.6
-    },
-    {
-      "ticker": "BLA.BK",
-      "name": "BLA",
-      "trades": 21,
-      "win_rate": 57.1,
-      "avg_return": 0.86,
-      "total_return": 13.1,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 14.0
-    },
-    {
-      "ticker": "MDB",
-      "name": "MDB",
-      "trades": 30,
-      "win_rate": 50.0,
-      "avg_return": 0.74,
-      "total_return": 13.1,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 7.0
-    },
-    {
-      "ticker": "STGT.BK",
-      "name": "STGT",
-      "trades": 22,
-      "win_rate": 54.5,
-      "avg_return": 0.81,
-      "total_return": 12.1,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 11.2
+      "avg_hold": 10.2
     },
     {
       "ticker": "ABBV",
       "name": "ABBV",
       "trades": 21,
-      "win_rate": 38.1,
-      "avg_return": 0.71,
-      "total_return": 12.0,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 15.2
-    },
-    {
-      "ticker": "TXN",
-      "name": "TXN",
-      "trades": 22,
-      "win_rate": 50.0,
-      "avg_return": 0.79,
-      "total_return": 11.6,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 10.3
-    },
-    {
-      "ticker": "META",
-      "name": "META",
-      "trades": 26,
-      "win_rate": 50.0,
-      "avg_return": 0.71,
+      "win_rate": 33.3,
+      "avg_return": 0.68,
       "total_return": 11.4,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 9.9
+      "avg_hold": 15.5
     },
     {
       "ticker": "CENTEL.BK",
@@ -991,18 +958,29 @@
       "total_return": 11.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 11.0
+      "avg_hold": 11.2
     },
     {
-      "ticker": "LLY",
-      "name": "LLY",
-      "trades": 24,
-      "win_rate": 54.2,
+      "ticker": "CELH",
+      "name": "CELH",
+      "trades": 29,
+      "win_rate": 48.3,
       "avg_return": 0.71,
-      "total_return": 10.4,
+      "total_return": 10.6,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 11.8
+      "avg_hold": 6.0
+    },
+    {
+      "ticker": "MRK",
+      "name": "MRK",
+      "trades": 18,
+      "win_rate": 55.6,
+      "avg_return": 0.74,
+      "total_return": 10.5,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 16.8
     },
     {
       "ticker": "COP",
@@ -1016,26 +994,26 @@
       "avg_hold": 13.7
     },
     {
-      "ticker": "PLTR",
-      "name": "PLTR",
-      "trades": 39,
-      "win_rate": 46.2,
-      "avg_return": 0.56,
-      "total_return": 9.4,
+      "ticker": "WHA.BK",
+      "name": "WHA",
+      "trades": 20,
+      "win_rate": 55.0,
+      "avg_return": 0.73,
+      "total_return": 10.0,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 5.9
+      "avg_hold": 12.3
     },
     {
-      "ticker": "BCP.BK",
-      "name": "BCP",
-      "trades": 25,
-      "win_rate": 48.0,
-      "avg_return": 0.67,
-      "total_return": 9.3,
+      "ticker": "MDB",
+      "name": "MDB",
+      "trades": 30,
+      "win_rate": 50.0,
+      "avg_return": 0.65,
+      "total_return": 9.7,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 8.6
+      "avg_hold": 7.0
     },
     {
       "ticker": "ADVANC.BK",
@@ -1049,70 +1027,37 @@
       "avg_hold": 18.7
     },
     {
-      "ticker": "CVNA",
-      "name": "CVNA",
-      "trades": 40,
-      "win_rate": 47.5,
-      "avg_return": 0.58,
-      "total_return": 9.1,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 5.4
-    },
-    {
-      "ticker": "OKTA",
-      "name": "OKTA",
-      "trades": 30,
-      "win_rate": 46.7,
-      "avg_return": 0.61,
-      "total_return": 9.1,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 8.8
-    },
-    {
-      "ticker": "GULF.BK",
-      "name": "GULF",
-      "trades": 14,
-      "win_rate": 57.1,
-      "avg_return": 0.78,
-      "total_return": 8.5,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 13.7
-    },
-    {
-      "ticker": "AMAT",
-      "name": "AMAT",
-      "trades": 40,
-      "win_rate": 50.0,
-      "avg_return": 0.53,
-      "total_return": 8.5,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 6.2
-    },
-    {
-      "ticker": "EA.BK",
-      "name": "EA",
-      "trades": 24,
-      "win_rate": 45.8,
-      "avg_return": 0.67,
-      "total_return": 8.4,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 8.4
-    },
-    {
-      "ticker": "BTG.BK",
-      "name": "BTG",
+      "ticker": "BLA.BK",
+      "name": "BLA",
       "trades": 21,
-      "win_rate": 47.6,
-      "avg_return": 0.66,
-      "total_return": 8.3,
+      "win_rate": 57.1,
+      "avg_return": 0.69,
+      "total_return": 9.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 10.9
+      "avg_hold": 14.1
+    },
+    {
+      "ticker": "PLTR",
+      "name": "PLTR",
+      "trades": 39,
+      "win_rate": 46.2,
+      "avg_return": 0.55,
+      "total_return": 8.9,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 6.0
+    },
+    {
+      "ticker": "DE",
+      "name": "DE",
+      "trades": 21,
+      "win_rate": 57.1,
+      "avg_return": 0.63,
+      "total_return": 8.8,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 14.4
     },
     {
       "ticker": "BCPG.BK",
@@ -1126,6 +1071,17 @@
       "avg_hold": 11.2
     },
     {
+      "ticker": "STGT.BK",
+      "name": "STGT",
+      "trades": 22,
+      "win_rate": 50.0,
+      "avg_return": 0.64,
+      "total_return": 8.0,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 11.4
+    },
+    {
       "ticker": "GLOBAL.BK",
       "name": "GLOBAL",
       "trades": 25,
@@ -1137,39 +1093,6 @@
       "avg_hold": 7.5
     },
     {
-      "ticker": "ORI.BK",
-      "name": "ORI",
-      "trades": 19,
-      "win_rate": 42.1,
-      "avg_return": 0.7,
-      "total_return": 7.8,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 8.9
-    },
-    {
-      "ticker": "PFE",
-      "name": "PFE",
-      "trades": 19,
-      "win_rate": 36.8,
-      "avg_return": 0.58,
-      "total_return": 7.8,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 17.4
-    },
-    {
-      "ticker": "PSL.BK",
-      "name": "PSL",
-      "trades": 25,
-      "win_rate": 52.0,
-      "avg_return": 0.57,
-      "total_return": 6.9,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 11.0
-    },
-    {
       "ticker": "DMT.BK",
       "name": "DMT",
       "trades": 17,
@@ -1178,7 +1101,40 @@
       "total_return": 6.8,
       "best": 5.21,
       "worst": -7.5,
-      "avg_hold": 18.3
+      "avg_hold": 18.6
+    },
+    {
+      "ticker": "BTG.BK",
+      "name": "BTG",
+      "trades": 21,
+      "win_rate": 47.6,
+      "avg_return": 0.59,
+      "total_return": 6.7,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 11.1
+    },
+    {
+      "ticker": "LLY",
+      "name": "LLY",
+      "trades": 24,
+      "win_rate": 50.0,
+      "avg_return": 0.57,
+      "total_return": 6.6,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 12.0
+    },
+    {
+      "ticker": "GFPT.BK",
+      "name": "GFPT",
+      "trades": 17,
+      "win_rate": 52.9,
+      "avg_return": 0.55,
+      "total_return": 6.5,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 16.8
     },
     {
       "ticker": "PTG.BK",
@@ -1189,7 +1145,7 @@
       "total_return": 6.4,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 13.5
+      "avg_hold": 13.8
     },
     {
       "ticker": "TIDLOR.BK",
@@ -1203,81 +1159,103 @@
       "avg_hold": 12.5
     },
     {
-      "ticker": "RBF.BK",
-      "name": "RBF",
-      "trades": 22,
-      "win_rate": 50.0,
-      "avg_return": 0.49,
-      "total_return": 5.7,
+      "ticker": "GULF.BK",
+      "name": "GULF",
+      "trades": 14,
+      "win_rate": 57.1,
+      "avg_return": 0.61,
+      "total_return": 5.8,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 12.1
+      "avg_hold": 14.1
     },
     {
-      "ticker": "TPIPL.BK",
-      "name": "TPIPL",
+      "ticker": "ASML",
+      "name": "ASML",
+      "trades": 30,
+      "win_rate": 53.3,
+      "avg_return": 0.47,
+      "total_return": 5.6,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 10.1
+    },
+    {
+      "ticker": "PFE",
+      "name": "PFE",
       "trades": 19,
-      "win_rate": 57.9,
-      "avg_return": 0.5,
-      "total_return": 4.8,
+      "win_rate": 31.6,
+      "avg_return": 0.45,
+      "total_return": 5.4,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 12.2
-    },
-    {
-      "ticker": "BABA",
-      "name": "BABA",
-      "trades": 25,
-      "win_rate": 48.0,
-      "avg_return": 0.52,
-      "total_return": 4.6,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 8.0
-    },
-    {
-      "ticker": "WFC",
-      "name": "WFC",
-      "trades": 19,
-      "win_rate": 47.4,
-      "avg_return": 0.4,
-      "total_return": 3.7,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 15.7
+      "avg_hold": 17.7
     },
     {
       "ticker": "SNOW",
       "name": "SNOW",
       "trades": 26,
       "win_rate": 50.0,
+      "avg_return": 0.52,
+      "total_return": 5.1,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 8.5
+    },
+    {
+      "ticker": "EA.BK",
+      "name": "EA",
+      "trades": 24,
+      "win_rate": 45.8,
+      "avg_return": 0.52,
+      "total_return": 4.4,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 8.5
+    },
+    {
+      "ticker": "SHOP",
+      "name": "SHOP",
+      "trades": 33,
+      "win_rate": 48.5,
+      "avg_return": 0.45,
+      "total_return": 4.3,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 7.9
+    },
+    {
+      "ticker": "BCP.BK",
+      "name": "BCP",
+      "trades": 25,
+      "win_rate": 48.0,
       "avg_return": 0.47,
-      "total_return": 3.6,
+      "total_return": 3.9,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 8.3
+      "avg_hold": 8.6
     },
     {
-      "ticker": "V",
-      "name": "V",
-      "trades": 16,
-      "win_rate": 43.8,
-      "avg_return": 0.38,
-      "total_return": 3.4,
+      "ticker": "ALAB",
+      "name": "ALAB",
+      "trades": 52,
+      "win_rate": 46.2,
+      "avg_return": 0.41,
+      "total_return": 3.2,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 16.9
+      "avg_hold": 3.1
     },
     {
-      "ticker": "RATCH.BK",
-      "name": "RATCH",
-      "trades": 19,
-      "win_rate": 63.2,
-      "avg_return": 0.28,
+      "ticker": "CK.BK",
+      "name": "CK",
+      "trades": 24,
+      "win_rate": 45.8,
+      "avg_return": 0.43,
       "total_return": 2.7,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 16.0
+      "avg_hold": 9.2
     },
     {
       "ticker": "LMT",
@@ -1291,48 +1269,70 @@
       "avg_hold": 13.3
     },
     {
-      "ticker": "CELH",
-      "name": "CELH",
-      "trades": 30,
-      "win_rate": 46.7,
-      "avg_return": 0.43,
-      "total_return": 2.3,
+      "ticker": "BABA",
+      "name": "BABA",
+      "trades": 25,
+      "win_rate": 48.0,
+      "avg_return": 0.45,
+      "total_return": 2.6,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 5.9
+      "avg_hold": 8.1
     },
     {
-      "ticker": "QCOM",
-      "name": "QCOM",
-      "trades": 27,
-      "win_rate": 55.6,
-      "avg_return": 0.35,
+      "ticker": "PSL.BK",
+      "name": "PSL",
+      "trades": 25,
+      "win_rate": 52.0,
+      "avg_return": 0.4,
       "total_return": 2.2,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 8.7
+      "avg_hold": 11.0
     },
     {
-      "ticker": "GGC.BK",
-      "name": "GGC",
-      "trades": 21,
-      "win_rate": 47.6,
-      "avg_return": 0.37,
+      "ticker": "ZS",
+      "name": "ZS",
+      "trades": 23,
+      "win_rate": 52.2,
+      "avg_return": 0.4,
+      "total_return": 2.0,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 8.3
+    },
+    {
+      "ticker": "ORI.BK",
+      "name": "ORI",
+      "trades": 19,
+      "win_rate": 42.1,
+      "avg_return": 0.4,
+      "total_return": 1.8,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 9.2
+    },
+    {
+      "ticker": "RBF.BK",
+      "name": "RBF",
+      "trades": 22,
+      "win_rate": 50.0,
+      "avg_return": 0.32,
       "total_return": 1.7,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 9.3
+      "avg_hold": 12.2
     },
     {
-      "ticker": "MC.BK",
-      "name": "MC",
-      "trades": 15,
-      "win_rate": 46.7,
-      "avg_return": 0.24,
-      "total_return": 1.6,
+      "ticker": "TPIPL.BK",
+      "name": "TPIPL",
+      "trades": 19,
+      "win_rate": 57.9,
+      "avg_return": 0.35,
+      "total_return": 1.7,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 17.9
+      "avg_hold": 12.3
     },
     {
       "ticker": "TOA.BK",
@@ -1346,59 +1346,48 @@
       "avg_hold": 12.1
     },
     {
-      "ticker": "ASML",
-      "name": "ASML",
-      "trades": 31,
-      "win_rate": 54.8,
-      "avg_return": 0.3,
-      "total_return": 0.9,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 10.0
-    },
-    {
-      "ticker": "GFPT.BK",
-      "name": "GFPT",
-      "trades": 17,
-      "win_rate": 52.9,
-      "avg_return": 0.21,
-      "total_return": 0.8,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 16.5
-    },
-    {
-      "ticker": "ILM.BK",
-      "name": "ILM",
+      "ticker": "MC.BK",
+      "name": "MC",
       "trades": 16,
-      "win_rate": 50.0,
-      "avg_return": 0.19,
-      "total_return": 0.8,
+      "win_rate": 43.8,
+      "avg_return": 0.2,
+      "total_return": 1.1,
       "best": 9.5,
       "worst": -7.5,
       "avg_hold": 16.9
     },
     {
-      "ticker": "RKLB",
-      "name": "RKLB",
-      "trades": 54,
-      "win_rate": 46.3,
-      "avg_return": 0.37,
-      "total_return": 0.8,
+      "ticker": "GOOG",
+      "name": "GOOG",
+      "trades": 22,
+      "win_rate": 45.5,
+      "avg_return": 0.34,
+      "total_return": 1.0,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 3.0
+      "avg_hold": 12.4
     },
     {
-      "ticker": "VRTX",
-      "name": "VRTX",
+      "ticker": "EGCO.BK",
+      "name": "EGCO",
       "trades": 19,
-      "win_rate": 52.6,
+      "win_rate": 57.9,
       "avg_return": 0.21,
       "total_return": 0.8,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 15.8
+      "avg_hold": 14.9
+    },
+    {
+      "ticker": "KTC.BK",
+      "name": "KTC",
+      "trades": 17,
+      "win_rate": 41.2,
+      "avg_return": 0.26,
+      "total_return": 0.7,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 14.5
     },
     {
       "ticker": "HENG.BK",
@@ -1412,48 +1401,70 @@
       "avg_hold": 12.1
     },
     {
-      "ticker": "ZS",
-      "name": "ZS",
-      "trades": 22,
-      "win_rate": 50.0,
-      "avg_return": 0.36,
+      "ticker": "WFC",
+      "name": "WFC",
+      "trades": 19,
+      "win_rate": 47.4,
+      "avg_return": 0.26,
       "total_return": 0.7,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 8.5
+      "avg_hold": 15.8
     },
     {
-      "ticker": "CKP.BK",
-      "name": "CKP",
-      "trades": 20,
-      "win_rate": 45.0,
-      "avg_return": 0.27,
-      "total_return": 0.5,
+      "ticker": "RKLB",
+      "name": "RKLB",
+      "trades": 55,
+      "win_rate": 45.5,
+      "avg_return": 0.35,
+      "total_return": 0.3,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 11.6
+      "avg_hold": 3.1
     },
     {
-      "ticker": "MEGA.BK",
-      "name": "MEGA",
+      "ticker": "BA",
+      "name": "BA",
+      "trades": 18,
+      "win_rate": 44.4,
+      "avg_return": 0.26,
+      "total_return": 0.2,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 15.1
+    },
+    {
+      "ticker": "RATCH.BK",
+      "name": "RATCH",
+      "trades": 19,
+      "win_rate": 63.2,
+      "avg_return": 0.14,
+      "total_return": -0.0,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 16.3
+    },
+    {
+      "ticker": "RBLX",
+      "name": "RBLX",
+      "trades": 26,
+      "win_rate": 46.2,
+      "avg_return": 0.35,
+      "total_return": -0.2,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 6.9
+    },
+    {
+      "ticker": "ILM.BK",
+      "name": "ILM",
       "trades": 17,
-      "win_rate": 52.9,
-      "avg_return": 0.12,
-      "total_return": -0.6,
+      "win_rate": 47.1,
+      "avg_return": 0.07,
+      "total_return": -1.2,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 17.5
-    },
-    {
-      "ticker": "ALAB",
-      "name": "ALAB",
-      "trades": 53,
-      "win_rate": 45.3,
-      "avg_return": 0.34,
-      "total_return": -0.7,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 2.9
+      "avg_hold": 16.2
     },
     {
       "ticker": "JD",
@@ -1467,15 +1478,15 @@
       "avg_hold": 10.9
     },
     {
-      "ticker": "TRUE.BK",
-      "name": "TRUE",
-      "trades": 21,
-      "win_rate": 42.9,
-      "avg_return": 0.16,
-      "total_return": -1.3,
+      "ticker": "PRM.BK",
+      "name": "PRM",
+      "trades": 19,
+      "win_rate": 42.1,
+      "avg_return": 0.17,
+      "total_return": -1.5,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 14.0
+      "avg_hold": 15.6
     },
     {
       "ticker": "SBUX",
@@ -1500,37 +1511,26 @@
       "avg_hold": 9.5
     },
     {
-      "ticker": "BA",
-      "name": "BA",
-      "trades": 19,
-      "win_rate": 42.1,
-      "avg_return": 0.12,
-      "total_return": -2.3,
+      "ticker": "TRUE.BK",
+      "name": "TRUE",
+      "trades": 22,
+      "win_rate": 40.9,
+      "avg_return": 0.13,
+      "total_return": -1.8,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 15.4
+      "avg_hold": 13.6
     },
     {
-      "ticker": "PTTEP.BK",
-      "name": "PTTEP",
-      "trades": 19,
-      "win_rate": 47.4,
-      "avg_return": 0.06,
-      "total_return": -2.4,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 15.3
-    },
-    {
-      "ticker": "TTA.BK",
-      "name": "TTA",
+      "ticker": "CKP.BK",
+      "name": "CKP",
       "trades": 20,
-      "win_rate": 50.0,
-      "avg_return": 0.1,
-      "total_return": -2.7,
+      "win_rate": 45.0,
+      "avg_return": 0.11,
+      "total_return": -2.8,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 14.6
+      "avg_hold": 11.8
     },
     {
       "ticker": "TQM.BK",
@@ -1555,15 +1555,48 @@
       "avg_hold": 9.8
     },
     {
-      "ticker": "SHOP",
-      "name": "SHOP",
-      "trades": 32,
-      "win_rate": 46.9,
-      "avg_return": 0.22,
-      "total_return": -3.2,
+      "ticker": "URI",
+      "name": "URI",
+      "trades": 18,
+      "win_rate": 44.4,
+      "avg_return": 0.07,
+      "total_return": -2.8,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 8.0
+      "avg_hold": 14.6
+    },
+    {
+      "ticker": "MEGA.BK",
+      "name": "MEGA",
+      "trades": 17,
+      "win_rate": 52.9,
+      "avg_return": -0.01,
+      "total_return": -2.9,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 17.7
+    },
+    {
+      "ticker": "V",
+      "name": "V",
+      "trades": 15,
+      "win_rate": 46.7,
+      "avg_return": -0.04,
+      "total_return": -2.9,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 17.3
+    },
+    {
+      "ticker": "VRTX",
+      "name": "VRTX",
+      "trades": 19,
+      "win_rate": 47.4,
+      "avg_return": -0.01,
+      "total_return": -3.3,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 16.1
     },
     {
       "ticker": "AEONTS.BK",
@@ -1577,39 +1610,6 @@
       "avg_hold": 16.4
     },
     {
-      "ticker": "LANNA.BK",
-      "name": "LANNA",
-      "trades": 16,
-      "win_rate": 56.2,
-      "avg_return": -0.14,
-      "total_return": -3.9,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 17.2
-    },
-    {
-      "ticker": "GOOG",
-      "name": "GOOG",
-      "trades": 22,
-      "win_rate": 40.9,
-      "avg_return": 0.11,
-      "total_return": -4.0,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 12.5
-    },
-    {
-      "ticker": "EGCO.BK",
-      "name": "EGCO",
-      "trades": 20,
-      "win_rate": 55.0,
-      "avg_return": -0.06,
-      "total_return": -4.5,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 14.5
-    },
-    {
       "ticker": "CRM",
       "name": "CRM",
       "trades": 20,
@@ -1621,114 +1621,136 @@
       "avg_hold": 11.6
     },
     {
-      "ticker": "SPALI.BK",
-      "name": "SPALI",
-      "trades": 18,
-      "win_rate": 55.6,
-      "avg_return": -0.09,
+      "ticker": "TASCO.BK",
+      "name": "TASCO",
+      "trades": 15,
+      "win_rate": 46.7,
+      "avg_return": -0.21,
       "total_return": -4.8,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 14.7
+      "avg_hold": 17.5
     },
     {
-      "ticker": "KTC.BK",
-      "name": "KTC",
-      "trades": 18,
-      "win_rate": 44.4,
-      "avg_return": -0.07,
-      "total_return": -5.1,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 14.4
-    },
-    {
-      "ticker": "TASCO.BK",
-      "name": "TASCO",
-      "trades": 14,
-      "win_rate": 42.9,
-      "avg_return": -0.28,
-      "total_return": -5.4,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 18.6
-    },
-    {
-      "ticker": "PRM.BK",
-      "name": "PRM",
-      "trades": 20,
+      "ticker": "SNNP.BK",
+      "name": "SNNP",
+      "trades": 15,
       "win_rate": 40.0,
-      "avg_return": -0.04,
+      "avg_return": -0.22,
+      "total_return": -5.3,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 15.9
+    },
+    {
+      "ticker": "FTNT",
+      "name": "FTNT",
+      "trades": 25,
+      "win_rate": 44.0,
+      "avg_return": 0.06,
       "total_return": -5.5,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 14.8
+      "avg_hold": 11.4
     },
     {
-      "ticker": "URI",
-      "name": "URI",
-      "trades": 18,
-      "win_rate": 44.4,
-      "avg_return": -0.11,
-      "total_return": -5.8,
+      "ticker": "GOOGL",
+      "name": "GOOGL",
+      "trades": 23,
+      "win_rate": 43.5,
+      "avg_return": 0.04,
+      "total_return": -5.6,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 14.3
+      "avg_hold": 11.5
     },
     {
-      "ticker": "CK.BK",
-      "name": "CK",
-      "trades": 25,
-      "win_rate": 44.0,
-      "avg_return": 0.07,
-      "total_return": -6.0,
+      "ticker": "PTTEP.BK",
+      "name": "PTTEP",
+      "trades": 19,
+      "win_rate": 47.4,
+      "avg_return": -0.12,
+      "total_return": -5.9,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 15.5
+    },
+    {
+      "ticker": "LANNA.BK",
+      "name": "LANNA",
+      "trades": 16,
+      "win_rate": 50.0,
+      "avg_return": -0.27,
+      "total_return": -5.9,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 17.5
+    },
+    {
+      "ticker": "TTA.BK",
+      "name": "TTA",
+      "trades": 20,
+      "win_rate": 50.0,
+      "avg_return": -0.07,
+      "total_return": -6.2,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 14.6
+    },
+    {
+      "ticker": "SPALI.BK",
+      "name": "SPALI",
+      "trades": 19,
+      "win_rate": 52.6,
+      "avg_return": -0.18,
+      "total_return": -6.4,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 14.1
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QCOM",
+      "trades": 27,
+      "win_rate": 51.9,
+      "avg_return": 0.0,
+      "total_return": -7.2,
       "best": 9.5,
       "worst": -7.5,
       "avg_hold": 8.8
+    },
+    {
+      "ticker": "SAWAD.BK",
+      "name": "SAWAD",
+      "trades": 23,
+      "win_rate": 43.5,
+      "avg_return": 0.01,
+      "total_return": -7.4,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 7.9
     },
     {
       "ticker": "CPF.BK",
       "name": "CPF",
       "trades": 19,
       "win_rate": 52.6,
-      "avg_return": -0.15,
-      "total_return": -6.1,
+      "avg_return": -0.22,
+      "total_return": -7.5,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 15.6
+      "avg_hold": 15.8
     },
     {
-      "ticker": "SNNP.BK",
-      "name": "SNNP",
-      "trades": 14,
+      "ticker": "GGC.BK",
+      "name": "GGC",
+      "trades": 21,
       "win_rate": 42.9,
-      "avg_return": -0.33,
-      "total_return": -6.6,
+      "avg_return": -0.07,
+      "total_return": -7.5,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 16.8
-    },
-    {
-      "ticker": "WMT",
-      "name": "WMT",
-      "trades": 19,
-      "win_rate": 47.4,
-      "avg_return": -0.19,
-      "total_return": -6.8,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 15.7
-    },
-    {
-      "ticker": "NER.BK",
-      "name": "NER",
-      "trades": 19,
-      "win_rate": 47.4,
-      "avg_return": -0.34,
-      "total_return": -8.8,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 16.4
+      "avg_hold": 9.4
     },
     {
       "ticker": "BAC",
@@ -1742,48 +1764,37 @@
       "avg_hold": 15.3
     },
     {
-      "ticker": "CLSK",
-      "name": "CLSK",
-      "trades": 51,
-      "win_rate": 45.1,
-      "avg_return": 0.17,
-      "total_return": -9.1,
+      "ticker": "ARM",
+      "name": "ARM",
+      "trades": 44,
+      "win_rate": 45.5,
+      "avg_return": 0.11,
+      "total_return": -10.0,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 2.9
+      "avg_hold": 4.9
     },
     {
-      "ticker": "AH.BK",
-      "name": "AH",
+      "ticker": "WMT",
+      "name": "WMT",
+      "trades": 19,
+      "win_rate": 47.4,
+      "avg_return": -0.37,
+      "total_return": -10.0,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 16.0
+    },
+    {
+      "ticker": "NER.BK",
+      "name": "NER",
       "trades": 18,
-      "win_rate": 50.0,
-      "avg_return": -0.35,
-      "total_return": -9.3,
+      "win_rate": 44.4,
+      "avg_return": -0.46,
+      "total_return": -10.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 16.2
-    },
-    {
-      "ticker": "FTNT",
-      "name": "FTNT",
-      "trades": 25,
-      "win_rate": 44.0,
-      "avg_return": -0.12,
-      "total_return": -9.4,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 11.2
-    },
-    {
-      "ticker": "BDMS.BK",
-      "name": "BDMS",
-      "trades": 15,
-      "win_rate": 53.3,
-      "avg_return": -0.55,
-      "total_return": -10.2,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 16.7
+      "avg_hold": 17.1
     },
     {
       "ticker": "PATH",
@@ -1797,92 +1808,15 @@
       "avg_hold": 6.1
     },
     {
-      "ticker": "GOOGL",
-      "name": "GOOGL",
-      "trades": 23,
-      "win_rate": 39.1,
-      "avg_return": -0.18,
-      "total_return": -10.4,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 11.6
-    },
-    {
-      "ticker": "LH.BK",
-      "name": "LH",
-      "trades": 14,
-      "win_rate": 42.9,
-      "avg_return": -0.66,
-      "total_return": -10.5,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 18.5
-    },
-    {
-      "ticker": "IIG.BK",
-      "name": "IIG",
-      "trades": 30,
-      "win_rate": 43.3,
-      "avg_return": -0.03,
-      "total_return": -10.7,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 4.3
-    },
-    {
-      "ticker": "BEM.BK",
-      "name": "BEM",
-      "trades": 18,
-      "win_rate": 38.9,
-      "avg_return": -0.35,
-      "total_return": -10.9,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 13.0
-    },
-    {
-      "ticker": "AVGO",
-      "name": "AVGO",
-      "trades": 29,
-      "win_rate": 41.4,
-      "avg_return": -0.08,
-      "total_return": -10.9,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 8.1
-    },
-    {
-      "ticker": "RGTI",
-      "name": "RGTI",
-      "trades": 61,
-      "win_rate": 45.9,
-      "avg_return": 0.16,
+      "ticker": "BDMS.BK",
+      "name": "BDMS",
+      "trades": 15,
+      "win_rate": 53.3,
+      "avg_return": -0.62,
       "total_return": -11.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 2.2
-    },
-    {
-      "ticker": "QBTS",
-      "name": "QBTS",
-      "trades": 65,
-      "win_rate": 44.6,
-      "avg_return": 0.17,
-      "total_return": -11.1,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 2.0
-    },
-    {
-      "ticker": "RBLX",
-      "name": "RBLX",
-      "trades": 26,
-      "win_rate": 42.3,
-      "avg_return": -0.12,
-      "total_return": -11.3,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 6.8
+      "avg_hold": 16.9
     },
     {
       "ticker": "SLB",
@@ -1893,18 +1827,62 @@
       "total_return": -11.3,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 11.2
+      "avg_hold": 10.9
     },
     {
-      "ticker": "BAM.BK",
-      "name": "BAM",
-      "trades": 21,
-      "win_rate": 47.6,
-      "avg_return": -0.41,
-      "total_return": -12.4,
+      "ticker": "AVGO",
+      "name": "AVGO",
+      "trades": 27,
+      "win_rate": 40.7,
+      "avg_return": -0.14,
+      "total_return": -11.4,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 13.1
+      "avg_hold": 8.8
+    },
+    {
+      "ticker": "PANW",
+      "name": "PANW",
+      "trades": 30,
+      "win_rate": 46.7,
+      "avg_return": -0.09,
+      "total_return": -11.4,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 8.8
+    },
+    {
+      "ticker": "AH.BK",
+      "name": "AH",
+      "trades": 18,
+      "win_rate": 44.4,
+      "avg_return": -0.49,
+      "total_return": -11.6,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 16.5
+    },
+    {
+      "ticker": "PLANB.BK",
+      "name": "PLANB",
+      "trades": 26,
+      "win_rate": 42.3,
+      "avg_return": -0.15,
+      "total_return": -11.7,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 8.1
+    },
+    {
+      "ticker": "CLS",
+      "name": "CLS",
+      "trades": 49,
+      "win_rate": 44.9,
+      "avg_return": 0.07,
+      "total_return": -12.7,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 4.6
     },
     {
       "ticker": "BANPU.BK",
@@ -1929,6 +1907,28 @@
       "avg_hold": 11.8
     },
     {
+      "ticker": "IIG.BK",
+      "name": "IIG",
+      "trades": 30,
+      "win_rate": 43.3,
+      "avg_return": -0.13,
+      "total_return": -13.5,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 4.4
+    },
+    {
+      "ticker": "UPST",
+      "name": "UPST",
+      "trades": 30,
+      "win_rate": 43.3,
+      "avg_return": -0.13,
+      "total_return": -13.5,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 5.0
+    },
+    {
       "ticker": "HD",
       "name": "HD",
       "trades": 14,
@@ -1940,81 +1940,26 @@
       "avg_hold": 17.7
     },
     {
-      "ticker": "SIRI.BK",
-      "name": "SIRI",
+      "ticker": "BEM.BK",
+      "name": "BEM",
       "trades": 18,
-      "win_rate": 33.3,
-      "avg_return": -0.7,
-      "total_return": -13.6,
+      "win_rate": 38.9,
+      "avg_return": -0.53,
+      "total_return": -14.0,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 16.2
-    },
-    {
-      "ticker": "ARM",
-      "name": "ARM",
-      "trades": 43,
-      "win_rate": 44.2,
-      "avg_return": 0.01,
-      "total_return": -13.6,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 5.0
+      "avg_hold": 13.2
     },
     {
       "ticker": "RIOT",
       "name": "RIOT",
-      "trades": 56,
-      "win_rate": 44.6,
-      "avg_return": 0.09,
-      "total_return": -13.8,
+      "trades": 54,
+      "win_rate": 44.4,
+      "avg_return": 0.06,
+      "total_return": -14.8,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 3.4
-    },
-    {
-      "ticker": "ICHI.BK",
-      "name": "ICHI",
-      "trades": 19,
-      "win_rate": 42.1,
-      "avg_return": -0.59,
-      "total_return": -14.2,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 15.3
-    },
-    {
-      "ticker": "SAWAD.BK",
-      "name": "SAWAD",
-      "trades": 24,
-      "win_rate": 41.7,
-      "avg_return": -0.3,
-      "total_return": -14.3,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 7.7
-    },
-    {
-      "ticker": "TU.BK",
-      "name": "TU",
-      "trades": 19,
-      "win_rate": 52.6,
-      "avg_return": -0.65,
-      "total_return": -14.5,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 14.4
-    },
-    {
-      "ticker": "REGN",
-      "name": "REGN",
-      "trades": 19,
-      "win_rate": 42.1,
-      "avg_return": -0.62,
-      "total_return": -14.6,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 13.1
+      "avg_hold": 3.5
     },
     {
       "ticker": "PDD",
@@ -2039,6 +1984,50 @@
       "avg_hold": 16.8
     },
     {
+      "ticker": "SIRI.BK",
+      "name": "SIRI",
+      "trades": 18,
+      "win_rate": 33.3,
+      "avg_return": -0.81,
+      "total_return": -15.3,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 16.5
+    },
+    {
+      "ticker": "ONEE.BK",
+      "name": "ONEE",
+      "trades": 19,
+      "win_rate": 36.8,
+      "avg_return": -0.63,
+      "total_return": -15.4,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 10.9
+    },
+    {
+      "ticker": "APP",
+      "name": "APP",
+      "trades": 39,
+      "win_rate": 43.6,
+      "avg_return": -0.09,
+      "total_return": -15.8,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 5.2
+    },
+    {
+      "ticker": "CLSK",
+      "name": "CLSK",
+      "trades": 52,
+      "win_rate": 44.2,
+      "avg_return": 0.02,
+      "total_return": -15.9,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 2.9
+    },
+    {
       "ticker": "UV.BK",
       "name": "UV",
       "trades": 16,
@@ -2048,6 +2037,17 @@
       "best": 9.5,
       "worst": -7.5,
       "avg_hold": 10.4
+    },
+    {
+      "ticker": "MSFT",
+      "name": "MSFT",
+      "trades": 18,
+      "win_rate": 38.9,
+      "avg_return": -0.73,
+      "total_return": -16.0,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 13.5
     },
     {
       "ticker": "MCD",
@@ -2072,92 +2072,147 @@
       "avg_hold": 7.6
     },
     {
-      "ticker": "MSFT",
-      "name": "MSFT",
-      "trades": 18,
-      "win_rate": 38.9,
-      "avg_return": -0.75,
-      "total_return": -16.2,
+      "ticker": "BAM.BK",
+      "name": "BAM",
+      "trades": 21,
+      "win_rate": 42.9,
+      "avg_return": -0.62,
+      "total_return": -16.3,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 13.2
+      "avg_hold": 13.3
+    },
+    {
+      "ticker": "LH.BK",
+      "name": "LH",
+      "trades": 15,
+      "win_rate": 40.0,
+      "avg_return": -1.11,
+      "total_return": -17.2,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 17.9
+    },
+    {
+      "ticker": "ICHI.BK",
+      "name": "ICHI",
+      "trades": 19,
+      "win_rate": 42.1,
+      "avg_return": -0.78,
+      "total_return": -17.3,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 15.5
+    },
+    {
+      "ticker": "HON",
+      "name": "HON",
+      "trades": 17,
+      "win_rate": 41.2,
+      "avg_return": -0.92,
+      "total_return": -17.6,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 14.2
+    },
+    {
+      "ticker": "TU.BK",
+      "name": "TU",
+      "trades": 19,
+      "win_rate": 52.6,
+      "avg_return": -0.85,
+      "total_return": -18.0,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 14.6
     },
     {
       "ticker": "MINT.BK",
       "name": "MINT",
       "trades": 18,
       "win_rate": 33.3,
-      "avg_return": -0.75,
-      "total_return": -16.6,
+      "avg_return": -0.85,
+      "total_return": -18.2,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 14.2
+      "avg_hold": 14.5
     },
     {
-      "ticker": "JMART.BK",
-      "name": "JMART",
-      "trades": 29,
-      "win_rate": 41.4,
+      "ticker": "MSTR",
+      "name": "MSTR",
+      "trades": 33,
+      "win_rate": 42.4,
       "avg_return": -0.29,
-      "total_return": -16.7,
+      "total_return": -19.0,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 6.9
+      "avg_hold": 4.5
     },
     {
-      "ticker": "BLK",
-      "name": "BLK",
-      "trades": 18,
-      "win_rate": 44.4,
-      "avg_return": -0.8,
-      "total_return": -16.9,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 16.6
-    },
-    {
-      "ticker": "ONEE.BK",
-      "name": "ONEE",
+      "ticker": "REGN",
+      "name": "REGN",
       "trades": 19,
-      "win_rate": 36.8,
-      "avg_return": -0.74,
-      "total_return": -17.2,
+      "win_rate": 42.1,
+      "avg_return": -0.88,
+      "total_return": -19.0,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 10.9
+      "avg_hold": 13.2
     },
     {
       "ticker": "OR.BK",
       "name": "OR",
       "trades": 20,
       "win_rate": 40.0,
-      "avg_return": -0.75,
-      "total_return": -17.7,
+      "avg_return": -0.83,
+      "total_return": -19.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 12.5
+      "avg_hold": 12.8
     },
     {
-      "ticker": "HON",
-      "name": "HON",
-      "trades": 17,
-      "win_rate": 35.3,
-      "avg_return": -0.96,
-      "total_return": -18.2,
+      "ticker": "PYPL",
+      "name": "PYPL",
+      "trades": 18,
+      "win_rate": 38.9,
+      "avg_return": -0.89,
+      "total_return": -19.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 14.2
+      "avg_hold": 10.6
     },
     {
-      "ticker": "AMZN",
-      "name": "AMZN",
-      "trades": 22,
-      "win_rate": 45.5,
-      "avg_return": -0.7,
-      "total_return": -18.7,
+      "ticker": "RGTI",
+      "name": "RGTI",
+      "trades": 59,
+      "win_rate": 44.1,
+      "avg_return": -0.01,
+      "total_return": -19.2,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 12.5
+      "avg_hold": 2.3
+    },
+    {
+      "ticker": "TEAM",
+      "name": "TEAM",
+      "trades": 26,
+      "win_rate": 42.3,
+      "avg_return": -0.49,
+      "total_return": -19.3,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 6.0
+    },
+    {
+      "ticker": "BLK",
+      "name": "BLK",
+      "trades": 19,
+      "win_rate": 42.1,
+      "avg_return": -0.92,
+      "total_return": -19.3,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 15.5
     },
     {
       "ticker": "SAK.BK",
@@ -2171,26 +2226,37 @@
       "avg_hold": 14.9
     },
     {
-      "ticker": "APP",
-      "name": "APP",
-      "trades": 40,
-      "win_rate": 42.5,
-      "avg_return": -0.2,
-      "total_return": -19.7,
+      "ticker": "AMZN",
+      "name": "AMZN",
+      "trades": 22,
+      "win_rate": 45.5,
+      "avg_return": -0.75,
+      "total_return": -19.6,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 5.0
+      "avg_hold": 12.7
     },
     {
-      "ticker": "UPST",
-      "name": "UPST",
-      "trades": 31,
-      "win_rate": 41.9,
-      "avg_return": -0.37,
-      "total_return": -20.0,
+      "ticker": "DOHOME.BK",
+      "name": "DOHOME",
+      "trades": 24,
+      "win_rate": 41.7,
+      "avg_return": -0.63,
+      "total_return": -20.2,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 5.0
+      "avg_hold": 7.8
+    },
+    {
+      "ticker": "ACE.BK",
+      "name": "ACE",
+      "trades": 19,
+      "win_rate": 21.1,
+      "avg_return": -1.14,
+      "total_return": -20.3,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 18.3
     },
     {
       "ticker": "ITC.BK",
@@ -2201,29 +2267,29 @@
       "total_return": -20.6,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 11.4
+      "avg_hold": 11.3
     },
     {
-      "ticker": "TEAM",
-      "name": "TEAM",
-      "trades": 27,
-      "win_rate": 40.7,
-      "avg_return": -0.53,
+      "ticker": "NKE",
+      "name": "NKE",
+      "trades": 14,
+      "win_rate": 42.9,
+      "avg_return": -1.44,
       "total_return": -20.6,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 5.8
+      "avg_hold": 14.7
     },
     {
-      "ticker": "ACE.BK",
-      "name": "ACE",
-      "trades": 19,
-      "win_rate": 21.1,
-      "avg_return": -1.18,
-      "total_return": -20.9,
+      "ticker": "JMART.BK",
+      "name": "JMART",
+      "trades": 29,
+      "win_rate": 41.4,
+      "avg_return": -0.47,
+      "total_return": -21.0,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 18.0
+      "avg_hold": 7.0
     },
     {
       "ticker": "AU.BK",
@@ -2252,22 +2318,11 @@
       "name": "MA",
       "trades": 19,
       "win_rate": 42.1,
-      "avg_return": -1.08,
-      "total_return": -21.1,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 17.1
-    },
-    {
-      "ticker": "PYPL",
-      "name": "PYPL",
-      "trades": 18,
-      "win_rate": 38.9,
-      "avg_return": -1.05,
+      "avg_return": -1.11,
       "total_return": -21.6,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 10.6
+      "avg_hold": 17.2
     },
     {
       "ticker": "QH.BK",
@@ -2289,7 +2344,7 @@
       "total_return": -21.8,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 12.2
+      "avg_hold": 12.5
     },
     {
       "ticker": "VRT",
@@ -2314,6 +2369,17 @@
       "avg_hold": 14.4
     },
     {
+      "ticker": "HMPRO.BK",
+      "name": "HMPRO",
+      "trades": 19,
+      "win_rate": 42.1,
+      "avg_return": -1.13,
+      "total_return": -22.5,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 12.7
+    },
+    {
       "ticker": "PEP",
       "name": "PEP",
       "trades": 17,
@@ -2327,57 +2393,13 @@
     {
       "ticker": "BIDU",
       "name": "BIDU",
-      "trades": 28,
-      "win_rate": 39.3,
-      "avg_return": -0.61,
-      "total_return": -22.9,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 8.5
-    },
-    {
-      "ticker": "CBG.BK",
-      "name": "CBG",
-      "trades": 22,
-      "win_rate": 36.4,
-      "avg_return": -0.91,
-      "total_return": -23.3,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 10.3
-    },
-    {
-      "ticker": "BCH.BK",
-      "name": "BCH",
-      "trades": 18,
-      "win_rate": 44.4,
-      "avg_return": -1.27,
-      "total_return": -23.5,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 13.4
-    },
-    {
-      "ticker": "CLS",
-      "name": "CLS",
-      "trades": 50,
-      "win_rate": 44.0,
-      "avg_return": -0.2,
-      "total_return": -23.8,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 4.5
-    },
-    {
-      "ticker": "PANW",
-      "name": "PANW",
-      "trades": 31,
-      "win_rate": 41.9,
-      "avg_return": -0.57,
+      "trades": 26,
+      "win_rate": 38.5,
+      "avg_return": -0.74,
       "total_return": -23.9,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 8.5
+      "avg_hold": 9.0
     },
     {
       "ticker": "CPALL.BK",
@@ -2391,48 +2413,81 @@
       "avg_hold": 16.3
     },
     {
-      "ticker": "ETN",
-      "name": "ETN",
-      "trades": 23,
-      "win_rate": 34.8,
-      "avg_return": -0.95,
+      "ticker": "QBTS",
+      "name": "QBTS",
+      "trades": 62,
+      "win_rate": 43.5,
+      "avg_return": -0.1,
       "total_return": -24.3,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 11.5
-    },
-    {
-      "ticker": "DOHOME.BK",
-      "name": "DOHOME",
-      "trades": 23,
-      "win_rate": 39.1,
-      "avg_return": -0.91,
-      "total_return": -24.5,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 8.0
-    },
-    {
-      "ticker": "PLANB.BK",
-      "name": "PLANB",
-      "trades": 24,
-      "win_rate": 37.5,
-      "avg_return": -0.85,
-      "total_return": -24.7,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 8.6
+      "avg_hold": 2.0
     },
     {
       "ticker": "DCC.BK",
       "name": "DCC",
       "trades": 16,
       "win_rate": 43.8,
-      "avg_return": -1.62,
-      "total_return": -25.0,
+      "avg_return": -1.57,
+      "total_return": -24.4,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 13.9
+      "avg_hold": 14.2
+    },
+    {
+      "ticker": "CMG",
+      "name": "CMG",
+      "trades": 20,
+      "win_rate": 40.0,
+      "avg_return": -1.07,
+      "total_return": -24.5,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 10.4
+    },
+    {
+      "ticker": "ETN",
+      "name": "ETN",
+      "trades": 23,
+      "win_rate": 34.8,
+      "avg_return": -0.99,
+      "total_return": -24.9,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 11.7
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HUBS",
+      "trades": 27,
+      "win_rate": 40.7,
+      "avg_return": -0.74,
+      "total_return": -25.1,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 6.1
+    },
+    {
+      "ticker": "BCH.BK",
+      "name": "BCH",
+      "trades": 19,
+      "win_rate": 42.1,
+      "avg_return": -1.32,
+      "total_return": -25.3,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 13.0
+    },
+    {
+      "ticker": "LNG",
+      "name": "LNG",
+      "trades": 23,
+      "win_rate": 43.5,
+      "avg_return": -1.04,
+      "total_return": -25.7,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 13.1
     },
     {
       "ticker": "ADBE",
@@ -2446,28 +2501,6 @@
       "avg_hold": 13.8
     },
     {
-      "ticker": "LNG",
-      "name": "LNG",
-      "trades": 23,
-      "win_rate": 43.5,
-      "avg_return": -1.06,
-      "total_return": -26.1,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 12.9
-    },
-    {
-      "ticker": "NKE",
-      "name": "NKE",
-      "trades": 15,
-      "win_rate": 40.0,
-      "avg_return": -1.84,
-      "total_return": -26.6,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 14.5
-    },
-    {
       "ticker": "JAS.BK",
       "name": "JAS",
       "trades": 16,
@@ -2479,37 +2512,48 @@
       "avg_hold": 9.9
     },
     {
-      "ticker": "COST",
-      "name": "COST",
-      "trades": 17,
-      "win_rate": 29.4,
-      "avg_return": -1.73,
+      "ticker": "TSLA",
+      "name": "TSLA",
+      "trades": 28,
+      "win_rate": 42.9,
+      "avg_return": -0.84,
       "total_return": -27.6,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 16.7
+      "avg_hold": 8.4
     },
     {
-      "ticker": "HMPRO.BK",
-      "name": "HMPRO",
-      "trades": 19,
-      "win_rate": 36.8,
-      "avg_return": -1.5,
-      "total_return": -27.8,
+      "ticker": "COST",
+      "name": "COST",
+      "trades": 18,
+      "win_rate": 27.8,
+      "avg_return": -1.68,
+      "total_return": -28.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 12.4
+      "avg_hold": 16.1
     },
     {
-      "ticker": "ISRG",
-      "name": "ISRG",
-      "trades": 16,
-      "win_rate": 37.5,
-      "avg_return": -1.89,
-      "total_return": -29.1,
+      "ticker": "AI",
+      "name": "AI",
+      "trades": 25,
+      "win_rate": 40.0,
+      "avg_return": -1.02,
+      "total_return": -28.6,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 13.3
+      "avg_hold": 6.7
+    },
+    {
+      "ticker": "CBG.BK",
+      "name": "CBG",
+      "trades": 22,
+      "win_rate": 36.4,
+      "avg_return": -1.23,
+      "total_return": -28.7,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 10.3
     },
     {
       "ticker": "TOST",
@@ -2523,26 +2567,26 @@
       "avg_hold": 9.3
     },
     {
-      "ticker": "SYNEX.BK",
-      "name": "SYNEX",
-      "trades": 18,
-      "win_rate": 38.9,
-      "avg_return": -1.74,
-      "total_return": -30.1,
+      "ticker": "ISRG",
+      "name": "ISRG",
+      "trades": 17,
+      "win_rate": 35.3,
+      "avg_return": -1.78,
+      "total_return": -29.4,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 12.8
+      "avg_hold": 12.4
     },
     {
-      "ticker": "CMG",
-      "name": "CMG",
-      "trades": 21,
-      "win_rate": 38.1,
-      "avg_return": -1.38,
-      "total_return": -30.1,
+      "ticker": "NVDA",
+      "name": "NVDA",
+      "trades": 25,
+      "win_rate": 44.0,
+      "avg_return": -1.16,
+      "total_return": -30.4,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 10.4
+      "avg_hold": 10.7
     },
     {
       "ticker": "BRI.BK",
@@ -2567,59 +2611,26 @@
       "avg_hold": 9.9
     },
     {
-      "ticker": "MSTR",
-      "name": "MSTR",
+      "ticker": "COIN",
+      "name": "COIN",
       "trades": 33,
       "win_rate": 39.4,
       "avg_return": -0.77,
       "total_return": -30.7,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 4.5
+      "avg_hold": 5.5
     },
     {
-      "ticker": "HUBS",
-      "name": "HUBS",
-      "trades": 28,
-      "win_rate": 39.3,
-      "avg_return": -0.99,
-      "total_return": -30.7,
+      "ticker": "SYNEX.BK",
+      "name": "SYNEX",
+      "trades": 18,
+      "win_rate": 38.9,
+      "avg_return": -1.79,
+      "total_return": -30.9,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 6.0
-    },
-    {
-      "ticker": "AI",
-      "name": "AI",
-      "trades": 25,
-      "win_rate": 36.0,
-      "avg_return": -1.15,
-      "total_return": -31.0,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 6.5
-    },
-    {
-      "ticker": "LI",
-      "name": "LI",
-      "trades": 28,
-      "win_rate": 39.3,
-      "avg_return": -1.0,
-      "total_return": -31.1,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 8.1
-    },
-    {
-      "ticker": "COIN",
-      "name": "COIN",
-      "trades": 34,
-      "win_rate": 38.2,
-      "avg_return": -0.78,
-      "total_return": -31.6,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 5.2
+      "avg_hold": 12.9
     },
     {
       "ticker": "SOFI",
@@ -2633,6 +2644,17 @@
       "avg_hold": 5.7
     },
     {
+      "ticker": "PG",
+      "name": "PG",
+      "trades": 18,
+      "win_rate": 27.8,
+      "avg_return": -2.05,
+      "total_return": -32.3,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 18.4
+    },
+    {
       "ticker": "NIO",
       "name": "NIO",
       "trades": 31,
@@ -2644,70 +2666,59 @@
       "avg_hold": 5.9
     },
     {
-      "ticker": "TSLA",
-      "name": "TSLA",
-      "trades": 29,
-      "win_rate": 41.4,
-      "avg_return": -1.05,
-      "total_return": -32.7,
+      "ticker": "LI",
+      "name": "LI",
+      "trades": 28,
+      "win_rate": 39.3,
+      "avg_return": -1.07,
+      "total_return": -32.4,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 8.0
+      "avg_hold": 8.1
     },
     {
-      "ticker": "NVDA",
-      "name": "NVDA",
-      "trades": 25,
-      "win_rate": 44.0,
-      "avg_return": -1.32,
-      "total_return": -33.0,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 10.5
-    },
-    {
-      "ticker": "PG",
-      "name": "PG",
-      "trades": 18,
-      "win_rate": 27.8,
-      "avg_return": -2.13,
-      "total_return": -33.2,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 18.3
-    },
-    {
-      "ticker": "LULU",
-      "name": "LULU",
+      "ticker": "TKN.BK",
+      "name": "TKN",
       "trades": 17,
-      "win_rate": 29.4,
-      "avg_return": -2.24,
-      "total_return": -34.8,
+      "win_rate": 23.5,
+      "avg_return": -2.51,
+      "total_return": -36.5,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 10.9
+      "avg_hold": 14.4
+    },
+    {
+      "ticker": "TLI.BK",
+      "name": "TLI",
+      "trades": 24,
+      "win_rate": 33.3,
+      "avg_return": -1.72,
+      "total_return": -37.5,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 11.8
     },
     {
       "ticker": "CHG.BK",
       "name": "CHG",
       "trades": 18,
-      "win_rate": 33.3,
-      "avg_return": -2.27,
-      "total_return": -36.2,
+      "win_rate": 27.8,
+      "avg_return": -2.45,
+      "total_return": -38.2,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 13.7
+      "avg_hold": 13.9
     },
     {
-      "ticker": "TKN.BK",
-      "name": "TKN",
+      "ticker": "LULU",
+      "name": "LULU",
       "trades": 16,
-      "win_rate": 18.8,
-      "avg_return": -2.86,
+      "win_rate": 25.0,
+      "avg_return": -2.77,
       "total_return": -38.4,
-      "best": 8.38,
+      "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 15.1
+      "avg_hold": 10.9
     },
     {
       "ticker": "DKNG",
@@ -2721,59 +2732,48 @@
       "avg_hold": 8.0
     },
     {
-      "ticker": "IONQ",
-      "name": "IONQ",
-      "trades": 55,
-      "win_rate": 41.8,
-      "avg_return": -0.55,
-      "total_return": -38.9,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 2.7
-    },
-    {
       "ticker": "OKLO",
       "name": "OKLO",
       "trades": 65,
       "win_rate": 41.5,
-      "avg_return": -0.41,
-      "total_return": -39.0,
+      "avg_return": -0.44,
+      "total_return": -40.1,
       "best": 9.5,
       "worst": -7.5,
       "avg_hold": 2.0
     },
     {
-      "ticker": "CHAYO.BK",
-      "name": "CHAYO",
-      "trades": 24,
-      "win_rate": 37.5,
-      "avg_return": -1.77,
-      "total_return": -39.3,
+      "ticker": "MTC.BK",
+      "name": "MTC",
+      "trades": 19,
+      "win_rate": 31.6,
+      "avg_return": -2.44,
+      "total_return": -40.2,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 6.8
+      "avg_hold": 11.4
     },
     {
-      "ticker": "TLI.BK",
-      "name": "TLI",
-      "trades": 25,
-      "win_rate": 32.0,
-      "avg_return": -1.88,
-      "total_return": -41.2,
+      "ticker": "INTU",
+      "name": "INTU",
+      "trades": 19,
+      "win_rate": 31.6,
+      "avg_return": -2.51,
+      "total_return": -41.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 11.2
+      "avg_hold": 10.6
     },
     {
-      "ticker": "NOW",
-      "name": "NOW",
-      "trades": 27,
-      "win_rate": 37.0,
-      "avg_return": -1.76,
+      "ticker": "ZEN.BK",
+      "name": "ZEN",
+      "trades": 18,
+      "win_rate": 22.2,
+      "avg_return": -2.88,
       "total_return": -42.7,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 6.3
+      "avg_hold": 12.8
     },
     {
       "ticker": "DUOL",
@@ -2787,37 +2787,37 @@
       "avg_hold": 4.8
     },
     {
-      "ticker": "ZEN.BK",
-      "name": "ZEN",
-      "trades": 18,
-      "win_rate": 22.2,
-      "avg_return": -2.92,
-      "total_return": -43.1,
+      "ticker": "CHAYO.BK",
+      "name": "CHAYO",
+      "trades": 24,
+      "win_rate": 33.3,
+      "avg_return": -2.12,
+      "total_return": -44.2,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 12.5
+      "avg_hold": 7.0
     },
     {
-      "ticker": "INTU",
-      "name": "INTU",
-      "trades": 20,
-      "win_rate": 30.0,
-      "avg_return": -2.67,
-      "total_return": -44.4,
+      "ticker": "NOW",
+      "name": "NOW",
+      "trades": 27,
+      "win_rate": 37.0,
+      "avg_return": -1.85,
+      "total_return": -44.3,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 11.1
+      "avg_hold": 6.3
     },
     {
-      "ticker": "MTC.BK",
-      "name": "MTC",
-      "trades": 20,
-      "win_rate": 30.0,
-      "avg_return": -2.69,
-      "total_return": -44.7,
+      "ticker": "ONON",
+      "name": "ONON",
+      "trades": 24,
+      "win_rate": 29.2,
+      "avg_return": -2.31,
+      "total_return": -46.6,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 10.9
+      "avg_hold": 8.8
     },
     {
       "ticker": "SISB.BK",
@@ -2831,15 +2831,15 @@
       "avg_hold": 9.6
     },
     {
-      "ticker": "ONON",
-      "name": "ONON",
-      "trades": 25,
-      "win_rate": 28.0,
-      "avg_return": -2.64,
-      "total_return": -52.0,
+      "ticker": "IONQ",
+      "name": "IONQ",
+      "trades": 53,
+      "win_rate": 37.7,
+      "avg_return": -1.0,
+      "total_return": -50.9,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 8.4
+      "avg_hold": 2.9
     },
     {
       "ticker": "XPEV",
@@ -2851,6 +2851,17 @@
       "best": 9.5,
       "worst": -7.5,
       "avg_hold": 5.7
+    },
+    {
+      "ticker": "BTS.BK",
+      "name": "BTS",
+      "trades": 17,
+      "win_rate": 17.6,
+      "avg_return": -4.26,
+      "total_return": -53.5,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 10.4
     },
     {
       "ticker": "MARA",
@@ -2868,63 +2879,52 @@
       "name": "SMCI",
       "trades": 49,
       "win_rate": 36.7,
-      "avg_return": -1.31,
-      "total_return": -55.5,
+      "avg_return": -1.26,
+      "total_return": -54.3,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 3.5
-    },
-    {
-      "ticker": "BTS.BK",
-      "name": "BTS",
-      "trades": 18,
-      "win_rate": 16.7,
-      "avg_return": -4.44,
-      "total_return": -57.0,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 9.9
-    },
-    {
-      "ticker": "ASTS",
-      "name": "ASTS",
-      "trades": 68,
-      "win_rate": 38.2,
-      "avg_return": -0.9,
-      "total_return": -57.0,
-      "best": 9.5,
-      "worst": -7.5,
-      "avg_hold": 2.0
+      "avg_hold": 3.6
     },
     {
       "ticker": "MAJOR.BK",
       "name": "MAJOR",
       "trades": 19,
       "win_rate": 15.8,
-      "avg_return": -4.43,
-      "total_return": -58.9,
+      "avg_return": -4.28,
+      "total_return": -57.8,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 10.9
+      "avg_hold": 11.2
+    },
+    {
+      "ticker": "ASTS",
+      "name": "ASTS",
+      "trades": 66,
+      "win_rate": 37.9,
+      "avg_return": -1.06,
+      "total_return": -60.4,
+      "best": 9.5,
+      "worst": -7.5,
+      "avg_hold": 2.2
     },
     {
       "ticker": "VGI.BK",
       "name": "VGI",
-      "trades": 29,
-      "win_rate": 24.1,
-      "avg_return": -3.17,
-      "total_return": -63.6,
+      "trades": 27,
+      "win_rate": 22.2,
+      "avg_return": -3.48,
+      "total_return": -64.1,
       "best": 9.5,
       "worst": -7.5,
-      "avg_hold": 6.3
+      "avg_hold": 6.7
     },
     {
       "ticker": "RS.BK",
       "name": "RS",
-      "trades": 36,
-      "win_rate": 13.9,
-      "avg_return": -5.14,
-      "total_return": -86.0,
+      "trades": 38,
+      "win_rate": 13.2,
+      "avg_return": -5.08,
+      "total_return": -87.1,
       "best": 9.5,
       "worst": -7.5,
       "avg_hold": 1.9
