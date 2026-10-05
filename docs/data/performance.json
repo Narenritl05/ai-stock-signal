@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-05 09:13 (เวลาไทย)",
+  "generated_at": "2026-10-05 16:23 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
     "closed": 1383,
-    "open": 84,
+    "open": 86,
     "win_rate": 39.6,
     "avg_return": -0.69,
     "total_return": -100.0,
@@ -12,6 +12,40 @@
     "by_time": 462
   },
   "open_positions": [
+    {
+      "ticker": "DMT.BK",
+      "name": "DMT",
+      "signal": "BUY",
+      "score": 70,
+      "entry_date": "2026-10-05",
+      "entry": 12.1,
+      "stop": 11.9,
+      "target": 13.31,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-05",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "RBF.BK",
+      "name": "RBF",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-10-05",
+      "entry": 4.96,
+      "stop": 4.62,
+      "target": 5.46,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-05",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
     {
       "ticker": "MRVL",
       "name": "MRVL",
