@@ -23962,13 +23962,13 @@
       "entry": 30.1,
       "stop": 28.0,
       "target": 33.12,
-      "status": "open",
+      "status": "closed",
       "days": 13,
       "last_date": "2026-10-07",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 33.12,
+      "exit_date": "2026-10-07",
+      "reason": "target",
+      "return_pct": 9.53
     },
     {
       "ticker": "WMT",

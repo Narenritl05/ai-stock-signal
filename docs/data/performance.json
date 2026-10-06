@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-07 02:38 (เวลาไทย)",
+  "generated_at": "2026-10-07 06:30 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1400,
-    "open": 101,
-    "win_rate": 39.4,
-    "avg_return": -0.69,
+    "closed": 1401,
+    "open": 100,
+    "win_rate": 39.5,
+    "avg_return": -0.68,
     "total_return": -100.0,
-    "by_target": 287,
+    "by_target": 288,
     "by_stop": 645,
     "by_time": 468
   },
@@ -1254,23 +1254,6 @@
       "return_pct": null
     },
     {
-      "ticker": "ONON",
-      "name": "ONON",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-09-24",
-      "entry": 30.1,
-      "stop": 28.0,
-      "target": 33.12,
-      "status": "open",
-      "days": 13,
-      "last_date": "2026-10-07",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "WMT",
       "name": "WMT",
       "signal": "BUY",
@@ -1749,6 +1732,23 @@
       "return_pct": -0.5
     },
     {
+      "ticker": "ONON",
+      "name": "ONON",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-09-24",
+      "entry": 30.1,
+      "stop": 28.0,
+      "target": 33.12,
+      "status": "closed",
+      "days": 13,
+      "last_date": "2026-10-07",
+      "exit": 33.12,
+      "exit_date": "2026-10-07",
+      "reason": "target",
+      "return_pct": 9.53
+    },
+    {
       "ticker": "STX",
       "name": "STX",
       "signal": "BUY",
@@ -2220,23 +2220,6 @@
       "days": 13,
       "last_date": "2026-10-02",
       "exit": 408.62,
-      "exit_date": "2026-10-02",
-      "reason": "target",
-      "return_pct": 9.5
-    },
-    {
-      "ticker": "STX",
-      "name": "STX",
-      "signal": "BUY",
-      "score": 62,
-      "entry_date": "2026-09-19",
-      "entry": 858.79,
-      "stop": 798.67,
-      "target": 944.67,
-      "status": "closed",
-      "days": 13,
-      "last_date": "2026-10-02",
-      "exit": 944.67,
       "exit_date": "2026-10-02",
       "reason": "target",
       "return_pct": 9.5
