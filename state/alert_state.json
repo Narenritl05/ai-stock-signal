@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-10-09 04:45 (เวลาไทย)",
+  "last_run": "2026-10-09 08:40 (เวลาไทย)",
   "signals": {
     "BCH.BK": {
       "signal": "STRONG BUY",
@@ -209,6 +209,10 @@
       "signal": "AVOID",
       "score": 33
     },
+    "VGI.BK": {
+      "signal": "AVOID",
+      "score": 33
+    },
     "GGC.BK": {
       "signal": "AVOID",
       "score": 32
@@ -249,11 +253,11 @@
       "signal": "AVOID",
       "score": 27
     },
-    "VGI.BK": {
-      "signal": "AVOID",
-      "score": 27
-    },
     "SCGP.BK": {
+      "signal": "AVOID",
+      "score": 26
+    },
+    "TU.BK": {
       "signal": "AVOID",
       "score": 26
     },
@@ -313,10 +317,6 @@
       "signal": "AVOID",
       "score": 20
     },
-    "TU.BK": {
-      "signal": "AVOID",
-      "score": 20
-    },
     "BTG.BK": {
       "signal": "AVOID",
       "score": 20
@@ -326,6 +326,10 @@
       "score": 20
     },
     "KKP.BK": {
+      "signal": "AVOID",
+      "score": 20
+    },
+    "PSL.BK": {
       "signal": "AVOID",
       "score": 20
     },
@@ -421,10 +425,6 @@
       "signal": "AVOID",
       "score": 16
     },
-    "PSL.BK": {
-      "signal": "AVOID",
-      "score": 16
-    },
     "SAPPE.BK": {
       "signal": "AVOID",
       "score": 16
@@ -477,6 +477,10 @@
       "signal": "AVOID",
       "score": 12
     },
+    "ORI.BK": {
+      "signal": "AVOID",
+      "score": 12
+    },
     "SPALI.BK": {
       "signal": "AVOID",
       "score": 12
@@ -509,10 +513,6 @@
       "signal": "AVOID",
       "score": 8
     },
-    "ORI.BK": {
-      "signal": "AVOID",
-      "score": 8
-    },
     "QH.BK": {
       "signal": "AVOID",
       "score": 8
@@ -524,6 +524,10 @@
     "THANI.BK": {
       "signal": "AVOID",
       "score": 8
+    },
+    "PG": {
+      "signal": "STRONG BUY",
+      "score": 85
     },
     "LLY": {
       "signal": "STRONG BUY",
@@ -550,10 +554,6 @@
       "score": 77
     },
     "MA": {
-      "signal": "STRONG BUY",
-      "score": 77
-    },
-    "PG": {
       "signal": "STRONG BUY",
       "score": 77
     },
