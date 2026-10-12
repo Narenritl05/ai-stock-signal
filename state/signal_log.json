@@ -26485,6 +26485,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "GULF.BK",
+      "name": "GULF",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-10-12",
+      "entry": 60.75,
+      "stop": 59.0,
+      "target": 66.83,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-12",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "MTC.BK",
+      "name": "MTC",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-10-12",
+      "entry": 28.75,
+      "stop": 27.25,
+      "target": 31.63,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-12",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }

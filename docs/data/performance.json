@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-12 08:29 (เวลาไทย)",
+  "generated_at": "2026-10-12 14:53 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
     "closed": 1439,
-    "open": 119,
+    "open": 121,
     "win_rate": 39.5,
     "avg_return": -0.69,
     "total_return": -100.0,
@@ -12,6 +12,40 @@
     "by_time": 484
   },
   "open_positions": [
+    {
+      "ticker": "GULF.BK",
+      "name": "GULF",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-10-12",
+      "entry": 60.75,
+      "stop": 59.0,
+      "target": 66.83,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-12",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "MTC.BK",
+      "name": "MTC",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-10-12",
+      "entry": 28.75,
+      "stop": 27.25,
+      "target": 31.63,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-12",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
     {
       "ticker": "CELH",
       "name": "CELH",
