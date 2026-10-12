@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-13 00:15 (เวลาไทย)",
+  "generated_at": "2026-10-13 06:42 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1448,
-    "open": 117,
+    "closed": 1449,
+    "open": 116,
     "win_rate": 39.3,
-    "avg_return": -0.71,
+    "avg_return": -0.7,
     "total_return": -100.0,
-    "by_target": 293,
+    "by_target": 294,
     "by_stop": 667,
     "by_time": 488
   },
@@ -1288,23 +1288,6 @@
       "return_pct": null
     },
     {
-      "ticker": "RBLX",
-      "name": "RBLX",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-10-06",
-      "entry": 44.89,
-      "stop": 41.75,
-      "target": 49.38,
-      "status": "open",
-      "days": 7,
-      "last_date": "2026-10-13",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "V",
       "name": "V",
       "signal": "BUY",
@@ -2072,6 +2055,23 @@
       "return_pct": -2.17
     },
     {
+      "ticker": "RBLX",
+      "name": "RBLX",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-10-06",
+      "entry": 44.89,
+      "stop": 41.75,
+      "target": 49.38,
+      "status": "closed",
+      "days": 7,
+      "last_date": "2026-10-13",
+      "exit": 49.38,
+      "exit_date": "2026-10-13",
+      "reason": "target",
+      "return_pct": 9.5
+    },
+    {
       "ticker": "TSM",
       "name": "TSM",
       "signal": "BUY",
@@ -2495,23 +2495,6 @@
       "exit_date": "2026-10-09",
       "reason": "stop",
       "return_pct": -6.57
-    },
-    {
-      "ticker": "MC.BK",
-      "name": "MC",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-09-18",
-      "entry": 11.4,
-      "stop": 11.0,
-      "target": 12.54,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-10-08",
-      "exit": 11.3,
-      "exit_date": "2026-10-08",
-      "reason": "time",
-      "return_pct": -1.38
     }
   ]
 }
