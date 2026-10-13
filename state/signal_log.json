@@ -26672,6 +26672,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "LOW",
+      "name": "LOW",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-10-14",
+      "entry": 188.74,
+      "stop": 179.5,
+      "target": 207.61,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-14",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
