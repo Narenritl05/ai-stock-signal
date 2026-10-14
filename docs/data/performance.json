@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-15 01:46 (เวลาไทย)",
+  "generated_at": "2026-10-15 05:00 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1478,
+    "closed": 1479,
     "open": 107,
-    "win_rate": 39.0,
-    "avg_return": -0.76,
+    "win_rate": 39.1,
+    "avg_return": -0.75,
     "total_return": -100.0,
-    "by_target": 295,
+    "by_target": 296,
     "by_stop": 685,
     "by_time": 498
   },
@@ -55,6 +55,23 @@
       "entry": 520.98,
       "stop": 499.22,
       "target": 573.08,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-15",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "TGT",
+      "name": "TGT",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-10-15",
+      "entry": 155.31,
+      "stop": 150.92,
+      "target": 170.84,
       "status": "open",
       "days": 0,
       "last_date": "2026-10-15",
@@ -1424,23 +1441,6 @@
       "return_pct": null
     },
     {
-      "ticker": "COP",
-      "name": "COP",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-10-06",
-      "entry": 129.38,
-      "stop": 125.15,
-      "target": 142.32,
-      "status": "open",
-      "days": 9,
-      "last_date": "2026-10-15",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "RBF.BK",
       "name": "RBF",
       "signal": "BUY",
@@ -2021,6 +2021,23 @@
       "return_pct": -7.5
     },
     {
+      "ticker": "COP",
+      "name": "COP",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-10-06",
+      "entry": 129.38,
+      "stop": 125.15,
+      "target": 142.32,
+      "status": "closed",
+      "days": 9,
+      "last_date": "2026-10-15",
+      "exit": 142.32,
+      "exit_date": "2026-10-15",
+      "reason": "target",
+      "return_pct": 9.5
+    },
+    {
       "ticker": "BJC.BK",
       "name": "BJC",
       "signal": "BUY",
@@ -2325,23 +2342,6 @@
       "exit_date": "2026-10-14",
       "reason": "stop",
       "return_pct": -3.0
-    },
-    {
-      "ticker": "HUMAN.BK",
-      "name": "HUMAN",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-09-23",
-      "entry": 4.54,
-      "stop": 4.22,
-      "target": 4.99,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-10-13",
-      "exit": 4.44,
-      "exit_date": "2026-10-13",
-      "reason": "time",
-      "return_pct": -2.7
     }
   ]
 }
