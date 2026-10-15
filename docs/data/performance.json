@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-16 02:17 (เวลาไทย)",
+  "generated_at": "2026-10-16 05:32 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1485,
-    "open": 121,
-    "win_rate": 39.1,
+    "closed": 1486,
+    "open": 122,
+    "win_rate": 39.2,
     "avg_return": -0.74,
     "total_return": -100.0,
-    "by_target": 298,
+    "by_target": 299,
     "by_stop": 688,
     "by_time": 499
   },
@@ -55,6 +55,40 @@
       "entry": 83.0,
       "stop": 80.05,
       "target": 91.3,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-16",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "UPST",
+      "name": "UPST",
+      "signal": "BUY",
+      "score": 71,
+      "entry_date": "2026-10-16",
+      "entry": 24.75,
+      "stop": 23.02,
+      "target": 27.23,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-16",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "HON",
+      "name": "HON",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-10-16",
+      "entry": 210.5,
+      "stop": 206.46,
+      "target": 231.55,
       "status": "open",
       "days": 0,
       "last_date": "2026-10-16",
@@ -1475,23 +1509,6 @@
       "return_pct": null
     },
     {
-      "ticker": "TEAM",
-      "name": "TEAM",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-10-06",
-      "entry": 196.6,
-      "stop": 182.84,
-      "target": 216.26,
-      "status": "open",
-      "days": 10,
-      "last_date": "2026-10-16",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "AMZN",
       "name": "AMZN",
       "signal": "BUY",
@@ -2089,6 +2106,23 @@
       "return_pct": 2.33
     },
     {
+      "ticker": "TEAM",
+      "name": "TEAM",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-10-06",
+      "entry": 196.6,
+      "stop": 182.84,
+      "target": 216.26,
+      "status": "closed",
+      "days": 10,
+      "last_date": "2026-10-16",
+      "exit": 216.26,
+      "exit_date": "2026-10-16",
+      "reason": "target",
+      "return_pct": 9.5
+    },
+    {
       "ticker": "CHG.BK",
       "name": "CHG",
       "signal": "BUY",
@@ -2563,23 +2597,6 @@
       "exit_date": "2026-10-14",
       "reason": "stop",
       "return_pct": -4.24
-    },
-    {
-      "ticker": "KLAC",
-      "name": "KLAC",
-      "signal": "BUY",
-      "score": 62,
-      "entry_date": "2026-10-08",
-      "entry": 200.8,
-      "stop": 186.75,
-      "target": 220.89,
-      "status": "closed",
-      "days": 6,
-      "last_date": "2026-10-14",
-      "exit": 186.75,
-      "exit_date": "2026-10-14",
-      "reason": "stop",
-      "return_pct": -7.5
     }
   ]
 }
