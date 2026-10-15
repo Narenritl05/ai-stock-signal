@@ -26961,6 +26961,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "COST",
+      "name": "COST",
+      "signal": "BUY",
+      "score": 67,
+      "entry_date": "2026-10-15",
+      "entry": 982.0,
+      "stop": 913.26,
+      "target": 1080.2,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-15",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
