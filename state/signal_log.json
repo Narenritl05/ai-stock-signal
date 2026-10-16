@@ -27311,13 +27311,13 @@
       "entry": 24.75,
       "stop": 23.02,
       "target": 27.23,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-10-16",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 23.02,
+      "exit_date": "2026-10-16",
+      "reason": "stop",
+      "return_pct": -7.49
     },
     {
       "ticker": "HON",
