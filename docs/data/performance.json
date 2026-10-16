@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-17 01:52 (เวลาไทย)",
+  "generated_at": "2026-10-17 04:52 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
     "closed": 1494,
-    "open": 118,
+    "open": 119,
     "win_rate": 39.0,
     "avg_return": -0.77,
     "total_return": -100.0,
@@ -12,6 +12,23 @@
     "by_time": 499
   },
   "open_positions": [
+    {
+      "ticker": "AI",
+      "name": "AI",
+      "signal": "STRONG BUY",
+      "score": 75,
+      "entry_date": "2026-10-17",
+      "entry": 11.32,
+      "stop": 10.53,
+      "target": 12.45,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-17",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
     {
       "ticker": "WFC",
       "name": "WFC",

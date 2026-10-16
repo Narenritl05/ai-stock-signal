@@ -27403,6 +27403,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "AI",
+      "name": "AI",
+      "signal": "STRONG BUY",
+      "score": 75,
+      "entry_date": "2026-10-17",
+      "entry": 11.32,
+      "stop": 10.53,
+      "target": 12.45,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-17",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
