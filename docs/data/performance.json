@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-17 07:06 (เวลาไทย)",
+  "generated_at": "2026-10-17 11:46 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1494,
-    "open": 122,
-    "win_rate": 39.0,
-    "avg_return": -0.77,
+    "closed": 1495,
+    "open": 121,
+    "win_rate": 38.9,
+    "avg_return": -0.78,
     "total_return": -100.0,
     "by_target": 299,
-    "by_stop": 696,
+    "by_stop": 697,
     "by_time": 499
   },
   "open_positions": [
@@ -55,23 +55,6 @@
       "entry": 183.81,
       "stop": 172.0,
       "target": 202.19,
-      "status": "open",
-      "days": 0,
-      "last_date": "2026-10-17",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "PLTR",
-      "name": "PLTR",
-      "signal": "BUY",
-      "score": 62,
-      "entry_date": "2026-10-17",
-      "entry": 200.5,
-      "stop": 186.46,
-      "target": 220.55,
       "status": "open",
       "days": 0,
       "last_date": "2026-10-17",
@@ -2157,6 +2140,23 @@
       "return_pct": -7.49
     },
     {
+      "ticker": "PLTR",
+      "name": "PLTR",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-10-17",
+      "entry": 200.5,
+      "stop": 186.46,
+      "target": 220.55,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-10-17",
+      "exit": 186.46,
+      "exit_date": "2026-10-17",
+      "reason": "stop",
+      "return_pct": -7.5
+    },
+    {
       "ticker": "BLK",
       "name": "BLK",
       "signal": "BUY",
@@ -2580,23 +2580,6 @@
       "exit_date": "2026-10-14",
       "reason": "time",
       "return_pct": 1.66
-    },
-    {
-      "ticker": "AMD",
-      "name": "AMD",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-09-25",
-      "entry": 629.26,
-      "stop": 585.21,
-      "target": 692.19,
-      "status": "closed",
-      "days": 19,
-      "last_date": "2026-10-14",
-      "exit": 585.21,
-      "exit_date": "2026-10-14",
-      "reason": "stop",
-      "return_pct": -7.5
     }
   ]
 }

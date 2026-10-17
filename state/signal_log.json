@@ -27464,13 +27464,13 @@
       "entry": 200.5,
       "stop": 186.46,
       "target": 220.55,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-10-17",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 186.46,
+      "exit_date": "2026-10-17",
+      "reason": "stop",
+      "return_pct": -7.5
     }
   ]
 }
