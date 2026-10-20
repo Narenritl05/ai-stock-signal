@@ -27794,6 +27794,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "ISRG",
+      "name": "ISRG",
+      "signal": "BUY",
+      "score": 70,
+      "entry_date": "2026-10-20",
+      "entry": 426.7,
+      "stop": 396.83,
+      "target": 469.37,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-20",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "XOM",
+      "name": "XOM",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-10-20",
+      "entry": 178.98,
+      "stop": 166.45,
+      "target": 196.88,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-20",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "COP",
+      "name": "COP",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-10-20",
+      "entry": 146.51,
+      "stop": 136.25,
+      "target": 161.16,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-20",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
