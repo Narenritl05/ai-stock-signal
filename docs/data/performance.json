@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-21 13:54 (เวลาไทย)",
+  "generated_at": "2026-10-21 19:39 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1524,
+    "closed": 1525,
     "open": 130,
     "win_rate": 38.9,
     "avg_return": -0.78,
     "total_return": -100.0,
     "by_target": 303,
-    "by_stop": 711,
+    "by_stop": 712,
     "by_time": 510
   },
   "open_positions": [
@@ -140,6 +140,23 @@
       "entry": 1.44,
       "stop": 1.42,
       "target": 1.58,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-21",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "KBANK.BK",
+      "name": "KBANK",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-10-21",
+      "entry": 238.0,
+      "stop": 228.0,
+      "target": 261.8,
       "status": "open",
       "days": 0,
       "last_date": "2026-10-21",
@@ -1441,23 +1458,6 @@
       "return_pct": null
     },
     {
-      "ticker": "SAPPE.BK",
-      "name": "SAPPE",
-      "signal": "STRONG BUY",
-      "score": 76,
-      "entry_date": "2026-10-09",
-      "entry": 32.0,
-      "stop": 30.5,
-      "target": 35.2,
-      "status": "open",
-      "days": 12,
-      "last_date": "2026-10-21",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "TU.BK",
       "name": "TU",
       "signal": "BUY",
@@ -2310,6 +2310,23 @@
       "return_pct": 5.84
     },
     {
+      "ticker": "SAPPE.BK",
+      "name": "SAPPE",
+      "signal": "STRONG BUY",
+      "score": 76,
+      "entry_date": "2026-10-09",
+      "entry": 32.0,
+      "stop": 30.5,
+      "target": 35.2,
+      "status": "closed",
+      "days": 12,
+      "last_date": "2026-10-21",
+      "exit": 30.5,
+      "exit_date": "2026-10-21",
+      "reason": "stop",
+      "return_pct": -5.19
+    },
+    {
       "ticker": "AEONTS.BK",
       "name": "AEONTS",
       "signal": "BUY",
@@ -2716,23 +2733,6 @@
       "exit_date": "2026-10-18",
       "reason": "time",
       "return_pct": 9.26
-    },
-    {
-      "ticker": "TSLA",
-      "name": "TSLA",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-10-03",
-      "entry": 370.59,
-      "stop": 352.84,
-      "target": 407.65,
-      "status": "closed",
-      "days": 14,
-      "last_date": "2026-10-17",
-      "exit": 352.84,
-      "exit_date": "2026-10-17",
-      "reason": "stop",
-      "return_pct": -5.29
     }
   ]
 }
