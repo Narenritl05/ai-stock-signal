@@ -28212,13 +28212,13 @@
       "entry": 154.6,
       "stop": 143.78,
       "target": 170.06,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-10-22",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 143.78,
+      "exit_date": "2026-10-22",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "MDB",

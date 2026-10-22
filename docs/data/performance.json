@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-22 04:07 (เวลาไทย)",
+  "generated_at": "2026-10-22 07:04 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1535,
-    "open": 136,
+    "closed": 1536,
+    "open": 135,
     "win_rate": 38.8,
     "avg_return": -0.79,
     "total_return": -100.0,
     "by_target": 303,
-    "by_stop": 718,
+    "by_stop": 719,
     "by_time": 514
   },
   "open_positions": [
@@ -72,23 +72,6 @@
       "entry": 387.36,
       "stop": 360.24,
       "target": 426.1,
-      "status": "open",
-      "days": 0,
-      "last_date": "2026-10-22",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "MSTR",
-      "name": "MSTR",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-10-22",
-      "entry": 154.6,
-      "stop": 143.78,
-      "target": 170.06,
       "status": "open",
       "days": 0,
       "last_date": "2026-10-22",
@@ -2497,6 +2480,23 @@
       "return_pct": -4.97
     },
     {
+      "ticker": "MSTR",
+      "name": "MSTR",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-10-22",
+      "entry": 154.6,
+      "stop": 143.78,
+      "target": 170.06,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-10-22",
+      "exit": 143.78,
+      "exit_date": "2026-10-22",
+      "reason": "stop",
+      "return_pct": -7.5
+    },
+    {
       "ticker": "TXN",
       "name": "TXN",
       "signal": "BUY",
@@ -2818,23 +2818,6 @@
       "exit_date": "2026-10-20",
       "reason": "stop",
       "return_pct": -7.49
-    },
-    {
-      "ticker": "GE",
-      "name": "GE",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-10-16",
-      "entry": 319.24,
-      "stop": 303.62,
-      "target": 351.16,
-      "status": "closed",
-      "days": 4,
-      "last_date": "2026-10-20",
-      "exit": 303.62,
-      "exit_date": "2026-10-20",
-      "reason": "stop",
-      "return_pct": -5.39
     }
   ]
 }
