@@ -28542,6 +28542,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "ORI.BK",
+      "name": "ORI",
+      "signal": "STRONG BUY",
+      "score": 81,
+      "entry_date": "2026-10-22",
+      "entry": 1.79,
+      "stop": 1.7,
+      "target": 1.97,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-22",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "PSL.BK",
+      "name": "PSL",
+      "signal": "BUY",
+      "score": 70,
+      "entry_date": "2026-10-22",
+      "entry": 9.7,
+      "stop": 9.2,
+      "target": 10.67,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-22",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
