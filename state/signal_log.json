@@ -28661,6 +28661,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "LMT",
+      "name": "LMT",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-10-23",
+      "entry": 551.51,
+      "stop": 512.9,
+      "target": 606.66,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-23",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "TEAM",
+      "name": "TEAM",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-10-23",
+      "entry": 225.51,
+      "stop": 209.72,
+      "target": 248.06,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-23",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "HD",
+      "name": "HD",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-10-23",
+      "entry": 314.14,
+      "stop": 292.15,
+      "target": 345.55,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-23",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
