@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-24 03:00 (เวลาไทย)",
+  "generated_at": "2026-10-24 06:02 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1549,
-    "open": 146,
+    "closed": 1550,
+    "open": 145,
     "win_rate": 39.0,
     "avg_return": -0.75,
     "total_return": -100.0,
-    "by_target": 310,
+    "by_target": 311,
     "by_stop": 724,
     "by_time": 515
   },
@@ -1213,23 +1213,6 @@
       "target": 15.62,
       "status": "open",
       "days": 5,
-      "last_date": "2026-10-24",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
-      "ticker": "AI",
-      "name": "AI",
-      "signal": "STRONG BUY",
-      "score": 75,
-      "entry_date": "2026-10-17",
-      "entry": 11.32,
-      "stop": 10.53,
-      "target": 12.45,
-      "status": "open",
-      "days": 7,
       "last_date": "2026-10-24",
       "exit": null,
       "exit_date": null,
@@ -2497,6 +2480,23 @@
   ],
   "closed_positions": [
     {
+      "ticker": "AI",
+      "name": "AI",
+      "signal": "STRONG BUY",
+      "score": 75,
+      "entry_date": "2026-10-17",
+      "entry": 11.32,
+      "stop": 10.53,
+      "target": 12.45,
+      "status": "closed",
+      "days": 7,
+      "last_date": "2026-10-24",
+      "exit": 12.45,
+      "exit_date": "2026-10-24",
+      "reason": "target",
+      "return_pct": 9.48
+    },
+    {
       "ticker": "GS",
       "name": "GS",
       "signal": "BUY",
@@ -2988,23 +2988,6 @@
       "exit_date": "2026-10-21",
       "reason": "time",
       "return_pct": 5.84
-    },
-    {
-      "ticker": "SAPPE.BK",
-      "name": "SAPPE",
-      "signal": "STRONG BUY",
-      "score": 76,
-      "entry_date": "2026-10-09",
-      "entry": 32.0,
-      "stop": 30.5,
-      "target": 35.2,
-      "status": "closed",
-      "days": 12,
-      "last_date": "2026-10-21",
-      "exit": 30.5,
-      "exit_date": "2026-10-21",
-      "reason": "stop",
-      "return_pct": -5.19
     }
   ]
 }
