@@ -29069,6 +29069,40 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "NOW",
+      "name": "NOW",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-10-27",
+      "entry": 158.96,
+      "stop": 147.83,
+      "target": 174.86,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-27",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "PYPL",
+      "name": "PYPL",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-10-27",
+      "entry": 57.02,
+      "stop": 53.03,
+      "target": 62.72,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-27",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
