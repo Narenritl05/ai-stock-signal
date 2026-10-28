@@ -29249,13 +29249,13 @@
       "entry": 16.73,
       "stop": 15.55,
       "target": 18.4,
-      "status": "open",
+      "status": "closed",
       "days": 1,
       "last_date": "2026-10-28",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 15.55,
+      "exit_date": "2026-10-28",
+      "reason": "stop",
+      "return_pct": -7.55
     },
     {
       "ticker": "WDC",
@@ -29266,13 +29266,13 @@
       "entry": 384.52,
       "stop": 357.6,
       "target": 422.97,
-      "status": "open",
+      "status": "closed",
       "days": 1,
       "last_date": "2026-10-28",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 357.6,
+      "exit_date": "2026-10-28",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "TSM",
