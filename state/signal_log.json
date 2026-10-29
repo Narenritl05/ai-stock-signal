@@ -29528,6 +29528,23 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "MSFT",
+      "name": "MSFT",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-10-29",
+      "entry": 531.01,
+      "stop": 512.8,
+      "target": 584.11,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-29",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
