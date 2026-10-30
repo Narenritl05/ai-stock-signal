@@ -29987,6 +29987,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "SBUX",
+      "name": "SBUX",
+      "signal": "STRONG BUY",
+      "score": 77,
+      "entry_date": "2026-10-31",
+      "entry": 103.67,
+      "stop": 96.41,
+      "target": 114.04,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-31",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "TGT",
+      "name": "TGT",
+      "signal": "BUY",
+      "score": 71,
+      "entry_date": "2026-10-31",
+      "entry": 154.38,
+      "stop": 148.01,
+      "target": 169.82,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-31",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "ABBV",
+      "name": "ABBV",
+      "signal": "BUY",
+      "score": 67,
+      "entry_date": "2026-10-31",
+      "entry": 294.89,
+      "stop": 274.25,
+      "target": 324.38,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-10-31",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
