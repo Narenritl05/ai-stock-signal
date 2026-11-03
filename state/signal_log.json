@@ -29793,13 +29793,13 @@
       "entry": 248.97,
       "stop": 231.54,
       "target": 273.87,
-      "status": "open",
+      "status": "closed",
       "days": 5,
       "last_date": "2026-11-04",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 231.54,
+      "exit_date": "2026-11-04",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "TOST",
@@ -30422,13 +30422,13 @@
       "entry": 71.5,
       "stop": 68.75,
       "target": 78.65,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-11-04",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 68.75,
+      "exit_date": "2026-11-04",
+      "reason": "stop",
+      "return_pct": -4.35
     },
     {
       "ticker": "TLI.BK",
