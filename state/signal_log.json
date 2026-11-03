@@ -27906,13 +27906,13 @@
       "entry": 16.0,
       "stop": 15.6,
       "target": 17.6,
-      "status": "open",
+      "status": "closed",
       "days": 14,
       "last_date": "2026-11-03",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 15.6,
+      "exit_date": "2026-11-03",
+      "reason": "stop",
+      "return_pct": -3.0
     },
     {
       "ticker": "PLANB.BK",
@@ -28569,13 +28569,13 @@
       "entry": 9.7,
       "stop": 9.2,
       "target": 10.67,
-      "status": "open",
+      "status": "closed",
       "days": 12,
       "last_date": "2026-11-03",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 9.2,
+      "exit_date": "2026-11-03",
+      "reason": "stop",
+      "return_pct": -5.65
     },
     {
       "ticker": "AAPL",
@@ -29164,13 +29164,13 @@
       "entry": 22.9,
       "stop": 22.2,
       "target": 25.19,
-      "status": "open",
+      "status": "closed",
       "days": 7,
       "last_date": "2026-11-03",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 22.2,
+      "exit_date": "2026-11-03",
+      "reason": "stop",
+      "return_pct": -3.56
     },
     {
       "ticker": "PTTEP.BK",
@@ -29181,13 +29181,13 @@
       "entry": 166.5,
       "stop": 154.84,
       "target": 183.15,
-      "status": "open",
+      "status": "closed",
       "days": 7,
       "last_date": "2026-11-03",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 154.84,
+      "exit_date": "2026-11-03",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "OSP.BK",
@@ -29538,13 +29538,13 @@
       "entry": 531.01,
       "stop": 512.8,
       "target": 584.11,
-      "status": "open",
+      "status": "closed",
       "days": 5,
       "last_date": "2026-11-03",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 512.8,
+      "exit_date": "2026-11-03",
+      "reason": "stop",
+      "return_pct": -3.93
     },
     {
       "ticker": "ILM.BK",
@@ -30303,13 +30303,13 @@
       "entry": 71.5,
       "stop": 68.75,
       "target": 78.65,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-11-03",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 68.75,
+      "exit_date": "2026-11-03",
+      "reason": "stop",
+      "return_pct": -4.35
     },
     {
       "ticker": "TMO",
@@ -30371,6 +30371,23 @@
       "entry": 107.24,
       "stop": 99.73,
       "target": 117.96,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-11-03",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "XPEV",
+      "name": "XPEV",
+      "signal": "BUY",
+      "score": 71,
+      "entry_date": "2026-11-03",
+      "entry": 9.57,
+      "stop": 9.04,
+      "target": 10.53,
       "status": "open",
       "days": 0,
       "last_date": "2026-11-03",
