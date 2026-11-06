@@ -27753,13 +27753,13 @@
       "entry": 125.5,
       "stop": 123.5,
       "target": 138.05,
-      "status": "open",
+      "status": "closed",
       "days": 18,
       "last_date": "2026-11-06",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 123.5,
+      "exit_date": "2026-11-06",
+      "reason": "stop",
+      "return_pct": -2.09
     },
     {
       "ticker": "SINGER.BK",
@@ -27957,13 +27957,13 @@
       "entry": 421.42,
       "stop": 391.92,
       "target": 463.57,
-      "status": "open",
+      "status": "closed",
       "days": 17,
       "last_date": "2026-11-06",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 391.92,
+      "exit_date": "2026-11-06",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "VRTX",
@@ -29045,13 +29045,13 @@
       "entry": 300.59,
       "stop": 279.55,
       "target": 330.65,
-      "status": "open",
+      "status": "closed",
       "days": 10,
       "last_date": "2026-11-06",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 279.55,
+      "exit_date": "2026-11-06",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "LMT",
@@ -29351,13 +29351,13 @@
       "entry": 186.5,
       "stop": 181.0,
       "target": 205.15,
-      "status": "open",
+      "status": "closed",
       "days": 9,
       "last_date": "2026-11-06",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 181.0,
+      "exit_date": "2026-11-06",
+      "reason": "stop",
+      "return_pct": -3.45
     },
     {
       "ticker": "KCE.BK",
@@ -30201,13 +30201,13 @@
       "entry": 74.51,
       "stop": 69.49,
       "target": 81.96,
-      "status": "open",
+      "status": "closed",
       "days": 3,
       "last_date": "2026-11-06",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 69.49,
+      "exit_date": "2026-11-06",
+      "reason": "stop",
+      "return_pct": -7.24
     },
     {
       "ticker": "XPEV",
@@ -30269,13 +30269,13 @@
       "entry": 26.46,
       "stop": 25.24,
       "target": 29.11,
-      "status": "open",
+      "status": "closed",
       "days": 3,
       "last_date": "2026-11-06",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 29.11,
+      "exit_date": "2026-11-06",
+      "reason": "target",
+      "return_pct": 9.52
     },
     {
       "ticker": "SJWD.BK",
@@ -31221,13 +31221,13 @@
       "entry": 10.7,
       "stop": 9.95,
       "target": 11.77,
-      "status": "open",
+      "status": "closed",
       "days": 1,
       "last_date": "2026-11-06",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 9.95,
+      "exit_date": "2026-11-06",
+      "reason": "stop",
+      "return_pct": -7.51
     },
     {
       "ticker": "GULF.BK",
@@ -31408,13 +31408,13 @@
       "entry": 0.15,
       "stop": 0.14,
       "target": 0.17,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-11-06",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 0.14,
+      "exit_date": "2026-11-06",
+      "reason": "stop",
+      "return_pct": -7.17
     },
     {
       "ticker": "BANPU.BK",
@@ -31442,6 +31442,23 @@
       "entry": 23.52,
       "stop": 21.87,
       "target": 25.87,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-11-06",
+      "exit": 21.87,
+      "exit_date": "2026-11-06",
+      "reason": "stop",
+      "return_pct": -7.52
+    },
+    {
+      "ticker": "NIO",
+      "name": "NIO",
+      "signal": "BUY",
+      "score": 68,
+      "entry_date": "2026-11-06",
+      "entry": 3.41,
+      "stop": 3.19,
+      "target": 3.75,
       "status": "open",
       "days": 0,
       "last_date": "2026-11-06",
