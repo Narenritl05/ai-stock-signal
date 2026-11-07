@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-07 08:31 (เวลาไทย)",
+  "generated_at": "2026-11-07 15:11 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1740,
-    "open": 119,
+    "closed": 1741,
+    "open": 120,
     "win_rate": 38.4,
-    "avg_return": -0.87,
+    "avg_return": -0.88,
     "total_return": -100.0,
     "by_target": 333,
-    "by_stop": 829,
+    "by_stop": 830,
     "by_time": 578
   },
   "open_positions": [
@@ -81,14 +81,14 @@
       "return_pct": null
     },
     {
-      "ticker": "DKNG",
-      "name": "DKNG",
+      "ticker": "JD",
+      "name": "JD",
       "signal": "BUY",
       "score": 63,
       "entry_date": "2026-11-07",
-      "entry": 23.52,
-      "stop": 21.87,
-      "target": 25.87,
+      "entry": 28.64,
+      "stop": 26.64,
+      "target": 31.5,
       "status": "open",
       "days": 0,
       "last_date": "2026-11-07",
@@ -98,14 +98,31 @@
       "return_pct": null
     },
     {
-      "ticker": "JD",
-      "name": "JD",
-      "signal": "BUY",
-      "score": 63,
+      "ticker": "IONQ",
+      "name": "IONQ",
+      "signal": "STRONG BUY",
+      "score": 76,
       "entry_date": "2026-11-07",
-      "entry": 28.64,
-      "stop": 26.64,
-      "target": 31.5,
+      "entry": 32.62,
+      "stop": 30.34,
+      "target": 35.88,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-11-07",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "RGTI",
+      "name": "RGTI",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-11-07",
+      "entry": 11.75,
+      "stop": 10.93,
+      "target": 12.93,
       "status": "open",
       "days": 0,
       "last_date": "2026-11-07",
@@ -2089,6 +2106,23 @@
       "return_pct": -7.48
     },
     {
+      "ticker": "DKNG",
+      "name": "DKNG",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-11-07",
+      "entry": 23.52,
+      "stop": 21.87,
+      "target": 25.87,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-11-07",
+      "exit": 21.87,
+      "exit_date": "2026-11-07",
+      "reason": "stop",
+      "return_pct": -7.52
+    },
+    {
       "ticker": "TISCO.BK",
       "name": "TISCO",
       "signal": "BUY",
@@ -2529,23 +2563,6 @@
       "exit_date": "2026-11-05",
       "reason": "time",
       "return_pct": 1.71
-    },
-    {
-      "ticker": "RTX",
-      "name": "RTX",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-10-16",
-      "entry": 192.16,
-      "stop": 180.26,
-      "target": 211.38,
-      "status": "closed",
-      "days": 20,
-      "last_date": "2026-11-05",
-      "exit": 197.65,
-      "exit_date": "2026-11-05",
-      "reason": "time",
-      "return_pct": 2.36
     }
   ]
 }
