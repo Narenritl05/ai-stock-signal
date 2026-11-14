@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-14 04:46 (เวลาไทย)",
+  "generated_at": "2026-11-14 08:56 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
     "closed": 1796,
-    "open": 136,
+    "open": 137,
     "win_rate": 38.5,
     "avg_return": -0.88,
     "total_return": -100.0,
@@ -12,6 +12,23 @@
     "by_time": 607
   },
   "open_positions": [
+    {
+      "ticker": "RIOT",
+      "name": "RIOT",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-11-14",
+      "entry": 17.83,
+      "stop": 16.58,
+      "target": 19.61,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-11-14",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
     {
       "ticker": "TXN",
       "name": "TXN",
