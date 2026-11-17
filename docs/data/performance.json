@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-17 11:58 (เวลาไทย)",
+  "generated_at": "2026-11-17 21:10 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1824,
-    "open": 120,
+    "closed": 1825,
+    "open": 122,
     "win_rate": 38.2,
     "avg_return": -0.93,
     "total_return": -100.0,
     "by_target": 339,
-    "by_stop": 869,
+    "by_stop": 870,
     "by_time": 616
   },
   "open_positions": [
@@ -89,6 +89,57 @@
       "entry": 173.02,
       "stop": 160.91,
       "target": 190.32,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-11-17",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "ICHI.BK",
+      "name": "ICHI",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-11-17",
+      "entry": 14.3,
+      "stop": 13.3,
+      "target": 15.73,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-11-17",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "TKN.BK",
+      "name": "TKN",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-11-17",
+      "entry": 5.28,
+      "stop": 4.91,
+      "target": 5.81,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-11-17",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "HANA.BK",
+      "name": "HANA",
+      "signal": "BUY",
+      "score": 60,
+      "entry_date": "2026-11-17",
+      "entry": 43.5,
+      "stop": 40.45,
+      "target": 47.85,
       "status": "open",
       "days": 0,
       "last_date": "2026-11-17",
@@ -1628,23 +1679,6 @@
       "return_pct": null
     },
     {
-      "ticker": "JMT.BK",
-      "name": "JMT",
-      "signal": "BUY",
-      "score": 64,
-      "entry_date": "2026-11-04",
-      "entry": 10.4,
-      "stop": 9.9,
-      "target": 11.44,
-      "status": "open",
-      "days": 13,
-      "last_date": "2026-11-17",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "BCPG.BK",
       "name": "BCPG",
       "signal": "BUY",
@@ -2070,6 +2104,23 @@
       "exit_date": "2026-11-17",
       "reason": "stop",
       "return_pct": -7.51
+    },
+    {
+      "ticker": "JMT.BK",
+      "name": "JMT",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-11-04",
+      "entry": 10.4,
+      "stop": 9.9,
+      "target": 11.44,
+      "status": "closed",
+      "days": 13,
+      "last_date": "2026-11-17",
+      "exit": 9.9,
+      "exit_date": "2026-11-17",
+      "reason": "stop",
+      "return_pct": -5.31
     },
     {
       "ticker": "NFLX",
@@ -2546,23 +2597,6 @@
       "exit_date": "2026-11-13",
       "reason": "stop",
       "return_pct": -4.78
-    },
-    {
-      "ticker": "SINGER.BK",
-      "name": "SINGER",
-      "signal": "BUY",
-      "score": 62,
-      "entry_date": "2026-11-03",
-      "entry": 13.5,
-      "stop": 12.55,
-      "target": 14.85,
-      "status": "closed",
-      "days": 10,
-      "last_date": "2026-11-13",
-      "exit": 12.55,
-      "exit_date": "2026-11-13",
-      "reason": "stop",
-      "return_pct": -7.54
     }
   ]
 }
