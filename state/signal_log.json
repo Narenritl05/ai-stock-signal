@@ -30252,13 +30252,13 @@
       "entry": 328.69,
       "stop": 305.68,
       "target": 361.56,
-      "status": "open",
+      "status": "closed",
       "days": 18,
       "last_date": "2026-11-21",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 305.68,
+      "exit_date": "2026-11-21",
+      "reason": "stop",
+      "return_pct": -7.5
     },
     {
       "ticker": "JD",
@@ -33363,13 +33363,13 @@
       "entry": 36.3,
       "stop": 34.5,
       "target": 39.93,
-      "status": "open",
+      "status": "closed",
       "days": 0,
       "last_date": "2026-11-21",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 34.5,
+      "exit_date": "2026-11-21",
+      "reason": "stop",
+      "return_pct": -5.46
     }
   ]
 }

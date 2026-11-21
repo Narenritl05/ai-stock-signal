@@ -1,34 +1,17 @@
 {
-  "generated_at": "2026-11-21 01:13 (เวลาไทย)",
+  "generated_at": "2026-11-21 07:05 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
-    "closed": 1882,
-    "open": 81,
-    "win_rate": 37.5,
-    "avg_return": -1.04,
+    "closed": 1884,
+    "open": 79,
+    "win_rate": 37.4,
+    "avg_return": -1.05,
     "total_return": -100.0,
     "by_target": 339,
-    "by_stop": 914,
+    "by_stop": 916,
     "by_time": 629
   },
   "open_positions": [
-    {
-      "ticker": "KTC.BK",
-      "name": "KTC",
-      "signal": "STRONG BUY",
-      "score": 76,
-      "entry_date": "2026-11-21",
-      "entry": 36.3,
-      "stop": 34.5,
-      "target": 39.93,
-      "status": "open",
-      "days": 0,
-      "last_date": "2026-11-21",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
     {
       "ticker": "PANW",
       "name": "PANW",
@@ -1288,23 +1271,6 @@
       "return_pct": null
     },
     {
-      "ticker": "AXP",
-      "name": "AXP",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-11-03",
-      "entry": 328.69,
-      "stop": 305.68,
-      "target": 361.56,
-      "status": "open",
-      "days": 18,
-      "last_date": "2026-11-21",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
-    },
-    {
       "ticker": "TMO",
       "name": "TMO",
       "signal": "BUY",
@@ -1391,6 +1357,23 @@
     }
   ],
   "closed_positions": [
+    {
+      "ticker": "AXP",
+      "name": "AXP",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-11-03",
+      "entry": 328.69,
+      "stop": 305.68,
+      "target": 361.56,
+      "status": "closed",
+      "days": 18,
+      "last_date": "2026-11-21",
+      "exit": 305.68,
+      "exit_date": "2026-11-21",
+      "reason": "stop",
+      "return_pct": -7.5
+    },
     {
       "ticker": "XPEV",
       "name": "XPEV",
@@ -1594,6 +1577,23 @@
       "exit_date": "2026-11-21",
       "reason": "stop",
       "return_pct": -7.5
+    },
+    {
+      "ticker": "KTC.BK",
+      "name": "KTC",
+      "signal": "STRONG BUY",
+      "score": 76,
+      "entry_date": "2026-11-21",
+      "entry": 36.3,
+      "stop": 34.5,
+      "target": 39.93,
+      "status": "closed",
+      "days": 0,
+      "last_date": "2026-11-21",
+      "exit": 34.5,
+      "exit_date": "2026-11-21",
+      "reason": "stop",
+      "return_pct": -5.46
     },
     {
       "ticker": "REGN",
@@ -1866,40 +1866,6 @@
       "exit_date": "2026-11-20",
       "reason": "stop",
       "return_pct": -7.5
-    },
-    {
-      "ticker": "ADI",
-      "name": "ADI",
-      "signal": "BUY",
-      "score": 68,
-      "entry_date": "2026-11-13",
-      "entry": 409.33,
-      "stop": 380.68,
-      "target": 450.26,
-      "status": "closed",
-      "days": 7,
-      "last_date": "2026-11-20",
-      "exit": 380.68,
-      "exit_date": "2026-11-20",
-      "reason": "stop",
-      "return_pct": -7.5
-    },
-    {
-      "ticker": "TASCO.BK",
-      "name": "TASCO",
-      "signal": "BUY",
-      "score": 63,
-      "entry_date": "2026-11-13",
-      "entry": 17.0,
-      "stop": 16.5,
-      "target": 18.7,
-      "status": "closed",
-      "days": 7,
-      "last_date": "2026-11-20",
-      "exit": 16.5,
-      "exit_date": "2026-11-20",
-      "reason": "stop",
-      "return_pct": -3.44
     }
   ]
 }
