@@ -31034,13 +31034,13 @@
       "entry": 1.58,
       "stop": 1.52,
       "target": 1.74,
-      "status": "open",
+      "status": "closed",
       "days": 18,
       "last_date": "2026-11-23",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 1.74,
+      "exit_date": "2026-11-23",
+      "reason": "target",
+      "return_pct": 9.63
     },
     {
       "ticker": "GPSC.BK",
@@ -32700,13 +32700,13 @@
       "entry": 184.5,
       "stop": 180.5,
       "target": 202.95,
-      "status": "open",
+      "status": "closed",
       "days": 10,
       "last_date": "2026-11-23",
-      "exit": null,
-      "exit_date": null,
-      "reason": null,
-      "return_pct": null
+      "exit": 180.5,
+      "exit_date": "2026-11-23",
+      "reason": "stop",
+      "return_pct": -2.67
     },
     {
       "ticker": "CPF.BK",
