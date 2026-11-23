@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-23 18:47 (เวลาไทย)",
-  "generated_at_iso": "2026-11-23T18:47:52.813039+07:00",
+  "generated_at": "2026-11-24 06:14 (เวลาไทย)",
+  "generated_at_iso": "2026-11-24T06:14:49.920793+07:00",
   "status": "ok",
   "telegram": "sent",
   "overall": {
@@ -22,8 +22,8 @@
       "fetch_fail_ratio": 0.022,
       "summary": {
         "strong_buy": 0,
-        "buy": 17,
-        "watch": 7,
+        "buy": 16,
+        "watch": 8,
         "avoid": 107
       },
       "regime": {
@@ -46,16 +46,16 @@
       "fetch_fail_ratio": 0.007,
       "summary": {
         "strong_buy": 4,
-        "buy": 2,
-        "watch": 9,
-        "avoid": 119
+        "buy": 7,
+        "watch": 17,
+        "avoid": 106
       },
       "regime": {
         "regime": "BEAR",
-        "breadth": 10.4,
+        "breadth": 18.7,
         "label": "ตลาดขาลง — ระวังสัญญาณซื้อ",
         "stocks": 134,
-        "uptrend": 14
+        "uptrend": 25
       }
     }
   ],
