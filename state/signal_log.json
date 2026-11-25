@@ -33557,6 +33557,57 @@
       "exit_date": null,
       "reason": null,
       "return_pct": null
+    },
+    {
+      "ticker": "TIDLOR.BK",
+      "name": "TIDLOR",
+      "signal": "BUY",
+      "score": 71,
+      "entry_date": "2026-11-25",
+      "entry": 17.4,
+      "stop": 16.18,
+      "target": 19.14,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-11-25",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "BAM.BK",
+      "name": "BAM",
+      "signal": "BUY",
+      "score": 64,
+      "entry_date": "2026-11-25",
+      "entry": 6.34,
+      "stop": 6.18,
+      "target": 6.97,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-11-25",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "RBF.BK",
+      "name": "RBF",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-11-25",
+      "entry": 4.7,
+      "stop": 4.52,
+      "target": 5.17,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-11-25",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
     }
   ]
 }
