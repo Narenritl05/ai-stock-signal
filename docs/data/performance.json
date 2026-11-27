@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-27 05:30 (เวลาไทย)",
+  "generated_at": "2026-11-27 11:43 (เวลาไทย)",
   "cost_roundtrip_pct": 0.5,
   "summary": {
     "closed": 1931,
-    "open": 56,
+    "open": 58,
     "win_rate": 37.2,
     "avg_return": -1.07,
     "total_return": -100.0,
@@ -12,6 +12,40 @@
     "by_time": 658
   },
   "open_positions": [
+    {
+      "ticker": "HUMAN.BK",
+      "name": "HUMAN",
+      "signal": "BUY",
+      "score": 63,
+      "entry_date": "2026-11-27",
+      "entry": 4.26,
+      "stop": 4.1,
+      "target": 4.69,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-11-27",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
+    {
+      "ticker": "BANPU.BK",
+      "name": "BANPU",
+      "signal": "BUY",
+      "score": 62,
+      "entry_date": "2026-11-27",
+      "entry": 13.35,
+      "stop": 12.42,
+      "target": 14.69,
+      "status": "open",
+      "days": 0,
+      "last_date": "2026-11-27",
+      "exit": null,
+      "exit_date": null,
+      "reason": null,
+      "return_pct": null
+    },
     {
       "ticker": "V",
       "name": "V",
